@@ -18,6 +18,8 @@ export interface SeedSheet {
   steps: SeedStep[];
 }
 
+export type CodeLang = "java" | "cpp" | "python";
+
 export interface Approach {
   id: string;
   label: string;
@@ -25,6 +27,7 @@ export interface Approach {
   time: string;
   space: string;
   custom: boolean;
+  lang?: CodeLang; // absent on rows created before multi-language support → treated as "java"
 }
 
 // Row shape as stored in Supabase (public.user_problems)

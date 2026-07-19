@@ -11,9 +11,9 @@ export function newApproachId(): string {
 
 export function defaultApproaches(): Approach[] {
   return [
-    { id: newApproachId(), label: "Brute", code: "", time: "", space: "", custom: false },
-    { id: newApproachId(), label: "Better", code: "", time: "", space: "", custom: false },
-    { id: newApproachId(), label: "Optimal", code: "", time: "", space: "", custom: false },
+    { id: newApproachId(), label: "Brute", code: "", time: "", space: "", custom: false, lang: "java" },
+    { id: newApproachId(), label: "Better", code: "", time: "", space: "", custom: false, lang: "java" },
+    { id: newApproachId(), label: "Optimal", code: "", time: "", space: "", custom: false, lang: "java" },
   ];
 }
 

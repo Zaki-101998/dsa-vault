@@ -7,7 +7,8 @@ A personal notes + code + revision tracker for [Striver's A2Z DSA sheet](https:/
 - **Next.js 16** (App Router) + TypeScript + Tailwind CSS 4
 - **Supabase** — Postgres + Auth (Google OAuth / magic link), so your data syncs across devices
 - **TipTap** for the rich-text notes editor (preserves pasted formatting, converts pasted plain-text markdown)
-- **CodeMirror 6** for Java-highlighted code editing
+- **CodeMirror 6** for code editing with Java / C++ / Python syntax highlighting
+- **clang-format + Ruff (WASM)** for in-browser code formatting — lazy-loaded, no server needed
 
 ## 1. Set up Supabase (one-time, ~5 minutes)
 
@@ -45,7 +46,7 @@ Vercel's build image runs Node 22+ by default, so the `@supabase/supabase-js` de
 ## How it works
 
 - **Notes tab** — a TipTap rich-text editor. Pasting from Gemini (or Docs, Notion, etc.) carries over its HTML formatting directly. Pasting plain-text markdown (`## heading`, `**bold**`, `` ``` `` code fences, `- ` lists, `> ` quotes, tables) is auto-converted to formatted content.
-- **Code tab** — Brute / Better / Optimal sub-tabs per problem (add more with **+ Approach**), each with a Java-highlighted CodeMirror editor and Time/Space complexity fields.
+- **Code tab** — Brute / Better / Optimal sub-tabs per problem (add more with **+ Approach**), each with a syntax-highlighted CodeMirror editor and Time/Space complexity fields. Each approach has its own language (**Java / C++ / Python**, selectable in the toolbar). Pasted code is **auto-formatted** (clang-format for Java/C++, Ruff for Python — both running locally as WebAssembly), and the **✨ Format** button re-formats on demand. If a snippet can't be parsed, it's kept exactly as pasted.
 - **Revision star** — click it (or "Mark Revised") to add a problem to your rotation. The star color interpolates gold → orange → red over the configurable "Red in N days" window (default 5), and pulses once it's fully overdue. Clicking an already-fresh star (<12h) removes it from rotation.
 - **Sidebar** — grouped by the sheet's 18 steps, with search, and filters for Due / Starred / Solved / Unsolved. "+ Problem" adds anything outside the sheet.
 - **Export / Import** — the sidebar footer has JSON backup/restore, independent of Supabase, as a safety net.

@@ -1,0 +1,2860 @@
+{
+  "steps": [
+    {
+      "key": "step-01-learn-the-basics",
+      "order": 1,
+      "title": "Learn the basics",
+      "problems": [
+        {
+          "key": "step-01-learn-the-basics__user-input-output",
+          "name": "User Input / Output",
+          "link": "https://takeuforward.org/c/c-basic-input-output/",
+          "difficulty": "Easy"
+        },
+        {
+          "key": "step-01-learn-the-basics__data-types",
+          "name": "Data Types",
+          "link": "https://takeuforward.org/plus/dsa/problems/cpp",
+          "difficulty": "Easy"
+        },
+        {
+          "key": "step-01-learn-the-basics__if-else-statements",
+          "name": "If Else statements",
+          "link": "https://takeuforward.org/if-else/if-else-statements/",
+          "difficulty": "Easy"
+        },
+        {
+          "key": "step-01-learn-the-basics__switch-statement",
+          "name": "Switch Statement",
+          "link": "https://takeuforward.org/switch-case/switch-case-statements/",
+          "difficulty": "Easy"
+        },
+        {
+          "key": "step-01-learn-the-basics__what-are-arrays-strings",
+          "name": "What are arrays, strings?",
+          "link": "https://takeuforward.org/plus/dsa/problems/cpp",
+          "difficulty": "Easy"
+        },
+        {
+          "key": "step-01-learn-the-basics__for-loops",
+          "name": "For loops",
+          "link": "https://takeuforward.org/for-loop/understanding-for-loop/",
+          "difficulty": "Easy"
+        },
+        {
+          "key": "step-01-learn-the-basics__while-loops",
+          "name": "While loops",
+          "link": "https://takeuforward.org/while-loop/while-loops-in-programming/",
+          "difficulty": "Easy"
+        },
+        {
+          "key": "step-01-learn-the-basics__functions-pass-by-reference-and-value",
+          "name": "Functions (Pass by Reference and Value)",
+          "link": "https://takeuforward.org/plus/dsa/problems/cpp",
+          "difficulty": "Easy"
+        },
+        {
+          "key": "step-01-learn-the-basics__time-complexity-learn-basics-and-then-analyse-in-next-steps",
+          "name": "Time Complexity [Learn Basics, and then analyse in next Steps]",
+          "link": "https://takeuforward.org/time-complexity/time-and-space-complexity-strivers-a2z-dsa-course/",
+          "difficulty": "Easy"
+        },
+        {
+          "key": "step-01-learn-the-basics__patterns",
+          "name": "Patterns",
+          "link": "https://takeuforward.org/strivers-a2z-dsa-course/must-do-pattern-problems-before-starting-dsa/",
+          "difficulty": "Easy"
+        },
+        {
+          "key": "step-01-learn-the-basics__c-stl",
+          "name": "C++ STL",
+          "link": "https://takeuforward.org/c/c-stl-tutorial-most-frequent-used-stl-containers/",
+          "difficulty": "Medium"
+        },
+        {
+          "key": "step-01-learn-the-basics__java-collections",
+          "name": "Java Collections",
+          "link": "",
+          "difficulty": "Easy"
+        },
+        {
+          "key": "step-01-learn-the-basics__count-digits",
+          "name": "Count Digits",
+          "link": "https://takeuforward.org/data-structure/count-digits-in-a-number/",
+          "difficulty": "Easy"
+        },
+        {
+          "key": "step-01-learn-the-basics__reverse-a-number",
+          "name": "Reverse a Number",
+          "link": "https://takeuforward.org/maths/reverse-digits-of-a-number",
+          "difficulty": "Easy"
+        },
+        {
+          "key": "step-01-learn-the-basics__check-palindrome",
+          "name": "Check Palindrome",
+          "link": "https://takeuforward.org/data-structure/check-if-a-number-is-palindrome-or-not/",
+          "difficulty": "Easy"
+        },
+        {
+          "key": "step-01-learn-the-basics__gcd-or-hcf",
+          "name": "GCD Or HCF",
+          "link": "https://takeuforward.org/data-structure/find-gcd-of-two-numbers/",
+          "difficulty": "Easy"
+        },
+        {
+          "key": "step-01-learn-the-basics__armstrong-numbers",
+          "name": "Armstrong Numbers",
+          "link": "https://takeuforward.org/maths/check-if-a-number-is-armstrong-number-or-not/",
+          "difficulty": "Easy"
+        },
+        {
+          "key": "step-01-learn-the-basics__print-all-divisors",
+          "name": "Print all Divisors",
+          "link": "https://takeuforward.org/data-structure/print-all-divisors-of-a-given-number/",
+          "difficulty": "Easy"
+        },
+        {
+          "key": "step-01-learn-the-basics__check-for-prime",
+          "name": "Check for Prime",
+          "link": "https://takeuforward.org/data-structure/check-if-a-number-is-prime-or-not/",
+          "difficulty": "Easy"
+        },
+        {
+          "key": "step-01-learn-the-basics__understand-recursion-by-print-something-n-times",
+          "name": "Understand recursion by print something N times",
+          "link": "https://takeuforward.org/recursion/introduction-to-recursion-understand-recursion-by-printing-something-n-times/",
+          "difficulty": "Easy"
+        },
+        {
+          "key": "step-01-learn-the-basics__print-name-n-times-using-recursion",
+          "name": "Print name N times using recursion",
+          "link": "https://takeuforward.org/recursion/print-name-n-times-using-recursion/",
+          "difficulty": "Easy"
+        },
+        {
+          "key": "step-01-learn-the-basics__print-1-to-n-using-recursion",
+          "name": "Print 1 to N using recursion",
+          "link": "https://takeuforward.org/recursion/print-1-to-n-using-recursion/",
+          "difficulty": "Easy"
+        },
+        {
+          "key": "step-01-learn-the-basics__print-n-to-1-using-recursion",
+          "name": "Print N to 1 using recursion",
+          "link": "https://takeuforward.org/recursion/print-n-to-1-using-recursion/",
+          "difficulty": "Easy"
+        },
+        {
+          "key": "step-01-learn-the-basics__sum-of-first-n-numbers",
+          "name": "Sum of first N numbers",
+          "link": "https://takeuforward.org/data-structure/sum-of-first-n-natural-numbers/",
+          "difficulty": "Easy"
+        },
+        {
+          "key": "step-01-learn-the-basics__factorial-of-n-numbers",
+          "name": "Factorial of N numbers",
+          "link": "https://takeuforward.org/data-structure/factorial-of-a-number-iterative-and-recursive/",
+          "difficulty": "Easy"
+        },
+        {
+          "key": "step-01-learn-the-basics__reverse-an-array",
+          "name": "Reverse an array",
+          "link": "https://takeuforward.org/data-structure/reverse-a-given-array/",
+          "difficulty": "Easy"
+        },
+        {
+          "key": "step-01-learn-the-basics__check-if-a-string-is-palindrome-or-not",
+          "name": "Check if a string is palindrome or not",
+          "link": "https://takeuforward.org/data-structure/check-if-the-given-string-is-palindrome-or-not/",
+          "difficulty": "Medium"
+        },
+        {
+          "key": "step-01-learn-the-basics__fibonacci-number",
+          "name": "Fibonacci Number",
+          "link": "https://takeuforward.org/arrays/print-fibonacci-series-up-to-nth-term/",
+          "difficulty": "Easy"
+        },
+        {
+          "key": "step-01-learn-the-basics__hashing-theory",
+          "name": "Hashing Theory",
+          "link": "https://takeuforward.org/hashing/hashing-maps-time-complexity-collisions-division-rule-of-hashing-strivers-a2z-dsa-course/",
+          "difficulty": "Medium"
+        },
+        {
+          "key": "step-01-learn-the-basics__counting-frequencies-of-array-elements",
+          "name": "Counting frequencies of array elements",
+          "link": "https://takeuforward.org/data-structure/count-frequency-of-each-element-in-the-array/",
+          "difficulty": "Easy"
+        },
+        {
+          "key": "step-01-learn-the-basics__find-the-highest-lowest-frequency-element",
+          "name": "Find the highest/lowest frequency element",
+          "link": "https://takeuforward.org/arrays/find-the-highest-lowest-frequency-element/",
+          "difficulty": "Easy"
+        }
+      ]
+    },
+    {
+      "key": "step-02-learn-important-sorting-techniques",
+      "order": 2,
+      "title": "Learn Important Sorting Techniques",
+      "problems": [
+        {
+          "key": "step-02-learn-important-sorting-techniques__selection-sort",
+          "name": "Selection Sort",
+          "link": "https://takeuforward.org/sorting/selection-sort-algorithm/",
+          "difficulty": "Easy"
+        },
+        {
+          "key": "step-02-learn-important-sorting-techniques__bubble-sort",
+          "name": "Bubble Sort",
+          "link": "https://takeuforward.org/data-structure/bubble-sort-algorithm/",
+          "difficulty": "Easy"
+        },
+        {
+          "key": "step-02-learn-important-sorting-techniques__insertion-sort",
+          "name": "Insertion Sort",
+          "link": "https://takeuforward.org/data-structure/insertion-sort-algorithm/",
+          "difficulty": "Easy"
+        },
+        {
+          "key": "step-02-learn-important-sorting-techniques__merge-sort",
+          "name": "Merge Sort",
+          "link": "https://takeuforward.org/data-structure/merge-sort-algorithm/",
+          "difficulty": "Medium"
+        },
+        {
+          "key": "step-02-learn-important-sorting-techniques__recursive-bubble-sort",
+          "name": "Recursive Bubble Sort",
+          "link": "https://takeuforward.org/arrays/recursive-bubble-sort-algorithm/",
+          "difficulty": "Easy"
+        },
+        {
+          "key": "step-02-learn-important-sorting-techniques__recursive-insertion-sort",
+          "name": "Recursive Insertion Sort",
+          "link": "https://takeuforward.org/arrays/recursive-insertion-sort-algorithm/",
+          "difficulty": "Easy"
+        },
+        {
+          "key": "step-02-learn-important-sorting-techniques__quick-sort",
+          "name": "Quick Sort",
+          "link": "https://takeuforward.org/data-structure/quick-sort-algorithm/",
+          "difficulty": "Easy"
+        }
+      ]
+    },
+    {
+      "key": "step-03-solve-problems-on-arrays",
+      "order": 3,
+      "title": "Solve Problems on Arrays",
+      "problems": [
+        {
+          "key": "step-03-solve-problems-on-arrays__largest-element-in-an-array",
+          "name": "Largest Element in an Array",
+          "link": "https://takeuforward.org/data-structure/find-the-largest-element-in-an-array/",
+          "difficulty": "Easy"
+        },
+        {
+          "key": "step-03-solve-problems-on-arrays__second-largest-element-in-an-array-without-sorting",
+          "name": "Second Largest Element in an Array without sorting",
+          "link": "https://takeuforward.org/data-structure/find-second-smallest-and-second-largest-element-in-an-array/",
+          "difficulty": "Easy"
+        },
+        {
+          "key": "step-03-solve-problems-on-arrays__check-if-the-array-is-sorted",
+          "name": "Check if the array is sorted",
+          "link": "https://takeuforward.org/data-structure/check-if-an-array-is-sorted/",
+          "difficulty": "Easy"
+        },
+        {
+          "key": "step-03-solve-problems-on-arrays__remove-duplicates-from-sorted-array",
+          "name": "Remove duplicates from Sorted array",
+          "link": "https://takeuforward.org/data-structure/remove-duplicates-in-place-from-sorted-array/",
+          "difficulty": "Easy"
+        },
+        {
+          "key": "step-03-solve-problems-on-arrays__left-rotate-an-array-by-one-place",
+          "name": "Left Rotate an array by one place",
+          "link": "https://takeuforward.org/data-structure/left-rotate-the-array-by-one/",
+          "difficulty": "Easy"
+        },
+        {
+          "key": "step-03-solve-problems-on-arrays__left-rotate-an-array-by-d-places",
+          "name": "Left rotate an array by D places",
+          "link": "https://takeuforward.org/data-structure/rotate-array-by-k-elements/",
+          "difficulty": "Easy"
+        },
+        {
+          "key": "step-03-solve-problems-on-arrays__move-zeros-to-end",
+          "name": "Move Zeros to end",
+          "link": "https://takeuforward.org/data-structure/move-all-zeros-to-the-end-of-the-array/",
+          "difficulty": "Easy"
+        },
+        {
+          "key": "step-03-solve-problems-on-arrays__linear-search",
+          "name": "Linear Search",
+          "link": "https://takeuforward.org/data-structure/linear-search-in-c/",
+          "difficulty": "Easy"
+        },
+        {
+          "key": "step-03-solve-problems-on-arrays__find-the-union",
+          "name": "Find the Union",
+          "link": "https://takeuforward.org/data-structure/union-of-two-sorted-arrays/",
+          "difficulty": "Medium"
+        },
+        {
+          "key": "step-03-solve-problems-on-arrays__find-missing-number-in-an-array",
+          "name": "Find missing number in an array",
+          "link": "https://takeuforward.org/arrays/find-the-missing-number-in-an-array/",
+          "difficulty": "Easy"
+        },
+        {
+          "key": "step-03-solve-problems-on-arrays__maximum-consecutive-ones",
+          "name": "Maximum Consecutive Ones",
+          "link": "https://takeuforward.org/data-structure/count-maximum-consecutive-ones-in-the-array/",
+          "difficulty": "Easy"
+        },
+        {
+          "key": "step-03-solve-problems-on-arrays__find-the-number-that-appears-once-and-other-numbers-twice",
+          "name": "Find the number that appears once, and other numbers twice.",
+          "link": "https://takeuforward.org/arrays/find-the-number-that-appears-once-and-the-other-numbers-twice/",
+          "difficulty": "Medium"
+        },
+        {
+          "key": "step-03-solve-problems-on-arrays__longest-subarray-with-given-sum-k-positives",
+          "name": "Longest subarray with given sum K(positives)",
+          "link": "https://takeuforward.org/data-structure/longest-subarray-with-given-sum-k/",
+          "difficulty": "Medium"
+        },
+        {
+          "key": "step-03-solve-problems-on-arrays__longest-subarray-with-sum-k-positives-negatives",
+          "name": "Longest subarray with sum K (Positives + Negatives)",
+          "link": "https://takeuforward.org/arrays/longest-subarray-with-sum-k-postives-and-negatives/",
+          "difficulty": "Medium"
+        },
+        {
+          "key": "step-03-solve-problems-on-arrays__2sum-problem",
+          "name": "2Sum Problem",
+          "link": "https://takeuforward.org/data-structure/two-sum-check-if-a-pair-with-given-sum-exists-in-array/",
+          "difficulty": "Medium"
+        },
+        {
+          "key": "step-03-solve-problems-on-arrays__sort-an-array-of-0-s-1-s-and-2-s",
+          "name": "Sort an array of 0's 1's and 2's",
+          "link": "https://takeuforward.org/data-structure/sort-an-array-of-0s-1s-and-2s/",
+          "difficulty": "Medium"
+        },
+        {
+          "key": "step-03-solve-problems-on-arrays__majority-element-n-2-times",
+          "name": "Majority Element (>n/2 times)",
+          "link": "https://takeuforward.org/data-structure/find-the-majority-element-that-occurs-more-than-n-2-times/",
+          "difficulty": "Easy"
+        },
+        {
+          "key": "step-03-solve-problems-on-arrays__kadane-s-algorithm-maximum-subarray-sum",
+          "name": "Kadane's Algorithm, maximum subarray sum",
+          "link": "https://takeuforward.org/data-structure/kadanes-algorithm-maximum-subarray-sum-in-an-array/",
+          "difficulty": "Easy"
+        },
+        {
+          "key": "step-03-solve-problems-on-arrays__print-subarray-with-maximum-subarray-sum-extended-version-of-above-problem",
+          "name": "Print subarray with maximum subarray sum (extended version of above problem)",
+          "link": "https://takeuforward.org/data-structure/kadanes-algorithm-maximum-subarray-sum-in-an-array/",
+          "difficulty": "Medium"
+        },
+        {
+          "key": "step-03-solve-problems-on-arrays__stock-buy-and-sell",
+          "name": "Stock Buy and Sell",
+          "link": "https://takeuforward.org/data-structure/stock-buy-and-sell/",
+          "difficulty": "Easy"
+        },
+        {
+          "key": "step-03-solve-problems-on-arrays__rearrange-the-array-in-alternating-positive-and-negative-items",
+          "name": "Rearrange the array in alternating positive and negative items",
+          "link": "https://takeuforward.org/arrays/rearrange-array-elements-by-sign/",
+          "difficulty": "Medium"
+        },
+        {
+          "key": "step-03-solve-problems-on-arrays__next-permutation",
+          "name": "Next Permutation",
+          "link": "https://takeuforward.org/data-structure/next_permutation-find-next-lexicographically-greater-permutation/",
+          "difficulty": "Medium"
+        },
+        {
+          "key": "step-03-solve-problems-on-arrays__leaders-in-an-array-problem",
+          "name": "Leaders in an Array problem",
+          "link": "https://takeuforward.org/data-structure/leaders-in-an-array/",
+          "difficulty": "Easy"
+        },
+        {
+          "key": "step-03-solve-problems-on-arrays__longest-consecutive-sequence-in-an-array",
+          "name": "Longest Consecutive Sequence in an Array",
+          "link": "https://takeuforward.org/data-structure/longest-consecutive-sequence-in-an-array/",
+          "difficulty": "Medium"
+        },
+        {
+          "key": "step-03-solve-problems-on-arrays__set-matrix-zeros",
+          "name": "Set Matrix Zeros",
+          "link": "https://takeuforward.org/data-structure/set-matrix-zero/",
+          "difficulty": "Medium"
+        },
+        {
+          "key": "step-03-solve-problems-on-arrays__rotate-matrix-by-90-degrees",
+          "name": "Rotate Matrix by 90 degrees",
+          "link": "https://takeuforward.org/data-structure/rotate-image-by-90-degree/",
+          "difficulty": "Medium"
+        },
+        {
+          "key": "step-03-solve-problems-on-arrays__print-the-matrix-in-spiral-manner",
+          "name": "Print the matrix in spiral manner",
+          "link": "https://takeuforward.org/data-structure/spiral-traversal-of-matrix/",
+          "difficulty": "Medium"
+        },
+        {
+          "key": "step-03-solve-problems-on-arrays__count-subarrays-with-given-sum",
+          "name": "Count subarrays with given sum",
+          "link": "https://takeuforward.org/arrays/count-subarray-sum-equals-k/",
+          "difficulty": "Easy"
+        },
+        {
+          "key": "step-03-solve-problems-on-arrays__pascal-s-triangle",
+          "name": "Pascal's Triangle",
+          "link": "https://takeuforward.org/data-structure/program-to-generate-pascals-triangle/",
+          "difficulty": "Medium"
+        },
+        {
+          "key": "step-03-solve-problems-on-arrays__majority-element-n-3-times",
+          "name": "Majority Element (n/3 times)",
+          "link": "https://takeuforward.org/data-structure/majority-elementsn-3-times-find-the-elements-that-appears-more-than-n-3-times-in-the-array/",
+          "difficulty": "Medium"
+        },
+        {
+          "key": "step-03-solve-problems-on-arrays__3-sum-problem",
+          "name": "3-Sum Problem",
+          "link": "https://takeuforward.org/data-structure/3-sum-find-triplets-that-add-up-to-a-zero/",
+          "difficulty": "Medium"
+        },
+        {
+          "key": "step-03-solve-problems-on-arrays__4-sum-problem",
+          "name": "4-Sum Problem",
+          "link": "https://takeuforward.org/data-structure/4-sum-find-quads-that-add-up-to-a-target-value/",
+          "difficulty": "Hard"
+        },
+        {
+          "key": "step-03-solve-problems-on-arrays__largest-subarray-with-0-sum",
+          "name": "Largest Subarray with 0 Sum",
+          "link": "https://takeuforward.org/data-structure/length-of-the-longest-subarray-with-zero-sum/",
+          "difficulty": "Medium"
+        },
+        {
+          "key": "step-03-solve-problems-on-arrays__count-number-of-subarrays-with-given-xor-k",
+          "name": "Count number of subarrays with given xor K",
+          "link": "https://takeuforward.org/data-structure/count-the-number-of-subarrays-with-given-xor-k/",
+          "difficulty": "Hard"
+        },
+        {
+          "key": "step-03-solve-problems-on-arrays__merge-overlapping-subintervals",
+          "name": "Merge Overlapping Subintervals",
+          "link": "https://takeuforward.org/data-structure/merge-overlapping-sub-intervals/",
+          "difficulty": "Medium"
+        },
+        {
+          "key": "step-03-solve-problems-on-arrays__merge-two-sorted-arrays-without-extra-space",
+          "name": "Merge two sorted arrays without extra space",
+          "link": "https://takeuforward.org/data-structure/merge-two-sorted-arrays-without-extra-space/",
+          "difficulty": "Medium"
+        },
+        {
+          "key": "step-03-solve-problems-on-arrays__find-the-repeating-and-missing-number",
+          "name": "Find the repeating and missing number",
+          "link": "https://takeuforward.org/data-structure/find-the-repeating-and-missing-numbers/",
+          "difficulty": "Hard"
+        },
+        {
+          "key": "step-03-solve-problems-on-arrays__count-inversions",
+          "name": "Count Inversions",
+          "link": "https://takeuforward.org/data-structure/count-inversions-in-an-array/",
+          "difficulty": "Hard"
+        },
+        {
+          "key": "step-03-solve-problems-on-arrays__reverse-pairs",
+          "name": "Reverse Pairs",
+          "link": "https://takeuforward.org/data-structure/count-reverse-pairs/",
+          "difficulty": "Hard"
+        },
+        {
+          "key": "step-03-solve-problems-on-arrays__maximum-product-subarray",
+          "name": "Maximum Product Subarray",
+          "link": "https://takeuforward.org/data-structure/maximum-product-subarray-in-an-array/",
+          "difficulty": "Easy"
+        }
+      ]
+    },
+    {
+      "key": "step-04-binary-search",
+      "order": 4,
+      "title": "Binary Search",
+      "problems": [
+        {
+          "key": "step-04-binary-search__binary-search-to-find-x-in-sorted-array",
+          "name": "Binary Search to find X in sorted array",
+          "link": "https://takeuforward.org/data-structure/binary-search-explained/",
+          "difficulty": "Easy"
+        },
+        {
+          "key": "step-04-binary-search__implement-lower-bound",
+          "name": "Implement Lower Bound",
+          "link": "https://takeuforward.org/arrays/implement-lower-bound-bs-2/",
+          "difficulty": "Easy"
+        },
+        {
+          "key": "step-04-binary-search__implement-upper-bound",
+          "name": "Implement Upper Bound",
+          "link": "https://takeuforward.org/arrays/implement-upper-bound/",
+          "difficulty": "Easy"
+        },
+        {
+          "key": "step-04-binary-search__search-insert-position",
+          "name": "Search Insert Position",
+          "link": "https://takeuforward.org/arrays/search-insert-position/",
+          "difficulty": "Easy"
+        },
+        {
+          "key": "step-04-binary-search__floor-ceil-in-sorted-array",
+          "name": "Floor/Ceil in Sorted Array",
+          "link": "https://takeuforward.org/arrays/floor-and-ceil-in-sorted-array/",
+          "difficulty": "Medium"
+        },
+        {
+          "key": "step-04-binary-search__find-the-first-or-last-occurrence-of-a-given-number-in-a-sorted-array",
+          "name": "Find the first or last occurrence of a given number in a sorted array",
+          "link": "https://takeuforward.org/data-structure/last-occurrence-in-a-sorted-array/",
+          "difficulty": "Easy"
+        },
+        {
+          "key": "step-04-binary-search__count-occurrences-of-a-number-in-a-sorted-array-with-duplicates",
+          "name": "Count occurrences of a number in a sorted array with duplicates",
+          "link": "https://takeuforward.org/data-structure/count-occurrences-in-sorted-array/",
+          "difficulty": "Easy"
+        },
+        {
+          "key": "step-04-binary-search__search-in-rotated-sorted-array-i",
+          "name": "Search in Rotated Sorted Array I",
+          "link": "https://takeuforward.org/data-structure/search-element-in-a-rotated-sorted-array/",
+          "difficulty": "Medium"
+        },
+        {
+          "key": "step-04-binary-search__search-in-rotated-sorted-array-ii",
+          "name": "Search in Rotated Sorted Array II",
+          "link": "https://takeuforward.org/arrays/search-element-in-rotated-sorted-array-ii/",
+          "difficulty": "Medium"
+        },
+        {
+          "key": "step-04-binary-search__find-minimum-in-rotated-sorted-array",
+          "name": "Find minimum in Rotated Sorted Array",
+          "link": "https://takeuforward.org/data-structure/minimum-in-rotated-sorted-array/",
+          "difficulty": "Medium"
+        },
+        {
+          "key": "step-04-binary-search__find-out-how-many-times-has-an-array-been-rotated",
+          "name": "Find out how many times has an array been rotated",
+          "link": "https://takeuforward.org/arrays/find-out-how-many-times-the-array-has-been-rotated/",
+          "difficulty": "Easy"
+        },
+        {
+          "key": "step-04-binary-search__single-element-in-a-sorted-array",
+          "name": "Single element in a Sorted Array",
+          "link": "https://takeuforward.org/data-structure/search-single-element-in-a-sorted-array/",
+          "difficulty": "Easy"
+        },
+        {
+          "key": "step-04-binary-search__find-peak-element",
+          "name": "Find peak element",
+          "link": "https://takeuforward.org/data-structure/peak-element-in-array/",
+          "difficulty": "Hard"
+        },
+        {
+          "key": "step-04-binary-search__find-square-root-of-a-number-in-log-n",
+          "name": "Find square root of a number in log n",
+          "link": "https://takeuforward.org/binary-search/finding-sqrt-of-a-number-using-binary-search/",
+          "difficulty": "Medium"
+        },
+        {
+          "key": "step-04-binary-search__find-the-nth-root-of-a-number-using-binary-search",
+          "name": "Find the Nth root of a number using binary search",
+          "link": "https://takeuforward.org/data-structure/nth-root-of-a-number-using-binary-search/",
+          "difficulty": "Medium"
+        },
+        {
+          "key": "step-04-binary-search__koko-eating-bananas",
+          "name": "Koko Eating Bananas",
+          "link": "https://takeuforward.org/binary-search/koko-eating-bananas/",
+          "difficulty": "Hard"
+        },
+        {
+          "key": "step-04-binary-search__minimum-days-to-make-m-bouquets",
+          "name": "Minimum days to make M bouquets",
+          "link": "https://takeuforward.org/arrays/minimum-days-to-make-m-bouquets/",
+          "difficulty": "Hard"
+        },
+        {
+          "key": "step-04-binary-search__find-the-smallest-divisor",
+          "name": "Find the smallest Divisor",
+          "link": "https://takeuforward.org/arrays/find-the-smallest-divisor-given-a-threshold/",
+          "difficulty": "Easy"
+        },
+        {
+          "key": "step-04-binary-search__capacity-to-ship-packages-within-d-days",
+          "name": "Capacity to Ship Packages within D Days",
+          "link": "https://takeuforward.org/arrays/capacity-to-ship-packages-within-d-days/",
+          "difficulty": "Hard"
+        },
+        {
+          "key": "step-04-binary-search__kth-missing-positive-number",
+          "name": "Kth Missing Positive Number",
+          "link": "https://takeuforward.org/arrays/kth-missing-positive-number/",
+          "difficulty": "Easy"
+        },
+        {
+          "key": "step-04-binary-search__aggressive-cows",
+          "name": "Aggressive Cows",
+          "link": "https://takeuforward.org/data-structure/aggressive-cows-detailed-solution/",
+          "difficulty": "Hard"
+        },
+        {
+          "key": "step-04-binary-search__book-allocation-problem",
+          "name": "Book Allocation Problem",
+          "link": "https://takeuforward.org/data-structure/allocate-minimum-number-of-pages/",
+          "difficulty": "Hard"
+        },
+        {
+          "key": "step-04-binary-search__split-array-largest-sum",
+          "name": "Split array - Largest Sum",
+          "link": "https://takeuforward.org/arrays/split-array-largest-sum/",
+          "difficulty": "Hard"
+        },
+        {
+          "key": "step-04-binary-search__painter-s-partition",
+          "name": "Painter's partition",
+          "link": "https://takeuforward.org/arrays/painters-partition-problem/",
+          "difficulty": "Hard"
+        },
+        {
+          "key": "step-04-binary-search__minimize-max-distance-to-gas-station",
+          "name": "Minimize Max Distance to Gas Station",
+          "link": "https://takeuforward.org/arrays/minimise-maximum-distance-between-gas-stations/",
+          "difficulty": "Hard"
+        },
+        {
+          "key": "step-04-binary-search__median-of-2-sorted-arrays",
+          "name": "Median of 2 sorted arrays",
+          "link": "https://takeuforward.org/data-structure/median-of-two-sorted-arrays-of-different-sizes/",
+          "difficulty": "Hard"
+        },
+        {
+          "key": "step-04-binary-search__kth-element-of-2-sorted-arrays",
+          "name": "Kth element of 2 sorted arrays",
+          "link": "https://takeuforward.org/data-structure/k-th-element-of-two-sorted-arrays/",
+          "difficulty": "Medium"
+        },
+        {
+          "key": "step-04-binary-search__find-the-row-with-maximum-number-of-1-s",
+          "name": "Find the row with maximum number of 1's",
+          "link": "https://takeuforward.org/arrays/find-the-row-with-maximum-number-of-1s/",
+          "difficulty": "Easy"
+        },
+        {
+          "key": "step-04-binary-search__search-in-a-2-d-matrix",
+          "name": "Search in a 2 D matrix",
+          "link": "https://takeuforward.org/data-structure/search-in-a-sorted-2d-matrix/",
+          "difficulty": "Medium"
+        },
+        {
+          "key": "step-04-binary-search__search-in-a-row-and-column-wise-sorted-matrix",
+          "name": "Search in a row and column wise sorted matrix",
+          "link": "https://takeuforward.org/arrays/search-in-a-row-and-column-wise-sorted-matrix/",
+          "difficulty": "Medium"
+        },
+        {
+          "key": "step-04-binary-search__find-peak-element-2d-matrix",
+          "name": "Find Peak Element (2D Matrix)",
+          "link": "https://takeuforward.org/plus/dsa/problems/find-peak-element",
+          "difficulty": "Hard"
+        },
+        {
+          "key": "step-04-binary-search__matrix-median",
+          "name": "Matrix Median",
+          "link": "https://takeuforward.org/data-structure/median-of-row-wise-sorted-matrix/",
+          "difficulty": "Hard"
+        }
+      ]
+    },
+    {
+      "key": "step-05-strings",
+      "order": 5,
+      "title": "Strings",
+      "problems": [
+        {
+          "key": "step-05-strings__remove-outermost-paranthesis",
+          "name": "Remove outermost Paranthesis",
+          "link": "https://takeuforward.org/plus/dsa/problems/remove-outermost-parentheses",
+          "difficulty": "Easy"
+        },
+        {
+          "key": "step-05-strings__reverse-words-in-a-given-string-palindrome-check",
+          "name": "Reverse words in a given string / Palindrome Check",
+          "link": "https://takeuforward.org/data-structure/reverse-words-in-a-string/",
+          "difficulty": "Easy"
+        },
+        {
+          "key": "step-05-strings__largest-odd-number-in-a-string",
+          "name": "Largest odd number in a string",
+          "link": "https://takeuforward.org/plus/dsa/problems/largest-odd-number-in-a-string",
+          "difficulty": "Easy"
+        },
+        {
+          "key": "step-05-strings__longest-common-prefix",
+          "name": "Longest Common Prefix",
+          "link": "https://takeuforward.org/plus/dsa/problems/longest-common-prefix",
+          "difficulty": "Easy"
+        },
+        {
+          "key": "step-05-strings__isomorphic-string",
+          "name": "Isomorphic String",
+          "link": "https://takeuforward.org/plus/dsa/problems/isomorphic-string",
+          "difficulty": "Easy"
+        },
+        {
+          "key": "step-05-strings__check-whether-one-string-is-a-rotation-of-another",
+          "name": "check whether one string is a rotation of another",
+          "link": "https://takeuforward.org/plus/dsa/problems/rotate-string",
+          "difficulty": "Medium"
+        },
+        {
+          "key": "step-05-strings__check-if-two-strings-are-anagram-of-each-other",
+          "name": "Check if two strings are anagram of each other",
+          "link": "https://takeuforward.org/data-structure/check-if-two-strings-are-anagrams-of-each-other/",
+          "difficulty": "Medium"
+        },
+        {
+          "key": "step-05-strings__sort-characters-by-frequency",
+          "name": "Sort Characters by frequency",
+          "link": "https://takeuforward.org/plus/dsa/problems/sort-characters-by-frequency",
+          "difficulty": "Easy"
+        },
+        {
+          "key": "step-05-strings__maximum-nesting-depth-of-paranthesis",
+          "name": "Maximum Nesting Depth of Paranthesis",
+          "link": "https://takeuforward.org/plus/dsa/problems/maximum-nesting-depth-of-the-parentheses",
+          "difficulty": "Easy"
+        },
+        {
+          "key": "step-05-strings__roman-number-to-integer-and-vice-versa",
+          "name": "Roman Number to Integer and vice versa",
+          "link": "https://takeuforward.org/plus/dsa/problems/roman-to-integer",
+          "difficulty": "Easy"
+        },
+        {
+          "key": "step-05-strings__implement-atoi",
+          "name": "Implement Atoi",
+          "link": "https://takeuforward.org/plus/dsa/problems/string-to-integer-atoi",
+          "difficulty": "Medium"
+        },
+        {
+          "key": "step-05-strings__count-number-of-substrings",
+          "name": "Count Number of Substrings",
+          "link": "",
+          "difficulty": "Medium"
+        },
+        {
+          "key": "step-05-strings__longest-palindromic-substring-do-it-without-dp",
+          "name": "Longest Palindromic Substring[Do it without DP]",
+          "link": "",
+          "difficulty": "Hard"
+        },
+        {
+          "key": "step-05-strings__sum-of-beauty-of-all-substring",
+          "name": "Sum of Beauty of all substring",
+          "link": "https://takeuforward.org/plus/dsa/problems/sum-of-beauty-of-all-substrings",
+          "difficulty": "Medium"
+        },
+        {
+          "key": "step-05-strings__reverse-every-word-in-a-string",
+          "name": "Reverse Every Word in A String",
+          "link": "https://takeuforward.org/plus/dsa/problems/reverse-every-word-in-a-string",
+          "difficulty": "Easy"
+        }
+      ]
+    },
+    {
+      "key": "step-06-learn-linkedlist",
+      "order": 6,
+      "title": "Learn LinkedList",
+      "problems": [
+        {
+          "key": "step-06-learn-linkedlist__introduction-to-linkedlist-learn-about-struct-and-how-is-node-represented",
+          "name": "Introduction to LinkedList, learn about struct, and how is node represented",
+          "link": "https://takeuforward.org/linked-list/linked-list-introduction",
+          "difficulty": "Easy"
+        },
+        {
+          "key": "step-06-learn-linkedlist__inserting-a-node-in-linkedlist",
+          "name": "Inserting a node in LinkedList",
+          "link": "https://takeuforward.org/linked-list/insert-at-the-head-of-a-linked-list",
+          "difficulty": "Easy"
+        },
+        {
+          "key": "step-06-learn-linkedlist__deleting-a-node-in-linkedlist",
+          "name": "Deleting a node in LinkedList",
+          "link": "https://takeuforward.org/data-structure/delete-last-node-of-linked-list/",
+          "difficulty": "Medium"
+        },
+        {
+          "key": "step-06-learn-linkedlist__find-the-length-of-the-linkedlist-learn-traversal",
+          "name": "Find the length of the linkedlist [learn traversal]",
+          "link": "https://takeuforward.org/linked-list/find-the-length-of-a-linked-list",
+          "difficulty": "Easy"
+        },
+        {
+          "key": "step-06-learn-linkedlist__search-an-element-in-the-ll",
+          "name": "Search an element in the LL",
+          "link": "https://takeuforward.org/linked-list/search-an-element-in-a-linked-list",
+          "difficulty": "Easy"
+        },
+        {
+          "key": "step-06-learn-linkedlist__introduction-to-dll-learn-about-struct-and-how-is-node-represented",
+          "name": "Introduction to DLL, learn about struct, and how is node represented",
+          "link": "https://takeuforward.org/linked-list/introduction-to-doubly-linked-list",
+          "difficulty": "Easy"
+        },
+        {
+          "key": "step-06-learn-linkedlist__insert-a-node-in-dll",
+          "name": "Insert a node in DLL",
+          "link": "https://takeuforward.org/data-structure/insert-at-end-of-doubly-linked-list/",
+          "difficulty": "Easy"
+        },
+        {
+          "key": "step-06-learn-linkedlist__delete-a-node-in-dll",
+          "name": "Delete a node in DLL",
+          "link": "https://takeuforward.org/data-structure/delete-last-node-of-a-doubly-linked-list/",
+          "difficulty": "Medium"
+        },
+        {
+          "key": "step-06-learn-linkedlist__reverse-a-dll",
+          "name": "Reverse a DLL",
+          "link": "https://takeuforward.org/data-structure/reverse-a-doubly-linked-list/",
+          "difficulty": "Medium"
+        },
+        {
+          "key": "step-06-learn-linkedlist__middle-of-a-linkedlist-tortoisehare-method",
+          "name": "Middle of a LinkedList [TortoiseHare Method]",
+          "link": "https://takeuforward.org/data-structure/find-middle-element-in-a-linked-list/",
+          "difficulty": "Easy"
+        },
+        {
+          "key": "step-06-learn-linkedlist__reverse-a-linkedlist-iterative",
+          "name": "Reverse a LinkedList [Iterative]",
+          "link": "https://takeuforward.org/data-structure/reverse-a-linked-list/",
+          "difficulty": "Easy"
+        },
+        {
+          "key": "step-06-learn-linkedlist__reverse-a-ll-recursive",
+          "name": "Reverse a LL [Recursive]",
+          "link": "https://takeuforward.org/data-structure/reverse-a-linked-list/",
+          "difficulty": "Easy"
+        },
+        {
+          "key": "step-06-learn-linkedlist__detect-a-loop-in-ll",
+          "name": "Detect a loop in LL",
+          "link": "https://takeuforward.org/data-structure/detect-a-cycle-in-a-linked-list/",
+          "difficulty": "Medium"
+        },
+        {
+          "key": "step-06-learn-linkedlist__find-the-starting-point-in-ll",
+          "name": "Find the starting point in LL",
+          "link": "https://takeuforward.org/data-structure/starting-point-of-loop-in-a-linked-list/",
+          "difficulty": "Medium"
+        },
+        {
+          "key": "step-06-learn-linkedlist__length-of-loop-in-ll",
+          "name": "Length of Loop in LL",
+          "link": "https://takeuforward.org/linked-list/length-of-loop-in-linked-list",
+          "difficulty": "Easy"
+        },
+        {
+          "key": "step-06-learn-linkedlist__check-if-ll-is-palindrome-or-not",
+          "name": "Check if LL is palindrome or not",
+          "link": "https://takeuforward.org/data-structure/check-if-given-linked-list-is-plaindrome/",
+          "difficulty": "Medium"
+        },
+        {
+          "key": "step-06-learn-linkedlist__segrregate-odd-and-even-nodes-in-ll",
+          "name": "Segrregate odd and even nodes in LL",
+          "link": "https://takeuforward.org/data-structure/segregate-even-and-odd-nodes-in-linkedlist",
+          "difficulty": "Medium"
+        },
+        {
+          "key": "step-06-learn-linkedlist__remove-nth-node-from-the-back-of-the-ll",
+          "name": "Remove Nth node from the back of the LL",
+          "link": "https://takeuforward.org/data-structure/remove-n-th-node-from-the-end-of-a-linked-list/",
+          "difficulty": "Medium"
+        },
+        {
+          "key": "step-06-learn-linkedlist__delete-the-middle-node-of-ll",
+          "name": "Delete the middle node of LL",
+          "link": "https://takeuforward.org/linked-list/delete-the-middle-node-of-the-linked-list",
+          "difficulty": "Medium"
+        },
+        {
+          "key": "step-06-learn-linkedlist__sort-ll",
+          "name": "Sort LL",
+          "link": "https://takeuforward.org/linked-list/sort-a-linked-list",
+          "difficulty": "Medium"
+        },
+        {
+          "key": "step-06-learn-linkedlist__sort-a-ll-of-0-s-1-s-and-2-s-by-changing-links",
+          "name": "Sort a LL of 0's 1's and 2's by changing links",
+          "link": "https://takeuforward.org/plus/dsa/problems/sort-a-ll-of-0's-1's-and-2's",
+          "difficulty": "Medium"
+        },
+        {
+          "key": "step-06-learn-linkedlist__find-the-intersection-point-of-y-ll",
+          "name": "Find the intersection point of Y LL",
+          "link": "https://takeuforward.org/data-structure/find-intersection-of-two-linked-lists/",
+          "difficulty": "Medium"
+        },
+        {
+          "key": "step-06-learn-linkedlist__add-1-to-a-number-represented-by-ll",
+          "name": "Add 1 to a number represented by LL",
+          "link": "https://takeuforward.org/plus/dsa/problems/add-one-to-a-number-represented-by-ll/",
+          "difficulty": "Medium"
+        },
+        {
+          "key": "step-06-learn-linkedlist__add-2-numbers-in-ll",
+          "name": "Add 2 numbers in LL",
+          "link": "https://takeuforward.org/data-structure/add-two-numbers-represented-as-linked-lists/",
+          "difficulty": "Medium"
+        },
+        {
+          "key": "step-06-learn-linkedlist__delete-all-occurrences-of-a-key-in-dll",
+          "name": "Delete all occurrences of a key in DLL",
+          "link": "https://takeuforward.org/plus/dsa/problems/delete-all-occurrences-of-a-key-in-dll",
+          "difficulty": "Medium"
+        },
+        {
+          "key": "step-06-learn-linkedlist__find-pairs-with-given-sum-in-dll",
+          "name": "Find pairs with given sum in DLL",
+          "link": "https://takeuforward.org/plus/dsa/problems/find-pairs-with-given-sum-in-doubly-linked-list",
+          "difficulty": "Medium"
+        },
+        {
+          "key": "step-06-learn-linkedlist__remove-duplicates-from-sorted-dll",
+          "name": "Remove duplicates from sorted DLL",
+          "link": "https://takeuforward.org/plus/dsa/problems/remove-duplicated-from-sorted-dll",
+          "difficulty": "Medium"
+        },
+        {
+          "key": "step-06-learn-linkedlist__reverse-ll-in-group-of-given-size-k",
+          "name": "Reverse LL in group of given size K",
+          "link": "https://takeuforward.org/data-structure/reverse-linked-list-in-groups-of-size-k/",
+          "difficulty": "Hard"
+        },
+        {
+          "key": "step-06-learn-linkedlist__rotate-a-ll",
+          "name": "Rotate a LL",
+          "link": "https://takeuforward.org/data-structure/rotate-a-linked-list/",
+          "difficulty": "Medium"
+        },
+        {
+          "key": "step-06-learn-linkedlist__flattening-of-ll",
+          "name": "Flattening of LL",
+          "link": "https://takeuforward.org/data-structure/flattening-a-linked-list/",
+          "difficulty": "Hard"
+        },
+        {
+          "key": "step-06-learn-linkedlist__clone-a-linked-list-with-random-and-next-pointer",
+          "name": "Clone a Linked List with random and next pointer",
+          "link": "https://takeuforward.org/data-structure/clone-linked-list-with-random-and-next-pointer/",
+          "difficulty": "Hard"
+        }
+      ]
+    },
+    {
+      "key": "step-07-recursion",
+      "order": 7,
+      "title": "Recursion",
+      "problems": [
+        {
+          "key": "step-07-recursion__recursive-implementation-of-atoi",
+          "name": "Recursive Implementation of atoi()",
+          "link": "https://takeuforward.org/plus/dsa/problems/string-to-integer-atoi",
+          "difficulty": "Hard"
+        },
+        {
+          "key": "step-07-recursion__pow-x-n",
+          "name": "Pow(x, n)",
+          "link": "https://takeuforward.org/data-structure/implement-powxn-x-raised-to-the-power-n/",
+          "difficulty": "Medium"
+        },
+        {
+          "key": "step-07-recursion__count-good-numbers",
+          "name": "Count Good numbers",
+          "link": "https://takeuforward.org/plus/dsa/problems/count-good-numbers",
+          "difficulty": "Easy"
+        },
+        {
+          "key": "step-07-recursion__sort-a-stack-using-recursion",
+          "name": "Sort a stack using recursion",
+          "link": "https://takeuforward.org/plus/dsa/problems/sort-a-stack",
+          "difficulty": "Medium"
+        },
+        {
+          "key": "step-07-recursion__reverse-a-stack-using-recursion",
+          "name": "Reverse a stack using recursion",
+          "link": "https://takeuforward.org/plus/dsa/problems/reverse-a-stack",
+          "difficulty": "Easy"
+        },
+        {
+          "key": "step-07-recursion__generate-all-binary-strings",
+          "name": "Generate all binary strings",
+          "link": "https://takeuforward.org/plus/dsa/problems/generate-binary-strings-without-consecutive-1s",
+          "difficulty": "Medium"
+        },
+        {
+          "key": "step-07-recursion__generate-paranthesis",
+          "name": "Generate Paranthesis",
+          "link": "https://takeuforward.org/plus/dsa/problems/generate-paranthesis",
+          "difficulty": "Medium"
+        },
+        {
+          "key": "step-07-recursion__print-all-subsequences-power-set",
+          "name": "Print all subsequences/Power Set",
+          "link": "https://takeuforward.org/data-structure/power-set-print-all-the-possible-subsequences-of-the-string/",
+          "difficulty": "Medium"
+        },
+        {
+          "key": "step-07-recursion__learn-all-patterns-of-subsequences-theory",
+          "name": "Learn All Patterns of Subsequences (Theory)",
+          "link": "",
+          "difficulty": "Medium"
+        },
+        {
+          "key": "step-07-recursion__count-all-subsequences-with-sum-k",
+          "name": "Count all subsequences with sum K",
+          "link": "https://takeuforward.org/plus/dsa/problems/count-all-subsequences-with-sum-k",
+          "difficulty": "Hard"
+        },
+        {
+          "key": "step-07-recursion__check-if-there-exists-a-subsequence-with-sum-k",
+          "name": "Check if there exists a subsequence with sum K",
+          "link": "https://takeuforward.org/plus/dsa/problems/check-if-there-exists-a-subsequence-with-sum-k",
+          "difficulty": "Medium"
+        },
+        {
+          "key": "step-07-recursion__combination-sum",
+          "name": "Combination Sum",
+          "link": "https://takeuforward.org/data-structure/combination-sum-1/",
+          "difficulty": "Medium"
+        },
+        {
+          "key": "step-07-recursion__combination-sum-ii",
+          "name": "Combination Sum-II",
+          "link": "https://takeuforward.org/data-structure/combination-sum-ii-find-all-unique-combinations/",
+          "difficulty": "Medium"
+        },
+        {
+          "key": "step-07-recursion__subset-sum-i",
+          "name": "Subset Sum-I",
+          "link": "https://takeuforward.org/data-structure/subset-sum-sum-of-all-subsets/",
+          "difficulty": "Medium"
+        },
+        {
+          "key": "step-07-recursion__subset-sum-ii",
+          "name": "Subset Sum-II",
+          "link": "https://takeuforward.org/data-structure/subset-ii-print-all-the-unique-subsets/",
+          "difficulty": "Medium"
+        },
+        {
+          "key": "step-07-recursion__combination-sum-iii",
+          "name": "Combination Sum - III",
+          "link": "https://takeuforward.org/plus/dsa/problems/combination-sum-iii",
+          "difficulty": "Hard"
+        },
+        {
+          "key": "step-07-recursion__letter-combinations-of-a-phone-number",
+          "name": "Letter Combinations of a Phone number",
+          "link": "https://takeuforward.org/plus/dsa/problems/letter-combinations-of-a-phone-number",
+          "difficulty": "Medium"
+        },
+        {
+          "key": "step-07-recursion__palindrome-partitioning",
+          "name": "Palindrome Partitioning",
+          "link": "https://takeuforward.org/data-structure/palindrome-partitioning/",
+          "difficulty": "Medium"
+        },
+        {
+          "key": "step-07-recursion__word-search",
+          "name": "Word Search",
+          "link": "https://takeuforward.org/data-structure/word-search-leetcode/",
+          "difficulty": "Medium"
+        },
+        {
+          "key": "step-07-recursion__n-queen",
+          "name": "N Queen",
+          "link": "https://takeuforward.org/data-structure/n-queen-problem-return-all-distinct-solutions-to-the-n-queens-puzzle/",
+          "difficulty": "Hard"
+        },
+        {
+          "key": "step-07-recursion__rat-in-a-maze",
+          "name": "Rat in a Maze",
+          "link": "https://takeuforward.org/data-structure/rat-in-a-maze/",
+          "difficulty": "Hard"
+        },
+        {
+          "key": "step-07-recursion__word-break",
+          "name": "Word Break",
+          "link": "https://takeuforward.org/plus/dsa/problems/word-break",
+          "difficulty": "Medium"
+        },
+        {
+          "key": "step-07-recursion__m-coloring-problem",
+          "name": "M Coloring Problem",
+          "link": "https://takeuforward.org/data-structure/m-coloring-problem/",
+          "difficulty": "Hard"
+        },
+        {
+          "key": "step-07-recursion__sudoko-solver",
+          "name": "Sudoko Solver",
+          "link": "https://takeuforward.org/data-structure/sudoku-solver/",
+          "difficulty": "Hard"
+        },
+        {
+          "key": "step-07-recursion__expression-add-operators",
+          "name": "Expression Add Operators",
+          "link": "https://takeuforward.org/plus/dsa/problems/expression-add-operators",
+          "difficulty": "Hard"
+        }
+      ]
+    },
+    {
+      "key": "step-08-bit-manipulation",
+      "order": 8,
+      "title": "Bit Manipulation",
+      "problems": [
+        {
+          "key": "step-08-bit-manipulation__introduction-to-bit-manipulation-theory",
+          "name": "Introduction to Bit Manipulation [Theory]",
+          "link": "https://takeuforward.org/plus/dsa/problems/introduction-to-bits-and-tricks",
+          "difficulty": "Easy"
+        },
+        {
+          "key": "step-08-bit-manipulation__check-if-the-i-th-bit-is-set-or-not",
+          "name": "Check if the i-th bit is set or not",
+          "link": "https://takeuforward.org/plus/dsa/problems/check-if-the-i-th-bit-is-set-or-not",
+          "difficulty": "Easy"
+        },
+        {
+          "key": "step-08-bit-manipulation__check-if-a-number-is-odd-or-not",
+          "name": "Check if a number is odd or not",
+          "link": "https://takeuforward.org/plus/dsa/problems/check-if-a-number-is-odd-or-not",
+          "difficulty": "Easy"
+        },
+        {
+          "key": "step-08-bit-manipulation__check-if-a-number-is-power-of-2-or-not",
+          "name": "Check if a number is power of 2 or not",
+          "link": "https://takeuforward.org/plus/dsa/problems/check-if-a-number-is-power-of-2-or-not",
+          "difficulty": "Easy"
+        },
+        {
+          "key": "step-08-bit-manipulation__count-the-number-of-set-bits",
+          "name": "Count the number of set bits",
+          "link": "https://takeuforward.org/plus/dsa/problems/count-the-number-of-set-bits",
+          "difficulty": "Easy"
+        },
+        {
+          "key": "step-08-bit-manipulation__set-unset-the-rightmost-unset-bit",
+          "name": "Set/Unset the rightmost unset bit",
+          "link": "https://takeuforward.org/plus/dsa/problems/swap-two-numbers",
+          "difficulty": "Easy"
+        },
+        {
+          "key": "step-08-bit-manipulation__swap-two-numbers",
+          "name": "Swap two numbers",
+          "link": "https://takeuforward.org/plus/dsa/problems/prime-factorisation-of-a-number",
+          "difficulty": "Easy"
+        },
+        {
+          "key": "step-08-bit-manipulation__divide-two-integers-without-using-multiplication-division-and-mod-operator",
+          "name": "Divide two integers without using multiplication, division and mod operator",
+          "link": "https://takeuforward.org/plus/dsa/problems/divide-two-numbers-without-multiplication-and-division",
+          "difficulty": "Medium"
+        },
+        {
+          "key": "step-08-bit-manipulation__count-number-of-bits-to-be-flipped-to-convert-a-to-b",
+          "name": "Count number of bits to be flipped to convert A to B",
+          "link": "https://takeuforward.org/plus/dsa/problems/minimum-bit-flips-to-convert-number",
+          "difficulty": "Medium"
+        },
+        {
+          "key": "step-08-bit-manipulation__find-the-number-that-appears-odd-number-of-times",
+          "name": "Find the number that appears odd number of times",
+          "link": "https://takeuforward.org/plus/dsa/problems/single-number---i",
+          "difficulty": "Easy"
+        },
+        {
+          "key": "step-08-bit-manipulation__power-set",
+          "name": "Power Set",
+          "link": "https://takeuforward.org/plus/dsa/problems/power-set-dup",
+          "difficulty": "Medium"
+        },
+        {
+          "key": "step-08-bit-manipulation__find-xor-of-numbers-from-l-to-r",
+          "name": "Find xor of numbers from L to R",
+          "link": "https://takeuforward.org/plus/dsa/problems/xor-of-numbers-in-a-given-range",
+          "difficulty": "Easy"
+        },
+        {
+          "key": "step-08-bit-manipulation__find-the-two-numbers-appearing-odd-number-of-times",
+          "name": "Find the two numbers appearing odd number of times",
+          "link": "https://takeuforward.org/plus/dsa/problems/single-number---iii",
+          "difficulty": "Easy"
+        },
+        {
+          "key": "step-08-bit-manipulation__print-prime-factors-of-a-number",
+          "name": "Print Prime Factors of a Number",
+          "link": "https://takeuforward.org/plus/dsa/problems/prime-factorisation-of-a-number",
+          "difficulty": "Easy"
+        },
+        {
+          "key": "step-08-bit-manipulation__all-divisors-of-a-number",
+          "name": "All Divisors of a Number",
+          "link": "https://takeuforward.org/plus/dsa/problems/divisors-of-a-number",
+          "difficulty": "Easy"
+        },
+        {
+          "key": "step-08-bit-manipulation__sieve-of-eratosthenes",
+          "name": "Sieve of Eratosthenes",
+          "link": "https://takeuforward.org/plus/dsa/problems/count-primes-in-range-l-to-r",
+          "difficulty": "Medium"
+        },
+        {
+          "key": "step-08-bit-manipulation__find-prime-factorisation-of-a-number-using-sieve",
+          "name": "Find Prime Factorisation of a Number using Sieve",
+          "link": "https://takeuforward.org/plus/dsa/problems/prime-factorisation-of-a-number",
+          "difficulty": "Medium"
+        },
+        {
+          "key": "step-08-bit-manipulation__power-n-x",
+          "name": "Power(n, x)",
+          "link": "https://takeuforward.org/plus/dsa/problems/pow(x,n)",
+          "difficulty": "Medium"
+        }
+      ]
+    },
+    {
+      "key": "step-09-stack-and-queues",
+      "order": 9,
+      "title": "Stack and Queues",
+      "problems": [
+        {
+          "key": "step-09-stack-and-queues__implement-stack-using-arrays",
+          "name": "Implement Stack using Arrays",
+          "link": "https://takeuforward.org/data-structure/implement-stack-using-array/",
+          "difficulty": "Easy"
+        },
+        {
+          "key": "step-09-stack-and-queues__implement-queue-using-arrays",
+          "name": "Implement Queue using Arrays",
+          "link": "https://takeuforward.org/data-structure/implement-queue-using-array/",
+          "difficulty": "Easy"
+        },
+        {
+          "key": "step-09-stack-and-queues__implement-stack-using-queue",
+          "name": "Implement Stack using Queue",
+          "link": "https://takeuforward.org/data-structure/implement-stack-using-single-queue/",
+          "difficulty": "Medium"
+        },
+        {
+          "key": "step-09-stack-and-queues__implement-queue-using-stack",
+          "name": "Implement Queue using Stack",
+          "link": "https://takeuforward.org/data-structure/implement-queue-using-stack/",
+          "difficulty": "Medium"
+        },
+        {
+          "key": "step-09-stack-and-queues__implement-stack-using-linkedlist",
+          "name": "Implement stack using Linkedlist",
+          "link": "https://takeuforward.org/data-structure/implement-stack-using-linked-list/",
+          "difficulty": "Easy"
+        },
+        {
+          "key": "step-09-stack-and-queues__implement-queue-using-linkedlist",
+          "name": "Implement queue using Linkedlist",
+          "link": "https://takeuforward.org/data-structure/implement-queue-using-linked-list/",
+          "difficulty": "Medium"
+        },
+        {
+          "key": "step-09-stack-and-queues__check-for-balanced-paranthesis",
+          "name": "Check for balanced paranthesis",
+          "link": "https://takeuforward.org/data-structure/check-for-balanced-parentheses/",
+          "difficulty": "Medium"
+        },
+        {
+          "key": "step-09-stack-and-queues__implement-min-stack",
+          "name": "Implement Min Stack",
+          "link": "https://takeuforward.org/data-structure/implement-min-stack-o2n-and-on-space-complexity/",
+          "difficulty": "Medium"
+        },
+        {
+          "key": "step-09-stack-and-queues__infix-to-postfix-conversion-using-stack",
+          "name": "Infix to Postfix Conversion using Stack",
+          "link": "https://takeuforward.org/data-structure/infix-to-postfix/",
+          "difficulty": "Medium"
+        },
+        {
+          "key": "step-09-stack-and-queues__prefix-to-infix-conversion",
+          "name": "Prefix to Infix Conversion",
+          "link": "https://takeuforward.org/strivers-a2z-dsa-course/strivers-a2z-dsa-course-sheet-2",
+          "difficulty": "Medium"
+        },
+        {
+          "key": "step-09-stack-and-queues__prefix-to-postfix-conversion",
+          "name": "Prefix to Postfix Conversion",
+          "link": "https://takeuforward.org/strivers-a2z-dsa-course/strivers-a2z-dsa-course-sheet-2",
+          "difficulty": "Medium"
+        },
+        {
+          "key": "step-09-stack-and-queues__postfix-to-prefix-conversion",
+          "name": "Postfix to Prefix Conversion",
+          "link": "https://takeuforward.org/strivers-a2z-dsa-course/strivers-a2z-dsa-course-sheet-2",
+          "difficulty": "Medium"
+        },
+        {
+          "key": "step-09-stack-and-queues__postfix-to-infix",
+          "name": "Postfix to Infix",
+          "link": "https://takeuforward.org/strivers-a2z-dsa-course/strivers-a2z-dsa-course-sheet-2",
+          "difficulty": "Medium"
+        },
+        {
+          "key": "step-09-stack-and-queues__convert-infix-to-prefix-notation",
+          "name": "Convert Infix To Prefix Notation",
+          "link": "https://takeuforward.org/data-structure/infix-to-prefix/",
+          "difficulty": "Medium"
+        },
+        {
+          "key": "step-09-stack-and-queues__next-greater-element",
+          "name": "Next Greater Element",
+          "link": "https://takeuforward.org/data-structure/next-greater-element-using-stack/",
+          "difficulty": "Easy"
+        },
+        {
+          "key": "step-09-stack-and-queues__next-greater-element-2",
+          "name": "Next Greater Element 2",
+          "link": "https://takeuforward.org/strivers-a2z-dsa-course/strivers-a2z-dsa-course-sheet-2",
+          "difficulty": "Medium"
+        },
+        {
+          "key": "step-09-stack-and-queues__next-smaller-element",
+          "name": "Next Smaller Element",
+          "link": "https://takeuforward.org/plus/dsa/problems/next-smaller-element",
+          "difficulty": "Easy"
+        },
+        {
+          "key": "step-09-stack-and-queues__number-of-nges-to-the-right",
+          "name": "Number of NGEs to the right",
+          "link": "https://takeuforward.org/plus/dsa/problems/next-greater-element",
+          "difficulty": "Easy"
+        },
+        {
+          "key": "step-09-stack-and-queues__trapping-rainwater",
+          "name": "Trapping Rainwater",
+          "link": "https://takeuforward.org/data-structure/trapping-rainwater/",
+          "difficulty": "Hard"
+        },
+        {
+          "key": "step-09-stack-and-queues__sum-of-subarray-minimum",
+          "name": "Sum of subarray minimum",
+          "link": "https://takeuforward.org/strivers-a2z-dsa-course/strivers-a2z-dsa-course-sheet-2",
+          "difficulty": "Medium"
+        },
+        {
+          "key": "step-09-stack-and-queues__asteroid-collision",
+          "name": "Asteroid Collision",
+          "link": "https://takeuforward.org/strivers-a2z-dsa-course/strivers-a2z-dsa-course-sheet-2",
+          "difficulty": "Medium"
+        },
+        {
+          "key": "step-09-stack-and-queues__sum-of-subarray-ranges",
+          "name": "Sum of subarray ranges",
+          "link": "https://takeuforward.org/strivers-a2z-dsa-course/strivers-a2z-dsa-course-sheet-2",
+          "difficulty": "Medium"
+        },
+        {
+          "key": "step-09-stack-and-queues__remove-k-digits",
+          "name": "Remove k Digits",
+          "link": "https://takeuforward.org/strivers-a2z-dsa-course/strivers-a2z-dsa-course-sheet-2",
+          "difficulty": "Medium"
+        },
+        {
+          "key": "step-09-stack-and-queues__largest-rectangle-in-a-histogram",
+          "name": "Largest rectangle in a histogram",
+          "link": "https://takeuforward.org/data-structure/area-of-largest-rectangle-in-histogram/",
+          "difficulty": "Medium"
+        },
+        {
+          "key": "step-09-stack-and-queues__maximal-rectangles",
+          "name": "Maximal Rectangles",
+          "link": "https://takeuforward.org/strivers-a2z-dsa-course/strivers-a2z-dsa-course-sheet-2",
+          "difficulty": "Hard"
+        },
+        {
+          "key": "step-09-stack-and-queues__sliding-window-maximum",
+          "name": "Sliding Window maximum",
+          "link": "https://takeuforward.org/data-structure/sliding-window-maximum/",
+          "difficulty": "Hard"
+        },
+        {
+          "key": "step-09-stack-and-queues__stock-span-problem",
+          "name": "Stock span problem",
+          "link": "https://takeuforward.org/strivers-a2z-dsa-course/strivers-a2z-dsa-course-sheet-2",
+          "difficulty": "Medium"
+        },
+        {
+          "key": "step-09-stack-and-queues__the-celebrity-problem",
+          "name": "The Celebrity Problem",
+          "link": "https://takeuforward.org/strivers-a2z-dsa-course/strivers-a2z-dsa-course-sheet-2",
+          "difficulty": "Hard"
+        },
+        {
+          "key": "step-09-stack-and-queues__lru-cache-important",
+          "name": "LRU cache (IMPORTANT)",
+          "link": "https://takeuforward.org/data-structure/implement-lru-cache/",
+          "difficulty": "Hard"
+        },
+        {
+          "key": "step-09-stack-and-queues__lfu-cache",
+          "name": "LFU cache",
+          "link": "https://takeuforward.org/plus/dsa/problems/lfu-cache",
+          "difficulty": "Hard"
+        }
+      ]
+    },
+    {
+      "key": "step-10-sliding-window-two-pointer-combined-problems",
+      "order": 10,
+      "title": "Sliding Window & Two Pointer Combined Problems",
+      "problems": [
+        {
+          "key": "step-10-sliding-window-two-pointer-combined-problems__longest-substring-without-repeating-characters",
+          "name": "Longest Substring Without Repeating Characters",
+          "link": "https://takeuforward.org/data-structure/length-of-longest-substring-without-any-repeating-character/",
+          "difficulty": "Medium"
+        },
+        {
+          "key": "step-10-sliding-window-two-pointer-combined-problems__max-consecutive-ones-iii",
+          "name": "Max Consecutive Ones III",
+          "link": "https://takeuforward.org/plus/dsa/problems/max-consecutive-ones-iii",
+          "difficulty": "Medium"
+        },
+        {
+          "key": "step-10-sliding-window-two-pointer-combined-problems__fruit-into-baskets",
+          "name": "Fruit Into Baskets",
+          "link": "https://takeuforward.org/plus/dsa/problems/fruit-into-baskets",
+          "difficulty": "Medium"
+        },
+        {
+          "key": "step-10-sliding-window-two-pointer-combined-problems__longest-repeating-character-replacement",
+          "name": "longest repeating character replacement",
+          "link": "https://takeuforward.org/plus/dsa/problems/longest-repeating-character-replacement",
+          "difficulty": "Medium"
+        },
+        {
+          "key": "step-10-sliding-window-two-pointer-combined-problems__binary-subarray-with-sum",
+          "name": "Binary subarray with sum",
+          "link": "https://takeuforward.org/plus/dsa/problems/binary-subarrays-with-sum",
+          "difficulty": "Easy"
+        },
+        {
+          "key": "step-10-sliding-window-two-pointer-combined-problems__count-number-of-nice-subarrays",
+          "name": "Count number of nice subarrays",
+          "link": "https://takeuforward.org/plus/dsa/problems/count-number-of-nice-subarrays",
+          "difficulty": "Medium"
+        },
+        {
+          "key": "step-10-sliding-window-two-pointer-combined-problems__number-of-substring-containing-all-three-characters",
+          "name": "Number of substring containing all three characters",
+          "link": "https://takeuforward.org/plus/dsa/problems/number-of-substrings-containing-all-three-characters",
+          "difficulty": "Medium"
+        },
+        {
+          "key": "step-10-sliding-window-two-pointer-combined-problems__maximum-point-you-can-obtain-from-cards",
+          "name": "Maximum point you can obtain from cards",
+          "link": "https://takeuforward.org/plus/dsa/problems/maximum-points-you-can-obtain-from-cards-",
+          "difficulty": "Medium"
+        },
+        {
+          "key": "step-10-sliding-window-two-pointer-combined-problems__longest-substring-with-at-most-k-distinct-characters",
+          "name": "Longest Substring with At Most K Distinct Characters",
+          "link": "https://takeuforward.org/plus/dsa/problems/longest-substring-with-at-most-k-distinct-characters",
+          "difficulty": "Medium"
+        },
+        {
+          "key": "step-10-sliding-window-two-pointer-combined-problems__subarray-with-k-different-integers",
+          "name": "Subarray with k different integers",
+          "link": "https://takeuforward.org/plus/dsa/problems/subarrays-with-k-different-integers",
+          "difficulty": "Hard"
+        },
+        {
+          "key": "step-10-sliding-window-two-pointer-combined-problems__minimum-window-substring",
+          "name": "Minimum Window Substring",
+          "link": "https://takeuforward.org/plus/dsa/problems/minimum-window-substring-",
+          "difficulty": "Hard"
+        },
+        {
+          "key": "step-10-sliding-window-two-pointer-combined-problems__minimum-window-subsequence",
+          "name": "Minimum Window Subsequence",
+          "link": "https://takeuforward.org/plus/dsa/problems/minimum-window-subsequence",
+          "difficulty": "Hard"
+        }
+      ]
+    },
+    {
+      "key": "step-11-heaps",
+      "order": 11,
+      "title": "Heaps",
+      "problems": [
+        {
+          "key": "step-11-heaps__introduction-to-priority-queues-using-binary-heaps",
+          "name": "Introduction to Priority Queues using Binary Heaps",
+          "link": "",
+          "difficulty": "Medium"
+        },
+        {
+          "key": "step-11-heaps__min-heap-and-max-heap-implementation",
+          "name": "Min Heap and Max Heap Implementation",
+          "link": "https://takeuforward.org/plus/dsa/problems/implement-min-heap",
+          "difficulty": "Medium"
+        },
+        {
+          "key": "step-11-heaps__check-if-an-array-represents-a-min-heap-or-not",
+          "name": "Check if an array represents a min-heap or not",
+          "link": "https://takeuforward.org/plus/dsa/problems/check-if-an-array-represents-a-min-heap-",
+          "difficulty": "Medium"
+        },
+        {
+          "key": "step-11-heaps__convert-min-heap-to-max-heap",
+          "name": "Convert min Heap to max Heap",
+          "link": "https://takeuforward.org/plus/dsa/problems/convert-min-heap-to-max-heap",
+          "difficulty": "Medium"
+        },
+        {
+          "key": "step-11-heaps__kth-largest-element-in-an-array-use-priority-queue",
+          "name": "Kth largest element in an array [use priority queue]",
+          "link": "https://takeuforward.org/data-structure/kth-largest-smallest-element-in-an-array/",
+          "difficulty": "Easy"
+        },
+        {
+          "key": "step-11-heaps__kth-smallest-element-in-an-array-use-priority-queue",
+          "name": "Kth smallest element in an array [use priority queue]",
+          "link": "https://takeuforward.org/data-structure/kth-largest-smallest-element-in-an-array/",
+          "difficulty": "Easy"
+        },
+        {
+          "key": "step-11-heaps__sort-k-sorted-array",
+          "name": "Sort K sorted array",
+          "link": "https://takeuforward.org/plus/dsa/problems/merge-k-sorted-lists",
+          "difficulty": "Easy"
+        },
+        {
+          "key": "step-11-heaps__merge-m-sorted-lists",
+          "name": "Merge M sorted Lists",
+          "link": "https://takeuforward.org/plus/dsa/problems/merge-k-sorted-lists",
+          "difficulty": "Hard"
+        },
+        {
+          "key": "step-11-heaps__replace-each-array-element-by-its-corresponding-rank",
+          "name": "Replace each array element by its corresponding rank",
+          "link": "https://takeuforward.org/data-structure/replace-elements-by-its-rank-in-the-array/",
+          "difficulty": "Easy"
+        },
+        {
+          "key": "step-11-heaps__task-scheduler",
+          "name": "Task Scheduler",
+          "link": "https://takeuforward.org/plus/dsa/problems/task-scheduler",
+          "difficulty": "Medium"
+        },
+        {
+          "key": "step-11-heaps__hands-of-straights",
+          "name": "Hands of Straights",
+          "link": "https://takeuforward.org/plus/dsa/problems/hand-of-straights",
+          "difficulty": "Medium"
+        },
+        {
+          "key": "step-11-heaps__design-twitter",
+          "name": "Design twitter",
+          "link": "https://takeuforward.org/plus/dsa/problems/design-twitter",
+          "difficulty": "Medium"
+        },
+        {
+          "key": "step-11-heaps__connect-n-ropes-with-minimal-cost",
+          "name": "Connect `n` ropes with minimal cost",
+          "link": "https://takeuforward.org/plus/dsa/problems/minimum-cost-to-connect-sticks",
+          "difficulty": "Medium"
+        },
+        {
+          "key": "step-11-heaps__kth-largest-element-in-a-stream-of-running-integers",
+          "name": "Kth largest element in a stream of running integers",
+          "link": "https://takeuforward.org/plus/dsa/problems/kth-largest-element-in-a-stream-of-running-integers",
+          "difficulty": "Easy"
+        },
+        {
+          "key": "step-11-heaps__maximum-sum-combination",
+          "name": "Maximum Sum Combination",
+          "link": "https://takeuforward.org/plus/dsa/problems/maximum-sum-combination",
+          "difficulty": "Medium"
+        },
+        {
+          "key": "step-11-heaps__find-median-from-data-stream",
+          "name": "Find Median from Data Stream",
+          "link": "https://takeuforward.org/plus/dsa/problems/find-median-from-data-stream",
+          "difficulty": "Hard"
+        },
+        {
+          "key": "step-11-heaps__k-most-frequent-elements",
+          "name": "K most frequent elements",
+          "link": "https://takeuforward.org/plus/dsa/problems/top-k-frequent-elements",
+          "difficulty": "Medium"
+        }
+      ]
+    },
+    {
+      "key": "step-12-greedy-algorithms",
+      "order": 12,
+      "title": "Greedy Algorithms",
+      "problems": [
+        {
+          "key": "step-12-greedy-algorithms__assign-cookies",
+          "name": "Assign Cookies",
+          "link": "https://takeuforward.org/Greedy/assign-cookies",
+          "difficulty": "Easy"
+        },
+        {
+          "key": "step-12-greedy-algorithms__fractional-knapsack-problem",
+          "name": "Fractional Knapsack Problem",
+          "link": "https://takeuforward.org/data-structure/fractional-knapsack-problem-greedy-approach/",
+          "difficulty": "Medium"
+        },
+        {
+          "key": "step-12-greedy-algorithms__greedy-algorithm-to-find-minimum-number-of-coins",
+          "name": "Greedy algorithm to find minimum number of coins",
+          "link": "https://takeuforward.org/data-structure/find-minimum-number-of-coins/",
+          "difficulty": "Medium"
+        },
+        {
+          "key": "step-12-greedy-algorithms__lemonade-change",
+          "name": "Lemonade Change",
+          "link": "https://takeuforward.org/Greedy/lemonade-change",
+          "difficulty": "Easy"
+        },
+        {
+          "key": "step-12-greedy-algorithms__valid-paranthesis-checker",
+          "name": "Valid Paranthesis Checker",
+          "link": "https://takeuforward.org/strivers-a2z-dsa-course/strivers-a2z-dsa-course-sheet-2",
+          "difficulty": "Medium"
+        },
+        {
+          "key": "step-12-greedy-algorithms__n-meetings-in-one-room",
+          "name": "N meetings in one room",
+          "link": "https://takeuforward.org/data-structure/n-meetings-in-one-room/",
+          "difficulty": "Medium"
+        },
+        {
+          "key": "step-12-greedy-algorithms__jump-game",
+          "name": "Jump Game",
+          "link": "https://takeuforward.org/Greedy/jump-game-i",
+          "difficulty": "Medium"
+        },
+        {
+          "key": "step-12-greedy-algorithms__jump-game-2",
+          "name": "Jump Game 2",
+          "link": "https://takeuforward.org/strivers-a2z-dsa-course/strivers-a2z-dsa-course-sheet-2",
+          "difficulty": "Medium"
+        },
+        {
+          "key": "step-12-greedy-algorithms__minimum-number-of-platforms-required-for-a-railway",
+          "name": "Minimum number of platforms required for a railway",
+          "link": "https://takeuforward.org/data-structure/minimum-number-of-platforms-required-for-a-railway/",
+          "difficulty": "Medium"
+        },
+        {
+          "key": "step-12-greedy-algorithms__job-sequencing-problem",
+          "name": "Job sequencing Problem",
+          "link": "https://takeuforward.org/data-structure/job-sequencing-problem/",
+          "difficulty": "Medium"
+        },
+        {
+          "key": "step-12-greedy-algorithms__candy",
+          "name": "Candy",
+          "link": "https://takeuforward.org/strivers-a2z-dsa-course/strivers-a2z-dsa-course-sheet-2",
+          "difficulty": "Hard"
+        },
+        {
+          "key": "step-12-greedy-algorithms__program-for-shortest-job-first-or-sjf-cpu-scheduling",
+          "name": "Program for Shortest Job First (or SJF) CPU Scheduling",
+          "link": "https://takeuforward.org/Greedy/shortest-job-first-or-sjf-cpu-scheduling",
+          "difficulty": "Medium"
+        },
+        {
+          "key": "step-12-greedy-algorithms__program-for-least-recently-used-lru-page-replacement-algorithm",
+          "name": "Program for Least Recently Used (LRU) Page Replacement Algorithm",
+          "link": "",
+          "difficulty": "Medium"
+        },
+        {
+          "key": "step-12-greedy-algorithms__insert-interval",
+          "name": "Insert Interval",
+          "link": "https://takeuforward.org/?s=Insert+Interval",
+          "difficulty": "Medium"
+        },
+        {
+          "key": "step-12-greedy-algorithms__merge-intervals",
+          "name": "Merge Intervals",
+          "link": "https://takeuforward.org/data-structure/merge-overlapping-sub-intervals/",
+          "difficulty": "Medium"
+        },
+        {
+          "key": "step-12-greedy-algorithms__non-overlapping-intervals",
+          "name": "Non-overlapping Intervals",
+          "link": "https://takeuforward.org/strivers-a2z-dsa-course/strivers-a2z-dsa-course-sheet-2",
+          "difficulty": "Medium"
+        }
+      ]
+    },
+    {
+      "key": "step-13-binary-trees",
+      "order": 13,
+      "title": "Binary Trees",
+      "problems": [
+        {
+          "key": "step-13-binary-trees__introduction-to-trees",
+          "name": "Introduction to Trees",
+          "link": "https://takeuforward.org/binary-tree/introduction-to-trees/",
+          "difficulty": "Easy"
+        },
+        {
+          "key": "step-13-binary-trees__binary-tree-representation-in-c",
+          "name": "Binary Tree Representation in C++",
+          "link": "https://takeuforward.org/binary-tree/binary-tree-representation-in-c/",
+          "difficulty": "Easy"
+        },
+        {
+          "key": "step-13-binary-trees__binary-tree-representation-in-java",
+          "name": "Binary Tree Representation in Java",
+          "link": "https://takeuforward.org/binary-tree/binary-tree-representation-in-java/",
+          "difficulty": "Easy"
+        },
+        {
+          "key": "step-13-binary-trees__binary-tree-traversals-in-binary-tree",
+          "name": "Binary Tree Traversals in Binary Tree",
+          "link": "https://takeuforward.org/binary-tree/binary-tree-traversal-inorder-preorder-postorder/",
+          "difficulty": "Easy"
+        },
+        {
+          "key": "step-13-binary-trees__preorder-traversal-of-binary-tree",
+          "name": "Preorder Traversal of Binary Tree",
+          "link": "https://takeuforward.org/data-structure/preorder-traversal-of-binary-tree/",
+          "difficulty": "Easy"
+        },
+        {
+          "key": "step-13-binary-trees__inorder-traversal-of-binary-tree",
+          "name": "Inorder Traversal of Binary Tree",
+          "link": "https://takeuforward.org/data-structure/inorder-traversal-of-binary-tree/",
+          "difficulty": "Easy"
+        },
+        {
+          "key": "step-13-binary-trees__post-order-traversal-of-binary-tree",
+          "name": "Post-order Traversal of Binary Tree",
+          "link": "https://takeuforward.org/data-structure/post-order-traversal-of-binary-tree/",
+          "difficulty": "Easy"
+        },
+        {
+          "key": "step-13-binary-trees__level-order-traversal-level-order-traversal-in-spiral-form",
+          "name": "Level order Traversal / Level order traversal in spiral form",
+          "link": "https://takeuforward.org/data-structure/level-order-traversal-of-a-binary-tree/",
+          "difficulty": "Easy"
+        },
+        {
+          "key": "step-13-binary-trees__iterative-preorder-traversal-of-binary-tree",
+          "name": "Iterative Preorder Traversal of Binary Tree",
+          "link": "https://takeuforward.org/data-structure/iterative-preorder-traversal-of-binary-tree",
+          "difficulty": "Easy"
+        },
+        {
+          "key": "step-13-binary-trees__iterative-inorder-traversal-of-binary-tree",
+          "name": "Iterative Inorder Traversal of Binary Tree",
+          "link": "https://takeuforward.org/data-structure/inorder-traversal-of-binary-tree/",
+          "difficulty": "Easy"
+        },
+        {
+          "key": "step-13-binary-trees__post-order-traversal-of-binary-tree-using-2-stack",
+          "name": "Post-order Traversal of Binary Tree using 2 stack",
+          "link": "https://takeuforward.org/data-structure/iterative-postorder-traversal-of-binary-tree-using-2-stack",
+          "difficulty": "Easy"
+        },
+        {
+          "key": "step-13-binary-trees__post-order-traversal-of-binary-tree-using-1-stack",
+          "name": "Post-order Traversal of Binary Tree using 1 stack",
+          "link": "https://takeuforward.org/data-structure/post-order-traversal-of-binary-tree/",
+          "difficulty": "Medium"
+        },
+        {
+          "key": "step-13-binary-trees__preorder-inorder-and-postorder-traversal-in-one-traversal",
+          "name": "Preorder, Inorder, and Postorder Traversal in one Traversal",
+          "link": "https://takeuforward.org/data-structure/preorder-inorder-postorder-traversals-in-one-traversal/",
+          "difficulty": "Medium"
+        },
+        {
+          "key": "step-13-binary-trees__height-of-a-binary-tree",
+          "name": "Height of a Binary Tree",
+          "link": "https://takeuforward.org/data-structure/maximum-depth-of-a-binary-tree/",
+          "difficulty": "Medium"
+        },
+        {
+          "key": "step-13-binary-trees__check-if-the-binary-tree-is-height-balanced-or-not",
+          "name": "Check if the Binary tree is height-balanced or not",
+          "link": "https://takeuforward.org/data-structure/check-if-the-binary-tree-is-balanced-binary-tree/",
+          "difficulty": "Medium"
+        },
+        {
+          "key": "step-13-binary-trees__diameter-of-binary-tree",
+          "name": "Diameter of Binary Tree",
+          "link": "https://takeuforward.org/data-structure/calculate-the-diameter-of-a-binary-tree/",
+          "difficulty": "Medium"
+        },
+        {
+          "key": "step-13-binary-trees__maximum-path-sum",
+          "name": "Maximum path sum",
+          "link": "https://takeuforward.org/data-structure/maximum-sum-path-in-binary-tree/",
+          "difficulty": "Hard"
+        },
+        {
+          "key": "step-13-binary-trees__check-if-two-trees-are-identical-or-not",
+          "name": "Check if two trees are identical or not",
+          "link": "https://takeuforward.org/data-structure/check-if-two-trees-are-identical/",
+          "difficulty": "Medium"
+        },
+        {
+          "key": "step-13-binary-trees__zig-zag-traversal-of-binary-tree",
+          "name": "Zig Zag Traversal of Binary Tree",
+          "link": "https://takeuforward.org/data-structure/zig-zag-traversal-of-binary-tree/",
+          "difficulty": "Easy"
+        },
+        {
+          "key": "step-13-binary-trees__boundary-traversal-of-binary-tree",
+          "name": "Boundary Traversal of Binary Tree",
+          "link": "https://takeuforward.org/data-structure/boundary-traversal-of-a-binary-tree/",
+          "difficulty": "Medium"
+        },
+        {
+          "key": "step-13-binary-trees__vertical-order-traversal-of-binary-tree",
+          "name": "Vertical Order Traversal of Binary Tree",
+          "link": "https://takeuforward.org/data-structure/vertical-order-traversal-of-binary-tree/",
+          "difficulty": "Easy"
+        },
+        {
+          "key": "step-13-binary-trees__top-view-of-binary-tree",
+          "name": "Top View of Binary Tree",
+          "link": "https://takeuforward.org/data-structure/top-view-of-a-binary-tree/",
+          "difficulty": "Easy"
+        },
+        {
+          "key": "step-13-binary-trees__bottom-view-of-binary-tree",
+          "name": "Bottom View of Binary Tree",
+          "link": "https://takeuforward.org/data-structure/bottom-view-of-a-binary-tree/",
+          "difficulty": "Medium"
+        },
+        {
+          "key": "step-13-binary-trees__right-left-view-of-binary-tree",
+          "name": "Right/Left View of Binary Tree",
+          "link": "https://takeuforward.org/data-structure/right-left-view-of-binary-tree/",
+          "difficulty": "Medium"
+        },
+        {
+          "key": "step-13-binary-trees__symmetric-binary-tree",
+          "name": "Symmetric Binary Tree",
+          "link": "https://takeuforward.org/data-structure/check-for-symmetrical-binary-tree/",
+          "difficulty": "Medium"
+        },
+        {
+          "key": "step-13-binary-trees__root-to-node-path-in-binary-tree",
+          "name": "Root to Node Path in Binary Tree",
+          "link": "https://takeuforward.org/data-structure/print-root-to-node-path-in-a-binary-tree/",
+          "difficulty": "Medium"
+        },
+        {
+          "key": "step-13-binary-trees__lca-in-binary-tree",
+          "name": "LCA in Binary Tree",
+          "link": "https://takeuforward.org/data-structure/lowest-common-ancestor-for-two-given-nodes/",
+          "difficulty": "Medium"
+        },
+        {
+          "key": "step-13-binary-trees__maximum-width-of-a-binary-tree",
+          "name": "Maximum width of a Binary Tree",
+          "link": "https://takeuforward.org/data-structure/maximum-width-of-a-binary-tree/",
+          "difficulty": "Medium"
+        },
+        {
+          "key": "step-13-binary-trees__check-for-children-sum-property",
+          "name": "Check for Children Sum Property",
+          "link": "https://takeuforward.org/data-structure/check-for-children-sum-property-in-a-binary-tree/",
+          "difficulty": "Hard"
+        },
+        {
+          "key": "step-13-binary-trees__print-all-the-nodes-at-a-distance-of-k-in-a-binary-tree",
+          "name": "Print all the Nodes at a distance of K in a Binary Tree",
+          "link": "https://takeuforward.org/plus/dsa/problems/print-all-nodes-at-a-distance-of-k-in-bt",
+          "difficulty": "Medium"
+        },
+        {
+          "key": "step-13-binary-trees__minimum-time-taken-to-burn-the-binary-tree-from-a-node",
+          "name": "Minimum time taken to BURN the Binary Tree from a Node",
+          "link": "https://takeuforward.org/plus/dsa/problems/minimum-time-taken-to-burn-the-bt-from-a-given-node",
+          "difficulty": "Hard"
+        },
+        {
+          "key": "step-13-binary-trees__count-total-nodes-in-a-complete-binary-tree",
+          "name": "Count total Nodes in a COMPLETE Binary Tree",
+          "link": "https://takeuforward.org/binary-tree/count-number-of-nodes-in-a-binary-tree/",
+          "difficulty": "Medium"
+        },
+        {
+          "key": "step-13-binary-trees__requirements-needed-to-construct-a-unique-binary-tree-theory",
+          "name": "Requirements needed to construct a Unique Binary Tree | Theory",
+          "link": "https://takeuforward.org/plus/dsa/problems/requirements-needed-to-construct-a-unique-bt",
+          "difficulty": "Medium"
+        },
+        {
+          "key": "step-13-binary-trees__construct-binary-tree-from-inorder-and-preorder",
+          "name": "Construct Binary Tree from inorder and preorder",
+          "link": "https://takeuforward.org/data-structure/construct-a-binary-tree-from-inorder-and-preorder-traversal/",
+          "difficulty": "Hard"
+        },
+        {
+          "key": "step-13-binary-trees__construct-the-binary-tree-from-postorder-and-inorder-traversal",
+          "name": "Construct the Binary Tree from Postorder and Inorder Traversal",
+          "link": "https://takeuforward.org/data-structure/construct-binary-tree-from-inorder-and-postorder-traversal/",
+          "difficulty": "Hard"
+        },
+        {
+          "key": "step-13-binary-trees__serialize-and-deserialize-binary-tree",
+          "name": "Serialize and deserialize Binary Tree",
+          "link": "https://takeuforward.org/data-structure/serialize-and-deserialize-a-binary-tree/",
+          "difficulty": "Hard"
+        },
+        {
+          "key": "step-13-binary-trees__morris-preorder-traversal-of-a-binary-tree",
+          "name": "Morris Preorder Traversal of a Binary Tree",
+          "link": "https://takeuforward.org/data-structure/morris-preorder-traversal-of-a-binary-tree/",
+          "difficulty": "Medium"
+        },
+        {
+          "key": "step-13-binary-trees__morris-inorder-traversal-of-a-binary-tree",
+          "name": "Morris Inorder Traversal of a Binary Tree",
+          "link": "https://takeuforward.org/data-structure/morris-inorder-traversal-of-a-binary-tree/",
+          "difficulty": "Medium"
+        },
+        {
+          "key": "step-13-binary-trees__flatten-binary-tree-to-linkedlist",
+          "name": "Flatten Binary Tree to LinkedList",
+          "link": "https://takeuforward.org/data-structure/flatten-binary-tree-to-linked-list/",
+          "difficulty": "Hard"
+        }
+      ]
+    },
+    {
+      "key": "step-14-binary-search-trees",
+      "order": 14,
+      "title": "Binary Search Trees",
+      "problems": [
+        {
+          "key": "step-14-binary-search-trees__introduction-to-binary-search-tree",
+          "name": "Introduction to Binary Search Tree",
+          "link": "https://takeuforward.org/binary-search-tree/introduction-to-binary-search-trees/",
+          "difficulty": "Easy"
+        },
+        {
+          "key": "step-14-binary-search-trees__search-in-a-binary-search-tree",
+          "name": "Search in a Binary Search Tree",
+          "link": "https://takeuforward.org/data-structure/search-in-a-binary-search-tree-2/",
+          "difficulty": "Easy"
+        },
+        {
+          "key": "step-14-binary-search-trees__find-min-max-in-bst",
+          "name": "Find Min/Max in BST",
+          "link": "",
+          "difficulty": "Medium"
+        },
+        {
+          "key": "step-14-binary-search-trees__ceil-in-a-binary-search-tree",
+          "name": "Ceil in a Binary Search Tree",
+          "link": "https://takeuforward.org/binary-search-tree/ceil-in-a-binary-search-tree/",
+          "difficulty": "Easy"
+        },
+        {
+          "key": "step-14-binary-search-trees__floor-in-a-binary-search-tree",
+          "name": "Floor in a Binary Search Tree",
+          "link": "https://takeuforward.org/binary-search-tree/floor-in-a-binary-search-tree/",
+          "difficulty": "Easy"
+        },
+        {
+          "key": "step-14-binary-search-trees__insert-a-given-node-in-binary-search-tree",
+          "name": "Insert a given Node in Binary Search Tree",
+          "link": "https://takeuforward.org/plus/dsa/problems/insert-a-given-node-in-bst",
+          "difficulty": "Easy"
+        },
+        {
+          "key": "step-14-binary-search-trees__delete-a-node-in-binary-search-tree",
+          "name": "Delete a Node in Binary Search Tree",
+          "link": "https://takeuforward.org/plus/dsa/problems/delete-a-node-in-bst",
+          "difficulty": "Medium"
+        },
+        {
+          "key": "step-14-binary-search-trees__find-k-th-smallest-largest-element-in-bst",
+          "name": "Find K-th smallest/largest element in BST",
+          "link": "https://takeuforward.org/data-structure/kth-largest-smallest-element-in-binary-search-tree/",
+          "difficulty": "Medium"
+        },
+        {
+          "key": "step-14-binary-search-trees__check-if-a-tree-is-a-bst-or-bt",
+          "name": "Check if a tree is a BST or BT",
+          "link": "https://takeuforward.org/plus/dsa/problems/check-if-a-tree-is-a-bst-or-not",
+          "difficulty": "Medium"
+        },
+        {
+          "key": "step-14-binary-search-trees__lca-in-binary-search-tree",
+          "name": "LCA in Binary Search Tree",
+          "link": "https://takeuforward.org/plus/dsa/problems/lca-in-bst",
+          "difficulty": "Medium"
+        },
+        {
+          "key": "step-14-binary-search-trees__construct-a-bst-from-a-preorder-traversal",
+          "name": "Construct a BST from a preorder traversal",
+          "link": "https://takeuforward.org/plus/dsa/problems/construct-a-bst-from-a-preorder-traversal",
+          "difficulty": "Medium"
+        },
+        {
+          "key": "step-14-binary-search-trees__inorder-successor-predecessor-in-bst",
+          "name": "Inorder Successor/Predecessor in BST",
+          "link": "https://takeuforward.org/plus/dsa/problems/inorder-successor-and-predecessor-in-bst",
+          "difficulty": "Medium"
+        },
+        {
+          "key": "step-14-binary-search-trees__merge-2-bst-s",
+          "name": "Merge 2 BST's",
+          "link": "https://takeuforward.org/plus/dsa/problems/bst-iterator",
+          "difficulty": "Hard"
+        },
+        {
+          "key": "step-14-binary-search-trees__two-sum-in-bst-check-if-there-exists-a-pair-with-sum-k",
+          "name": "Two Sum In BST | Check if there exists a pair with Sum K",
+          "link": "https://takeuforward.org/plus/dsa/problems/two-sum-in-bst",
+          "difficulty": "Medium"
+        },
+        {
+          "key": "step-14-binary-search-trees__recover-bst-correct-bst-with-two-nodes-swapped",
+          "name": "Recover BST | Correct BST with two nodes swapped",
+          "link": "https://takeuforward.org/plus/dsa/problems/correct-bst-with-two-nodes-swapped",
+          "difficulty": "Hard"
+        },
+        {
+          "key": "step-14-binary-search-trees__largest-bst-in-binary-tree",
+          "name": "Largest BST in Binary Tree",
+          "link": "https://takeuforward.org/plus/dsa/problems/largest-bst-in-binary-tree",
+          "difficulty": "Hard"
+        }
+      ]
+    },
+    {
+      "key": "step-15-graphs",
+      "order": 15,
+      "title": "Graphs",
+      "problems": [
+        {
+          "key": "step-15-graphs__graph-and-types",
+          "name": "Graph and Types",
+          "link": "https://takeuforward.org/graph/introduction-to-graph/",
+          "difficulty": "Easy"
+        },
+        {
+          "key": "step-15-graphs__graph-representation-c",
+          "name": "Graph Representation | C++",
+          "link": "https://takeuforward.org/graph/graph-representation-in-c/",
+          "difficulty": "Easy"
+        },
+        {
+          "key": "step-15-graphs__graph-representation-java",
+          "name": "Graph Representation | Java",
+          "link": "",
+          "difficulty": "Easy"
+        },
+        {
+          "key": "step-15-graphs__connected-components-logic-explanation",
+          "name": "Connected Components | Logic Explanation",
+          "link": "https://takeuforward.org/graph/connected-components-in-graphs/",
+          "difficulty": "Hard"
+        },
+        {
+          "key": "step-15-graphs__bfs",
+          "name": "BFS",
+          "link": "https://takeuforward.org/graph/breadth-first-search-bfs-level-order-traversal/",
+          "difficulty": "Medium"
+        },
+        {
+          "key": "step-15-graphs__dfs",
+          "name": "DFS",
+          "link": "https://takeuforward.org/data-structure/depth-first-search-dfs/",
+          "difficulty": "Hard"
+        },
+        {
+          "key": "step-15-graphs__number-of-provinces-leetcode",
+          "name": "Number of provinces (leetcode)",
+          "link": "https://takeuforward.org/data-structure/number-of-provinces/",
+          "difficulty": "Medium"
+        },
+        {
+          "key": "step-15-graphs__connected-components-problem-in-matrix",
+          "name": "Connected Components Problem in Matrix",
+          "link": "https://takeuforward.org/plus/dsa/problems/connected-components",
+          "difficulty": "Hard"
+        },
+        {
+          "key": "step-15-graphs__rotten-oranges",
+          "name": "Rotten Oranges",
+          "link": "https://takeuforward.org/data-structure/rotten-oranges-min-time-to-rot-all-oranges-bfs/",
+          "difficulty": "Medium"
+        },
+        {
+          "key": "step-15-graphs__flood-fill",
+          "name": "Flood fill",
+          "link": "https://takeuforward.org/graph/flood-fill-algorithm-graphs/",
+          "difficulty": "Hard"
+        },
+        {
+          "key": "step-15-graphs__cycle-detection-in-unirected-graph-bfs",
+          "name": "Cycle Detection in unirected Graph (bfs)",
+          "link": "https://takeuforward.org/data-structure/detect-cycle-in-an-undirected-graph-using-bfs/",
+          "difficulty": "Hard"
+        },
+        {
+          "key": "step-15-graphs__cycle-detection-in-undirected-graph-dfs",
+          "name": "Cycle Detection in undirected Graph (dfs)",
+          "link": "https://takeuforward.org/data-structure/detect-cycle-in-an-undirected-graph-using-dfs/",
+          "difficulty": "Hard"
+        },
+        {
+          "key": "step-15-graphs__0-1-matrix-bfs-problem",
+          "name": "0/1 Matrix (Bfs Problem)",
+          "link": "https://takeuforward.org/graph/distance-of-nearest-cell-having-1/",
+          "difficulty": "Medium"
+        },
+        {
+          "key": "step-15-graphs__surrounded-regions-dfs",
+          "name": "Surrounded Regions (dfs)",
+          "link": "https://takeuforward.org/graph/surrounded-regions-replace-os-with-xs/",
+          "difficulty": "Hard"
+        },
+        {
+          "key": "step-15-graphs__number-of-enclaves-flood-fill-implementation-multisource",
+          "name": "Number of Enclaves [flood fill implementation - multisource]",
+          "link": "https://takeuforward.org/graph/number-of-enclaves/",
+          "difficulty": "Hard"
+        },
+        {
+          "key": "step-15-graphs__word-ladder-1",
+          "name": "Word ladder - 1",
+          "link": "https://takeuforward.org/graph/word-ladder-i-g-29/",
+          "difficulty": "Hard"
+        },
+        {
+          "key": "step-15-graphs__word-ladder-2",
+          "name": "Word ladder - 2",
+          "link": "https://takeuforward.org/graph/g-30-word-ladder-ii/",
+          "difficulty": "Hard"
+        },
+        {
+          "key": "step-15-graphs__number-of-distinct-islands-dfs-multisource",
+          "name": "Number of Distinct Islands [dfs multisource]",
+          "link": "https://takeuforward.org/data-structure/number-of-islands/",
+          "difficulty": "Hard"
+        },
+        {
+          "key": "step-15-graphs__bipartite-graph-dfs",
+          "name": "Bipartite Graph (DFS)",
+          "link": "https://takeuforward.org/graph/bipartite-graph-dfs-implementation/",
+          "difficulty": "Medium"
+        },
+        {
+          "key": "step-15-graphs__cycle-detection-in-directed-graph-dfs",
+          "name": "Cycle Detection in Directed Graph (DFS)",
+          "link": "https://takeuforward.org/data-structure/detect-cycle-in-a-directed-graph-using-dfs-g-19/",
+          "difficulty": "Hard"
+        },
+        {
+          "key": "step-15-graphs__topo-sort",
+          "name": "Topo Sort",
+          "link": "https://takeuforward.org/data-structure/topological-sort-algorithm-dfs-g-21/",
+          "difficulty": "Hard"
+        },
+        {
+          "key": "step-15-graphs__kahn-s-algorithm",
+          "name": "Kahn's Algorithm",
+          "link": "https://takeuforward.org/data-structure/kahns-algorithm-topological-sort-algorithm-bfs-g-22/",
+          "difficulty": "Hard"
+        },
+        {
+          "key": "step-15-graphs__cycle-detection-in-directed-graph-bfs",
+          "name": "Cycle Detection in Directed Graph (BFS)",
+          "link": "https://takeuforward.org/plus/dsa/problems/detect-a-cycle-in-a-directed-graph",
+          "difficulty": "Hard"
+        },
+        {
+          "key": "step-15-graphs__course-schedule-i",
+          "name": "Course Schedule - I",
+          "link": "https://takeuforward.org/data-structure/course-schedule-i-and-ii-pre-requisite-tasks-topological-sort-g-24/",
+          "difficulty": "Hard"
+        },
+        {
+          "key": "step-15-graphs__course-schedule-ii",
+          "name": "Course Schedule - II",
+          "link": "https://takeuforward.org/data-structure/course-schedule-i-and-ii-pre-requisite-tasks-topological-sort-g-24/",
+          "difficulty": "Hard"
+        },
+        {
+          "key": "step-15-graphs__find-eventual-safe-states",
+          "name": "Find eventual safe states",
+          "link": "https://takeuforward.org/data-structure/find-eventual-safe-states-bfs-topological-sort-g-25/",
+          "difficulty": "Hard"
+        },
+        {
+          "key": "step-15-graphs__alien-dictionary",
+          "name": "Alien dictionary",
+          "link": "https://takeuforward.org/data-structure/alien-dictionary-topological-sort-g-26/",
+          "difficulty": "Hard"
+        },
+        {
+          "key": "step-15-graphs__shortest-path-in-ug-with-unit-weights",
+          "name": "Shortest Path in UG with unit weights",
+          "link": "https://takeuforward.org/data-structure/shortest-path-in-undirected-graph-with-unit-distance-g-28/",
+          "difficulty": "Hard"
+        },
+        {
+          "key": "step-15-graphs__shortest-path-in-dag",
+          "name": "Shortest Path in DAG",
+          "link": "https://takeuforward.org/data-structure/shortest-path-in-directed-acyclic-graph-topological-sort-g-27/",
+          "difficulty": "Hard"
+        },
+        {
+          "key": "step-15-graphs__djisktra-s-algorithm",
+          "name": "Djisktra's Algorithm",
+          "link": "https://takeuforward.org/data-structure/dijkstras-algorithm-using-set-g-33/",
+          "difficulty": "Hard"
+        },
+        {
+          "key": "step-15-graphs__why-priority-queue-is-used-in-djisktra-s-algorithm",
+          "name": "Why priority Queue is used in Djisktra's Algorithm",
+          "link": "https://takeuforward.org/data-structure/dijkstras-algorithm-using-priority-queue-g-32/",
+          "difficulty": "Medium"
+        },
+        {
+          "key": "step-15-graphs__shortest-path-in-a-binary-maze",
+          "name": "Shortest path in a binary maze",
+          "link": "https://takeuforward.org/data-structure/g-36-shortest-distance-in-a-binary-maze/",
+          "difficulty": "Medium"
+        },
+        {
+          "key": "step-15-graphs__path-with-minimum-effort",
+          "name": "Path with minimum effort",
+          "link": "https://takeuforward.org/data-structure/g-37-path-with-minimum-effort/",
+          "difficulty": "Medium"
+        },
+        {
+          "key": "step-15-graphs__cheapest-flights-within-k-stops",
+          "name": "Cheapest flights within k stops",
+          "link": "https://takeuforward.org/data-structure/g-38-cheapest-flights-within-k-stops/",
+          "difficulty": "Hard"
+        },
+        {
+          "key": "step-15-graphs__network-delay-time",
+          "name": "Network Delay time",
+          "link": "https://takeuforward.org/plus/dsa/problems/network-delay-time",
+          "difficulty": "Medium"
+        },
+        {
+          "key": "step-15-graphs__number-of-ways-to-arrive-at-destination",
+          "name": "Number of ways to arrive at destination",
+          "link": "https://takeuforward.org/data-structure/g-40-number-of-ways-to-arrive-at-destination/",
+          "difficulty": "Medium"
+        },
+        {
+          "key": "step-15-graphs__minimum-steps-to-reach-end-from-start-by-performing-multiplication-and-mod-operations-with-array-elements",
+          "name": "Minimum steps to reach end from start by performing multiplication and mod operations with array elements",
+          "link": "https://takeuforward.org/graph/g-39-minimum-multiplications-to-reach-end/",
+          "difficulty": "Hard"
+        },
+        {
+          "key": "step-15-graphs__bellman-ford-algorithm",
+          "name": "Bellman Ford Algorithm",
+          "link": "https://takeuforward.org/data-structure/bellman-ford-algorithm-g-41/",
+          "difficulty": "Hard"
+        },
+        {
+          "key": "step-15-graphs__floyd-warshal-algorithm",
+          "name": "Floyd Warshal Algorithm",
+          "link": "https://takeuforward.org/data-structure/floyd-warshall-algorithm-g-42/",
+          "difficulty": "Hard"
+        },
+        {
+          "key": "step-15-graphs__find-the-city-with-the-smallest-number-of-neighbors-in-a-threshold-distance",
+          "name": "Find the city with the smallest number of neighbors in a threshold distance",
+          "link": "https://takeuforward.org/data-structure/find-the-city-with-the-smallest-number-of-neighbours-at-a-threshold-distance-g-43/",
+          "difficulty": "Hard"
+        },
+        {
+          "key": "step-15-graphs__minimum-spanning-tree",
+          "name": "Minimum Spanning Tree",
+          "link": "https://takeuforward.org/data-structure/minimum-spanning-tree-theory-g-44/",
+          "difficulty": "Hard"
+        },
+        {
+          "key": "step-15-graphs__prim-s-algorithm",
+          "name": "Prim's Algorithm",
+          "link": "https://takeuforward.org/data-structure/prims-algorithm-minimum-spanning-tree-c-and-java-g-45/",
+          "difficulty": "Hard"
+        },
+        {
+          "key": "step-15-graphs__disjoint-set-union-by-rank",
+          "name": "Disjoint Set [Union by Rank]",
+          "link": "https://takeuforward.org/data-structure/disjoint-set-union-by-rank-union-by-size-path-compression-g-46/",
+          "difficulty": "Hard"
+        },
+        {
+          "key": "step-15-graphs__disjoint-set-union-by-size",
+          "name": "Disjoint Set [Union by Size]",
+          "link": "https://takeuforward.org/data-structure/disjoint-set-union-by-rank-union-by-size-path-compression-g-46/",
+          "difficulty": "Hard"
+        },
+        {
+          "key": "step-15-graphs__kruskal-s-algorithm",
+          "name": "Kruskal's Algorithm",
+          "link": "https://takeuforward.org/data-structure/kruskals-algorithm-minimum-spanning-tree-g-47/",
+          "difficulty": "Hard"
+        },
+        {
+          "key": "step-15-graphs__number-of-operations-to-make-network-connected",
+          "name": "Number of operations to make network connected",
+          "link": "https://takeuforward.org/data-structure/number-of-operations-to-make-network-connected-dsu-g-49/",
+          "difficulty": "Medium"
+        },
+        {
+          "key": "step-15-graphs__most-stones-removed-with-same-rows-or-columns",
+          "name": "Most stones removed with same rows or columns",
+          "link": "https://takeuforward.org/data-structure/most-stones-removed-with-same-row-or-column-dsu-g-53/",
+          "difficulty": "Medium"
+        },
+        {
+          "key": "step-15-graphs__accounts-merge",
+          "name": "Accounts merge",
+          "link": "https://takeuforward.org/data-structure/accounts-merge-dsu-g-50/",
+          "difficulty": "Hard"
+        },
+        {
+          "key": "step-15-graphs__number-of-island-ii",
+          "name": "Number of island II",
+          "link": "https://takeuforward.org/graph/number-of-islands-ii-online-queries-dsu-g-51/",
+          "difficulty": "Hard"
+        },
+        {
+          "key": "step-15-graphs__making-a-large-island",
+          "name": "Making a Large Island",
+          "link": "https://takeuforward.org/data-structure/making-a-large-island-dsu-g-52/",
+          "difficulty": "Hard"
+        },
+        {
+          "key": "step-15-graphs__swim-in-rising-water",
+          "name": "Swim in rising water",
+          "link": "https://takeuforward.org/plus/dsa/problems/swim-in-rising-water",
+          "difficulty": "Hard"
+        },
+        {
+          "key": "step-15-graphs__bridges-in-graph",
+          "name": "Bridges in Graph",
+          "link": "https://takeuforward.org/graph/bridges-in-graph-using-tarjans-algorithm-of-time-in-and-low-time-g-55/",
+          "difficulty": "Hard"
+        },
+        {
+          "key": "step-15-graphs__articulation-point",
+          "name": "Articulation Point",
+          "link": "https://takeuforward.org/data-structure/articulation-point-in-graph-g-56/",
+          "difficulty": "Hard"
+        },
+        {
+          "key": "step-15-graphs__kosaraju-s-algorithm",
+          "name": "Kosaraju's Algorithm",
+          "link": "https://takeuforward.org/graph/strongly-connected-components-kosarajus-algorithm-g-54/",
+          "difficulty": "Hard"
+        }
+      ]
+    },
+    {
+      "key": "step-16-dynamic-programming",
+      "order": 16,
+      "title": "Dynamic Programming",
+      "problems": [
+        {
+          "key": "step-16-dynamic-programming__dynamic-programming-introduction",
+          "name": "Dynamic Programming Introduction",
+          "link": "https://takeuforward.org/data-structure/dynamic-programming-introduction/",
+          "difficulty": "Medium"
+        },
+        {
+          "key": "step-16-dynamic-programming__climbing-stars",
+          "name": "Climbing Stars",
+          "link": "https://takeuforward.org/data-structure/dynamic-programming-climbing-stairs/",
+          "difficulty": "Medium"
+        },
+        {
+          "key": "step-16-dynamic-programming__frog-jump-dp-3",
+          "name": "Frog Jump(DP-3)",
+          "link": "https://takeuforward.org/data-structure/dynamic-programming-frog-jump-dp-3/",
+          "difficulty": "Medium"
+        },
+        {
+          "key": "step-16-dynamic-programming__frog-jump-with-k-distances-dp-4",
+          "name": "Frog Jump with k distances(DP-4)",
+          "link": "https://takeuforward.org/data-structure/dynamic-programming-frog-jump-with-k-distances-dp-4/",
+          "difficulty": "Medium"
+        },
+        {
+          "key": "step-16-dynamic-programming__maximum-sum-of-non-adjacent-elements-dp-5",
+          "name": "Maximum sum of non-adjacent elements (DP 5)",
+          "link": "https://takeuforward.org/data-structure/maximum-sum-of-non-adjacent-elements-dp-5/",
+          "difficulty": "Medium"
+        },
+        {
+          "key": "step-16-dynamic-programming__house-robber-dp-6",
+          "name": "House Robber (DP 6)",
+          "link": "https://takeuforward.org/data-structure/dynamic-programming-house-robber-dp-6/",
+          "difficulty": "Medium"
+        },
+        {
+          "key": "step-16-dynamic-programming__ninja-s-training-dp-7",
+          "name": "Ninja's Training (DP 7)",
+          "link": "https://takeuforward.org/data-structure/dynamic-programming-ninjas-training-dp-7/",
+          "difficulty": "Medium"
+        },
+        {
+          "key": "step-16-dynamic-programming__grid-unique-paths-dp-on-grids-dp8",
+          "name": "Grid Unique Paths : DP on Grids (DP8)",
+          "link": "https://takeuforward.org/data-structure/grid-unique-paths-dp-on-grids-dp8/",
+          "difficulty": "Medium"
+        },
+        {
+          "key": "step-16-dynamic-programming__grid-unique-paths-2-dp-9",
+          "name": "Grid Unique Paths 2 (DP 9)",
+          "link": "https://takeuforward.org/data-structure/grid-unique-paths-2-dp-9/",
+          "difficulty": "Medium"
+        },
+        {
+          "key": "step-16-dynamic-programming__minimum-path-sum-in-grid-dp-10",
+          "name": "Minimum path sum in Grid (DP 10)",
+          "link": "https://takeuforward.org/data-structure/minimum-path-sum-in-a-grid-dp-10/",
+          "difficulty": "Medium"
+        },
+        {
+          "key": "step-16-dynamic-programming__minimum-path-sum-in-triangular-grid-dp-11",
+          "name": "Minimum path sum in Triangular Grid (DP 11)",
+          "link": "https://takeuforward.org/data-structure/minimum-path-sum-in-triangular-grid-dp-11/",
+          "difficulty": "Medium"
+        },
+        {
+          "key": "step-16-dynamic-programming__minimum-maximum-falling-path-sum-dp-12",
+          "name": "Minimum/Maximum Falling Path Sum (DP-12)",
+          "link": "https://takeuforward.org/data-structure/minimum-maximum-falling-path-sum-dp-12/",
+          "difficulty": "Medium"
+        },
+        {
+          "key": "step-16-dynamic-programming__3-d-dp-ninja-and-his-friends-dp-13",
+          "name": "3-d DP : Ninja and his friends (DP-13)",
+          "link": "https://takeuforward.org/data-structure/3-d-dp-ninja-and-his-friends-dp-13/",
+          "difficulty": "Medium"
+        },
+        {
+          "key": "step-16-dynamic-programming__subset-sum-equal-to-target-dp-14",
+          "name": "Subset sum equal to target (DP- 14)",
+          "link": "https://takeuforward.org/data-structure/subset-sum-equal-to-target-dp-14/",
+          "difficulty": "Medium"
+        },
+        {
+          "key": "step-16-dynamic-programming__partition-equal-subset-sum-dp-15",
+          "name": "Partition Equal Subset Sum (DP- 15)",
+          "link": "https://takeuforward.org/data-structure/partition-equal-subset-sum-dp-15/",
+          "difficulty": "Medium"
+        },
+        {
+          "key": "step-16-dynamic-programming__partition-set-into-2-subsets-with-min-absolute-sum-diff-dp-16",
+          "name": "Partition Set Into 2 Subsets With Min Absolute Sum Diff (DP- 16)",
+          "link": "https://takeuforward.org/data-structure/partition-set-into-2-subsets-with-min-absolute-sum-diff-dp-16/",
+          "difficulty": "Medium"
+        },
+        {
+          "key": "step-16-dynamic-programming__count-subsets-with-sum-k-dp-17",
+          "name": "Count Subsets with Sum K (DP - 17)",
+          "link": "https://takeuforward.org/data-structure/count-subsets-with-sum-k-dp-17/",
+          "difficulty": "Medium"
+        },
+        {
+          "key": "step-16-dynamic-programming__count-partitions-with-given-difference-dp-18",
+          "name": "Count Partitions with Given Difference (DP - 18)",
+          "link": "https://takeuforward.org/data-structure/count-partitions-with-given-difference-dp-18/",
+          "difficulty": "Medium"
+        },
+        {
+          "key": "step-16-dynamic-programming__assign-cookies",
+          "name": "Assign Cookies",
+          "link": "https://takeuforward.org/strivers-a2z-dsa-course/strivers-a2z-dsa-course-sheet-2",
+          "difficulty": "Hard"
+        },
+        {
+          "key": "step-16-dynamic-programming__minimum-coins-dp-20",
+          "name": "Minimum Coins (DP - 20)",
+          "link": "https://takeuforward.org/data-structure/minimum-coins-dp-20/",
+          "difficulty": "Hard"
+        },
+        {
+          "key": "step-16-dynamic-programming__target-sum-dp-21",
+          "name": "Target Sum (DP - 21)",
+          "link": "https://takeuforward.org/data-structure/target-sum-dp-21/",
+          "difficulty": "Medium"
+        },
+        {
+          "key": "step-16-dynamic-programming__coin-change-2-dp-22",
+          "name": "Coin Change 2 (DP - 22)",
+          "link": "https://takeuforward.org/data-structure/coin-change-2-dp-22/",
+          "difficulty": "Hard"
+        },
+        {
+          "key": "step-16-dynamic-programming__unbounded-knapsack-dp-23",
+          "name": "Unbounded Knapsack (DP - 23)",
+          "link": "https://takeuforward.org/data-structure/unbounded-knapsack-dp-23/",
+          "difficulty": "Hard"
+        },
+        {
+          "key": "step-16-dynamic-programming__rod-cutting-problem-dp-24",
+          "name": "Rod Cutting Problem | (DP - 24)",
+          "link": "https://takeuforward.org/data-structure/rod-cutting-problem-dp-24/",
+          "difficulty": "Hard"
+        },
+        {
+          "key": "step-16-dynamic-programming__longest-common-subsequence-dp-25",
+          "name": "Longest Common Subsequence | (DP - 25)",
+          "link": "https://takeuforward.org/data-structure/longest-common-subsequence-dp-25/",
+          "difficulty": "Hard"
+        },
+        {
+          "key": "step-16-dynamic-programming__print-longest-common-subsequence-dp-26",
+          "name": "Print Longest Common Subsequence | (DP - 26)",
+          "link": "https://takeuforward.org/data-structure/print-longest-common-subsequence-dp-26/",
+          "difficulty": "Hard"
+        },
+        {
+          "key": "step-16-dynamic-programming__longest-common-substring-dp-27",
+          "name": "Longest Common Substring | (DP - 27)",
+          "link": "https://takeuforward.org/data-structure/longest-common-substring-dp-27/",
+          "difficulty": "Hard"
+        },
+        {
+          "key": "step-16-dynamic-programming__longest-palindromic-subsequence-dp-28",
+          "name": "Longest Palindromic Subsequence | (DP-28)",
+          "link": "https://takeuforward.org/data-structure/longest-palindromic-subsequence-dp-28/",
+          "difficulty": "Hard"
+        },
+        {
+          "key": "step-16-dynamic-programming__minimum-insertions-to-make-string-palindrome-dp-29",
+          "name": "Minimum insertions to make string palindrome | DP-29",
+          "link": "https://takeuforward.org/data-structure/minimum-insertions-to-make-string-palindrome-dp-29/",
+          "difficulty": "Hard"
+        },
+        {
+          "key": "step-16-dynamic-programming__minimum-insertions-deletions-to-convert-string-dp-30",
+          "name": "Minimum Insertions/Deletions to Convert String | (DP- 30)",
+          "link": "https://takeuforward.org/data-structure/minimum-insertions-deletions-to-convert-string-dp-30/",
+          "difficulty": "Hard"
+        },
+        {
+          "key": "step-16-dynamic-programming__shortest-common-supersequence-dp-31",
+          "name": "Shortest Common Supersequence | (DP - 31)",
+          "link": "https://takeuforward.org/data-structure/shortest-common-supersequence-dp-31/",
+          "difficulty": "Hard"
+        },
+        {
+          "key": "step-16-dynamic-programming__distinct-subsequences-dp-32",
+          "name": "Distinct Subsequences| (DP-32)",
+          "link": "https://takeuforward.org/data-structure/distinct-subsequences-dp-32/",
+          "difficulty": "Hard"
+        },
+        {
+          "key": "step-16-dynamic-programming__edit-distance-dp-33",
+          "name": "Edit Distance | (DP-33)",
+          "link": "https://takeuforward.org/data-structure/edit-distance-dp-33/",
+          "difficulty": "Hard"
+        },
+        {
+          "key": "step-16-dynamic-programming__wildcard-matching-dp-34",
+          "name": "Wildcard Matching | (DP-34)",
+          "link": "https://takeuforward.org/data-structure/wildcard-matching-dp-34/",
+          "difficulty": "Medium"
+        },
+        {
+          "key": "step-16-dynamic-programming__best-time-to-buy-and-sell-stock-dp-35",
+          "name": "Best Time to Buy and Sell Stock |(DP-35)",
+          "link": "https://takeuforward.org/data-structure/stock-buy-and-sell-dp-35/",
+          "difficulty": "Hard"
+        },
+        {
+          "key": "step-16-dynamic-programming__buy-and-sell-stock-ii-dp-36",
+          "name": "Buy and Sell Stock - II|(DP-36)",
+          "link": "https://takeuforward.org/data-structure/buy-and-sell-stock-ii-dp-36/",
+          "difficulty": "Hard"
+        },
+        {
+          "key": "step-16-dynamic-programming__buy-and-sell-stocks-iii-dp-37",
+          "name": "Buy and Sell Stocks III|(DP-37)",
+          "link": "https://takeuforward.org/data-structure/buy-and-sell-stock-iii-dp-37/",
+          "difficulty": "Hard"
+        },
+        {
+          "key": "step-16-dynamic-programming__buy-and-stock-sell-iv-dp-38",
+          "name": "Buy and Stock Sell IV |(DP-38)",
+          "link": "https://takeuforward.org/data-structure/buy-and-sell-stock-iv-dp-38/",
+          "difficulty": "Hard"
+        },
+        {
+          "key": "step-16-dynamic-programming__buy-and-sell-stocks-with-cooldown-dp-39",
+          "name": "Buy and Sell Stocks With Cooldown|(DP-39)",
+          "link": "https://takeuforward.org/data-structure/buy-and-sell-stocks-with-cooldown-dp-39/",
+          "difficulty": "Hard"
+        },
+        {
+          "key": "step-16-dynamic-programming__buy-and-sell-stocks-with-transaction-fee-dp-40",
+          "name": "Buy and Sell Stocks With Transaction Fee|(DP-40)",
+          "link": "https://takeuforward.org/data-structure/buy-and-sell-stocks-with-transaction-fees-dp-40/",
+          "difficulty": "Hard"
+        },
+        {
+          "key": "step-16-dynamic-programming__longest-increasing-subsequence-dp-41",
+          "name": "Longest Increasing Subsequence |(DP-41)",
+          "link": "https://takeuforward.org/data-structure/longest-increasing-subsequence-dp-41/",
+          "difficulty": "Hard"
+        },
+        {
+          "key": "step-16-dynamic-programming__printing-longest-increasing-subsequence-dp-42",
+          "name": "Printing Longest Increasing Subsequence|(DP-42)",
+          "link": "https://takeuforward.org/data-structure/printing-longest-increasing-subsequence-dp-42/",
+          "difficulty": "Hard"
+        },
+        {
+          "key": "step-16-dynamic-programming__longest-increasing-subsequence-dp-43",
+          "name": "Longest Increasing Subsequence |(DP-43)",
+          "link": "https://takeuforward.org/data-structure/longest-increasing-subsequence-binary-search-dp-43/",
+          "difficulty": "Hard"
+        },
+        {
+          "key": "step-16-dynamic-programming__largest-divisible-subset-dp-44",
+          "name": "Largest Divisible Subset|(DP-44)",
+          "link": "https://takeuforward.org/data-structure/longest-divisible-subset-dp-44/",
+          "difficulty": "Hard"
+        },
+        {
+          "key": "step-16-dynamic-programming__longest-string-chain-dp-45",
+          "name": "Longest String Chain|(DP-45)",
+          "link": "https://takeuforward.org/data-structure/longest-string-chain-dp-45/",
+          "difficulty": "Hard"
+        },
+        {
+          "key": "step-16-dynamic-programming__longest-bitonic-subsequence-dp-46",
+          "name": "Longest Bitonic Subsequence |(DP-46)",
+          "link": "https://takeuforward.org/data-structure/longest-bitonic-subsequence-dp-46/",
+          "difficulty": "Hard"
+        },
+        {
+          "key": "step-16-dynamic-programming__number-of-longest-increasing-subsequences-dp-47",
+          "name": "Number of Longest Increasing Subsequences|(DP-47)",
+          "link": "https://takeuforward.org/data-structure/number-of-longest-increasing-subsequences-dp-47/",
+          "difficulty": "Hard"
+        },
+        {
+          "key": "step-16-dynamic-programming__matrix-chain-multiplication-dp-48",
+          "name": "Matrix Chain Multiplication|(DP-48)",
+          "link": "https://takeuforward.org/dynamic-programming/matrix-chain-multiplication-dp-48/",
+          "difficulty": "Hard"
+        },
+        {
+          "key": "step-16-dynamic-programming__matrix-chain-multiplication-bottom-up-dp-49",
+          "name": "Matrix Chain Multiplication | Bottom-Up|(DP-49)",
+          "link": "https://takeuforward.org/data-structure/matrix-chain-multiplication-tabulation-method-dp-49/",
+          "difficulty": "Hard"
+        },
+        {
+          "key": "step-16-dynamic-programming__minimum-cost-to-cut-the-stick-dp-50",
+          "name": "Minimum Cost to Cut the Stick|(DP-50)",
+          "link": "https://takeuforward.org/data-structure/minimum-cost-to-cut-the-stick-dp-50/",
+          "difficulty": "Hard"
+        },
+        {
+          "key": "step-16-dynamic-programming__burst-balloons-dp-51",
+          "name": "Burst Balloons|(DP-51)",
+          "link": "https://takeuforward.org/data-structure/burst-balloons-partition-dp-dp-51/",
+          "difficulty": "Hard"
+        },
+        {
+          "key": "step-16-dynamic-programming__evaluate-boolean-expression-to-true-dp-52",
+          "name": "Evaluate Boolean Expression to True|(DP-52)",
+          "link": "https://takeuforward.org/data-structure/evaluate-boolean-expression-to-true-partition-dp-dp-52/",
+          "difficulty": "Hard"
+        },
+        {
+          "key": "step-16-dynamic-programming__palindrome-partitioning-ii-dp-53",
+          "name": "Palindrome Partitioning - II|(DP-53)",
+          "link": "https://takeuforward.org/data-structure/palindrome-partitioning-ii-front-partition-dp-53/",
+          "difficulty": "Hard"
+        },
+        {
+          "key": "step-16-dynamic-programming__partition-array-for-maximum-sum-dp-54",
+          "name": "Partition Array for Maximum Sum|(DP-54)",
+          "link": "https://takeuforward.org/data-structure/partition-array-for-maximum-sum-front-partition-dp-54/",
+          "difficulty": "Hard"
+        },
+        {
+          "key": "step-16-dynamic-programming__maximum-rectangle-area-with-all-1-s-dp-55",
+          "name": "Maximum Rectangle Area with all 1's|(DP-55)",
+          "link": "https://takeuforward.org/data-structure/maximum-rectangle-area-with-all-1s-dp-on-rectangles-dp-55/",
+          "difficulty": "Hard"
+        },
+        {
+          "key": "step-16-dynamic-programming__count-square-submatrices-with-all-ones-dp-56",
+          "name": "Count Square Submatrices with All Ones|(DP-56)",
+          "link": "https://takeuforward.org/data-structure/count-square-submatrices-with-all-1s-dp-on-rectangles-dp-56/",
+          "difficulty": "Hard"
+        }
+      ]
+    },
+    {
+      "key": "step-17-tries",
+      "order": 17,
+      "title": "Tries",
+      "problems": [
+        {
+          "key": "step-17-tries__implement-trie-insert-search-startswith",
+          "name": "Implement TRIE | INSERT | SEARCH | STARTSWITH",
+          "link": "https://takeuforward.org/data-structure/implement-trie-1/",
+          "difficulty": "Hard"
+        },
+        {
+          "key": "step-17-tries__implement-trie-2-prefix-tree",
+          "name": "Implement Trie - 2 (Prefix Tree)",
+          "link": "https://takeuforward.org/data-structure/implement-trie-ii/",
+          "difficulty": "Hard"
+        },
+        {
+          "key": "step-17-tries__longest-string-with-all-prefixes",
+          "name": "Longest String with All Prefixes",
+          "link": "https://takeuforward.org/plus/dsa/problems/longest-word-with-all-prefixes",
+          "difficulty": "Medium"
+        },
+        {
+          "key": "step-17-tries__number-of-distinct-substrings-in-a-string",
+          "name": "Number of Distinct Substrings in a String",
+          "link": "https://takeuforward.org/data-structure/number-of-distinct-substrings-in-a-string-using-trie/",
+          "difficulty": "Hard"
+        },
+        {
+          "key": "step-17-tries__bit-prerequisites-for-trie-problems",
+          "name": "Bit PreRequisites for TRIE Problems",
+          "link": "",
+          "difficulty": "Hard"
+        },
+        {
+          "key": "step-17-tries__maximum-xor-of-two-numbers-in-an-array",
+          "name": "Maximum XOR of two numbers in an array",
+          "link": "https://takeuforward.org/data-structure/maximum-xor-of-two-numbers-in-an-array/",
+          "difficulty": "Medium"
+        },
+        {
+          "key": "step-17-tries__maximum-xor-with-an-element-from-array",
+          "name": "Maximum XOR With an Element From Array",
+          "link": "https://takeuforward.org/trie/maximum-xor-queries-trie/",
+          "difficulty": "Hard"
+        }
+      ]
+    },
+    {
+      "key": "step-18-strings",
+      "order": 18,
+      "title": "Strings",
+      "problems": [
+        {
+          "key": "step-18-strings__minimum-number-of-bracket-reversals-needed-to-make-an-expression-balanced",
+          "name": "Minimum number of bracket reversals needed to make an expression balanced",
+          "link": "https://takeuforward.org/plus/dsa/problems/minimum-number-of-bracket-reversals-to-make-an-expression-balanced",
+          "difficulty": "Medium"
+        },
+        {
+          "key": "step-18-strings__count-and-say",
+          "name": "Count and say",
+          "link": "https://takeuforward.org/plus/dsa/problems/count-and-say",
+          "difficulty": "Medium"
+        },
+        {
+          "key": "step-18-strings__hashing-in-strings-theory",
+          "name": "Hashing In Strings | Theory",
+          "link": "",
+          "difficulty": "Medium"
+        },
+        {
+          "key": "step-18-strings__rabin-karp",
+          "name": "Rabin Karp",
+          "link": "https://takeuforward.org/plus/dsa/problems/rabin-karp-algorithm",
+          "difficulty": "Hard"
+        },
+        {
+          "key": "step-18-strings__z-function",
+          "name": "Z-Function",
+          "link": "https://takeuforward.org/plus/dsa/problems/z-function",
+          "difficulty": "Easy"
+        },
+        {
+          "key": "step-18-strings__kmp-algo-lps-pi-array",
+          "name": "KMP algo / LPS(pi) array",
+          "link": "https://takeuforward.org/plus/dsa/problems/kmp-algorithm-or-lps-array",
+          "difficulty": "Hard"
+        },
+        {
+          "key": "step-18-strings__shortest-palindrome",
+          "name": "Shortest Palindrome",
+          "link": "https://takeuforward.org/plus/dsa/problems/shortest-palindrome",
+          "difficulty": "Hard"
+        },
+        {
+          "key": "step-18-strings__longest-happy-prefix",
+          "name": "Longest happy prefix",
+          "link": "https://takeuforward.org/plus/dsa/problems/longest-happy-prefix",
+          "difficulty": "Hard"
+        },
+        {
+          "key": "step-18-strings__count-palindromic-subsequence-in-given-string",
+          "name": "Count palindromic subsequence in given string",
+          "link": "",
+          "difficulty": "Hard"
+        }
+      ]
+    }
+  ]
+}

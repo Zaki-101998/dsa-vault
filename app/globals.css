@@ -1,0 +1,159 @@
+@import "tailwindcss";
+
+:root {
+  --bg: #0f1115;
+  --panel: #161a22;
+  --panel2: #1c212c;
+  --panel3: #232937;
+  --border: #2a3040;
+  --text: #e6e9f0;
+  --muted: #8b93a7;
+  --accent: #5b8cff;
+}
+
+html,
+body {
+  height: 100%;
+  background: var(--bg);
+  color: var(--text);
+}
+
+body {
+  font-family:
+    -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+::-webkit-scrollbar {
+  width: 9px;
+  height: 9px;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--border);
+  border-radius: 5px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* ---------- Notes editor (TipTap) ---------- */
+.notes-prose {
+  padding: 18px 22px;
+  outline: none;
+  font-size: 14px;
+  line-height: 1.65;
+  min-height: 100%;
+}
+.notes-prose p.is-editor-empty:first-child::before {
+  content: "Paste your Gemini notes here — headings, bold, tables and code blocks are preserved. Plain-text markdown is auto-converted too.";
+  float: left;
+  color: var(--muted);
+  opacity: 0.55;
+  height: 0;
+  pointer-events: none;
+}
+.notes-prose h1 {
+  font-size: 21px;
+  font-weight: 700;
+  margin: 14px 0 8px;
+}
+.notes-prose h2 {
+  font-size: 18px;
+  font-weight: 700;
+  margin: 14px 0 7px;
+}
+.notes-prose h3,
+.notes-prose h4 {
+  font-size: 15.5px;
+  font-weight: 700;
+  margin: 12px 0 6px;
+}
+.notes-prose p {
+  margin: 6px 0;
+}
+.notes-prose ul,
+.notes-prose ol {
+  margin: 6px 0 6px 24px;
+}
+.notes-prose ul {
+  list-style: disc;
+}
+.notes-prose ol {
+  list-style: decimal;
+}
+.notes-prose li {
+  margin: 3px 0;
+}
+.notes-prose code {
+  font-family: "SF Mono", ui-monospace, Consolas, "Cascadia Code", Menlo, monospace;
+  font-size: 12.5px;
+  background: #0d1017;
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  padding: 1px 5px;
+  color: #8be9b6;
+}
+.notes-prose pre {
+  font-family: "SF Mono", ui-monospace, Consolas, "Cascadia Code", Menlo, monospace;
+  font-size: 12.5px;
+  background: #0d1017 !important;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 12px 14px;
+  margin: 10px 0;
+  overflow-x: auto;
+  white-space: pre;
+}
+.notes-prose pre code {
+  background: none;
+  border: none;
+  padding: 0;
+  color: inherit;
+}
+.notes-prose blockquote {
+  border-left: 3px solid var(--accent);
+  padding: 2px 14px;
+  margin: 8px 0;
+  color: var(--muted);
+}
+.notes-prose hr {
+  border: none;
+  border-top: 1px solid var(--border);
+  margin: 14px 0;
+}
+.notes-prose table {
+  border-collapse: collapse;
+  margin: 10px 0;
+  font-size: 13px;
+}
+.notes-prose th,
+.notes-prose td {
+  border: 1px solid var(--border);
+  padding: 6px 12px;
+  text-align: left;
+}
+.notes-prose th {
+  background: var(--panel2);
+}
+.notes-prose a {
+  color: var(--accent);
+}
+.notes-prose strong {
+  color: #fff;
+}
+
+/* highlight.js token overrides to sit on our dark background */
+.notes-prose .hljs {
+  background: transparent !important;
+  color: #c9d4e8;
+}
+
+/* ---------- Java code editor (CodeMirror) ---------- */
+.cm-editor {
+  height: 100%;
+}
+.cm-editor.cm-focused {
+  outline: none !important;
+}
+.cm-scroller {
+  font-family: "SF Mono", ui-monospace, Consolas, "Cascadia Code", Menlo, monospace !important;
+}

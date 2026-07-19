@@ -1,0 +1,124 @@
+"use client";
+
+import { useState } from "react";
+import { useVault } from "@/lib/useVault";
+import { createClient } from "@/lib/supabase/client";
+import { Sidebar } from "./Sidebar";
+import { ProblemHeader } from "./ProblemHeader";
+import { NotesEditor } from "./NotesEditor";
+import { CodeTabs } from "./CodeTabs";
+
+export function Workspace({ userId, userEmail }: { userId: string; userEmail: string | null }) {
+  const vault = useVault(userId);
+  const [selectedKey, setSelectedKey] = useState<string | null>(null);
+  const [activeTab, setActiveTab] = useState<"notes" | "code">("notes");
+
+  const problem = selectedKey ? vault.byKey.get(selectedKey) ?? null : null;
+
+  async function signOut() {
+    const supabase = createClient();
+    await supabase.auth.signOut();
+    window.location.href = "/login";
+  }
+
+  if (vault.loading) {
+    return (
+      <div className="flex-1 flex items-center justify-center text-[#8b93a7] text-sm">
+        Loading your vault…
+      </div>
+    );
+  }
+
+  return (
+    <div className="flex flex-1 min-h-0 overflow-hidden">
+      <Sidebar
+        groups={vault.groups}
+        rows={vault.rows}
+        selectedKey={selectedKey}
+        decayDays={vault.decayDays}
+        onSelect={(key) => {
+          setSelectedKey(key);
+          setActiveTab("notes");
+        }}
+        onToggleStar={vault.toggleStar}
+        onAddProblem={vault.addCustomProblem}
+        onDecayDaysChange={vault.setDecayDays}
+        onImport={vault.importRows}
+      />
+
+      <main className="flex-1 flex flex-col min-w-0 min-h-0">
+        <div className="flex items-center justify-end gap-3 px-5 py-2 border-b border-[#2a3040] text-xs text-[#8b93a7] shrink-0">
+          {vault.saving && <span className="text-[#3ecf8e]">Saving…</span>}
+          {userEmail && <span>{userEmail}</span>}
+          <button onClick={signOut} className="hover:text-[#e6e9f0]">
+            Sign out
+          </button>
+        </div>
+
+        {!problem ? (
+          <div className="flex-1 flex items-center justify-center">
+            <div className="max-w-[480px] bg-[#161a22] border border-[#2a3040] rounded-xl p-7">
+              <h2 className="text-lg font-bold mb-3">Welcome to DSA Vault 🗂️</h2>
+              <p className="text-sm text-[#8b93a7] mb-3">
+                Your notes + code companion for Striver&apos;s A2Z sheet.
+              </p>
+              <ul className="text-sm space-y-1.5 list-disc list-inside text-[#8b93a7]">
+                <li>
+                  <b className="text-[#e6e9f0]">Pick a problem</b> from the sidebar to get started.
+                </li>
+                <li>
+                  <b className="text-[#e6e9f0]">Notes tab</b> — paste straight from Gemini; formatting
+                  is kept.
+                </li>
+                <li>
+                  <b className="text-[#e6e9f0]">Code tab</b> — Brute / Better / Optimal Java solutions,
+                  highlighted.
+                </li>
+                <li>
+                  <b className="text-[#e6e9f0]">Star</b> — mark a problem revised; it fades gold → red
+                  the longer you leave it.
+                </li>
+              </ul>
+            </div>
+          </div>
+        ) : (
+          <div className="flex-1 flex flex-col min-h-0">
+            <ProblemHeader
+              key={problem.key}
+              problem={problem}
+              decayDays={vault.decayDays}
+              activeTab={activeTab}
+              onTabChange={setActiveTab}
+              onRename={(name) => vault.setCustomFields(problem.key, { custom_name: name })}
+              onRetopic={(topic) => vault.setCustomFields(problem.key, { custom_topic: topic })}
+              onRelink={(link) => vault.setCustomFields(problem.key, { custom_link: link })}
+              onStatusChange={(status) => vault.setStatus(problem.key, status)}
+              onStarClick={() => vault.toggleStar(problem.key)}
+              onMarkRevised={() => vault.markRevised(problem.key)}
+              onRemoveStar={() => vault.removeStar(problem.key)}
+              onDelete={() => {
+                vault.deleteProblem(problem.key);
+                setSelectedKey(null);
+              }}
+            />
+            <div className="flex-1 min-h-0 flex flex-col p-5">
+              {activeTab === "notes" ? (
+                <NotesEditor
+                  problemKey={problem.key}
+                  html={problem.notesHtml}
+                  onChange={(html) => vault.setNotes(problem.key, html)}
+                />
+              ) : (
+                <CodeTabs
+                  key={problem.key}
+                  approaches={problem.approaches}
+                  onChange={(a) => vault.setApproaches(problem.key, a)}
+                />
+              )}
+            </div>
+          </div>
+        )}
+      </main>
+    </div>
+  );
+}

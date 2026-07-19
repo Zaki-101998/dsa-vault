@@ -2,16 +2,22 @@
 
 import { useState } from "react";
 import { useVault } from "@/lib/useVault";
+import { useTodos } from "@/lib/useTodos";
 import { createClient } from "@/lib/supabase/client";
 import { Sidebar } from "./Sidebar";
 import { ProblemHeader } from "./ProblemHeader";
 import { NotesEditor } from "./NotesEditor";
 import { CodeTabs } from "./CodeTabs";
+import { TodoDrawer } from "./TodoDrawer";
 
 export function Workspace({ userId, userEmail }: { userId: string; userEmail: string | null }) {
   const vault = useVault(userId);
+  const todos = useTodos(userId);
   const [selectedKey, setSelectedKey] = useState<string | null>(null);
   const [activeTab, setActiveTab] = useState<"notes" | "code">("notes");
+  const [showTodos, setShowTodos] = useState(false);
+
+  const allTodayDone = todos.todayTotal > 0 && todos.todayDone === todos.todayTotal;
 
   const problem = selectedKey ? vault.byKey.get(selectedKey) ?? null : null;
 
@@ -48,6 +54,20 @@ export function Workspace({ userId, userEmail }: { userId: string; userEmail: st
 
       <main className="flex-1 flex flex-col min-w-0 min-h-0">
         <div className="flex items-center justify-end gap-3 px-5 py-2 border-b border-[#2a3040] text-xs text-[#8b93a7] shrink-0">
+          <button
+            onClick={() => setShowTodos(true)}
+            title="Daily plan — unfinished items roll over automatically"
+            className={`mr-auto border rounded-md px-2.5 py-1 font-semibold ${
+              allTodayDone
+                ? "text-[#3ecf8e] border-[#3ecf8e]/40"
+                : todos.carriedCount > 0
+                  ? "text-[#f0b429] border-[#f0b429]/40"
+                  : "text-[#8b93a7] border-[#2a3040] hover:text-[#e6e9f0]"
+            }`}
+          >
+            ☑ Today{todos.todayTotal > 0 && ` ${todos.todayDone}/${todos.todayTotal}`}
+            {todos.carriedCount > 0 && ` · ${todos.carriedCount} carried`}
+          </button>
           {vault.saving && <span className="text-[#3ecf8e]">Saving…</span>}
           {userEmail && <span>{userEmail}</span>}
           <button onClick={signOut} className="hover:text-[#e6e9f0]">
@@ -96,6 +116,8 @@ export function Workspace({ userId, userEmail }: { userId: string; userEmail: st
               onStarClick={() => vault.toggleStar(problem.key)}
               onMarkRevised={() => vault.markRevised(problem.key)}
               onRemoveStar={() => vault.removeStar(problem.key)}
+              planned={todos.plannedKeys.has(problem.key)}
+              onPlan={(day) => todos.addTodo(`Revise: ${problem.name}`, day, problem.key)}
               onDelete={() => {
                 vault.deleteProblem(problem.key);
                 setSelectedKey(null);
@@ -119,6 +141,17 @@ export function Workspace({ userId, userEmail }: { userId: string; userEmail: st
           </div>
         )}
       </main>
+
+      {showTodos && (
+        <TodoDrawer
+          todos={todos}
+          onClose={() => setShowTodos(false)}
+          onOpenProblem={(key) => {
+            setSelectedKey(key);
+            setActiveTab("notes");
+          }}
+        />
+      )}
     </div>
   );
 }

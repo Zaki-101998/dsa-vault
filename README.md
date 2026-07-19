@@ -13,7 +13,7 @@ A personal notes + code + revision tracker for [Striver's A2Z DSA sheet](https:/
 ## 1. Set up Supabase (one-time, ~5 minutes)
 
 1. Create a free project at [supabase.com](https://supabase.com).
-2. In the Supabase dashboard, go to **SQL Editor → New query**, paste the entire contents of [`supabase/migration.sql`](supabase/migration.sql), and run it. This creates the two tables (`user_problems`, `user_settings`) with row-level security so your data is private to your account.
+2. In the Supabase dashboard, go to **SQL Editor → New query**, paste the entire contents of [`supabase/migration.sql`](supabase/migration.sql), and run it. This creates the two tables (`user_problems`, `user_settings`) with row-level security so your data is private to your account. Then run [`supabase/migration-todos.sql`](supabase/migration-todos.sql) the same way for the daily TODO list (`user_todos` table). *(Already ran the first migration before the TODO feature existed? Just run `migration-todos.sql` on its own.)*
 3. Go to **Authentication → Sign In / Providers**:
    - **Email**: usually on by default — this powers the magic-link option.
    - **Google**: enable it and follow Supabase's prompt to add a Google OAuth Client ID/secret (create one in the [Google Cloud Console](https://console.cloud.google.com/apis/credentials) — "OAuth client ID" → Web application → add Supabase's provided redirect URL).
@@ -48,6 +48,7 @@ Vercel's build image runs Node 22+ by default, so the `@supabase/supabase-js` de
 - **Notes tab** — a TipTap rich-text editor. Pasting from Gemini (or Docs, Notion, etc.) carries over its HTML formatting directly. Pasting plain-text markdown (`## heading`, `**bold**`, `` ``` `` code fences, `- ` lists, `> ` quotes, tables) is auto-converted to formatted content.
 - **Code tab** — Brute / Better / Optimal sub-tabs per problem (add more with **+ Approach**), each with a syntax-highlighted CodeMirror editor and Time/Space complexity fields. Each approach has its own language (**Java / C++ / Python**, selectable in the toolbar). Pasted code is **auto-formatted** (clang-format for Java/C++, Ruff for Python — both running locally as WebAssembly), and the **✨ Format** button re-formats on demand. If a snippet can't be parsed, it's kept exactly as pasted.
 - **Revision star** — click it (or "Mark Revised") to add a problem to your rotation. The star color interpolates gold → orange → red over the configurable "Red in N days" window (default 5), and pulses once it's fully overdue. Clicking an already-fresh star (<12h) removes it from rotation.
+- **Daily plan** — the **☑ Today** button in the top bar opens a drawer with Today / Tomorrow TODO lists. Queue up tomorrow's problems the night before; anything unfinished **rolls over to the next day automatically**, with a "carried Nd" badge that turns red the longer it slips. "📋 Plan today" on any problem adds a linked "Revise: …" task — click it in the drawer to jump straight to that problem.
 - **Sidebar** — grouped by the sheet's 18 steps, with search, and filters for Due / Starred / Solved / Unsolved. "+ Problem" adds anything outside the sheet.
 - **Export / Import** — the sidebar footer has JSON backup/restore, independent of Supabase, as a safety net.
 

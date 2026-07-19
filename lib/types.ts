@@ -66,6 +66,21 @@ export interface Problem {
   hasRow: boolean;
 }
 
+// Row shape as stored in Supabase (public.user_todos)
+export interface UserTodoRow {
+  id: string;
+  user_id: string;
+  text: string;
+  due_date: string; // YYYY-MM-DD
+  original_date: string; // YYYY-MM-DD; never changed by carry-forward
+  done: boolean;
+  done_at: string | null;
+  problem_key: string | null;
+  position: number;
+  created_at: string;
+  updated_at: string;
+}
+
 export interface TopicGroup {
   key: string;
   title: string;

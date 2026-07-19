@@ -28,6 +28,8 @@ export function ProblemHeader({
   onMarkRevised,
   onRemoveStar,
   onDelete,
+  planned,
+  onPlan,
 }: {
   problem: Problem;
   decayDays: number;
@@ -43,6 +45,9 @@ export function ProblemHeader({
   onMarkRevised: () => void;
   onRemoveStar: () => void;
   onDelete: () => void;
+  /** True when this problem already has an unfinished todo in the daily plan. */
+  planned: boolean;
+  onPlan: (day: "today" | "tomorrow") => void;
 }) {
   // Local, blur-committed copies of the editable fields. The parent renders this
   // component with `key={problem.key}` so switching problems remounts it fresh
@@ -145,6 +150,31 @@ export function ProblemHeader({
             </>
           )}
         </div>
+        {planned ? (
+          <span
+            title="Already in your daily plan (open ☑ Today in the top bar)"
+            className="text-[12.5px] text-[#3ecf8e] border border-[#3ecf8e]/40 rounded-lg px-2.5 py-1.5 shrink-0"
+          >
+            ✓ Planned
+          </span>
+        ) : (
+          <span className="flex shrink-0">
+            <button
+              onClick={() => onPlan("today")}
+              title="Add “Revise: this problem” to today's plan"
+              className="border border-[#2a3040] rounded-l-lg px-2.5 py-1.5 text-xs text-[#8b93a7] hover:text-[#5b8cff] hover:border-[#5b8cff]"
+            >
+              📋 Plan today
+            </button>
+            <button
+              onClick={() => onPlan("tomorrow")}
+              title="Add to tomorrow's plan instead"
+              className="border border-l-0 border-[#2a3040] rounded-r-lg px-2 py-1.5 text-xs text-[#8b93a7] hover:text-[#5b8cff] hover:border-[#5b8cff]"
+            >
+              tmrw
+            </button>
+          </span>
+        )}
         <button
           onClick={onMarkRevised}
           className="bg-[#3ecf8e] text-[#08130d] font-bold rounded-lg px-3.5 py-1.5 text-[13px] hover:brightness-110"

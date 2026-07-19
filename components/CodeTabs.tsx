@@ -9,6 +9,29 @@ import type { Approach, CodeLang } from "@/lib/types";
 
 const LANG_LABELS: Record<CodeLang, string> = { java: "Java", cpp: "C++", python: "Python" };
 
+// The fixed set of canonical approach slots, always shown in this order.
+const CANONICAL = ["Brute", "Better", "Optimal"] as const;
+
+function isCanonical(a: Approach): boolean {
+  return !a.custom && (CANONICAL as readonly string[]).includes(a.label);
+}
+
+function hasContent(a: Approach | undefined): boolean {
+  return !!a && (!!a.code.trim() || !!a.time.trim() || !!a.space.trim());
+}
+
+// The tab a problem opens on: the first "added" approach in display order —
+// canonical slots (in fixed order) that have content, then any legacy custom
+// approaches. Returns undefined when nothing has been added yet.
+function firstAddedId(approaches: Approach[]): string | undefined {
+  for (const label of CANONICAL) {
+    const a = approaches.find((x) => isCanonical(x) && x.label === label);
+    if (hasContent(a)) return a!.id;
+  }
+  const custom = approaches.find((x) => !isCanonical(x));
+  return custom?.id;
+}
+
 export function CodeTabs({
   approaches,
   onChange,
@@ -16,7 +39,7 @@ export function CodeTabs({
   approaches: Approach[];
   onChange: (approaches: Approach[]) => void;
 }) {
-  const [activeId, setActiveId] = useState<string>(approaches[0]?.id);
+  const [activeId, setActiveId] = useState<string | undefined>(() => firstAddedId(approaches));
   const [copied, setCopied] = useState(false);
   const [fmtState, setFmtState] = useState<"idle" | "working" | "done" | "error">("idle");
   const editorRef = useRef<ReactCodeMirrorRef>(null);
@@ -28,8 +51,18 @@ export function CodeTabs({
     approachesRef.current = approaches;
   }, [approaches]);
 
-  const active = approaches.find((a) => a.id === activeId) || approaches[0];
+  const active = approaches.find((a) => a.id === activeId);
   const lang: CodeLang = active?.lang ?? "java";
+
+  // Canonical slots in fixed order: each is a real tab when it has content or is
+  // the one being edited, otherwise a dashed "+ label" placeholder.
+  const canonicalSlots = CANONICAL.map((label) => {
+    const appr = approaches.find((a) => isCanonical(a) && a.label === label);
+    const isReal = hasContent(appr) || (!!appr && appr.id === activeId);
+    return { label, appr, isReal };
+  });
+  // Legacy custom approaches (from before the placeholder model) stay visible.
+  const customApproaches = approaches.filter((a) => !isCanonical(a));
 
   function patchActive(patch: Partial<Approach>) {
     if (!active) return;
@@ -73,27 +106,31 @@ export function CodeTabs({
     }
   }
 
-  function addApproach() {
-    const label = prompt("Approach name (e.g. Two-pointer, DP memo):");
-    if (!label?.trim()) return;
+  // Add (or re-activate) one of the canonical slots from its placeholder.
+  function addCanonical(label: (typeof CANONICAL)[number]) {
+    const existing = approaches.find((a) => isCanonical(a) && a.label === label);
+    if (existing) {
+      setActiveId(existing.id);
+      return;
+    }
     const na: Approach = {
       id: newApproachId(),
-      label: label.trim(),
+      label,
       code: "",
       time: "",
       space: "",
-      custom: true,
+      custom: false,
       lang,
     };
     onChange([...approaches, na]);
     setActiveId(na.id);
   }
 
+  // Remove an approach, reverting a canonical slot back to a placeholder.
   function removeApproach(a: Approach) {
-    if (!confirm(`Remove approach "${a.label}"?`)) return;
     const next = approaches.filter((x) => x.id !== a.id);
     onChange(next);
-    if (a.id === activeId) setActiveId(next[0]?.id);
+    if (a.id === activeId) setActiveId(firstAddedId(next));
   }
 
   async function copyCode() {
@@ -107,53 +144,74 @@ export function CodeTabs({
     setTimeout(() => setCopied(false), 1200);
   }
 
-  if (!active) {
-    return (
-      <div className="flex-1 flex items-center justify-center text-[#8b93a7] text-sm">
-        No approaches yet.
-        <button onClick={addApproach} className="ml-2 text-[#5b8cff] underline">
-          Add one
-        </button>
-      </div>
-    );
-  }
-
   return (
     <div className="flex-1 flex flex-col min-h-0">
       <div className="flex gap-1.5 mb-2.5 flex-wrap items-center">
-        {approaches.map((a) => (
-          <button
-            key={a.id}
-            onClick={() => setActiveId(a.id)}
-            className={`border rounded-md px-3.5 py-1 text-[13px] flex items-center gap-2 ${
-              a.id === active.id
-                ? "text-white bg-[#232937] border-[#5b8cff]"
-                : "text-[#8b93a7] border-[#2a3040] hover:text-[#e6e9f0] bg-[#161a22]"
-            }`}
-          >
-            {a.label}
-            {a.custom && (
+        {canonicalSlots.map(({ label, appr, isReal }) =>
+          isReal && appr ? (
+            <button
+              key={label}
+              onClick={() => setActiveId(appr.id)}
+              className={`border rounded-md px-3.5 py-1 text-[13px] flex items-center gap-2 ${
+                appr.id === activeId
+                  ? "text-white bg-[#232937] border-[#5b8cff]"
+                  : "text-[#8b93a7] border-[#2a3040] hover:text-[#e6e9f0] bg-[#161a22]"
+              }`}
+            >
+              {label}
               <span
                 onClick={(e) => {
                   e.stopPropagation();
-                  removeApproach(a);
+                  removeApproach(appr);
                 }}
                 className="text-[11px] opacity-60 hover:opacity-100 hover:text-[#e12d39]"
                 title="Remove"
               >
                 ✕
               </span>
-            )}
+            </button>
+          ) : (
+            <button
+              key={label}
+              onClick={() => addCanonical(label)}
+              className="border border-dashed border-[#2a3040] rounded-md px-3.5 py-1 text-[13px] text-[#565e73] hover:text-[#5b8cff] hover:border-[#5b8cff]"
+              title={`Add ${label}`}
+            >
+              + {label}
+            </button>
+          )
+        )}
+        {customApproaches.map((a) => (
+          <button
+            key={a.id}
+            onClick={() => setActiveId(a.id)}
+            className={`border rounded-md px-3.5 py-1 text-[13px] flex items-center gap-2 ${
+              a.id === activeId
+                ? "text-white bg-[#232937] border-[#5b8cff]"
+                : "text-[#8b93a7] border-[#2a3040] hover:text-[#e6e9f0] bg-[#161a22]"
+            }`}
+          >
+            {a.label}
+            <span
+              onClick={(e) => {
+                e.stopPropagation();
+                removeApproach(a);
+              }}
+              className="text-[11px] opacity-60 hover:opacity-100 hover:text-[#e12d39]"
+              title="Remove"
+            >
+              ✕
+            </span>
           </button>
         ))}
-        <button
-          onClick={addApproach}
-          className="border border-dashed border-[#2a3040] rounded-md px-3 py-1 text-[13px] text-[#8b93a7] hover:text-[#5b8cff] hover:border-[#5b8cff]"
-        >
-          + Approach
-        </button>
       </div>
 
+      {!active ? (
+        <div className="flex-1 flex items-center justify-center text-[#8b93a7] text-sm">
+          Add Brute / Better / Optimal above to start.
+        </div>
+      ) : (
+        <>
       <div className="flex gap-2.5 mb-2.5 items-center">
         <label className="text-xs text-[#8b93a7]">Time</label>
         <input
@@ -210,6 +268,8 @@ export function CodeTabs({
         onChange={(code) => patchActive({ code })}
         onPasted={(doc) => runFormat(doc, { silent: true })}
       />
+        </>
+      )}
     </div>
   );
 }

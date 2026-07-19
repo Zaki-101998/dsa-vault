@@ -9,12 +9,10 @@ export function newApproachId(): string {
     : Math.random().toString(36).slice(2) + Date.now().toString(36);
 }
 
+// New problems start with no approaches — the Brute/Better/Optimal slots appear
+// as add-on-demand placeholders in the Code tab until the user adds them.
 export function defaultApproaches(): Approach[] {
-  return [
-    { id: newApproachId(), label: "Brute", code: "", time: "", space: "", custom: false, lang: "java" },
-    { id: newApproachId(), label: "Better", code: "", time: "", space: "", custom: false, lang: "java" },
-    { id: newApproachId(), label: "Optimal", code: "", time: "", space: "", custom: false, lang: "java" },
-  ];
+  return [];
 }
 
 function toEpoch(iso: string | null | undefined): number | null {

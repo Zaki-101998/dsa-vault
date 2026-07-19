@@ -22,6 +22,7 @@ function blankRow(userId: string, key: string): UserProblemRow {
     rev_log: [],
     notes_html: "",
     approaches: defaultApproaches(),
+    position: null,
     updated_at: new Date().toISOString(),
   };
 }
@@ -175,11 +176,55 @@ export function useVault(userId: string) {
   const addCustomProblem = useCallback(
     (name: string, topic: string) => {
       const key = `custom:${newApproachId()}`;
+      const finalTopic = topic || "Custom";
+      // Land the new problem at the end of its target section by giving it a
+      // position just past the current max — so the ordering survives a reload.
+      const norm = finalTopic.trim().toLowerCase();
+      const { groups } = mergeProblems(rowsRef.current);
+      const target = groups.find((g) => g.title.trim().toLowerCase() === norm);
+      const maxFinite = target
+        ? target.problems.reduce((m, p) => (Number.isFinite(p.sortIndex) ? Math.max(m, p.sortIndex) : m), -1)
+        : -1;
       updateRow(key, {
         custom_name: name || "Untitled",
-        custom_topic: topic || "Custom",
+        custom_topic: finalTopic,
+        position: maxFinite + 1,
       });
       return key;
+    },
+    [updateRow]
+  );
+
+  // Move a problem within its section by writing a single fractional position
+  // (the midpoint of its new neighbours), riding the same optimistic upsert path.
+  const reorderProblem = useCallback(
+    (groupKey: string, activeKey: string, overKey: string) => {
+      if (activeKey === overKey) return;
+      const { groups } = mergeProblems(rowsRef.current);
+      const group = groups.find((g) => g.key === groupKey);
+      if (!group) return;
+      const arr = group.problems;
+      const oldIndex = arr.findIndex((p) => p.key === activeKey);
+      const newIndex = arr.findIndex((p) => p.key === overKey);
+      if (oldIndex === -1 || newIndex === -1) return;
+
+      // Rebuild the array as it will look after the move, then read the moved
+      // item's neighbours to derive its new sort index.
+      const next = [...arr];
+      const [moved] = next.splice(oldIndex, 1);
+      next.splice(newIndex, 0, moved);
+      const prev = next[newIndex - 1];
+      const after = next[newIndex + 1];
+
+      let position: number;
+      if (!prev) position = (Number.isFinite(after.sortIndex) ? after.sortIndex : 0) - 1;
+      else if (!after) position = (Number.isFinite(prev.sortIndex) ? prev.sortIndex : 0) + 1;
+      else {
+        const lo = Number.isFinite(prev.sortIndex) ? prev.sortIndex : 0;
+        const hi = Number.isFinite(after.sortIndex) ? after.sortIndex : lo + 2;
+        position = (lo + hi) / 2;
+      }
+      updateRow(activeKey, { position });
     },
     [updateRow]
   );
@@ -213,6 +258,7 @@ export function useVault(userId: string) {
         rev_log: r.rev_log || [],
         notes_html: r.notes_html || "",
         approaches: r.approaches || [],
+        position: r.position ?? null,
       }));
       const { data, error } = await supabase
         .from("user_problems")
@@ -257,6 +303,7 @@ export function useVault(userId: string) {
     setApproaches,
     setCustomFields,
     addCustomProblem,
+    reorderProblem,
     deleteProblem,
     importRows,
     setDecayDays,

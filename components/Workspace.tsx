@@ -47,6 +47,7 @@ export function Workspace({ userId, userEmail }: { userId: string; userEmail: st
           setActiveTab("notes");
         }}
         onToggleStar={vault.toggleStar}
+        onReorder={vault.reorderProblem}
         onAddProblem={vault.addCustomProblem}
         onDecayDaysChange={vault.setDecayDays}
         onImport={vault.importRows}

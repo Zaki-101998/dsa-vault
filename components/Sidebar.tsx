@@ -13,6 +13,7 @@ export function Sidebar({
   decayDays,
   onSelect,
   onToggleStar,
+  onReorder,
   onAddProblem,
   onDecayDaysChange,
   onImport,
@@ -23,6 +24,7 @@ export function Sidebar({
   decayDays: number;
   onSelect: (key: string) => void;
   onToggleStar: (key: string) => void;
+  onReorder: (groupKey: string, activeKey: string, overKey: string) => void;
   onAddProblem: (name: string, topic: string) => string;
   onDecayDaysChange: (days: number) => void;
   onImport: (rows: UserProblemRow[]) => void;
@@ -109,6 +111,7 @@ export function Sidebar({
         decayDays={decayDays}
         onSelect={onSelect}
         onToggleStar={onToggleStar}
+        onReorder={onReorder}
       />
 
       <div className="border-t border-[#2a3040] px-3.5 py-2.5 flex items-center gap-2 text-xs text-[#8b93a7]">

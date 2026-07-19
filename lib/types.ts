@@ -45,6 +45,7 @@ export interface UserProblemRow {
   rev_log: string[];
   notes_html: string;
   approaches: Approach[];
+  position: number | null;
   updated_at: string;
 }
 
@@ -64,6 +65,10 @@ export interface Problem {
   notesHtml: string;
   approaches: Approach[];
   hasRow: boolean;
+  // Effective sort index within its group: the row's manual position when set,
+  // otherwise the problem's index in the seed sheet. Used to order rows and to
+  // compute a midpoint position when reordering via drag-and-drop.
+  sortIndex: number;
 }
 
 // Row shape as stored in Supabase (public.user_todos)

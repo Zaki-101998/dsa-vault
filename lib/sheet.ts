@@ -21,7 +21,12 @@ function toEpoch(iso: string | null | undefined): number | null {
   return iso ? new Date(iso).getTime() : null;
 }
 
-function toProblem(key: string, row: UserProblemRow | undefined, base: { name: string; topic: string; link: string; difficulty: string }): Problem {
+function toProblem(
+  key: string,
+  row: UserProblemRow | undefined,
+  base: { name: string; topic: string; link: string; difficulty: string },
+  fallbackIndex: number
+): Problem {
   return {
     key,
     isCustom: key.startsWith("custom:"),
@@ -37,7 +42,22 @@ function toProblem(key: string, row: UserProblemRow | undefined, base: { name: s
     notesHtml: row?.notes_html || "",
     approaches: row?.approaches?.length ? row.approaches : defaultApproaches(),
     hasRow: !!row,
+    sortIndex: row?.position ?? fallbackIndex,
   };
+}
+
+// Stable-sort problems by their effective sort index (ties keep insertion order).
+function bySortIndex(problems: Problem[]): Problem[] {
+  return problems
+    .map((p, i) => [p, i] as const)
+    .sort((a, b) => a[0].sortIndex - b[0].sortIndex || a[1] - b[1])
+    .map(([p]) => p);
+}
+
+// Case-insensitive topic key, so a custom problem tagged "arrays" merges into the
+// seed step titled "Arrays" (the Add modal's datalist suggests the seed titles).
+function normTopic(t: string): string {
+  return t.trim().toLowerCase();
 }
 
 export function mergeProblems(rows: UserProblemRow[]): {
@@ -48,39 +68,56 @@ export function mergeProblems(rows: UserProblemRow[]): {
   const byKey = new Map<string, Problem>();
   const groups: TopicGroup[] = [];
 
+  // Index seed groups by normalized title so custom problems can merge into them.
+  const groupByTopic = new Map<string, TopicGroup>();
+
   for (const step of sheet.steps) {
-    const problems: Problem[] = step.problems.map((sp) => {
-      const p = toProblem(sp.key, rowMap.get(sp.key), {
-        name: sp.name,
-        topic: step.title,
-        link: sp.link,
-        difficulty: sp.difficulty,
-      });
+    const problems: Problem[] = step.problems.map((sp, i) => {
+      const p = toProblem(
+        sp.key,
+        rowMap.get(sp.key),
+        { name: sp.name, topic: step.title, link: sp.link, difficulty: sp.difficulty },
+        i
+      );
       byKey.set(p.key, p);
       return p;
     });
-    groups.push({ key: step.key, title: step.title, order: step.order, problems });
+    const group: TopicGroup = { key: step.key, title: step.title, order: step.order, problems };
+    groups.push(group);
+    groupByTopic.set(normTopic(step.title), group);
   }
 
-  const customByTopic = new Map<string, Problem[]>();
+  // Custom problems merge into a matching seed group, else form their own bottom group.
+  // Legacy custom rows without a position sort to the end of their group (Infinity).
+  const customGroups = new Map<string, TopicGroup>();
+  let order = 1000;
   for (const row of rows) {
     if (!row.problem_key.startsWith("custom:")) continue;
-    const p = toProblem(row.problem_key, row, {
-      name: row.custom_name || "Untitled",
-      topic: row.custom_topic || "Custom",
-      link: row.custom_link || "",
-      difficulty: "",
-    });
+    const topic = row.custom_topic || "Custom";
+    const p = toProblem(
+      row.problem_key,
+      row,
+      { name: row.custom_name || "Untitled", topic, link: row.custom_link || "", difficulty: "" },
+      Number.POSITIVE_INFINITY
+    );
     byKey.set(p.key, p);
-    const arr = customByTopic.get(p.topic) || [];
-    arr.push(p);
-    customByTopic.set(p.topic, arr);
+
+    const seedGroup = groupByTopic.get(normTopic(topic));
+    if (seedGroup) {
+      seedGroup.problems.push(p);
+      continue;
+    }
+    let cg = customGroups.get(normTopic(topic));
+    if (!cg) {
+      cg = { key: `custom:${topic}`, title: topic, order: order++, problems: [] };
+      customGroups.set(normTopic(topic), cg);
+      groups.push(cg);
+    }
+    cg.problems.push(p);
   }
 
-  let order = 1000;
-  for (const [topic, problems] of customByTopic) {
-    groups.push({ key: `custom:${topic}`, title: topic, order: order++, problems });
-  }
+  // Order each group's problems by their effective sort index.
+  for (const g of groups) g.problems = bySortIndex(g.problems);
 
   return { groups, byKey };
 }

@@ -1,6 +1,24 @@
 "use client";
 
 import { useMemo, useState } from "react";
+import {
+  DndContext,
+  PointerSensor,
+  closestCenter,
+  useSensor,
+  useSensors,
+  type DragEndEvent,
+} from "@dnd-kit/core";
+import {
+  SortableContext,
+  useSortable,
+  verticalListSortingStrategy,
+} from "@dnd-kit/sortable";
+
+// dnd-kit exposes `attributes`/`listeners` as opaque types; derive them from the
+// hook's return so ProblemRow can accept them without deep internal imports.
+type SortableHandles = Pick<ReturnType<typeof useSortable>, "attributes" | "listeners">;
+import { CSS } from "@dnd-kit/utilities";
 import { RevisionStar } from "./RevisionStar";
 import { daysSince, isDue, starColor } from "@/lib/decay";
 import type { Problem, TopicGroup } from "@/lib/types";
@@ -13,20 +31,32 @@ function ProblemRow({
   decayDays,
   onSelect,
   onToggleStar,
+  drag,
 }: {
   problem: Problem;
   selected: boolean;
   decayDays: number;
   onSelect: () => void;
   onToggleStar: () => void;
+  drag?: {
+    setNodeRef: (el: HTMLElement | null) => void;
+    style: React.CSSProperties;
+    isDragging: boolean;
+  } & SortableHandles;
 }) {
   const days = problem.starred ? Math.floor(daysSince(problem.lastRevised)) : null;
   const color = starColor(problem.starred, problem.lastRevised, decayDays);
 
   return (
     <div
+      ref={drag?.setNodeRef}
+      style={drag?.style}
+      {...(drag?.attributes ?? {})}
+      {...(drag?.listeners ?? {})}
       onClick={onSelect}
       className={`flex items-center gap-2 px-2 py-[7px] rounded-lg cursor-pointer border ${
+        drag ? "select-none" : ""
+      } ${drag?.isDragging ? "opacity-50" : ""} ${
         selected ? "bg-[#232937] border-[#2a3040]" : "border-transparent hover:bg-[#1c212c]"
       }`}
     >
@@ -55,6 +85,40 @@ function ProblemRow({
   );
 }
 
+function SortableProblemRow({
+  problem,
+  selected,
+  decayDays,
+  onSelect,
+  onToggleStar,
+}: {
+  problem: Problem;
+  selected: boolean;
+  decayDays: number;
+  onSelect: () => void;
+  onToggleStar: () => void;
+}) {
+  const { setNodeRef, transform, transition, isDragging, attributes, listeners } = useSortable({
+    id: problem.key,
+  });
+  return (
+    <ProblemRow
+      problem={problem}
+      selected={selected}
+      decayDays={decayDays}
+      onSelect={onSelect}
+      onToggleStar={onToggleStar}
+      drag={{
+        setNodeRef,
+        style: { transform: CSS.Transform.toString(transform), transition },
+        isDragging,
+        attributes,
+        listeners,
+      }}
+    />
+  );
+}
+
 function matchesFilter(p: Problem, filter: FilterKey, decayDays: number): boolean {
   if (filter === "due") return isDue(p.starred, p.lastRevised, decayDays);
   if (filter === "starred") return p.starred;
@@ -71,6 +135,7 @@ export function ProblemList({
   decayDays,
   onSelect,
   onToggleStar,
+  onReorder,
 }: {
   groups: TopicGroup[];
   filter: FilterKey;
@@ -79,10 +144,16 @@ export function ProblemList({
   decayDays: number;
   onSelect: (key: string) => void;
   onToggleStar: (key: string) => void;
+  onReorder: (groupKey: string, activeKey: string, overKey: string) => void;
 }) {
   const [collapsed, setCollapsed] = useState<Record<string, boolean>>({});
   const q = search.trim().toLowerCase();
   const searching = q.length > 0;
+  // Dragging only makes sense when every problem is shown in its true order.
+  const draggable = filter === "all" && !searching;
+
+  // A small movement threshold lets plain clicks (select row, toggle star) through.
+  const sensors = useSensors(useSensor(PointerSensor, { activationConstraint: { distance: 5 } }));
 
   const filteredGroups = useMemo(() => {
     return groups
@@ -129,6 +200,14 @@ export function ProblemList({
         const solved = g.problems.filter((p) => p.status === "Solved").length;
         const isOpen = searching || !collapsed[g.key];
         const stepLabel = g.order < 1000 ? `Step ${g.order} · ` : "";
+
+        function handleDragEnd(e: DragEndEvent) {
+          const { active, over } = e;
+          if (over && active.id !== over.id) {
+            onReorder(g.key, String(active.id), String(over.id));
+          }
+        }
+
         return (
           <div key={g.key} className="mb-0.5">
             <button
@@ -144,20 +223,38 @@ export function ProblemList({
                 {solved}/{g.problems.length}
               </span>
             </button>
-            {isOpen && (
-              <div>
-                {g.problems.map((p) => (
-                  <ProblemRow
-                    key={p.key}
-                    problem={p}
-                    selected={p.key === selectedKey}
-                    decayDays={decayDays}
-                    onSelect={() => onSelect(p.key)}
-                    onToggleStar={() => onToggleStar(p.key)}
-                  />
-                ))}
-              </div>
-            )}
+            {isOpen &&
+              (draggable ? (
+                <DndContext sensors={sensors} collisionDetection={closestCenter} onDragEnd={handleDragEnd}>
+                  <SortableContext items={g.problems.map((p) => p.key)} strategy={verticalListSortingStrategy}>
+                    <div>
+                      {g.problems.map((p) => (
+                        <SortableProblemRow
+                          key={p.key}
+                          problem={p}
+                          selected={p.key === selectedKey}
+                          decayDays={decayDays}
+                          onSelect={() => onSelect(p.key)}
+                          onToggleStar={() => onToggleStar(p.key)}
+                        />
+                      ))}
+                    </div>
+                  </SortableContext>
+                </DndContext>
+              ) : (
+                <div>
+                  {g.problems.map((p) => (
+                    <ProblemRow
+                      key={p.key}
+                      problem={p}
+                      selected={p.key === selectedKey}
+                      decayDays={decayDays}
+                      onSelect={() => onSelect(p.key)}
+                      onToggleStar={() => onToggleStar(p.key)}
+                    />
+                  ))}
+                </div>
+              ))}
           </div>
         );
       })}

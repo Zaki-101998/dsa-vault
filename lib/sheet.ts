@@ -22,7 +22,7 @@ function toEpoch(iso: string | null | undefined): number | null {
 function toProblem(
   key: string,
   row: UserProblemRow | undefined,
-  base: { name: string; topic: string; link: string; difficulty: string },
+  base: { name: string; topic: string; link: string; difficulty: string; practice?: string },
   fallbackIndex: number
 ): Problem {
   return {
@@ -32,6 +32,7 @@ function toProblem(
     topic: row?.custom_topic || base.topic,
     link: row?.custom_link ?? base.link,
     difficulty: base.difficulty,
+    practiceLink: base.practice ?? "",
     status: row?.status || "Unsolved",
     starred: row?.starred || false,
     lastRevised: toEpoch(row?.last_revised),
@@ -74,7 +75,7 @@ export function mergeProblems(rows: UserProblemRow[]): {
       const p = toProblem(
         sp.key,
         rowMap.get(sp.key),
-        { name: sp.name, topic: step.title, link: sp.link, difficulty: sp.difficulty },
+        { name: sp.name, topic: step.title, link: sp.link, difficulty: sp.difficulty, practice: sp.practice },
         i
       );
       byKey.set(p.key, p);

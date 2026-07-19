@@ -4,6 +4,7 @@ import { useState } from "react";
 import { RevisionStar } from "./RevisionStar";
 import { daysSince, isOverdue } from "@/lib/decay";
 import { KNOWN_TOPICS } from "@/lib/sheet";
+import { linkPlatform } from "@/lib/links";
 import type { Problem, Status } from "@/lib/types";
 
 function fmtAgo(ts: number): string {
@@ -57,6 +58,7 @@ export function ProblemHeader({
   const [link, setLink] = useState(problem.link);
 
   const overdue = isOverdue(problem.starred, problem.lastRevised, decayDays);
+  const practice = linkPlatform(problem.practiceLink);
 
   return (
     <div className="px-5 pt-4 border-b border-[#2a3040]">
@@ -117,6 +119,15 @@ export function ProblemHeader({
         >
           ↗ Open
         </button>
+        {practice && (
+          <button
+            onClick={() => window.open(problem.practiceLink, "_blank", "noopener,noreferrer")}
+            title={`Solve on ${practice.label}`}
+            className={`border rounded-md px-2.5 text-[13px] font-semibold hover:brightness-110 ${practice.className}`}
+          >
+            {practice.label} ↗
+          </button>
+        )}
       </div>
 
       <div className="flex items-center gap-3.5 mb-3.5 bg-[#161a22] border border-[#2a3040] rounded-xl px-3.5 py-2.5">

@@ -5,6 +5,8 @@ export interface SeedProblem {
   name: string;
   link: string;
   difficulty: string;
+  /** Optional practice-problem link (LeetCode preferred, else GFG/HackerRank). */
+  practice?: string;
 }
 
 export interface SeedStep {
@@ -69,6 +71,9 @@ export interface Problem {
   // otherwise the problem's index in the seed sheet. Used to order rows and to
   // compute a midpoint position when reordering via drag-and-drop.
   sortIndex: number;
+  // Practice-problem link from the seed sheet (LeetCode/GFG/HackerRank); empty
+  // for user-added custom problems.
+  practiceLink: string;
 }
 
 // Row shape as stored in Supabase (public.user_todos)

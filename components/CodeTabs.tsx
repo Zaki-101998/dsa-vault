@@ -212,20 +212,20 @@ export function CodeTabs({
         </div>
       ) : (
         <>
-      <div className="flex gap-2.5 mb-2.5 items-center">
+      <div className="flex flex-wrap gap-2.5 mb-2.5 items-center">
         <label className="text-xs text-[#8b93a7]">Time</label>
         <input
           value={active.time}
           onChange={(e) => patchActive({ time: e.target.value })}
           placeholder="O(n log n)"
-          className="w-[150px] font-mono text-[12.5px] bg-[#1c212c] border border-[#2a3040] rounded-md px-2.5 py-1 outline-none focus:border-[#5b8cff]"
+          className="w-[110px] sm:w-[150px] font-mono text-[12.5px] bg-[#1c212c] border border-[#2a3040] rounded-md px-2.5 py-1 outline-none focus:border-[#5b8cff]"
         />
         <label className="text-xs text-[#8b93a7]">Space</label>
         <input
           value={active.space}
           onChange={(e) => patchActive({ space: e.target.value })}
           placeholder="O(1)"
-          className="w-[150px] font-mono text-[12.5px] bg-[#1c212c] border border-[#2a3040] rounded-md px-2.5 py-1 outline-none focus:border-[#5b8cff]"
+          className="w-[110px] sm:w-[150px] font-mono text-[12.5px] bg-[#1c212c] border border-[#2a3040] rounded-md px-2.5 py-1 outline-none focus:border-[#5b8cff]"
         />
         <select
           value={lang}

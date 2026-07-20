@@ -16,6 +16,7 @@ export function Workspace({ userId, userEmail }: { userId: string; userEmail: st
   const [selectedKey, setSelectedKey] = useState<string | null>(null);
   const [activeTab, setActiveTab] = useState<"notes" | "code">("notes");
   const [showTodos, setShowTodos] = useState(false);
+  const [sidebarOpen, setSidebarOpen] = useState(false);
 
   const allTodayDone = todos.todayTotal > 0 && todos.todayDone === todos.todayTotal;
 
@@ -51,10 +52,19 @@ export function Workspace({ userId, userEmail }: { userId: string; userEmail: st
         onAddProblem={vault.addCustomProblem}
         onDecayDaysChange={vault.setDecayDays}
         onImport={vault.importRows}
+        mobileOpen={sidebarOpen}
+        onClose={() => setSidebarOpen(false)}
       />
 
       <main className="flex-1 flex flex-col min-w-0 min-h-0">
-        <div className="flex items-center justify-end gap-3 px-5 py-2 border-b border-[#2a3040] text-xs text-[#8b93a7] shrink-0">
+        <div className="flex items-center justify-end gap-3 px-3 md:px-5 py-2 border-b border-[#2a3040] text-xs text-[#8b93a7] shrink-0">
+          <button
+            onClick={() => setSidebarOpen(true)}
+            title="Show problem list"
+            className="md:hidden border border-[#2a3040] rounded-md w-8 h-8 flex items-center justify-center text-base leading-none hover:text-[#e6e9f0] hover:border-[#565e73]"
+          >
+            ☰
+          </button>
           <button
             onClick={() => setShowTodos(true)}
             title="Daily plan — unfinished items roll over automatically"
@@ -70,7 +80,7 @@ export function Workspace({ userId, userEmail }: { userId: string; userEmail: st
             {todos.carriedCount > 0 && ` · ${todos.carriedCount} carried`}
           </button>
           {vault.saving && <span className="text-[#3ecf8e]">Saving…</span>}
-          {userEmail && <span>{userEmail}</span>}
+          {userEmail && <span className="hidden sm:inline max-w-[40vw] truncate">{userEmail}</span>}
           <button onClick={signOut} className="hover:text-[#e6e9f0]">
             Sign out
           </button>
@@ -124,7 +134,7 @@ export function Workspace({ userId, userEmail }: { userId: string; userEmail: st
                 setSelectedKey(null);
               }}
             />
-            <div className="flex-1 min-h-0 flex flex-col p-5">
+            <div className="flex-1 min-h-0 flex flex-col p-3 md:p-5">
               {activeTab === "notes" ? (
                 <NotesEditor
                   problemKey={problem.key}

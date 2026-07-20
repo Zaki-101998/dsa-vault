@@ -61,14 +61,14 @@ export function ProblemHeader({
   const practice = linkPlatform(problem.practiceLink);
 
   return (
-    <div className="px-5 pt-4 border-b border-[#2a3040]">
-      <div className="flex gap-2.5 items-center mb-2.5">
+    <div className="px-3 md:px-5 pt-3 md:pt-4 border-b border-[#2a3040]">
+      <div className="flex flex-wrap gap-2.5 items-center mb-2.5">
         <input
           value={name}
           onChange={(e) => setName(e.target.value)}
           onBlur={() => name.trim() && name !== problem.name && onRename(name.trim())}
           placeholder="Problem name"
-          className="flex-1 text-[19px] font-bold bg-transparent border border-transparent rounded-md px-2 py-1 outline-none hover:bg-[#1c212c] focus:bg-[#1c212c] focus:border-[#2a3040]"
+          className="flex-1 min-w-[140px] text-[19px] font-bold bg-transparent border border-transparent rounded-md px-2 py-1 outline-none hover:bg-[#1c212c] focus:bg-[#1c212c] focus:border-[#2a3040]"
         />
         {problem.difficulty && (
           <span className="text-[13px] text-[#8b93a7] shrink-0">{problem.difficulty}</span>
@@ -91,14 +91,14 @@ export function ProblemHeader({
         </button>
       </div>
 
-      <div className="flex gap-2.5 mb-3">
+      <div className="flex flex-wrap gap-2.5 mb-3">
         <input
           list="header-topics"
           value={topic}
           onChange={(e) => setTopic(e.target.value)}
           onBlur={() => topic.trim() && topic !== problem.topic && onRetopic(topic.trim())}
           placeholder="Topic (e.g. Arrays)"
-          className="w-[220px] bg-[#1c212c] border border-[#2a3040] rounded-md px-2.5 py-1.5 text-[13px] outline-none focus:border-[#5b8cff]"
+          className="w-full sm:w-[220px] bg-[#1c212c] border border-[#2a3040] rounded-md px-2.5 py-1.5 text-[13px] outline-none focus:border-[#5b8cff]"
         />
         <datalist id="header-topics">
           {KNOWN_TOPICS.map((t) => (
@@ -110,7 +110,7 @@ export function ProblemHeader({
           onChange={(e) => setLink(e.target.value)}
           onBlur={() => link !== problem.link && onRelink(link.trim())}
           placeholder="Problem link (LeetCode / TUF)…"
-          className="flex-1 bg-[#1c212c] border border-[#2a3040] rounded-md px-2.5 py-1.5 text-[13px] outline-none focus:border-[#5b8cff]"
+          className="flex-1 min-w-[160px] bg-[#1c212c] border border-[#2a3040] rounded-md px-2.5 py-1.5 text-[13px] outline-none focus:border-[#5b8cff]"
         />
         <button
           onClick={() => problem.link && window.open(problem.link, "_blank", "noopener,noreferrer")}
@@ -130,7 +130,7 @@ export function ProblemHeader({
         )}
       </div>
 
-      <div className="flex items-center gap-3.5 mb-3.5 bg-[#161a22] border border-[#2a3040] rounded-xl px-3.5 py-2.5">
+      <div className="flex flex-wrap items-center gap-3.5 mb-3.5 bg-[#161a22] border border-[#2a3040] rounded-xl px-3.5 py-2.5">
         <RevisionStar
           starred={problem.starred}
           lastRevised={problem.lastRevised}
@@ -138,7 +138,7 @@ export function ProblemHeader({
           size={28}
           onClick={onStarClick}
         />
-        <div className="text-[12.5px] text-[#8b93a7] flex-1">
+        <div className="text-[12.5px] text-[#8b93a7] flex-1 min-w-[180px]">
           {!problem.starred ? (
             <>
               Not in revision rotation. Click <b className="text-[#e6e9f0]">Mark Revised</b> to start tracking —

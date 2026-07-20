@@ -17,6 +17,8 @@ export function Sidebar({
   onAddProblem,
   onDecayDaysChange,
   onImport,
+  mobileOpen = false,
+  onClose,
 }: {
   groups: TopicGroup[];
   rows: UserProblemRow[];
@@ -28,6 +30,10 @@ export function Sidebar({
   onAddProblem: (name: string, topic: string) => string;
   onDecayDaysChange: (days: number) => void;
   onImport: (rows: UserProblemRow[]) => void;
+  /** Mobile-only: whether the off-canvas drawer is open. Desktop ignores this. */
+  mobileOpen?: boolean;
+  /** Mobile-only: dismiss the drawer (also fired after selecting a problem). */
+  onClose?: () => void;
 }) {
   const [search, setSearch] = useState("");
   const [filter, setFilter] = useState<FilterKey>("all");
@@ -35,6 +41,12 @@ export function Sidebar({
   const fileRef = useRef<HTMLInputElement>(null);
 
   const allProblems = groups.flatMap((g) => g.problems);
+
+  // Picking a problem also closes the drawer on mobile (no-op on desktop).
+  function handleSelect(key: string) {
+    onSelect(key);
+    onClose?.();
+  }
 
   function exportBackup() {
     const blob = new Blob([JSON.stringify({ rows, decayDays }, null, 2)], {
@@ -66,26 +78,35 @@ export function Sidebar({
     reader.readAsText(file);
   }
 
-  return (
-    <aside className="w-[300px] min-w-[300px] bg-[#161a22] border-r border-[#2a3040] flex flex-col h-full">
+  const content = (
+    <>
       <div className="p-3.5 pb-2.5 border-b border-[#2a3040]">
         <div className="flex items-center justify-between mb-2.5">
           <h1 className="text-base font-bold tracking-wide">
             DSA <span className="text-[#5b8cff]">Vault</span>
           </h1>
-          <button
-            onClick={() => setShowAdd(true)}
-            className="bg-[#5b8cff] text-white rounded-md px-3 py-1 text-[13px] font-semibold hover:brightness-110"
-          >
-            + Problem
-          </button>
+          <div className="flex items-center gap-2">
+            <button
+              onClick={() => setShowAdd(true)}
+              className="bg-[#5b8cff] text-white rounded-md px-3 py-1 text-[13px] font-semibold hover:brightness-110"
+            >
+              + Problem
+            </button>
+            <button
+              onClick={onClose}
+              title="Close"
+              className="md:hidden text-[#8b93a7] hover:text-[#e6e9f0] rounded-md w-7 h-7 flex items-center justify-center hover:bg-[#1c212c]"
+            >
+              ✕
+            </button>
+          </div>
         </div>
         <div className="flex gap-1.5">
           <input
             value={search}
             onChange={(e) => setSearch(e.target.value)}
             placeholder="Search problems…"
-            className="flex-1 bg-[#1c212c] border border-[#2a3040] rounded-md px-2.5 py-1.5 text-[13px] outline-none focus:border-[#5b8cff]"
+            className="flex-1 min-w-0 bg-[#1c212c] border border-[#2a3040] rounded-md px-2.5 py-1.5 text-[13px] outline-none focus:border-[#5b8cff]"
           />
           <select
             value={filter}
@@ -109,7 +130,7 @@ export function Sidebar({
         search={search}
         selectedKey={selectedKey}
         decayDays={decayDays}
-        onSelect={onSelect}
+        onSelect={handleSelect}
         onToggleStar={onToggleStar}
         onReorder={onReorder}
       />
@@ -144,16 +165,41 @@ export function Sidebar({
           <span>d</span>
         </span>
       </div>
+    </>
+  );
+
+  return (
+    <>
+      {/* Desktop: static in-flow sidebar. */}
+      <aside className="hidden md:flex w-[300px] min-w-[300px] bg-[#161a22] border-r border-[#2a3040] flex-col h-full">
+        {content}
+      </aside>
+
+      {/* Mobile: off-canvas drawer over a dimmed backdrop. */}
+      {mobileOpen && (
+        <div
+          className="fixed inset-0 bg-black/40 z-50 md:hidden"
+          onClick={onClose}
+          onKeyDown={(e) => e.key === "Escape" && onClose?.()}
+        >
+          <aside
+            onClick={(e) => e.stopPropagation()}
+            className="absolute left-0 top-0 h-full w-[300px] max-w-[85%] bg-[#161a22] border-r border-[#2a3040] flex flex-col shadow-2xl"
+          >
+            {content}
+          </aside>
+        </div>
+      )}
 
       {showAdd && (
         <AddProblemModal
           onClose={() => setShowAdd(false)}
           onAdd={(name, topic) => {
             const key = onAddProblem(name, topic);
-            onSelect(key);
+            handleSelect(key);
           }}
         />
       )}
-    </aside>
+    </>
   );
 }

@@ -568,13 +568,15 @@
           "key": "step-04-binary-search__implement-lower-bound",
           "name": "Implement Lower Bound",
           "link": "https://takeuforward.org/arrays/implement-lower-bound-bs-2/",
-          "difficulty": "Easy"
+          "difficulty": "Easy",
+          "practice": "https://www.geeksforgeeks.org/problems/implement-lower-bound/1"
         },
         {
           "key": "step-04-binary-search__implement-upper-bound",
           "name": "Implement Upper Bound",
           "link": "https://takeuforward.org/arrays/implement-upper-bound/",
-          "difficulty": "Easy"
+          "difficulty": "Easy",
+          "practice": "https://www.geeksforgeeks.org/problems/implement-upper-bound/1"
         },
         {
           "key": "step-04-binary-search__search-insert-position",
@@ -2159,7 +2161,8 @@
           "key": "step-13-binary-trees__root-to-node-path-in-binary-tree",
           "name": "Root to Node Path in Binary Tree",
           "link": "https://takeuforward.org/data-structure/print-root-to-node-path-in-a-binary-tree/",
-          "difficulty": "Medium"
+          "difficulty": "Medium",
+          "practice": "https://www.geeksforgeeks.org/problems/root-to-leaf-paths/1"
         },
         {
           "key": "step-13-binary-trees__lca-in-binary-tree",

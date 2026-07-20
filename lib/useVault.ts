@@ -2,6 +2,7 @@
 
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { createClient } from "./supabase/client";
+import { clearAuthRecovery, isAuthError, recoverFromAuthError } from "./supabase/auth-error";
 import { defaultApproaches, mergeProblems, newApproachId } from "./sheet";
 import type { Approach, Status, UserProblemRow } from "./types";
 
@@ -53,7 +54,14 @@ export function useVault(userId: string) {
         supabase.from("user_settings").select("*").eq("user_id", userId).maybeSingle(),
       ]);
       if (cancelled) return;
+      // A stale/clock-skewed session ("JWT issued at future") makes every query
+      // 401 — clear it and re-login for a fresh token rather than showing an
+      // empty vault forever. recoverFromAuthError navigates away when it fires.
+      if ((pErr && isAuthError(pErr)) || (sErr && isAuthError(sErr))) {
+        if (await recoverFromAuthError(supabase)) return;
+      }
       if (pErr) console.error("Failed to load problems:", pErr.message);
+      else clearAuthRecovery();
       if (sErr) console.error("Failed to load settings:", sErr.message);
       commitRows(() => (problemRows as UserProblemRow[]) || []);
       if (settings?.decay_days) setDecayDaysState(settings.decay_days);

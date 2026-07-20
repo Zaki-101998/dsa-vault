@@ -2,6 +2,7 @@
 
 import { useCallback, useEffect, useMemo, useState } from "react";
 import { createClient } from "./supabase/client";
+import { clearAuthRecovery, isAuthError, recoverFromAuthError } from "./supabase/auth-error";
 import type { UserTodoRow } from "./types";
 
 /** Local (device-timezone) calendar date as YYYY-MM-DD, offset by N days. */
@@ -47,6 +48,13 @@ export function useTodos(userId: string) {
         .gte("due_date", todayStr)
         .order("position");
       if (cancelled) return;
+      // Same stale/skewed-session recovery as useVault: bounce to /login for a
+      // fresh token instead of leaving the daily plan permanently empty.
+      if (isAuthError(error) || isAuthError(rollErr)) {
+        if (await recoverFromAuthError(supabase)) return;
+      } else if (!error) {
+        clearAuthRecovery();
+      }
       if (error) console.error("Failed to load todos:", error.message);
       setTodos((data as UserTodoRow[]) || []);
       setLoading(false);

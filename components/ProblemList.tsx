@@ -167,6 +167,14 @@ export function ProblemList({
       .filter((g) => g.problems.length > 0);
   }, [groups, q, filter, decayDays]);
 
+  const allCollapsed =
+    filteredGroups.length > 0 && filteredGroups.every((g) => collapsed[g.key]);
+
+  function toggleAll() {
+    if (allCollapsed) setCollapsed({});
+    else setCollapsed(Object.fromEntries(filteredGroups.map((g) => [g.key, true])));
+  }
+
   if (filter === "due") {
     const flat = filteredGroups
       .flatMap((g) => g.problems)
@@ -192,7 +200,18 @@ export function ProblemList({
   }
 
   return (
-    <div className="flex-1 overflow-y-auto p-1.5">
+    <>
+      {!searching && filteredGroups.length > 0 && (
+        <div className="flex justify-end px-2 pt-1 shrink-0">
+          <button
+            onClick={toggleAll}
+            className="text-[11px] text-[#565e73] hover:text-[#e6e9f0] px-1.5 py-0.5"
+          >
+            {allCollapsed ? "⊞ Expand all" : "⊟ Collapse all"}
+          </button>
+        </div>
+      )}
+      <div className="flex-1 overflow-y-auto p-1.5">
       {filteredGroups.length === 0 && (
         <div className="p-5 text-[13px] text-[#8b93a7]">No problems match.</div>
       )}
@@ -258,6 +277,7 @@ export function ProblemList({
           </div>
         );
       })}
-    </div>
+      </div>
+    </>
   );
 }

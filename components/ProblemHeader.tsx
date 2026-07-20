@@ -62,7 +62,35 @@ export function ProblemHeader({
 
   return (
     <div className="px-3 md:px-5 pt-3 md:pt-4 border-b border-[#2a3040]">
-      <div className="flex flex-wrap gap-2.5 items-center mb-2.5">
+      {/* Mobile: compact read-mode strip — star + name + Mark Revised only. */}
+      <div className="md:hidden flex items-center gap-2.5 mb-2">
+        <RevisionStar
+          starred={problem.starred}
+          lastRevised={problem.lastRevised}
+          decayDays={decayDays}
+          size={20}
+          onClick={onStarClick}
+        />
+        <span className="flex-1 min-w-0 truncate text-[16px] font-bold">
+          {problem.name || "Untitled"}
+        </span>
+        {problem.starred && (
+          <span
+            className={`text-[11px] font-bold shrink-0 ${overdue ? "text-[#e12d39]" : "text-[#8b93a7]"}`}
+            title={overdue ? "Overdue — revise now!" : "Days since last revision"}
+          >
+            {Math.floor(daysSince(problem.lastRevised))}d
+          </span>
+        )}
+        <button
+          onClick={onMarkRevised}
+          className="bg-[#3ecf8e] text-[#08130d] font-bold rounded-lg px-2 py-1 text-xs shrink-0 hover:brightness-110"
+        >
+          ✓ Revised
+        </button>
+      </div>
+
+      <div className="hidden md:flex flex-wrap gap-2.5 items-center mb-2.5">
         <input
           value={name}
           onChange={(e) => setName(e.target.value)}
@@ -91,7 +119,7 @@ export function ProblemHeader({
         </button>
       </div>
 
-      <div className="flex flex-wrap gap-2.5 mb-3">
+      <div className="hidden md:flex flex-wrap gap-2.5 mb-3">
         <input
           list="header-topics"
           value={topic}
@@ -130,7 +158,7 @@ export function ProblemHeader({
         )}
       </div>
 
-      <div className="flex flex-wrap items-center gap-3.5 mb-3.5 bg-[#161a22] border border-[#2a3040] rounded-xl px-3.5 py-2.5">
+      <div className="hidden md:flex flex-wrap items-center gap-3.5 mb-3.5 bg-[#161a22] border border-[#2a3040] rounded-xl px-3.5 py-2.5">
         <RevisionStar
           starred={problem.starred}
           lastRevised={problem.lastRevised}
@@ -207,7 +235,7 @@ export function ProblemHeader({
           <button
             key={tab}
             onClick={() => onTabChange(tab)}
-            className={`px-4 py-2.5 text-[13.5px] font-semibold border-b-2 ${
+            className={`px-3 py-2 md:px-4 md:py-2.5 text-[13.5px] font-semibold border-b-2 ${
               activeTab === tab
                 ? "text-[#5b8cff] border-[#5b8cff]"
                 : "text-[#8b93a7] border-transparent hover:text-[#e6e9f0]"

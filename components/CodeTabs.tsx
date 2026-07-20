@@ -5,6 +5,7 @@ import type { ReactCodeMirrorRef } from "@uiw/react-codemirror";
 import { CodeEditor } from "./CodeEditor";
 import { newApproachId } from "@/lib/sheet";
 import { formatCode } from "@/lib/format";
+import { useIsMobile } from "@/lib/useIsMobile";
 import type { Approach, CodeLang } from "@/lib/types";
 
 const LANG_LABELS: Record<CodeLang, string> = { java: "Java", cpp: "C++", python: "Python" };
@@ -41,6 +42,8 @@ export function CodeTabs({
 }) {
   const [activeId, setActiveId] = useState<string | undefined>(() => firstAddedId(approaches));
   const [copied, setCopied] = useState(false);
+  // Mobile is read-only: no adding/removing approaches, no editing code.
+  const isMobile = useIsMobile();
   const [fmtState, setFmtState] = useState<"idle" | "working" | "done" | "error">("idle");
   const editorRef = useRef<ReactCodeMirrorRef>(null);
 
@@ -164,7 +167,7 @@ export function CodeTabs({
                   e.stopPropagation();
                   removeApproach(appr);
                 }}
-                className="text-[11px] opacity-60 hover:opacity-100 hover:text-[#e12d39]"
+                className="hidden md:inline text-[11px] opacity-60 hover:opacity-100 hover:text-[#e12d39]"
                 title="Remove"
               >
                 ✕
@@ -174,7 +177,7 @@ export function CodeTabs({
             <button
               key={label}
               onClick={() => addCanonical(label)}
-              className="border border-dashed border-[#2a3040] rounded-md px-3.5 py-1 text-[13px] text-[#565e73] hover:text-[#5b8cff] hover:border-[#5b8cff]"
+              className="hidden md:block border border-dashed border-[#2a3040] rounded-md px-3.5 py-1 text-[13px] text-[#565e73] hover:text-[#5b8cff] hover:border-[#5b8cff]"
               title={`Add ${label}`}
             >
               + {label}
@@ -197,7 +200,7 @@ export function CodeTabs({
                 e.stopPropagation();
                 removeApproach(a);
               }}
-              className="text-[11px] opacity-60 hover:opacity-100 hover:text-[#e12d39]"
+              className="hidden md:inline text-[11px] opacity-60 hover:opacity-100 hover:text-[#e12d39]"
               title="Remove"
             >
               ✕
@@ -207,12 +210,31 @@ export function CodeTabs({
       </div>
 
       {!active ? (
-        <div className="flex-1 flex items-center justify-center text-[#8b93a7] text-sm">
-          Add Brute / Better / Optimal above to start.
+        <div className="flex-1 flex items-center justify-center text-[#8b93a7] text-sm px-4 text-center">
+          {isMobile
+            ? "No code saved yet — add solutions on desktop."
+            : "Add Brute / Better / Optimal above to start."}
         </div>
       ) : (
         <>
-      <div className="flex flex-wrap gap-2.5 mb-2.5 items-center">
+      {/* Mobile: complexities as a compact read-only line. */}
+      {(active.time.trim() || active.space.trim()) && (
+        <div className="md:hidden flex gap-2 mb-2 items-center text-xs text-[#8b93a7]">
+          <span className="font-mono truncate">
+            {active.time.trim() && <>Time <b className="text-[#e6e9f0]">{active.time}</b></>}
+            {active.time.trim() && active.space.trim() && " · "}
+            {active.space.trim() && <>Space <b className="text-[#e6e9f0]">{active.space}</b></>}
+          </span>
+          <button
+            onClick={copyCode}
+            className="ml-auto shrink-0 border border-[#2a3040] rounded-md px-2 py-0.5 text-[11.5px] hover:text-[#e6e9f0]"
+          >
+            {copied ? "✓ Copied" : "⧉ Copy"}
+          </button>
+        </div>
+      )}
+
+      <div className="hidden md:flex flex-wrap gap-2.5 mb-2.5 items-center">
         <label className="text-xs text-[#8b93a7]">Time</label>
         <input
           value={active.time}
@@ -267,6 +289,7 @@ export function CodeTabs({
         lang={lang}
         onChange={(code) => patchActive({ code })}
         onPasted={(doc) => runFormat(doc, { silent: true })}
+        readOnly={isMobile}
       />
         </>
       )}

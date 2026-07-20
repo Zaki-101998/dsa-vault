@@ -11,6 +11,7 @@ import { createLowlight, common } from "lowlight";
 import { marked } from "marked";
 import { DOMParser as PMDOMParser } from "@tiptap/pm/model";
 import { useEffect, useRef } from "react";
+import { useIsMobile } from "@/lib/useIsMobile";
 
 const lowlight = createLowlight(common);
 
@@ -51,7 +52,7 @@ function ToolbarButton({
 function Toolbar({ editor }: { editor: Editor | null }) {
   if (!editor) return null;
   return (
-    <div className="flex gap-1 mb-2 flex-wrap items-center">
+    <div className="hidden md:flex gap-1 mb-2 flex-wrap items-center">
       <ToolbarButton title="Bold" active={editor.isActive("bold")} onClick={() => editor.chain().focus().toggleBold().run()}>
         <b>B</b>
       </ToolbarButton>
@@ -95,8 +96,13 @@ export function NotesEditor({
   html: string;
   onChange: (html: string) => void;
 }) {
+  // Mobile is a strictly read-only revision surface: lock the editor so
+  // tapping the notes never pops the on-screen keyboard.
+  const isMobile = useIsMobile();
+
   const editor = useEditor({
     immediatelyRender: false,
+    editable: !isMobile,
     extensions: [
       StarterKit.configure({ codeBlock: false }),
       CodeBlockLowlight.configure({ lowlight }),
@@ -125,6 +131,10 @@ export function NotesEditor({
     },
     onUpdate: ({ editor }) => onChange(editor.getHTML()),
   });
+
+  useEffect(() => {
+    editor?.setEditable(!isMobile);
+  }, [editor, isMobile]);
 
   const lastKey = useRef(problemKey);
   useEffect(() => {

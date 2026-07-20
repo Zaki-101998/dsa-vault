@@ -134,7 +134,7 @@ export function Workspace({ userId, userEmail }: { userId: string; userEmail: st
                 setSelectedKey(null);
               }}
             />
-            <div className="flex-1 min-h-0 flex flex-col p-3 md:p-5">
+            <div className="flex-1 min-h-0 flex flex-col p-2 md:p-5">
               {activeTab === "notes" ? (
                 <NotesEditor
                   problemKey={problem.key}

@@ -45,7 +45,7 @@ body {
 }
 @media (max-width: 640px) {
   .notes-prose {
-    padding: 12px 14px;
+    padding: 10px 12px;
   }
 }
 .notes-prose p.is-editor-empty:first-child::before {

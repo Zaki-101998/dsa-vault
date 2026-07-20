@@ -31,6 +31,7 @@ export function CodeEditor({
   onChange,
   onPasted,
   editorRef,
+  readOnly = false,
 }: {
   value: string;
   lang: CodeLang;
@@ -38,6 +39,8 @@ export function CodeEditor({
   /** Called with the full document text just after a paste has been applied. */
   onPasted?: (doc: string) => void;
   editorRef?: React.Ref<ReactCodeMirrorRef>;
+  /** Read-mode (mobile): blocks edits and focus so no keyboard pops up. */
+  readOnly?: boolean;
 }) {
   const extensions = [
     langExtension[lang],
@@ -61,7 +64,9 @@ export function CodeEditor({
         extensions={extensions}
         onChange={onChange}
         placeholder={placeholderText[lang]}
-        basicSetup={{ lineNumbers: true, foldGutter: true, tabSize: 4 }}
+        readOnly={readOnly}
+        editable={!readOnly}
+        basicSetup={{ lineNumbers: true, foldGutter: !readOnly, tabSize: 4 }}
         style={{ height: "100%" }}
       />
     </div>

@@ -1,7 +1,5 @@
-import rawSheet from "@/data/a2z-sheet.json";
-import type { Approach, Problem, SeedSheet, TopicGroup, UserProblemRow } from "./types";
-
-export const sheet = rawSheet as SeedSheet;
+import { SUBJECTS, isCustomKey, subjectOf } from "./subjects";
+import type { Approach, Problem, SeedProblem, SubjectId, TopicGroup, UserProblemRow } from "./types";
 
 export function newApproachId(): string {
   return typeof crypto !== "undefined" && "randomUUID" in crypto
@@ -19,20 +17,26 @@ function toEpoch(iso: string | null | undefined): number | null {
   return iso ? new Date(iso).getTime() : null;
 }
 
+type Base = Pick<SeedProblem, "name" | "link" | "difficulty" | "practice" | "kind" | "video"> & {
+  topic: string;
+};
+
 function toProblem(
   key: string,
   row: UserProblemRow | undefined,
-  base: { name: string; topic: string; link: string; difficulty: string; practice?: string },
+  base: Base,
   fallbackIndex: number
 ): Problem {
   return {
     key,
-    isCustom: key.startsWith("custom:"),
+    isCustom: isCustomKey(key),
     name: (row?.custom_name || base.name) ?? "Untitled",
     topic: row?.custom_topic || base.topic,
     link: row?.custom_link ?? base.link,
     difficulty: base.difficulty,
     practiceLink: base.practice ?? "",
+    kind: base.kind ?? "concept",
+    videoFileId: base.video?.fileId ?? "",
     status: row?.status || "Unsolved",
     starred: row?.starred || false,
     lastRevised: toEpoch(row?.last_revised),
@@ -59,11 +63,21 @@ function normTopic(t: string): string {
   return t.trim().toLowerCase();
 }
 
-export function mergeProblems(rows: UserProblemRow[]): {
+/**
+ * Merge the user's saved rows onto one subject's seed sheet. `rows` is the whole
+ * account — every subject's rows arrive in a single fetch — so this filters by
+ * the key namespace rather than asking the caller to pre-split them.
+ */
+export function mergeProblems(
+  rows: UserProblemRow[],
+  subject: SubjectId
+): {
   groups: TopicGroup[];
   byKey: Map<string, Problem>;
 } {
-  const rowMap = new Map(rows.map((r) => [r.problem_key, r] as const));
+  const sheet = SUBJECTS[subject].sheet;
+  const mine = rows.filter((r) => subjectOf(r.problem_key) === subject);
+  const rowMap = new Map(mine.map((r) => [r.problem_key, r] as const));
   const byKey = new Map<string, Problem>();
   const groups: TopicGroup[] = [];
 
@@ -72,12 +86,7 @@ export function mergeProblems(rows: UserProblemRow[]): {
 
   for (const step of sheet.steps) {
     const problems: Problem[] = step.problems.map((sp, i) => {
-      const p = toProblem(
-        sp.key,
-        rowMap.get(sp.key),
-        { name: sp.name, topic: step.title, link: sp.link, difficulty: sp.difficulty, practice: sp.practice },
-        i
-      );
+      const p = toProblem(sp.key, rowMap.get(sp.key), { ...sp, topic: step.title }, i);
       byKey.set(p.key, p);
       return p;
     });
@@ -90,8 +99,8 @@ export function mergeProblems(rows: UserProblemRow[]): {
   // Legacy custom rows without a position sort to the end of their group (Infinity).
   const customGroups = new Map<string, TopicGroup>();
   let order = 1000;
-  for (const row of rows) {
-    if (!row.problem_key.startsWith("custom:")) continue;
+  for (const row of mine) {
+    if (!isCustomKey(row.problem_key)) continue;
     const topic = row.custom_topic || "Custom";
     const p = toProblem(
       row.problem_key,
@@ -121,4 +130,7 @@ export function mergeProblems(rows: UserProblemRow[]): {
   return { groups, byKey };
 }
 
-export const KNOWN_TOPICS = Array.from(new Set(sheet.steps.map((s) => s.title)));
+/** Section titles for a subject, suggested in the topic datalists. */
+export function knownTopics(subject: SubjectId): string[] {
+  return Array.from(new Set(SUBJECTS[subject].sheet.steps.map((s) => s.title)));
+}

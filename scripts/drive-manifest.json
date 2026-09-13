@@ -1,0 +1,1971 @@
+{
+  "_readme": "Raw Google Drive listing for the video-based subjects. Section titles are hand-cleaned; file titles are verbatim from Drive and are normalised by scripts/build-subject-sheets.mjs. Refresh by re-listing the folders and updating the file arrays.",
+  "subjects": [
+    {
+      "id": "cn",
+      "label": "Computer Networks",
+      "folderId": "1c_mcnZsQWMdTcPBF30nEgq9bDEKR3PVS",
+      "problemSections": [
+        15,
+        16,
+        17,
+        18
+      ],
+      "sections": [
+        {
+          "order": 1,
+          "title": "IP Address, Subnetting & Supernetting",
+          "folderId": "1j7iQpqyyJWHddjhuNmdq-txz4_JXbgii",
+          "files": [
+            {
+              "id": "1QXdGaMjx6FGt168880C-XnUcZ7ZOuS_S",
+              "title": "1.Introduction to Computer network and IP address.mkv"
+            },
+            {
+              "id": "11XQlQsap5tA5WdgjfW4dQ-ivtgjnC2-z",
+              "title": "2.Types of CastingUnicastLimited BroadcastDirected Broadcast.mkv"
+            },
+            {
+              "id": "13SxpZZK2xFxlFnIMsSoA3CeJN-z5QTzu",
+              "title": "3.Subnets, Subnet MaskRouting.mkv"
+            },
+            {
+              "id": "1v8brpBG3LjEIVAUpdn8egVpFLYCmf7-9",
+              "title": "4.variable lenght subnet masking (VLSM).mkv"
+            },
+            {
+              "id": "1DlKO1S1SFk9seKjSqPugER3qdSdVoaxb",
+              "title": "5.Subnet Masking question.mkv"
+            },
+            {
+              "id": "19DqyC4fCw6FddbIHblOLn5aPFuHx-jZg",
+              "title": "6.Classless Inter Domain Routing (CIDR).mkv"
+            },
+            {
+              "id": "1Wn1hsjN67efDNzqvRyPMv-MDbseyv9wC",
+              "title": "7.Subnetting in CIDR VLSM in CIDR.mkv"
+            },
+            {
+              "id": "1R1WIFGpXGwnhDpz4KK94hNUvTaoKMncP",
+              "title": "8.Some interesting problems on subnet mask.mkv"
+            },
+            {
+              "id": "1n37YHTnPIyIVynLE3aXtY973TVx-OYc6",
+              "title": "9.Supernetting or aggregation.mkv"
+            },
+            {
+              "id": "1zuVNLUCRwrGJdvawZS7fWBwYkaTdH_7F",
+              "title": "10. Private IP Address.mp4"
+            },
+            {
+              "id": "1kf9CMDhFw0A7KzkjuV52gAcZA0utQ3OV",
+              "title": "11.Gate 2012 question on IP addressing.m4v"
+            }
+          ]
+        },
+        {
+          "order": 2,
+          "title": "Flow Control Methods",
+          "folderId": "191hrzp7orpLJFiOArffzq3EjHsnbkNY1",
+          "files": [
+            {
+              "id": "1wIDOFNn529-OPXLvmrCLw18ui1o1X80n",
+              "title": "1.CN_Flow_Control_methods_Delays_in_CN_Ravindrababu_Ravula_Free_GATE_CS_Classes_720P.mp4"
+            },
+            {
+              "id": "1p4VKxURy4zGUZqJcRHPoLAV1fFoUtvHd",
+              "title": "2.Gate 2015 question on Delays.mp4"
+            },
+            {
+              "id": "1DfHzP-DoFYmoXNcd-MHTRTMadaUyqzeo",
+              "title": "3.Flow control Stop and wait.mkv"
+            },
+            {
+              "id": "1irnqsbSN_WPyfJJAAhVo0idYG3uvDzle",
+              "title": "4.Gate 2015 question on stop and wait protocol.mp4"
+            },
+            {
+              "id": "1KfKd7sK3jgxDoENqGIKllEWmQ5tFZC3H",
+              "title": "5.Capacity of pipe and pipelining.mkv"
+            },
+            {
+              "id": "12RsPAJcrQ0b7Ow23qG7Fnx5okUxm0HKk",
+              "title": "6.Go Back N.mkv"
+            },
+            {
+              "id": "1nrfjMfGcyIsRTQuVwQEUOBpsCH--tR_M",
+              "title": "7.Selective Repeat _ Sliding Window Protocol.mp4"
+            },
+            {
+              "id": "1etJgenxQIHHRdcit31uh4DYmJXsUBniT",
+              "title": "8.Gate 2016 question on S-R protocol.mp4"
+            },
+            {
+              "id": "1MayUMX1VWV24yHziHOZd1y4LeHQJdVTr",
+              "title": "9_Gate_2005_and_Gate_2010_questions_on_SR_protocol_fundamentals.mp4"
+            },
+            {
+              "id": "1M-Nst4sl0ucMhiFQgBSl908zGQ_KAXlu",
+              "title": "10.Gate 2003 question on sliding window protocol.mp4"
+            },
+            {
+              "id": "1qmREOyqtO5bIanMLLhpynHPhkl7T3F8Q",
+              "title": "11.Gate 2006 question on sliding window protocol.mp4"
+            },
+            {
+              "id": "10bgJaJnvqo7qef4f_yFU2s_w1xbnaX5O",
+              "title": "12.Introduction to Access control methods TDM and Polling.mkv"
+            },
+            {
+              "id": "11XePgkICuFTv3xXdK9xEtVqPVJ4PEVYS",
+              "title": "13.CSMA - CD.mkv"
+            },
+            {
+              "id": "1eapqXWbtxS_Qpffh_XTrol3tO3aXGtzF",
+              "title": "14.Gate 2015 question on CSMACD.mp4"
+            },
+            {
+              "id": "1eXwkeGOVN0H2cpi-cIwjBCA7T1Fttlkl",
+              "title": "15.back off algorithm for CSMACD.mkv"
+            },
+            {
+              "id": "1_3xyyQbdA1l9ilonz0p8_4isus_EKMCV",
+              "title": "16.Gate 2016 question on sloted aloha.mp4"
+            },
+            {
+              "id": "1C6HGz2s6tK4HvR4GFuZy3wrg_S_12ZKT",
+              "title": "17.Aloha and difference between Flow and access control.mkv"
+            },
+            {
+              "id": "1Px4ii_SPFKK0KXKLzzYzCAAHbJG-CXis",
+              "title": "18_Token_passing_access_control_method_Not_in_GATE_Syllabus.mkv"
+            }
+          ]
+        },
+        {
+          "order": 3,
+          "title": "Error Control Methods",
+          "folderId": "1eGpO0IIAA86Kj9mo5VsKzHtPxcaWthl7",
+          "files": [
+            {
+              "id": "17ldZ7sVyg-03n1xSPKsOpjG3sPyzeaMz",
+              "title": "1.Error control and CRC.mkv"
+            },
+            {
+              "id": "1ZcbpK9FNmGgL1EI8eiVlnx6pGaSzCmL6",
+              "title": "2.CRC Example.mp4"
+            },
+            {
+              "id": "1M0ZYNvvAUWyHTZ90Vm1SEtXxihgSG3yb",
+              "title": "3.Checksum.mp4"
+            },
+            {
+              "id": "1LY0DxGdFd8ylEmSg3RGhYns6U3Mq--py",
+              "title": "4.Summary.mp4"
+            }
+          ]
+        },
+        {
+          "order": 4,
+          "title": "ISO/OSI Stack",
+          "folderId": "1nsVlZjyXCfoAqL4Ep1tRAYB1FV4bN3GU",
+          "files": [
+            {
+              "id": "1ylMbO9iQoKygb3QEXxBj5Wu9_VBeQL78",
+              "title": "1.ISO-OSI LAYERS.mp4"
+            },
+            {
+              "id": "1ShBnrY9186IKBAyajqjw1wYYdnB-izho",
+              "title": "2.Physical layer.mp4"
+            },
+            {
+              "id": "1fcLpzvMQl-0uYixaQgqYHcnzNsekJqE2",
+              "title": "3.Introduction to DLL.mp4"
+            },
+            {
+              "id": "18_cCdAGa7TFPj3FUW6PUIKQ0o3hyc1Y9",
+              "title": "4.Framing at DLL.mp4"
+            },
+            {
+              "id": "1Oo_SAC09uVnTpNz-wuOZqnByNcfmp_79",
+              "title": "5.Physical addressing.mp4"
+            },
+            {
+              "id": "1877aJVKXwzGuWYNJFuB4ogj56E9hS2IN",
+              "title": "6.Introduction to network layer.mp4"
+            },
+            {
+              "id": "12khB0dU_cNLauVWpzqL3GmORcIYYSXEo",
+              "title": "7.Introduction to transport layer.mp4"
+            },
+            {
+              "id": "11N1mfon1y960OX7jaWnHLyFAWnNQkDfE",
+              "title": "8.Lecture How all the layers work together.mp4"
+            },
+            {
+              "id": "1pS3TkSqQlOjRvi3CqHI3gxMGi9m-fFBQ",
+              "title": "9.Session layer and Presentation layer.mp4"
+            },
+            {
+              "id": "1Y4Zohtw8C7oWHjlSIgMCjzkiLnMLf0BQ",
+              "title": "10.Gate 2004 question on layering.mp4"
+            }
+          ]
+        },
+        {
+          "order": 5,
+          "title": "LAN Technologies",
+          "folderId": "1pcl7laW-6n9YdfajUDjBfS1fnfC78kdp",
+          "files": [
+            {
+              "id": "1FT4aACEOubrDNrcXapasV3eaoCtxdhLD",
+              "title": "1.Ethernet.mp4"
+            },
+            {
+              "id": "1wnst_YbSCt1vzOFpcPMTtFUcu5kBZa21",
+              "title": "2.Gate 2016 question on ethernet.mp4"
+            },
+            {
+              "id": "14OgXAvEfQ8j9JIIa5Mxxb_Kbu_SwzvAC",
+              "title": "3.Introduction to Token Ring (Not in GATE Syllabus).mp4"
+            },
+            {
+              "id": "1Ig2zuF96u2ZDnEnPosHxPrCn5lOI9LB9",
+              "title": "4.Token Ring Frame Format (Not in GATE Syllabus).mp4"
+            },
+            {
+              "id": "1p59jrOwmj5Fydszt0lhAammeLTWq3JBf",
+              "title": "5.Minimum length of token ring (Not in GATE Syllabus).mp4"
+            }
+          ]
+        },
+        {
+          "order": 6,
+          "title": "Switching",
+          "folderId": "1HDwABMSB6gezTpXWGzBXUZxFkPVSRRXi",
+          "files": [
+            {
+              "id": "1nFAaX1CVonklITecpkfGiULUmKcHwqy4",
+              "title": "1.Introduction to switching.m4v"
+            },
+            {
+              "id": "13ZBN3PkfQ8XyFiZhm70jIxTlEY1agvhS",
+              "title": "2.Comparison between circuit switching and packet switching.m4v"
+            },
+            {
+              "id": "1TkcTU1dnPTFvrG9dXPynZPOeONkKEFUR",
+              "title": "3.Packetisation in packet switching.mp4"
+            },
+            {
+              "id": "1ySuAt3js3tISXb0CK4qUq1Ywqu38RHEh",
+              "title": "4.Virtual circuits and datagrams.mp4"
+            }
+          ]
+        },
+        {
+          "order": 7,
+          "title": "Internet Protocol",
+          "folderId": "154oR9MBdJgx1NJ_sOwlyJjzIXhPnB9g1",
+          "files": [
+            {
+              "id": "1hrJDjLW9HxhIZrJe4Bxl9ws9n2-JsV9i",
+              "title": "1.Introduction to IP header.m4v"
+            },
+            {
+              "id": "13ZjFwR6tzqvBGZhijOwln1YxQ0_9s1r_",
+              "title": "2.Identification MFDF and fragment offset.m4v"
+            },
+            {
+              "id": "1ljiN8hoZKrjxOTb4cvRwxX3UpDNESkzn",
+              "title": "3.TTL protocol Header checksum.mp4"
+            },
+            {
+              "id": "1rrYk1N3g_l8o8oS2X8V_4QJCEMPkjbUw",
+              "title": "4.Source IP and destination IP.mp4"
+            },
+            {
+              "id": "1-16M000Sz87qP2YwkPuPA22Ea9Rlotuj",
+              "title": "5.Options.mp4"
+            }
+          ]
+        },
+        {
+          "order": 8,
+          "title": "Fragmentation",
+          "folderId": "1tDGdr7CVhaoBoQMBu4xEUhj2BzbhKKoW",
+          "files": [
+            {
+              "id": "1Jlyygd9HUOcQI5ZwDTs3HWN3N3U5O0V9",
+              "title": "1.Difference between segmentation and fragmentation.m4v"
+            },
+            {
+              "id": "12EoN3B4pV4N76IgoVRBROhFo2UpfOGlV",
+              "title": "2.Fragmentation explained with numerical example.m4v"
+            },
+            {
+              "id": "1yWKFYsbKRH3kOLBtQMqTi6ZFWrAx6mGz",
+              "title": "3.Theory about fragmentation.mp4"
+            },
+            {
+              "id": "1lD8hTZ_YP7z9Thze9KCH7_unEhyMGZXF",
+              "title": "4.Reassembly algorithm.mp4"
+            }
+          ]
+        },
+        {
+          "order": 9,
+          "title": "Protocols & Concepts at Network Layer",
+          "folderId": "1NM4IaqzMP9e3q6qoVeZLgtfM09cIIt4e",
+          "files": [
+            {
+              "id": "18i64EL-pLMh-kBR6j_rZjqamLSiB_suT",
+              "title": "1.Implementation of broadcasting.mp4"
+            },
+            {
+              "id": "1yad8YNOj5HryHDl69I6IfGiLp9Up3jo-",
+              "title": "2.ARP.mp4"
+            },
+            {
+              "id": "1cOb0PdGgd-8aMvlY8_3ktQm_wPIUMwds",
+              "title": "3.Special address 127.mp4"
+            },
+            {
+              "id": "1X2iF4gzoV5XLyQHOzRUAcZzWe4gm1iaq",
+              "title": "4.RARP.mp4"
+            },
+            {
+              "id": "1_9iebjidP0p3s0sgfYnPQFS6ml4PS_Uv",
+              "title": "5.Bootp and Dhcp.mp4"
+            },
+            {
+              "id": "1-VUCWDFZWd3VScZPyzhGwncBBEOgHzz6",
+              "title": "6.Introduction to ICMP.mp4"
+            },
+            {
+              "id": "1eZf3ZdBwOWnQQ-mH9iOgXdn9pafGjl9L",
+              "title": "7.ICMP feedback messaging.mp4"
+            },
+            {
+              "id": "1OV7wa9SCtSRtxMaLoBQP5BvDEF6x10zq",
+              "title": "8.ICMP request and reply messaging.mp4"
+            },
+            {
+              "id": "1mbxQwiMDjZznCh5Fe5WiBEZUPbC0Kc5x",
+              "title": "9.Traceroute - application of ICMP.mp4"
+            },
+            {
+              "id": "1LJp96aDp9rOY8cXRqOxosv0TSHAjocKz",
+              "title": "10.PMTDU - application of ICMP.mp4"
+            }
+          ]
+        },
+        {
+          "order": 10,
+          "title": "Routing",
+          "folderId": "1wAgbQVaNA3pwYl_a-mBcksEr2FUFzUP3",
+          "files": [
+            {
+              "id": "1CXMSU2s80loSG6P65NUC4mEyNssI4iA9",
+              "title": "1.Difference between routing and flooding.m4v"
+            },
+            {
+              "id": "13_MQ2xUl7G4DVIESW0GlNscQL8rdxZT8",
+              "title": "2.Types of routing algorithms.m4v"
+            },
+            {
+              "id": "1-FRJxaEa86UmLGAXpNnIfjLaAN8xx46u",
+              "title": "3.Distance Vector Routing.mp4"
+            },
+            {
+              "id": "1Ifidf233abHOGnIalyY78W2zXYdiCHKD",
+              "title": "4.Count to infinity.mp4"
+            },
+            {
+              "id": "1N4y4xVs88hjBHgbzRbJ9l-xqi8I4oKBQ",
+              "title": "5.Split horizon.mp4"
+            },
+            {
+              "id": "1e_YI1hEg4TaBXgGg619MQGWhcyTEt40P",
+              "title": "6.Link state routing.mp4"
+            },
+            {
+              "id": "1vSm5rvm5tnyPfvPufpNE-pO8C-LECdSG",
+              "title": "7.Difference between DVR and LSR RIP and OSPF.mp4"
+            }
+          ]
+        },
+        {
+          "order": 11,
+          "title": "TCP",
+          "folderId": "1B6apsRJV_svy0olhO4SU5h8DeGzGynrs",
+          "files": [
+            {
+              "id": "1l0gDi3AAcbcOf4TvM7SWqafhsVRhnFxx",
+              "title": "1.TCP header.m4v"
+            },
+            {
+              "id": "1GVBoORp-C-uSclxRySIw1O4CTp1QhPRC",
+              "title": "2.Source port destination port and socket.m4v"
+            },
+            {
+              "id": "1ZTv4o1Kpwf5I46hRBZAHuWL41g9wEztx",
+              "title": "3_Sequence_number_Acknowledge_number_and_random_initial_sequence.m4v"
+            },
+            {
+              "id": "1HhoGC-h0TwA464DE6Q7UDElrhrMSeFes",
+              "title": "4.Wrap around time and problems on wrap around time.mp4"
+            },
+            {
+              "id": "1YTcWZ1MDYyHbMbB-taaiA5j4pVNYozDV",
+              "title": "5.Header length and calculation of acknowledgment number.mp4"
+            },
+            {
+              "id": "1KC3Bx4ByhJX3rX3XePFP6kLbwq-E6m8w",
+              "title": "6.TCP connection establishment.mp4"
+            },
+            {
+              "id": "1-1o_7B-OLvikeJiVkf8u60Hz3dNWUPXF",
+              "title": "7.TCP data transfer after connection establishment.mp4"
+            },
+            {
+              "id": "1DfqdBtDcQIHUB4EROXGuiaHVzPpzUI6f",
+              "title": "8.TCP connection termination.mp4"
+            },
+            {
+              "id": "1rt39lt_fiiOXEDFsOrAisKS9yuYDkjbl",
+              "title": "9.PSH flag.mp4"
+            },
+            {
+              "id": "16cp57m3GF_pdRWgPfLC2Da7kiGclmMd4",
+              "title": "10.URG flag and urgent pointer.mp4"
+            },
+            {
+              "id": "1AALtdVCVZ5D33WqgakkA-T3xa1KRSjcR",
+              "title": "11.RST flag.mp4"
+            },
+            {
+              "id": "1IGq5zt3qvyhzxTgrR5mn85VFdZyezQ8q",
+              "title": "12.TCP state transition diagram- connection establishment.mp4"
+            },
+            {
+              "id": "1Wmq6UePHtdBUYKk3o5V-MKJ__N-2BmVw",
+              "title": "13.TCP state transition diagram - connection release.mp4"
+            },
+            {
+              "id": "1xh48YC7qj_Va7ABumLrXSmzlG3RyPlPy",
+              "title": "14.TCP flow control using advertisement window.m4v"
+            },
+            {
+              "id": "1D3u_Unk_SPASqUmlgjWv2di2g1n4r814",
+              "title": "15.TCP checksum.mp4"
+            },
+            {
+              "id": "1psTqy5S-QjQxjAg1qA7SLmwHtVmJtJhb",
+              "title": "16.Options in TCP header.mp4"
+            },
+            {
+              "id": "1sRAsFx_eUGcDJrs3aB1P3gSXGJJQPWdd",
+              "title": "17.Retransmissions in TCP.mp4"
+            },
+            {
+              "id": "1AgIEovEorva-D5gJWhMx9tmalgqlX4AM",
+              "title": "18.Introduction to TCP congestion control.mp4"
+            },
+            {
+              "id": "1NAoyS43juDkr4f2pxWmgsxouTg6nAjgx",
+              "title": "19.TCP congestion control algorithm with an example.mp4"
+            },
+            {
+              "id": "1XISiAvyX00iVi-O591uQQ6EnNXI_VQwC",
+              "title": "20.TCP timer management.mp4"
+            },
+            {
+              "id": "1l4C1NpcLF0gG_AYbqhltr9No9dE7-ARW",
+              "title": "21.Introduction to timeout timer.mp4"
+            },
+            {
+              "id": "1ZzN3lKy15rsDnAeH2n28i_0A6KrrZXsf",
+              "title": "22.Basic algorithm for timeout timer computation.mp4"
+            },
+            {
+              "id": "18nYOTj5uj76dDB87tXGUHG3vqKO_2FFO",
+              "title": "23_Jacobsons_algorithm_for_timeout_computation_and_Karns_modification.mp4"
+            },
+            {
+              "id": "1o_BtseobdGSB-da_lPH4Io2VOmFeSjlD",
+              "title": "24.Silly window syndrome.mp4"
+            },
+            {
+              "id": "1-1GNgXrrXS8QC-ZDbolwq1oWcqpSA5q7",
+              "title": "25.Traffic shaping.mp4"
+            },
+            {
+              "id": "1FakXL6jfZtVyRq1P5ftoBSWY8xU_CSXi",
+              "title": "26.Leaky Bucket.m4v"
+            },
+            {
+              "id": "1Y9mfNpsQuccemMNVRd3CdhDObOvxmZne",
+              "title": "27.Token Bucket.m4v"
+            },
+            {
+              "id": "1OmGMttXFW2RMizy6uxmUUPJ1GgWr6gx2",
+              "title": "28.Example on Token Bucket.m4v"
+            }
+          ]
+        },
+        {
+          "order": 12,
+          "title": "UDP",
+          "folderId": "1wnY-HHNawNzmvATyQg2F1spmEZJFtGck",
+          "files": [
+            {
+              "id": "1thYM8rCsrtsTIzSxXJj9TGVbrRNpwK-Z",
+              "title": "1.Need of UDP.m4v"
+            }
+          ]
+        },
+        {
+          "order": 13,
+          "title": "Networking Hardware & Devices",
+          "folderId": "1NkNkmXaWNannJI4woNv7_rwNLg_i9LXN",
+          "files": [
+            {
+              "id": "1DPkEXfvLCmyoJE2EohngnyR7EHOY-ewb",
+              "title": "1.Cables Repeaters and Hubs.mp4"
+            },
+            {
+              "id": "1ko40TcMEcr2Sfgngyd8lWMTHcG-z2uVG",
+              "title": "2.Bridges.mp4"
+            },
+            {
+              "id": "1uwb3YCpiDvIVprlX3NMUw4u8WTXEoSnu",
+              "title": "3.Spanning tree algorithm in Bridges.mp4"
+            },
+            {
+              "id": "10JhVB_5BEKCgMziCA0BfWAd69Lf6f7iW",
+              "title": "4.Switch.mp4"
+            },
+            {
+              "id": "1zX4KZRehIgw6ODjrsKUUB85slbHpbnUH",
+              "title": "5.Collision domain and broadcast domain of all devices.mp4"
+            },
+            {
+              "id": "14UxIXWkZmBe--TLLI2Wr5w2LCtnAf_C7",
+              "title": "6.Routers.mp4"
+            },
+            {
+              "id": "1L638IiRPCTfwKKb7f0o-MhxlINrkVbnB",
+              "title": "7.Gateways (Not in GATE Syllabus).mp4"
+            },
+            {
+              "id": "1XiEBjVLv0sAoyxAS-6K9PzCqaawzlgfg",
+              "title": "8.Firewalls (Not in GATE Syllabus).mp4"
+            }
+          ]
+        },
+        {
+          "order": 14,
+          "title": "Application Protocols",
+          "folderId": "1WInu6goLc1ifHVyi3L8BiodUQ1Bg6SsU",
+          "files": [
+            {
+              "id": "1vP3wP8YIF7SSm9-_X0YzhVZ-_fN3Zw5J",
+              "title": "1.Introduction to application layer.m4v"
+            },
+            {
+              "id": "1F7GxWIKgXQrFuP6fN4dikePOG-tJ82dI",
+              "title": "2.DNS.m4v"
+            },
+            {
+              "id": "1uvX5toyoHWp0cfurUX3G-5dvpyUEdH6F",
+              "title": "3.HTTP.mp4"
+            },
+            {
+              "id": "1ySNNbkb4OTQ8XihHHVHCiahKazwX14vA",
+              "title": "4.FTP.mp4"
+            },
+            {
+              "id": "1FRKlw8mW0CtQ5zzLzpVEpbDXzinO1ZYt",
+              "title": "5.SMTP-POP.mp4"
+            }
+          ]
+        },
+        {
+          "order": 15,
+          "title": "Problems on IP Addressing",
+          "folderId": "1SKiV4PZ-FpY5RSz7rIWBKRDwH413Fq2j",
+          "files": [
+            {
+              "id": "1TZcMLTjesKrltygEt1M_Oz3F6AX1A_pE",
+              "title": "1.Problem 1.mkv"
+            },
+            {
+              "id": "1JH3z0AXfRZSSFlKXUeNVz-cHbeBR-pO6",
+              "title": "2.Problem 2.mkv"
+            },
+            {
+              "id": "1CRuh7Nhp7c8w3ye204kITYMmO1K4pNkS",
+              "title": "3.Problem 3.mkv"
+            },
+            {
+              "id": "1tHeglINzBcGD450ou1Beq10vZKCi16TI",
+              "title": "4.Problem 4.mkv"
+            },
+            {
+              "id": "1naMLYQTPy8BeplY7NG9jKK2o93WtyaEi",
+              "title": "5.Problem 5.mkv"
+            },
+            {
+              "id": "11pOnb7Le0ZRzO-i040gQiyjUBlIpZXty",
+              "title": "6.Problem 6.mkv"
+            }
+          ]
+        },
+        {
+          "order": 16,
+          "title": "Problems on Sliding Window Protocol",
+          "folderId": "194VKa8C3I0JDKcHMRmoJNIm3-nDS-eMJ",
+          "files": [
+            {
+              "id": "1jIrD5vY-Dn-j9798p9KDhfxToEc9ERSb",
+              "title": "1.Problem 7.mkv"
+            },
+            {
+              "id": "102mJaREvY6OPPO6nudECk3c4gbFrRWp8",
+              "title": "2.Problem 8.mkv"
+            },
+            {
+              "id": "13f3NmiDi-LcoN2yLc3_GhgxCm2MfpAXH",
+              "title": "3.Problem 9.mkv"
+            },
+            {
+              "id": "1yEcVN5N66n98aLDqFmym2Skf6sgRAL8E",
+              "title": "4.Problem 10.mkv"
+            },
+            {
+              "id": "1hKA6ROGjEiSqGPpG2FlOqC0fyNuapjla",
+              "title": "5.Problem 11.mkv"
+            },
+            {
+              "id": "1SX01VBLJQQVrz5ZCZsKfdjj9cDF-mC1l",
+              "title": "6.Problem 12.mkv"
+            },
+            {
+              "id": "1wUNnla6xbNesB9IHQeviP3MfOapxevlg",
+              "title": "7.Problem 13.mkv"
+            },
+            {
+              "id": "1eKxk7UKckSIjlg1hztkJTfg1NhE6jZbr",
+              "title": "8.Problem 14.mkv"
+            },
+            {
+              "id": "1rqkIqZJIM7Jx58V68kOKv24e7jFHW5Yf",
+              "title": "9.Problem 15.mkv"
+            },
+            {
+              "id": "1wbfjfhbC3n4bTecmpLsMhoTEwcqHHusS",
+              "title": "10.Problem 16.mkv"
+            },
+            {
+              "id": "1JVKPZT5xi4G4MoB_bbRT4Ygft60rhJCv",
+              "title": "11.Problem 17.mkv"
+            },
+            {
+              "id": "1IzTGyN8EOJ-MpEk1tquI9MHqAO57LFf2",
+              "title": "12.Problem 18.mkv"
+            },
+            {
+              "id": "1W8Z6uNZ_nZbRRGIgDmQQhzrrgKviqolg",
+              "title": "13.Problem 19.mkv"
+            },
+            {
+              "id": "1XwwgN_zGarvsrsmDWSRmG80y5WVu4qpp",
+              "title": "14.Problem 20.mkv"
+            },
+            {
+              "id": "10OzbdhGXRWLdiDj3jp6c60uAFonT--NC",
+              "title": "15.Problem 21.mkv"
+            },
+            {
+              "id": "1z9iZrDx_yIY_R-uBMOaC2GnIdxRpoJN-",
+              "title": "16.Problem 22.mkv"
+            }
+          ]
+        },
+        {
+          "order": 17,
+          "title": "Problems on LAN Technologies",
+          "folderId": "11b1LQhWYOynUvYGsGIkvfpUhFyMfCqKH",
+          "files": [
+            {
+              "id": "1ufJieg2qeHc9sClEagKLaenHMvWA0PS4",
+              "title": "1.Raudra Eduservices - Problem 23.mkv"
+            },
+            {
+              "id": "1y5agQtFukX0DU7445wlsutdqBxgTScVH",
+              "title": "2.Raudra Eduservices - Problem 24.mkv"
+            },
+            {
+              "id": "160UbMAzKBi0LsBlBRE-C7gtIaYHJHvCq",
+              "title": "3.Raudra Eduservices - Problem 25.mkv"
+            },
+            {
+              "id": "1-VOzTJaqJEGESgUy-IiHdBtFkjyXmjsh",
+              "title": "4.Raudra Eduservices - Problem 26.mkv"
+            },
+            {
+              "id": "10Heqw-Hvvhmw7dBzuuJOFJdjGyl76MI5",
+              "title": "5.Raudra Eduservices - Problem 27.mkv"
+            },
+            {
+              "id": "1P067E-s0OjGvvcbmdicwEyYYWMiJ8Kw0",
+              "title": "6.Raudra Eduservices - Problem 28.mkv"
+            },
+            {
+              "id": "1kVFmjRntLDZoyB-o34gCz2OPPD6lFW-6",
+              "title": "7.Raudra Eduservices - Problem 29.mkv"
+            },
+            {
+              "id": "1wcwDnNEKAHqewr0v0Q0xwImIYT5yflJO",
+              "title": "8.Raudra Eduservices - Problem 30.mkv"
+            },
+            {
+              "id": "1qnK6ijjTtACMqEbMO4v1PtUufDw1BlbD",
+              "title": "9.Raudra Eduservices - Problem 31.mkv"
+            },
+            {
+              "id": "1AyuBf83t788x8YCf4aIvOFskvcWsQ6H_",
+              "title": "10.Raudra Eduservices - Problem 32.mkv"
+            },
+            {
+              "id": "1NGtV6PM205_ROOai-nAIAXENGzvI3cU3",
+              "title": "11.Raudra Eduservices - Problem 33.mkv"
+            },
+            {
+              "id": "1DF23mygAxcQ3frUpuazEndQU6B9Q79ml",
+              "title": "12.Raudra Eduservices - Problem 34.mkv"
+            },
+            {
+              "id": "1HgtxbULW5llCxTQmlArlMAfPWJbrtHhU",
+              "title": "13.Raudra Eduservices - Problem 35.mkv"
+            },
+            {
+              "id": "1pi63T_X0dFBvtSl5OvbRW-P0Uf0ewajb",
+              "title": "14.Raudra Eduservices - Problem 36.mkv"
+            },
+            {
+              "id": "1iWqILQJ2TTL_hd_HGvdMDRSy4czE-2j9",
+              "title": "15.Raudra Eduservices - Problem 37.mkv"
+            },
+            {
+              "id": "1IGBanfdLN2zDMivS4y_FMTCJFx0GwHYZ",
+              "title": "16.Raudra Eduservices - Problem 38.mkv"
+            },
+            {
+              "id": "1kCLqAZvnNm5B1FofS0s67KQ2EeusP5jt",
+              "title": "17.Raudra Eduservices - Problem 39.mkv"
+            },
+            {
+              "id": "1RdSjrdQeFXLYJ17VkcyirYqid20oFtOS",
+              "title": "18.Raudra Eduservices - Problem 40.mkv"
+            },
+            {
+              "id": "1Vkq8QtLfOrn9GePrPwBUv3xnsZjpm42x",
+              "title": "19.Raudra Eduservices - Problem 41.mkv"
+            },
+            {
+              "id": "1vAGG7uOTtlq1D8lAQ4KNP1Zb1X9e0cUR",
+              "title": "20.Raudra Eduservices - Problem 42.mkv"
+            },
+            {
+              "id": "1nRp3HDUUPVmS5eXeTfLLfqBhjsriX9oU",
+              "title": "21.Raudra Eduservices - Problem 43.mkv"
+            },
+            {
+              "id": "1G8wKeGyaaRqjAAhZl1tRI9VzxUHHfLpN",
+              "title": "22.Raudra Eduservices - Problem 44.mkv"
+            },
+            {
+              "id": "1eL4xwdAmb6nc9Mja6Li99Loi9pOp7gyK",
+              "title": "23.Raudra Eduservices - Problem 45.mkv"
+            },
+            {
+              "id": "1wJTU6OxpyA3H5lKPSoK0s-KQ0hfh7OQe",
+              "title": "24.Raudra Eduservices - Problem 46.mkv"
+            },
+            {
+              "id": "12r71f-uaUHNlwJcD-S94YTaeL0HrViHw",
+              "title": "25.Raudra Eduservices - Problem 47.mkv"
+            },
+            {
+              "id": "1jSogcINHnURBhqHTv9LzRnBY0ZiEKAOC",
+              "title": "26.Raudra Eduservices - Problem 48.mkv"
+            },
+            {
+              "id": "1YriHlM6_Ft5OH1eUnVeYcgnqAHPM90AW",
+              "title": "27.Raudra Eduservices - Problem 49.mkv"
+            },
+            {
+              "id": "1ju5BU_5TtDVIi2fvH5lRaO5H7aVgObXa",
+              "title": "28.Raudra Eduservices - Problem 50.mkv"
+            },
+            {
+              "id": "1gX75gPyA-drwcL7KyachpcnEboN8u66m",
+              "title": "29.Raudra Eduservices - Problem 51.mkv"
+            },
+            {
+              "id": "1h3TTxNKL3aHEixpLOt0-ul_mtyNv221a",
+              "title": "30.Raudra Eduservices - Problem 52.mkv"
+            },
+            {
+              "id": "1GfbobFy_IbOccf7sMr_3LGEDWNQ9gv0n",
+              "title": "31.Raudra Eduservices - Problem 53.mkv"
+            },
+            {
+              "id": "1aBJQIfgZZQ-I3zEscgMRCnulMFNwl-6-",
+              "title": "32.Raudra Eduservices - Problem 54.mkv"
+            },
+            {
+              "id": "1BQ6dhasF8Paj4oENSeGFjWfAh06SWl-D",
+              "title": "33.Raudra Eduservices - Problem 55.mkv"
+            }
+          ]
+        },
+        {
+          "order": 18,
+          "title": "TCP/IP Problems",
+          "folderId": "1HQCR-LL6D-1akTIEdz-b6U9DzU8oYfuk",
+          "files": [
+            {
+              "id": "17CWOS9hKJLzOF0n3o1RevxO3U4srdnjl",
+              "title": "1.Raudra Eduservices - Problem 56.mkv"
+            },
+            {
+              "id": "1Hn-Ci3x8fSaLEZ4968TsxF-F16uQ5ndK",
+              "title": "2.Raudra Eduservices - Problem 57.mkv"
+            },
+            {
+              "id": "1PXwFDu0qijTzsivfdjnrIsxGjIQokGvQ",
+              "title": "3.Raudra Eduservices - Problem 58.mkv"
+            },
+            {
+              "id": "1LH1wwfUhoGgQ0Eckb8aD9MA-RYw0kSYz",
+              "title": "4.Raudra Eduservices - Problem 59.mkv"
+            },
+            {
+              "id": "1dcOvsLHSyNfjeDvkqAhggCBoNEFIYmhP",
+              "title": "5.Raudra Eduservices - Problem 60.mkv"
+            },
+            {
+              "id": "1j_I7kNOiIpd6ZGqbaqbSPNfpj0mBUVSK",
+              "title": "6.Raudra Eduservices - Problem 61.mkv"
+            },
+            {
+              "id": "1pe04-Qfm6LccVFd0hJURArywn_lRW14t",
+              "title": "7.Raudra Eduservices - Problem 62.mkv"
+            },
+            {
+              "id": "12P68otdCt7LXfv562woFWj7Hj9tk9RDJ",
+              "title": "8.Raudra Eduservices - Problem 63.mkv"
+            },
+            {
+              "id": "1ROrX6y2hPt2L5aQnOTQKQqycr-gnNc8t",
+              "title": "9.Raudra Eduservices - Problem 64.mkv"
+            },
+            {
+              "id": "1wgXNzRLGWCfoBZQTlDivlMTqqSQ2ApDI",
+              "title": "10.Raudra Eduservices - Problem 65.mkv"
+            },
+            {
+              "id": "1CGqz7s4RavdKwQyZQNeZVY66jVH3RUEd",
+              "title": "11.Raudra Eduservices - Problem 66.mkv"
+            },
+            {
+              "id": "1tnWChE5-_4_U3JWf6XFAEm8mqMsOKnjC",
+              "title": "12.Raudra Eduservices - Problem 67.mkv"
+            },
+            {
+              "id": "1DTx30m51cFjFGhAYY-XoKHNnyf_wDeov",
+              "title": "13.Raudra Eduservices - Problem 68.mkv"
+            },
+            {
+              "id": "1HO0iS6oVXMGbRhKDfmP2dje7trQeCO5L",
+              "title": "14.Raudra Eduservices - Problem 69.mkv"
+            },
+            {
+              "id": "18Guu7-xp3RvoO66EJUuRrJuCEm9ii0lP",
+              "title": "15.Raudra Eduservices - Problem 70.mkv"
+            },
+            {
+              "id": "11jU1KoqiVLX8xe-zdpuLdovO2Z7m_uwz",
+              "title": "16.Raudra Eduservices - Problem 71.mkv"
+            },
+            {
+              "id": "1Dt2Z-dxP5UMkfgRYLM9QQ51o_AnMC8_2",
+              "title": "17.Raudra Eduservices - Problem 72.mkv"
+            },
+            {
+              "id": "1PaHyiro2m-XRQ8J6cBaVBTXGVPJ75s7n",
+              "title": "18.Raudra Eduservices - Problem 73.mkv"
+            },
+            {
+              "id": "1WvMKZORllO0BGUNAr1AIWuuqH7_8OR-1",
+              "title": "19.Raudra Eduservices - Problem 74.mkv"
+            },
+            {
+              "id": "1B-RJpPkexT6dlb9TzmljidclXzqMlZOj",
+              "title": "20.Raudra Eduservices - Problem 75.mkv"
+            },
+            {
+              "id": "1Mtnk1tGfDXROSSkdNTwvUul7GRDTjV12",
+              "title": "21.Raudra Eduservices - Problem 76.mkv"
+            }
+          ]
+        },
+        {
+          "order": 19,
+          "title": "Network Security",
+          "folderId": "1lPJ4MnOgpRaAjNQcRQDI3U0vmWfPgVQ3",
+          "files": [
+            {
+              "id": "1Mz78sXj1eyG11Ql75q7w0C8c1cIdG6sz",
+              "title": "1.Introduction to network security.m4v"
+            },
+            {
+              "id": "1Vsrlb98DUfB94MJZok3tjt7xmNjroySa",
+              "title": "2.passive and active attacker.m4v"
+            },
+            {
+              "id": "1PyEaczSsHTQW0QwMu7VaZUX3HjPqbMYg",
+              "title": "3.Security serivice.mp4"
+            },
+            {
+              "id": "15u9YYoj8em6KwSvuhPz5f8yxuhX2du09",
+              "title": "4.Cryptography.mp4"
+            },
+            {
+              "id": "1pQ_toC2FnZ9prhB7EbyD9_ZyX92uEJNW",
+              "title": "5.gate-15 on symmetric key.mp4"
+            },
+            {
+              "id": "1Xl7bhaiZmPnJkv8DBYkU8g7BzPClcbgo",
+              "title": "6.Modular arithematic.mp4"
+            },
+            {
+              "id": "1lbN_noaIvR4g67trZY92fvVEQf0hgMCc",
+              "title": "7.Multiplicate Inverse.mp4"
+            },
+            {
+              "id": "1BypLDyVXtlcqzxk3sOWZm26JKf3xb9x3",
+              "title": "8.Eulers Theorem.mp4"
+            },
+            {
+              "id": "1pRcKpvQ3kJNq2qjZzpAMan95H3mags9r",
+              "title": "9.Eulers Totient function.mp4"
+            },
+            {
+              "id": "1W0zBISXGLT8pU9dzOe5UDZQ8Fk_KePPn",
+              "title": "10.RSA Algorithm.mp4"
+            },
+            {
+              "id": "1e-4NqXELZtBHceHGmTq8Zgr5dYjS4jhh",
+              "title": "11.Primitive root.mp4"
+            },
+            {
+              "id": "11jmFgve6pazMnlQSd99COjX0QXM2o5aa",
+              "title": "12.Discrete logortihm.mp4"
+            },
+            {
+              "id": "1AgvWDjj_1IAC64Vv7XjNLqUMox-WH_6M",
+              "title": "13.Diffie hellman algorthim.mp4"
+            },
+            {
+              "id": "1gebthWk7ccseb9WtzPzjhn-QeKE_JHzD",
+              "title": "14.Digital signatures - 1.mp4"
+            },
+            {
+              "id": "1OMPQqjuulN3wfHVNEch59ZlbOISlbYyJ",
+              "title": "15.Digital signatures - 2.mp4"
+            },
+            {
+              "id": "1PvNk5fugE5lT_2Hr9bJbI3wZKeiEbxoX",
+              "title": "16.Firewalls.m4v"
+            }
+          ]
+        },
+        {
+          "order": 20,
+          "title": "IPv6 & WiFi",
+          "folderId": "1HjEbs1zpHRmPuBjyS6A_ejqmUIxYacAP",
+          "files": [
+            {
+              "id": "1xSLC6WOJq2xbXOpcVtbGUfsZ-pr02A2P",
+              "title": "1.Need for IPV6.mp4"
+            },
+            {
+              "id": "1zucVF1bqO2_43htjtLgDFud58KhJk_Oe",
+              "title": "2.IPV6 header.mp4"
+            },
+            {
+              "id": "1z1uxRrHwANt5ukXMYDUav4EPnXTnCMIY",
+              "title": "3.Traffic class field.mp4"
+            },
+            {
+              "id": "1Ch3212C1E4OE1vnfFbWxRHPQpabO9V1N",
+              "title": "4.Flow label field.mp4"
+            },
+            {
+              "id": "1UJpZVAb1qPI1oDIOI2sGmH-Ay6mbawrq",
+              "title": "5.Payload length.mp4"
+            },
+            {
+              "id": "1PqziM826HAZQY_SuHXTN8XWtNFfR9lDL",
+              "title": "6.Next header field.mp4"
+            },
+            {
+              "id": "1EHm2JmQObEV43LPb_9TYDwzDJrC691ud",
+              "title": "7.Ordering of extension headers.mp4"
+            },
+            {
+              "id": "1COwKcv8yGYjwPHJgFpVjjm5rufaZtupL",
+              "title": "8.Hop by hop extension header.mp4"
+            },
+            {
+              "id": "1WgKztcfjfOoDQZuZ0SjpoSOTMadKnqUY",
+              "title": "9.Routing extension header - 1.mp4"
+            },
+            {
+              "id": "1IWCyqTIeEHwZiCi8WsI1c3cTBhByWAiI",
+              "title": "10.Routing extension header - 2.mp4"
+            },
+            {
+              "id": "1AmaL_CyISZ_uEo5WySHZLPLY70GGnn05",
+              "title": "11.Fragmentation extension header.mp4"
+            },
+            {
+              "id": "1J0rD2UjjkUSUNQAKtpDkeqxpO0y8mIXQ",
+              "title": "12.Need for security at network layer.mp4"
+            },
+            {
+              "id": "19ee5DOOOqvWpIMvU6qv4oHqq1Tys2hms",
+              "title": "13.Modes of IP security.mp4"
+            },
+            {
+              "id": "1Z0zd_GSjWau6Vrzg2853hT7h6LrIYFf4",
+              "title": "14.Authentication header.mp4"
+            },
+            {
+              "id": "1RGYqPJ5o9glbBxnKrGJhKU-j95I0TmGq",
+              "title": "15.ESP.mp4"
+            },
+            {
+              "id": "1XtT0zEC9br8WBZ8kg3uYL8OZwTnsuoAs",
+              "title": "16.IPV6 addresses.mp4"
+            },
+            {
+              "id": "1lxOCv1Y1PCTIMsNbgjGSXEAkZAqmchD8",
+              "title": "17.IPV6 address representation.mp4"
+            },
+            {
+              "id": "16G4PYvUI3tA03TFpPoYTI0DohxtP6O92",
+              "title": "18.Types of IPV6 addresses.mp4"
+            },
+            {
+              "id": "1IVA_yWWdIyMykKyntCFYSPRi8AcrOijB",
+              "title": "19.Provider based unicast address.mp4"
+            },
+            {
+              "id": "1Z5qjoZ_yES7EYtAfqykR9y45daMHQcSX",
+              "title": "20.Geography based unicast address.mp4"
+            },
+            {
+              "id": "17Tgc5WfrjBc4VbPxHypx5XFywEEhv0OW",
+              "title": "21.Multicasting.mp4"
+            },
+            {
+              "id": "1Des0jANDVG_Q_VSvjNy_hjGRQ3CiiR82",
+              "title": "22.Anycast.mp4"
+            },
+            {
+              "id": "1VwbJ4Oq7PjQDHenhcVIulKifa5MAHcEt",
+              "title": "23.Some special addresses.mp4"
+            },
+            {
+              "id": "1OQfBlHvmEIEs3SwiOd02oaoy8COoZiuH",
+              "title": "24.Local addresses.mp4"
+            },
+            {
+              "id": "1JURtDn0Y2nR4lVPwkAWzktvJe6jJdlIS",
+              "title": "25.IPV4 Vs IPV6.mp4"
+            },
+            {
+              "id": "1OPxUQoBywdDAvD39Yt4--N2EntnaabSD",
+              "title": "26.Introduction to WiFi.mp4"
+            }
+          ]
+        },
+        {
+          "order": 21,
+          "title": "Reference Notes",
+          "folderId": "1jlo8eIQO6PVvIwvxVQyzCm7EhMI21roy",
+          "files": [
+            {
+              "id": "1sPqXSUuHMoxKfFODY3UXQ_cRIVaMrd8d",
+              "title": "Computer Network Final.pdf"
+            },
+            {
+              "id": "1W31-Fe6e30JuVbA6NYzCY43mJuK1WbXE",
+              "title": "TL vs NL.pdf"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "os",
+      "label": "Operating Systems",
+      "folderId": "18JJkP2swLz1SzbyVHlDTZLgPX9UzJdUa",
+      "problemSections": [],
+      "sections": [
+        {
+          "order": 1,
+          "title": "Process Management",
+          "folderId": "1LYR7V_HMLjGR3qZKJ4GiirCTYFMsRLVr",
+          "files": [
+            {
+              "id": "1Hd-Gjfg0t2liUuhoYIKvCNJeCRAhQD31",
+              "title": "1.Introduction to OS.mkv"
+            },
+            {
+              "id": "1OkGyFm5EKifkE2-2gDGKiBW1LVHArUeA",
+              "title": "2.Process PCB and Attributes.mkv"
+            },
+            {
+              "id": "1eJt6XtTQ-z3LPMdewqFbJTT7cpnCuO4J",
+              "title": "3.Process States and Multi programming.mkv"
+            },
+            {
+              "id": "11XMF9cqLl9Q21aGx2IS3Sa60Yv7Vwzjy",
+              "title": "4.Process State Transition Diagram and various Schedulers.mkv"
+            },
+            {
+              "id": "1xZpsG7x8a6B15f78cZof2kZ8wN_Fpns3",
+              "title": "5.Process Queues.mkv"
+            },
+            {
+              "id": "1jzbSwIHhh2GWwqKv-z7quWuy8Li-JvYl",
+              "title": "6.Question on Process States.mkv"
+            },
+            {
+              "id": "1IqYz2kGLLdSZmZj7J-bT36HI08lw4302",
+              "title": "7.Various Times related to Process.mkv"
+            },
+            {
+              "id": "136nBRboW_fxJ-F7Wd8_KxiGOZTsG24w2",
+              "title": "8.CPU scheduling.mkv"
+            },
+            {
+              "id": "1c7di51B0Hi7g6ROUJIF4LnfSHfVDjAjx",
+              "title": "9.First Come First Serve.mkv"
+            },
+            {
+              "id": "1WCOQEbQMIfkmJRv7Tv_m9pLLNe352DkS",
+              "title": "10.Convoy effect.mkv"
+            },
+            {
+              "id": "1yu2ivaK6wPvp09StaCXsXDwjrTgcwiV6",
+              "title": "11.FCFS example.mkv"
+            },
+            {
+              "id": "1b_m8Jov_tuGJA9W0N8RgeR5CdFfbdaX_",
+              "title": "12.FCFS with overhead.mkv"
+            },
+            {
+              "id": "1QN9UK3PqiImKLvFOqA1h2mtBS-UFoUQd",
+              "title": "13.Introduction to SJF.mkv"
+            },
+            {
+              "id": "1q6aKxzJo2pGpj144tKi6YZ8CLMgKDgZV",
+              "title": "14.Analysis of SJF.mkv"
+            },
+            {
+              "id": "1hJNr3D2eGx4Gf8dRPhfkt3D1CjikO6He",
+              "title": "15.SJF with prediction of BT.mkv"
+            },
+            {
+              "id": "1Pe51OmjCUEnlpbniv66fnGBv9OFIitiE",
+              "title": "16.Smallest Remaining Time First (SRTF).mkv"
+            },
+            {
+              "id": "1EO7yfgZ-DhaFjE31OAv9OKxnm9HXmzv5",
+              "title": "17.Example on SRTF Gate 2011.mkv"
+            },
+            {
+              "id": "1Hbnk2B9C2QhSF1aiN-KcOsnYnJQIecco",
+              "title": "18.Example on SRTF Gate 2007.mkv"
+            },
+            {
+              "id": "16fC2DmxdpEVuZc9nkNtfBoxg1jOUgk-V",
+              "title": "19.Round Robin Algorithm.mkv"
+            },
+            {
+              "id": "1Z1kg9aaN1G4MsYsMf_LylK9_s46IbD0g",
+              "title": "20.Round Robin example 1.mkv"
+            },
+            {
+              "id": "1t0G--x-94I6sSm7F9UoCWFuo63BlXxns",
+              "title": "21.Round Robin example 2.mkv"
+            },
+            {
+              "id": "1UpxjEA5g1gBgm88NJW34_JW4kgX1hf-R",
+              "title": "22.Round Robin Example 3.mkv"
+            },
+            {
+              "id": "1xpWWNfK6D9e9TnaAKqyHiNoU4YbkPk14",
+              "title": "23.Round Robin example 4.mkv"
+            },
+            {
+              "id": "1yjNMb1s1fXz4tm35CxJM9rLmZnCD_OYI",
+              "title": "24.Longest job first.mkv"
+            },
+            {
+              "id": "1cSvfNPPxJF7wy8YfzW5p3YPJcxOagfkl",
+              "title": "25.Longest remaining time first.mkv"
+            },
+            {
+              "id": "1f9GqbYsLSqB7I7gyruDDrVohp505R66k",
+              "title": "26.Longest remaining time first Gate 2006 question.mkv"
+            },
+            {
+              "id": "1VnW9idqDSx0hVX4SrSKtsd5Y1qhtp86g",
+              "title": "27.Highest Response Ratio Next (HRRN).mkv"
+            },
+            {
+              "id": "1AeQc1_6fMJd-2_Gn_drDSCbpC5dZLZ5b",
+              "title": "28.Priority scheduling.mkv"
+            },
+            {
+              "id": "1YpBLpGUMzb4ejKV-pKgK2TvdRFojpB3K",
+              "title": "29.non preemptive priority scheduling.mkv"
+            },
+            {
+              "id": "1sEltZq68oyR8kjiyhOTQi43GxdgdgriB",
+              "title": "30.Pre-emptive priority scheduling.mkv"
+            },
+            {
+              "id": "1agUQW5FCZyo1hI2mjg4CJbbyQarJgWNi",
+              "title": "31.SRTF with processes contains CPU and IO time example 1.mkv"
+            },
+            {
+              "id": "1D7OJa9FNrkCoMjgVnes-J1T3B-yHKOCN",
+              "title": "32.Pre_emptive_priority_with_processes_contains_CPU_and_IO_time.mkv"
+            },
+            {
+              "id": "19COJcVx4xm_0ZbR0mmD_Zd2tQZsUhEyw",
+              "title": "33.SRTF with processes contains CPU and IO time example 2.mkv"
+            },
+            {
+              "id": "1qPpVfwU1a5LkfxWdpvzWrixOM_rDnRQt",
+              "title": "34.Multi level queues and multi level feedback queues.mkv"
+            }
+          ]
+        },
+        {
+          "order": 2,
+          "title": "Process Synchronization",
+          "folderId": "1nYQX9qo8QgWNbgoja0GAkplbSVPuzuLF",
+          "files": [
+            {
+              "id": "1HAlzsEALP7c6Ipbpy8Nt0dd-i-4kSAIu",
+              "title": "1.Need for Synchronization.m4v"
+            },
+            {
+              "id": "1d5i2UGwXeM9pMq6puUHH9UlVzLAZqsmR",
+              "title": "2.Introduction to Synchronization Mechanisms.m4v"
+            },
+            {
+              "id": "19cIQS_zoMnhEW7jm8DWFKqO_1R8edLXI",
+              "title": "3.Conditions for Synchronization Mechanisms.m4v"
+            },
+            {
+              "id": "1gJhq_h5AFn2_iJjZAOd77320m4UD69Qz",
+              "title": "4.Lock Variables.m4v"
+            },
+            {
+              "id": "1QBb_U_xb2dR77Hly4EVl5j83mrpZ9HYG",
+              "title": "5.TSL.m4v"
+            },
+            {
+              "id": "1Z4UpZJhakR1pjz8cuFanT4dKdsMLue-m",
+              "title": "6.Gate 2008 TSL question.mp4"
+            },
+            {
+              "id": "1H_xBMolyVV9XKwRSna-sapC1fX7RyOPg",
+              "title": "7.Gate 2012 TSL question.mp4"
+            },
+            {
+              "id": "1HCpjvD07RTjEGG-KmRQJbe3rPLi3xRUw",
+              "title": "8.Gate 2012 TSL Question Continuation.mp4"
+            },
+            {
+              "id": "1Ovljw6hh0vfSOGnS4hMIIyZ9REkyPjO9",
+              "title": "9.Gate 2010 question.mp4"
+            },
+            {
+              "id": "1GEhif36PerMyhoR5t_BNEf6OFUT8E7NW",
+              "title": "10.Disabling Interrupts.mp4"
+            },
+            {
+              "id": "1w14fkn4XGDn0zZj-i1dNHz_l2wIClRPy",
+              "title": "11.Turn Variable or Strict Alteration Method.mp4"
+            },
+            {
+              "id": "14Zc44HgdSG_LJwu-NT9mewUNpwdrKZ0W",
+              "title": "12.Interested Variable.mp4"
+            },
+            {
+              "id": "1Tp-7pPv5wnfy_gNlKPjYlhyM0IaT0-wq",
+              "title": "13.Petersons Solution.mp4"
+            },
+            {
+              "id": "1GHyyICTF9QCxKsdLujbyV0jYfjdfIkE4",
+              "title": "14.Tracing Petersons Solution.mp4"
+            },
+            {
+              "id": "12IMZUkmJTY7gQoZXzFGHHN645D4Y8XBg",
+              "title": "15.Synchronization Mechanisms Without Busy Waiting.mp4"
+            },
+            {
+              "id": "1_ks6KtvjQUYcw0fvQHG9OJlX7TNe1Eil",
+              "title": "16.Sleep and Wake.mp4"
+            },
+            {
+              "id": "1xmY2dreOUlEEjKzPvoYncjN4Afwy3wtS",
+              "title": "17.Introduction to Semaphores.mp4"
+            },
+            {
+              "id": "1aIoY1BRbSFuhQAK7aKuOpIcGzGIvsVP0",
+              "title": "18.Counting Semaphores.mp4"
+            },
+            {
+              "id": "18qmZKvlJjONrInD4zFuEFRqJlqbxUmK9",
+              "title": "19.Problems on Counting Semaphores.mp4"
+            },
+            {
+              "id": "1RIR0IBtUOF533ltZlNJqY2YQu2YFQ4FJ",
+              "title": "20.Binary semaphores or Mutexes.mp4"
+            },
+            {
+              "id": "14cnw78g8GeE-G9AKYmcQC7QWJlwZndPh",
+              "title": "21.Gate 92 question on mutex.mp4"
+            },
+            {
+              "id": "19vi2T2dp96JzOyH-RLsgtAcFt7CsqfVT",
+              "title": "22.Mutex Example.mp4"
+            },
+            {
+              "id": "1MSCNqtqv9dj-E_K2zd4vclubkN78cHCr",
+              "title": "23.Mutex example 1.mp4"
+            },
+            {
+              "id": "1yh8tqnSQANE6pN3P5e4DEsZPVMLm37GH",
+              "title": "24.Gate 2013 Question on mutex.mp4"
+            },
+            {
+              "id": "1ikTU6IJ0-_XioQEGSsjQidk65eOdKV3R",
+              "title": "25.Gate 2000 Question mutex.mp4"
+            },
+            {
+              "id": "1xjU4qk4EY7jtO_OLdWaurz3nesKCenoc",
+              "title": "26.Gate 96 Question on dining philosophers problem.mp4"
+            },
+            {
+              "id": "18_nobjFk0uBPm6qXPpxPisbT1V42usNC",
+              "title": "27.Gate 2003 Question (part 1).mp4"
+            },
+            {
+              "id": "1gKyFMP7uKPLcu2jAPbhRWauCaBK5yjtm",
+              "title": "28.Gate 2003 Question (part 2).mp4"
+            },
+            {
+              "id": "1LdkedApPQJkvzoNY858NvAzGYT9aOBPJ",
+              "title": "29.Gate 06 Question on Barrier(part 1).mp4"
+            },
+            {
+              "id": "1W6Jhq-3ffbRlBWIBXhFKBumQhUuYkd84",
+              "title": "30.Gate 06 Question on Barrier(part 2).mp4"
+            },
+            {
+              "id": "1HksMO3rZf6-_I-7_yr-PCSR9qpZ0mj5Q",
+              "title": "31.Gate_2008_Question_on_implementing_Counting_Semaphore_using_Mutexes.mp4"
+            },
+            {
+              "id": "1p8c8qbSozRG2myxtAIk3cZdEApkTYbWk",
+              "title": "32.Gate 2010 Question on Mutexes.mp4"
+            },
+            {
+              "id": "1gYYLCWxMFES6iXhysOCRJLFecvRgVTye",
+              "title": "33.Gate 2013 Question on Counting Semaphores.mp4"
+            },
+            {
+              "id": "1r6m73RQlDxCuACgRVgsa3kVtSw8rnlB9",
+              "title": "34.Gate 1995 Question on Concurrent Processes and Semaphores.mp4"
+            },
+            {
+              "id": "1sotV1G6igilBe-zv0ZST4FiyqNC8mxqi",
+              "title": "35.Gate 1993 Question on Concurrent Processes and Semaphores.mp4"
+            }
+          ]
+        },
+        {
+          "order": 3,
+          "title": "Deadlocks",
+          "folderId": "14FP2ginqEWRnFCddmi-3x-xoH2AejjnP",
+          "files": [
+            {
+              "id": "19SIAtPFPW3xTusImek-I8A7I-AfauOja",
+              "title": "1.Introduction to Deadlocks.m4v"
+            },
+            {
+              "id": "1P0-5ClAe5ciOWFOMp1xzcSnxycgMvOiO",
+              "title": "2.Gate 1997 Question and More Examples.m4v"
+            },
+            {
+              "id": "1VsbX3IxqOF6zbEy-fe6sYg5zhwlr-0Dp",
+              "title": "3.Gate 1992 Question.m4v"
+            },
+            {
+              "id": "1R1Pg6ObuawxKcOcbuiJRY1sLFjOg1TJI",
+              "title": "4.Gate 1993 Question on Minimum Resources required.mp4"
+            },
+            {
+              "id": "1ZqF4hUJQ8FVwuYOhzEM5zACZAZOx25Ni",
+              "title": "5.Gate 2005 Question.mp4"
+            },
+            {
+              "id": "1RI1OEnvnW8XQsEMzE3YTxhkGmoMK6bUv",
+              "title": "6.Gate 06 Question about necessary condition for Deadlock.mp4"
+            },
+            {
+              "id": "1ReqFy3JipD0igg8pwIlYGeuHN3j1issK",
+              "title": "7.Deadlock Handling Mechanisms.mp4"
+            },
+            {
+              "id": "1R3J4lr1Yj09ZPqKyrxbjuJrSUY_20B3v",
+              "title": "8.Deadlock Prevention.mp4"
+            },
+            {
+              "id": "1aKJ7hsfQXRoclAyzLok_NRCh5iD1EAJW",
+              "title": "9.SafeUnsafeDeadlock avoidance and Bankers Algo.mp4"
+            },
+            {
+              "id": "1m0gsz3ulJYU9juCf4UyL5zzgflkEy3gK",
+              "title": "10.Gate 2007 Question on Safe State.mp4"
+            },
+            {
+              "id": "1dPvDfubN8v97jMC6fuUH7LCdzkXQoBbu",
+              "title": "11.Question on Safe State.mp4"
+            },
+            {
+              "id": "1XPqltbkEzULEX1LPtEd_2POo8JLG38oI",
+              "title": "12.Gate 2014 Question on Bankers Algorithm.mp4"
+            },
+            {
+              "id": "1hYETT6Q_zQ9rh2JV3vlDFtsM99ttz9pw",
+              "title": "13.Gate 1996 on Bankers Algorithm.mp4"
+            },
+            {
+              "id": "1cd5N53KN5d4JPER4DQisljcy8pXz9R0C",
+              "title": "14.Resource Allocation Graph.mp4"
+            },
+            {
+              "id": "103lX1AJxdUxKqQGw3IMRmAlwtxQXgYvL",
+              "title": "15.Resource Allocation Graph Examples.m4v"
+            },
+            {
+              "id": "1HE2hVdDQX969L1ZmLStivjG5Cea7N7H6",
+              "title": "16.Deadlock Detection and Recovery.m4v"
+            }
+          ]
+        },
+        {
+          "order": 4,
+          "title": "Memory Management",
+          "folderId": "1MHi5_9nJiFEXXJpTc99gwegF88u_HmhF",
+          "files": [
+            {
+              "id": "11Qqo_xtP-pgYBNs68-2a2Cc8N3d9lnnE",
+              "title": "1.Need for Multiprogramming and Memory Management.m4v"
+            },
+            {
+              "id": "1L5i3_sJo0SRcELzycqD3yk06xjK-mj-_",
+              "title": "2.Object code Relocation and Linker.m4v"
+            },
+            {
+              "id": "1Eu09JwbwmJl9F4xWGRMuFyRJiEecqb2L",
+              "title": "3.Loader.m4v"
+            },
+            {
+              "id": "18W40vwOv9n7oWJNxvV1Fonm5ipdmBhgd",
+              "title": "4.Gate 95 question on Linker.m4v"
+            },
+            {
+              "id": "1x7ZyIlXGqi49tztrsBJ_iXonvD9dVS1k",
+              "title": "5.Gate 98 question on Loader.mp4"
+            },
+            {
+              "id": "1bXUsthJ5whZ-wrmWi4cN2WGGQZ_483GN",
+              "title": "6.2001 Question on Relocation.mp4"
+            },
+            {
+              "id": "1k5U_NWRvMvabQnJ9GOkvuNe9cHZtxgWG",
+              "title": "7.Gate 2004 Question on Linker.mp4"
+            },
+            {
+              "id": "1_AOmkzcPm5fuEnQScQofm2OJA7IZD_xD",
+              "title": "8.Gate 2002 question on Dynamic Linked Libraries.mp4"
+            },
+            {
+              "id": "1eULeZyj6McUraPFQku7PvKhf6xZVBlHq",
+              "title": "9.Gate 2003 Question on Linking.mp4"
+            },
+            {
+              "id": "1l6OLDIwjWPW_08vfoYSgZG5UB9SD3el0",
+              "title": "10.Fixed Partitioning.mp4"
+            },
+            {
+              "id": "1Bf3mjdChqVZLDXd_Lzf7KS16ksWW90F8",
+              "title": "11.Relocation and Protection in Contiguous Memory Allocation.mp4"
+            },
+            {
+              "id": "1neVFTJmBDr0kqU2nn-TKvJyCZCpZH7nk",
+              "title": "12.Dynamic Partitioning.mp4"
+            },
+            {
+              "id": "1I120LyMMZyWmNurf5-wkyFoOSOTAD-0-",
+              "title": "13.Bit Map for Dynamic Partitioning.mp4"
+            },
+            {
+              "id": "1tnZcNkUuCWsfBeRkbevI2LTTQJyMGqX2",
+              "title": "14.Linked List for Dynamic Partitioning.mp4"
+            },
+            {
+              "id": "1txkZKQ_aTvuwpKFFLeu4TA6yFtTctNCj",
+              "title": "15.First fit Next fit Best fit Worst fit.mp4"
+            },
+            {
+              "id": "1JiVo3Dwh2vyjRImM5BnGEYHzfoCbUBeh",
+              "title": "16.Gate 2004 Question on First fit and Best fit.mp4"
+            },
+            {
+              "id": "1WQgzoD8EHHhXcPwMahA59FU_OWj5bj4e",
+              "title": "17.Variable Partitioning.mp4"
+            },
+            {
+              "id": "1x6aSWjA1RPks9eBLS6lQMLgqcO1ZZy7b",
+              "title": "18.Gate 98 Question on Fixed Partitioning.mp4"
+            },
+            {
+              "id": "1s5VgWJno98FScS2iTZX7l-ffOC8S-Cug",
+              "title": "19.Summary on Partitioning.mp4"
+            },
+            {
+              "id": "1u71eFsobIOkOmkxXXk2YzVCp3vO_RXps",
+              "title": "20.Overlays.mp4"
+            },
+            {
+              "id": "1xnK7pLB_DYSiDbEZWtH2z0N06cUJd54t",
+              "title": "21.Gate 98 question on Overlays.mp4"
+            },
+            {
+              "id": "1SXz90sfOPpDGAEohISZF5CNz0wbKwLBn",
+              "title": "22.Need for Paging.mp4"
+            },
+            {
+              "id": "1JYdY8dHo8cvA6V-mdDiP3_RAuFvmBQvt",
+              "title": "23.Paging explained with Example.mp4"
+            },
+            {
+              "id": "1y9W5fgmzmA607dWHNGgitKXZIqERpL7-",
+              "title": "24.Basics of Binary Addresses.mp4"
+            },
+            {
+              "id": "1kFyQlZYjTQrwlCaYgli0hJxhhg5p64JQ",
+              "title": "25.Physical Address Space and Logical Address Space.mp4"
+            },
+            {
+              "id": "1WMl5SLazgEfIIIpjlWW_pYOobAEH6d_P",
+              "title": "26.Page Table.mp4"
+            },
+            {
+              "id": "1pxYJLBjFqsMBvNnbj8q9inFDf7RC-LXa",
+              "title": "27.Numerical on paging.mp4"
+            },
+            {
+              "id": "1wW_v5g55Iwvoslng68A7NDrhgmGBCnu5",
+              "title": "28.Page Table Entry.mp4"
+            },
+            {
+              "id": "1mAINarry6ztQ-_eEOGAlZEaU0vDRBPyL",
+              "title": "29.Gate 2004 question on Page Table Entry.mp4"
+            },
+            {
+              "id": "1IDPShnRm1FA7QkLe4pzNdjpWhhsVaJis",
+              "title": "30.Need for Multi Level Paging.mp4"
+            },
+            {
+              "id": "1HpZegBoi-8mAU9-R03cm6IkqTRWJ4Y1j",
+              "title": "31.Two-Level Paging Example.mp4"
+            },
+            {
+              "id": "1ZcVj2Pt8JoH4LnI480WDIZ-QZoVZrrV2",
+              "title": "32.Examples on Multi Level Paging.mp4"
+            },
+            {
+              "id": "1m5tV7nLHx-zKUbknsfPAoGBUm2N99xy9",
+              "title": "33.More Examples on Multi Level Pages.mp4"
+            },
+            {
+              "id": "1mWuvazCS4oKMooz64UXcN7jExOvjplBb",
+              "title": "34.Examples on How to make Page Table Fit in One Page.mp4"
+            },
+            {
+              "id": "1fbiXYBQ6JD444MYDO4nKB1kpLGxkNYeI",
+              "title": "35.Gate 01 and 99 Question on Paging.mp4"
+            },
+            {
+              "id": "1qR63A5WIVyE2CpQqUMkEQiGW9ZFzvZhC",
+              "title": "36.Gate theory questions.mp4"
+            },
+            {
+              "id": "1K0ral3II0li2n-AKstA4_NSqDfN-qXf3",
+              "title": "37.Gate 2008 question on multi level paging.mp4"
+            },
+            {
+              "id": "1MziTKNkX_qRdec-1ElrT98-CRqMP1lT4",
+              "title": "38.Gate 2009 question on Multi level Paging.mp4"
+            },
+            {
+              "id": "1l7eYAVZXsT8tJ_TOoOdljcS-7aPV63Eu",
+              "title": "39.Gate 2002 question Multi level Paging.mp4"
+            },
+            {
+              "id": "1BIGHVmYtVzdQW3ljGvEfsTQ7rPR-jM0N",
+              "title": "40.Gate 2008 IT question.mp4"
+            },
+            {
+              "id": "1SKEFGSu3mjBI_VPpW0jU-KGsLDiHMRG-",
+              "title": "41.Gate 2013 question on Multi level paging.mp4"
+            },
+            {
+              "id": "1TGRImsLT7I0bIfEVbkb5qZtUm_QlFhCH",
+              "title": "42.Finding Optimal Page Size.mp4"
+            },
+            {
+              "id": "1fB1cu6jGXllt7HDEzYDyPxooiV8ifN1G",
+              "title": "43.VM Introduction.mp4"
+            },
+            {
+              "id": "1nhbRndL98n396WMV1d1ed0zvLv2XUE8U",
+              "title": "44.TLB.mp4"
+            },
+            {
+              "id": "17P5l6Ld_wDHX8vokT-Gh2CDzaJUZT5Lt",
+              "title": "45.Gate 2008 question on TLB.mp4"
+            },
+            {
+              "id": "1vle0v4AzBlX_5IW6LlTDB4TqmUTH_IR8",
+              "title": "46.Numericals on TLB.mp4"
+            },
+            {
+              "id": "19HrWwRLkhm9GEseA1dhIIL2IwmQ4CVS9",
+              "title": "47.TLB summary.mp4"
+            },
+            {
+              "id": "1GmXbq8MehXBROdJpiAhTnrIBkp4G27no",
+              "title": "48.Page fault.mp4"
+            },
+            {
+              "id": "1_PnswtjcV_vERRLMmR33kIaTv0vyRGDX",
+              "title": "49.Gate 2011 question on Page fault.mp4"
+            },
+            {
+              "id": "1m4AOM-DrMTnGGxqFUyliO1VEa7w6b69H",
+              "title": "50.Gate 98 question on Page fault.mp4"
+            },
+            {
+              "id": "1i_XFWNQ4m6pJW8jdb5L2NGpUt7vQn5qw",
+              "title": "51.Gate 2000 question on Page fault.mp4"
+            },
+            {
+              "id": "1xidvLbxPJSm3avnqf8MyRB9-5j3evNK-",
+              "title": "52.Gate 2007 question on page fault and dirty bit.mp4"
+            },
+            {
+              "id": "1Y-drOn3hpeNg9xp45pyMRWsd9Fjbk6pS",
+              "title": "53.GATE 2003 question on TLB and paging.m4v"
+            },
+            {
+              "id": "1-tiR3Syad1NCiYVCK-Mypv-Kmiukz4Pu",
+              "title": "54.GATE 2014 question on TLB.m4v"
+            },
+            {
+              "id": "1iwvvN9JLcbpDHnyf_vigcZuqzEnuznwS",
+              "title": "55.Inverted page table.mp4"
+            },
+            {
+              "id": "1vCgqJYFfIUad-J-2ocQb49nwmK3yCxyS",
+              "title": "56.Importance of frame allocation and page replacement.mp4"
+            },
+            {
+              "id": "1CATTs-pc_FHGXwvumahekTUjdBmm9ec8",
+              "title": "57.Page replacement algorithm.mp4"
+            },
+            {
+              "id": "1azgvDFJboeiJV6HA-khJy8pGXiLiPSCo",
+              "title": "58.Questions on Page replacement algorithms 1.mp4"
+            },
+            {
+              "id": "1-T39EgOUzSlGhroWdzV9PsmCK90LvI0r",
+              "title": "59.Questions on Page replacement algorithms 2.mp4"
+            },
+            {
+              "id": "1S5qbfvrmZ8bbQyP4TvjSCy3MLpWg3wAp",
+              "title": "60.Gate Questions on Page replacement algorithms 3.mp4"
+            },
+            {
+              "id": "19nE_D0ejKdvwAmybU3WnB2CSBaq-FosY",
+              "title": "61.Gate questions on Page replacement algorithms 4.mp4"
+            },
+            {
+              "id": "1L92mdk0uP18EgmG9gLN8x6U5pwbzl5CQ",
+              "title": "62.Gate Questions on Page replacement algorithms 5.mp4"
+            },
+            {
+              "id": "1N1JJVf6s1gd26SKrD65BZM-P81983f5f",
+              "title": "63.Beladys Anamoly.mp4"
+            },
+            {
+              "id": "1338X3k2t2_TGgyKK7GpKGRvHy0vd9j0e",
+              "title": "64.Stack algorithms.mp4"
+            },
+            {
+              "id": "1gyh80YvdBWeAF2bHK1Dfkl0bfs0TfRSP",
+              "title": "65.94 question on LRU LFU and FIFO.mp4"
+            },
+            {
+              "id": "1FMBZ9ay5af2leRN-t0WUxpw6Ji3qhB7k",
+              "title": "66.Gate 2007 question on FIFO.mp4"
+            },
+            {
+              "id": "1UgjDDR3CS6TlBRiRWzmChQaQX85KqWv9",
+              "title": "67.Gate 2010 question on FIFO.mp4"
+            },
+            {
+              "id": "1vyMV1SWsqiPQwHy2JTB-TbCkJ1-E7pgJ",
+              "title": "68.some_interesting_behaviour_of_optimal_page_replacement_algorithm.mp4"
+            },
+            {
+              "id": "1v5OvXZhVrwUo9mYkazTb6gQiMc4F28xO",
+              "title": "69.Gate 2014 question on LRU MRU LIFO FIFO and optimal.mp4"
+            },
+            {
+              "id": "1MvrpZuHfnmwyz6MilCeiwaazdq4GCHhx",
+              "title": "70.working set algorithm.mp4"
+            },
+            {
+              "id": "1apx_awZ9vDMDitv5scFZ2swUQ8_n2k3h",
+              "title": "71.Page replacement algorithms implementation 1.mp4"
+            },
+            {
+              "id": "1p_uQuurug4s3xDerQj9FVeBQzaTfsFKh",
+              "title": "72.Page replacement algorithms implementation 2.mp4"
+            },
+            {
+              "id": "1Ge3087xiWsSNy0boD4jnXKd-8OeFWmrk",
+              "title": "73.Page replacement algorithm implementation 3.mp4"
+            },
+            {
+              "id": "1hpX_2XxDyq_AmDq-ZItA1uFC_3OnDHjs",
+              "title": "74.Segmentation.mp4"
+            },
+            {
+              "id": "1L0PENl-AVGDcY53m1zLQ10YemCC1S1hw",
+              "title": "75.Segmented Paging.m4v"
+            },
+            {
+              "id": "1flQWOJWF9XkeRoM9-3ahG6v-wew68tSv",
+              "title": "76.GATE 99 question on segmented paint.m4v"
+            }
+          ]
+        },
+        {
+          "order": 5,
+          "title": "File System, I/O & Protection",
+          "folderId": "1tIbd8_H--4ccfzOXvQF55p0yreS993Tv",
+          "files": [
+            {
+              "id": "10uS0WZgTf6WYix0kZDHQTEQ0o0MdCgqE",
+              "title": "1.Attributes and operations on files.mp4"
+            },
+            {
+              "id": "1Oz9NYQFBSG_64gKvb8C3rmC2WE873tgY",
+              "title": "2.Open file tables.mp4"
+            },
+            {
+              "id": "1qQeVoG5vsAdsjBpGnNMtZoJv-zqtG0Ey",
+              "title": "3.Accessing files.mp4"
+            },
+            {
+              "id": "12XqcdG57OCnoKmutDv8igvZ36bI7ShEp",
+              "title": "4.Directory structure.mp4"
+            },
+            {
+              "id": "13dJ-8Rgh3Sea0Xy7TBeyfUlZWznwvH0S",
+              "title": "5.Single level VS Two level directory.mp4"
+            },
+            {
+              "id": "1hwQ0CyKuxhhUGpQZJdw08lmY8Oy3ZkSe",
+              "title": "6.Tree structured directory.mp4"
+            },
+            {
+              "id": "1nFcptdsk9ORaMSQ-uwxgx6TxNnjBRe-9",
+              "title": "7.Acyclic Graph structured directory.mp4"
+            },
+            {
+              "id": "1achFppCqncWxepuTZKbaZnEf7MqHHUD-",
+              "title": "8.File systems.mp4"
+            },
+            {
+              "id": "1wwwQQ_7t0MiNJD5vGt2hCueExP8g1Wcx",
+              "title": "9.File system structure.mp4"
+            },
+            {
+              "id": "1kX9ftCAssEUNTyH3gMiQ6g_Ql6Mam9Nk",
+              "title": "10.MBR.mp4"
+            },
+            {
+              "id": "1uMSmDgBsZ7OCF7BVeP9cEl-wCYNPA5d8",
+              "title": "11.On disk data structure uses in file system implication.mp4"
+            },
+            {
+              "id": "1mT00KxXlxsGQ4j2a3--8Pg0cRULn6JVe",
+              "title": "12.In memory data structure in file system implementation.mp4"
+            },
+            {
+              "id": "1WSeeUDALk95hYGoCTp4iGt0SCahn_FoV",
+              "title": "13.Directory implementation.mp4"
+            },
+            {
+              "id": "149984wXa3vF28JcBEy_vmvfYBSyraH46",
+              "title": "14.Allocation methods.mp4"
+            },
+            {
+              "id": "1jA0D-OQJIcyl2lae7xxs86ZYAiznWw62",
+              "title": "15.File allocation table.mp4"
+            },
+            {
+              "id": "1K4zDLeXKseADbUp05oG1OKjAFCqZMs7-",
+              "title": "16.Gate 14 on FAT.mp4"
+            },
+            {
+              "id": "1kc50lHuOBlLJ0SimFjzw5UpK5ZAvjY6v",
+              "title": "17.Indexed allocation - 1.mp4"
+            },
+            {
+              "id": "1hP10lMgaii7XAX8XLt9nVuGGWqbMQ8m5",
+              "title": "18.Indexed allocation - 2.mp4"
+            },
+            {
+              "id": "1NLI6Xa1uuNAPDNWclPQtqIu4kFdF-vBz",
+              "title": "19.Indexed allocation - 3.mp4"
+            },
+            {
+              "id": "12_KIl8OIE4hwodZb49u8pJfCNPUa_fSc",
+              "title": "20.Gate 2012 on indexed allocation.mp4"
+            },
+            {
+              "id": "1iWgrmx6Do4qxIlQ5qYBJGwtzedt73AN0",
+              "title": "21.Free space managment.mp4"
+            },
+            {
+              "id": "1nH8dTsrPwAxSaLEhEFZcCgz-sWLWz36h",
+              "title": "22.Disk scheduling.mp4"
+            },
+            {
+              "id": "1q8E63pI9SWu5tCE1UTP1LFLLP-zwSOHc",
+              "title": "23.FCFS scheduling.mp4"
+            },
+            {
+              "id": "1fk1ujjdATS2E8Gjy833meeIA2rXaMz5b",
+              "title": "24.SSTF scheduling.mp4"
+            },
+            {
+              "id": "1-FehdKj8n3jwaswkJ_XkLyzOz41BNb0a",
+              "title": "25.Scan C-scan.mp4"
+            },
+            {
+              "id": "1YzDtItZJ1Alp119YV7qJXzBJuESS4h8Y",
+              "title": "26.Look.mp4"
+            },
+            {
+              "id": "1YHu0EC7p0J86593UB0x0Jjyvks-Sn1k6",
+              "title": "27.C - look.mp4"
+            },
+            {
+              "id": "1AkhEyJ-7TxWvciIBJoWzYxbJZjaKUpJZ",
+              "title": "28.Gate 2016 question on C-look.mp4"
+            }
+          ]
+        },
+        {
+          "order": 6,
+          "title": "Threads & System Calls",
+          "folderId": "178D009HP1XgkI7k9tTx9a9MWsGhLV5Xr",
+          "files": [
+            {
+              "id": "19vg6Mxy0T9a8HO8Y0nLiuIUL3xCJmtc0",
+              "title": "1.System calls Vs function calls.m4v"
+            },
+            {
+              "id": "1v_b8VoHZ2OvYwCL0G-m4H4uWWLJCkunX",
+              "title": "2.Process control system calls.m4v"
+            },
+            {
+              "id": "1ZjxlVcLxWZ4K1Yd1nH75HQ-wmC8QI6uf",
+              "title": "3.File related system calls.m4v"
+            },
+            {
+              "id": "1lAnj83Mcl_BXwT424OsBPXJ3MKU__ZW8",
+              "title": "4.Device related system calls.mp4"
+            },
+            {
+              "id": "1otOez3BRjqOyfDHMn_3HZBv1JnS3AV0c",
+              "title": "5.Information related system calls.mp4"
+            },
+            {
+              "id": "1OS9mjHwPpQS64LIdZEGB3A5saHA8vclL",
+              "title": "6.Communications related system calls.mp4"
+            },
+            {
+              "id": "1dBUpJSfuu6ous8uo0LrhiIOxjT9NGpyp",
+              "title": "7.Fork System call.mp4"
+            },
+            {
+              "id": "1mM8cGKw8JW6JbgPMCqI2M7pdZHnhLcsZ",
+              "title": "8.Process Vs Threads.mp4"
+            },
+            {
+              "id": "1K7yz_xVBteXOv6qHJx3-kvREaGbwOCju",
+              "title": "9.User lever Vs Kernel level threads.mp4"
+            },
+            {
+              "id": "1WZR-ggBKxqACkAfL1NGkNvRCrhcMVe8H",
+              "title": "10.Hybrid threads (Not required for GATE).mp4"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

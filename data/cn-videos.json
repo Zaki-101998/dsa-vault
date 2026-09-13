@@ -1,0 +1,2552 @@
+{
+  "subject": "cn",
+  "steps": [
+    {
+      "key": "cn-01-ip-address-subnetting-supernetting",
+      "order": 1,
+      "title": "IP Address, Subnetting & Supernetting",
+      "problems": [
+        {
+          "key": "cn:ip-address-subnetting-supernetting__introduction-to-computer-network-and-ip-address",
+          "name": "Introduction to Computer network and IP address",
+          "link": "https://drive.google.com/file/d/1QXdGaMjx6FGt168880C-XnUcZ7ZOuS_S/view",
+          "difficulty": "",
+          "kind": "concept",
+          "video": {
+            "fileId": "1QXdGaMjx6FGt168880C-XnUcZ7ZOuS_S"
+          }
+        },
+        {
+          "key": "cn:ip-address-subnetting-supernetting__types-of-castingunicastlimited-broadcastdirected-broadcast",
+          "name": "Types of CastingUnicastLimited BroadcastDirected Broadcast",
+          "link": "https://drive.google.com/file/d/11XQlQsap5tA5WdgjfW4dQ-ivtgjnC2-z/view",
+          "difficulty": "",
+          "kind": "concept",
+          "video": {
+            "fileId": "11XQlQsap5tA5WdgjfW4dQ-ivtgjnC2-z"
+          }
+        },
+        {
+          "key": "cn:ip-address-subnetting-supernetting__subnets-subnet-maskrouting",
+          "name": "Subnets, Subnet MaskRouting",
+          "link": "https://drive.google.com/file/d/13SxpZZK2xFxlFnIMsSoA3CeJN-z5QTzu/view",
+          "difficulty": "",
+          "kind": "concept",
+          "video": {
+            "fileId": "13SxpZZK2xFxlFnIMsSoA3CeJN-z5QTzu"
+          }
+        },
+        {
+          "key": "cn:ip-address-subnetting-supernetting__variable-lenght-subnet-masking-vlsm",
+          "name": "variable lenght subnet masking (VLSM)",
+          "link": "https://drive.google.com/file/d/1v8brpBG3LjEIVAUpdn8egVpFLYCmf7-9/view",
+          "difficulty": "",
+          "kind": "concept",
+          "video": {
+            "fileId": "1v8brpBG3LjEIVAUpdn8egVpFLYCmf7-9"
+          }
+        },
+        {
+          "key": "cn:ip-address-subnetting-supernetting__subnet-masking-question",
+          "name": "Subnet Masking question",
+          "link": "https://drive.google.com/file/d/1DlKO1S1SFk9seKjSqPugER3qdSdVoaxb/view",
+          "difficulty": "",
+          "kind": "problem",
+          "video": {
+            "fileId": "1DlKO1S1SFk9seKjSqPugER3qdSdVoaxb"
+          }
+        },
+        {
+          "key": "cn:ip-address-subnetting-supernetting__classless-inter-domain-routing-cidr",
+          "name": "Classless Inter Domain Routing (CIDR)",
+          "link": "https://drive.google.com/file/d/19DqyC4fCw6FddbIHblOLn5aPFuHx-jZg/view",
+          "difficulty": "",
+          "kind": "concept",
+          "video": {
+            "fileId": "19DqyC4fCw6FddbIHblOLn5aPFuHx-jZg"
+          }
+        },
+        {
+          "key": "cn:ip-address-subnetting-supernetting__subnetting-in-cidr-vlsm-in-cidr",
+          "name": "Subnetting in CIDR VLSM in CIDR",
+          "link": "https://drive.google.com/file/d/1Wn1hsjN67efDNzqvRyPMv-MDbseyv9wC/view",
+          "difficulty": "",
+          "kind": "concept",
+          "video": {
+            "fileId": "1Wn1hsjN67efDNzqvRyPMv-MDbseyv9wC"
+          }
+        },
+        {
+          "key": "cn:ip-address-subnetting-supernetting__some-interesting-problems-on-subnet-mask",
+          "name": "Some interesting problems on subnet mask",
+          "link": "https://drive.google.com/file/d/1R1WIFGpXGwnhDpz4KK94hNUvTaoKMncP/view",
+          "difficulty": "",
+          "kind": "problem",
+          "video": {
+            "fileId": "1R1WIFGpXGwnhDpz4KK94hNUvTaoKMncP"
+          }
+        },
+        {
+          "key": "cn:ip-address-subnetting-supernetting__supernetting-or-aggregation",
+          "name": "Supernetting or aggregation",
+          "link": "https://drive.google.com/file/d/1n37YHTnPIyIVynLE3aXtY973TVx-OYc6/view",
+          "difficulty": "",
+          "kind": "concept",
+          "video": {
+            "fileId": "1n37YHTnPIyIVynLE3aXtY973TVx-OYc6"
+          }
+        },
+        {
+          "key": "cn:ip-address-subnetting-supernetting__private-ip-address",
+          "name": "Private IP Address",
+          "link": "https://drive.google.com/file/d/1zuVNLUCRwrGJdvawZS7fWBwYkaTdH_7F/view",
+          "difficulty": "",
+          "kind": "concept",
+          "video": {
+            "fileId": "1zuVNLUCRwrGJdvawZS7fWBwYkaTdH_7F"
+          }
+        },
+        {
+          "key": "cn:ip-address-subnetting-supernetting__gate-2012-question-on-ip-addressing",
+          "name": "Gate 2012 question on IP addressing",
+          "link": "https://drive.google.com/file/d/1kf9CMDhFw0A7KzkjuV52gAcZA0utQ3OV/view",
+          "difficulty": "",
+          "kind": "problem",
+          "video": {
+            "fileId": "1kf9CMDhFw0A7KzkjuV52gAcZA0utQ3OV"
+          }
+        }
+      ]
+    },
+    {
+      "key": "cn-02-flow-control-methods",
+      "order": 2,
+      "title": "Flow Control Methods",
+      "problems": [
+        {
+          "key": "cn:flow-control-methods__cn-flow-control-methods-delays-in-cn-ravindrababu-ravula-free-gate-cs-classes-720p",
+          "name": "CN Flow Control methods Delays in CN Ravindrababu Ravula Free GATE CS Classes 720P",
+          "link": "https://drive.google.com/file/d/1wIDOFNn529-OPXLvmrCLw18ui1o1X80n/view",
+          "difficulty": "",
+          "kind": "problem",
+          "video": {
+            "fileId": "1wIDOFNn529-OPXLvmrCLw18ui1o1X80n"
+          }
+        },
+        {
+          "key": "cn:flow-control-methods__gate-2015-question-on-delays",
+          "name": "Gate 2015 question on Delays",
+          "link": "https://drive.google.com/file/d/1p4VKxURy4zGUZqJcRHPoLAV1fFoUtvHd/view",
+          "difficulty": "",
+          "kind": "problem",
+          "video": {
+            "fileId": "1p4VKxURy4zGUZqJcRHPoLAV1fFoUtvHd"
+          }
+        },
+        {
+          "key": "cn:flow-control-methods__flow-control-stop-and-wait",
+          "name": "Flow control Stop and wait",
+          "link": "https://drive.google.com/file/d/1DfHzP-DoFYmoXNcd-MHTRTMadaUyqzeo/view",
+          "difficulty": "",
+          "kind": "concept",
+          "video": {
+            "fileId": "1DfHzP-DoFYmoXNcd-MHTRTMadaUyqzeo"
+          }
+        },
+        {
+          "key": "cn:flow-control-methods__gate-2015-question-on-stop-and-wait-protocol",
+          "name": "Gate 2015 question on stop and wait protocol",
+          "link": "https://drive.google.com/file/d/1irnqsbSN_WPyfJJAAhVo0idYG3uvDzle/view",
+          "difficulty": "",
+          "kind": "problem",
+          "video": {
+            "fileId": "1irnqsbSN_WPyfJJAAhVo0idYG3uvDzle"
+          }
+        },
+        {
+          "key": "cn:flow-control-methods__capacity-of-pipe-and-pipelining",
+          "name": "Capacity of pipe and pipelining",
+          "link": "https://drive.google.com/file/d/1KfKd7sK3jgxDoENqGIKllEWmQ5tFZC3H/view",
+          "difficulty": "",
+          "kind": "concept",
+          "video": {
+            "fileId": "1KfKd7sK3jgxDoENqGIKllEWmQ5tFZC3H"
+          }
+        },
+        {
+          "key": "cn:flow-control-methods__go-back-n",
+          "name": "Go Back N",
+          "link": "https://drive.google.com/file/d/12RsPAJcrQ0b7Ow23qG7Fnx5okUxm0HKk/view",
+          "difficulty": "",
+          "kind": "concept",
+          "video": {
+            "fileId": "12RsPAJcrQ0b7Ow23qG7Fnx5okUxm0HKk"
+          }
+        },
+        {
+          "key": "cn:flow-control-methods__selective-repeat-sliding-window-protocol",
+          "name": "Selective Repeat Sliding Window Protocol",
+          "link": "https://drive.google.com/file/d/1nrfjMfGcyIsRTQuVwQEUOBpsCH--tR_M/view",
+          "difficulty": "",
+          "kind": "concept",
+          "video": {
+            "fileId": "1nrfjMfGcyIsRTQuVwQEUOBpsCH--tR_M"
+          }
+        },
+        {
+          "key": "cn:flow-control-methods__gate-2016-question-on-s-r-protocol",
+          "name": "Gate 2016 question on S-R protocol",
+          "link": "https://drive.google.com/file/d/1etJgenxQIHHRdcit31uh4DYmJXsUBniT/view",
+          "difficulty": "",
+          "kind": "problem",
+          "video": {
+            "fileId": "1etJgenxQIHHRdcit31uh4DYmJXsUBniT"
+          }
+        },
+        {
+          "key": "cn:flow-control-methods__gate-2005-and-gate-2010-questions-on-sr-protocol-fundamentals",
+          "name": "Gate 2005 and Gate 2010 questions on SR protocol fundamentals",
+          "link": "https://drive.google.com/file/d/1MayUMX1VWV24yHziHOZd1y4LeHQJdVTr/view",
+          "difficulty": "",
+          "kind": "problem",
+          "video": {
+            "fileId": "1MayUMX1VWV24yHziHOZd1y4LeHQJdVTr"
+          }
+        },
+        {
+          "key": "cn:flow-control-methods__gate-2003-question-on-sliding-window-protocol",
+          "name": "Gate 2003 question on sliding window protocol",
+          "link": "https://drive.google.com/file/d/1M-Nst4sl0ucMhiFQgBSl908zGQ_KAXlu/view",
+          "difficulty": "",
+          "kind": "problem",
+          "video": {
+            "fileId": "1M-Nst4sl0ucMhiFQgBSl908zGQ_KAXlu"
+          }
+        },
+        {
+          "key": "cn:flow-control-methods__gate-2006-question-on-sliding-window-protocol",
+          "name": "Gate 2006 question on sliding window protocol",
+          "link": "https://drive.google.com/file/d/1qmREOyqtO5bIanMLLhpynHPhkl7T3F8Q/view",
+          "difficulty": "",
+          "kind": "problem",
+          "video": {
+            "fileId": "1qmREOyqtO5bIanMLLhpynHPhkl7T3F8Q"
+          }
+        },
+        {
+          "key": "cn:flow-control-methods__introduction-to-access-control-methods-tdm-and-polling",
+          "name": "Introduction to Access control methods TDM and Polling",
+          "link": "https://drive.google.com/file/d/10bgJaJnvqo7qef4f_yFU2s_w1xbnaX5O/view",
+          "difficulty": "",
+          "kind": "concept",
+          "video": {
+            "fileId": "10bgJaJnvqo7qef4f_yFU2s_w1xbnaX5O"
+          }
+        },
+        {
+          "key": "cn:flow-control-methods__csma-cd",
+          "name": "CSMA - CD",
+          "link": "https://drive.google.com/file/d/11XePgkICuFTv3xXdK9xEtVqPVJ4PEVYS/view",
+          "difficulty": "",
+          "kind": "concept",
+          "video": {
+            "fileId": "11XePgkICuFTv3xXdK9xEtVqPVJ4PEVYS"
+          }
+        },
+        {
+          "key": "cn:flow-control-methods__gate-2015-question-on-csmacd",
+          "name": "Gate 2015 question on CSMACD",
+          "link": "https://drive.google.com/file/d/1eapqXWbtxS_Qpffh_XTrol3tO3aXGtzF/view",
+          "difficulty": "",
+          "kind": "problem",
+          "video": {
+            "fileId": "1eapqXWbtxS_Qpffh_XTrol3tO3aXGtzF"
+          }
+        },
+        {
+          "key": "cn:flow-control-methods__back-off-algorithm-for-csmacd",
+          "name": "back off algorithm for CSMACD",
+          "link": "https://drive.google.com/file/d/1eXwkeGOVN0H2cpi-cIwjBCA7T1Fttlkl/view",
+          "difficulty": "",
+          "kind": "concept",
+          "video": {
+            "fileId": "1eXwkeGOVN0H2cpi-cIwjBCA7T1Fttlkl"
+          }
+        },
+        {
+          "key": "cn:flow-control-methods__gate-2016-question-on-sloted-aloha",
+          "name": "Gate 2016 question on sloted aloha",
+          "link": "https://drive.google.com/file/d/1_3xyyQbdA1l9ilonz0p8_4isus_EKMCV/view",
+          "difficulty": "",
+          "kind": "problem",
+          "video": {
+            "fileId": "1_3xyyQbdA1l9ilonz0p8_4isus_EKMCV"
+          }
+        },
+        {
+          "key": "cn:flow-control-methods__aloha-and-difference-between-flow-and-access-control",
+          "name": "Aloha and difference between Flow and access control",
+          "link": "https://drive.google.com/file/d/1C6HGz2s6tK4HvR4GFuZy3wrg_S_12ZKT/view",
+          "difficulty": "",
+          "kind": "concept",
+          "video": {
+            "fileId": "1C6HGz2s6tK4HvR4GFuZy3wrg_S_12ZKT"
+          }
+        },
+        {
+          "key": "cn:flow-control-methods__token-passing-access-control-method",
+          "name": "Token passing access control method",
+          "link": "https://drive.google.com/file/d/1Px4ii_SPFKK0KXKLzzYzCAAHbJG-CXis/view",
+          "difficulty": "",
+          "kind": "concept",
+          "video": {
+            "fileId": "1Px4ii_SPFKK0KXKLzzYzCAAHbJG-CXis"
+          }
+        }
+      ]
+    },
+    {
+      "key": "cn-03-error-control-methods",
+      "order": 3,
+      "title": "Error Control Methods",
+      "problems": [
+        {
+          "key": "cn:error-control-methods__error-control-and-crc",
+          "name": "Error control and CRC",
+          "link": "https://drive.google.com/file/d/17ldZ7sVyg-03n1xSPKsOpjG3sPyzeaMz/view",
+          "difficulty": "",
+          "kind": "concept",
+          "video": {
+            "fileId": "17ldZ7sVyg-03n1xSPKsOpjG3sPyzeaMz"
+          }
+        },
+        {
+          "key": "cn:error-control-methods__crc-example",
+          "name": "CRC Example",
+          "link": "https://drive.google.com/file/d/1ZcbpK9FNmGgL1EI8eiVlnx6pGaSzCmL6/view",
+          "difficulty": "",
+          "kind": "concept",
+          "video": {
+            "fileId": "1ZcbpK9FNmGgL1EI8eiVlnx6pGaSzCmL6"
+          }
+        },
+        {
+          "key": "cn:error-control-methods__checksum",
+          "name": "Checksum",
+          "link": "https://drive.google.com/file/d/1M0ZYNvvAUWyHTZ90Vm1SEtXxihgSG3yb/view",
+          "difficulty": "",
+          "kind": "concept",
+          "video": {
+            "fileId": "1M0ZYNvvAUWyHTZ90Vm1SEtXxihgSG3yb"
+          }
+        },
+        {
+          "key": "cn:error-control-methods__summary",
+          "name": "Summary",
+          "link": "https://drive.google.com/file/d/1LY0DxGdFd8ylEmSg3RGhYns6U3Mq--py/view",
+          "difficulty": "",
+          "kind": "concept",
+          "video": {
+            "fileId": "1LY0DxGdFd8ylEmSg3RGhYns6U3Mq--py"
+          }
+        }
+      ]
+    },
+    {
+      "key": "cn-04-iso-osi-stack",
+      "order": 4,
+      "title": "ISO/OSI Stack",
+      "problems": [
+        {
+          "key": "cn:iso-osi-stack__iso-osi-layers",
+          "name": "ISO-OSI LAYERS",
+          "link": "https://drive.google.com/file/d/1ylMbO9iQoKygb3QEXxBj5Wu9_VBeQL78/view",
+          "difficulty": "",
+          "kind": "concept",
+          "video": {
+            "fileId": "1ylMbO9iQoKygb3QEXxBj5Wu9_VBeQL78"
+          }
+        },
+        {
+          "key": "cn:iso-osi-stack__physical-layer",
+          "name": "Physical layer",
+          "link": "https://drive.google.com/file/d/1ShBnrY9186IKBAyajqjw1wYYdnB-izho/view",
+          "difficulty": "",
+          "kind": "concept",
+          "video": {
+            "fileId": "1ShBnrY9186IKBAyajqjw1wYYdnB-izho"
+          }
+        },
+        {
+          "key": "cn:iso-osi-stack__introduction-to-dll",
+          "name": "Introduction to DLL",
+          "link": "https://drive.google.com/file/d/1fcLpzvMQl-0uYixaQgqYHcnzNsekJqE2/view",
+          "difficulty": "",
+          "kind": "concept",
+          "video": {
+            "fileId": "1fcLpzvMQl-0uYixaQgqYHcnzNsekJqE2"
+          }
+        },
+        {
+          "key": "cn:iso-osi-stack__framing-at-dll",
+          "name": "Framing at DLL",
+          "link": "https://drive.google.com/file/d/18_cCdAGa7TFPj3FUW6PUIKQ0o3hyc1Y9/view",
+          "difficulty": "",
+          "kind": "concept",
+          "video": {
+            "fileId": "18_cCdAGa7TFPj3FUW6PUIKQ0o3hyc1Y9"
+          }
+        },
+        {
+          "key": "cn:iso-osi-stack__physical-addressing",
+          "name": "Physical addressing",
+          "link": "https://drive.google.com/file/d/1Oo_SAC09uVnTpNz-wuOZqnByNcfmp_79/view",
+          "difficulty": "",
+          "kind": "concept",
+          "video": {
+            "fileId": "1Oo_SAC09uVnTpNz-wuOZqnByNcfmp_79"
+          }
+        },
+        {
+          "key": "cn:iso-osi-stack__introduction-to-network-layer",
+          "name": "Introduction to network layer",
+          "link": "https://drive.google.com/file/d/1877aJVKXwzGuWYNJFuB4ogj56E9hS2IN/view",
+          "difficulty": "",
+          "kind": "concept",
+          "video": {
+            "fileId": "1877aJVKXwzGuWYNJFuB4ogj56E9hS2IN"
+          }
+        },
+        {
+          "key": "cn:iso-osi-stack__introduction-to-transport-layer",
+          "name": "Introduction to transport layer",
+          "link": "https://drive.google.com/file/d/12khB0dU_cNLauVWpzqL3GmORcIYYSXEo/view",
+          "difficulty": "",
+          "kind": "concept",
+          "video": {
+            "fileId": "12khB0dU_cNLauVWpzqL3GmORcIYYSXEo"
+          }
+        },
+        {
+          "key": "cn:iso-osi-stack__lecture-how-all-the-layers-work-together",
+          "name": "Lecture How all the layers work together",
+          "link": "https://drive.google.com/file/d/11N1mfon1y960OX7jaWnHLyFAWnNQkDfE/view",
+          "difficulty": "",
+          "kind": "concept",
+          "video": {
+            "fileId": "11N1mfon1y960OX7jaWnHLyFAWnNQkDfE"
+          }
+        },
+        {
+          "key": "cn:iso-osi-stack__session-layer-and-presentation-layer",
+          "name": "Session layer and Presentation layer",
+          "link": "https://drive.google.com/file/d/1pS3TkSqQlOjRvi3CqHI3gxMGi9m-fFBQ/view",
+          "difficulty": "",
+          "kind": "concept",
+          "video": {
+            "fileId": "1pS3TkSqQlOjRvi3CqHI3gxMGi9m-fFBQ"
+          }
+        },
+        {
+          "key": "cn:iso-osi-stack__gate-2004-question-on-layering",
+          "name": "Gate 2004 question on layering",
+          "link": "https://drive.google.com/file/d/1Y4Zohtw8C7oWHjlSIgMCjzkiLnMLf0BQ/view",
+          "difficulty": "",
+          "kind": "problem",
+          "video": {
+            "fileId": "1Y4Zohtw8C7oWHjlSIgMCjzkiLnMLf0BQ"
+          }
+        }
+      ]
+    },
+    {
+      "key": "cn-05-lan-technologies",
+      "order": 5,
+      "title": "LAN Technologies",
+      "problems": [
+        {
+          "key": "cn:lan-technologies__ethernet",
+          "name": "Ethernet",
+          "link": "https://drive.google.com/file/d/1FT4aACEOubrDNrcXapasV3eaoCtxdhLD/view",
+          "difficulty": "",
+          "kind": "concept",
+          "video": {
+            "fileId": "1FT4aACEOubrDNrcXapasV3eaoCtxdhLD"
+          }
+        },
+        {
+          "key": "cn:lan-technologies__gate-2016-question-on-ethernet",
+          "name": "Gate 2016 question on ethernet",
+          "link": "https://drive.google.com/file/d/1wnst_YbSCt1vzOFpcPMTtFUcu5kBZa21/view",
+          "difficulty": "",
+          "kind": "problem",
+          "video": {
+            "fileId": "1wnst_YbSCt1vzOFpcPMTtFUcu5kBZa21"
+          }
+        },
+        {
+          "key": "cn:lan-technologies__introduction-to-token-ring",
+          "name": "Introduction to Token Ring",
+          "link": "https://drive.google.com/file/d/14OgXAvEfQ8j9JIIa5Mxxb_Kbu_SwzvAC/view",
+          "difficulty": "",
+          "kind": "concept",
+          "video": {
+            "fileId": "14OgXAvEfQ8j9JIIa5Mxxb_Kbu_SwzvAC"
+          }
+        },
+        {
+          "key": "cn:lan-technologies__token-ring-frame-format",
+          "name": "Token Ring Frame Format",
+          "link": "https://drive.google.com/file/d/1Ig2zuF96u2ZDnEnPosHxPrCn5lOI9LB9/view",
+          "difficulty": "",
+          "kind": "concept",
+          "video": {
+            "fileId": "1Ig2zuF96u2ZDnEnPosHxPrCn5lOI9LB9"
+          }
+        },
+        {
+          "key": "cn:lan-technologies__minimum-length-of-token-ring",
+          "name": "Minimum length of token ring",
+          "link": "https://drive.google.com/file/d/1p59jrOwmj5Fydszt0lhAammeLTWq3JBf/view",
+          "difficulty": "",
+          "kind": "concept",
+          "video": {
+            "fileId": "1p59jrOwmj5Fydszt0lhAammeLTWq3JBf"
+          }
+        }
+      ]
+    },
+    {
+      "key": "cn-06-switching",
+      "order": 6,
+      "title": "Switching",
+      "problems": [
+        {
+          "key": "cn:switching__introduction-to-switching",
+          "name": "Introduction to switching",
+          "link": "https://drive.google.com/file/d/1nFAaX1CVonklITecpkfGiULUmKcHwqy4/view",
+          "difficulty": "",
+          "kind": "concept",
+          "video": {
+            "fileId": "1nFAaX1CVonklITecpkfGiULUmKcHwqy4"
+          }
+        },
+        {
+          "key": "cn:switching__comparison-between-circuit-switching-and-packet-switching",
+          "name": "Comparison between circuit switching and packet switching",
+          "link": "https://drive.google.com/file/d/13ZBN3PkfQ8XyFiZhm70jIxTlEY1agvhS/view",
+          "difficulty": "",
+          "kind": "concept",
+          "video": {
+            "fileId": "13ZBN3PkfQ8XyFiZhm70jIxTlEY1agvhS"
+          }
+        },
+        {
+          "key": "cn:switching__packetisation-in-packet-switching",
+          "name": "Packetisation in packet switching",
+          "link": "https://drive.google.com/file/d/1TkcTU1dnPTFvrG9dXPynZPOeONkKEFUR/view",
+          "difficulty": "",
+          "kind": "concept",
+          "video": {
+            "fileId": "1TkcTU1dnPTFvrG9dXPynZPOeONkKEFUR"
+          }
+        },
+        {
+          "key": "cn:switching__virtual-circuits-and-datagrams",
+          "name": "Virtual circuits and datagrams",
+          "link": "https://drive.google.com/file/d/1ySuAt3js3tISXb0CK4qUq1Ywqu38RHEh/view",
+          "difficulty": "",
+          "kind": "concept",
+          "video": {
+            "fileId": "1ySuAt3js3tISXb0CK4qUq1Ywqu38RHEh"
+          }
+        }
+      ]
+    },
+    {
+      "key": "cn-07-internet-protocol",
+      "order": 7,
+      "title": "Internet Protocol",
+      "problems": [
+        {
+          "key": "cn:internet-protocol__introduction-to-ip-header",
+          "name": "Introduction to IP header",
+          "link": "https://drive.google.com/file/d/1hrJDjLW9HxhIZrJe4Bxl9ws9n2-JsV9i/view",
+          "difficulty": "",
+          "kind": "concept",
+          "video": {
+            "fileId": "1hrJDjLW9HxhIZrJe4Bxl9ws9n2-JsV9i"
+          }
+        },
+        {
+          "key": "cn:internet-protocol__identification-mfdf-and-fragment-offset",
+          "name": "Identification MFDF and fragment offset",
+          "link": "https://drive.google.com/file/d/13ZjFwR6tzqvBGZhijOwln1YxQ0_9s1r_/view",
+          "difficulty": "",
+          "kind": "concept",
+          "video": {
+            "fileId": "13ZjFwR6tzqvBGZhijOwln1YxQ0_9s1r_"
+          }
+        },
+        {
+          "key": "cn:internet-protocol__ttl-protocol-header-checksum",
+          "name": "TTL protocol Header checksum",
+          "link": "https://drive.google.com/file/d/1ljiN8hoZKrjxOTb4cvRwxX3UpDNESkzn/view",
+          "difficulty": "",
+          "kind": "concept",
+          "video": {
+            "fileId": "1ljiN8hoZKrjxOTb4cvRwxX3UpDNESkzn"
+          }
+        },
+        {
+          "key": "cn:internet-protocol__source-ip-and-destination-ip",
+          "name": "Source IP and destination IP",
+          "link": "https://drive.google.com/file/d/1rrYk1N3g_l8o8oS2X8V_4QJCEMPkjbUw/view",
+          "difficulty": "",
+          "kind": "concept",
+          "video": {
+            "fileId": "1rrYk1N3g_l8o8oS2X8V_4QJCEMPkjbUw"
+          }
+        },
+        {
+          "key": "cn:internet-protocol__options",
+          "name": "Options",
+          "link": "https://drive.google.com/file/d/1-16M000Sz87qP2YwkPuPA22Ea9Rlotuj/view",
+          "difficulty": "",
+          "kind": "concept",
+          "video": {
+            "fileId": "1-16M000Sz87qP2YwkPuPA22Ea9Rlotuj"
+          }
+        }
+      ]
+    },
+    {
+      "key": "cn-08-fragmentation",
+      "order": 8,
+      "title": "Fragmentation",
+      "problems": [
+        {
+          "key": "cn:fragmentation__difference-between-segmentation-and-fragmentation",
+          "name": "Difference between segmentation and fragmentation",
+          "link": "https://drive.google.com/file/d/1Jlyygd9HUOcQI5ZwDTs3HWN3N3U5O0V9/view",
+          "difficulty": "",
+          "kind": "concept",
+          "video": {
+            "fileId": "1Jlyygd9HUOcQI5ZwDTs3HWN3N3U5O0V9"
+          }
+        },
+        {
+          "key": "cn:fragmentation__fragmentation-explained-with-numerical-example",
+          "name": "Fragmentation explained with numerical example",
+          "link": "https://drive.google.com/file/d/12EoN3B4pV4N76IgoVRBROhFo2UpfOGlV/view",
+          "difficulty": "",
+          "kind": "concept",
+          "video": {
+            "fileId": "12EoN3B4pV4N76IgoVRBROhFo2UpfOGlV"
+          }
+        },
+        {
+          "key": "cn:fragmentation__theory-about-fragmentation",
+          "name": "Theory about fragmentation",
+          "link": "https://drive.google.com/file/d/1yWKFYsbKRH3kOLBtQMqTi6ZFWrAx6mGz/view",
+          "difficulty": "",
+          "kind": "concept",
+          "video": {
+            "fileId": "1yWKFYsbKRH3kOLBtQMqTi6ZFWrAx6mGz"
+          }
+        },
+        {
+          "key": "cn:fragmentation__reassembly-algorithm",
+          "name": "Reassembly algorithm",
+          "link": "https://drive.google.com/file/d/1lD8hTZ_YP7z9Thze9KCH7_unEhyMGZXF/view",
+          "difficulty": "",
+          "kind": "concept",
+          "video": {
+            "fileId": "1lD8hTZ_YP7z9Thze9KCH7_unEhyMGZXF"
+          }
+        }
+      ]
+    },
+    {
+      "key": "cn-09-protocols-concepts-at-network-layer",
+      "order": 9,
+      "title": "Protocols & Concepts at Network Layer",
+      "problems": [
+        {
+          "key": "cn:protocols-concepts-at-network-layer__implementation-of-broadcasting",
+          "name": "Implementation of broadcasting",
+          "link": "https://drive.google.com/file/d/18i64EL-pLMh-kBR6j_rZjqamLSiB_suT/view",
+          "difficulty": "",
+          "kind": "concept",
+          "video": {
+            "fileId": "18i64EL-pLMh-kBR6j_rZjqamLSiB_suT"
+          }
+        },
+        {
+          "key": "cn:protocols-concepts-at-network-layer__arp",
+          "name": "ARP",
+          "link": "https://drive.google.com/file/d/1yad8YNOj5HryHDl69I6IfGiLp9Up3jo-/view",
+          "difficulty": "",
+          "kind": "concept",
+          "video": {
+            "fileId": "1yad8YNOj5HryHDl69I6IfGiLp9Up3jo-"
+          }
+        },
+        {
+          "key": "cn:protocols-concepts-at-network-layer__special-address-127",
+          "name": "Special address 127",
+          "link": "https://drive.google.com/file/d/1cOb0PdGgd-8aMvlY8_3ktQm_wPIUMwds/view",
+          "difficulty": "",
+          "kind": "concept",
+          "video": {
+            "fileId": "1cOb0PdGgd-8aMvlY8_3ktQm_wPIUMwds"
+          }
+        },
+        {
+          "key": "cn:protocols-concepts-at-network-layer__rarp",
+          "name": "RARP",
+          "link": "https://drive.google.com/file/d/1X2iF4gzoV5XLyQHOzRUAcZzWe4gm1iaq/view",
+          "difficulty": "",
+          "kind": "concept",
+          "video": {
+            "fileId": "1X2iF4gzoV5XLyQHOzRUAcZzWe4gm1iaq"
+          }
+        },
+        {
+          "key": "cn:protocols-concepts-at-network-layer__bootp-and-dhcp",
+          "name": "Bootp and Dhcp",
+          "link": "https://drive.google.com/file/d/1_9iebjidP0p3s0sgfYnPQFS6ml4PS_Uv/view",
+          "difficulty": "",
+          "kind": "concept",
+          "video": {
+            "fileId": "1_9iebjidP0p3s0sgfYnPQFS6ml4PS_Uv"
+          }
+        },
+        {
+          "key": "cn:protocols-concepts-at-network-layer__introduction-to-icmp",
+          "name": "Introduction to ICMP",
+          "link": "https://drive.google.com/file/d/1-VUCWDFZWd3VScZPyzhGwncBBEOgHzz6/view",
+          "difficulty": "",
+          "kind": "concept",
+          "video": {
+            "fileId": "1-VUCWDFZWd3VScZPyzhGwncBBEOgHzz6"
+          }
+        },
+        {
+          "key": "cn:protocols-concepts-at-network-layer__icmp-feedback-messaging",
+          "name": "ICMP feedback messaging",
+          "link": "https://drive.google.com/file/d/1eZf3ZdBwOWnQQ-mH9iOgXdn9pafGjl9L/view",
+          "difficulty": "",
+          "kind": "concept",
+          "video": {
+            "fileId": "1eZf3ZdBwOWnQQ-mH9iOgXdn9pafGjl9L"
+          }
+        },
+        {
+          "key": "cn:protocols-concepts-at-network-layer__icmp-request-and-reply-messaging",
+          "name": "ICMP request and reply messaging",
+          "link": "https://drive.google.com/file/d/1OV7wa9SCtSRtxMaLoBQP5BvDEF6x10zq/view",
+          "difficulty": "",
+          "kind": "concept",
+          "video": {
+            "fileId": "1OV7wa9SCtSRtxMaLoBQP5BvDEF6x10zq"
+          }
+        },
+        {
+          "key": "cn:protocols-concepts-at-network-layer__traceroute-application-of-icmp",
+          "name": "Traceroute - application of ICMP",
+          "link": "https://drive.google.com/file/d/1mbxQwiMDjZznCh5Fe5WiBEZUPbC0Kc5x/view",
+          "difficulty": "",
+          "kind": "concept",
+          "video": {
+            "fileId": "1mbxQwiMDjZznCh5Fe5WiBEZUPbC0Kc5x"
+          }
+        },
+        {
+          "key": "cn:protocols-concepts-at-network-layer__pmtdu-application-of-icmp",
+          "name": "PMTDU - application of ICMP",
+          "link": "https://drive.google.com/file/d/1LJp96aDp9rOY8cXRqOxosv0TSHAjocKz/view",
+          "difficulty": "",
+          "kind": "concept",
+          "video": {
+            "fileId": "1LJp96aDp9rOY8cXRqOxosv0TSHAjocKz"
+          }
+        }
+      ]
+    },
+    {
+      "key": "cn-10-routing",
+      "order": 10,
+      "title": "Routing",
+      "problems": [
+        {
+          "key": "cn:routing__difference-between-routing-and-flooding",
+          "name": "Difference between routing and flooding",
+          "link": "https://drive.google.com/file/d/1CXMSU2s80loSG6P65NUC4mEyNssI4iA9/view",
+          "difficulty": "",
+          "kind": "concept",
+          "video": {
+            "fileId": "1CXMSU2s80loSG6P65NUC4mEyNssI4iA9"
+          }
+        },
+        {
+          "key": "cn:routing__types-of-routing-algorithms",
+          "name": "Types of routing algorithms",
+          "link": "https://drive.google.com/file/d/13_MQ2xUl7G4DVIESW0GlNscQL8rdxZT8/view",
+          "difficulty": "",
+          "kind": "concept",
+          "video": {
+            "fileId": "13_MQ2xUl7G4DVIESW0GlNscQL8rdxZT8"
+          }
+        },
+        {
+          "key": "cn:routing__distance-vector-routing",
+          "name": "Distance Vector Routing",
+          "link": "https://drive.google.com/file/d/1-FRJxaEa86UmLGAXpNnIfjLaAN8xx46u/view",
+          "difficulty": "",
+          "kind": "concept",
+          "video": {
+            "fileId": "1-FRJxaEa86UmLGAXpNnIfjLaAN8xx46u"
+          }
+        },
+        {
+          "key": "cn:routing__count-to-infinity",
+          "name": "Count to infinity",
+          "link": "https://drive.google.com/file/d/1Ifidf233abHOGnIalyY78W2zXYdiCHKD/view",
+          "difficulty": "",
+          "kind": "concept",
+          "video": {
+            "fileId": "1Ifidf233abHOGnIalyY78W2zXYdiCHKD"
+          }
+        },
+        {
+          "key": "cn:routing__split-horizon",
+          "name": "Split horizon",
+          "link": "https://drive.google.com/file/d/1N4y4xVs88hjBHgbzRbJ9l-xqi8I4oKBQ/view",
+          "difficulty": "",
+          "kind": "concept",
+          "video": {
+            "fileId": "1N4y4xVs88hjBHgbzRbJ9l-xqi8I4oKBQ"
+          }
+        },
+        {
+          "key": "cn:routing__link-state-routing",
+          "name": "Link state routing",
+          "link": "https://drive.google.com/file/d/1e_YI1hEg4TaBXgGg619MQGWhcyTEt40P/view",
+          "difficulty": "",
+          "kind": "concept",
+          "video": {
+            "fileId": "1e_YI1hEg4TaBXgGg619MQGWhcyTEt40P"
+          }
+        },
+        {
+          "key": "cn:routing__difference-between-dvr-and-lsr-rip-and-ospf",
+          "name": "Difference between DVR and LSR RIP and OSPF",
+          "link": "https://drive.google.com/file/d/1vSm5rvm5tnyPfvPufpNE-pO8C-LECdSG/view",
+          "difficulty": "",
+          "kind": "concept",
+          "video": {
+            "fileId": "1vSm5rvm5tnyPfvPufpNE-pO8C-LECdSG"
+          }
+        }
+      ]
+    },
+    {
+      "key": "cn-11-tcp",
+      "order": 11,
+      "title": "TCP",
+      "problems": [
+        {
+          "key": "cn:tcp__tcp-header",
+          "name": "TCP header",
+          "link": "https://drive.google.com/file/d/1l0gDi3AAcbcOf4TvM7SWqafhsVRhnFxx/view",
+          "difficulty": "",
+          "kind": "concept",
+          "video": {
+            "fileId": "1l0gDi3AAcbcOf4TvM7SWqafhsVRhnFxx"
+          }
+        },
+        {
+          "key": "cn:tcp__source-port-destination-port-and-socket",
+          "name": "Source port destination port and socket",
+          "link": "https://drive.google.com/file/d/1GVBoORp-C-uSclxRySIw1O4CTp1QhPRC/view",
+          "difficulty": "",
+          "kind": "concept",
+          "video": {
+            "fileId": "1GVBoORp-C-uSclxRySIw1O4CTp1QhPRC"
+          }
+        },
+        {
+          "key": "cn:tcp__sequence-number-acknowledge-number-and-random-initial-sequence",
+          "name": "Sequence number Acknowledge number and random initial sequence",
+          "link": "https://drive.google.com/file/d/1ZTv4o1Kpwf5I46hRBZAHuWL41g9wEztx/view",
+          "difficulty": "",
+          "kind": "concept",
+          "video": {
+            "fileId": "1ZTv4o1Kpwf5I46hRBZAHuWL41g9wEztx"
+          }
+        },
+        {
+          "key": "cn:tcp__wrap-around-time-and-problems-on-wrap-around-time",
+          "name": "Wrap around time and problems on wrap around time",
+          "link": "https://drive.google.com/file/d/1HhoGC-h0TwA464DE6Q7UDElrhrMSeFes/view",
+          "difficulty": "",
+          "kind": "problem",
+          "video": {
+            "fileId": "1HhoGC-h0TwA464DE6Q7UDElrhrMSeFes"
+          }
+        },
+        {
+          "key": "cn:tcp__header-length-and-calculation-of-acknowledgment-number",
+          "name": "Header length and calculation of acknowledgment number",
+          "link": "https://drive.google.com/file/d/1YTcWZ1MDYyHbMbB-taaiA5j4pVNYozDV/view",
+          "difficulty": "",
+          "kind": "concept",
+          "video": {
+            "fileId": "1YTcWZ1MDYyHbMbB-taaiA5j4pVNYozDV"
+          }
+        },
+        {
+          "key": "cn:tcp__tcp-connection-establishment",
+          "name": "TCP connection establishment",
+          "link": "https://drive.google.com/file/d/1KC3Bx4ByhJX3rX3XePFP6kLbwq-E6m8w/view",
+          "difficulty": "",
+          "kind": "concept",
+          "video": {
+            "fileId": "1KC3Bx4ByhJX3rX3XePFP6kLbwq-E6m8w"
+          }
+        },
+        {
+          "key": "cn:tcp__tcp-data-transfer-after-connection-establishment",
+          "name": "TCP data transfer after connection establishment",
+          "link": "https://drive.google.com/file/d/1-1o_7B-OLvikeJiVkf8u60Hz3dNWUPXF/view",
+          "difficulty": "",
+          "kind": "concept",
+          "video": {
+            "fileId": "1-1o_7B-OLvikeJiVkf8u60Hz3dNWUPXF"
+          }
+        },
+        {
+          "key": "cn:tcp__tcp-connection-termination",
+          "name": "TCP connection termination",
+          "link": "https://drive.google.com/file/d/1DfqdBtDcQIHUB4EROXGuiaHVzPpzUI6f/view",
+          "difficulty": "",
+          "kind": "concept",
+          "video": {
+            "fileId": "1DfqdBtDcQIHUB4EROXGuiaHVzPpzUI6f"
+          }
+        },
+        {
+          "key": "cn:tcp__psh-flag",
+          "name": "PSH flag",
+          "link": "https://drive.google.com/file/d/1rt39lt_fiiOXEDFsOrAisKS9yuYDkjbl/view",
+          "difficulty": "",
+          "kind": "concept",
+          "video": {
+            "fileId": "1rt39lt_fiiOXEDFsOrAisKS9yuYDkjbl"
+          }
+        },
+        {
+          "key": "cn:tcp__urg-flag-and-urgent-pointer",
+          "name": "URG flag and urgent pointer",
+          "link": "https://drive.google.com/file/d/16cp57m3GF_pdRWgPfLC2Da7kiGclmMd4/view",
+          "difficulty": "",
+          "kind": "concept",
+          "video": {
+            "fileId": "16cp57m3GF_pdRWgPfLC2Da7kiGclmMd4"
+          }
+        },
+        {
+          "key": "cn:tcp__rst-flag",
+          "name": "RST flag",
+          "link": "https://drive.google.com/file/d/1AALtdVCVZ5D33WqgakkA-T3xa1KRSjcR/view",
+          "difficulty": "",
+          "kind": "concept",
+          "video": {
+            "fileId": "1AALtdVCVZ5D33WqgakkA-T3xa1KRSjcR"
+          }
+        },
+        {
+          "key": "cn:tcp__tcp-state-transition-diagram-connection-establishment",
+          "name": "TCP state transition diagram- connection establishment",
+          "link": "https://drive.google.com/file/d/1IGq5zt3qvyhzxTgrR5mn85VFdZyezQ8q/view",
+          "difficulty": "",
+          "kind": "concept",
+          "video": {
+            "fileId": "1IGq5zt3qvyhzxTgrR5mn85VFdZyezQ8q"
+          }
+        },
+        {
+          "key": "cn:tcp__tcp-state-transition-diagram-connection-release",
+          "name": "TCP state transition diagram - connection release",
+          "link": "https://drive.google.com/file/d/1Wmq6UePHtdBUYKk3o5V-MKJ__N-2BmVw/view",
+          "difficulty": "",
+          "kind": "concept",
+          "video": {
+            "fileId": "1Wmq6UePHtdBUYKk3o5V-MKJ__N-2BmVw"
+          }
+        },
+        {
+          "key": "cn:tcp__tcp-flow-control-using-advertisement-window",
+          "name": "TCP flow control using advertisement window",
+          "link": "https://drive.google.com/file/d/1xh48YC7qj_Va7ABumLrXSmzlG3RyPlPy/view",
+          "difficulty": "",
+          "kind": "concept",
+          "video": {
+            "fileId": "1xh48YC7qj_Va7ABumLrXSmzlG3RyPlPy"
+          }
+        },
+        {
+          "key": "cn:tcp__tcp-checksum",
+          "name": "TCP checksum",
+          "link": "https://drive.google.com/file/d/1D3u_Unk_SPASqUmlgjWv2di2g1n4r814/view",
+          "difficulty": "",
+          "kind": "concept",
+          "video": {
+            "fileId": "1D3u_Unk_SPASqUmlgjWv2di2g1n4r814"
+          }
+        },
+        {
+          "key": "cn:tcp__options-in-tcp-header",
+          "name": "Options in TCP header",
+          "link": "https://drive.google.com/file/d/1psTqy5S-QjQxjAg1qA7SLmwHtVmJtJhb/view",
+          "difficulty": "",
+          "kind": "concept",
+          "video": {
+            "fileId": "1psTqy5S-QjQxjAg1qA7SLmwHtVmJtJhb"
+          }
+        },
+        {
+          "key": "cn:tcp__retransmissions-in-tcp",
+          "name": "Retransmissions in TCP",
+          "link": "https://drive.google.com/file/d/1sRAsFx_eUGcDJrs3aB1P3gSXGJJQPWdd/view",
+          "difficulty": "",
+          "kind": "concept",
+          "video": {
+            "fileId": "1sRAsFx_eUGcDJrs3aB1P3gSXGJJQPWdd"
+          }
+        },
+        {
+          "key": "cn:tcp__introduction-to-tcp-congestion-control",
+          "name": "Introduction to TCP congestion control",
+          "link": "https://drive.google.com/file/d/1AgIEovEorva-D5gJWhMx9tmalgqlX4AM/view",
+          "difficulty": "",
+          "kind": "concept",
+          "video": {
+            "fileId": "1AgIEovEorva-D5gJWhMx9tmalgqlX4AM"
+          }
+        },
+        {
+          "key": "cn:tcp__tcp-congestion-control-algorithm-with-an-example",
+          "name": "TCP congestion control algorithm with an example",
+          "link": "https://drive.google.com/file/d/1NAoyS43juDkr4f2pxWmgsxouTg6nAjgx/view",
+          "difficulty": "",
+          "kind": "concept",
+          "video": {
+            "fileId": "1NAoyS43juDkr4f2pxWmgsxouTg6nAjgx"
+          }
+        },
+        {
+          "key": "cn:tcp__tcp-timer-management",
+          "name": "TCP timer management",
+          "link": "https://drive.google.com/file/d/1XISiAvyX00iVi-O591uQQ6EnNXI_VQwC/view",
+          "difficulty": "",
+          "kind": "concept",
+          "video": {
+            "fileId": "1XISiAvyX00iVi-O591uQQ6EnNXI_VQwC"
+          }
+        },
+        {
+          "key": "cn:tcp__introduction-to-timeout-timer",
+          "name": "Introduction to timeout timer",
+          "link": "https://drive.google.com/file/d/1l4C1NpcLF0gG_AYbqhltr9No9dE7-ARW/view",
+          "difficulty": "",
+          "kind": "concept",
+          "video": {
+            "fileId": "1l4C1NpcLF0gG_AYbqhltr9No9dE7-ARW"
+          }
+        },
+        {
+          "key": "cn:tcp__basic-algorithm-for-timeout-timer-computation",
+          "name": "Basic algorithm for timeout timer computation",
+          "link": "https://drive.google.com/file/d/1ZzN3lKy15rsDnAeH2n28i_0A6KrrZXsf/view",
+          "difficulty": "",
+          "kind": "concept",
+          "video": {
+            "fileId": "1ZzN3lKy15rsDnAeH2n28i_0A6KrrZXsf"
+          }
+        },
+        {
+          "key": "cn:tcp__jacobsons-algorithm-for-timeout-computation-and-karns-modification",
+          "name": "Jacobsons algorithm for timeout computation and Karns modification",
+          "link": "https://drive.google.com/file/d/18nYOTj5uj76dDB87tXGUHG3vqKO_2FFO/view",
+          "difficulty": "",
+          "kind": "concept",
+          "video": {
+            "fileId": "18nYOTj5uj76dDB87tXGUHG3vqKO_2FFO"
+          }
+        },
+        {
+          "key": "cn:tcp__silly-window-syndrome",
+          "name": "Silly window syndrome",
+          "link": "https://drive.google.com/file/d/1o_BtseobdGSB-da_lPH4Io2VOmFeSjlD/view",
+          "difficulty": "",
+          "kind": "concept",
+          "video": {
+            "fileId": "1o_BtseobdGSB-da_lPH4Io2VOmFeSjlD"
+          }
+        },
+        {
+          "key": "cn:tcp__traffic-shaping",
+          "name": "Traffic shaping",
+          "link": "https://drive.google.com/file/d/1-1GNgXrrXS8QC-ZDbolwq1oWcqpSA5q7/view",
+          "difficulty": "",
+          "kind": "concept",
+          "video": {
+            "fileId": "1-1GNgXrrXS8QC-ZDbolwq1oWcqpSA5q7"
+          }
+        },
+        {
+          "key": "cn:tcp__leaky-bucket",
+          "name": "Leaky Bucket",
+          "link": "https://drive.google.com/file/d/1FakXL6jfZtVyRq1P5ftoBSWY8xU_CSXi/view",
+          "difficulty": "",
+          "kind": "concept",
+          "video": {
+            "fileId": "1FakXL6jfZtVyRq1P5ftoBSWY8xU_CSXi"
+          }
+        },
+        {
+          "key": "cn:tcp__token-bucket",
+          "name": "Token Bucket",
+          "link": "https://drive.google.com/file/d/1Y9mfNpsQuccemMNVRd3CdhDObOvxmZne/view",
+          "difficulty": "",
+          "kind": "concept",
+          "video": {
+            "fileId": "1Y9mfNpsQuccemMNVRd3CdhDObOvxmZne"
+          }
+        },
+        {
+          "key": "cn:tcp__example-on-token-bucket",
+          "name": "Example on Token Bucket",
+          "link": "https://drive.google.com/file/d/1OmGMttXFW2RMizy6uxmUUPJ1GgWr6gx2/view",
+          "difficulty": "",
+          "kind": "concept",
+          "video": {
+            "fileId": "1OmGMttXFW2RMizy6uxmUUPJ1GgWr6gx2"
+          }
+        }
+      ]
+    },
+    {
+      "key": "cn-12-udp",
+      "order": 12,
+      "title": "UDP",
+      "problems": [
+        {
+          "key": "cn:udp__need-of-udp",
+          "name": "Need of UDP",
+          "link": "https://drive.google.com/file/d/1thYM8rCsrtsTIzSxXJj9TGVbrRNpwK-Z/view",
+          "difficulty": "",
+          "kind": "concept",
+          "video": {
+            "fileId": "1thYM8rCsrtsTIzSxXJj9TGVbrRNpwK-Z"
+          }
+        }
+      ]
+    },
+    {
+      "key": "cn-13-networking-hardware-devices",
+      "order": 13,
+      "title": "Networking Hardware & Devices",
+      "problems": [
+        {
+          "key": "cn:networking-hardware-devices__cables-repeaters-and-hubs",
+          "name": "Cables Repeaters and Hubs",
+          "link": "https://drive.google.com/file/d/1DPkEXfvLCmyoJE2EohngnyR7EHOY-ewb/view",
+          "difficulty": "",
+          "kind": "concept",
+          "video": {
+            "fileId": "1DPkEXfvLCmyoJE2EohngnyR7EHOY-ewb"
+          }
+        },
+        {
+          "key": "cn:networking-hardware-devices__bridges",
+          "name": "Bridges",
+          "link": "https://drive.google.com/file/d/1ko40TcMEcr2Sfgngyd8lWMTHcG-z2uVG/view",
+          "difficulty": "",
+          "kind": "concept",
+          "video": {
+            "fileId": "1ko40TcMEcr2Sfgngyd8lWMTHcG-z2uVG"
+          }
+        },
+        {
+          "key": "cn:networking-hardware-devices__spanning-tree-algorithm-in-bridges",
+          "name": "Spanning tree algorithm in Bridges",
+          "link": "https://drive.google.com/file/d/1uwb3YCpiDvIVprlX3NMUw4u8WTXEoSnu/view",
+          "difficulty": "",
+          "kind": "concept",
+          "video": {
+            "fileId": "1uwb3YCpiDvIVprlX3NMUw4u8WTXEoSnu"
+          }
+        },
+        {
+          "key": "cn:networking-hardware-devices__switch",
+          "name": "Switch",
+          "link": "https://drive.google.com/file/d/10JhVB_5BEKCgMziCA0BfWAd69Lf6f7iW/view",
+          "difficulty": "",
+          "kind": "concept",
+          "video": {
+            "fileId": "10JhVB_5BEKCgMziCA0BfWAd69Lf6f7iW"
+          }
+        },
+        {
+          "key": "cn:networking-hardware-devices__collision-domain-and-broadcast-domain-of-all-devices",
+          "name": "Collision domain and broadcast domain of all devices",
+          "link": "https://drive.google.com/file/d/1zX4KZRehIgw6ODjrsKUUB85slbHpbnUH/view",
+          "difficulty": "",
+          "kind": "concept",
+          "video": {
+            "fileId": "1zX4KZRehIgw6ODjrsKUUB85slbHpbnUH"
+          }
+        },
+        {
+          "key": "cn:networking-hardware-devices__routers",
+          "name": "Routers",
+          "link": "https://drive.google.com/file/d/14UxIXWkZmBe--TLLI2Wr5w2LCtnAf_C7/view",
+          "difficulty": "",
+          "kind": "concept",
+          "video": {
+            "fileId": "14UxIXWkZmBe--TLLI2Wr5w2LCtnAf_C7"
+          }
+        },
+        {
+          "key": "cn:networking-hardware-devices__gateways",
+          "name": "Gateways",
+          "link": "https://drive.google.com/file/d/1L638IiRPCTfwKKb7f0o-MhxlINrkVbnB/view",
+          "difficulty": "",
+          "kind": "concept",
+          "video": {
+            "fileId": "1L638IiRPCTfwKKb7f0o-MhxlINrkVbnB"
+          }
+        },
+        {
+          "key": "cn:networking-hardware-devices__firewalls",
+          "name": "Firewalls",
+          "link": "https://drive.google.com/file/d/1XiEBjVLv0sAoyxAS-6K9PzCqaawzlgfg/view",
+          "difficulty": "",
+          "kind": "concept",
+          "video": {
+            "fileId": "1XiEBjVLv0sAoyxAS-6K9PzCqaawzlgfg"
+          }
+        }
+      ]
+    },
+    {
+      "key": "cn-14-application-protocols",
+      "order": 14,
+      "title": "Application Protocols",
+      "problems": [
+        {
+          "key": "cn:application-protocols__introduction-to-application-layer",
+          "name": "Introduction to application layer",
+          "link": "https://drive.google.com/file/d/1vP3wP8YIF7SSm9-_X0YzhVZ-_fN3Zw5J/view",
+          "difficulty": "",
+          "kind": "concept",
+          "video": {
+            "fileId": "1vP3wP8YIF7SSm9-_X0YzhVZ-_fN3Zw5J"
+          }
+        },
+        {
+          "key": "cn:application-protocols__dns",
+          "name": "DNS",
+          "link": "https://drive.google.com/file/d/1F7GxWIKgXQrFuP6fN4dikePOG-tJ82dI/view",
+          "difficulty": "",
+          "kind": "concept",
+          "video": {
+            "fileId": "1F7GxWIKgXQrFuP6fN4dikePOG-tJ82dI"
+          }
+        },
+        {
+          "key": "cn:application-protocols__http",
+          "name": "HTTP",
+          "link": "https://drive.google.com/file/d/1uvX5toyoHWp0cfurUX3G-5dvpyUEdH6F/view",
+          "difficulty": "",
+          "kind": "concept",
+          "video": {
+            "fileId": "1uvX5toyoHWp0cfurUX3G-5dvpyUEdH6F"
+          }
+        },
+        {
+          "key": "cn:application-protocols__ftp",
+          "name": "FTP",
+          "link": "https://drive.google.com/file/d/1ySNNbkb4OTQ8XihHHVHCiahKazwX14vA/view",
+          "difficulty": "",
+          "kind": "concept",
+          "video": {
+            "fileId": "1ySNNbkb4OTQ8XihHHVHCiahKazwX14vA"
+          }
+        },
+        {
+          "key": "cn:application-protocols__smtp-pop",
+          "name": "SMTP-POP",
+          "link": "https://drive.google.com/file/d/1FRKlw8mW0CtQ5zzLzpVEpbDXzinO1ZYt/view",
+          "difficulty": "",
+          "kind": "concept",
+          "video": {
+            "fileId": "1FRKlw8mW0CtQ5zzLzpVEpbDXzinO1ZYt"
+          }
+        }
+      ]
+    },
+    {
+      "key": "cn-15-problems-on-ip-addressing",
+      "order": 15,
+      "title": "Problems on IP Addressing",
+      "problems": [
+        {
+          "key": "cn:problems-on-ip-addressing__problem-1",
+          "name": "Problem 1",
+          "link": "https://drive.google.com/file/d/1TZcMLTjesKrltygEt1M_Oz3F6AX1A_pE/view",
+          "difficulty": "",
+          "kind": "problem",
+          "video": {
+            "fileId": "1TZcMLTjesKrltygEt1M_Oz3F6AX1A_pE"
+          }
+        },
+        {
+          "key": "cn:problems-on-ip-addressing__problem-2",
+          "name": "Problem 2",
+          "link": "https://drive.google.com/file/d/1JH3z0AXfRZSSFlKXUeNVz-cHbeBR-pO6/view",
+          "difficulty": "",
+          "kind": "problem",
+          "video": {
+            "fileId": "1JH3z0AXfRZSSFlKXUeNVz-cHbeBR-pO6"
+          }
+        },
+        {
+          "key": "cn:problems-on-ip-addressing__problem-3",
+          "name": "Problem 3",
+          "link": "https://drive.google.com/file/d/1CRuh7Nhp7c8w3ye204kITYMmO1K4pNkS/view",
+          "difficulty": "",
+          "kind": "problem",
+          "video": {
+            "fileId": "1CRuh7Nhp7c8w3ye204kITYMmO1K4pNkS"
+          }
+        },
+        {
+          "key": "cn:problems-on-ip-addressing__problem-4",
+          "name": "Problem 4",
+          "link": "https://drive.google.com/file/d/1tHeglINzBcGD450ou1Beq10vZKCi16TI/view",
+          "difficulty": "",
+          "kind": "problem",
+          "video": {
+            "fileId": "1tHeglINzBcGD450ou1Beq10vZKCi16TI"
+          }
+        },
+        {
+          "key": "cn:problems-on-ip-addressing__problem-5",
+          "name": "Problem 5",
+          "link": "https://drive.google.com/file/d/1naMLYQTPy8BeplY7NG9jKK2o93WtyaEi/view",
+          "difficulty": "",
+          "kind": "problem",
+          "video": {
+            "fileId": "1naMLYQTPy8BeplY7NG9jKK2o93WtyaEi"
+          }
+        },
+        {
+          "key": "cn:problems-on-ip-addressing__problem-6",
+          "name": "Problem 6",
+          "link": "https://drive.google.com/file/d/11pOnb7Le0ZRzO-i040gQiyjUBlIpZXty/view",
+          "difficulty": "",
+          "kind": "problem",
+          "video": {
+            "fileId": "11pOnb7Le0ZRzO-i040gQiyjUBlIpZXty"
+          }
+        }
+      ]
+    },
+    {
+      "key": "cn-16-problems-on-sliding-window-protocol",
+      "order": 16,
+      "title": "Problems on Sliding Window Protocol",
+      "problems": [
+        {
+          "key": "cn:problems-on-sliding-window-protocol__problem-7",
+          "name": "Problem 7",
+          "link": "https://drive.google.com/file/d/1jIrD5vY-Dn-j9798p9KDhfxToEc9ERSb/view",
+          "difficulty": "",
+          "kind": "problem",
+          "video": {
+            "fileId": "1jIrD5vY-Dn-j9798p9KDhfxToEc9ERSb"
+          }
+        },
+        {
+          "key": "cn:problems-on-sliding-window-protocol__problem-8",
+          "name": "Problem 8",
+          "link": "https://drive.google.com/file/d/102mJaREvY6OPPO6nudECk3c4gbFrRWp8/view",
+          "difficulty": "",
+          "kind": "problem",
+          "video": {
+            "fileId": "102mJaREvY6OPPO6nudECk3c4gbFrRWp8"
+          }
+        },
+        {
+          "key": "cn:problems-on-sliding-window-protocol__problem-9",
+          "name": "Problem 9",
+          "link": "https://drive.google.com/file/d/13f3NmiDi-LcoN2yLc3_GhgxCm2MfpAXH/view",
+          "difficulty": "",
+          "kind": "problem",
+          "video": {
+            "fileId": "13f3NmiDi-LcoN2yLc3_GhgxCm2MfpAXH"
+          }
+        },
+        {
+          "key": "cn:problems-on-sliding-window-protocol__problem-10",
+          "name": "Problem 10",
+          "link": "https://drive.google.com/file/d/1yEcVN5N66n98aLDqFmym2Skf6sgRAL8E/view",
+          "difficulty": "",
+          "kind": "problem",
+          "video": {
+            "fileId": "1yEcVN5N66n98aLDqFmym2Skf6sgRAL8E"
+          }
+        },
+        {
+          "key": "cn:problems-on-sliding-window-protocol__problem-11",
+          "name": "Problem 11",
+          "link": "https://drive.google.com/file/d/1hKA6ROGjEiSqGPpG2FlOqC0fyNuapjla/view",
+          "difficulty": "",
+          "kind": "problem",
+          "video": {
+            "fileId": "1hKA6ROGjEiSqGPpG2FlOqC0fyNuapjla"
+          }
+        },
+        {
+          "key": "cn:problems-on-sliding-window-protocol__problem-12",
+          "name": "Problem 12",
+          "link": "https://drive.google.com/file/d/1SX01VBLJQQVrz5ZCZsKfdjj9cDF-mC1l/view",
+          "difficulty": "",
+          "kind": "problem",
+          "video": {
+            "fileId": "1SX01VBLJQQVrz5ZCZsKfdjj9cDF-mC1l"
+          }
+        },
+        {
+          "key": "cn:problems-on-sliding-window-protocol__problem-13",
+          "name": "Problem 13",
+          "link": "https://drive.google.com/file/d/1wUNnla6xbNesB9IHQeviP3MfOapxevlg/view",
+          "difficulty": "",
+          "kind": "problem",
+          "video": {
+            "fileId": "1wUNnla6xbNesB9IHQeviP3MfOapxevlg"
+          }
+        },
+        {
+          "key": "cn:problems-on-sliding-window-protocol__problem-14",
+          "name": "Problem 14",
+          "link": "https://drive.google.com/file/d/1eKxk7UKckSIjlg1hztkJTfg1NhE6jZbr/view",
+          "difficulty": "",
+          "kind": "problem",
+          "video": {
+            "fileId": "1eKxk7UKckSIjlg1hztkJTfg1NhE6jZbr"
+          }
+        },
+        {
+          "key": "cn:problems-on-sliding-window-protocol__problem-15",
+          "name": "Problem 15",
+          "link": "https://drive.google.com/file/d/1rqkIqZJIM7Jx58V68kOKv24e7jFHW5Yf/view",
+          "difficulty": "",
+          "kind": "problem",
+          "video": {
+            "fileId": "1rqkIqZJIM7Jx58V68kOKv24e7jFHW5Yf"
+          }
+        },
+        {
+          "key": "cn:problems-on-sliding-window-protocol__problem-16",
+          "name": "Problem 16",
+          "link": "https://drive.google.com/file/d/1wbfjfhbC3n4bTecmpLsMhoTEwcqHHusS/view",
+          "difficulty": "",
+          "kind": "problem",
+          "video": {
+            "fileId": "1wbfjfhbC3n4bTecmpLsMhoTEwcqHHusS"
+          }
+        },
+        {
+          "key": "cn:problems-on-sliding-window-protocol__problem-17",
+          "name": "Problem 17",
+          "link": "https://drive.google.com/file/d/1JVKPZT5xi4G4MoB_bbRT4Ygft60rhJCv/view",
+          "difficulty": "",
+          "kind": "problem",
+          "video": {
+            "fileId": "1JVKPZT5xi4G4MoB_bbRT4Ygft60rhJCv"
+          }
+        },
+        {
+          "key": "cn:problems-on-sliding-window-protocol__problem-18",
+          "name": "Problem 18",
+          "link": "https://drive.google.com/file/d/1IzTGyN8EOJ-MpEk1tquI9MHqAO57LFf2/view",
+          "difficulty": "",
+          "kind": "problem",
+          "video": {
+            "fileId": "1IzTGyN8EOJ-MpEk1tquI9MHqAO57LFf2"
+          }
+        },
+        {
+          "key": "cn:problems-on-sliding-window-protocol__problem-19",
+          "name": "Problem 19",
+          "link": "https://drive.google.com/file/d/1W8Z6uNZ_nZbRRGIgDmQQhzrrgKviqolg/view",
+          "difficulty": "",
+          "kind": "problem",
+          "video": {
+            "fileId": "1W8Z6uNZ_nZbRRGIgDmQQhzrrgKviqolg"
+          }
+        },
+        {
+          "key": "cn:problems-on-sliding-window-protocol__problem-20",
+          "name": "Problem 20",
+          "link": "https://drive.google.com/file/d/1XwwgN_zGarvsrsmDWSRmG80y5WVu4qpp/view",
+          "difficulty": "",
+          "kind": "problem",
+          "video": {
+            "fileId": "1XwwgN_zGarvsrsmDWSRmG80y5WVu4qpp"
+          }
+        },
+        {
+          "key": "cn:problems-on-sliding-window-protocol__problem-21",
+          "name": "Problem 21",
+          "link": "https://drive.google.com/file/d/10OzbdhGXRWLdiDj3jp6c60uAFonT--NC/view",
+          "difficulty": "",
+          "kind": "problem",
+          "video": {
+            "fileId": "10OzbdhGXRWLdiDj3jp6c60uAFonT--NC"
+          }
+        },
+        {
+          "key": "cn:problems-on-sliding-window-protocol__problem-22",
+          "name": "Problem 22",
+          "link": "https://drive.google.com/file/d/1z9iZrDx_yIY_R-uBMOaC2GnIdxRpoJN-/view",
+          "difficulty": "",
+          "kind": "problem",
+          "video": {
+            "fileId": "1z9iZrDx_yIY_R-uBMOaC2GnIdxRpoJN-"
+          }
+        }
+      ]
+    },
+    {
+      "key": "cn-17-problems-on-lan-technologies",
+      "order": 17,
+      "title": "Problems on LAN Technologies",
+      "problems": [
+        {
+          "key": "cn:problems-on-lan-technologies__problem-23",
+          "name": "Problem 23",
+          "link": "https://drive.google.com/file/d/1ufJieg2qeHc9sClEagKLaenHMvWA0PS4/view",
+          "difficulty": "",
+          "kind": "problem",
+          "video": {
+            "fileId": "1ufJieg2qeHc9sClEagKLaenHMvWA0PS4"
+          }
+        },
+        {
+          "key": "cn:problems-on-lan-technologies__problem-24",
+          "name": "Problem 24",
+          "link": "https://drive.google.com/file/d/1y5agQtFukX0DU7445wlsutdqBxgTScVH/view",
+          "difficulty": "",
+          "kind": "problem",
+          "video": {
+            "fileId": "1y5agQtFukX0DU7445wlsutdqBxgTScVH"
+          }
+        },
+        {
+          "key": "cn:problems-on-lan-technologies__problem-25",
+          "name": "Problem 25",
+          "link": "https://drive.google.com/file/d/160UbMAzKBi0LsBlBRE-C7gtIaYHJHvCq/view",
+          "difficulty": "",
+          "kind": "problem",
+          "video": {
+            "fileId": "160UbMAzKBi0LsBlBRE-C7gtIaYHJHvCq"
+          }
+        },
+        {
+          "key": "cn:problems-on-lan-technologies__problem-26",
+          "name": "Problem 26",
+          "link": "https://drive.google.com/file/d/1-VOzTJaqJEGESgUy-IiHdBtFkjyXmjsh/view",
+          "difficulty": "",
+          "kind": "problem",
+          "video": {
+            "fileId": "1-VOzTJaqJEGESgUy-IiHdBtFkjyXmjsh"
+          }
+        },
+        {
+          "key": "cn:problems-on-lan-technologies__problem-27",
+          "name": "Problem 27",
+          "link": "https://drive.google.com/file/d/10Heqw-Hvvhmw7dBzuuJOFJdjGyl76MI5/view",
+          "difficulty": "",
+          "kind": "problem",
+          "video": {
+            "fileId": "10Heqw-Hvvhmw7dBzuuJOFJdjGyl76MI5"
+          }
+        },
+        {
+          "key": "cn:problems-on-lan-technologies__problem-28",
+          "name": "Problem 28",
+          "link": "https://drive.google.com/file/d/1P067E-s0OjGvvcbmdicwEyYYWMiJ8Kw0/view",
+          "difficulty": "",
+          "kind": "problem",
+          "video": {
+            "fileId": "1P067E-s0OjGvvcbmdicwEyYYWMiJ8Kw0"
+          }
+        },
+        {
+          "key": "cn:problems-on-lan-technologies__problem-29",
+          "name": "Problem 29",
+          "link": "https://drive.google.com/file/d/1kVFmjRntLDZoyB-o34gCz2OPPD6lFW-6/view",
+          "difficulty": "",
+          "kind": "problem",
+          "video": {
+            "fileId": "1kVFmjRntLDZoyB-o34gCz2OPPD6lFW-6"
+          }
+        },
+        {
+          "key": "cn:problems-on-lan-technologies__problem-30",
+          "name": "Problem 30",
+          "link": "https://drive.google.com/file/d/1wcwDnNEKAHqewr0v0Q0xwImIYT5yflJO/view",
+          "difficulty": "",
+          "kind": "problem",
+          "video": {
+            "fileId": "1wcwDnNEKAHqewr0v0Q0xwImIYT5yflJO"
+          }
+        },
+        {
+          "key": "cn:problems-on-lan-technologies__problem-31",
+          "name": "Problem 31",
+          "link": "https://drive.google.com/file/d/1qnK6ijjTtACMqEbMO4v1PtUufDw1BlbD/view",
+          "difficulty": "",
+          "kind": "problem",
+          "video": {
+            "fileId": "1qnK6ijjTtACMqEbMO4v1PtUufDw1BlbD"
+          }
+        },
+        {
+          "key": "cn:problems-on-lan-technologies__problem-32",
+          "name": "Problem 32",
+          "link": "https://drive.google.com/file/d/1AyuBf83t788x8YCf4aIvOFskvcWsQ6H_/view",
+          "difficulty": "",
+          "kind": "problem",
+          "video": {
+            "fileId": "1AyuBf83t788x8YCf4aIvOFskvcWsQ6H_"
+          }
+        },
+        {
+          "key": "cn:problems-on-lan-technologies__problem-33",
+          "name": "Problem 33",
+          "link": "https://drive.google.com/file/d/1NGtV6PM205_ROOai-nAIAXENGzvI3cU3/view",
+          "difficulty": "",
+          "kind": "problem",
+          "video": {
+            "fileId": "1NGtV6PM205_ROOai-nAIAXENGzvI3cU3"
+          }
+        },
+        {
+          "key": "cn:problems-on-lan-technologies__problem-34",
+          "name": "Problem 34",
+          "link": "https://drive.google.com/file/d/1DF23mygAxcQ3frUpuazEndQU6B9Q79ml/view",
+          "difficulty": "",
+          "kind": "problem",
+          "video": {
+            "fileId": "1DF23mygAxcQ3frUpuazEndQU6B9Q79ml"
+          }
+        },
+        {
+          "key": "cn:problems-on-lan-technologies__problem-35",
+          "name": "Problem 35",
+          "link": "https://drive.google.com/file/d/1HgtxbULW5llCxTQmlArlMAfPWJbrtHhU/view",
+          "difficulty": "",
+          "kind": "problem",
+          "video": {
+            "fileId": "1HgtxbULW5llCxTQmlArlMAfPWJbrtHhU"
+          }
+        },
+        {
+          "key": "cn:problems-on-lan-technologies__problem-36",
+          "name": "Problem 36",
+          "link": "https://drive.google.com/file/d/1pi63T_X0dFBvtSl5OvbRW-P0Uf0ewajb/view",
+          "difficulty": "",
+          "kind": "problem",
+          "video": {
+            "fileId": "1pi63T_X0dFBvtSl5OvbRW-P0Uf0ewajb"
+          }
+        },
+        {
+          "key": "cn:problems-on-lan-technologies__problem-37",
+          "name": "Problem 37",
+          "link": "https://drive.google.com/file/d/1iWqILQJ2TTL_hd_HGvdMDRSy4czE-2j9/view",
+          "difficulty": "",
+          "kind": "problem",
+          "video": {
+            "fileId": "1iWqILQJ2TTL_hd_HGvdMDRSy4czE-2j9"
+          }
+        },
+        {
+          "key": "cn:problems-on-lan-technologies__problem-38",
+          "name": "Problem 38",
+          "link": "https://drive.google.com/file/d/1IGBanfdLN2zDMivS4y_FMTCJFx0GwHYZ/view",
+          "difficulty": "",
+          "kind": "problem",
+          "video": {
+            "fileId": "1IGBanfdLN2zDMivS4y_FMTCJFx0GwHYZ"
+          }
+        },
+        {
+          "key": "cn:problems-on-lan-technologies__problem-39",
+          "name": "Problem 39",
+          "link": "https://drive.google.com/file/d/1kCLqAZvnNm5B1FofS0s67KQ2EeusP5jt/view",
+          "difficulty": "",
+          "kind": "problem",
+          "video": {
+            "fileId": "1kCLqAZvnNm5B1FofS0s67KQ2EeusP5jt"
+          }
+        },
+        {
+          "key": "cn:problems-on-lan-technologies__problem-40",
+          "name": "Problem 40",
+          "link": "https://drive.google.com/file/d/1RdSjrdQeFXLYJ17VkcyirYqid20oFtOS/view",
+          "difficulty": "",
+          "kind": "problem",
+          "video": {
+            "fileId": "1RdSjrdQeFXLYJ17VkcyirYqid20oFtOS"
+          }
+        },
+        {
+          "key": "cn:problems-on-lan-technologies__problem-41",
+          "name": "Problem 41",
+          "link": "https://drive.google.com/file/d/1Vkq8QtLfOrn9GePrPwBUv3xnsZjpm42x/view",
+          "difficulty": "",
+          "kind": "problem",
+          "video": {
+            "fileId": "1Vkq8QtLfOrn9GePrPwBUv3xnsZjpm42x"
+          }
+        },
+        {
+          "key": "cn:problems-on-lan-technologies__problem-42",
+          "name": "Problem 42",
+          "link": "https://drive.google.com/file/d/1vAGG7uOTtlq1D8lAQ4KNP1Zb1X9e0cUR/view",
+          "difficulty": "",
+          "kind": "problem",
+          "video": {
+            "fileId": "1vAGG7uOTtlq1D8lAQ4KNP1Zb1X9e0cUR"
+          }
+        },
+        {
+          "key": "cn:problems-on-lan-technologies__problem-43",
+          "name": "Problem 43",
+          "link": "https://drive.google.com/file/d/1nRp3HDUUPVmS5eXeTfLLfqBhjsriX9oU/view",
+          "difficulty": "",
+          "kind": "problem",
+          "video": {
+            "fileId": "1nRp3HDUUPVmS5eXeTfLLfqBhjsriX9oU"
+          }
+        },
+        {
+          "key": "cn:problems-on-lan-technologies__problem-44",
+          "name": "Problem 44",
+          "link": "https://drive.google.com/file/d/1G8wKeGyaaRqjAAhZl1tRI9VzxUHHfLpN/view",
+          "difficulty": "",
+          "kind": "problem",
+          "video": {
+            "fileId": "1G8wKeGyaaRqjAAhZl1tRI9VzxUHHfLpN"
+          }
+        },
+        {
+          "key": "cn:problems-on-lan-technologies__problem-45",
+          "name": "Problem 45",
+          "link": "https://drive.google.com/file/d/1eL4xwdAmb6nc9Mja6Li99Loi9pOp7gyK/view",
+          "difficulty": "",
+          "kind": "problem",
+          "video": {
+            "fileId": "1eL4xwdAmb6nc9Mja6Li99Loi9pOp7gyK"
+          }
+        },
+        {
+          "key": "cn:problems-on-lan-technologies__problem-46",
+          "name": "Problem 46",
+          "link": "https://drive.google.com/file/d/1wJTU6OxpyA3H5lKPSoK0s-KQ0hfh7OQe/view",
+          "difficulty": "",
+          "kind": "problem",
+          "video": {
+            "fileId": "1wJTU6OxpyA3H5lKPSoK0s-KQ0hfh7OQe"
+          }
+        },
+        {
+          "key": "cn:problems-on-lan-technologies__problem-47",
+          "name": "Problem 47",
+          "link": "https://drive.google.com/file/d/12r71f-uaUHNlwJcD-S94YTaeL0HrViHw/view",
+          "difficulty": "",
+          "kind": "problem",
+          "video": {
+            "fileId": "12r71f-uaUHNlwJcD-S94YTaeL0HrViHw"
+          }
+        },
+        {
+          "key": "cn:problems-on-lan-technologies__problem-48",
+          "name": "Problem 48",
+          "link": "https://drive.google.com/file/d/1jSogcINHnURBhqHTv9LzRnBY0ZiEKAOC/view",
+          "difficulty": "",
+          "kind": "problem",
+          "video": {
+            "fileId": "1jSogcINHnURBhqHTv9LzRnBY0ZiEKAOC"
+          }
+        },
+        {
+          "key": "cn:problems-on-lan-technologies__problem-49",
+          "name": "Problem 49",
+          "link": "https://drive.google.com/file/d/1YriHlM6_Ft5OH1eUnVeYcgnqAHPM90AW/view",
+          "difficulty": "",
+          "kind": "problem",
+          "video": {
+            "fileId": "1YriHlM6_Ft5OH1eUnVeYcgnqAHPM90AW"
+          }
+        },
+        {
+          "key": "cn:problems-on-lan-technologies__problem-50",
+          "name": "Problem 50",
+          "link": "https://drive.google.com/file/d/1ju5BU_5TtDVIi2fvH5lRaO5H7aVgObXa/view",
+          "difficulty": "",
+          "kind": "problem",
+          "video": {
+            "fileId": "1ju5BU_5TtDVIi2fvH5lRaO5H7aVgObXa"
+          }
+        },
+        {
+          "key": "cn:problems-on-lan-technologies__problem-51",
+          "name": "Problem 51",
+          "link": "https://drive.google.com/file/d/1gX75gPyA-drwcL7KyachpcnEboN8u66m/view",
+          "difficulty": "",
+          "kind": "problem",
+          "video": {
+            "fileId": "1gX75gPyA-drwcL7KyachpcnEboN8u66m"
+          }
+        },
+        {
+          "key": "cn:problems-on-lan-technologies__problem-52",
+          "name": "Problem 52",
+          "link": "https://drive.google.com/file/d/1h3TTxNKL3aHEixpLOt0-ul_mtyNv221a/view",
+          "difficulty": "",
+          "kind": "problem",
+          "video": {
+            "fileId": "1h3TTxNKL3aHEixpLOt0-ul_mtyNv221a"
+          }
+        },
+        {
+          "key": "cn:problems-on-lan-technologies__problem-53",
+          "name": "Problem 53",
+          "link": "https://drive.google.com/file/d/1GfbobFy_IbOccf7sMr_3LGEDWNQ9gv0n/view",
+          "difficulty": "",
+          "kind": "problem",
+          "video": {
+            "fileId": "1GfbobFy_IbOccf7sMr_3LGEDWNQ9gv0n"
+          }
+        },
+        {
+          "key": "cn:problems-on-lan-technologies__problem-54",
+          "name": "Problem 54",
+          "link": "https://drive.google.com/file/d/1aBJQIfgZZQ-I3zEscgMRCnulMFNwl-6-/view",
+          "difficulty": "",
+          "kind": "problem",
+          "video": {
+            "fileId": "1aBJQIfgZZQ-I3zEscgMRCnulMFNwl-6-"
+          }
+        },
+        {
+          "key": "cn:problems-on-lan-technologies__problem-55",
+          "name": "Problem 55",
+          "link": "https://drive.google.com/file/d/1BQ6dhasF8Paj4oENSeGFjWfAh06SWl-D/view",
+          "difficulty": "",
+          "kind": "problem",
+          "video": {
+            "fileId": "1BQ6dhasF8Paj4oENSeGFjWfAh06SWl-D"
+          }
+        }
+      ]
+    },
+    {
+      "key": "cn-18-tcp-ip-problems",
+      "order": 18,
+      "title": "TCP/IP Problems",
+      "problems": [
+        {
+          "key": "cn:tcp-ip-problems__problem-56",
+          "name": "Problem 56",
+          "link": "https://drive.google.com/file/d/17CWOS9hKJLzOF0n3o1RevxO3U4srdnjl/view",
+          "difficulty": "",
+          "kind": "problem",
+          "video": {
+            "fileId": "17CWOS9hKJLzOF0n3o1RevxO3U4srdnjl"
+          }
+        },
+        {
+          "key": "cn:tcp-ip-problems__problem-57",
+          "name": "Problem 57",
+          "link": "https://drive.google.com/file/d/1Hn-Ci3x8fSaLEZ4968TsxF-F16uQ5ndK/view",
+          "difficulty": "",
+          "kind": "problem",
+          "video": {
+            "fileId": "1Hn-Ci3x8fSaLEZ4968TsxF-F16uQ5ndK"
+          }
+        },
+        {
+          "key": "cn:tcp-ip-problems__problem-58",
+          "name": "Problem 58",
+          "link": "https://drive.google.com/file/d/1PXwFDu0qijTzsivfdjnrIsxGjIQokGvQ/view",
+          "difficulty": "",
+          "kind": "problem",
+          "video": {
+            "fileId": "1PXwFDu0qijTzsivfdjnrIsxGjIQokGvQ"
+          }
+        },
+        {
+          "key": "cn:tcp-ip-problems__problem-59",
+          "name": "Problem 59",
+          "link": "https://drive.google.com/file/d/1LH1wwfUhoGgQ0Eckb8aD9MA-RYw0kSYz/view",
+          "difficulty": "",
+          "kind": "problem",
+          "video": {
+            "fileId": "1LH1wwfUhoGgQ0Eckb8aD9MA-RYw0kSYz"
+          }
+        },
+        {
+          "key": "cn:tcp-ip-problems__problem-60",
+          "name": "Problem 60",
+          "link": "https://drive.google.com/file/d/1dcOvsLHSyNfjeDvkqAhggCBoNEFIYmhP/view",
+          "difficulty": "",
+          "kind": "problem",
+          "video": {
+            "fileId": "1dcOvsLHSyNfjeDvkqAhggCBoNEFIYmhP"
+          }
+        },
+        {
+          "key": "cn:tcp-ip-problems__problem-61",
+          "name": "Problem 61",
+          "link": "https://drive.google.com/file/d/1j_I7kNOiIpd6ZGqbaqbSPNfpj0mBUVSK/view",
+          "difficulty": "",
+          "kind": "problem",
+          "video": {
+            "fileId": "1j_I7kNOiIpd6ZGqbaqbSPNfpj0mBUVSK"
+          }
+        },
+        {
+          "key": "cn:tcp-ip-problems__problem-62",
+          "name": "Problem 62",
+          "link": "https://drive.google.com/file/d/1pe04-Qfm6LccVFd0hJURArywn_lRW14t/view",
+          "difficulty": "",
+          "kind": "problem",
+          "video": {
+            "fileId": "1pe04-Qfm6LccVFd0hJURArywn_lRW14t"
+          }
+        },
+        {
+          "key": "cn:tcp-ip-problems__problem-63",
+          "name": "Problem 63",
+          "link": "https://drive.google.com/file/d/12P68otdCt7LXfv562woFWj7Hj9tk9RDJ/view",
+          "difficulty": "",
+          "kind": "problem",
+          "video": {
+            "fileId": "12P68otdCt7LXfv562woFWj7Hj9tk9RDJ"
+          }
+        },
+        {
+          "key": "cn:tcp-ip-problems__problem-64",
+          "name": "Problem 64",
+          "link": "https://drive.google.com/file/d/1ROrX6y2hPt2L5aQnOTQKQqycr-gnNc8t/view",
+          "difficulty": "",
+          "kind": "problem",
+          "video": {
+            "fileId": "1ROrX6y2hPt2L5aQnOTQKQqycr-gnNc8t"
+          }
+        },
+        {
+          "key": "cn:tcp-ip-problems__problem-65",
+          "name": "Problem 65",
+          "link": "https://drive.google.com/file/d/1wgXNzRLGWCfoBZQTlDivlMTqqSQ2ApDI/view",
+          "difficulty": "",
+          "kind": "problem",
+          "video": {
+            "fileId": "1wgXNzRLGWCfoBZQTlDivlMTqqSQ2ApDI"
+          }
+        },
+        {
+          "key": "cn:tcp-ip-problems__problem-66",
+          "name": "Problem 66",
+          "link": "https://drive.google.com/file/d/1CGqz7s4RavdKwQyZQNeZVY66jVH3RUEd/view",
+          "difficulty": "",
+          "kind": "problem",
+          "video": {
+            "fileId": "1CGqz7s4RavdKwQyZQNeZVY66jVH3RUEd"
+          }
+        },
+        {
+          "key": "cn:tcp-ip-problems__problem-67",
+          "name": "Problem 67",
+          "link": "https://drive.google.com/file/d/1tnWChE5-_4_U3JWf6XFAEm8mqMsOKnjC/view",
+          "difficulty": "",
+          "kind": "problem",
+          "video": {
+            "fileId": "1tnWChE5-_4_U3JWf6XFAEm8mqMsOKnjC"
+          }
+        },
+        {
+          "key": "cn:tcp-ip-problems__problem-68",
+          "name": "Problem 68",
+          "link": "https://drive.google.com/file/d/1DTx30m51cFjFGhAYY-XoKHNnyf_wDeov/view",
+          "difficulty": "",
+          "kind": "problem",
+          "video": {
+            "fileId": "1DTx30m51cFjFGhAYY-XoKHNnyf_wDeov"
+          }
+        },
+        {
+          "key": "cn:tcp-ip-problems__problem-69",
+          "name": "Problem 69",
+          "link": "https://drive.google.com/file/d/1HO0iS6oVXMGbRhKDfmP2dje7trQeCO5L/view",
+          "difficulty": "",
+          "kind": "problem",
+          "video": {
+            "fileId": "1HO0iS6oVXMGbRhKDfmP2dje7trQeCO5L"
+          }
+        },
+        {
+          "key": "cn:tcp-ip-problems__problem-70",
+          "name": "Problem 70",
+          "link": "https://drive.google.com/file/d/18Guu7-xp3RvoO66EJUuRrJuCEm9ii0lP/view",
+          "difficulty": "",
+          "kind": "problem",
+          "video": {
+            "fileId": "18Guu7-xp3RvoO66EJUuRrJuCEm9ii0lP"
+          }
+        },
+        {
+          "key": "cn:tcp-ip-problems__problem-71",
+          "name": "Problem 71",
+          "link": "https://drive.google.com/file/d/11jU1KoqiVLX8xe-zdpuLdovO2Z7m_uwz/view",
+          "difficulty": "",
+          "kind": "problem",
+          "video": {
+            "fileId": "11jU1KoqiVLX8xe-zdpuLdovO2Z7m_uwz"
+          }
+        },
+        {
+          "key": "cn:tcp-ip-problems__problem-72",
+          "name": "Problem 72",
+          "link": "https://drive.google.com/file/d/1Dt2Z-dxP5UMkfgRYLM9QQ51o_AnMC8_2/view",
+          "difficulty": "",
+          "kind": "problem",
+          "video": {
+            "fileId": "1Dt2Z-dxP5UMkfgRYLM9QQ51o_AnMC8_2"
+          }
+        },
+        {
+          "key": "cn:tcp-ip-problems__problem-73",
+          "name": "Problem 73",
+          "link": "https://drive.google.com/file/d/1PaHyiro2m-XRQ8J6cBaVBTXGVPJ75s7n/view",
+          "difficulty": "",
+          "kind": "problem",
+          "video": {
+            "fileId": "1PaHyiro2m-XRQ8J6cBaVBTXGVPJ75s7n"
+          }
+        },
+        {
+          "key": "cn:tcp-ip-problems__problem-74",
+          "name": "Problem 74",
+          "link": "https://drive.google.com/file/d/1WvMKZORllO0BGUNAr1AIWuuqH7_8OR-1/view",
+          "difficulty": "",
+          "kind": "problem",
+          "video": {
+            "fileId": "1WvMKZORllO0BGUNAr1AIWuuqH7_8OR-1"
+          }
+        },
+        {
+          "key": "cn:tcp-ip-problems__problem-75",
+          "name": "Problem 75",
+          "link": "https://drive.google.com/file/d/1B-RJpPkexT6dlb9TzmljidclXzqMlZOj/view",
+          "difficulty": "",
+          "kind": "problem",
+          "video": {
+            "fileId": "1B-RJpPkexT6dlb9TzmljidclXzqMlZOj"
+          }
+        },
+        {
+          "key": "cn:tcp-ip-problems__problem-76",
+          "name": "Problem 76",
+          "link": "https://drive.google.com/file/d/1Mtnk1tGfDXROSSkdNTwvUul7GRDTjV12/view",
+          "difficulty": "",
+          "kind": "problem",
+          "video": {
+            "fileId": "1Mtnk1tGfDXROSSkdNTwvUul7GRDTjV12"
+          }
+        }
+      ]
+    },
+    {
+      "key": "cn-19-network-security",
+      "order": 19,
+      "title": "Network Security",
+      "problems": [
+        {
+          "key": "cn:network-security__introduction-to-network-security",
+          "name": "Introduction to network security",
+          "link": "https://drive.google.com/file/d/1Mz78sXj1eyG11Ql75q7w0C8c1cIdG6sz/view",
+          "difficulty": "",
+          "kind": "concept",
+          "video": {
+            "fileId": "1Mz78sXj1eyG11Ql75q7w0C8c1cIdG6sz"
+          }
+        },
+        {
+          "key": "cn:network-security__passive-and-active-attacker",
+          "name": "passive and active attacker",
+          "link": "https://drive.google.com/file/d/1Vsrlb98DUfB94MJZok3tjt7xmNjroySa/view",
+          "difficulty": "",
+          "kind": "concept",
+          "video": {
+            "fileId": "1Vsrlb98DUfB94MJZok3tjt7xmNjroySa"
+          }
+        },
+        {
+          "key": "cn:network-security__security-serivice",
+          "name": "Security serivice",
+          "link": "https://drive.google.com/file/d/1PyEaczSsHTQW0QwMu7VaZUX3HjPqbMYg/view",
+          "difficulty": "",
+          "kind": "concept",
+          "video": {
+            "fileId": "1PyEaczSsHTQW0QwMu7VaZUX3HjPqbMYg"
+          }
+        },
+        {
+          "key": "cn:network-security__cryptography",
+          "name": "Cryptography",
+          "link": "https://drive.google.com/file/d/15u9YYoj8em6KwSvuhPz5f8yxuhX2du09/view",
+          "difficulty": "",
+          "kind": "concept",
+          "video": {
+            "fileId": "15u9YYoj8em6KwSvuhPz5f8yxuhX2du09"
+          }
+        },
+        {
+          "key": "cn:network-security__gate-15-on-symmetric-key",
+          "name": "gate-15 on symmetric key",
+          "link": "https://drive.google.com/file/d/1pQ_toC2FnZ9prhB7EbyD9_ZyX92uEJNW/view",
+          "difficulty": "",
+          "kind": "problem",
+          "video": {
+            "fileId": "1pQ_toC2FnZ9prhB7EbyD9_ZyX92uEJNW"
+          }
+        },
+        {
+          "key": "cn:network-security__modular-arithematic",
+          "name": "Modular arithematic",
+          "link": "https://drive.google.com/file/d/1Xl7bhaiZmPnJkv8DBYkU8g7BzPClcbgo/view",
+          "difficulty": "",
+          "kind": "concept",
+          "video": {
+            "fileId": "1Xl7bhaiZmPnJkv8DBYkU8g7BzPClcbgo"
+          }
+        },
+        {
+          "key": "cn:network-security__multiplicate-inverse",
+          "name": "Multiplicate Inverse",
+          "link": "https://drive.google.com/file/d/1lbN_noaIvR4g67trZY92fvVEQf0hgMCc/view",
+          "difficulty": "",
+          "kind": "concept",
+          "video": {
+            "fileId": "1lbN_noaIvR4g67trZY92fvVEQf0hgMCc"
+          }
+        },
+        {
+          "key": "cn:network-security__eulers-theorem",
+          "name": "Eulers Theorem",
+          "link": "https://drive.google.com/file/d/1BypLDyVXtlcqzxk3sOWZm26JKf3xb9x3/view",
+          "difficulty": "",
+          "kind": "concept",
+          "video": {
+            "fileId": "1BypLDyVXtlcqzxk3sOWZm26JKf3xb9x3"
+          }
+        },
+        {
+          "key": "cn:network-security__eulers-totient-function",
+          "name": "Eulers Totient function",
+          "link": "https://drive.google.com/file/d/1pRcKpvQ3kJNq2qjZzpAMan95H3mags9r/view",
+          "difficulty": "",
+          "kind": "concept",
+          "video": {
+            "fileId": "1pRcKpvQ3kJNq2qjZzpAMan95H3mags9r"
+          }
+        },
+        {
+          "key": "cn:network-security__rsa-algorithm",
+          "name": "RSA Algorithm",
+          "link": "https://drive.google.com/file/d/1W0zBISXGLT8pU9dzOe5UDZQ8Fk_KePPn/view",
+          "difficulty": "",
+          "kind": "concept",
+          "video": {
+            "fileId": "1W0zBISXGLT8pU9dzOe5UDZQ8Fk_KePPn"
+          }
+        },
+        {
+          "key": "cn:network-security__primitive-root",
+          "name": "Primitive root",
+          "link": "https://drive.google.com/file/d/1e-4NqXELZtBHceHGmTq8Zgr5dYjS4jhh/view",
+          "difficulty": "",
+          "kind": "concept",
+          "video": {
+            "fileId": "1e-4NqXELZtBHceHGmTq8Zgr5dYjS4jhh"
+          }
+        },
+        {
+          "key": "cn:network-security__discrete-logortihm",
+          "name": "Discrete logortihm",
+          "link": "https://drive.google.com/file/d/11jmFgve6pazMnlQSd99COjX0QXM2o5aa/view",
+          "difficulty": "",
+          "kind": "concept",
+          "video": {
+            "fileId": "11jmFgve6pazMnlQSd99COjX0QXM2o5aa"
+          }
+        },
+        {
+          "key": "cn:network-security__diffie-hellman-algorthim",
+          "name": "Diffie hellman algorthim",
+          "link": "https://drive.google.com/file/d/1AgvWDjj_1IAC64Vv7XjNLqUMox-WH_6M/view",
+          "difficulty": "",
+          "kind": "concept",
+          "video": {
+            "fileId": "1AgvWDjj_1IAC64Vv7XjNLqUMox-WH_6M"
+          }
+        },
+        {
+          "key": "cn:network-security__digital-signatures-1",
+          "name": "Digital signatures - 1",
+          "link": "https://drive.google.com/file/d/1gebthWk7ccseb9WtzPzjhn-QeKE_JHzD/view",
+          "difficulty": "",
+          "kind": "concept",
+          "video": {
+            "fileId": "1gebthWk7ccseb9WtzPzjhn-QeKE_JHzD"
+          }
+        },
+        {
+          "key": "cn:network-security__digital-signatures-2",
+          "name": "Digital signatures - 2",
+          "link": "https://drive.google.com/file/d/1OMPQqjuulN3wfHVNEch59ZlbOISlbYyJ/view",
+          "difficulty": "",
+          "kind": "concept",
+          "video": {
+            "fileId": "1OMPQqjuulN3wfHVNEch59ZlbOISlbYyJ"
+          }
+        },
+        {
+          "key": "cn:network-security__firewalls",
+          "name": "Firewalls",
+          "link": "https://drive.google.com/file/d/1PvNk5fugE5lT_2Hr9bJbI3wZKeiEbxoX/view",
+          "difficulty": "",
+          "kind": "concept",
+          "video": {
+            "fileId": "1PvNk5fugE5lT_2Hr9bJbI3wZKeiEbxoX"
+          }
+        }
+      ]
+    },
+    {
+      "key": "cn-20-ipv6-wifi",
+      "order": 20,
+      "title": "IPv6 & WiFi",
+      "problems": [
+        {
+          "key": "cn:ipv6-wifi__need-for-ipv6",
+          "name": "Need for IPV6",
+          "link": "https://drive.google.com/file/d/1xSLC6WOJq2xbXOpcVtbGUfsZ-pr02A2P/view",
+          "difficulty": "",
+          "kind": "concept",
+          "video": {
+            "fileId": "1xSLC6WOJq2xbXOpcVtbGUfsZ-pr02A2P"
+          }
+        },
+        {
+          "key": "cn:ipv6-wifi__ipv6-header",
+          "name": "IPV6 header",
+          "link": "https://drive.google.com/file/d/1zucVF1bqO2_43htjtLgDFud58KhJk_Oe/view",
+          "difficulty": "",
+          "kind": "concept",
+          "video": {
+            "fileId": "1zucVF1bqO2_43htjtLgDFud58KhJk_Oe"
+          }
+        },
+        {
+          "key": "cn:ipv6-wifi__traffic-class-field",
+          "name": "Traffic class field",
+          "link": "https://drive.google.com/file/d/1z1uxRrHwANt5ukXMYDUav4EPnXTnCMIY/view",
+          "difficulty": "",
+          "kind": "concept",
+          "video": {
+            "fileId": "1z1uxRrHwANt5ukXMYDUav4EPnXTnCMIY"
+          }
+        },
+        {
+          "key": "cn:ipv6-wifi__flow-label-field",
+          "name": "Flow label field",
+          "link": "https://drive.google.com/file/d/1Ch3212C1E4OE1vnfFbWxRHPQpabO9V1N/view",
+          "difficulty": "",
+          "kind": "concept",
+          "video": {
+            "fileId": "1Ch3212C1E4OE1vnfFbWxRHPQpabO9V1N"
+          }
+        },
+        {
+          "key": "cn:ipv6-wifi__payload-length",
+          "name": "Payload length",
+          "link": "https://drive.google.com/file/d/1UJpZVAb1qPI1oDIOI2sGmH-Ay6mbawrq/view",
+          "difficulty": "",
+          "kind": "concept",
+          "video": {
+            "fileId": "1UJpZVAb1qPI1oDIOI2sGmH-Ay6mbawrq"
+          }
+        },
+        {
+          "key": "cn:ipv6-wifi__next-header-field",
+          "name": "Next header field",
+          "link": "https://drive.google.com/file/d/1PqziM826HAZQY_SuHXTN8XWtNFfR9lDL/view",
+          "difficulty": "",
+          "kind": "concept",
+          "video": {
+            "fileId": "1PqziM826HAZQY_SuHXTN8XWtNFfR9lDL"
+          }
+        },
+        {
+          "key": "cn:ipv6-wifi__ordering-of-extension-headers",
+          "name": "Ordering of extension headers",
+          "link": "https://drive.google.com/file/d/1EHm2JmQObEV43LPb_9TYDwzDJrC691ud/view",
+          "difficulty": "",
+          "kind": "concept",
+          "video": {
+            "fileId": "1EHm2JmQObEV43LPb_9TYDwzDJrC691ud"
+          }
+        },
+        {
+          "key": "cn:ipv6-wifi__hop-by-hop-extension-header",
+          "name": "Hop by hop extension header",
+          "link": "https://drive.google.com/file/d/1COwKcv8yGYjwPHJgFpVjjm5rufaZtupL/view",
+          "difficulty": "",
+          "kind": "concept",
+          "video": {
+            "fileId": "1COwKcv8yGYjwPHJgFpVjjm5rufaZtupL"
+          }
+        },
+        {
+          "key": "cn:ipv6-wifi__routing-extension-header-1",
+          "name": "Routing extension header - 1",
+          "link": "https://drive.google.com/file/d/1WgKztcfjfOoDQZuZ0SjpoSOTMadKnqUY/view",
+          "difficulty": "",
+          "kind": "concept",
+          "video": {
+            "fileId": "1WgKztcfjfOoDQZuZ0SjpoSOTMadKnqUY"
+          }
+        },
+        {
+          "key": "cn:ipv6-wifi__routing-extension-header-2",
+          "name": "Routing extension header - 2",
+          "link": "https://drive.google.com/file/d/1IWCyqTIeEHwZiCi8WsI1c3cTBhByWAiI/view",
+          "difficulty": "",
+          "kind": "concept",
+          "video": {
+            "fileId": "1IWCyqTIeEHwZiCi8WsI1c3cTBhByWAiI"
+          }
+        },
+        {
+          "key": "cn:ipv6-wifi__fragmentation-extension-header",
+          "name": "Fragmentation extension header",
+          "link": "https://drive.google.com/file/d/1AmaL_CyISZ_uEo5WySHZLPLY70GGnn05/view",
+          "difficulty": "",
+          "kind": "concept",
+          "video": {
+            "fileId": "1AmaL_CyISZ_uEo5WySHZLPLY70GGnn05"
+          }
+        },
+        {
+          "key": "cn:ipv6-wifi__need-for-security-at-network-layer",
+          "name": "Need for security at network layer",
+          "link": "https://drive.google.com/file/d/1J0rD2UjjkUSUNQAKtpDkeqxpO0y8mIXQ/view",
+          "difficulty": "",
+          "kind": "concept",
+          "video": {
+            "fileId": "1J0rD2UjjkUSUNQAKtpDkeqxpO0y8mIXQ"
+          }
+        },
+        {
+          "key": "cn:ipv6-wifi__modes-of-ip-security",
+          "name": "Modes of IP security",
+          "link": "https://drive.google.com/file/d/19ee5DOOOqvWpIMvU6qv4oHqq1Tys2hms/view",
+          "difficulty": "",
+          "kind": "concept",
+          "video": {
+            "fileId": "19ee5DOOOqvWpIMvU6qv4oHqq1Tys2hms"
+          }
+        },
+        {
+          "key": "cn:ipv6-wifi__authentication-header",
+          "name": "Authentication header",
+          "link": "https://drive.google.com/file/d/1Z0zd_GSjWau6Vrzg2853hT7h6LrIYFf4/view",
+          "difficulty": "",
+          "kind": "concept",
+          "video": {
+            "fileId": "1Z0zd_GSjWau6Vrzg2853hT7h6LrIYFf4"
+          }
+        },
+        {
+          "key": "cn:ipv6-wifi__esp",
+          "name": "ESP",
+          "link": "https://drive.google.com/file/d/1RGYqPJ5o9glbBxnKrGJhKU-j95I0TmGq/view",
+          "difficulty": "",
+          "kind": "concept",
+          "video": {
+            "fileId": "1RGYqPJ5o9glbBxnKrGJhKU-j95I0TmGq"
+          }
+        },
+        {
+          "key": "cn:ipv6-wifi__ipv6-addresses",
+          "name": "IPV6 addresses",
+          "link": "https://drive.google.com/file/d/1XtT0zEC9br8WBZ8kg3uYL8OZwTnsuoAs/view",
+          "difficulty": "",
+          "kind": "concept",
+          "video": {
+            "fileId": "1XtT0zEC9br8WBZ8kg3uYL8OZwTnsuoAs"
+          }
+        },
+        {
+          "key": "cn:ipv6-wifi__ipv6-address-representation",
+          "name": "IPV6 address representation",
+          "link": "https://drive.google.com/file/d/1lxOCv1Y1PCTIMsNbgjGSXEAkZAqmchD8/view",
+          "difficulty": "",
+          "kind": "concept",
+          "video": {
+            "fileId": "1lxOCv1Y1PCTIMsNbgjGSXEAkZAqmchD8"
+          }
+        },
+        {
+          "key": "cn:ipv6-wifi__types-of-ipv6-addresses",
+          "name": "Types of IPV6 addresses",
+          "link": "https://drive.google.com/file/d/16G4PYvUI3tA03TFpPoYTI0DohxtP6O92/view",
+          "difficulty": "",
+          "kind": "concept",
+          "video": {
+            "fileId": "16G4PYvUI3tA03TFpPoYTI0DohxtP6O92"
+          }
+        },
+        {
+          "key": "cn:ipv6-wifi__provider-based-unicast-address",
+          "name": "Provider based unicast address",
+          "link": "https://drive.google.com/file/d/1IVA_yWWdIyMykKyntCFYSPRi8AcrOijB/view",
+          "difficulty": "",
+          "kind": "concept",
+          "video": {
+            "fileId": "1IVA_yWWdIyMykKyntCFYSPRi8AcrOijB"
+          }
+        },
+        {
+          "key": "cn:ipv6-wifi__geography-based-unicast-address",
+          "name": "Geography based unicast address",
+          "link": "https://drive.google.com/file/d/1Z5qjoZ_yES7EYtAfqykR9y45daMHQcSX/view",
+          "difficulty": "",
+          "kind": "concept",
+          "video": {
+            "fileId": "1Z5qjoZ_yES7EYtAfqykR9y45daMHQcSX"
+          }
+        },
+        {
+          "key": "cn:ipv6-wifi__multicasting",
+          "name": "Multicasting",
+          "link": "https://drive.google.com/file/d/17Tgc5WfrjBc4VbPxHypx5XFywEEhv0OW/view",
+          "difficulty": "",
+          "kind": "concept",
+          "video": {
+            "fileId": "17Tgc5WfrjBc4VbPxHypx5XFywEEhv0OW"
+          }
+        },
+        {
+          "key": "cn:ipv6-wifi__anycast",
+          "name": "Anycast",
+          "link": "https://drive.google.com/file/d/1Des0jANDVG_Q_VSvjNy_hjGRQ3CiiR82/view",
+          "difficulty": "",
+          "kind": "concept",
+          "video": {
+            "fileId": "1Des0jANDVG_Q_VSvjNy_hjGRQ3CiiR82"
+          }
+        },
+        {
+          "key": "cn:ipv6-wifi__some-special-addresses",
+          "name": "Some special addresses",
+          "link": "https://drive.google.com/file/d/1VwbJ4Oq7PjQDHenhcVIulKifa5MAHcEt/view",
+          "difficulty": "",
+          "kind": "concept",
+          "video": {
+            "fileId": "1VwbJ4Oq7PjQDHenhcVIulKifa5MAHcEt"
+          }
+        },
+        {
+          "key": "cn:ipv6-wifi__local-addresses",
+          "name": "Local addresses",
+          "link": "https://drive.google.com/file/d/1OQfBlHvmEIEs3SwiOd02oaoy8COoZiuH/view",
+          "difficulty": "",
+          "kind": "concept",
+          "video": {
+            "fileId": "1OQfBlHvmEIEs3SwiOd02oaoy8COoZiuH"
+          }
+        },
+        {
+          "key": "cn:ipv6-wifi__ipv4-vs-ipv6",
+          "name": "IPV4 Vs IPV6",
+          "link": "https://drive.google.com/file/d/1JURtDn0Y2nR4lVPwkAWzktvJe6jJdlIS/view",
+          "difficulty": "",
+          "kind": "concept",
+          "video": {
+            "fileId": "1JURtDn0Y2nR4lVPwkAWzktvJe6jJdlIS"
+          }
+        },
+        {
+          "key": "cn:ipv6-wifi__introduction-to-wifi",
+          "name": "Introduction to WiFi",
+          "link": "https://drive.google.com/file/d/1OPxUQoBywdDAvD39Yt4--N2EntnaabSD/view",
+          "difficulty": "",
+          "kind": "concept",
+          "video": {
+            "fileId": "1OPxUQoBywdDAvD39Yt4--N2EntnaabSD"
+          }
+        }
+      ]
+    },
+    {
+      "key": "cn-21-reference-notes",
+      "order": 21,
+      "title": "Reference Notes",
+      "problems": [
+        {
+          "key": "cn:reference-notes__computer-network-final",
+          "name": "Computer Network Final",
+          "link": "https://drive.google.com/file/d/1sPqXSUuHMoxKfFODY3UXQ_cRIVaMrd8d/view",
+          "difficulty": "",
+          "kind": "concept",
+          "video": {
+            "fileId": "1sPqXSUuHMoxKfFODY3UXQ_cRIVaMrd8d"
+          }
+        },
+        {
+          "key": "cn:reference-notes__tl-vs-nl",
+          "name": "TL vs NL",
+          "link": "https://drive.google.com/file/d/1W31-Fe6e30JuVbA6NYzCY43mJuK1WbXE/view",
+          "difficulty": "",
+          "kind": "concept",
+          "video": {
+            "fileId": "1W31-Fe6e30JuVbA6NYzCY43mJuK1WbXE"
+          }
+        }
+      ]
+    }
+  ]
+}

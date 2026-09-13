@@ -1,0 +1,2037 @@
+{
+  "subject": "os",
+  "steps": [
+    {
+      "key": "os-01-process-management",
+      "order": 1,
+      "title": "Process Management",
+      "problems": [
+        {
+          "key": "os:process-management__introduction-to-os",
+          "name": "Introduction to OS",
+          "link": "https://drive.google.com/file/d/1Hd-Gjfg0t2liUuhoYIKvCNJeCRAhQD31/view",
+          "difficulty": "",
+          "kind": "concept",
+          "video": {
+            "fileId": "1Hd-Gjfg0t2liUuhoYIKvCNJeCRAhQD31"
+          }
+        },
+        {
+          "key": "os:process-management__process-pcb-and-attributes",
+          "name": "Process PCB and Attributes",
+          "link": "https://drive.google.com/file/d/1OkGyFm5EKifkE2-2gDGKiBW1LVHArUeA/view",
+          "difficulty": "",
+          "kind": "concept",
+          "video": {
+            "fileId": "1OkGyFm5EKifkE2-2gDGKiBW1LVHArUeA"
+          }
+        },
+        {
+          "key": "os:process-management__process-states-and-multi-programming",
+          "name": "Process States and Multi programming",
+          "link": "https://drive.google.com/file/d/1eJt6XtTQ-z3LPMdewqFbJTT7cpnCuO4J/view",
+          "difficulty": "",
+          "kind": "concept",
+          "video": {
+            "fileId": "1eJt6XtTQ-z3LPMdewqFbJTT7cpnCuO4J"
+          }
+        },
+        {
+          "key": "os:process-management__process-state-transition-diagram-and-various-schedulers",
+          "name": "Process State Transition Diagram and various Schedulers",
+          "link": "https://drive.google.com/file/d/11XMF9cqLl9Q21aGx2IS3Sa60Yv7Vwzjy/view",
+          "difficulty": "",
+          "kind": "concept",
+          "video": {
+            "fileId": "11XMF9cqLl9Q21aGx2IS3Sa60Yv7Vwzjy"
+          }
+        },
+        {
+          "key": "os:process-management__process-queues",
+          "name": "Process Queues",
+          "link": "https://drive.google.com/file/d/1xZpsG7x8a6B15f78cZof2kZ8wN_Fpns3/view",
+          "difficulty": "",
+          "kind": "concept",
+          "video": {
+            "fileId": "1xZpsG7x8a6B15f78cZof2kZ8wN_Fpns3"
+          }
+        },
+        {
+          "key": "os:process-management__question-on-process-states",
+          "name": "Question on Process States",
+          "link": "https://drive.google.com/file/d/1jzbSwIHhh2GWwqKv-z7quWuy8Li-JvYl/view",
+          "difficulty": "",
+          "kind": "problem",
+          "video": {
+            "fileId": "1jzbSwIHhh2GWwqKv-z7quWuy8Li-JvYl"
+          }
+        },
+        {
+          "key": "os:process-management__various-times-related-to-process",
+          "name": "Various Times related to Process",
+          "link": "https://drive.google.com/file/d/1IqYz2kGLLdSZmZj7J-bT36HI08lw4302/view",
+          "difficulty": "",
+          "kind": "concept",
+          "video": {
+            "fileId": "1IqYz2kGLLdSZmZj7J-bT36HI08lw4302"
+          }
+        },
+        {
+          "key": "os:process-management__cpu-scheduling",
+          "name": "CPU scheduling",
+          "link": "https://drive.google.com/file/d/136nBRboW_fxJ-F7Wd8_KxiGOZTsG24w2/view",
+          "difficulty": "",
+          "kind": "concept",
+          "video": {
+            "fileId": "136nBRboW_fxJ-F7Wd8_KxiGOZTsG24w2"
+          }
+        },
+        {
+          "key": "os:process-management__first-come-first-serve",
+          "name": "First Come First Serve",
+          "link": "https://drive.google.com/file/d/1c7di51B0Hi7g6ROUJIF4LnfSHfVDjAjx/view",
+          "difficulty": "",
+          "kind": "concept",
+          "video": {
+            "fileId": "1c7di51B0Hi7g6ROUJIF4LnfSHfVDjAjx"
+          }
+        },
+        {
+          "key": "os:process-management__convoy-effect",
+          "name": "Convoy effect",
+          "link": "https://drive.google.com/file/d/1WCOQEbQMIfkmJRv7Tv_m9pLLNe352DkS/view",
+          "difficulty": "",
+          "kind": "concept",
+          "video": {
+            "fileId": "1WCOQEbQMIfkmJRv7Tv_m9pLLNe352DkS"
+          }
+        },
+        {
+          "key": "os:process-management__fcfs-example",
+          "name": "FCFS example",
+          "link": "https://drive.google.com/file/d/1yu2ivaK6wPvp09StaCXsXDwjrTgcwiV6/view",
+          "difficulty": "",
+          "kind": "concept",
+          "video": {
+            "fileId": "1yu2ivaK6wPvp09StaCXsXDwjrTgcwiV6"
+          }
+        },
+        {
+          "key": "os:process-management__fcfs-with-overhead",
+          "name": "FCFS with overhead",
+          "link": "https://drive.google.com/file/d/1b_m8Jov_tuGJA9W0N8RgeR5CdFfbdaX_/view",
+          "difficulty": "",
+          "kind": "concept",
+          "video": {
+            "fileId": "1b_m8Jov_tuGJA9W0N8RgeR5CdFfbdaX_"
+          }
+        },
+        {
+          "key": "os:process-management__introduction-to-sjf",
+          "name": "Introduction to SJF",
+          "link": "https://drive.google.com/file/d/1QN9UK3PqiImKLvFOqA1h2mtBS-UFoUQd/view",
+          "difficulty": "",
+          "kind": "concept",
+          "video": {
+            "fileId": "1QN9UK3PqiImKLvFOqA1h2mtBS-UFoUQd"
+          }
+        },
+        {
+          "key": "os:process-management__analysis-of-sjf",
+          "name": "Analysis of SJF",
+          "link": "https://drive.google.com/file/d/1q6aKxzJo2pGpj144tKi6YZ8CLMgKDgZV/view",
+          "difficulty": "",
+          "kind": "concept",
+          "video": {
+            "fileId": "1q6aKxzJo2pGpj144tKi6YZ8CLMgKDgZV"
+          }
+        },
+        {
+          "key": "os:process-management__sjf-with-prediction-of-bt",
+          "name": "SJF with prediction of BT",
+          "link": "https://drive.google.com/file/d/1hJNr3D2eGx4Gf8dRPhfkt3D1CjikO6He/view",
+          "difficulty": "",
+          "kind": "concept",
+          "video": {
+            "fileId": "1hJNr3D2eGx4Gf8dRPhfkt3D1CjikO6He"
+          }
+        },
+        {
+          "key": "os:process-management__smallest-remaining-time-first-srtf",
+          "name": "Smallest Remaining Time First (SRTF)",
+          "link": "https://drive.google.com/file/d/1Pe51OmjCUEnlpbniv66fnGBv9OFIitiE/view",
+          "difficulty": "",
+          "kind": "concept",
+          "video": {
+            "fileId": "1Pe51OmjCUEnlpbniv66fnGBv9OFIitiE"
+          }
+        },
+        {
+          "key": "os:process-management__example-on-srtf-gate-2011",
+          "name": "Example on SRTF Gate 2011",
+          "link": "https://drive.google.com/file/d/1EO7yfgZ-DhaFjE31OAv9OKxnm9HXmzv5/view",
+          "difficulty": "",
+          "kind": "problem",
+          "video": {
+            "fileId": "1EO7yfgZ-DhaFjE31OAv9OKxnm9HXmzv5"
+          }
+        },
+        {
+          "key": "os:process-management__example-on-srtf-gate-2007",
+          "name": "Example on SRTF Gate 2007",
+          "link": "https://drive.google.com/file/d/1Hbnk2B9C2QhSF1aiN-KcOsnYnJQIecco/view",
+          "difficulty": "",
+          "kind": "problem",
+          "video": {
+            "fileId": "1Hbnk2B9C2QhSF1aiN-KcOsnYnJQIecco"
+          }
+        },
+        {
+          "key": "os:process-management__round-robin-algorithm",
+          "name": "Round Robin Algorithm",
+          "link": "https://drive.google.com/file/d/16fC2DmxdpEVuZc9nkNtfBoxg1jOUgk-V/view",
+          "difficulty": "",
+          "kind": "concept",
+          "video": {
+            "fileId": "16fC2DmxdpEVuZc9nkNtfBoxg1jOUgk-V"
+          }
+        },
+        {
+          "key": "os:process-management__round-robin-example-1",
+          "name": "Round Robin example 1",
+          "link": "https://drive.google.com/file/d/1Z1kg9aaN1G4MsYsMf_LylK9_s46IbD0g/view",
+          "difficulty": "",
+          "kind": "concept",
+          "video": {
+            "fileId": "1Z1kg9aaN1G4MsYsMf_LylK9_s46IbD0g"
+          }
+        },
+        {
+          "key": "os:process-management__round-robin-example-2",
+          "name": "Round Robin example 2",
+          "link": "https://drive.google.com/file/d/1t0G--x-94I6sSm7F9UoCWFuo63BlXxns/view",
+          "difficulty": "",
+          "kind": "concept",
+          "video": {
+            "fileId": "1t0G--x-94I6sSm7F9UoCWFuo63BlXxns"
+          }
+        },
+        {
+          "key": "os:process-management__round-robin-example-3",
+          "name": "Round Robin Example 3",
+          "link": "https://drive.google.com/file/d/1UpxjEA5g1gBgm88NJW34_JW4kgX1hf-R/view",
+          "difficulty": "",
+          "kind": "concept",
+          "video": {
+            "fileId": "1UpxjEA5g1gBgm88NJW34_JW4kgX1hf-R"
+          }
+        },
+        {
+          "key": "os:process-management__round-robin-example-4",
+          "name": "Round Robin example 4",
+          "link": "https://drive.google.com/file/d/1xpWWNfK6D9e9TnaAKqyHiNoU4YbkPk14/view",
+          "difficulty": "",
+          "kind": "concept",
+          "video": {
+            "fileId": "1xpWWNfK6D9e9TnaAKqyHiNoU4YbkPk14"
+          }
+        },
+        {
+          "key": "os:process-management__longest-job-first",
+          "name": "Longest job first",
+          "link": "https://drive.google.com/file/d/1yjNMb1s1fXz4tm35CxJM9rLmZnCD_OYI/view",
+          "difficulty": "",
+          "kind": "concept",
+          "video": {
+            "fileId": "1yjNMb1s1fXz4tm35CxJM9rLmZnCD_OYI"
+          }
+        },
+        {
+          "key": "os:process-management__longest-remaining-time-first",
+          "name": "Longest remaining time first",
+          "link": "https://drive.google.com/file/d/1cSvfNPPxJF7wy8YfzW5p3YPJcxOagfkl/view",
+          "difficulty": "",
+          "kind": "concept",
+          "video": {
+            "fileId": "1cSvfNPPxJF7wy8YfzW5p3YPJcxOagfkl"
+          }
+        },
+        {
+          "key": "os:process-management__longest-remaining-time-first-gate-2006-question",
+          "name": "Longest remaining time first Gate 2006 question",
+          "link": "https://drive.google.com/file/d/1f9GqbYsLSqB7I7gyruDDrVohp505R66k/view",
+          "difficulty": "",
+          "kind": "problem",
+          "video": {
+            "fileId": "1f9GqbYsLSqB7I7gyruDDrVohp505R66k"
+          }
+        },
+        {
+          "key": "os:process-management__highest-response-ratio-next-hrrn",
+          "name": "Highest Response Ratio Next (HRRN)",
+          "link": "https://drive.google.com/file/d/1VnW9idqDSx0hVX4SrSKtsd5Y1qhtp86g/view",
+          "difficulty": "",
+          "kind": "concept",
+          "video": {
+            "fileId": "1VnW9idqDSx0hVX4SrSKtsd5Y1qhtp86g"
+          }
+        },
+        {
+          "key": "os:process-management__priority-scheduling",
+          "name": "Priority scheduling",
+          "link": "https://drive.google.com/file/d/1AeQc1_6fMJd-2_Gn_drDSCbpC5dZLZ5b/view",
+          "difficulty": "",
+          "kind": "concept",
+          "video": {
+            "fileId": "1AeQc1_6fMJd-2_Gn_drDSCbpC5dZLZ5b"
+          }
+        },
+        {
+          "key": "os:process-management__non-preemptive-priority-scheduling",
+          "name": "non preemptive priority scheduling",
+          "link": "https://drive.google.com/file/d/1YpBLpGUMzb4ejKV-pKgK2TvdRFojpB3K/view",
+          "difficulty": "",
+          "kind": "concept",
+          "video": {
+            "fileId": "1YpBLpGUMzb4ejKV-pKgK2TvdRFojpB3K"
+          }
+        },
+        {
+          "key": "os:process-management__pre-emptive-priority-scheduling",
+          "name": "Pre-emptive priority scheduling",
+          "link": "https://drive.google.com/file/d/1sEltZq68oyR8kjiyhOTQi43GxdgdgriB/view",
+          "difficulty": "",
+          "kind": "concept",
+          "video": {
+            "fileId": "1sEltZq68oyR8kjiyhOTQi43GxdgdgriB"
+          }
+        },
+        {
+          "key": "os:process-management__srtf-with-processes-contains-cpu-and-io-time-example-1",
+          "name": "SRTF with processes contains CPU and IO time example 1",
+          "link": "https://drive.google.com/file/d/1agUQW5FCZyo1hI2mjg4CJbbyQarJgWNi/view",
+          "difficulty": "",
+          "kind": "concept",
+          "video": {
+            "fileId": "1agUQW5FCZyo1hI2mjg4CJbbyQarJgWNi"
+          }
+        },
+        {
+          "key": "os:process-management__pre-emptive-priority-with-processes-contains-cpu-and-io-time",
+          "name": "Pre emptive priority with processes contains CPU and IO time",
+          "link": "https://drive.google.com/file/d/1D7OJa9FNrkCoMjgVnes-J1T3B-yHKOCN/view",
+          "difficulty": "",
+          "kind": "concept",
+          "video": {
+            "fileId": "1D7OJa9FNrkCoMjgVnes-J1T3B-yHKOCN"
+          }
+        },
+        {
+          "key": "os:process-management__srtf-with-processes-contains-cpu-and-io-time-example-2",
+          "name": "SRTF with processes contains CPU and IO time example 2",
+          "link": "https://drive.google.com/file/d/19COJcVx4xm_0ZbR0mmD_Zd2tQZsUhEyw/view",
+          "difficulty": "",
+          "kind": "concept",
+          "video": {
+            "fileId": "19COJcVx4xm_0ZbR0mmD_Zd2tQZsUhEyw"
+          }
+        },
+        {
+          "key": "os:process-management__multi-level-queues-and-multi-level-feedback-queues",
+          "name": "Multi level queues and multi level feedback queues",
+          "link": "https://drive.google.com/file/d/1qPpVfwU1a5LkfxWdpvzWrixOM_rDnRQt/view",
+          "difficulty": "",
+          "kind": "concept",
+          "video": {
+            "fileId": "1qPpVfwU1a5LkfxWdpvzWrixOM_rDnRQt"
+          }
+        }
+      ]
+    },
+    {
+      "key": "os-02-process-synchronization",
+      "order": 2,
+      "title": "Process Synchronization",
+      "problems": [
+        {
+          "key": "os:process-synchronization__need-for-synchronization",
+          "name": "Need for Synchronization",
+          "link": "https://drive.google.com/file/d/1HAlzsEALP7c6Ipbpy8Nt0dd-i-4kSAIu/view",
+          "difficulty": "",
+          "kind": "concept",
+          "video": {
+            "fileId": "1HAlzsEALP7c6Ipbpy8Nt0dd-i-4kSAIu"
+          }
+        },
+        {
+          "key": "os:process-synchronization__introduction-to-synchronization-mechanisms",
+          "name": "Introduction to Synchronization Mechanisms",
+          "link": "https://drive.google.com/file/d/1d5i2UGwXeM9pMq6puUHH9UlVzLAZqsmR/view",
+          "difficulty": "",
+          "kind": "concept",
+          "video": {
+            "fileId": "1d5i2UGwXeM9pMq6puUHH9UlVzLAZqsmR"
+          }
+        },
+        {
+          "key": "os:process-synchronization__conditions-for-synchronization-mechanisms",
+          "name": "Conditions for Synchronization Mechanisms",
+          "link": "https://drive.google.com/file/d/19cIQS_zoMnhEW7jm8DWFKqO_1R8edLXI/view",
+          "difficulty": "",
+          "kind": "concept",
+          "video": {
+            "fileId": "19cIQS_zoMnhEW7jm8DWFKqO_1R8edLXI"
+          }
+        },
+        {
+          "key": "os:process-synchronization__lock-variables",
+          "name": "Lock Variables",
+          "link": "https://drive.google.com/file/d/1gJhq_h5AFn2_iJjZAOd77320m4UD69Qz/view",
+          "difficulty": "",
+          "kind": "concept",
+          "video": {
+            "fileId": "1gJhq_h5AFn2_iJjZAOd77320m4UD69Qz"
+          }
+        },
+        {
+          "key": "os:process-synchronization__tsl",
+          "name": "TSL",
+          "link": "https://drive.google.com/file/d/1QBb_U_xb2dR77Hly4EVl5j83mrpZ9HYG/view",
+          "difficulty": "",
+          "kind": "concept",
+          "video": {
+            "fileId": "1QBb_U_xb2dR77Hly4EVl5j83mrpZ9HYG"
+          }
+        },
+        {
+          "key": "os:process-synchronization__gate-2008-tsl-question",
+          "name": "Gate 2008 TSL question",
+          "link": "https://drive.google.com/file/d/1Z4UpZJhakR1pjz8cuFanT4dKdsMLue-m/view",
+          "difficulty": "",
+          "kind": "problem",
+          "video": {
+            "fileId": "1Z4UpZJhakR1pjz8cuFanT4dKdsMLue-m"
+          }
+        },
+        {
+          "key": "os:process-synchronization__gate-2012-tsl-question",
+          "name": "Gate 2012 TSL question",
+          "link": "https://drive.google.com/file/d/1H_xBMolyVV9XKwRSna-sapC1fX7RyOPg/view",
+          "difficulty": "",
+          "kind": "problem",
+          "video": {
+            "fileId": "1H_xBMolyVV9XKwRSna-sapC1fX7RyOPg"
+          }
+        },
+        {
+          "key": "os:process-synchronization__gate-2012-tsl-question-continuation",
+          "name": "Gate 2012 TSL Question Continuation",
+          "link": "https://drive.google.com/file/d/1HCpjvD07RTjEGG-KmRQJbe3rPLi3xRUw/view",
+          "difficulty": "",
+          "kind": "problem",
+          "video": {
+            "fileId": "1HCpjvD07RTjEGG-KmRQJbe3rPLi3xRUw"
+          }
+        },
+        {
+          "key": "os:process-synchronization__gate-2010-question",
+          "name": "Gate 2010 question",
+          "link": "https://drive.google.com/file/d/1Ovljw6hh0vfSOGnS4hMIIyZ9REkyPjO9/view",
+          "difficulty": "",
+          "kind": "problem",
+          "video": {
+            "fileId": "1Ovljw6hh0vfSOGnS4hMIIyZ9REkyPjO9"
+          }
+        },
+        {
+          "key": "os:process-synchronization__disabling-interrupts",
+          "name": "Disabling Interrupts",
+          "link": "https://drive.google.com/file/d/1GEhif36PerMyhoR5t_BNEf6OFUT8E7NW/view",
+          "difficulty": "",
+          "kind": "concept",
+          "video": {
+            "fileId": "1GEhif36PerMyhoR5t_BNEf6OFUT8E7NW"
+          }
+        },
+        {
+          "key": "os:process-synchronization__turn-variable-or-strict-alteration-method",
+          "name": "Turn Variable or Strict Alteration Method",
+          "link": "https://drive.google.com/file/d/1w14fkn4XGDn0zZj-i1dNHz_l2wIClRPy/view",
+          "difficulty": "",
+          "kind": "concept",
+          "video": {
+            "fileId": "1w14fkn4XGDn0zZj-i1dNHz_l2wIClRPy"
+          }
+        },
+        {
+          "key": "os:process-synchronization__interested-variable",
+          "name": "Interested Variable",
+          "link": "https://drive.google.com/file/d/14Zc44HgdSG_LJwu-NT9mewUNpwdrKZ0W/view",
+          "difficulty": "",
+          "kind": "concept",
+          "video": {
+            "fileId": "14Zc44HgdSG_LJwu-NT9mewUNpwdrKZ0W"
+          }
+        },
+        {
+          "key": "os:process-synchronization__petersons-solution",
+          "name": "Petersons Solution",
+          "link": "https://drive.google.com/file/d/1Tp-7pPv5wnfy_gNlKPjYlhyM0IaT0-wq/view",
+          "difficulty": "",
+          "kind": "concept",
+          "video": {
+            "fileId": "1Tp-7pPv5wnfy_gNlKPjYlhyM0IaT0-wq"
+          }
+        },
+        {
+          "key": "os:process-synchronization__tracing-petersons-solution",
+          "name": "Tracing Petersons Solution",
+          "link": "https://drive.google.com/file/d/1GHyyICTF9QCxKsdLujbyV0jYfjdfIkE4/view",
+          "difficulty": "",
+          "kind": "concept",
+          "video": {
+            "fileId": "1GHyyICTF9QCxKsdLujbyV0jYfjdfIkE4"
+          }
+        },
+        {
+          "key": "os:process-synchronization__synchronization-mechanisms-without-busy-waiting",
+          "name": "Synchronization Mechanisms Without Busy Waiting",
+          "link": "https://drive.google.com/file/d/12IMZUkmJTY7gQoZXzFGHHN645D4Y8XBg/view",
+          "difficulty": "",
+          "kind": "concept",
+          "video": {
+            "fileId": "12IMZUkmJTY7gQoZXzFGHHN645D4Y8XBg"
+          }
+        },
+        {
+          "key": "os:process-synchronization__sleep-and-wake",
+          "name": "Sleep and Wake",
+          "link": "https://drive.google.com/file/d/1_ks6KtvjQUYcw0fvQHG9OJlX7TNe1Eil/view",
+          "difficulty": "",
+          "kind": "concept",
+          "video": {
+            "fileId": "1_ks6KtvjQUYcw0fvQHG9OJlX7TNe1Eil"
+          }
+        },
+        {
+          "key": "os:process-synchronization__introduction-to-semaphores",
+          "name": "Introduction to Semaphores",
+          "link": "https://drive.google.com/file/d/1xmY2dreOUlEEjKzPvoYncjN4Afwy3wtS/view",
+          "difficulty": "",
+          "kind": "concept",
+          "video": {
+            "fileId": "1xmY2dreOUlEEjKzPvoYncjN4Afwy3wtS"
+          }
+        },
+        {
+          "key": "os:process-synchronization__counting-semaphores",
+          "name": "Counting Semaphores",
+          "link": "https://drive.google.com/file/d/1aIoY1BRbSFuhQAK7aKuOpIcGzGIvsVP0/view",
+          "difficulty": "",
+          "kind": "concept",
+          "video": {
+            "fileId": "1aIoY1BRbSFuhQAK7aKuOpIcGzGIvsVP0"
+          }
+        },
+        {
+          "key": "os:process-synchronization__problems-on-counting-semaphores",
+          "name": "Problems on Counting Semaphores",
+          "link": "https://drive.google.com/file/d/18qmZKvlJjONrInD4zFuEFRqJlqbxUmK9/view",
+          "difficulty": "",
+          "kind": "problem",
+          "video": {
+            "fileId": "18qmZKvlJjONrInD4zFuEFRqJlqbxUmK9"
+          }
+        },
+        {
+          "key": "os:process-synchronization__binary-semaphores-or-mutexes",
+          "name": "Binary semaphores or Mutexes",
+          "link": "https://drive.google.com/file/d/1RIR0IBtUOF533ltZlNJqY2YQu2YFQ4FJ/view",
+          "difficulty": "",
+          "kind": "concept",
+          "video": {
+            "fileId": "1RIR0IBtUOF533ltZlNJqY2YQu2YFQ4FJ"
+          }
+        },
+        {
+          "key": "os:process-synchronization__gate-92-question-on-mutex",
+          "name": "Gate 92 question on mutex",
+          "link": "https://drive.google.com/file/d/14cnw78g8GeE-G9AKYmcQC7QWJlwZndPh/view",
+          "difficulty": "",
+          "kind": "problem",
+          "video": {
+            "fileId": "14cnw78g8GeE-G9AKYmcQC7QWJlwZndPh"
+          }
+        },
+        {
+          "key": "os:process-synchronization__mutex-example",
+          "name": "Mutex Example",
+          "link": "https://drive.google.com/file/d/19vi2T2dp96JzOyH-RLsgtAcFt7CsqfVT/view",
+          "difficulty": "",
+          "kind": "concept",
+          "video": {
+            "fileId": "19vi2T2dp96JzOyH-RLsgtAcFt7CsqfVT"
+          }
+        },
+        {
+          "key": "os:process-synchronization__mutex-example-1",
+          "name": "Mutex example 1",
+          "link": "https://drive.google.com/file/d/1MSCNqtqv9dj-E_K2zd4vclubkN78cHCr/view",
+          "difficulty": "",
+          "kind": "concept",
+          "video": {
+            "fileId": "1MSCNqtqv9dj-E_K2zd4vclubkN78cHCr"
+          }
+        },
+        {
+          "key": "os:process-synchronization__gate-2013-question-on-mutex",
+          "name": "Gate 2013 Question on mutex",
+          "link": "https://drive.google.com/file/d/1yh8tqnSQANE6pN3P5e4DEsZPVMLm37GH/view",
+          "difficulty": "",
+          "kind": "problem",
+          "video": {
+            "fileId": "1yh8tqnSQANE6pN3P5e4DEsZPVMLm37GH"
+          }
+        },
+        {
+          "key": "os:process-synchronization__gate-2000-question-mutex",
+          "name": "Gate 2000 Question mutex",
+          "link": "https://drive.google.com/file/d/1ikTU6IJ0-_XioQEGSsjQidk65eOdKV3R/view",
+          "difficulty": "",
+          "kind": "problem",
+          "video": {
+            "fileId": "1ikTU6IJ0-_XioQEGSsjQidk65eOdKV3R"
+          }
+        },
+        {
+          "key": "os:process-synchronization__gate-96-question-on-dining-philosophers-problem",
+          "name": "Gate 96 Question on dining philosophers problem",
+          "link": "https://drive.google.com/file/d/1xjU4qk4EY7jtO_OLdWaurz3nesKCenoc/view",
+          "difficulty": "",
+          "kind": "problem",
+          "video": {
+            "fileId": "1xjU4qk4EY7jtO_OLdWaurz3nesKCenoc"
+          }
+        },
+        {
+          "key": "os:process-synchronization__gate-2003-question-part-1",
+          "name": "Gate 2003 Question (part 1)",
+          "link": "https://drive.google.com/file/d/18_nobjFk0uBPm6qXPpxPisbT1V42usNC/view",
+          "difficulty": "",
+          "kind": "problem",
+          "video": {
+            "fileId": "18_nobjFk0uBPm6qXPpxPisbT1V42usNC"
+          }
+        },
+        {
+          "key": "os:process-synchronization__gate-2003-question-part-2",
+          "name": "Gate 2003 Question (part 2)",
+          "link": "https://drive.google.com/file/d/1gKyFMP7uKPLcu2jAPbhRWauCaBK5yjtm/view",
+          "difficulty": "",
+          "kind": "problem",
+          "video": {
+            "fileId": "1gKyFMP7uKPLcu2jAPbhRWauCaBK5yjtm"
+          }
+        },
+        {
+          "key": "os:process-synchronization__gate-06-question-on-barrier-part-1",
+          "name": "Gate 06 Question on Barrier(part 1)",
+          "link": "https://drive.google.com/file/d/1LdkedApPQJkvzoNY858NvAzGYT9aOBPJ/view",
+          "difficulty": "",
+          "kind": "problem",
+          "video": {
+            "fileId": "1LdkedApPQJkvzoNY858NvAzGYT9aOBPJ"
+          }
+        },
+        {
+          "key": "os:process-synchronization__gate-06-question-on-barrier-part-2",
+          "name": "Gate 06 Question on Barrier(part 2)",
+          "link": "https://drive.google.com/file/d/1W6Jhq-3ffbRlBWIBXhFKBumQhUuYkd84/view",
+          "difficulty": "",
+          "kind": "problem",
+          "video": {
+            "fileId": "1W6Jhq-3ffbRlBWIBXhFKBumQhUuYkd84"
+          }
+        },
+        {
+          "key": "os:process-synchronization__gate-2008-question-on-implementing-counting-semaphore-using-mutexes",
+          "name": "Gate 2008 Question on implementing Counting Semaphore using Mutexes",
+          "link": "https://drive.google.com/file/d/1HksMO3rZf6-_I-7_yr-PCSR9qpZ0mj5Q/view",
+          "difficulty": "",
+          "kind": "problem",
+          "video": {
+            "fileId": "1HksMO3rZf6-_I-7_yr-PCSR9qpZ0mj5Q"
+          }
+        },
+        {
+          "key": "os:process-synchronization__gate-2010-question-on-mutexes",
+          "name": "Gate 2010 Question on Mutexes",
+          "link": "https://drive.google.com/file/d/1p8c8qbSozRG2myxtAIk3cZdEApkTYbWk/view",
+          "difficulty": "",
+          "kind": "problem",
+          "video": {
+            "fileId": "1p8c8qbSozRG2myxtAIk3cZdEApkTYbWk"
+          }
+        },
+        {
+          "key": "os:process-synchronization__gate-2013-question-on-counting-semaphores",
+          "name": "Gate 2013 Question on Counting Semaphores",
+          "link": "https://drive.google.com/file/d/1gYYLCWxMFES6iXhysOCRJLFecvRgVTye/view",
+          "difficulty": "",
+          "kind": "problem",
+          "video": {
+            "fileId": "1gYYLCWxMFES6iXhysOCRJLFecvRgVTye"
+          }
+        },
+        {
+          "key": "os:process-synchronization__gate-1995-question-on-concurrent-processes-and-semaphores",
+          "name": "Gate 1995 Question on Concurrent Processes and Semaphores",
+          "link": "https://drive.google.com/file/d/1r6m73RQlDxCuACgRVgsa3kVtSw8rnlB9/view",
+          "difficulty": "",
+          "kind": "problem",
+          "video": {
+            "fileId": "1r6m73RQlDxCuACgRVgsa3kVtSw8rnlB9"
+          }
+        },
+        {
+          "key": "os:process-synchronization__gate-1993-question-on-concurrent-processes-and-semaphores",
+          "name": "Gate 1993 Question on Concurrent Processes and Semaphores",
+          "link": "https://drive.google.com/file/d/1sotV1G6igilBe-zv0ZST4FiyqNC8mxqi/view",
+          "difficulty": "",
+          "kind": "problem",
+          "video": {
+            "fileId": "1sotV1G6igilBe-zv0ZST4FiyqNC8mxqi"
+          }
+        }
+      ]
+    },
+    {
+      "key": "os-03-deadlocks",
+      "order": 3,
+      "title": "Deadlocks",
+      "problems": [
+        {
+          "key": "os:deadlocks__introduction-to-deadlocks",
+          "name": "Introduction to Deadlocks",
+          "link": "https://drive.google.com/file/d/19SIAtPFPW3xTusImek-I8A7I-AfauOja/view",
+          "difficulty": "",
+          "kind": "concept",
+          "video": {
+            "fileId": "19SIAtPFPW3xTusImek-I8A7I-AfauOja"
+          }
+        },
+        {
+          "key": "os:deadlocks__gate-1997-question-and-more-examples",
+          "name": "Gate 1997 Question and More Examples",
+          "link": "https://drive.google.com/file/d/1P0-5ClAe5ciOWFOMp1xzcSnxycgMvOiO/view",
+          "difficulty": "",
+          "kind": "problem",
+          "video": {
+            "fileId": "1P0-5ClAe5ciOWFOMp1xzcSnxycgMvOiO"
+          }
+        },
+        {
+          "key": "os:deadlocks__gate-1992-question",
+          "name": "Gate 1992 Question",
+          "link": "https://drive.google.com/file/d/1VsbX3IxqOF6zbEy-fe6sYg5zhwlr-0Dp/view",
+          "difficulty": "",
+          "kind": "problem",
+          "video": {
+            "fileId": "1VsbX3IxqOF6zbEy-fe6sYg5zhwlr-0Dp"
+          }
+        },
+        {
+          "key": "os:deadlocks__gate-1993-question-on-minimum-resources-required",
+          "name": "Gate 1993 Question on Minimum Resources required",
+          "link": "https://drive.google.com/file/d/1R1Pg6ObuawxKcOcbuiJRY1sLFjOg1TJI/view",
+          "difficulty": "",
+          "kind": "problem",
+          "video": {
+            "fileId": "1R1Pg6ObuawxKcOcbuiJRY1sLFjOg1TJI"
+          }
+        },
+        {
+          "key": "os:deadlocks__gate-2005-question",
+          "name": "Gate 2005 Question",
+          "link": "https://drive.google.com/file/d/1ZqF4hUJQ8FVwuYOhzEM5zACZAZOx25Ni/view",
+          "difficulty": "",
+          "kind": "problem",
+          "video": {
+            "fileId": "1ZqF4hUJQ8FVwuYOhzEM5zACZAZOx25Ni"
+          }
+        },
+        {
+          "key": "os:deadlocks__gate-06-question-about-necessary-condition-for-deadlock",
+          "name": "Gate 06 Question about necessary condition for Deadlock",
+          "link": "https://drive.google.com/file/d/1RI1OEnvnW8XQsEMzE3YTxhkGmoMK6bUv/view",
+          "difficulty": "",
+          "kind": "problem",
+          "video": {
+            "fileId": "1RI1OEnvnW8XQsEMzE3YTxhkGmoMK6bUv"
+          }
+        },
+        {
+          "key": "os:deadlocks__deadlock-handling-mechanisms",
+          "name": "Deadlock Handling Mechanisms",
+          "link": "https://drive.google.com/file/d/1ReqFy3JipD0igg8pwIlYGeuHN3j1issK/view",
+          "difficulty": "",
+          "kind": "concept",
+          "video": {
+            "fileId": "1ReqFy3JipD0igg8pwIlYGeuHN3j1issK"
+          }
+        },
+        {
+          "key": "os:deadlocks__deadlock-prevention",
+          "name": "Deadlock Prevention",
+          "link": "https://drive.google.com/file/d/1R3J4lr1Yj09ZPqKyrxbjuJrSUY_20B3v/view",
+          "difficulty": "",
+          "kind": "concept",
+          "video": {
+            "fileId": "1R3J4lr1Yj09ZPqKyrxbjuJrSUY_20B3v"
+          }
+        },
+        {
+          "key": "os:deadlocks__safeunsafedeadlock-avoidance-and-bankers-algo",
+          "name": "SafeUnsafeDeadlock avoidance and Bankers Algo",
+          "link": "https://drive.google.com/file/d/1aKJ7hsfQXRoclAyzLok_NRCh5iD1EAJW/view",
+          "difficulty": "",
+          "kind": "concept",
+          "video": {
+            "fileId": "1aKJ7hsfQXRoclAyzLok_NRCh5iD1EAJW"
+          }
+        },
+        {
+          "key": "os:deadlocks__gate-2007-question-on-safe-state",
+          "name": "Gate 2007 Question on Safe State",
+          "link": "https://drive.google.com/file/d/1m0gsz3ulJYU9juCf4UyL5zzgflkEy3gK/view",
+          "difficulty": "",
+          "kind": "problem",
+          "video": {
+            "fileId": "1m0gsz3ulJYU9juCf4UyL5zzgflkEy3gK"
+          }
+        },
+        {
+          "key": "os:deadlocks__question-on-safe-state",
+          "name": "Question on Safe State",
+          "link": "https://drive.google.com/file/d/1dPvDfubN8v97jMC6fuUH7LCdzkXQoBbu/view",
+          "difficulty": "",
+          "kind": "problem",
+          "video": {
+            "fileId": "1dPvDfubN8v97jMC6fuUH7LCdzkXQoBbu"
+          }
+        },
+        {
+          "key": "os:deadlocks__gate-2014-question-on-bankers-algorithm",
+          "name": "Gate 2014 Question on Bankers Algorithm",
+          "link": "https://drive.google.com/file/d/1XPqltbkEzULEX1LPtEd_2POo8JLG38oI/view",
+          "difficulty": "",
+          "kind": "problem",
+          "video": {
+            "fileId": "1XPqltbkEzULEX1LPtEd_2POo8JLG38oI"
+          }
+        },
+        {
+          "key": "os:deadlocks__gate-1996-on-bankers-algorithm",
+          "name": "Gate 1996 on Bankers Algorithm",
+          "link": "https://drive.google.com/file/d/1hYETT6Q_zQ9rh2JV3vlDFtsM99ttz9pw/view",
+          "difficulty": "",
+          "kind": "problem",
+          "video": {
+            "fileId": "1hYETT6Q_zQ9rh2JV3vlDFtsM99ttz9pw"
+          }
+        },
+        {
+          "key": "os:deadlocks__resource-allocation-graph",
+          "name": "Resource Allocation Graph",
+          "link": "https://drive.google.com/file/d/1cd5N53KN5d4JPER4DQisljcy8pXz9R0C/view",
+          "difficulty": "",
+          "kind": "concept",
+          "video": {
+            "fileId": "1cd5N53KN5d4JPER4DQisljcy8pXz9R0C"
+          }
+        },
+        {
+          "key": "os:deadlocks__resource-allocation-graph-examples",
+          "name": "Resource Allocation Graph Examples",
+          "link": "https://drive.google.com/file/d/103lX1AJxdUxKqQGw3IMRmAlwtxQXgYvL/view",
+          "difficulty": "",
+          "kind": "concept",
+          "video": {
+            "fileId": "103lX1AJxdUxKqQGw3IMRmAlwtxQXgYvL"
+          }
+        },
+        {
+          "key": "os:deadlocks__deadlock-detection-and-recovery",
+          "name": "Deadlock Detection and Recovery",
+          "link": "https://drive.google.com/file/d/1HE2hVdDQX969L1ZmLStivjG5Cea7N7H6/view",
+          "difficulty": "",
+          "kind": "concept",
+          "video": {
+            "fileId": "1HE2hVdDQX969L1ZmLStivjG5Cea7N7H6"
+          }
+        }
+      ]
+    },
+    {
+      "key": "os-04-memory-management",
+      "order": 4,
+      "title": "Memory Management",
+      "problems": [
+        {
+          "key": "os:memory-management__need-for-multiprogramming-and-memory-management",
+          "name": "Need for Multiprogramming and Memory Management",
+          "link": "https://drive.google.com/file/d/11Qqo_xtP-pgYBNs68-2a2Cc8N3d9lnnE/view",
+          "difficulty": "",
+          "kind": "concept",
+          "video": {
+            "fileId": "11Qqo_xtP-pgYBNs68-2a2Cc8N3d9lnnE"
+          }
+        },
+        {
+          "key": "os:memory-management__object-code-relocation-and-linker",
+          "name": "Object code Relocation and Linker",
+          "link": "https://drive.google.com/file/d/1L5i3_sJo0SRcELzycqD3yk06xjK-mj-_/view",
+          "difficulty": "",
+          "kind": "concept",
+          "video": {
+            "fileId": "1L5i3_sJo0SRcELzycqD3yk06xjK-mj-_"
+          }
+        },
+        {
+          "key": "os:memory-management__loader",
+          "name": "Loader",
+          "link": "https://drive.google.com/file/d/1Eu09JwbwmJl9F4xWGRMuFyRJiEecqb2L/view",
+          "difficulty": "",
+          "kind": "concept",
+          "video": {
+            "fileId": "1Eu09JwbwmJl9F4xWGRMuFyRJiEecqb2L"
+          }
+        },
+        {
+          "key": "os:memory-management__gate-95-question-on-linker",
+          "name": "Gate 95 question on Linker",
+          "link": "https://drive.google.com/file/d/18W40vwOv9n7oWJNxvV1Fonm5ipdmBhgd/view",
+          "difficulty": "",
+          "kind": "problem",
+          "video": {
+            "fileId": "18W40vwOv9n7oWJNxvV1Fonm5ipdmBhgd"
+          }
+        },
+        {
+          "key": "os:memory-management__gate-98-question-on-loader",
+          "name": "Gate 98 question on Loader",
+          "link": "https://drive.google.com/file/d/1x7ZyIlXGqi49tztrsBJ_iXonvD9dVS1k/view",
+          "difficulty": "",
+          "kind": "problem",
+          "video": {
+            "fileId": "1x7ZyIlXGqi49tztrsBJ_iXonvD9dVS1k"
+          }
+        },
+        {
+          "key": "os:memory-management__2001-question-on-relocation",
+          "name": "2001 Question on Relocation",
+          "link": "https://drive.google.com/file/d/1bXUsthJ5whZ-wrmWi4cN2WGGQZ_483GN/view",
+          "difficulty": "",
+          "kind": "problem",
+          "video": {
+            "fileId": "1bXUsthJ5whZ-wrmWi4cN2WGGQZ_483GN"
+          }
+        },
+        {
+          "key": "os:memory-management__gate-2004-question-on-linker",
+          "name": "Gate 2004 Question on Linker",
+          "link": "https://drive.google.com/file/d/1k5U_NWRvMvabQnJ9GOkvuNe9cHZtxgWG/view",
+          "difficulty": "",
+          "kind": "problem",
+          "video": {
+            "fileId": "1k5U_NWRvMvabQnJ9GOkvuNe9cHZtxgWG"
+          }
+        },
+        {
+          "key": "os:memory-management__gate-2002-question-on-dynamic-linked-libraries",
+          "name": "Gate 2002 question on Dynamic Linked Libraries",
+          "link": "https://drive.google.com/file/d/1_AOmkzcPm5fuEnQScQofm2OJA7IZD_xD/view",
+          "difficulty": "",
+          "kind": "problem",
+          "video": {
+            "fileId": "1_AOmkzcPm5fuEnQScQofm2OJA7IZD_xD"
+          }
+        },
+        {
+          "key": "os:memory-management__gate-2003-question-on-linking",
+          "name": "Gate 2003 Question on Linking",
+          "link": "https://drive.google.com/file/d/1eULeZyj6McUraPFQku7PvKhf6xZVBlHq/view",
+          "difficulty": "",
+          "kind": "problem",
+          "video": {
+            "fileId": "1eULeZyj6McUraPFQku7PvKhf6xZVBlHq"
+          }
+        },
+        {
+          "key": "os:memory-management__fixed-partitioning",
+          "name": "Fixed Partitioning",
+          "link": "https://drive.google.com/file/d/1l6OLDIwjWPW_08vfoYSgZG5UB9SD3el0/view",
+          "difficulty": "",
+          "kind": "concept",
+          "video": {
+            "fileId": "1l6OLDIwjWPW_08vfoYSgZG5UB9SD3el0"
+          }
+        },
+        {
+          "key": "os:memory-management__relocation-and-protection-in-contiguous-memory-allocation",
+          "name": "Relocation and Protection in Contiguous Memory Allocation",
+          "link": "https://drive.google.com/file/d/1Bf3mjdChqVZLDXd_Lzf7KS16ksWW90F8/view",
+          "difficulty": "",
+          "kind": "concept",
+          "video": {
+            "fileId": "1Bf3mjdChqVZLDXd_Lzf7KS16ksWW90F8"
+          }
+        },
+        {
+          "key": "os:memory-management__dynamic-partitioning",
+          "name": "Dynamic Partitioning",
+          "link": "https://drive.google.com/file/d/1neVFTJmBDr0kqU2nn-TKvJyCZCpZH7nk/view",
+          "difficulty": "",
+          "kind": "concept",
+          "video": {
+            "fileId": "1neVFTJmBDr0kqU2nn-TKvJyCZCpZH7nk"
+          }
+        },
+        {
+          "key": "os:memory-management__bit-map-for-dynamic-partitioning",
+          "name": "Bit Map for Dynamic Partitioning",
+          "link": "https://drive.google.com/file/d/1I120LyMMZyWmNurf5-wkyFoOSOTAD-0-/view",
+          "difficulty": "",
+          "kind": "concept",
+          "video": {
+            "fileId": "1I120LyMMZyWmNurf5-wkyFoOSOTAD-0-"
+          }
+        },
+        {
+          "key": "os:memory-management__linked-list-for-dynamic-partitioning",
+          "name": "Linked List for Dynamic Partitioning",
+          "link": "https://drive.google.com/file/d/1tnZcNkUuCWsfBeRkbevI2LTTQJyMGqX2/view",
+          "difficulty": "",
+          "kind": "concept",
+          "video": {
+            "fileId": "1tnZcNkUuCWsfBeRkbevI2LTTQJyMGqX2"
+          }
+        },
+        {
+          "key": "os:memory-management__first-fit-next-fit-best-fit-worst-fit",
+          "name": "First fit Next fit Best fit Worst fit",
+          "link": "https://drive.google.com/file/d/1txkZKQ_aTvuwpKFFLeu4TA6yFtTctNCj/view",
+          "difficulty": "",
+          "kind": "concept",
+          "video": {
+            "fileId": "1txkZKQ_aTvuwpKFFLeu4TA6yFtTctNCj"
+          }
+        },
+        {
+          "key": "os:memory-management__gate-2004-question-on-first-fit-and-best-fit",
+          "name": "Gate 2004 Question on First fit and Best fit",
+          "link": "https://drive.google.com/file/d/1JiVo3Dwh2vyjRImM5BnGEYHzfoCbUBeh/view",
+          "difficulty": "",
+          "kind": "problem",
+          "video": {
+            "fileId": "1JiVo3Dwh2vyjRImM5BnGEYHzfoCbUBeh"
+          }
+        },
+        {
+          "key": "os:memory-management__variable-partitioning",
+          "name": "Variable Partitioning",
+          "link": "https://drive.google.com/file/d/1WQgzoD8EHHhXcPwMahA59FU_OWj5bj4e/view",
+          "difficulty": "",
+          "kind": "concept",
+          "video": {
+            "fileId": "1WQgzoD8EHHhXcPwMahA59FU_OWj5bj4e"
+          }
+        },
+        {
+          "key": "os:memory-management__gate-98-question-on-fixed-partitioning",
+          "name": "Gate 98 Question on Fixed Partitioning",
+          "link": "https://drive.google.com/file/d/1x6aSWjA1RPks9eBLS6lQMLgqcO1ZZy7b/view",
+          "difficulty": "",
+          "kind": "problem",
+          "video": {
+            "fileId": "1x6aSWjA1RPks9eBLS6lQMLgqcO1ZZy7b"
+          }
+        },
+        {
+          "key": "os:memory-management__summary-on-partitioning",
+          "name": "Summary on Partitioning",
+          "link": "https://drive.google.com/file/d/1s5VgWJno98FScS2iTZX7l-ffOC8S-Cug/view",
+          "difficulty": "",
+          "kind": "concept",
+          "video": {
+            "fileId": "1s5VgWJno98FScS2iTZX7l-ffOC8S-Cug"
+          }
+        },
+        {
+          "key": "os:memory-management__overlays",
+          "name": "Overlays",
+          "link": "https://drive.google.com/file/d/1u71eFsobIOkOmkxXXk2YzVCp3vO_RXps/view",
+          "difficulty": "",
+          "kind": "concept",
+          "video": {
+            "fileId": "1u71eFsobIOkOmkxXXk2YzVCp3vO_RXps"
+          }
+        },
+        {
+          "key": "os:memory-management__gate-98-question-on-overlays",
+          "name": "Gate 98 question on Overlays",
+          "link": "https://drive.google.com/file/d/1xnK7pLB_DYSiDbEZWtH2z0N06cUJd54t/view",
+          "difficulty": "",
+          "kind": "problem",
+          "video": {
+            "fileId": "1xnK7pLB_DYSiDbEZWtH2z0N06cUJd54t"
+          }
+        },
+        {
+          "key": "os:memory-management__need-for-paging",
+          "name": "Need for Paging",
+          "link": "https://drive.google.com/file/d/1SXz90sfOPpDGAEohISZF5CNz0wbKwLBn/view",
+          "difficulty": "",
+          "kind": "concept",
+          "video": {
+            "fileId": "1SXz90sfOPpDGAEohISZF5CNz0wbKwLBn"
+          }
+        },
+        {
+          "key": "os:memory-management__paging-explained-with-example",
+          "name": "Paging explained with Example",
+          "link": "https://drive.google.com/file/d/1JYdY8dHo8cvA6V-mdDiP3_RAuFvmBQvt/view",
+          "difficulty": "",
+          "kind": "concept",
+          "video": {
+            "fileId": "1JYdY8dHo8cvA6V-mdDiP3_RAuFvmBQvt"
+          }
+        },
+        {
+          "key": "os:memory-management__basics-of-binary-addresses",
+          "name": "Basics of Binary Addresses",
+          "link": "https://drive.google.com/file/d/1y9W5fgmzmA607dWHNGgitKXZIqERpL7-/view",
+          "difficulty": "",
+          "kind": "concept",
+          "video": {
+            "fileId": "1y9W5fgmzmA607dWHNGgitKXZIqERpL7-"
+          }
+        },
+        {
+          "key": "os:memory-management__physical-address-space-and-logical-address-space",
+          "name": "Physical Address Space and Logical Address Space",
+          "link": "https://drive.google.com/file/d/1kFyQlZYjTQrwlCaYgli0hJxhhg5p64JQ/view",
+          "difficulty": "",
+          "kind": "concept",
+          "video": {
+            "fileId": "1kFyQlZYjTQrwlCaYgli0hJxhhg5p64JQ"
+          }
+        },
+        {
+          "key": "os:memory-management__page-table",
+          "name": "Page Table",
+          "link": "https://drive.google.com/file/d/1WMl5SLazgEfIIIpjlWW_pYOobAEH6d_P/view",
+          "difficulty": "",
+          "kind": "concept",
+          "video": {
+            "fileId": "1WMl5SLazgEfIIIpjlWW_pYOobAEH6d_P"
+          }
+        },
+        {
+          "key": "os:memory-management__numerical-on-paging",
+          "name": "Numerical on paging",
+          "link": "https://drive.google.com/file/d/1pxYJLBjFqsMBvNnbj8q9inFDf7RC-LXa/view",
+          "difficulty": "",
+          "kind": "concept",
+          "video": {
+            "fileId": "1pxYJLBjFqsMBvNnbj8q9inFDf7RC-LXa"
+          }
+        },
+        {
+          "key": "os:memory-management__page-table-entry",
+          "name": "Page Table Entry",
+          "link": "https://drive.google.com/file/d/1wW_v5g55Iwvoslng68A7NDrhgmGBCnu5/view",
+          "difficulty": "",
+          "kind": "concept",
+          "video": {
+            "fileId": "1wW_v5g55Iwvoslng68A7NDrhgmGBCnu5"
+          }
+        },
+        {
+          "key": "os:memory-management__gate-2004-question-on-page-table-entry",
+          "name": "Gate 2004 question on Page Table Entry",
+          "link": "https://drive.google.com/file/d/1mAINarry6ztQ-_eEOGAlZEaU0vDRBPyL/view",
+          "difficulty": "",
+          "kind": "problem",
+          "video": {
+            "fileId": "1mAINarry6ztQ-_eEOGAlZEaU0vDRBPyL"
+          }
+        },
+        {
+          "key": "os:memory-management__need-for-multi-level-paging",
+          "name": "Need for Multi Level Paging",
+          "link": "https://drive.google.com/file/d/1IDPShnRm1FA7QkLe4pzNdjpWhhsVaJis/view",
+          "difficulty": "",
+          "kind": "concept",
+          "video": {
+            "fileId": "1IDPShnRm1FA7QkLe4pzNdjpWhhsVaJis"
+          }
+        },
+        {
+          "key": "os:memory-management__two-level-paging-example",
+          "name": "Two-Level Paging Example",
+          "link": "https://drive.google.com/file/d/1HpZegBoi-8mAU9-R03cm6IkqTRWJ4Y1j/view",
+          "difficulty": "",
+          "kind": "concept",
+          "video": {
+            "fileId": "1HpZegBoi-8mAU9-R03cm6IkqTRWJ4Y1j"
+          }
+        },
+        {
+          "key": "os:memory-management__examples-on-multi-level-paging",
+          "name": "Examples on Multi Level Paging",
+          "link": "https://drive.google.com/file/d/1ZcVj2Pt8JoH4LnI480WDIZ-QZoVZrrV2/view",
+          "difficulty": "",
+          "kind": "concept",
+          "video": {
+            "fileId": "1ZcVj2Pt8JoH4LnI480WDIZ-QZoVZrrV2"
+          }
+        },
+        {
+          "key": "os:memory-management__more-examples-on-multi-level-pages",
+          "name": "More Examples on Multi Level Pages",
+          "link": "https://drive.google.com/file/d/1m5tV7nLHx-zKUbknsfPAoGBUm2N99xy9/view",
+          "difficulty": "",
+          "kind": "concept",
+          "video": {
+            "fileId": "1m5tV7nLHx-zKUbknsfPAoGBUm2N99xy9"
+          }
+        },
+        {
+          "key": "os:memory-management__examples-on-how-to-make-page-table-fit-in-one-page",
+          "name": "Examples on How to make Page Table Fit in One Page",
+          "link": "https://drive.google.com/file/d/1mWuvazCS4oKMooz64UXcN7jExOvjplBb/view",
+          "difficulty": "",
+          "kind": "concept",
+          "video": {
+            "fileId": "1mWuvazCS4oKMooz64UXcN7jExOvjplBb"
+          }
+        },
+        {
+          "key": "os:memory-management__gate-01-and-99-question-on-paging",
+          "name": "Gate 01 and 99 Question on Paging",
+          "link": "https://drive.google.com/file/d/1fbiXYBQ6JD444MYDO4nKB1kpLGxkNYeI/view",
+          "difficulty": "",
+          "kind": "problem",
+          "video": {
+            "fileId": "1fbiXYBQ6JD444MYDO4nKB1kpLGxkNYeI"
+          }
+        },
+        {
+          "key": "os:memory-management__gate-theory-questions",
+          "name": "Gate theory questions",
+          "link": "https://drive.google.com/file/d/1qR63A5WIVyE2CpQqUMkEQiGW9ZFzvZhC/view",
+          "difficulty": "",
+          "kind": "problem",
+          "video": {
+            "fileId": "1qR63A5WIVyE2CpQqUMkEQiGW9ZFzvZhC"
+          }
+        },
+        {
+          "key": "os:memory-management__gate-2008-question-on-multi-level-paging",
+          "name": "Gate 2008 question on multi level paging",
+          "link": "https://drive.google.com/file/d/1K0ral3II0li2n-AKstA4_NSqDfN-qXf3/view",
+          "difficulty": "",
+          "kind": "problem",
+          "video": {
+            "fileId": "1K0ral3II0li2n-AKstA4_NSqDfN-qXf3"
+          }
+        },
+        {
+          "key": "os:memory-management__gate-2009-question-on-multi-level-paging",
+          "name": "Gate 2009 question on Multi level Paging",
+          "link": "https://drive.google.com/file/d/1MziTKNkX_qRdec-1ElrT98-CRqMP1lT4/view",
+          "difficulty": "",
+          "kind": "problem",
+          "video": {
+            "fileId": "1MziTKNkX_qRdec-1ElrT98-CRqMP1lT4"
+          }
+        },
+        {
+          "key": "os:memory-management__gate-2002-question-multi-level-paging",
+          "name": "Gate 2002 question Multi level Paging",
+          "link": "https://drive.google.com/file/d/1l7eYAVZXsT8tJ_TOoOdljcS-7aPV63Eu/view",
+          "difficulty": "",
+          "kind": "problem",
+          "video": {
+            "fileId": "1l7eYAVZXsT8tJ_TOoOdljcS-7aPV63Eu"
+          }
+        },
+        {
+          "key": "os:memory-management__gate-2008-it-question",
+          "name": "Gate 2008 IT question",
+          "link": "https://drive.google.com/file/d/1BIGHVmYtVzdQW3ljGvEfsTQ7rPR-jM0N/view",
+          "difficulty": "",
+          "kind": "problem",
+          "video": {
+            "fileId": "1BIGHVmYtVzdQW3ljGvEfsTQ7rPR-jM0N"
+          }
+        },
+        {
+          "key": "os:memory-management__gate-2013-question-on-multi-level-paging",
+          "name": "Gate 2013 question on Multi level paging",
+          "link": "https://drive.google.com/file/d/1SKEFGSu3mjBI_VPpW0jU-KGsLDiHMRG-/view",
+          "difficulty": "",
+          "kind": "problem",
+          "video": {
+            "fileId": "1SKEFGSu3mjBI_VPpW0jU-KGsLDiHMRG-"
+          }
+        },
+        {
+          "key": "os:memory-management__finding-optimal-page-size",
+          "name": "Finding Optimal Page Size",
+          "link": "https://drive.google.com/file/d/1TGRImsLT7I0bIfEVbkb5qZtUm_QlFhCH/view",
+          "difficulty": "",
+          "kind": "concept",
+          "video": {
+            "fileId": "1TGRImsLT7I0bIfEVbkb5qZtUm_QlFhCH"
+          }
+        },
+        {
+          "key": "os:memory-management__vm-introduction",
+          "name": "VM Introduction",
+          "link": "https://drive.google.com/file/d/1fB1cu6jGXllt7HDEzYDyPxooiV8ifN1G/view",
+          "difficulty": "",
+          "kind": "concept",
+          "video": {
+            "fileId": "1fB1cu6jGXllt7HDEzYDyPxooiV8ifN1G"
+          }
+        },
+        {
+          "key": "os:memory-management__tlb",
+          "name": "TLB",
+          "link": "https://drive.google.com/file/d/1nhbRndL98n396WMV1d1ed0zvLv2XUE8U/view",
+          "difficulty": "",
+          "kind": "concept",
+          "video": {
+            "fileId": "1nhbRndL98n396WMV1d1ed0zvLv2XUE8U"
+          }
+        },
+        {
+          "key": "os:memory-management__gate-2008-question-on-tlb",
+          "name": "Gate 2008 question on TLB",
+          "link": "https://drive.google.com/file/d/17P5l6Ld_wDHX8vokT-Gh2CDzaJUZT5Lt/view",
+          "difficulty": "",
+          "kind": "problem",
+          "video": {
+            "fileId": "17P5l6Ld_wDHX8vokT-Gh2CDzaJUZT5Lt"
+          }
+        },
+        {
+          "key": "os:memory-management__numericals-on-tlb",
+          "name": "Numericals on TLB",
+          "link": "https://drive.google.com/file/d/1vle0v4AzBlX_5IW6LlTDB4TqmUTH_IR8/view",
+          "difficulty": "",
+          "kind": "concept",
+          "video": {
+            "fileId": "1vle0v4AzBlX_5IW6LlTDB4TqmUTH_IR8"
+          }
+        },
+        {
+          "key": "os:memory-management__tlb-summary",
+          "name": "TLB summary",
+          "link": "https://drive.google.com/file/d/19HrWwRLkhm9GEseA1dhIIL2IwmQ4CVS9/view",
+          "difficulty": "",
+          "kind": "concept",
+          "video": {
+            "fileId": "19HrWwRLkhm9GEseA1dhIIL2IwmQ4CVS9"
+          }
+        },
+        {
+          "key": "os:memory-management__page-fault",
+          "name": "Page fault",
+          "link": "https://drive.google.com/file/d/1GmXbq8MehXBROdJpiAhTnrIBkp4G27no/view",
+          "difficulty": "",
+          "kind": "concept",
+          "video": {
+            "fileId": "1GmXbq8MehXBROdJpiAhTnrIBkp4G27no"
+          }
+        },
+        {
+          "key": "os:memory-management__gate-2011-question-on-page-fault",
+          "name": "Gate 2011 question on Page fault",
+          "link": "https://drive.google.com/file/d/1_PnswtjcV_vERRLMmR33kIaTv0vyRGDX/view",
+          "difficulty": "",
+          "kind": "problem",
+          "video": {
+            "fileId": "1_PnswtjcV_vERRLMmR33kIaTv0vyRGDX"
+          }
+        },
+        {
+          "key": "os:memory-management__gate-98-question-on-page-fault",
+          "name": "Gate 98 question on Page fault",
+          "link": "https://drive.google.com/file/d/1m4AOM-DrMTnGGxqFUyliO1VEa7w6b69H/view",
+          "difficulty": "",
+          "kind": "problem",
+          "video": {
+            "fileId": "1m4AOM-DrMTnGGxqFUyliO1VEa7w6b69H"
+          }
+        },
+        {
+          "key": "os:memory-management__gate-2000-question-on-page-fault",
+          "name": "Gate 2000 question on Page fault",
+          "link": "https://drive.google.com/file/d/1i_XFWNQ4m6pJW8jdb5L2NGpUt7vQn5qw/view",
+          "difficulty": "",
+          "kind": "problem",
+          "video": {
+            "fileId": "1i_XFWNQ4m6pJW8jdb5L2NGpUt7vQn5qw"
+          }
+        },
+        {
+          "key": "os:memory-management__gate-2007-question-on-page-fault-and-dirty-bit",
+          "name": "Gate 2007 question on page fault and dirty bit",
+          "link": "https://drive.google.com/file/d/1xidvLbxPJSm3avnqf8MyRB9-5j3evNK-/view",
+          "difficulty": "",
+          "kind": "problem",
+          "video": {
+            "fileId": "1xidvLbxPJSm3avnqf8MyRB9-5j3evNK-"
+          }
+        },
+        {
+          "key": "os:memory-management__gate-2003-question-on-tlb-and-paging",
+          "name": "GATE 2003 question on TLB and paging",
+          "link": "https://drive.google.com/file/d/1Y-drOn3hpeNg9xp45pyMRWsd9Fjbk6pS/view",
+          "difficulty": "",
+          "kind": "problem",
+          "video": {
+            "fileId": "1Y-drOn3hpeNg9xp45pyMRWsd9Fjbk6pS"
+          }
+        },
+        {
+          "key": "os:memory-management__gate-2014-question-on-tlb",
+          "name": "GATE 2014 question on TLB",
+          "link": "https://drive.google.com/file/d/1-tiR3Syad1NCiYVCK-Mypv-Kmiukz4Pu/view",
+          "difficulty": "",
+          "kind": "problem",
+          "video": {
+            "fileId": "1-tiR3Syad1NCiYVCK-Mypv-Kmiukz4Pu"
+          }
+        },
+        {
+          "key": "os:memory-management__inverted-page-table",
+          "name": "Inverted page table",
+          "link": "https://drive.google.com/file/d/1iwvvN9JLcbpDHnyf_vigcZuqzEnuznwS/view",
+          "difficulty": "",
+          "kind": "concept",
+          "video": {
+            "fileId": "1iwvvN9JLcbpDHnyf_vigcZuqzEnuznwS"
+          }
+        },
+        {
+          "key": "os:memory-management__importance-of-frame-allocation-and-page-replacement",
+          "name": "Importance of frame allocation and page replacement",
+          "link": "https://drive.google.com/file/d/1vCgqJYFfIUad-J-2ocQb49nwmK3yCxyS/view",
+          "difficulty": "",
+          "kind": "concept",
+          "video": {
+            "fileId": "1vCgqJYFfIUad-J-2ocQb49nwmK3yCxyS"
+          }
+        },
+        {
+          "key": "os:memory-management__page-replacement-algorithm",
+          "name": "Page replacement algorithm",
+          "link": "https://drive.google.com/file/d/1CATTs-pc_FHGXwvumahekTUjdBmm9ec8/view",
+          "difficulty": "",
+          "kind": "concept",
+          "video": {
+            "fileId": "1CATTs-pc_FHGXwvumahekTUjdBmm9ec8"
+          }
+        },
+        {
+          "key": "os:memory-management__questions-on-page-replacement-algorithms-1",
+          "name": "Questions on Page replacement algorithms 1",
+          "link": "https://drive.google.com/file/d/1azgvDFJboeiJV6HA-khJy8pGXiLiPSCo/view",
+          "difficulty": "",
+          "kind": "problem",
+          "video": {
+            "fileId": "1azgvDFJboeiJV6HA-khJy8pGXiLiPSCo"
+          }
+        },
+        {
+          "key": "os:memory-management__questions-on-page-replacement-algorithms-2",
+          "name": "Questions on Page replacement algorithms 2",
+          "link": "https://drive.google.com/file/d/1-T39EgOUzSlGhroWdzV9PsmCK90LvI0r/view",
+          "difficulty": "",
+          "kind": "problem",
+          "video": {
+            "fileId": "1-T39EgOUzSlGhroWdzV9PsmCK90LvI0r"
+          }
+        },
+        {
+          "key": "os:memory-management__gate-questions-on-page-replacement-algorithms-3",
+          "name": "Gate Questions on Page replacement algorithms 3",
+          "link": "https://drive.google.com/file/d/1S5qbfvrmZ8bbQyP4TvjSCy3MLpWg3wAp/view",
+          "difficulty": "",
+          "kind": "problem",
+          "video": {
+            "fileId": "1S5qbfvrmZ8bbQyP4TvjSCy3MLpWg3wAp"
+          }
+        },
+        {
+          "key": "os:memory-management__gate-questions-on-page-replacement-algorithms-4",
+          "name": "Gate questions on Page replacement algorithms 4",
+          "link": "https://drive.google.com/file/d/19nE_D0ejKdvwAmybU3WnB2CSBaq-FosY/view",
+          "difficulty": "",
+          "kind": "problem",
+          "video": {
+            "fileId": "19nE_D0ejKdvwAmybU3WnB2CSBaq-FosY"
+          }
+        },
+        {
+          "key": "os:memory-management__gate-questions-on-page-replacement-algorithms-5",
+          "name": "Gate Questions on Page replacement algorithms 5",
+          "link": "https://drive.google.com/file/d/1L92mdk0uP18EgmG9gLN8x6U5pwbzl5CQ/view",
+          "difficulty": "",
+          "kind": "problem",
+          "video": {
+            "fileId": "1L92mdk0uP18EgmG9gLN8x6U5pwbzl5CQ"
+          }
+        },
+        {
+          "key": "os:memory-management__beladys-anamoly",
+          "name": "Beladys Anamoly",
+          "link": "https://drive.google.com/file/d/1N1JJVf6s1gd26SKrD65BZM-P81983f5f/view",
+          "difficulty": "",
+          "kind": "concept",
+          "video": {
+            "fileId": "1N1JJVf6s1gd26SKrD65BZM-P81983f5f"
+          }
+        },
+        {
+          "key": "os:memory-management__stack-algorithms",
+          "name": "Stack algorithms",
+          "link": "https://drive.google.com/file/d/1338X3k2t2_TGgyKK7GpKGRvHy0vd9j0e/view",
+          "difficulty": "",
+          "kind": "concept",
+          "video": {
+            "fileId": "1338X3k2t2_TGgyKK7GpKGRvHy0vd9j0e"
+          }
+        },
+        {
+          "key": "os:memory-management__94-question-on-lru-lfu-and-fifo",
+          "name": "94 question on LRU LFU and FIFO",
+          "link": "https://drive.google.com/file/d/1gyh80YvdBWeAF2bHK1Dfkl0bfs0TfRSP/view",
+          "difficulty": "",
+          "kind": "problem",
+          "video": {
+            "fileId": "1gyh80YvdBWeAF2bHK1Dfkl0bfs0TfRSP"
+          }
+        },
+        {
+          "key": "os:memory-management__gate-2007-question-on-fifo",
+          "name": "Gate 2007 question on FIFO",
+          "link": "https://drive.google.com/file/d/1FMBZ9ay5af2leRN-t0WUxpw6Ji3qhB7k/view",
+          "difficulty": "",
+          "kind": "problem",
+          "video": {
+            "fileId": "1FMBZ9ay5af2leRN-t0WUxpw6Ji3qhB7k"
+          }
+        },
+        {
+          "key": "os:memory-management__gate-2010-question-on-fifo",
+          "name": "Gate 2010 question on FIFO",
+          "link": "https://drive.google.com/file/d/1UgjDDR3CS6TlBRiRWzmChQaQX85KqWv9/view",
+          "difficulty": "",
+          "kind": "problem",
+          "video": {
+            "fileId": "1UgjDDR3CS6TlBRiRWzmChQaQX85KqWv9"
+          }
+        },
+        {
+          "key": "os:memory-management__some-interesting-behaviour-of-optimal-page-replacement-algorithm",
+          "name": "some interesting behaviour of optimal page replacement algorithm",
+          "link": "https://drive.google.com/file/d/1vyMV1SWsqiPQwHy2JTB-TbCkJ1-E7pgJ/view",
+          "difficulty": "",
+          "kind": "concept",
+          "video": {
+            "fileId": "1vyMV1SWsqiPQwHy2JTB-TbCkJ1-E7pgJ"
+          }
+        },
+        {
+          "key": "os:memory-management__gate-2014-question-on-lru-mru-lifo-fifo-and-optimal",
+          "name": "Gate 2014 question on LRU MRU LIFO FIFO and optimal",
+          "link": "https://drive.google.com/file/d/1v5OvXZhVrwUo9mYkazTb6gQiMc4F28xO/view",
+          "difficulty": "",
+          "kind": "problem",
+          "video": {
+            "fileId": "1v5OvXZhVrwUo9mYkazTb6gQiMc4F28xO"
+          }
+        },
+        {
+          "key": "os:memory-management__working-set-algorithm",
+          "name": "working set algorithm",
+          "link": "https://drive.google.com/file/d/1MvrpZuHfnmwyz6MilCeiwaazdq4GCHhx/view",
+          "difficulty": "",
+          "kind": "concept",
+          "video": {
+            "fileId": "1MvrpZuHfnmwyz6MilCeiwaazdq4GCHhx"
+          }
+        },
+        {
+          "key": "os:memory-management__page-replacement-algorithms-implementation-1",
+          "name": "Page replacement algorithms implementation 1",
+          "link": "https://drive.google.com/file/d/1apx_awZ9vDMDitv5scFZ2swUQ8_n2k3h/view",
+          "difficulty": "",
+          "kind": "concept",
+          "video": {
+            "fileId": "1apx_awZ9vDMDitv5scFZ2swUQ8_n2k3h"
+          }
+        },
+        {
+          "key": "os:memory-management__page-replacement-algorithms-implementation-2",
+          "name": "Page replacement algorithms implementation 2",
+          "link": "https://drive.google.com/file/d/1p_uQuurug4s3xDerQj9FVeBQzaTfsFKh/view",
+          "difficulty": "",
+          "kind": "concept",
+          "video": {
+            "fileId": "1p_uQuurug4s3xDerQj9FVeBQzaTfsFKh"
+          }
+        },
+        {
+          "key": "os:memory-management__page-replacement-algorithm-implementation-3",
+          "name": "Page replacement algorithm implementation 3",
+          "link": "https://drive.google.com/file/d/1Ge3087xiWsSNy0boD4jnXKd-8OeFWmrk/view",
+          "difficulty": "",
+          "kind": "concept",
+          "video": {
+            "fileId": "1Ge3087xiWsSNy0boD4jnXKd-8OeFWmrk"
+          }
+        },
+        {
+          "key": "os:memory-management__segmentation",
+          "name": "Segmentation",
+          "link": "https://drive.google.com/file/d/1hpX_2XxDyq_AmDq-ZItA1uFC_3OnDHjs/view",
+          "difficulty": "",
+          "kind": "concept",
+          "video": {
+            "fileId": "1hpX_2XxDyq_AmDq-ZItA1uFC_3OnDHjs"
+          }
+        },
+        {
+          "key": "os:memory-management__segmented-paging",
+          "name": "Segmented Paging",
+          "link": "https://drive.google.com/file/d/1L0PENl-AVGDcY53m1zLQ10YemCC1S1hw/view",
+          "difficulty": "",
+          "kind": "concept",
+          "video": {
+            "fileId": "1L0PENl-AVGDcY53m1zLQ10YemCC1S1hw"
+          }
+        },
+        {
+          "key": "os:memory-management__gate-99-question-on-segmented-paint",
+          "name": "GATE 99 question on segmented paint",
+          "link": "https://drive.google.com/file/d/1flQWOJWF9XkeRoM9-3ahG6v-wew68tSv/view",
+          "difficulty": "",
+          "kind": "problem",
+          "video": {
+            "fileId": "1flQWOJWF9XkeRoM9-3ahG6v-wew68tSv"
+          }
+        }
+      ]
+    },
+    {
+      "key": "os-05-file-system-i-o-protection",
+      "order": 5,
+      "title": "File System, I/O & Protection",
+      "problems": [
+        {
+          "key": "os:file-system-i-o-protection__attributes-and-operations-on-files",
+          "name": "Attributes and operations on files",
+          "link": "https://drive.google.com/file/d/10uS0WZgTf6WYix0kZDHQTEQ0o0MdCgqE/view",
+          "difficulty": "",
+          "kind": "concept",
+          "video": {
+            "fileId": "10uS0WZgTf6WYix0kZDHQTEQ0o0MdCgqE"
+          }
+        },
+        {
+          "key": "os:file-system-i-o-protection__open-file-tables",
+          "name": "Open file tables",
+          "link": "https://drive.google.com/file/d/1Oz9NYQFBSG_64gKvb8C3rmC2WE873tgY/view",
+          "difficulty": "",
+          "kind": "concept",
+          "video": {
+            "fileId": "1Oz9NYQFBSG_64gKvb8C3rmC2WE873tgY"
+          }
+        },
+        {
+          "key": "os:file-system-i-o-protection__accessing-files",
+          "name": "Accessing files",
+          "link": "https://drive.google.com/file/d/1qQeVoG5vsAdsjBpGnNMtZoJv-zqtG0Ey/view",
+          "difficulty": "",
+          "kind": "concept",
+          "video": {
+            "fileId": "1qQeVoG5vsAdsjBpGnNMtZoJv-zqtG0Ey"
+          }
+        },
+        {
+          "key": "os:file-system-i-o-protection__directory-structure",
+          "name": "Directory structure",
+          "link": "https://drive.google.com/file/d/12XqcdG57OCnoKmutDv8igvZ36bI7ShEp/view",
+          "difficulty": "",
+          "kind": "concept",
+          "video": {
+            "fileId": "12XqcdG57OCnoKmutDv8igvZ36bI7ShEp"
+          }
+        },
+        {
+          "key": "os:file-system-i-o-protection__single-level-vs-two-level-directory",
+          "name": "Single level VS Two level directory",
+          "link": "https://drive.google.com/file/d/13dJ-8Rgh3Sea0Xy7TBeyfUlZWznwvH0S/view",
+          "difficulty": "",
+          "kind": "concept",
+          "video": {
+            "fileId": "13dJ-8Rgh3Sea0Xy7TBeyfUlZWznwvH0S"
+          }
+        },
+        {
+          "key": "os:file-system-i-o-protection__tree-structured-directory",
+          "name": "Tree structured directory",
+          "link": "https://drive.google.com/file/d/1hwQ0CyKuxhhUGpQZJdw08lmY8Oy3ZkSe/view",
+          "difficulty": "",
+          "kind": "concept",
+          "video": {
+            "fileId": "1hwQ0CyKuxhhUGpQZJdw08lmY8Oy3ZkSe"
+          }
+        },
+        {
+          "key": "os:file-system-i-o-protection__acyclic-graph-structured-directory",
+          "name": "Acyclic Graph structured directory",
+          "link": "https://drive.google.com/file/d/1nFcptdsk9ORaMSQ-uwxgx6TxNnjBRe-9/view",
+          "difficulty": "",
+          "kind": "concept",
+          "video": {
+            "fileId": "1nFcptdsk9ORaMSQ-uwxgx6TxNnjBRe-9"
+          }
+        },
+        {
+          "key": "os:file-system-i-o-protection__file-systems",
+          "name": "File systems",
+          "link": "https://drive.google.com/file/d/1achFppCqncWxepuTZKbaZnEf7MqHHUD-/view",
+          "difficulty": "",
+          "kind": "concept",
+          "video": {
+            "fileId": "1achFppCqncWxepuTZKbaZnEf7MqHHUD-"
+          }
+        },
+        {
+          "key": "os:file-system-i-o-protection__file-system-structure",
+          "name": "File system structure",
+          "link": "https://drive.google.com/file/d/1wwwQQ_7t0MiNJD5vGt2hCueExP8g1Wcx/view",
+          "difficulty": "",
+          "kind": "concept",
+          "video": {
+            "fileId": "1wwwQQ_7t0MiNJD5vGt2hCueExP8g1Wcx"
+          }
+        },
+        {
+          "key": "os:file-system-i-o-protection__mbr",
+          "name": "MBR",
+          "link": "https://drive.google.com/file/d/1kX9ftCAssEUNTyH3gMiQ6g_Ql6Mam9Nk/view",
+          "difficulty": "",
+          "kind": "concept",
+          "video": {
+            "fileId": "1kX9ftCAssEUNTyH3gMiQ6g_Ql6Mam9Nk"
+          }
+        },
+        {
+          "key": "os:file-system-i-o-protection__on-disk-data-structure-uses-in-file-system-implication",
+          "name": "On disk data structure uses in file system implication",
+          "link": "https://drive.google.com/file/d/1uMSmDgBsZ7OCF7BVeP9cEl-wCYNPA5d8/view",
+          "difficulty": "",
+          "kind": "concept",
+          "video": {
+            "fileId": "1uMSmDgBsZ7OCF7BVeP9cEl-wCYNPA5d8"
+          }
+        },
+        {
+          "key": "os:file-system-i-o-protection__in-memory-data-structure-in-file-system-implementation",
+          "name": "In memory data structure in file system implementation",
+          "link": "https://drive.google.com/file/d/1mT00KxXlxsGQ4j2a3--8Pg0cRULn6JVe/view",
+          "difficulty": "",
+          "kind": "concept",
+          "video": {
+            "fileId": "1mT00KxXlxsGQ4j2a3--8Pg0cRULn6JVe"
+          }
+        },
+        {
+          "key": "os:file-system-i-o-protection__directory-implementation",
+          "name": "Directory implementation",
+          "link": "https://drive.google.com/file/d/1WSeeUDALk95hYGoCTp4iGt0SCahn_FoV/view",
+          "difficulty": "",
+          "kind": "concept",
+          "video": {
+            "fileId": "1WSeeUDALk95hYGoCTp4iGt0SCahn_FoV"
+          }
+        },
+        {
+          "key": "os:file-system-i-o-protection__allocation-methods",
+          "name": "Allocation methods",
+          "link": "https://drive.google.com/file/d/149984wXa3vF28JcBEy_vmvfYBSyraH46/view",
+          "difficulty": "",
+          "kind": "concept",
+          "video": {
+            "fileId": "149984wXa3vF28JcBEy_vmvfYBSyraH46"
+          }
+        },
+        {
+          "key": "os:file-system-i-o-protection__file-allocation-table",
+          "name": "File allocation table",
+          "link": "https://drive.google.com/file/d/1jA0D-OQJIcyl2lae7xxs86ZYAiznWw62/view",
+          "difficulty": "",
+          "kind": "concept",
+          "video": {
+            "fileId": "1jA0D-OQJIcyl2lae7xxs86ZYAiznWw62"
+          }
+        },
+        {
+          "key": "os:file-system-i-o-protection__gate-14-on-fat",
+          "name": "Gate 14 on FAT",
+          "link": "https://drive.google.com/file/d/1K4zDLeXKseADbUp05oG1OKjAFCqZMs7-/view",
+          "difficulty": "",
+          "kind": "problem",
+          "video": {
+            "fileId": "1K4zDLeXKseADbUp05oG1OKjAFCqZMs7-"
+          }
+        },
+        {
+          "key": "os:file-system-i-o-protection__indexed-allocation-1",
+          "name": "Indexed allocation - 1",
+          "link": "https://drive.google.com/file/d/1kc50lHuOBlLJ0SimFjzw5UpK5ZAvjY6v/view",
+          "difficulty": "",
+          "kind": "concept",
+          "video": {
+            "fileId": "1kc50lHuOBlLJ0SimFjzw5UpK5ZAvjY6v"
+          }
+        },
+        {
+          "key": "os:file-system-i-o-protection__indexed-allocation-2",
+          "name": "Indexed allocation - 2",
+          "link": "https://drive.google.com/file/d/1hP10lMgaii7XAX8XLt9nVuGGWqbMQ8m5/view",
+          "difficulty": "",
+          "kind": "concept",
+          "video": {
+            "fileId": "1hP10lMgaii7XAX8XLt9nVuGGWqbMQ8m5"
+          }
+        },
+        {
+          "key": "os:file-system-i-o-protection__indexed-allocation-3",
+          "name": "Indexed allocation - 3",
+          "link": "https://drive.google.com/file/d/1NLI6Xa1uuNAPDNWclPQtqIu4kFdF-vBz/view",
+          "difficulty": "",
+          "kind": "concept",
+          "video": {
+            "fileId": "1NLI6Xa1uuNAPDNWclPQtqIu4kFdF-vBz"
+          }
+        },
+        {
+          "key": "os:file-system-i-o-protection__gate-2012-on-indexed-allocation",
+          "name": "Gate 2012 on indexed allocation",
+          "link": "https://drive.google.com/file/d/12_KIl8OIE4hwodZb49u8pJfCNPUa_fSc/view",
+          "difficulty": "",
+          "kind": "problem",
+          "video": {
+            "fileId": "12_KIl8OIE4hwodZb49u8pJfCNPUa_fSc"
+          }
+        },
+        {
+          "key": "os:file-system-i-o-protection__free-space-managment",
+          "name": "Free space managment",
+          "link": "https://drive.google.com/file/d/1iWgrmx6Do4qxIlQ5qYBJGwtzedt73AN0/view",
+          "difficulty": "",
+          "kind": "concept",
+          "video": {
+            "fileId": "1iWgrmx6Do4qxIlQ5qYBJGwtzedt73AN0"
+          }
+        },
+        {
+          "key": "os:file-system-i-o-protection__disk-scheduling",
+          "name": "Disk scheduling",
+          "link": "https://drive.google.com/file/d/1nH8dTsrPwAxSaLEhEFZcCgz-sWLWz36h/view",
+          "difficulty": "",
+          "kind": "concept",
+          "video": {
+            "fileId": "1nH8dTsrPwAxSaLEhEFZcCgz-sWLWz36h"
+          }
+        },
+        {
+          "key": "os:file-system-i-o-protection__fcfs-scheduling",
+          "name": "FCFS scheduling",
+          "link": "https://drive.google.com/file/d/1q8E63pI9SWu5tCE1UTP1LFLLP-zwSOHc/view",
+          "difficulty": "",
+          "kind": "concept",
+          "video": {
+            "fileId": "1q8E63pI9SWu5tCE1UTP1LFLLP-zwSOHc"
+          }
+        },
+        {
+          "key": "os:file-system-i-o-protection__sstf-scheduling",
+          "name": "SSTF scheduling",
+          "link": "https://drive.google.com/file/d/1fk1ujjdATS2E8Gjy833meeIA2rXaMz5b/view",
+          "difficulty": "",
+          "kind": "concept",
+          "video": {
+            "fileId": "1fk1ujjdATS2E8Gjy833meeIA2rXaMz5b"
+          }
+        },
+        {
+          "key": "os:file-system-i-o-protection__scan-c-scan",
+          "name": "Scan C-scan",
+          "link": "https://drive.google.com/file/d/1-FehdKj8n3jwaswkJ_XkLyzOz41BNb0a/view",
+          "difficulty": "",
+          "kind": "concept",
+          "video": {
+            "fileId": "1-FehdKj8n3jwaswkJ_XkLyzOz41BNb0a"
+          }
+        },
+        {
+          "key": "os:file-system-i-o-protection__look",
+          "name": "Look",
+          "link": "https://drive.google.com/file/d/1YzDtItZJ1Alp119YV7qJXzBJuESS4h8Y/view",
+          "difficulty": "",
+          "kind": "concept",
+          "video": {
+            "fileId": "1YzDtItZJ1Alp119YV7qJXzBJuESS4h8Y"
+          }
+        },
+        {
+          "key": "os:file-system-i-o-protection__c-look",
+          "name": "C - look",
+          "link": "https://drive.google.com/file/d/1YHu0EC7p0J86593UB0x0Jjyvks-Sn1k6/view",
+          "difficulty": "",
+          "kind": "concept",
+          "video": {
+            "fileId": "1YHu0EC7p0J86593UB0x0Jjyvks-Sn1k6"
+          }
+        },
+        {
+          "key": "os:file-system-i-o-protection__gate-2016-question-on-c-look",
+          "name": "Gate 2016 question on C-look",
+          "link": "https://drive.google.com/file/d/1AkhEyJ-7TxWvciIBJoWzYxbJZjaKUpJZ/view",
+          "difficulty": "",
+          "kind": "problem",
+          "video": {
+            "fileId": "1AkhEyJ-7TxWvciIBJoWzYxbJZjaKUpJZ"
+          }
+        }
+      ]
+    },
+    {
+      "key": "os-06-threads-system-calls",
+      "order": 6,
+      "title": "Threads & System Calls",
+      "problems": [
+        {
+          "key": "os:threads-system-calls__system-calls-vs-function-calls",
+          "name": "System calls Vs function calls",
+          "link": "https://drive.google.com/file/d/19vg6Mxy0T9a8HO8Y0nLiuIUL3xCJmtc0/view",
+          "difficulty": "",
+          "kind": "concept",
+          "video": {
+            "fileId": "19vg6Mxy0T9a8HO8Y0nLiuIUL3xCJmtc0"
+          }
+        },
+        {
+          "key": "os:threads-system-calls__process-control-system-calls",
+          "name": "Process control system calls",
+          "link": "https://drive.google.com/file/d/1v_b8VoHZ2OvYwCL0G-m4H4uWWLJCkunX/view",
+          "difficulty": "",
+          "kind": "concept",
+          "video": {
+            "fileId": "1v_b8VoHZ2OvYwCL0G-m4H4uWWLJCkunX"
+          }
+        },
+        {
+          "key": "os:threads-system-calls__file-related-system-calls",
+          "name": "File related system calls",
+          "link": "https://drive.google.com/file/d/1ZjxlVcLxWZ4K1Yd1nH75HQ-wmC8QI6uf/view",
+          "difficulty": "",
+          "kind": "concept",
+          "video": {
+            "fileId": "1ZjxlVcLxWZ4K1Yd1nH75HQ-wmC8QI6uf"
+          }
+        },
+        {
+          "key": "os:threads-system-calls__device-related-system-calls",
+          "name": "Device related system calls",
+          "link": "https://drive.google.com/file/d/1lAnj83Mcl_BXwT424OsBPXJ3MKU__ZW8/view",
+          "difficulty": "",
+          "kind": "concept",
+          "video": {
+            "fileId": "1lAnj83Mcl_BXwT424OsBPXJ3MKU__ZW8"
+          }
+        },
+        {
+          "key": "os:threads-system-calls__information-related-system-calls",
+          "name": "Information related system calls",
+          "link": "https://drive.google.com/file/d/1otOez3BRjqOyfDHMn_3HZBv1JnS3AV0c/view",
+          "difficulty": "",
+          "kind": "concept",
+          "video": {
+            "fileId": "1otOez3BRjqOyfDHMn_3HZBv1JnS3AV0c"
+          }
+        },
+        {
+          "key": "os:threads-system-calls__communications-related-system-calls",
+          "name": "Communications related system calls",
+          "link": "https://drive.google.com/file/d/1OS9mjHwPpQS64LIdZEGB3A5saHA8vclL/view",
+          "difficulty": "",
+          "kind": "concept",
+          "video": {
+            "fileId": "1OS9mjHwPpQS64LIdZEGB3A5saHA8vclL"
+          }
+        },
+        {
+          "key": "os:threads-system-calls__fork-system-call",
+          "name": "Fork System call",
+          "link": "https://drive.google.com/file/d/1dBUpJSfuu6ous8uo0LrhiIOxjT9NGpyp/view",
+          "difficulty": "",
+          "kind": "concept",
+          "video": {
+            "fileId": "1dBUpJSfuu6ous8uo0LrhiIOxjT9NGpyp"
+          }
+        },
+        {
+          "key": "os:threads-system-calls__process-vs-threads",
+          "name": "Process Vs Threads",
+          "link": "https://drive.google.com/file/d/1mM8cGKw8JW6JbgPMCqI2M7pdZHnhLcsZ/view",
+          "difficulty": "",
+          "kind": "concept",
+          "video": {
+            "fileId": "1mM8cGKw8JW6JbgPMCqI2M7pdZHnhLcsZ"
+          }
+        },
+        {
+          "key": "os:threads-system-calls__user-lever-vs-kernel-level-threads",
+          "name": "User lever Vs Kernel level threads",
+          "link": "https://drive.google.com/file/d/1K7yz_xVBteXOv6qHJx3-kvREaGbwOCju/view",
+          "difficulty": "",
+          "kind": "concept",
+          "video": {
+            "fileId": "1K7yz_xVBteXOv6qHJx3-kvREaGbwOCju"
+          }
+        },
+        {
+          "key": "os:threads-system-calls__hybrid-threads",
+          "name": "Hybrid threads",
+          "link": "https://drive.google.com/file/d/1WZR-ggBKxqACkAfL1NGkNvRCrhcMVe8H/view",
+          "difficulty": "",
+          "kind": "concept",
+          "video": {
+            "fileId": "1WZR-ggBKxqACkAfL1NGkNvRCrhcMVe8H"
+          }
+        }
+      ]
+    }
+  ]
+}

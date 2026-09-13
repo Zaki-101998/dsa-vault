@@ -1,5 +1,15 @@
 export type Status = "Unsolved" | "Attempted" | "Solved";
 
+/** Subjects the vault can hold. Also the namespace prefix on non-DSA problem keys. */
+export type SubjectId = "dsa" | "cn" | "os";
+
+/**
+ * Lecture-video subjects split their entries in two: `concept` videos teach the
+ * material, `problem` videos work through exam questions and are shown as
+ * skippable. DSA entries have no kind and are treated as `concept`.
+ */
+export type EntryKind = "concept" | "problem";
+
 export interface SeedProblem {
   key: string;
   name: string;
@@ -7,6 +17,10 @@ export interface SeedProblem {
   difficulty: string;
   /** Optional practice-problem link (LeetCode preferred, else GFG/HackerRank). */
   practice?: string;
+  /** Video subjects only; absent on DSA problems, which are all `concept`. */
+  kind?: EntryKind;
+  /** Google Drive file backing this entry, for video subjects. */
+  video?: { fileId: string };
 }
 
 export interface SeedStep {
@@ -18,6 +32,8 @@ export interface SeedStep {
 
 export interface SeedSheet {
   steps: SeedStep[];
+  /** Absent on the original DSA sheet, which predates multi-subject support. */
+  subject?: SubjectId;
 }
 
 export type CodeLang = "java" | "cpp" | "python";
@@ -74,6 +90,12 @@ export interface Problem {
   // Practice-problem link from the seed sheet (LeetCode/GFG/HackerRank); empty
   // for user-added custom problems.
   practiceLink: string;
+  // "concept" for every DSA problem and every teaching video; "problem" marks a
+  // worked-question video, which the UI dims and the Concepts filter hides.
+  kind: EntryKind;
+  // Drive file id for video subjects, "" otherwise. Whether the link is actually
+  // rendered depends on the viewer's video access — see lib/useVideoAccess.ts.
+  videoFileId: string;
 }
 
 // Row shape as stored in Supabase (public.user_todos)

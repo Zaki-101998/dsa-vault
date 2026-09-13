@@ -37,10 +37,10 @@ export default function LoginPage() {
     <main className="min-h-screen flex items-center justify-center bg-[#0f1115] text-[#e6e9f0] px-4">
       <div className="w-full max-w-sm bg-[#161a22] border border-[#2a3040] rounded-xl p-8">
         <h1 className="text-xl font-bold mb-1">
-          DSA <span className="text-[#5b8cff]">Vault</span>
+          The <span className="text-[#5b8cff]">Vault</span>
         </h1>
         <p className="text-sm text-[#8b93a7] mb-6">
-          Notes, code &amp; revision tracker for Striver&apos;s A2Z sheet.
+          Notes &amp; revision tracker — DSA, Computer Networks and Operating Systems.
         </p>
 
         <button

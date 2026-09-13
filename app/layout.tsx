@@ -14,8 +14,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "DSA Vault",
-  description: "Notes, code & revision tracker for Striver's A2Z DSA sheet.",
+  title: "Vault",
+  description:
+    "Notes, code & revision tracker — Striver's A2Z DSA sheet, Computer Networks and Operating Systems.",
 };
 
 export default function RootLayout({

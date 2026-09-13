@@ -3,9 +3,11 @@
 import { useState } from "react";
 import { RevisionStar } from "./RevisionStar";
 import { daysSince, isOverdue } from "@/lib/decay";
-import { KNOWN_TOPICS } from "@/lib/sheet";
-import { linkPlatform } from "@/lib/links";
+import { VIDEO_BADGE, driveFileUrl, linkPlatform } from "@/lib/links";
+import type { EntryTab, SubjectConfig } from "@/lib/subjects";
 import type { Problem, Status } from "@/lib/types";
+
+const STATUSES: Status[] = ["Unsolved", "Attempted", "Solved"];
 
 function fmtAgo(ts: number): string {
   const m = (Date.now() - ts) / 60000;
@@ -18,6 +20,9 @@ function fmtAgo(ts: number): string {
 
 export function ProblemHeader({
   problem,
+  subject,
+  knownTopics,
+  canWatchVideo,
   decayDays,
   activeTab,
   onTabChange,
@@ -33,9 +38,14 @@ export function ProblemHeader({
   onPlan,
 }: {
   problem: Problem;
+  subject: SubjectConfig;
+  /** Section titles suggested in the topic datalist, scoped to this subject. */
+  knownTopics: string[];
+  /** False hides the Drive link entirely — see lib/useVideoAccess.ts. */
+  canWatchVideo: boolean;
   decayDays: number;
-  activeTab: "notes" | "code";
-  onTabChange: (tab: "notes" | "code") => void;
+  activeTab: EntryTab;
+  onTabChange: (tab: EntryTab) => void;
   onRename: (name: string) => void;
   onRetopic: (topic: string) => void;
   onRelink: (link: string) => void;
@@ -59,10 +69,12 @@ export function ProblemHeader({
 
   const overdue = isOverdue(problem.starred, problem.lastRevised, decayDays);
   const practice = linkPlatform(problem.practiceLink);
+  const videoUrl = problem.videoFileId && canWatchVideo ? driveFileUrl(problem.videoFileId) : "";
+  const skippable = problem.kind === "problem";
 
   return (
     <div className="px-3 md:px-5 pt-3 md:pt-4 border-b border-[#2a3040]">
-      {/* Mobile: compact read-mode strip — star + name + Mark Revised only. */}
+      {/* Mobile: compact read-mode strip — star + name + video + Mark Revised only. */}
       <div className="md:hidden flex items-center gap-2.5 mb-2">
         <RevisionStar
           starred={problem.starred}
@@ -82,6 +94,15 @@ export function ProblemHeader({
             {Math.floor(daysSince(problem.lastRevised))}d
           </span>
         )}
+        {videoUrl && (
+          <button
+            onClick={() => window.open(videoUrl, "_blank", "noopener,noreferrer")}
+            title="Watch the lecture on Drive"
+            className={`border rounded-lg px-2 py-1 text-xs font-semibold shrink-0 ${VIDEO_BADGE.className}`}
+          >
+            ▶
+          </button>
+        )}
         <button
           onClick={onMarkRevised}
           className="bg-[#3ecf8e] text-[#08130d] font-bold rounded-lg px-2 py-1 text-xs shrink-0 hover:brightness-110"
@@ -95,24 +116,40 @@ export function ProblemHeader({
           value={name}
           onChange={(e) => setName(e.target.value)}
           onBlur={() => name.trim() && name !== problem.name && onRename(name.trim())}
-          placeholder="Problem name"
+          placeholder={`${subject.entryNoun} name`}
           className="flex-1 min-w-[140px] text-[19px] font-bold bg-transparent border border-transparent rounded-md px-2 py-1 outline-none hover:bg-[#1c212c] focus:bg-[#1c212c] focus:border-[#2a3040]"
         />
-        {problem.difficulty && (
+        {subject.showDifficulty && problem.difficulty && (
           <span className="text-[13px] text-[#8b93a7] shrink-0">{problem.difficulty}</span>
+        )}
+        {skippable && (
+          <span
+            title="A worked-question video — safe to skip on a first pass"
+            className="text-[11px] font-semibold text-[#8b93a7] border border-[#2a3040] rounded-md px-1.5 py-0.5 shrink-0"
+          >
+            skippable
+          </span>
         )}
         <select
           value={problem.status}
           onChange={(e) => onStatusChange(e.target.value as Status)}
           className="bg-[#1c212c] border border-[#2a3040] rounded-md px-2 py-1 text-[13px] outline-none"
         >
-          <option value="Unsolved">Unsolved</option>
-          <option value="Attempted">Attempted</option>
-          <option value="Solved">Solved</option>
+          {STATUSES.map((s) => (
+            <option key={s} value={s}>
+              {subject.statusLabels[s]}
+            </option>
+          ))}
         </select>
         <button
-          onClick={() => confirm(`Delete "${problem.name || "Untitled"}" and all its notes/code/revision history?`) && onDelete()}
-          title="Delete problem data"
+          onClick={() =>
+            confirm(
+              `Delete "${problem.name || "Untitled"}" and all its notes${
+                subject.tabs.includes("code") ? "/code" : ""
+              }/revision history?`
+            ) && onDelete()
+          }
+          title={`Delete ${subject.entryNoun} data`}
           className="text-[#8b93a7] hover:text-[#e12d39] hover:bg-[#1c212c] rounded-md w-8 h-8 flex items-center justify-center"
         >
           🗑
@@ -125,11 +162,11 @@ export function ProblemHeader({
           value={topic}
           onChange={(e) => setTopic(e.target.value)}
           onBlur={() => topic.trim() && topic !== problem.topic && onRetopic(topic.trim())}
-          placeholder="Topic (e.g. Arrays)"
+          placeholder={subject.topicPlaceholder}
           className="w-full sm:w-[220px] bg-[#1c212c] border border-[#2a3040] rounded-md px-2.5 py-1.5 text-[13px] outline-none focus:border-[#5b8cff]"
         />
         <datalist id="header-topics">
-          {KNOWN_TOPICS.map((t) => (
+          {knownTopics.map((t) => (
             <option key={t} value={t} />
           ))}
         </datalist>
@@ -137,7 +174,7 @@ export function ProblemHeader({
           value={link}
           onChange={(e) => setLink(e.target.value)}
           onBlur={() => link !== problem.link && onRelink(link.trim())}
-          placeholder="Problem link (LeetCode / TUF)…"
+          placeholder={subject.linkPlaceholder}
           className="flex-1 min-w-[160px] bg-[#1c212c] border border-[#2a3040] rounded-md px-2.5 py-1.5 text-[13px] outline-none focus:border-[#5b8cff]"
         />
         <button
@@ -147,6 +184,15 @@ export function ProblemHeader({
         >
           ↗ Open
         </button>
+        {videoUrl && (
+          <button
+            onClick={() => window.open(videoUrl, "_blank", "noopener,noreferrer")}
+            title="Watch the lecture on Google Drive"
+            className={`border rounded-md px-2.5 text-[13px] font-semibold hover:brightness-110 ${VIDEO_BADGE.className}`}
+          >
+            {VIDEO_BADGE.label} ↗
+          </button>
+        )}
         {practice && (
           <button
             onClick={() => window.open(problem.practiceLink, "_blank", "noopener,noreferrer")}
@@ -200,7 +246,7 @@ export function ProblemHeader({
           <span className="flex shrink-0">
             <button
               onClick={() => onPlan("today")}
-              title="Add “Revise: this problem” to today's plan"
+              title={`Add “Revise: this ${subject.entryNoun}” to today's plan`}
               className="border border-[#2a3040] rounded-l-lg px-2.5 py-1.5 text-xs text-[#8b93a7] hover:text-[#5b8cff] hover:border-[#5b8cff]"
             >
               📋 Plan today
@@ -230,21 +276,24 @@ export function ProblemHeader({
         )}
       </div>
 
-      <div className="flex gap-0.5">
-        {(["notes", "code"] as const).map((tab) => (
-          <button
-            key={tab}
-            onClick={() => onTabChange(tab)}
-            className={`px-3 py-2 md:px-4 md:py-2.5 text-[13.5px] font-semibold border-b-2 ${
-              activeTab === tab
-                ? "text-[#5b8cff] border-[#5b8cff]"
-                : "text-[#8b93a7] border-transparent hover:text-[#e6e9f0]"
-            }`}
-          >
-            {tab === "notes" ? "📝 Notes" : "💻 Code"}
-          </button>
-        ))}
-      </div>
+      {/* Notes-only subjects get no tab strip — there is nothing to switch to. */}
+      {subject.tabs.length > 1 && (
+        <div className="flex gap-0.5">
+          {subject.tabs.map((tab) => (
+            <button
+              key={tab}
+              onClick={() => onTabChange(tab)}
+              className={`px-3 py-2 md:px-4 md:py-2.5 text-[13.5px] font-semibold border-b-2 ${
+                activeTab === tab
+                  ? "text-[#5b8cff] border-[#5b8cff]"
+                  : "text-[#8b93a7] border-transparent hover:text-[#e6e9f0]"
+              }`}
+            >
+              {tab === "notes" ? "📝 Notes" : "💻 Code"}
+            </button>
+          ))}
+        </div>
+      )}
     </div>
   );
 }

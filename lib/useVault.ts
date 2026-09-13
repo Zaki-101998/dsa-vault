@@ -4,7 +4,8 @@ import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { createClient } from "./supabase/client";
 import { clearAuthRecovery, isAuthError, recoverFromAuthError } from "./supabase/auth-error";
 import { defaultApproaches, mergeProblems, newApproachId } from "./sheet";
-import type { Approach, Status, UserProblemRow } from "./types";
+import { customKey } from "./subjects";
+import type { Approach, Status, SubjectId, UserProblemRow } from "./types";
 
 const DEFAULT_DECAY_DAYS = 5;
 
@@ -28,7 +29,7 @@ function blankRow(userId: string, key: string): UserProblemRow {
   };
 }
 
-export function useVault(userId: string) {
+export function useVault(userId: string, subject: SubjectId) {
   const supabase = useMemo(() => createClient(), []);
   const [rows, setRows] = useState<UserProblemRow[]>([]);
   const [decayDays, setDecayDaysState] = useState(DEFAULT_DECAY_DAYS);
@@ -72,7 +73,7 @@ export function useVault(userId: string) {
     };
   }, [supabase, userId, commitRows]);
 
-  const { groups, byKey } = useMemo(() => mergeProblems(rows), [rows]);
+  const { groups, byKey } = useMemo(() => mergeProblems(rows, subject), [rows, subject]);
 
   const writeTimers = useRef<Map<string, ReturnType<typeof setTimeout>>>(new Map());
 
@@ -183,12 +184,12 @@ export function useVault(userId: string) {
 
   const addCustomProblem = useCallback(
     (name: string, topic: string) => {
-      const key = `custom:${newApproachId()}`;
+      const key = customKey(subject, newApproachId());
       const finalTopic = topic || "Custom";
       // Land the new problem at the end of its target section by giving it a
       // position just past the current max — so the ordering survives a reload.
       const norm = finalTopic.trim().toLowerCase();
-      const { groups } = mergeProblems(rowsRef.current);
+      const { groups } = mergeProblems(rowsRef.current, subject);
       const target = groups.find((g) => g.title.trim().toLowerCase() === norm);
       const maxFinite = target
         ? target.problems.reduce((m, p) => (Number.isFinite(p.sortIndex) ? Math.max(m, p.sortIndex) : m), -1)
@@ -200,7 +201,7 @@ export function useVault(userId: string) {
       });
       return key;
     },
-    [updateRow]
+    [updateRow, subject]
   );
 
   // Move a problem within its section by writing a single fractional position
@@ -208,7 +209,7 @@ export function useVault(userId: string) {
   const reorderProblem = useCallback(
     (groupKey: string, activeKey: string, overKey: string) => {
       if (activeKey === overKey) return;
-      const { groups } = mergeProblems(rowsRef.current);
+      const { groups } = mergeProblems(rowsRef.current, subject);
       const group = groups.find((g) => g.key === groupKey);
       if (!group) return;
       const arr = group.problems;
@@ -234,7 +235,7 @@ export function useVault(userId: string) {
       }
       updateRow(activeKey, { position });
     },
-    [updateRow]
+    [updateRow, subject]
   );
 
   const deleteProblem = useCallback(

@@ -35,3 +35,13 @@ export function linkPlatform(url: string | null | undefined): LinkBadge | null {
   // Any other valid practice link still gets a neutral badge.
   return { label: "Practice", className: "text-[#5b8cff] border-[#5b8cff]/40" };
 }
+
+/** Badge for a Google Drive lecture video, in the same visual family as above. */
+export const VIDEO_BADGE: LinkBadge = {
+  label: "▶ Video",
+  className: "text-[#f0b429] border-[#f0b429]/40",
+};
+
+export function driveFileUrl(fileId: string): string {
+  return `https://drive.google.com/file/d/${fileId}/view`;
+}

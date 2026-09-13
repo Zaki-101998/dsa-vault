@@ -1,3 +1,5 @@
+import type { VideoRef } from "./types";
+
 // Maps a practice-problem URL to a display badge based on its host.
 // Returns null for empty/unknown links so callers can skip rendering.
 export interface LinkBadge {
@@ -36,12 +38,28 @@ export function linkPlatform(url: string | null | undefined): LinkBadge | null {
   return { label: "Practice", className: "text-[#5b8cff] border-[#5b8cff]/40" };
 }
 
-/** Badge for a Google Drive lecture video, in the same visual family as above. */
-export const VIDEO_BADGE: LinkBadge = {
-  label: "▶ Video",
-  className: "text-[#f0b429] border-[#f0b429]/40",
-};
+/** Badge styling for a lecture video, in the same visual family as above. */
+export const VIDEO_BADGE_CLASS = "text-[#f0b429] border-[#f0b429]/40";
 
-export function driveFileUrl(fileId: string): string {
-  return `https://drive.google.com/file/d/${fileId}/view`;
+function hms(total: number): string {
+  const h = Math.floor(total / 3600);
+  const m = Math.floor((total % 3600) / 60);
+  const s = total % 60;
+  const pad = (n: number) => String(n).padStart(2, "0");
+  return h ? `${h}:${pad(m)}:${pad(s)}` : `${m}:${pad(s)}`;
+}
+
+export function videoUrl(video: VideoRef): string {
+  if (video.provider === "youtube") {
+    return `https://www.youtube.com/watch?v=${video.id}${video.t ? `&t=${video.t}s` : ""}`;
+  }
+  return `https://drive.google.com/file/d/${video.id}/view`;
+}
+
+/**
+ * Label for the video button. A timestamped segment shows where it starts, so the
+ * offset is visible before clicking rather than being a surprise.
+ */
+export function videoLabel(video: VideoRef): string {
+  return video.t ? `▶ ${hms(video.t)}` : "▶ Video";
 }

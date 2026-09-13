@@ -40,7 +40,7 @@ export default function LoginPage() {
           The <span className="text-[#5b8cff]">Vault</span>
         </h1>
         <p className="text-sm text-[#8b93a7] mb-6">
-          Notes &amp; revision tracker — DSA, Computer Networks and Operating Systems.
+          Notes &amp; revision tracker — DSA, Computer Networks, Operating Systems and DBMS.
         </p>
 
         <button

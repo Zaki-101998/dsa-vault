@@ -36,7 +36,7 @@ function toProblem(
     difficulty: base.difficulty,
     practiceLink: base.practice ?? "",
     kind: base.kind ?? "concept",
-    videoFileId: base.video?.fileId ?? "",
+    video: base.video ?? null,
     status: row?.status || "Unsolved",
     starred: row?.starred || false,
     lastRevised: toEpoch(row?.last_revised),
@@ -91,6 +91,7 @@ export function mergeProblems(
       return p;
     });
     const group: TopicGroup = { key: step.key, title: step.title, order: step.order, problems };
+    if (step.placeholder) group.placeholder = step.placeholder;
     groups.push(group);
     groupByTopic.set(normTopic(step.title), group);
   }

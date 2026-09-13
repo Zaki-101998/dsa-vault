@@ -1,5 +1,5 @@
 {
-  "_readme": "Raw Google Drive listing for the video-based subjects. Section titles are hand-cleaned; file titles are verbatim from Drive and are normalised by scripts/build-subject-sheets.mjs. Refresh by re-listing the folders and updating the file arrays.",
+  "_readme": "Source listing for the video-based subjects. Drive subjects list folders and files; YouTube subjects list sections of either timestamped segments (long lectures, split by reading the auto-caption transcript) or whole short videos. Section titles are hand-cleaned; file/video titles are verbatim and normalised by scripts/build-subject-sheets.mjs.",
   "subjects": [
     {
       "id": "cn",
@@ -1119,6 +1119,13 @@
             }
           ]
         }
+      ],
+      "provider": "drive",
+      "problemPatterns": [
+        "\\bgate\\b",
+        "\\bquestions?\\b",
+        "\\bproblems?\\s+(?:on|\\d)",
+        "^problem\\s+\\d+"
       ]
     },
     {
@@ -1964,6 +1971,1266 @@
               "title": "10.Hybrid threads (Not required for GATE).mp4"
             }
           ]
+        }
+      ],
+      "provider": "drive",
+      "problemPatterns": [
+        "\\bgate\\b",
+        "\\bquestions?\\b",
+        "\\bproblems?\\s+(?:on|\\d)",
+        "^problem\\s+\\d+"
+      ]
+    },
+    {
+      "id": "dbms",
+      "label": "DBMS",
+      "provider": "youtube",
+      "playlistId": "PLEbnTDJUr_Icxz_NMfvfYQheoJbHZIyGT",
+      "titleNoise": [
+        "^l\\w*\\s*-?\\s*\\d+$",
+        "\\bgate\\b",
+        "\\bprof\\b"
+      ],
+      "problemPatterns": [
+        "\\bpyq",
+        "marathon",
+        "\\bquery\\s+\\d+",
+        "\\bquery\\s+on\\b",
+        "\\bexample\\s+\\d+",
+        "\\bquestions?\\b",
+        "\\bproblems?\\s+(?:on|\\d)",
+        "^problem\\s+\\d+"
+      ],
+      "sections": [
+        {
+          "order": 1,
+          "title": "Introduction to DBMS",
+          "entries": [
+            {
+              "v": "znCArPIKu-w",
+              "t": 780,
+              "n": "DBMS syllabus and GATE weightage"
+            },
+            {
+              "v": "znCArPIKu-w",
+              "t": 1260,
+              "n": "Reference textbooks and how to prepare"
+            },
+            {
+              "v": "znCArPIKu-w",
+              "t": 2280,
+              "n": "What is a database? What is a DBMS?"
+            },
+            {
+              "v": "znCArPIKu-w",
+              "t": 2820,
+              "n": "Where the data lives: hard disk and the DBMS interface"
+            },
+            {
+              "v": "znCArPIKu-w",
+              "t": 3240,
+              "n": "The two layers: SQL interface and file manager"
+            },
+            {
+              "v": "znCArPIKu-w",
+              "t": 3480,
+              "n": "Flat file system vs DBMS"
+            },
+            {
+              "v": "znCArPIKu-w",
+              "t": 3600,
+              "n": "Limitation 1: application programs, and data independence"
+            },
+            {
+              "v": "znCArPIKu-w",
+              "t": 3900,
+              "n": "Limitation 2: I/O cost, and why indexing helps"
+            },
+            {
+              "v": "znCArPIKu-w",
+              "t": 4080,
+              "n": "Limitation 3: degree of concurrency, file level vs row level"
+            },
+            {
+              "v": "znCArPIKu-w",
+              "t": 4260,
+              "n": "Limitation 4: access control"
+            },
+            {
+              "v": "znCArPIKu-w",
+              "t": 4500,
+              "n": "Limitation 5: redundancy, and why normalization helps"
+            }
+          ]
+        },
+        {
+          "order": 2,
+          "title": "Relational Model and Keys",
+          "entries": [
+            {
+              "v": "sHJY-a2mH0k",
+              "t": 720,
+              "n": "Integrity constraints and Codd's 12 rules"
+            },
+            {
+              "v": "sHJY-a2mH0k",
+              "t": 960,
+              "n": "Relational model terminology: relation, instance, tuple"
+            },
+            {
+              "v": "sHJY-a2mH0k",
+              "t": 1260,
+              "n": "Schema, arity/degree and cardinality"
+            },
+            {
+              "v": "sHJY-a2mH0k",
+              "t": 1440,
+              "n": "Candidate key: definition and first examples"
+            },
+            {
+              "v": "sHJY-a2mH0k",
+              "t": 1740,
+              "n": "Compound candidate key: the enroll table"
+            },
+            {
+              "v": "sHJY-a2mH0k",
+              "t": 1980,
+              "n": "Finding candidate keys systematically",
+              "k": "problem"
+            },
+            {
+              "v": "sHJY-a2mH0k",
+              "t": 2280,
+              "n": "Minimal vs minimum: why both A and BC can be candidate keys"
+            },
+            {
+              "v": "sHJY-a2mH0k",
+              "t": 2520,
+              "n": "Every table has at least one candidate key"
+            },
+            {
+              "v": "sHJY-a2mH0k",
+              "t": 2640,
+              "n": "Candidate keys with NULL values",
+              "k": "problem"
+            },
+            {
+              "v": "sHJY-a2mH0k",
+              "t": 3180,
+              "n": "Primary key"
+            },
+            {
+              "v": "sHJY-a2mH0k",
+              "t": 3360,
+              "n": "Alternate key"
+            },
+            {
+              "v": "sHJY-a2mH0k",
+              "t": 3540,
+              "n": "Writing it as SQL: CREATE TABLE with UNIQUE and NOT NULL"
+            },
+            {
+              "v": "sHJY-a2mH0k",
+              "t": 4320,
+              "n": "Simple vs compound candidate key"
+            },
+            {
+              "v": "sHJY-a2mH0k",
+              "t": 4500,
+              "n": "Prime and non-prime attributes"
+            },
+            {
+              "v": "sHJY-a2mH0k",
+              "t": 4680,
+              "n": "Super key: definition and examples"
+            },
+            {
+              "v": "sHJY-a2mH0k",
+              "t": 4920,
+              "n": "Counting super keys with one candidate key",
+              "k": "problem"
+            },
+            {
+              "v": "sHJY-a2mH0k",
+              "t": 5340,
+              "n": "Counting super keys with two candidate keys: inclusion-exclusion",
+              "k": "problem"
+            },
+            {
+              "v": "sHJY-a2mH0k",
+              "t": 5640,
+              "n": "Counting super keys with overlapping candidate keys",
+              "k": "problem"
+            },
+            {
+              "v": "sHJY-a2mH0k",
+              "t": 6060,
+              "n": "Counting super keys with three candidate keys",
+              "k": "problem"
+            },
+            {
+              "v": "sHJY-a2mH0k",
+              "t": 6540,
+              "n": "Maximum possible super keys",
+              "k": "problem"
+            }
+          ]
+        },
+        {
+          "order": 3,
+          "title": "Functional Dependencies and Closure",
+          "entries": [
+            {
+              "v": "CmptL647fAA",
+              "t": 900,
+              "n": "Redundancy: why one big relation is a problem"
+            },
+            {
+              "v": "CmptL647fAA",
+              "t": 1380,
+              "n": "Database anomalies: insertion, deletion, update"
+            },
+            {
+              "v": "CmptL647fAA",
+              "t": 1560,
+              "n": "Normalization: decomposing into smaller tables"
+            },
+            {
+              "v": "CmptL647fAA",
+              "t": 1860,
+              "n": "Functional dependency: definition"
+            },
+            {
+              "v": "CmptL647fAA",
+              "t": 2280,
+              "n": "Verifying an FD against a table instance"
+            },
+            {
+              "v": "CmptL647fAA",
+              "t": 2640,
+              "n": "Types of FDs: trivial, non-trivial, semi non-trivial"
+            },
+            {
+              "v": "CmptL647fAA",
+              "t": 3000,
+              "n": "Armstrong's axioms"
+            },
+            {
+              "v": "CmptL647fAA",
+              "t": 3240,
+              "n": "Attribute closure: definition and worked example"
+            },
+            {
+              "v": "CmptL647fAA",
+              "t": 3840,
+              "n": "Super key and candidate key via closure"
+            },
+            {
+              "v": "CmptL647fAA",
+              "t": 4620,
+              "n": "Formal definition: super key vs candidate key"
+            },
+            {
+              "v": "CmptL647fAA",
+              "t": 4740,
+              "n": "Finding all candidate keys using combinatorics",
+              "k": "problem"
+            },
+            {
+              "v": "CmptL647fAA",
+              "t": 5280,
+              "n": "Candidate keys of R(ABCD)",
+              "k": "problem"
+            },
+            {
+              "v": "CmptL647fAA",
+              "t": 5940,
+              "n": "Candidate keys of R(ABCDE)",
+              "k": "problem"
+            },
+            {
+              "v": "CmptL647fAA",
+              "t": 6120,
+              "n": "No non-trivial FDs: how many candidate keys?",
+              "k": "problem"
+            },
+            {
+              "v": "CmptL647fAA",
+              "t": 6180,
+              "n": "Candidate keys of R(ABCDEF): the binary-string trick",
+              "k": "problem"
+            },
+            {
+              "v": "CmptL647fAA",
+              "t": 7620,
+              "n": "Candidate keys of a second R(ABCDEF)",
+              "k": "problem"
+            },
+            {
+              "v": "WVxC2C3W1Vk",
+              "t": 840,
+              "n": "Finding all candidate keys is NP-complete"
+            },
+            {
+              "v": "WVxC2C3W1Vk",
+              "t": 960,
+              "n": "Membership test: definition"
+            },
+            {
+              "v": "WVxC2C3W1Vk",
+              "t": 1080,
+              "n": "Membership test: question set",
+              "k": "problem"
+            },
+            {
+              "v": "WVxC2C3W1Vk",
+              "t": 1440,
+              "n": "Solving membership tests via closure",
+              "k": "problem"
+            },
+            {
+              "v": "WVxC2C3W1Vk",
+              "t": 1800,
+              "n": "Equality of FD sets: F covers G"
+            },
+            {
+              "v": "WVxC2C3W1Vk",
+              "t": 2040,
+              "n": "The four cases of comparing two FD sets"
+            },
+            {
+              "v": "WVxC2C3W1Vk",
+              "t": 2220,
+              "n": "Worked problem: are F and G equal?",
+              "k": "problem"
+            },
+            {
+              "v": "WVxC2C3W1Vk",
+              "t": 3000,
+              "n": "Framing and solving more cover problems",
+              "k": "problem"
+            }
+          ]
+        },
+        {
+          "order": 4,
+          "title": "PYQ Marathon: Candidate Keys",
+          "entries": [
+            {
+              "v": "-0l0k-kWuNM",
+              "t": 300,
+              "n": "Candidate key PYQ 1",
+              "k": "problem"
+            },
+            {
+              "v": "-0l0k-kWuNM",
+              "t": 1200,
+              "n": "Candidate key PYQ 2: where shortcuts fail",
+              "k": "problem"
+            },
+            {
+              "v": "-0l0k-kWuNM",
+              "t": 2220,
+              "n": "Candidate key PYQ 3: a long one",
+              "k": "problem"
+            },
+            {
+              "v": "-0l0k-kWuNM",
+              "t": 3600,
+              "n": "Candidate key PYQ 4",
+              "k": "problem"
+            },
+            {
+              "v": "-0l0k-kWuNM",
+              "t": 4500,
+              "n": "Candidate key PYQ 5",
+              "k": "problem"
+            },
+            {
+              "v": "-0l0k-kWuNM",
+              "t": 4860,
+              "n": "Candidate key PYQ 6: R(VWXYZ)",
+              "k": "problem"
+            },
+            {
+              "v": "-0l0k-kWuNM",
+              "t": 5460,
+              "n": "Candidate key PYQ 7: R(PQRSTU)",
+              "k": "problem"
+            },
+            {
+              "v": "-0l0k-kWuNM",
+              "t": 6060,
+              "n": "Candidate key PYQ 8",
+              "k": "problem"
+            },
+            {
+              "v": "-0l0k-kWuNM",
+              "t": 6900,
+              "n": "Candidate key PYQ 9",
+              "k": "problem"
+            },
+            {
+              "v": "-0l0k-kWuNM",
+              "t": 9060,
+              "n": "Candidate key PYQ 10",
+              "k": "problem"
+            },
+            {
+              "v": "xsvbmx4gtxs",
+              "t": 720,
+              "n": "Candidate key PYQ 11",
+              "k": "problem"
+            },
+            {
+              "v": "xsvbmx4gtxs",
+              "t": 1020,
+              "n": "Candidate key PYQ 12: R(XYZPQ)",
+              "k": "problem"
+            },
+            {
+              "v": "xsvbmx4gtxs",
+              "t": 1320,
+              "n": "Candidate key PYQ 13: R(ABCDEFG)",
+              "k": "problem"
+            },
+            {
+              "v": "xsvbmx4gtxs",
+              "t": 2100,
+              "n": "Candidate key PYQ 14: R(ABCD)",
+              "k": "problem"
+            },
+            {
+              "v": "xsvbmx4gtxs",
+              "t": 3360,
+              "n": "Candidate key PYQ 15: R(ABCDE)",
+              "k": "problem"
+            },
+            {
+              "v": "xsvbmx4gtxs",
+              "t": 3840,
+              "n": "Candidate key PYQ 16: R(PQRST)",
+              "k": "problem"
+            },
+            {
+              "v": "xsvbmx4gtxs",
+              "t": 4320,
+              "n": "Candidate key PYQ 17: R(ABCD)",
+              "k": "problem"
+            },
+            {
+              "v": "xsvbmx4gtxs",
+              "t": 4920,
+              "n": "Candidate key PYQ 18: R(ABCDEG)",
+              "k": "problem"
+            }
+          ]
+        },
+        {
+          "order": 5,
+          "title": "PYQ Marathon: Counting Super Keys",
+          "entries": [
+            {
+              "v": "a81u-B1aCXk",
+              "t": 480,
+              "n": "From candidate keys to counting super keys"
+            },
+            {
+              "v": "a81u-B1aCXk",
+              "t": 780,
+              "n": "Super key counting: R(ABCDEF)",
+              "k": "problem"
+            },
+            {
+              "v": "a81u-B1aCXk",
+              "t": 1380,
+              "n": "A question that is wrong, and why",
+              "k": "problem"
+            },
+            {
+              "v": "a81u-B1aCXk",
+              "t": 3120,
+              "n": "Venn diagram vs the general method"
+            },
+            {
+              "v": "a81u-B1aCXk",
+              "t": 3660,
+              "n": "Super key counting problem",
+              "k": "problem"
+            },
+            {
+              "v": "a81u-B1aCXk",
+              "t": 4080,
+              "n": "Counting three-element keys",
+              "k": "problem"
+            },
+            {
+              "v": "a81u-B1aCXk",
+              "t": 4680,
+              "n": "Counting four-element keys",
+              "k": "problem"
+            },
+            {
+              "v": "a81u-B1aCXk",
+              "t": 5340,
+              "n": "Super key counting: R(ABCDEF) with CD and EF",
+              "k": "problem"
+            },
+            {
+              "v": "yCkQHWVHoDY",
+              "t": 60,
+              "n": "Super keys of R(ABCDEF) with candidate keys AG, GE, BG",
+              "k": "problem"
+            },
+            {
+              "v": "yCkQHWVHoDY",
+              "t": 360,
+              "n": "Counting super keys: 2^4 - 1",
+              "k": "problem"
+            },
+            {
+              "v": "yCkQHWVHoDY",
+              "t": 840,
+              "n": "Super key counting: next question",
+              "k": "problem"
+            },
+            {
+              "v": "yCkQHWVHoDY",
+              "t": 1320,
+              "n": "Which of the 5C3 subsets are super keys?",
+              "k": "problem"
+            },
+            {
+              "v": "yCkQHWVHoDY",
+              "t": 1680,
+              "n": "Super key counting: R(ABCD)",
+              "k": "problem"
+            },
+            {
+              "v": "yCkQHWVHoDY",
+              "t": 2100,
+              "n": "Three-element keys which are not super keys",
+              "k": "problem"
+            },
+            {
+              "v": "yCkQHWVHoDY",
+              "t": 2400,
+              "n": "Super key counting: R(ABCDEFGHIJ)",
+              "k": "problem"
+            },
+            {
+              "v": "yCkQHWVHoDY",
+              "t": 2940,
+              "n": "Super key counting: R(ABCDEFGH)",
+              "k": "problem"
+            },
+            {
+              "v": "yCkQHWVHoDY",
+              "t": 3780,
+              "n": "Maximum number of candidate keys",
+              "k": "problem"
+            },
+            {
+              "v": "yCkQHWVHoDY",
+              "t": 5280,
+              "n": "Maximum candidate keys: the R(ABCDE) case",
+              "k": "problem"
+            }
+          ]
+        },
+        {
+          "order": 6,
+          "title": "Foreign Keys and Referential Integrity",
+          "entries": [
+            {
+              "v": "Uld1MbwowHc",
+              "t": 480,
+              "n": "What is a foreign key and why it is needed"
+            },
+            {
+              "v": "Uld1MbwowHc",
+              "t": 600,
+              "n": "Motivating example: redundancy and anomalies without a foreign key"
+            },
+            {
+              "v": "Uld1MbwowHc",
+              "t": 1440,
+              "n": "Fixing it: separate tables and a referencing constraint"
+            },
+            {
+              "v": "Uld1MbwowHc",
+              "t": 1740,
+              "n": "Student, Course and Enroll: maintaining integrity"
+            },
+            {
+              "v": "Uld1MbwowHc",
+              "t": 2340,
+              "n": "Referencing vs referenced relation"
+            },
+            {
+              "v": "Uld1MbwowHc",
+              "t": 2460,
+              "n": "Foreign key: the formal theory points"
+            },
+            {
+              "v": "Uld1MbwowHc",
+              "t": 2940,
+              "n": "Worked example: student and enroll"
+            },
+            {
+              "v": "Uld1MbwowHc",
+              "t": 3300,
+              "n": "Self-referencing foreign key: employee and supervisor"
+            },
+            {
+              "v": "Uld1MbwowHc",
+              "t": 3900,
+              "n": "Foreign key referring to an alternate key, and NULLs"
+            },
+            {
+              "v": "Uld1MbwowHc",
+              "t": 4560,
+              "n": "Roadmap: the normalization topics ahead"
+            },
+            {
+              "v": "F_IVrRkHkO4",
+              "t": 360,
+              "n": "Why foreign keys exist: the employee and payroll story"
+            },
+            {
+              "v": "F_IVrRkHkO4",
+              "t": 1260,
+              "n": "Foreign key: formal definition"
+            },
+            {
+              "v": "F_IVrRkHkO4",
+              "t": 1740,
+              "n": "Foreign key referring to the same table"
+            },
+            {
+              "v": "F_IVrRkHkO4",
+              "t": 2220,
+              "n": "NULLs in foreign keys; the mapping is many-to-one"
+            },
+            {
+              "v": "F_IVrRkHkO4",
+              "t": 2400,
+              "n": "Referential integrity constraints"
+            },
+            {
+              "v": "F_IVrRkHkO4",
+              "t": 2580,
+              "n": "Foreign key referring to an alternate key"
+            },
+            {
+              "v": "F_IVrRkHkO4",
+              "t": 3180,
+              "n": "Setting up Student, Course and Enroll"
+            },
+            {
+              "v": "F_IVrRkHkO4",
+              "t": 3840,
+              "n": "Insertion into the referenced relation: no violation"
+            },
+            {
+              "v": "F_IVrRkHkO4",
+              "t": 3960,
+              "n": "Deletion from the referenced relation: violation"
+            },
+            {
+              "v": "F_IVrRkHkO4",
+              "t": 4200,
+              "n": "ON DELETE NO ACTION and ON DELETE CASCADE"
+            },
+            {
+              "v": "F_IVrRkHkO4",
+              "t": 4380,
+              "n": "ON DELETE SET NULL"
+            },
+            {
+              "v": "F_IVrRkHkO4",
+              "t": 4740,
+              "n": "ON UPDATE options"
+            },
+            {
+              "v": "F_IVrRkHkO4",
+              "t": 4920,
+              "n": "Constraints on the referencing relation"
+            }
+          ]
+        },
+        {
+          "order": 7,
+          "title": "Normalization: Redundancy and Anomalies",
+          "entries": [
+            {
+              "v": "F_IVrRkHkO4",
+              "t": 5880,
+              "n": "Roadmap of the normalization topics"
+            },
+            {
+              "v": "F_IVrRkHkO4",
+              "t": 6360,
+              "n": "What is normalization? Defining redundancy"
+            },
+            {
+              "v": "F_IVrRkHkO4",
+              "t": 6660,
+              "n": "Redundancy example: combining student and course"
+            },
+            {
+              "v": "F_IVrRkHkO4",
+              "t": 7500,
+              "n": "Insertion anomaly"
+            },
+            {
+              "v": "F_IVrRkHkO4",
+              "t": 7680,
+              "n": "Deletion anomaly"
+            },
+            {
+              "v": "F_IVrRkHkO4",
+              "t": 7800,
+              "n": "Update anomaly"
+            }
+          ]
+        },
+        {
+          "order": 8,
+          "title": "Decomposition: Lossless Join and Dependency Preserving",
+          "entries": [
+            {
+              "v": "VfWQEq27CKg",
+              "t": 240,
+              "n": "What is decomposition?"
+            },
+            {
+              "v": "VfWQEq27CKg",
+              "t": 360,
+              "n": "The two properties: lossless join and dependency preserving"
+            },
+            {
+              "v": "VfWQEq27CKg",
+              "t": 720,
+              "n": "Lossless join decomposition: formal definition"
+            },
+            {
+              "v": "VfWQEq27CKg",
+              "t": 1080,
+              "n": "Worked example: a lossless decomposition"
+            },
+            {
+              "v": "VfWQEq27CKg",
+              "t": 1740,
+              "n": "Worked example: a lossy decomposition and spurious tuples"
+            },
+            {
+              "v": "VfWQEq27CKg",
+              "t": 2460,
+              "n": "The lossless test: the common attributes must be a super key"
+            },
+            {
+              "v": "VfWQEq27CKg",
+              "t": 2700,
+              "n": "Problems: is this decomposition lossy or lossless?",
+              "k": "problem"
+            },
+            {
+              "v": "VfWQEq27CKg",
+              "t": 4140,
+              "n": "Three-way decomposition",
+              "k": "problem"
+            },
+            {
+              "v": "VfWQEq27CKg",
+              "t": 4500,
+              "n": "Dependency preserving decomposition: definition"
+            },
+            {
+              "v": "oaqqYpWiHZM",
+              "t": 600,
+              "n": "Dependency preservation: formal definition and the three cases"
+            },
+            {
+              "v": "oaqqYpWiHZM",
+              "t": 1080,
+              "n": "Worked problem: are all dependencies preserved?",
+              "k": "problem"
+            },
+            {
+              "v": "oaqqYpWiHZM",
+              "t": 2100,
+              "n": "Checking the decomposed FD set covers the original",
+              "k": "problem"
+            },
+            {
+              "v": "oaqqYpWiHZM",
+              "t": 2580,
+              "n": "Second dependency-preservation problem",
+              "k": "problem"
+            }
+          ]
+        },
+        {
+          "order": 9,
+          "title": "Normal Forms: 1NF to BCNF",
+          "entries": [
+            {
+              "v": "oaqqYpWiHZM",
+              "t": 4140,
+              "n": "Why redundancy exists: non-trivial and multi-valued dependencies"
+            },
+            {
+              "v": "oaqqYpWiHZM",
+              "t": 4380,
+              "n": "The normal form hierarchy, and multi-valued dependency"
+            },
+            {
+              "v": "oaqqYpWiHZM",
+              "t": 4920,
+              "n": "How the normal forms nest"
+            },
+            {
+              "v": "oaqqYpWiHZM",
+              "t": 5100,
+              "n": "First normal form: atomic attributes"
+            },
+            {
+              "v": "oaqqYpWiHZM",
+              "t": 5520,
+              "n": "Converting a non-1NF table into 1NF"
+            },
+            {
+              "v": "oaqqYpWiHZM",
+              "t": 5820,
+              "n": "Why 1NF still has high redundancy"
+            },
+            {
+              "v": "oaqqYpWiHZM",
+              "t": 6180,
+              "n": "Why 2NF, 3NF and BCNF are needed"
+            },
+            {
+              "v": "XehwR2cWkSw",
+              "t": 240,
+              "n": "When does a functional dependency form redundancy?"
+            },
+            {
+              "v": "XehwR2cWkSw",
+              "t": 540,
+              "n": "When does a functional dependency NOT form redundancy?"
+            },
+            {
+              "v": "XehwR2cWkSw",
+              "t": 960,
+              "n": "Redundancy example: partial dependency on SID CID"
+            },
+            {
+              "v": "XehwR2cWkSw",
+              "t": 1620,
+              "n": "Redundancy example: rating determines salary"
+            },
+            {
+              "v": "XehwR2cWkSw",
+              "t": 2400,
+              "n": "A non-redundant example: SID determines SName"
+            },
+            {
+              "v": "XehwR2cWkSw",
+              "t": 2640,
+              "n": "Master example R(ABCDEF): every redundancy case"
+            },
+            {
+              "v": "XehwR2cWkSw",
+              "t": 3120,
+              "n": "The four redundancy cases, generalized"
+            },
+            {
+              "v": "XehwR2cWkSw",
+              "t": 3780,
+              "n": "How normal forms reduce redundancy"
+            },
+            {
+              "v": "XehwR2cWkSw",
+              "t": 3960,
+              "n": "Second normal form: no partial dependency"
+            },
+            {
+              "v": "XehwR2cWkSw",
+              "t": 4320,
+              "n": "Third normal form"
+            },
+            {
+              "v": "XehwR2cWkSw",
+              "t": 4800,
+              "n": "BCNF"
+            },
+            {
+              "v": "XehwR2cWkSw",
+              "t": 5160,
+              "n": "Recap across 2NF, 3NF and BCNF"
+            }
+          ]
+        },
+        {
+          "order": 10,
+          "title": "Finding the Highest Normal Form",
+          "entries": [
+            {
+              "v": "h7moQMesRqU",
+              "t": 120,
+              "n": "Recap: the 2NF, 3NF and BCNF definitions"
+            },
+            {
+              "v": "h7moQMesRqU",
+              "t": 480,
+              "n": "Applying the four cases: is the example in 2NF?"
+            },
+            {
+              "v": "h7moQMesRqU",
+              "t": 960,
+              "n": "The same example in third normal form"
+            },
+            {
+              "v": "h7moQMesRqU",
+              "t": 1200,
+              "n": "The same example in BCNF"
+            },
+            {
+              "v": "h7moQMesRqU",
+              "t": 1380,
+              "n": "How GATE asks it: finding the highest normal form"
+            },
+            {
+              "v": "h7moQMesRqU",
+              "t": 1680,
+              "n": "Problem 1: R(ABCDE) with ABD to C, BC to D, CD to E",
+              "k": "problem"
+            },
+            {
+              "v": "h7moQMesRqU",
+              "t": 2040,
+              "n": "Problem 1: BCNF and 3NF testing",
+              "k": "problem"
+            },
+            {
+              "v": "h7moQMesRqU",
+              "t": 2280,
+              "n": "Problem 1: 2NF testing and partial dependency",
+              "k": "problem"
+            },
+            {
+              "v": "h7moQMesRqU",
+              "t": 2940,
+              "n": "Problem 1: the highest normal form is 1NF",
+              "k": "problem"
+            },
+            {
+              "v": "h7moQMesRqU",
+              "t": 3300,
+              "n": "Problem 2: R(ABCD) with AB to C, BC to D",
+              "k": "problem"
+            },
+            {
+              "v": "h7moQMesRqU",
+              "t": 3840,
+              "n": "Problem 3: R(ABCD) with AB to C, C to A, AC to D",
+              "k": "problem"
+            },
+            {
+              "v": "h7moQMesRqU",
+              "t": 4620,
+              "n": "Problem 4: R(ABCDEF)",
+              "k": "problem"
+            },
+            {
+              "v": "h7moQMesRqU",
+              "t": 5220,
+              "n": "Problem 5: R(ABCDEF) with AB to C, C to D",
+              "k": "problem"
+            },
+            {
+              "v": "h7moQMesRqU",
+              "t": 5880,
+              "n": "Problem 6: R(ABCDE) where every attribute is prime",
+              "k": "problem"
+            },
+            {
+              "v": "h7moQMesRqU",
+              "t": 6600,
+              "n": "Problem 7: R(ABCD) with A to B, B to AC, C to D",
+              "k": "problem"
+            }
+          ]
+        },
+        {
+          "order": 11,
+          "title": "Normalization Practice",
+          "videos": [
+            [
+              "KgwpI88tDMw",
+              "No Non Trivial Function Dependency | Lecture -15 | Gate CS & DA | Prof. Ravindrababu Ravula"
+            ],
+            [
+              "mNOPSZB5gns",
+              "Schema With Only Two Attributes | Lecture-16 | Gate CS & DA | Prof. Ravindrababu Ravula"
+            ],
+            [
+              "_5nFU_8zTNM",
+              "Decomposition Into 2nd Normal Form Example 1 Lecture-17 | Gate CS & DA | Prof.Ravindrababu Ravula"
+            ],
+            [
+              "9hkPlzBHrD8",
+              "Decomposition Into 2nd Normal Form Example 2 | Lecture-18 | Gate CS & DA | Prof. Ravindrababu Ravula"
+            ],
+            [
+              "x8RidcjVg0I",
+              "Example 1 on BCNF | Lecture-19 | Gate CS & DA | Prof. Ravindrababu Ravula"
+            ],
+            [
+              "QvTScX5R15E",
+              "Example 2 on BCNF | Lecture-20 | Gate CS & DA | Prof. Ravindrababu Ravula"
+            ],
+            [
+              "MyUMez2WdEA",
+              "Example 3 on BCNF | Lecture-21 | Gate CS & DA | Prof. Ravindrababu Ravula"
+            ],
+            [
+              "-9YVAalHDDg",
+              "Example 4 on BCNF | Lecture-22 | Gate CS & DA | Prof. Ravindrababu Ravula"
+            ],
+            [
+              "k5EAfDAV2KE",
+              "Example 5 on BCNF | Lecture-23 | Gate CS & DA | Prof. Ravindrababu Ravula"
+            ],
+            [
+              "Ugj3jSLRV2s",
+              "Conclusion On Decomposition | Lecture-24 | Gate CS & DA | Prof. Ravindrababu Ravula"
+            ]
+          ]
+        },
+        {
+          "order": 12,
+          "title": "Relational Algebra: Operators",
+          "videos": [
+            [
+              "A9x4UgCYLrc",
+              "Query Languages | Lecture-25 | Gate CS & DA | Prof. Ravindrababu Ravula"
+            ],
+            [
+              "kwnvkYV797M",
+              "Relational Algebra Introduction | Lecture-26 | Gate CS & DA | Prof. Ravindrababu Ravula"
+            ],
+            [
+              "eAxBQJmLGnU",
+              "Projection And Selection | Lecture-27 | GATE CS & DA | Prof. Ravindrababu Ravula"
+            ],
+            [
+              "lrSSBeX7MfE",
+              "Example Projection And Selection | Lecture-28 | GATE CS & DA | Prof. Ravindrababu Ravula"
+            ],
+            [
+              "598d2HXKo5g",
+              "Cross Product | Lecture-29 | GATE CS & DA | Prof. Ravindrababu Ravula"
+            ],
+            [
+              "t7Ds37hY2No",
+              "Natural Join | Lcture-30 | GATE CS & DA | Prof. Ravindrababu Ravula"
+            ],
+            [
+              "nbfgELVAxNM",
+              "Conditional Join | Lecture-31 | GATE CS & DA | Prof. Ravindrababu Ravula"
+            ],
+            [
+              "Jc9okfLk1lY",
+              "Outer Joins | Lecture-32 | GATE CS & DA | Prof. Ravindrababu Ravula"
+            ],
+            [
+              "wjPFUU400n0",
+              "Query On Joins | Lecture-33 | GATE CS & DA | prof. Ravindrababu Ravula"
+            ],
+            [
+              "Mui7AjCvBL0",
+              "Rename Operator | Lecture-34 | GATE CS & DA | Prof. Ravindrababu Ravula"
+            ],
+            [
+              "aB2etfsI3pY",
+              "Division Operator | Lecture-45 | GATE CS & DA | Prof. Ravindrababu Ravula"
+            ],
+            [
+              "1qMvo6_aYII",
+              "Set Operators | Lecture-50 | GATE CS & DA | Prof. Ravindrababu Ravula"
+            ],
+            [
+              "YJOHGFRAifI",
+              "Example On Set Operations | Lecture-51 | GATE CS & DA | Prof. Ravindrababu Ravula"
+            ],
+            [
+              "dyOQhUmuxaA",
+              "Properties Of Set Operations | Lecture-52 | GATE CS & DA | Prof. Ravindrababu Ravula"
+            ],
+            [
+              "aCUOqyW9H90",
+              "Query Optimization | Lecture-56 | GATE CS & DA | Prof. Ravindrababu Ravula"
+            ],
+            [
+              "fopqqG-gMwM",
+              "Properties of Division | Lecture-63 | GATE CS & DA | Prof. Ravindrababu Ravula"
+            ],
+            [
+              "ejxeqBPNN20",
+              "Cardinality Of Properties | Lecture-64 | GATE CS & DA | Prof. Ravindrababu Ravula"
+            ]
+          ]
+        },
+        {
+          "order": 13,
+          "title": "Relational Algebra: Query Practice",
+          "videos": [
+            [
+              "-1midlF3K8s",
+              "Relational Algebra Query 1 | Lecture-35 | GATE CS & DA | Prof. Ravindrababu Ravula"
+            ],
+            [
+              "JjxnDjFLODI",
+              "Relational Algebra Query 2 | Lecture-36 | GATE CS & DA | Prof. Ravindrababu Ravula"
+            ],
+            [
+              "cPj8NpdIiqo",
+              "Relational Algebra Query 3 | Lecture-37 | GATE CS & DA | Prof. Ravindrababu Ravula"
+            ],
+            [
+              "1ewVhNZJxK4",
+              "Relational Algebra Query 4 | Lecture-38 | GATE CS & DA | Prof. Ravindrababu Ravula"
+            ],
+            [
+              "vcPTQmrYcZ0",
+              "Relational Algebra Query 5 | Lecture-39 | GATE CS & DA | Prof. Ravindrababu Ravula"
+            ],
+            [
+              "ADt4B2cwIx4",
+              "Relational Algebra Query 6 | Lecture-40 | GATE CS & DA | Prof. Ravindrababu Ravula"
+            ],
+            [
+              "kau57-_U4DQ",
+              "Relational Algebra Query 7 | Lecture-41 | GATE CS & DA | Prof. Ravindrababu Ravula"
+            ],
+            [
+              "o7eWaW8oB50",
+              "Relational Algebra Query 8 | Lecture-42 | GATE CS & DA | Prof. Ravindrababu Ravula"
+            ],
+            [
+              "TFnf6_XWHV0",
+              "Relational Algebra Query 9 | Lecture-43 | GATE CS & DA | Prof. Ravindrababu Ravula"
+            ],
+            [
+              "QZSHC13gIDI",
+              "Relational Algebra Query 10 | Lecture-44 | GATE CS & DA | Prof. Ravindrababu Ravula"
+            ],
+            [
+              "hJW4Ra0vxvg",
+              "Relational Algebra Query 11 | Lecture-46 | GATE CS & DA | Prof. Ravindrababu Ravula"
+            ],
+            [
+              "_KzB7JiBPmU",
+              "Relational Algebra Query 12 | Lecture-47 | GATE CS & DA | Prof. Ravindrababu Ravula"
+            ],
+            [
+              "Th3SM4V_qSM",
+              "Relational Algebra Query 13 | Lecture-48 | GATE CS & DA | Prof. Ravindrababu Ravula"
+            ],
+            [
+              "i9gIlQQchf0",
+              "Relational Algebra Query 14 | Lecture-49 | GATE CS & DA | Prof. Ravindrababu Ravula"
+            ],
+            [
+              "cJ6n_uHlocw",
+              "Relational Algebra Query 15 | Lecture-53 | GATE CS & DA | Prof. Ravindrababu Ravula"
+            ],
+            [
+              "-p5mBmlWBPY",
+              "Relational Algebra Query 16 | lecture-54 | GATE CS & DA | Prof. Ravindrababu Ravula"
+            ],
+            [
+              "c38O4sRDKWA",
+              "Relational Algebra Query 17 | Lecture-55 | GATE CS & DA | Prof. Ravindrababu Ravula"
+            ],
+            [
+              "P8bevwfld1Q",
+              "Relational Algebra Query 18 | Lecture-57 | GATE CS & DA | Prof. Ravindrababu Ravula"
+            ],
+            [
+              "pqA0RXxn1fo",
+              "Relational Algebra Query 19 | Lecture-58 | GATE CS & DA | Prof. Ravindrababu Ravula"
+            ],
+            [
+              "zGPCFbqz61o",
+              "Relational Algebra Query 20 | Lecture-59 | GATE CS & DA | Prof. Ravindrababu Ravula"
+            ],
+            [
+              "NNCdc-zDYrw",
+              "Relational Algebra Query 21 | Lecture-60 | GATE CS & DA | Prof. Ravindrababu Ravula"
+            ],
+            [
+              "NPmOL03Ec_k",
+              "Relational Algebra Query 22 | Lecture-61 | GATE CS & DA | Prof. Ravindrababu Ravula"
+            ],
+            [
+              "3WIqHUxesow",
+              "Relational Algebra Query 23 | Lecture-62 | GATE CS & DA | Prof. Ravindrababu Ravula"
+            ],
+            [
+              "y3bBNywTu2o",
+              "Relational Algebra Query 24  | Lecture-65 | GATE CS & DA | Prof. Ravindrababu Ravula"
+            ],
+            [
+              "BWRT8Hqtp50",
+              "Relational Algebra Query 25 | Lecture-66 | GATE CS & DA | Prof. Ravindrababu Ravula"
+            ],
+            [
+              "XCZHR4NYFX8",
+              "Relational Algebra Query 26  | Lecture-67 | GATE CS & DA | Prof. Ravindrababu Ravula"
+            ],
+            [
+              "WzbnW6cVSmQ",
+              "Relational Algebra Query 27  | Lecture-68 | GATE CS & DA | Prof. Ravindrababu Ravula"
+            ]
+          ]
+        },
+        {
+          "order": 14,
+          "title": "ER Model and Design",
+          "placeholder": "Not published in the playlist yet — RBR lists it in the syllabus (Lecture 1, 17:00)."
+        },
+        {
+          "order": 15,
+          "title": "SQL",
+          "placeholder": "Not published yet — RBR says he will cover SQL alongside relational algebra and tuple relational calculus."
+        },
+        {
+          "order": 16,
+          "title": "Relational Calculus (TRC / DRC)",
+          "placeholder": "Not published yet — named in the syllabus walkthrough as the third query language."
+        },
+        {
+          "order": 17,
+          "title": "File Organization and Indexing",
+          "placeholder": "Not published yet — RBR says he will cover indexing including B trees and B+ trees (Lecture 1, 16:00)."
+        },
+        {
+          "order": 18,
+          "title": "Transactions and Concurrency Control",
+          "placeholder": "Not published yet — listed in the syllabus, worth 2-4 marks in GATE."
+        },
+        {
+          "order": 19,
+          "title": "Recovery",
+          "placeholder": "Not published yet — normally paired with transactions."
+        },
+        {
+          "order": 20,
+          "title": "Query Processing and Cost Estimation",
+          "placeholder": "Only partly covered: Lecture 56 does relational-algebra-level optimisation. Join algorithms and cost models are not published yet."
         }
       ]
     }

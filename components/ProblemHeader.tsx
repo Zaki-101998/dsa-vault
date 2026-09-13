@@ -3,7 +3,7 @@
 import { useState } from "react";
 import { RevisionStar } from "./RevisionStar";
 import { daysSince, isOverdue } from "@/lib/decay";
-import { VIDEO_BADGE, driveFileUrl, linkPlatform } from "@/lib/links";
+import { VIDEO_BADGE_CLASS, linkPlatform, videoLabel, videoUrl } from "@/lib/links";
 import type { EntryTab, SubjectConfig } from "@/lib/subjects";
 import type { Problem, Status } from "@/lib/types";
 
@@ -69,7 +69,9 @@ export function ProblemHeader({
 
   const overdue = isOverdue(problem.starred, problem.lastRevised, decayDays);
   const practice = linkPlatform(problem.practiceLink);
-  const videoUrl = problem.videoFileId && canWatchVideo ? driveFileUrl(problem.videoFileId) : "";
+  // YouTube lectures are public, so the access allowlist only gates Drive files.
+  const showVideo = !!problem.video && (problem.video.provider === "youtube" || canWatchVideo);
+  const videoHref = showVideo ? videoUrl(problem.video!) : "";
   const skippable = problem.kind === "problem";
 
   return (
@@ -94,11 +96,11 @@ export function ProblemHeader({
             {Math.floor(daysSince(problem.lastRevised))}d
           </span>
         )}
-        {videoUrl && (
+        {videoHref && (
           <button
-            onClick={() => window.open(videoUrl, "_blank", "noopener,noreferrer")}
-            title="Watch the lecture on Drive"
-            className={`border rounded-lg px-2 py-1 text-xs font-semibold shrink-0 ${VIDEO_BADGE.className}`}
+            onClick={() => window.open(videoHref, "_blank", "noopener,noreferrer")}
+            title={`Watch the lecture${problem.video!.t ? ` from ${videoLabel(problem.video!).slice(2)}` : ""}`}
+            className={`border rounded-lg px-2 py-1 text-xs font-semibold shrink-0 ${VIDEO_BADGE_CLASS}`}
           >
             ▶
           </button>
@@ -184,13 +186,17 @@ export function ProblemHeader({
         >
           ↗ Open
         </button>
-        {videoUrl && (
+        {videoHref && (
           <button
-            onClick={() => window.open(videoUrl, "_blank", "noopener,noreferrer")}
-            title="Watch the lecture on Google Drive"
-            className={`border rounded-md px-2.5 text-[13px] font-semibold hover:brightness-110 ${VIDEO_BADGE.className}`}
+            onClick={() => window.open(videoHref, "_blank", "noopener,noreferrer")}
+            title={
+              problem.video!.t
+                ? `Opens the lecture at ${videoLabel(problem.video!).slice(2)}, where this topic starts`
+                : "Watch the lecture"
+            }
+            className={`border rounded-md px-2.5 text-[13px] font-semibold hover:brightness-110 ${VIDEO_BADGE_CLASS}`}
           >
-            {VIDEO_BADGE.label} ↗
+            {videoLabel(problem.video!)} ↗
           </button>
         )}
         {practice && (

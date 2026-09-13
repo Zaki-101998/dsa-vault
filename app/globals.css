@@ -166,3 +166,13 @@ body {
 .cm-scroller {
   font-family: "SF Mono", ui-monospace, Consolas, "Cascadia Code", Menlo, monospace !important;
 }
+
+/* Horizontal strips that may overflow on narrow screens (the subject switcher)
+   stay swipeable without showing a scrollbar over the top bar. */
+.no-scrollbar {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}

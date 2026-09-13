@@ -1,6 +1,7 @@
 import rawDsa from "@/data/a2z-sheet.json";
 import rawCn from "@/data/cn-videos.json";
 import rawOs from "@/data/os-videos.json";
+import rawDbms from "@/data/dbms-videos.json";
 import type { SeedSheet, Status, SubjectId } from "./types";
 
 export type EntryTab = "notes" | "code";
@@ -52,7 +53,7 @@ export const SUBJECTS: Record<SubjectId, SubjectConfig> = {
   cn: {
     id: "cn",
     label: "Computer Networks",
-    tabLabel: "🌐 Networks",
+    tabLabel: "🌐 CN",
     sheet: rawCn as unknown as SeedSheet,
     tabs: ["notes"],
     statusLabels: { Unsolved: "Unwatched", Attempted: "Watching", Solved: "Done" },
@@ -81,9 +82,26 @@ export const SUBJECTS: Record<SubjectId, SubjectConfig> = {
     addNamePlaceholder: "e.g. Bankers algorithm recap",
     blurb: "Lecture notes + revision tracker for the Operating Systems series.",
   },
+  dbms: {
+    id: "dbms",
+    label: "DBMS",
+    tabLabel: "🗄️ DBMS",
+    sheet: rawDbms as unknown as SeedSheet,
+    tabs: ["notes"],
+    statusLabels: { Unsolved: "Unwatched", Attempted: "Watching", Solved: "Done" },
+    entryNoun: "lecture",
+    entryNounPlural: "lectures",
+    showDifficulty: false,
+    hasConceptFilter: true,
+    linkPlaceholder: "Lecture link (YouTube)…",
+    topicPlaceholder: "e.g. Normal Forms",
+    addNamePlaceholder: "e.g. BCNF recap",
+    blurb:
+      "Lecture notes + revision tracker for Prof. Ravindrababu Ravula's DBMS course. Long lectures are split into timestamped topics.",
+  },
 };
 
-export const SUBJECT_ORDER: SubjectId[] = ["dsa", "cn", "os"];
+export const SUBJECT_ORDER: SubjectId[] = ["dsa", "cn", "os", "dbms"];
 
 /**
  * Which subject a stored problem_key belongs to. Non-DSA keys are namespaced
@@ -94,7 +112,7 @@ export function subjectOf(key: string): SubjectId {
   const i = key.indexOf(":");
   if (i > 0) {
     const prefix = key.slice(0, i);
-    if (prefix === "cn" || prefix === "os") return prefix;
+    if (prefix === "cn" || prefix === "os" || prefix === "dbms") return prefix;
   }
   return "dsa";
 }
@@ -115,5 +133,5 @@ export function customKey(subject: SubjectId, id: string): string {
 }
 
 export function isSubjectId(value: string | null | undefined): value is SubjectId {
-  return value === "dsa" || value === "cn" || value === "os";
+  return value === "dsa" || value === "cn" || value === "os" || value === "dbms";
 }

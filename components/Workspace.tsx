@@ -17,7 +17,7 @@ import { TodoDrawer } from "./TodoDrawer";
 
 type SelectionBySubject = Record<SubjectId, string | null>;
 
-const NO_SELECTION: SelectionBySubject = { dsa: null, cn: null, os: null };
+const NO_SELECTION: SelectionBySubject = { dsa: null, cn: null, os: null, dbms: null };
 
 export function Workspace({ userId, userEmail }: { userId: string; userEmail: string | null }) {
   const subject = useSyncExternalStore(
@@ -104,7 +104,9 @@ export function Workspace({ userId, userEmail }: { userId: string; userEmail: st
             ☰
           </button>
 
-          <nav className="flex gap-1 shrink-0" aria-label="Subject">
+          {/* Four pills plus the menu and Today buttons is tight on a 375px
+              phone, so let the strip scroll rather than squashing its neighbours. */}
+          <nav className="flex gap-1 overflow-x-auto no-scrollbar" aria-label="Subject">
             {SUBJECT_ORDER.map((id) => (
               <button
                 key={id}

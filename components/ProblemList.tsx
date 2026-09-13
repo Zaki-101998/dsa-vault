@@ -184,7 +184,9 @@ export function ProblemList({
           return matchesFilter(p, filter, decayDays);
         }),
       }))
-      .filter((g) => g.problems.length > 0);
+      // Keep an empty placeholder section only in the unfiltered view — under a
+      // filter or a search, showing sections that can never match is just noise.
+      .filter((g) => g.problems.length > 0 || (!!g.placeholder && filter === "all" && !q));
   }, [groups, q, filter, decayDays]);
 
   const allCollapsed =
@@ -260,9 +262,14 @@ export function ProblemList({
                 {g.title}
               </span>
               <span className="ml-auto font-normal normal-case tracking-normal text-[#565e73]">
-                {solved}/{g.problems.length}
+                {g.problems.length === 0 && g.placeholder ? "not yet covered" : `${solved}/${g.problems.length}`}
               </span>
             </button>
+            {isOpen && g.problems.length === 0 && g.placeholder && (
+              <div className="px-3 pb-2 text-[11px] leading-relaxed text-[#565e73]">
+                {g.placeholder}
+              </div>
+            )}
             {isOpen &&
               (draggable ? (
                 <DndContext sensors={sensors} collisionDetection={closestCenter} onDragEnd={handleDragEnd}>

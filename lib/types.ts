@@ -1,7 +1,7 @@
 export type Status = "Unsolved" | "Attempted" | "Solved";
 
 /** Subjects the vault can hold. Also the namespace prefix on non-DSA problem keys. */
-export type SubjectId = "dsa" | "cn" | "os";
+export type SubjectId = "dsa" | "cn" | "os" | "dbms";
 
 /**
  * Lecture-video subjects split their entries in two: `concept` videos teach the
@@ -9,6 +9,20 @@ export type SubjectId = "dsa" | "cn" | "os";
  * skippable. DSA entries have no kind and are treated as `concept`.
  */
 export type EntryKind = "concept" | "problem";
+
+export type VideoProvider = "drive" | "youtube";
+
+/** Where an entry's lecture video lives. */
+export interface VideoRef {
+  provider: VideoProvider;
+  /** Drive file id, or YouTube video id. */
+  id: string;
+  /**
+   * Start offset in seconds. Set on a segment cut out of a longer lecture, so
+   * the link opens at the point where that topic actually begins.
+   */
+  t?: number;
+}
 
 export interface SeedProblem {
   key: string;
@@ -19,8 +33,8 @@ export interface SeedProblem {
   practice?: string;
   /** Video subjects only; absent on DSA problems, which are all `concept`. */
   kind?: EntryKind;
-  /** Google Drive file backing this entry, for video subjects. */
-  video?: { fileId: string };
+  /** Lecture video backing this entry, for video subjects. */
+  video?: VideoRef;
 }
 
 export interface SeedStep {
@@ -28,6 +42,11 @@ export interface SeedStep {
   order: number;
   title: string;
   problems: SeedProblem[];
+  /**
+   * Set on a syllabus topic the course has not published yet. Such a step has no
+   * problems and renders as an empty section so the gap stays visible.
+   */
+  placeholder?: string;
 }
 
 export interface SeedSheet {
@@ -93,9 +112,10 @@ export interface Problem {
   // "concept" for every DSA problem and every teaching video; "problem" marks a
   // worked-question video, which the UI dims and the Concepts filter hides.
   kind: EntryKind;
-  // Drive file id for video subjects, "" otherwise. Whether the link is actually
-  // rendered depends on the viewer's video access — see lib/useVideoAccess.ts.
-  videoFileId: string;
+  // Lecture video for video subjects, null otherwise. Whether a Drive link is
+  // rendered also depends on the viewer's access — see lib/useVideoAccess.ts.
+  // YouTube links are public and always shown.
+  video: VideoRef | null;
 }
 
 // Row shape as stored in Supabase (public.user_todos)
@@ -118,4 +138,6 @@ export interface TopicGroup {
   title: string;
   order: number;
   problems: Problem[];
+  /** Mirrors SeedStep.placeholder: an as-yet-uncovered syllabus topic. */
+  placeholder?: string;
 }

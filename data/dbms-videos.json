@@ -137,12 +137,236 @@
             "id": "znCArPIKu-w",
             "t": 4500
           }
+        },
+        {
+          "key": "dbms:introduction-to-dbms__data-database-and-the-file-system",
+          "name": "Data, database and the file system",
+          "link": "https://takeuforward.org/dbms/data-database-and-file-system",
+          "difficulty": "",
+          "kind": "concept",
+          "video": {
+            "provider": "youtube",
+            "id": "OdkJK6P4TCA"
+          }
+        },
+        {
+          "key": "dbms:introduction-to-dbms__types-of-database",
+          "name": "Types of database",
+          "link": "https://www.youtube.com/watch?v=ln-JWRw_hFs",
+          "difficulty": "",
+          "kind": "concept",
+          "video": {
+            "provider": "youtube",
+            "id": "ln-JWRw_hFs"
+          }
+        },
+        {
+          "key": "dbms:introduction-to-dbms__what-is-a-dbms-and-where-it-is-used",
+          "name": "What is a DBMS and where it is used",
+          "link": "https://takeuforward.org/dbms/dbms-and-its-applications",
+          "difficulty": "",
+          "kind": "concept",
+          "video": {
+            "provider": "youtube",
+            "id": "wulV-eIu9dM"
+          }
+        },
+        {
+          "key": "dbms:introduction-to-dbms__data-abstraction-the-three-levels",
+          "name": "Data abstraction: the three levels",
+          "link": "https://takeuforward.org/dbms/dbms-abstraction",
+          "difficulty": "",
+          "kind": "concept",
+          "video": {
+            "provider": "youtube",
+            "id": "WYBdtOQwmSc"
+          }
+        },
+        {
+          "key": "dbms:introduction-to-dbms__three-tier-architecture",
+          "name": "Three-tier architecture",
+          "link": "https://takeuforward.org/dbms/3-tier-architecture",
+          "difficulty": "",
+          "kind": "concept",
+          "video": {
+            "provider": "youtube",
+            "id": "UOyA8TSE7l4"
+          }
+        },
+        {
+          "key": "dbms:introduction-to-dbms__data-models-and-their-types",
+          "name": "Data models and their types",
+          "link": "https://takeuforward.org/dbms/data-models",
+          "difficulty": "",
+          "kind": "concept",
+          "video": {
+            "provider": "youtube",
+            "id": "RNl9ZIDzDG0"
+          }
         }
-      ]
+      ],
+      "note": "Ravula's course, plus the takeUforward interview sheet."
     },
     {
-      "key": "dbms-02-relational-model-and-keys",
+      "key": "dbms-02-er-model-and-design",
       "order": 2,
+      "title": "ER Model and Design",
+      "problems": [
+        {
+          "key": "dbms:er-model-and-design__er-model-in-dbms",
+          "name": "ER model in DBMS",
+          "link": "https://takeuforward.org/dbms/er-model-in-dbms",
+          "difficulty": "",
+          "kind": "concept",
+          "video": {
+            "provider": "youtube",
+            "id": "iejgUcZpaq8"
+          }
+        },
+        {
+          "key": "dbms:er-model-and-design__entity-and-its-types",
+          "name": "Entity and its types",
+          "link": "https://takeuforward.org/dbms/entity-and-its-types",
+          "difficulty": "",
+          "kind": "concept",
+          "video": {
+            "provider": "youtube",
+            "id": "Dfjsu6yVn80"
+          }
+        },
+        {
+          "key": "dbms:er-model-and-design__attribute-and-its-types",
+          "name": "Attribute and its types",
+          "link": "https://takeuforward.org/dbms/attributes-and-its-types",
+          "difficulty": "",
+          "kind": "concept",
+          "video": {
+            "provider": "youtube",
+            "id": "Y-nPMQG9Nyc"
+          }
+        },
+        {
+          "key": "dbms:er-model-and-design__relationship-and-degree-in-the-er-model",
+          "name": "Relationship and degree in the ER model",
+          "link": "https://takeuforward.org/dbms/relationship-and-degree-in-er-model",
+          "difficulty": "",
+          "kind": "concept",
+          "video": {
+            "provider": "youtube",
+            "id": "DhOhst8FBKE"
+          }
+        },
+        {
+          "key": "dbms:er-model-and-design__one-to-one-relationships",
+          "name": "One-to-one relationships",
+          "link": "https://www.youtube.com/watch?v=yXhiZFBwyIk",
+          "difficulty": "",
+          "kind": "concept",
+          "video": {
+            "provider": "youtube",
+            "id": "yXhiZFBwyIk"
+          }
+        },
+        {
+          "key": "dbms:er-model-and-design__one-to-many-relationships",
+          "name": "One-to-many relationships",
+          "link": "https://www.youtube.com/watch?v=2shjI2XauHM",
+          "difficulty": "",
+          "kind": "concept",
+          "video": {
+            "provider": "youtube",
+            "id": "2shjI2XauHM"
+          }
+        },
+        {
+          "key": "dbms:er-model-and-design__many-to-one-relationships",
+          "name": "Many-to-one relationships",
+          "link": "https://www.youtube.com/watch?v=2bGXPbxC63Y",
+          "difficulty": "",
+          "kind": "concept",
+          "video": {
+            "provider": "youtube",
+            "id": "2bGXPbxC63Y"
+          }
+        },
+        {
+          "key": "dbms:er-model-and-design__many-to-many-relationships",
+          "name": "Many-to-many relationships",
+          "link": "https://www.youtube.com/watch?v=XsWub7hcV_c",
+          "difficulty": "",
+          "kind": "concept",
+          "video": {
+            "provider": "youtube",
+            "id": "XsWub7hcV_c"
+          }
+        },
+        {
+          "key": "dbms:er-model-and-design__participation-constraints",
+          "name": "Participation constraints",
+          "link": "https://www.youtube.com/watch?v=Y6mcrB_z0WQ",
+          "difficulty": "",
+          "kind": "concept",
+          "video": {
+            "provider": "youtube",
+            "id": "Y6mcrB_z0WQ"
+          }
+        },
+        {
+          "key": "dbms:er-model-and-design__steps-to-draw-an-er-model",
+          "name": "Steps to draw an ER model",
+          "link": "https://www.youtube.com/watch?v=EMd3cSW8Z68",
+          "difficulty": "",
+          "kind": "concept",
+          "video": {
+            "provider": "youtube",
+            "id": "EMd3cSW8Z68"
+          }
+        },
+        {
+          "key": "dbms:er-model-and-design__er-model-of-instagram-a-worked-design",
+          "name": "ER model of Instagram: a worked design",
+          "link": "https://www.youtube.com/watch?v=uxVzFV0x7YI",
+          "difficulty": "",
+          "kind": "concept",
+          "video": {
+            "provider": "youtube",
+            "id": "uxVzFV0x7YI"
+          }
+        },
+        {
+          "key": "dbms:er-model-and-design__weak-entity-sets-and-identifying-relationships",
+          "name": "Weak entity sets and identifying relationships",
+          "link": "",
+          "difficulty": "",
+          "kind": "concept"
+        },
+        {
+          "key": "dbms:er-model-and-design__specialization-generalization-and-inheritance",
+          "name": "Specialization, generalization and inheritance",
+          "link": "",
+          "difficulty": "",
+          "kind": "concept"
+        },
+        {
+          "key": "dbms:er-model-and-design__aggregation-in-the-er-model",
+          "name": "Aggregation in the ER model",
+          "link": "",
+          "difficulty": "",
+          "kind": "concept"
+        },
+        {
+          "key": "dbms:er-model-and-design__extended-er-features-and-design-choices",
+          "name": "Extended ER features and design choices",
+          "link": "",
+          "difficulty": "",
+          "kind": "concept"
+        }
+      ],
+      "note": "Riti Kumari's course via takeUforward; the last four are on neither list."
+    },
+    {
+      "key": "dbms-03-relational-model-and-keys",
+      "order": 3,
       "title": "Relational Model and Keys",
       "problems": [
         {
@@ -384,753 +608,68 @@
             "id": "sHJY-a2mH0k",
             "t": 6540
           }
-        }
-      ]
-    },
-    {
-      "key": "dbms-03-functional-dependencies-and-closure",
-      "order": 3,
-      "title": "Functional Dependencies and Closure",
-      "problems": [
+        },
         {
-          "key": "dbms:functional-dependencies-and-closure__redundancy-why-one-big-relation-is-a-problem",
-          "name": "Redundancy: why one big relation is a problem",
-          "link": "https://www.youtube.com/watch?v=CmptL647fAA&t=900s",
+          "key": "dbms:relational-model-and-keys__essential-components-of-a-table",
+          "name": "Essential components of a table",
+          "link": "https://www.youtube.com/watch?v=tzcK1wWQKlU",
           "difficulty": "",
           "kind": "concept",
           "video": {
             "provider": "youtube",
-            "id": "CmptL647fAA",
-            "t": 900
+            "id": "tzcK1wWQKlU"
           }
         },
         {
-          "key": "dbms:functional-dependencies-and-closure__database-anomalies-insertion-deletion-update",
-          "name": "Database anomalies: insertion, deletion, update",
-          "link": "https://www.youtube.com/watch?v=CmptL647fAA&t=1380s",
+          "key": "dbms:relational-model-and-keys__the-relational-model-recap",
+          "name": "The relational model (recap)",
+          "link": "https://www.youtube.com/watch?v=ZxRQRxe16ko",
           "difficulty": "",
           "kind": "concept",
           "video": {
             "provider": "youtube",
-            "id": "CmptL647fAA",
-            "t": 1380
+            "id": "ZxRQRxe16ko"
           }
         },
         {
-          "key": "dbms:functional-dependencies-and-closure__normalization-decomposing-into-smaller-tables",
-          "name": "Normalization: decomposing into smaller tables",
-          "link": "https://www.youtube.com/watch?v=CmptL647fAA&t=1560s",
+          "key": "dbms:relational-model-and-keys__converting-an-er-model-to-a-relational-model",
+          "name": "Converting an ER model to a relational model",
+          "link": "https://www.youtube.com/watch?v=iKKvAN-CIPA",
           "difficulty": "",
           "kind": "concept",
           "video": {
             "provider": "youtube",
-            "id": "CmptL647fAA",
-            "t": 1560
+            "id": "iKKvAN-CIPA"
           }
         },
         {
-          "key": "dbms:functional-dependencies-and-closure__functional-dependency-definition",
-          "name": "Functional dependency: definition",
-          "link": "https://www.youtube.com/watch?v=CmptL647fAA&t=1860s",
+          "key": "dbms:relational-model-and-keys__intension-and-extension-in-a-database",
+          "name": "Intension and extension in a database",
+          "link": "https://takeuforward.org/dbms/intension-extenstion",
           "difficulty": "",
           "kind": "concept",
           "video": {
             "provider": "youtube",
-            "id": "CmptL647fAA",
-            "t": 1860
+            "id": "VFdvu6dkGVE"
           }
         },
         {
-          "key": "dbms:functional-dependencies-and-closure__verifying-an-fd-against-a-table-instance",
-          "name": "Verifying an FD against a table instance",
-          "link": "https://www.youtube.com/watch?v=CmptL647fAA&t=2280s",
+          "key": "dbms:relational-model-and-keys__what-is-an-rdbms",
+          "name": "What is an RDBMS",
+          "link": "https://www.youtube.com/watch?v=MFae6MaGetI",
           "difficulty": "",
           "kind": "concept",
           "video": {
             "provider": "youtube",
-            "id": "CmptL647fAA",
-            "t": 2280
-          }
-        },
-        {
-          "key": "dbms:functional-dependencies-and-closure__types-of-fds-trivial-non-trivial-semi-non-trivial",
-          "name": "Types of FDs: trivial, non-trivial, semi non-trivial",
-          "link": "https://www.youtube.com/watch?v=CmptL647fAA&t=2640s",
-          "difficulty": "",
-          "kind": "concept",
-          "video": {
-            "provider": "youtube",
-            "id": "CmptL647fAA",
-            "t": 2640
-          }
-        },
-        {
-          "key": "dbms:functional-dependencies-and-closure__armstrong-s-axioms",
-          "name": "Armstrong's axioms",
-          "link": "https://www.youtube.com/watch?v=CmptL647fAA&t=3000s",
-          "difficulty": "",
-          "kind": "concept",
-          "video": {
-            "provider": "youtube",
-            "id": "CmptL647fAA",
-            "t": 3000
-          }
-        },
-        {
-          "key": "dbms:functional-dependencies-and-closure__attribute-closure-definition-and-worked-example",
-          "name": "Attribute closure: definition and worked example",
-          "link": "https://www.youtube.com/watch?v=CmptL647fAA&t=3240s",
-          "difficulty": "",
-          "kind": "concept",
-          "video": {
-            "provider": "youtube",
-            "id": "CmptL647fAA",
-            "t": 3240
-          }
-        },
-        {
-          "key": "dbms:functional-dependencies-and-closure__super-key-and-candidate-key-via-closure",
-          "name": "Super key and candidate key via closure",
-          "link": "https://www.youtube.com/watch?v=CmptL647fAA&t=3840s",
-          "difficulty": "",
-          "kind": "concept",
-          "video": {
-            "provider": "youtube",
-            "id": "CmptL647fAA",
-            "t": 3840
-          }
-        },
-        {
-          "key": "dbms:functional-dependencies-and-closure__formal-definition-super-key-vs-candidate-key",
-          "name": "Formal definition: super key vs candidate key",
-          "link": "https://www.youtube.com/watch?v=CmptL647fAA&t=4620s",
-          "difficulty": "",
-          "kind": "concept",
-          "video": {
-            "provider": "youtube",
-            "id": "CmptL647fAA",
-            "t": 4620
-          }
-        },
-        {
-          "key": "dbms:functional-dependencies-and-closure__finding-all-candidate-keys-using-combinatorics",
-          "name": "Finding all candidate keys using combinatorics",
-          "link": "https://www.youtube.com/watch?v=CmptL647fAA&t=4740s",
-          "difficulty": "",
-          "kind": "problem",
-          "video": {
-            "provider": "youtube",
-            "id": "CmptL647fAA",
-            "t": 4740
-          }
-        },
-        {
-          "key": "dbms:functional-dependencies-and-closure__candidate-keys-of-r-abcd",
-          "name": "Candidate keys of R(ABCD)",
-          "link": "https://www.youtube.com/watch?v=CmptL647fAA&t=5280s",
-          "difficulty": "",
-          "kind": "problem",
-          "video": {
-            "provider": "youtube",
-            "id": "CmptL647fAA",
-            "t": 5280
-          }
-        },
-        {
-          "key": "dbms:functional-dependencies-and-closure__candidate-keys-of-r-abcde",
-          "name": "Candidate keys of R(ABCDE)",
-          "link": "https://www.youtube.com/watch?v=CmptL647fAA&t=5940s",
-          "difficulty": "",
-          "kind": "problem",
-          "video": {
-            "provider": "youtube",
-            "id": "CmptL647fAA",
-            "t": 5940
-          }
-        },
-        {
-          "key": "dbms:functional-dependencies-and-closure__no-non-trivial-fds-how-many-candidate-keys",
-          "name": "No non-trivial FDs: how many candidate keys?",
-          "link": "https://www.youtube.com/watch?v=CmptL647fAA&t=6120s",
-          "difficulty": "",
-          "kind": "problem",
-          "video": {
-            "provider": "youtube",
-            "id": "CmptL647fAA",
-            "t": 6120
-          }
-        },
-        {
-          "key": "dbms:functional-dependencies-and-closure__candidate-keys-of-r-abcdef-the-binary-string-trick",
-          "name": "Candidate keys of R(ABCDEF): the binary-string trick",
-          "link": "https://www.youtube.com/watch?v=CmptL647fAA&t=6180s",
-          "difficulty": "",
-          "kind": "problem",
-          "video": {
-            "provider": "youtube",
-            "id": "CmptL647fAA",
-            "t": 6180
-          }
-        },
-        {
-          "key": "dbms:functional-dependencies-and-closure__candidate-keys-of-a-second-r-abcdef",
-          "name": "Candidate keys of a second R(ABCDEF)",
-          "link": "https://www.youtube.com/watch?v=CmptL647fAA&t=7620s",
-          "difficulty": "",
-          "kind": "problem",
-          "video": {
-            "provider": "youtube",
-            "id": "CmptL647fAA",
-            "t": 7620
-          }
-        },
-        {
-          "key": "dbms:functional-dependencies-and-closure__finding-all-candidate-keys-is-np-complete",
-          "name": "Finding all candidate keys is NP-complete",
-          "link": "https://www.youtube.com/watch?v=WVxC2C3W1Vk&t=840s",
-          "difficulty": "",
-          "kind": "concept",
-          "video": {
-            "provider": "youtube",
-            "id": "WVxC2C3W1Vk",
-            "t": 840
-          }
-        },
-        {
-          "key": "dbms:functional-dependencies-and-closure__membership-test-definition",
-          "name": "Membership test: definition",
-          "link": "https://www.youtube.com/watch?v=WVxC2C3W1Vk&t=960s",
-          "difficulty": "",
-          "kind": "concept",
-          "video": {
-            "provider": "youtube",
-            "id": "WVxC2C3W1Vk",
-            "t": 960
-          }
-        },
-        {
-          "key": "dbms:functional-dependencies-and-closure__membership-test-question-set",
-          "name": "Membership test: question set",
-          "link": "https://www.youtube.com/watch?v=WVxC2C3W1Vk&t=1080s",
-          "difficulty": "",
-          "kind": "problem",
-          "video": {
-            "provider": "youtube",
-            "id": "WVxC2C3W1Vk",
-            "t": 1080
-          }
-        },
-        {
-          "key": "dbms:functional-dependencies-and-closure__solving-membership-tests-via-closure",
-          "name": "Solving membership tests via closure",
-          "link": "https://www.youtube.com/watch?v=WVxC2C3W1Vk&t=1440s",
-          "difficulty": "",
-          "kind": "problem",
-          "video": {
-            "provider": "youtube",
-            "id": "WVxC2C3W1Vk",
-            "t": 1440
-          }
-        },
-        {
-          "key": "dbms:functional-dependencies-and-closure__equality-of-fd-sets-f-covers-g",
-          "name": "Equality of FD sets: F covers G",
-          "link": "https://www.youtube.com/watch?v=WVxC2C3W1Vk&t=1800s",
-          "difficulty": "",
-          "kind": "concept",
-          "video": {
-            "provider": "youtube",
-            "id": "WVxC2C3W1Vk",
-            "t": 1800
-          }
-        },
-        {
-          "key": "dbms:functional-dependencies-and-closure__the-four-cases-of-comparing-two-fd-sets",
-          "name": "The four cases of comparing two FD sets",
-          "link": "https://www.youtube.com/watch?v=WVxC2C3W1Vk&t=2040s",
-          "difficulty": "",
-          "kind": "concept",
-          "video": {
-            "provider": "youtube",
-            "id": "WVxC2C3W1Vk",
-            "t": 2040
-          }
-        },
-        {
-          "key": "dbms:functional-dependencies-and-closure__worked-problem-are-f-and-g-equal",
-          "name": "Worked problem: are F and G equal?",
-          "link": "https://www.youtube.com/watch?v=WVxC2C3W1Vk&t=2220s",
-          "difficulty": "",
-          "kind": "problem",
-          "video": {
-            "provider": "youtube",
-            "id": "WVxC2C3W1Vk",
-            "t": 2220
-          }
-        },
-        {
-          "key": "dbms:functional-dependencies-and-closure__framing-and-solving-more-cover-problems",
-          "name": "Framing and solving more cover problems",
-          "link": "https://www.youtube.com/watch?v=WVxC2C3W1Vk&t=3000s",
-          "difficulty": "",
-          "kind": "problem",
-          "video": {
-            "provider": "youtube",
-            "id": "WVxC2C3W1Vk",
-            "t": 3000
+            "id": "MFae6MaGetI"
           }
         }
-      ]
+      ],
+      "note": "Ravula's course, plus takeUforward on the RDBMS side."
     },
     {
-      "key": "dbms-04-pyq-marathon-candidate-keys",
+      "key": "dbms-04-foreign-keys-and-referential-integrity",
       "order": 4,
-      "title": "PYQ Marathon: Candidate Keys",
-      "problems": [
-        {
-          "key": "dbms:pyq-marathon-candidate-keys__candidate-key-pyq-1",
-          "name": "Candidate key PYQ 1",
-          "link": "https://www.youtube.com/watch?v=-0l0k-kWuNM&t=300s",
-          "difficulty": "",
-          "kind": "problem",
-          "video": {
-            "provider": "youtube",
-            "id": "-0l0k-kWuNM",
-            "t": 300
-          }
-        },
-        {
-          "key": "dbms:pyq-marathon-candidate-keys__candidate-key-pyq-2-where-shortcuts-fail",
-          "name": "Candidate key PYQ 2: where shortcuts fail",
-          "link": "https://www.youtube.com/watch?v=-0l0k-kWuNM&t=1200s",
-          "difficulty": "",
-          "kind": "problem",
-          "video": {
-            "provider": "youtube",
-            "id": "-0l0k-kWuNM",
-            "t": 1200
-          }
-        },
-        {
-          "key": "dbms:pyq-marathon-candidate-keys__candidate-key-pyq-3-a-long-one",
-          "name": "Candidate key PYQ 3: a long one",
-          "link": "https://www.youtube.com/watch?v=-0l0k-kWuNM&t=2220s",
-          "difficulty": "",
-          "kind": "problem",
-          "video": {
-            "provider": "youtube",
-            "id": "-0l0k-kWuNM",
-            "t": 2220
-          }
-        },
-        {
-          "key": "dbms:pyq-marathon-candidate-keys__candidate-key-pyq-4",
-          "name": "Candidate key PYQ 4",
-          "link": "https://www.youtube.com/watch?v=-0l0k-kWuNM&t=3600s",
-          "difficulty": "",
-          "kind": "problem",
-          "video": {
-            "provider": "youtube",
-            "id": "-0l0k-kWuNM",
-            "t": 3600
-          }
-        },
-        {
-          "key": "dbms:pyq-marathon-candidate-keys__candidate-key-pyq-5",
-          "name": "Candidate key PYQ 5",
-          "link": "https://www.youtube.com/watch?v=-0l0k-kWuNM&t=4500s",
-          "difficulty": "",
-          "kind": "problem",
-          "video": {
-            "provider": "youtube",
-            "id": "-0l0k-kWuNM",
-            "t": 4500
-          }
-        },
-        {
-          "key": "dbms:pyq-marathon-candidate-keys__candidate-key-pyq-6-r-vwxyz",
-          "name": "Candidate key PYQ 6: R(VWXYZ)",
-          "link": "https://www.youtube.com/watch?v=-0l0k-kWuNM&t=4860s",
-          "difficulty": "",
-          "kind": "problem",
-          "video": {
-            "provider": "youtube",
-            "id": "-0l0k-kWuNM",
-            "t": 4860
-          }
-        },
-        {
-          "key": "dbms:pyq-marathon-candidate-keys__candidate-key-pyq-7-r-pqrstu",
-          "name": "Candidate key PYQ 7: R(PQRSTU)",
-          "link": "https://www.youtube.com/watch?v=-0l0k-kWuNM&t=5460s",
-          "difficulty": "",
-          "kind": "problem",
-          "video": {
-            "provider": "youtube",
-            "id": "-0l0k-kWuNM",
-            "t": 5460
-          }
-        },
-        {
-          "key": "dbms:pyq-marathon-candidate-keys__candidate-key-pyq-8",
-          "name": "Candidate key PYQ 8",
-          "link": "https://www.youtube.com/watch?v=-0l0k-kWuNM&t=6060s",
-          "difficulty": "",
-          "kind": "problem",
-          "video": {
-            "provider": "youtube",
-            "id": "-0l0k-kWuNM",
-            "t": 6060
-          }
-        },
-        {
-          "key": "dbms:pyq-marathon-candidate-keys__candidate-key-pyq-9",
-          "name": "Candidate key PYQ 9",
-          "link": "https://www.youtube.com/watch?v=-0l0k-kWuNM&t=6900s",
-          "difficulty": "",
-          "kind": "problem",
-          "video": {
-            "provider": "youtube",
-            "id": "-0l0k-kWuNM",
-            "t": 6900
-          }
-        },
-        {
-          "key": "dbms:pyq-marathon-candidate-keys__candidate-key-pyq-10",
-          "name": "Candidate key PYQ 10",
-          "link": "https://www.youtube.com/watch?v=-0l0k-kWuNM&t=9060s",
-          "difficulty": "",
-          "kind": "problem",
-          "video": {
-            "provider": "youtube",
-            "id": "-0l0k-kWuNM",
-            "t": 9060
-          }
-        },
-        {
-          "key": "dbms:pyq-marathon-candidate-keys__candidate-key-pyq-11",
-          "name": "Candidate key PYQ 11",
-          "link": "https://www.youtube.com/watch?v=xsvbmx4gtxs&t=720s",
-          "difficulty": "",
-          "kind": "problem",
-          "video": {
-            "provider": "youtube",
-            "id": "xsvbmx4gtxs",
-            "t": 720
-          }
-        },
-        {
-          "key": "dbms:pyq-marathon-candidate-keys__candidate-key-pyq-12-r-xyzpq",
-          "name": "Candidate key PYQ 12: R(XYZPQ)",
-          "link": "https://www.youtube.com/watch?v=xsvbmx4gtxs&t=1020s",
-          "difficulty": "",
-          "kind": "problem",
-          "video": {
-            "provider": "youtube",
-            "id": "xsvbmx4gtxs",
-            "t": 1020
-          }
-        },
-        {
-          "key": "dbms:pyq-marathon-candidate-keys__candidate-key-pyq-13-r-abcdefg",
-          "name": "Candidate key PYQ 13: R(ABCDEFG)",
-          "link": "https://www.youtube.com/watch?v=xsvbmx4gtxs&t=1320s",
-          "difficulty": "",
-          "kind": "problem",
-          "video": {
-            "provider": "youtube",
-            "id": "xsvbmx4gtxs",
-            "t": 1320
-          }
-        },
-        {
-          "key": "dbms:pyq-marathon-candidate-keys__candidate-key-pyq-14-r-abcd",
-          "name": "Candidate key PYQ 14: R(ABCD)",
-          "link": "https://www.youtube.com/watch?v=xsvbmx4gtxs&t=2100s",
-          "difficulty": "",
-          "kind": "problem",
-          "video": {
-            "provider": "youtube",
-            "id": "xsvbmx4gtxs",
-            "t": 2100
-          }
-        },
-        {
-          "key": "dbms:pyq-marathon-candidate-keys__candidate-key-pyq-15-r-abcde",
-          "name": "Candidate key PYQ 15: R(ABCDE)",
-          "link": "https://www.youtube.com/watch?v=xsvbmx4gtxs&t=3360s",
-          "difficulty": "",
-          "kind": "problem",
-          "video": {
-            "provider": "youtube",
-            "id": "xsvbmx4gtxs",
-            "t": 3360
-          }
-        },
-        {
-          "key": "dbms:pyq-marathon-candidate-keys__candidate-key-pyq-16-r-pqrst",
-          "name": "Candidate key PYQ 16: R(PQRST)",
-          "link": "https://www.youtube.com/watch?v=xsvbmx4gtxs&t=3840s",
-          "difficulty": "",
-          "kind": "problem",
-          "video": {
-            "provider": "youtube",
-            "id": "xsvbmx4gtxs",
-            "t": 3840
-          }
-        },
-        {
-          "key": "dbms:pyq-marathon-candidate-keys__candidate-key-pyq-17-r-abcd",
-          "name": "Candidate key PYQ 17: R(ABCD)",
-          "link": "https://www.youtube.com/watch?v=xsvbmx4gtxs&t=4320s",
-          "difficulty": "",
-          "kind": "problem",
-          "video": {
-            "provider": "youtube",
-            "id": "xsvbmx4gtxs",
-            "t": 4320
-          }
-        },
-        {
-          "key": "dbms:pyq-marathon-candidate-keys__candidate-key-pyq-18-r-abcdeg",
-          "name": "Candidate key PYQ 18: R(ABCDEG)",
-          "link": "https://www.youtube.com/watch?v=xsvbmx4gtxs&t=4920s",
-          "difficulty": "",
-          "kind": "problem",
-          "video": {
-            "provider": "youtube",
-            "id": "xsvbmx4gtxs",
-            "t": 4920
-          }
-        }
-      ]
-    },
-    {
-      "key": "dbms-05-pyq-marathon-counting-super-keys",
-      "order": 5,
-      "title": "PYQ Marathon: Counting Super Keys",
-      "problems": [
-        {
-          "key": "dbms:pyq-marathon-counting-super-keys__from-candidate-keys-to-counting-super-keys",
-          "name": "From candidate keys to counting super keys",
-          "link": "https://www.youtube.com/watch?v=a81u-B1aCXk&t=480s",
-          "difficulty": "",
-          "kind": "concept",
-          "video": {
-            "provider": "youtube",
-            "id": "a81u-B1aCXk",
-            "t": 480
-          }
-        },
-        {
-          "key": "dbms:pyq-marathon-counting-super-keys__super-key-counting-r-abcdef",
-          "name": "Super key counting: R(ABCDEF)",
-          "link": "https://www.youtube.com/watch?v=a81u-B1aCXk&t=780s",
-          "difficulty": "",
-          "kind": "problem",
-          "video": {
-            "provider": "youtube",
-            "id": "a81u-B1aCXk",
-            "t": 780
-          }
-        },
-        {
-          "key": "dbms:pyq-marathon-counting-super-keys__a-question-that-is-wrong-and-why",
-          "name": "A question that is wrong, and why",
-          "link": "https://www.youtube.com/watch?v=a81u-B1aCXk&t=1380s",
-          "difficulty": "",
-          "kind": "problem",
-          "video": {
-            "provider": "youtube",
-            "id": "a81u-B1aCXk",
-            "t": 1380
-          }
-        },
-        {
-          "key": "dbms:pyq-marathon-counting-super-keys__venn-diagram-vs-the-general-method",
-          "name": "Venn diagram vs the general method",
-          "link": "https://www.youtube.com/watch?v=a81u-B1aCXk&t=3120s",
-          "difficulty": "",
-          "kind": "concept",
-          "video": {
-            "provider": "youtube",
-            "id": "a81u-B1aCXk",
-            "t": 3120
-          }
-        },
-        {
-          "key": "dbms:pyq-marathon-counting-super-keys__super-key-counting-problem",
-          "name": "Super key counting problem",
-          "link": "https://www.youtube.com/watch?v=a81u-B1aCXk&t=3660s",
-          "difficulty": "",
-          "kind": "problem",
-          "video": {
-            "provider": "youtube",
-            "id": "a81u-B1aCXk",
-            "t": 3660
-          }
-        },
-        {
-          "key": "dbms:pyq-marathon-counting-super-keys__counting-three-element-keys",
-          "name": "Counting three-element keys",
-          "link": "https://www.youtube.com/watch?v=a81u-B1aCXk&t=4080s",
-          "difficulty": "",
-          "kind": "problem",
-          "video": {
-            "provider": "youtube",
-            "id": "a81u-B1aCXk",
-            "t": 4080
-          }
-        },
-        {
-          "key": "dbms:pyq-marathon-counting-super-keys__counting-four-element-keys",
-          "name": "Counting four-element keys",
-          "link": "https://www.youtube.com/watch?v=a81u-B1aCXk&t=4680s",
-          "difficulty": "",
-          "kind": "problem",
-          "video": {
-            "provider": "youtube",
-            "id": "a81u-B1aCXk",
-            "t": 4680
-          }
-        },
-        {
-          "key": "dbms:pyq-marathon-counting-super-keys__super-key-counting-r-abcdef-with-cd-and-ef",
-          "name": "Super key counting: R(ABCDEF) with CD and EF",
-          "link": "https://www.youtube.com/watch?v=a81u-B1aCXk&t=5340s",
-          "difficulty": "",
-          "kind": "problem",
-          "video": {
-            "provider": "youtube",
-            "id": "a81u-B1aCXk",
-            "t": 5340
-          }
-        },
-        {
-          "key": "dbms:pyq-marathon-counting-super-keys__super-keys-of-r-abcdef-with-candidate-keys-ag-ge-bg",
-          "name": "Super keys of R(ABCDEF) with candidate keys AG, GE, BG",
-          "link": "https://www.youtube.com/watch?v=yCkQHWVHoDY&t=60s",
-          "difficulty": "",
-          "kind": "problem",
-          "video": {
-            "provider": "youtube",
-            "id": "yCkQHWVHoDY",
-            "t": 60
-          }
-        },
-        {
-          "key": "dbms:pyq-marathon-counting-super-keys__counting-super-keys-2-4-1",
-          "name": "Counting super keys: 2^4 - 1",
-          "link": "https://www.youtube.com/watch?v=yCkQHWVHoDY&t=360s",
-          "difficulty": "",
-          "kind": "problem",
-          "video": {
-            "provider": "youtube",
-            "id": "yCkQHWVHoDY",
-            "t": 360
-          }
-        },
-        {
-          "key": "dbms:pyq-marathon-counting-super-keys__super-key-counting-next-question",
-          "name": "Super key counting: next question",
-          "link": "https://www.youtube.com/watch?v=yCkQHWVHoDY&t=840s",
-          "difficulty": "",
-          "kind": "problem",
-          "video": {
-            "provider": "youtube",
-            "id": "yCkQHWVHoDY",
-            "t": 840
-          }
-        },
-        {
-          "key": "dbms:pyq-marathon-counting-super-keys__which-of-the-5c3-subsets-are-super-keys",
-          "name": "Which of the 5C3 subsets are super keys?",
-          "link": "https://www.youtube.com/watch?v=yCkQHWVHoDY&t=1320s",
-          "difficulty": "",
-          "kind": "problem",
-          "video": {
-            "provider": "youtube",
-            "id": "yCkQHWVHoDY",
-            "t": 1320
-          }
-        },
-        {
-          "key": "dbms:pyq-marathon-counting-super-keys__super-key-counting-r-abcd",
-          "name": "Super key counting: R(ABCD)",
-          "link": "https://www.youtube.com/watch?v=yCkQHWVHoDY&t=1680s",
-          "difficulty": "",
-          "kind": "problem",
-          "video": {
-            "provider": "youtube",
-            "id": "yCkQHWVHoDY",
-            "t": 1680
-          }
-        },
-        {
-          "key": "dbms:pyq-marathon-counting-super-keys__three-element-keys-which-are-not-super-keys",
-          "name": "Three-element keys which are not super keys",
-          "link": "https://www.youtube.com/watch?v=yCkQHWVHoDY&t=2100s",
-          "difficulty": "",
-          "kind": "problem",
-          "video": {
-            "provider": "youtube",
-            "id": "yCkQHWVHoDY",
-            "t": 2100
-          }
-        },
-        {
-          "key": "dbms:pyq-marathon-counting-super-keys__super-key-counting-r-abcdefghij",
-          "name": "Super key counting: R(ABCDEFGHIJ)",
-          "link": "https://www.youtube.com/watch?v=yCkQHWVHoDY&t=2400s",
-          "difficulty": "",
-          "kind": "problem",
-          "video": {
-            "provider": "youtube",
-            "id": "yCkQHWVHoDY",
-            "t": 2400
-          }
-        },
-        {
-          "key": "dbms:pyq-marathon-counting-super-keys__super-key-counting-r-abcdefgh",
-          "name": "Super key counting: R(ABCDEFGH)",
-          "link": "https://www.youtube.com/watch?v=yCkQHWVHoDY&t=2940s",
-          "difficulty": "",
-          "kind": "problem",
-          "video": {
-            "provider": "youtube",
-            "id": "yCkQHWVHoDY",
-            "t": 2940
-          }
-        },
-        {
-          "key": "dbms:pyq-marathon-counting-super-keys__maximum-number-of-candidate-keys",
-          "name": "Maximum number of candidate keys",
-          "link": "https://www.youtube.com/watch?v=yCkQHWVHoDY&t=3780s",
-          "difficulty": "",
-          "kind": "problem",
-          "video": {
-            "provider": "youtube",
-            "id": "yCkQHWVHoDY",
-            "t": 3780
-          }
-        },
-        {
-          "key": "dbms:pyq-marathon-counting-super-keys__maximum-candidate-keys-the-r-abcde-case",
-          "name": "Maximum candidate keys: the R(ABCDE) case",
-          "link": "https://www.youtube.com/watch?v=yCkQHWVHoDY&t=5280s",
-          "difficulty": "",
-          "kind": "problem",
-          "video": {
-            "provider": "youtube",
-            "id": "yCkQHWVHoDY",
-            "t": 5280
-          }
-        }
-      ]
-    },
-    {
-      "key": "dbms-06-foreign-keys-and-referential-integrity",
-      "order": 6,
       "title": "Foreign Keys and Referential Integrity",
       "problems": [
         {
@@ -1412,789 +951,229 @@
       ]
     },
     {
-      "key": "dbms-07-normalization-redundancy-and-anomalies",
-      "order": 7,
-      "title": "Normalization: Redundancy and Anomalies",
+      "key": "dbms-05-sql",
+      "order": 5,
+      "title": "SQL",
       "problems": [
         {
-          "key": "dbms:normalization-redundancy-and-anomalies__roadmap-of-the-normalization-topics",
-          "name": "Roadmap of the normalization topics",
-          "link": "https://www.youtube.com/watch?v=F_IVrRkHkO4&t=5880s",
+          "key": "dbms:sql__what-is-sql",
+          "name": "What is SQL",
+          "link": "https://takeuforward.org/dbms/sql-command-and-their%20types",
           "difficulty": "",
           "kind": "concept",
           "video": {
             "provider": "youtube",
-            "id": "F_IVrRkHkO4",
-            "t": 5880
+            "id": "QbNK4TMbNi8"
           }
         },
         {
-          "key": "dbms:normalization-redundancy-and-anomalies__what-is-normalization-defining-redundancy",
-          "name": "What is normalization? Defining redundancy",
-          "link": "https://www.youtube.com/watch?v=F_IVrRkHkO4&t=6360s",
+          "key": "dbms:sql__types-of-sql-commands-ddl-dml-dcl-tcl",
+          "name": "Types of SQL commands: DDL, DML, DCL, TCL",
+          "link": "https://www.youtube.com/watch?v=6eiGB5f_4EQ",
           "difficulty": "",
           "kind": "concept",
           "video": {
             "provider": "youtube",
-            "id": "F_IVrRkHkO4",
-            "t": 6360
+            "id": "6eiGB5f_4EQ"
           }
         },
         {
-          "key": "dbms:normalization-redundancy-and-anomalies__redundancy-example-combining-student-and-course",
-          "name": "Redundancy example: combining student and course",
-          "link": "https://www.youtube.com/watch?v=F_IVrRkHkO4&t=6660s",
+          "key": "dbms:sql__databases-and-their-sql-commands",
+          "name": "Databases and their SQL commands",
+          "link": "https://www.youtube.com/watch?v=_bm72LXd6lE",
           "difficulty": "",
           "kind": "concept",
           "video": {
             "provider": "youtube",
-            "id": "F_IVrRkHkO4",
-            "t": 6660
+            "id": "_bm72LXd6lE"
           }
         },
         {
-          "key": "dbms:normalization-redundancy-and-anomalies__insertion-anomaly",
-          "name": "Insertion anomaly",
-          "link": "https://www.youtube.com/watch?v=F_IVrRkHkO4&t=7500s",
+          "key": "dbms:sql__insert-and-bulk-loading",
+          "name": "INSERT and bulk loading",
+          "link": "",
+          "difficulty": "",
+          "kind": "concept"
+        },
+        {
+          "key": "dbms:sql__update",
+          "name": "UPDATE",
+          "link": "https://www.youtube.com/watch?v=9bvGD5GSsMk",
           "difficulty": "",
           "kind": "concept",
           "video": {
             "provider": "youtube",
-            "id": "F_IVrRkHkO4",
-            "t": 7500
+            "id": "9bvGD5GSsMk"
           }
         },
         {
-          "key": "dbms:normalization-redundancy-and-anomalies__deletion-anomaly",
-          "name": "Deletion anomaly",
-          "link": "https://www.youtube.com/watch?v=F_IVrRkHkO4&t=7680s",
+          "key": "dbms:sql__delete",
+          "name": "DELETE",
+          "link": "https://www.youtube.com/watch?v=td6-GbOo1Vc",
           "difficulty": "",
           "kind": "concept",
           "video": {
             "provider": "youtube",
-            "id": "F_IVrRkHkO4",
-            "t": 7680
+            "id": "td6-GbOo1Vc"
           }
         },
         {
-          "key": "dbms:normalization-redundancy-and-anomalies__update-anomaly",
-          "name": "Update anomaly",
-          "link": "https://www.youtube.com/watch?v=F_IVrRkHkO4&t=7800s",
+          "key": "dbms:sql__select",
+          "name": "SELECT",
+          "link": "https://www.youtube.com/watch?v=414a3GoCf5U",
           "difficulty": "",
           "kind": "concept",
           "video": {
             "provider": "youtube",
-            "id": "F_IVrRkHkO4",
-            "t": 7800
+            "id": "414a3GoCf5U"
           }
+        },
+        {
+          "key": "dbms:sql__alter",
+          "name": "ALTER",
+          "link": "https://www.youtube.com/watch?v=8d4jz2UmW6s",
+          "difficulty": "",
+          "kind": "concept",
+          "video": {
+            "provider": "youtube",
+            "id": "8d4jz2UmW6s"
+          }
+        },
+        {
+          "key": "dbms:sql__rename",
+          "name": "RENAME",
+          "link": "https://www.youtube.com/watch?v=IttR2kOc024",
+          "difficulty": "",
+          "kind": "concept",
+          "video": {
+            "provider": "youtube",
+            "id": "IttR2kOc024"
+          }
+        },
+        {
+          "key": "dbms:sql__truncate",
+          "name": "TRUNCATE",
+          "link": "https://www.youtube.com/watch?v=SAimYcJMXGg",
+          "difficulty": "",
+          "kind": "concept",
+          "video": {
+            "provider": "youtube",
+            "id": "SAimYcJMXGg"
+          }
+        },
+        {
+          "key": "dbms:sql__truncate-vs-delete-vs-drop",
+          "name": "TRUNCATE vs DELETE vs DROP",
+          "link": "https://www.youtube.com/watch?v=C1hKGNIOFCk",
+          "difficulty": "",
+          "kind": "concept",
+          "video": {
+            "provider": "youtube",
+            "id": "C1hKGNIOFCk"
+          }
+        },
+        {
+          "key": "dbms:sql__constraints-in-ddl-primary-key-foreign-key-check-default",
+          "name": "Constraints in DDL: PRIMARY KEY, FOREIGN KEY, CHECK, DEFAULT",
+          "link": "",
+          "difficulty": "",
+          "kind": "concept"
+        },
+        {
+          "key": "dbms:sql__operators-in-sql",
+          "name": "Operators in SQL",
+          "link": "https://takeuforward.org/dbms/operators-aggregations-in-sql",
+          "difficulty": "",
+          "kind": "concept",
+          "video": {
+            "provider": "youtube",
+            "id": "01CxBcEhKvo"
+          }
+        },
+        {
+          "key": "dbms:sql__aggregate-functions",
+          "name": "Aggregate functions",
+          "link": "https://www.youtube.com/watch?v=VlO_ev-FZYo",
+          "difficulty": "",
+          "kind": "concept",
+          "video": {
+            "provider": "youtube",
+            "id": "VlO_ev-FZYo"
+          }
+        },
+        {
+          "key": "dbms:sql__group-by-and-having",
+          "name": "GROUP BY and HAVING",
+          "link": "",
+          "difficulty": "",
+          "kind": "concept"
+        },
+        {
+          "key": "dbms:sql__joins-inner-left-right-full-outer-self-and-cross",
+          "name": "Joins: inner, left, right, full outer, self and cross",
+          "link": "",
+          "difficulty": "",
+          "kind": "concept"
+        },
+        {
+          "key": "dbms:sql__set-operations-union-intersect-except",
+          "name": "Set operations: UNION, INTERSECT, EXCEPT",
+          "link": "",
+          "difficulty": "",
+          "kind": "concept"
+        },
+        {
+          "key": "dbms:sql__subqueries",
+          "name": "Subqueries",
+          "link": "https://takeuforward.org/dbms/sql-subqueries",
+          "difficulty": "",
+          "kind": "concept",
+          "video": {
+            "provider": "youtube",
+            "id": "HG1uWJaLDqM"
+          }
+        },
+        {
+          "key": "dbms:sql__nested-and-correlated-subqueries-in-exists-all-any",
+          "name": "Nested and correlated subqueries: IN, EXISTS, ALL, ANY",
+          "link": "",
+          "difficulty": "",
+          "kind": "concept"
+        },
+        {
+          "key": "dbms:sql__null-semantics-and-three-valued-logic",
+          "name": "NULL semantics and three-valued logic",
+          "link": "",
+          "difficulty": "",
+          "kind": "concept"
+        },
+        {
+          "key": "dbms:sql__views-updatable-views-and-materialized-views",
+          "name": "Views, updatable views and materialized views",
+          "link": "",
+          "difficulty": "",
+          "kind": "concept"
+        },
+        {
+          "key": "dbms:sql__window-functions-row-number-rank-dense-rank-over",
+          "name": "Window functions: ROW_NUMBER, RANK, DENSE_RANK, OVER",
+          "link": "",
+          "difficulty": "",
+          "kind": "concept"
+        },
+        {
+          "key": "dbms:sql__triggers-stored-procedures-and-cursors",
+          "name": "Triggers, stored procedures and cursors",
+          "link": "",
+          "difficulty": "",
+          "kind": "concept"
         }
-      ]
+      ],
+      "note": "Riti Kumari's SQL course via takeUforward; the stubs are the half it skips."
     },
     {
-      "key": "dbms-08-decomposition-lossless-join-and-dependency-preserving",
-      "order": 8,
-      "title": "Decomposition: Lossless Join and Dependency Preserving",
-      "problems": [
-        {
-          "key": "dbms:decomposition-lossless-join-and-dependency-preserving__what-is-decomposition",
-          "name": "What is decomposition?",
-          "link": "https://www.youtube.com/watch?v=VfWQEq27CKg&t=240s",
-          "difficulty": "",
-          "kind": "concept",
-          "video": {
-            "provider": "youtube",
-            "id": "VfWQEq27CKg",
-            "t": 240
-          }
-        },
-        {
-          "key": "dbms:decomposition-lossless-join-and-dependency-preserving__the-two-properties-lossless-join-and-dependency-preserving",
-          "name": "The two properties: lossless join and dependency preserving",
-          "link": "https://www.youtube.com/watch?v=VfWQEq27CKg&t=360s",
-          "difficulty": "",
-          "kind": "concept",
-          "video": {
-            "provider": "youtube",
-            "id": "VfWQEq27CKg",
-            "t": 360
-          }
-        },
-        {
-          "key": "dbms:decomposition-lossless-join-and-dependency-preserving__lossless-join-decomposition-formal-definition",
-          "name": "Lossless join decomposition: formal definition",
-          "link": "https://www.youtube.com/watch?v=VfWQEq27CKg&t=720s",
-          "difficulty": "",
-          "kind": "concept",
-          "video": {
-            "provider": "youtube",
-            "id": "VfWQEq27CKg",
-            "t": 720
-          }
-        },
-        {
-          "key": "dbms:decomposition-lossless-join-and-dependency-preserving__worked-example-a-lossless-decomposition",
-          "name": "Worked example: a lossless decomposition",
-          "link": "https://www.youtube.com/watch?v=VfWQEq27CKg&t=1080s",
-          "difficulty": "",
-          "kind": "concept",
-          "video": {
-            "provider": "youtube",
-            "id": "VfWQEq27CKg",
-            "t": 1080
-          }
-        },
-        {
-          "key": "dbms:decomposition-lossless-join-and-dependency-preserving__worked-example-a-lossy-decomposition-and-spurious-tuples",
-          "name": "Worked example: a lossy decomposition and spurious tuples",
-          "link": "https://www.youtube.com/watch?v=VfWQEq27CKg&t=1740s",
-          "difficulty": "",
-          "kind": "concept",
-          "video": {
-            "provider": "youtube",
-            "id": "VfWQEq27CKg",
-            "t": 1740
-          }
-        },
-        {
-          "key": "dbms:decomposition-lossless-join-and-dependency-preserving__the-lossless-test-the-common-attributes-must-be-a-super-key",
-          "name": "The lossless test: the common attributes must be a super key",
-          "link": "https://www.youtube.com/watch?v=VfWQEq27CKg&t=2460s",
-          "difficulty": "",
-          "kind": "concept",
-          "video": {
-            "provider": "youtube",
-            "id": "VfWQEq27CKg",
-            "t": 2460
-          }
-        },
-        {
-          "key": "dbms:decomposition-lossless-join-and-dependency-preserving__problems-is-this-decomposition-lossy-or-lossless",
-          "name": "Problems: is this decomposition lossy or lossless?",
-          "link": "https://www.youtube.com/watch?v=VfWQEq27CKg&t=2700s",
-          "difficulty": "",
-          "kind": "problem",
-          "video": {
-            "provider": "youtube",
-            "id": "VfWQEq27CKg",
-            "t": 2700
-          }
-        },
-        {
-          "key": "dbms:decomposition-lossless-join-and-dependency-preserving__three-way-decomposition",
-          "name": "Three-way decomposition",
-          "link": "https://www.youtube.com/watch?v=VfWQEq27CKg&t=4140s",
-          "difficulty": "",
-          "kind": "problem",
-          "video": {
-            "provider": "youtube",
-            "id": "VfWQEq27CKg",
-            "t": 4140
-          }
-        },
-        {
-          "key": "dbms:decomposition-lossless-join-and-dependency-preserving__dependency-preserving-decomposition-definition",
-          "name": "Dependency preserving decomposition: definition",
-          "link": "https://www.youtube.com/watch?v=VfWQEq27CKg&t=4500s",
-          "difficulty": "",
-          "kind": "concept",
-          "video": {
-            "provider": "youtube",
-            "id": "VfWQEq27CKg",
-            "t": 4500
-          }
-        },
-        {
-          "key": "dbms:decomposition-lossless-join-and-dependency-preserving__dependency-preservation-formal-definition-and-the-three-cases",
-          "name": "Dependency preservation: formal definition and the three cases",
-          "link": "https://www.youtube.com/watch?v=oaqqYpWiHZM&t=600s",
-          "difficulty": "",
-          "kind": "concept",
-          "video": {
-            "provider": "youtube",
-            "id": "oaqqYpWiHZM",
-            "t": 600
-          }
-        },
-        {
-          "key": "dbms:decomposition-lossless-join-and-dependency-preserving__worked-problem-are-all-dependencies-preserved",
-          "name": "Worked problem: are all dependencies preserved?",
-          "link": "https://www.youtube.com/watch?v=oaqqYpWiHZM&t=1080s",
-          "difficulty": "",
-          "kind": "problem",
-          "video": {
-            "provider": "youtube",
-            "id": "oaqqYpWiHZM",
-            "t": 1080
-          }
-        },
-        {
-          "key": "dbms:decomposition-lossless-join-and-dependency-preserving__checking-the-decomposed-fd-set-covers-the-original",
-          "name": "Checking the decomposed FD set covers the original",
-          "link": "https://www.youtube.com/watch?v=oaqqYpWiHZM&t=2100s",
-          "difficulty": "",
-          "kind": "problem",
-          "video": {
-            "provider": "youtube",
-            "id": "oaqqYpWiHZM",
-            "t": 2100
-          }
-        },
-        {
-          "key": "dbms:decomposition-lossless-join-and-dependency-preserving__second-dependency-preservation-problem",
-          "name": "Second dependency-preservation problem",
-          "link": "https://www.youtube.com/watch?v=oaqqYpWiHZM&t=2580s",
-          "difficulty": "",
-          "kind": "problem",
-          "video": {
-            "provider": "youtube",
-            "id": "oaqqYpWiHZM",
-            "t": 2580
-          }
-        }
-      ]
-    },
-    {
-      "key": "dbms-09-normal-forms-1nf-to-bcnf",
-      "order": 9,
-      "title": "Normal Forms: 1NF to BCNF",
-      "problems": [
-        {
-          "key": "dbms:normal-forms-1nf-to-bcnf__why-redundancy-exists-non-trivial-and-multi-valued-dependencies",
-          "name": "Why redundancy exists: non-trivial and multi-valued dependencies",
-          "link": "https://www.youtube.com/watch?v=oaqqYpWiHZM&t=4140s",
-          "difficulty": "",
-          "kind": "concept",
-          "video": {
-            "provider": "youtube",
-            "id": "oaqqYpWiHZM",
-            "t": 4140
-          }
-        },
-        {
-          "key": "dbms:normal-forms-1nf-to-bcnf__the-normal-form-hierarchy-and-multi-valued-dependency",
-          "name": "The normal form hierarchy, and multi-valued dependency",
-          "link": "https://www.youtube.com/watch?v=oaqqYpWiHZM&t=4380s",
-          "difficulty": "",
-          "kind": "concept",
-          "video": {
-            "provider": "youtube",
-            "id": "oaqqYpWiHZM",
-            "t": 4380
-          }
-        },
-        {
-          "key": "dbms:normal-forms-1nf-to-bcnf__how-the-normal-forms-nest",
-          "name": "How the normal forms nest",
-          "link": "https://www.youtube.com/watch?v=oaqqYpWiHZM&t=4920s",
-          "difficulty": "",
-          "kind": "concept",
-          "video": {
-            "provider": "youtube",
-            "id": "oaqqYpWiHZM",
-            "t": 4920
-          }
-        },
-        {
-          "key": "dbms:normal-forms-1nf-to-bcnf__first-normal-form-atomic-attributes",
-          "name": "First normal form: atomic attributes",
-          "link": "https://www.youtube.com/watch?v=oaqqYpWiHZM&t=5100s",
-          "difficulty": "",
-          "kind": "concept",
-          "video": {
-            "provider": "youtube",
-            "id": "oaqqYpWiHZM",
-            "t": 5100
-          }
-        },
-        {
-          "key": "dbms:normal-forms-1nf-to-bcnf__converting-a-non-1nf-table-into-1nf",
-          "name": "Converting a non-1NF table into 1NF",
-          "link": "https://www.youtube.com/watch?v=oaqqYpWiHZM&t=5520s",
-          "difficulty": "",
-          "kind": "concept",
-          "video": {
-            "provider": "youtube",
-            "id": "oaqqYpWiHZM",
-            "t": 5520
-          }
-        },
-        {
-          "key": "dbms:normal-forms-1nf-to-bcnf__why-1nf-still-has-high-redundancy",
-          "name": "Why 1NF still has high redundancy",
-          "link": "https://www.youtube.com/watch?v=oaqqYpWiHZM&t=5820s",
-          "difficulty": "",
-          "kind": "concept",
-          "video": {
-            "provider": "youtube",
-            "id": "oaqqYpWiHZM",
-            "t": 5820
-          }
-        },
-        {
-          "key": "dbms:normal-forms-1nf-to-bcnf__why-2nf-3nf-and-bcnf-are-needed",
-          "name": "Why 2NF, 3NF and BCNF are needed",
-          "link": "https://www.youtube.com/watch?v=oaqqYpWiHZM&t=6180s",
-          "difficulty": "",
-          "kind": "concept",
-          "video": {
-            "provider": "youtube",
-            "id": "oaqqYpWiHZM",
-            "t": 6180
-          }
-        },
-        {
-          "key": "dbms:normal-forms-1nf-to-bcnf__when-does-a-functional-dependency-form-redundancy",
-          "name": "When does a functional dependency form redundancy?",
-          "link": "https://www.youtube.com/watch?v=XehwR2cWkSw&t=240s",
-          "difficulty": "",
-          "kind": "concept",
-          "video": {
-            "provider": "youtube",
-            "id": "XehwR2cWkSw",
-            "t": 240
-          }
-        },
-        {
-          "key": "dbms:normal-forms-1nf-to-bcnf__when-does-a-functional-dependency-not-form-redundancy",
-          "name": "When does a functional dependency NOT form redundancy?",
-          "link": "https://www.youtube.com/watch?v=XehwR2cWkSw&t=540s",
-          "difficulty": "",
-          "kind": "concept",
-          "video": {
-            "provider": "youtube",
-            "id": "XehwR2cWkSw",
-            "t": 540
-          }
-        },
-        {
-          "key": "dbms:normal-forms-1nf-to-bcnf__redundancy-example-partial-dependency-on-sid-cid",
-          "name": "Redundancy example: partial dependency on SID CID",
-          "link": "https://www.youtube.com/watch?v=XehwR2cWkSw&t=960s",
-          "difficulty": "",
-          "kind": "concept",
-          "video": {
-            "provider": "youtube",
-            "id": "XehwR2cWkSw",
-            "t": 960
-          }
-        },
-        {
-          "key": "dbms:normal-forms-1nf-to-bcnf__redundancy-example-rating-determines-salary",
-          "name": "Redundancy example: rating determines salary",
-          "link": "https://www.youtube.com/watch?v=XehwR2cWkSw&t=1620s",
-          "difficulty": "",
-          "kind": "concept",
-          "video": {
-            "provider": "youtube",
-            "id": "XehwR2cWkSw",
-            "t": 1620
-          }
-        },
-        {
-          "key": "dbms:normal-forms-1nf-to-bcnf__a-non-redundant-example-sid-determines-sname",
-          "name": "A non-redundant example: SID determines SName",
-          "link": "https://www.youtube.com/watch?v=XehwR2cWkSw&t=2400s",
-          "difficulty": "",
-          "kind": "concept",
-          "video": {
-            "provider": "youtube",
-            "id": "XehwR2cWkSw",
-            "t": 2400
-          }
-        },
-        {
-          "key": "dbms:normal-forms-1nf-to-bcnf__master-example-r-abcdef-every-redundancy-case",
-          "name": "Master example R(ABCDEF): every redundancy case",
-          "link": "https://www.youtube.com/watch?v=XehwR2cWkSw&t=2640s",
-          "difficulty": "",
-          "kind": "concept",
-          "video": {
-            "provider": "youtube",
-            "id": "XehwR2cWkSw",
-            "t": 2640
-          }
-        },
-        {
-          "key": "dbms:normal-forms-1nf-to-bcnf__the-four-redundancy-cases-generalized",
-          "name": "The four redundancy cases, generalized",
-          "link": "https://www.youtube.com/watch?v=XehwR2cWkSw&t=3120s",
-          "difficulty": "",
-          "kind": "concept",
-          "video": {
-            "provider": "youtube",
-            "id": "XehwR2cWkSw",
-            "t": 3120
-          }
-        },
-        {
-          "key": "dbms:normal-forms-1nf-to-bcnf__how-normal-forms-reduce-redundancy",
-          "name": "How normal forms reduce redundancy",
-          "link": "https://www.youtube.com/watch?v=XehwR2cWkSw&t=3780s",
-          "difficulty": "",
-          "kind": "concept",
-          "video": {
-            "provider": "youtube",
-            "id": "XehwR2cWkSw",
-            "t": 3780
-          }
-        },
-        {
-          "key": "dbms:normal-forms-1nf-to-bcnf__second-normal-form-no-partial-dependency",
-          "name": "Second normal form: no partial dependency",
-          "link": "https://www.youtube.com/watch?v=XehwR2cWkSw&t=3960s",
-          "difficulty": "",
-          "kind": "concept",
-          "video": {
-            "provider": "youtube",
-            "id": "XehwR2cWkSw",
-            "t": 3960
-          }
-        },
-        {
-          "key": "dbms:normal-forms-1nf-to-bcnf__third-normal-form",
-          "name": "Third normal form",
-          "link": "https://www.youtube.com/watch?v=XehwR2cWkSw&t=4320s",
-          "difficulty": "",
-          "kind": "concept",
-          "video": {
-            "provider": "youtube",
-            "id": "XehwR2cWkSw",
-            "t": 4320
-          }
-        },
-        {
-          "key": "dbms:normal-forms-1nf-to-bcnf__bcnf",
-          "name": "BCNF",
-          "link": "https://www.youtube.com/watch?v=XehwR2cWkSw&t=4800s",
-          "difficulty": "",
-          "kind": "concept",
-          "video": {
-            "provider": "youtube",
-            "id": "XehwR2cWkSw",
-            "t": 4800
-          }
-        },
-        {
-          "key": "dbms:normal-forms-1nf-to-bcnf__recap-across-2nf-3nf-and-bcnf",
-          "name": "Recap across 2NF, 3NF and BCNF",
-          "link": "https://www.youtube.com/watch?v=XehwR2cWkSw&t=5160s",
-          "difficulty": "",
-          "kind": "concept",
-          "video": {
-            "provider": "youtube",
-            "id": "XehwR2cWkSw",
-            "t": 5160
-          }
-        }
-      ]
-    },
-    {
-      "key": "dbms-10-finding-the-highest-normal-form",
-      "order": 10,
-      "title": "Finding the Highest Normal Form",
-      "problems": [
-        {
-          "key": "dbms:finding-the-highest-normal-form__recap-the-2nf-3nf-and-bcnf-definitions",
-          "name": "Recap: the 2NF, 3NF and BCNF definitions",
-          "link": "https://www.youtube.com/watch?v=h7moQMesRqU&t=120s",
-          "difficulty": "",
-          "kind": "concept",
-          "video": {
-            "provider": "youtube",
-            "id": "h7moQMesRqU",
-            "t": 120
-          }
-        },
-        {
-          "key": "dbms:finding-the-highest-normal-form__applying-the-four-cases-is-the-example-in-2nf",
-          "name": "Applying the four cases: is the example in 2NF?",
-          "link": "https://www.youtube.com/watch?v=h7moQMesRqU&t=480s",
-          "difficulty": "",
-          "kind": "concept",
-          "video": {
-            "provider": "youtube",
-            "id": "h7moQMesRqU",
-            "t": 480
-          }
-        },
-        {
-          "key": "dbms:finding-the-highest-normal-form__the-same-example-in-third-normal-form",
-          "name": "The same example in third normal form",
-          "link": "https://www.youtube.com/watch?v=h7moQMesRqU&t=960s",
-          "difficulty": "",
-          "kind": "concept",
-          "video": {
-            "provider": "youtube",
-            "id": "h7moQMesRqU",
-            "t": 960
-          }
-        },
-        {
-          "key": "dbms:finding-the-highest-normal-form__the-same-example-in-bcnf",
-          "name": "The same example in BCNF",
-          "link": "https://www.youtube.com/watch?v=h7moQMesRqU&t=1200s",
-          "difficulty": "",
-          "kind": "concept",
-          "video": {
-            "provider": "youtube",
-            "id": "h7moQMesRqU",
-            "t": 1200
-          }
-        },
-        {
-          "key": "dbms:finding-the-highest-normal-form__how-gate-asks-it-finding-the-highest-normal-form",
-          "name": "How GATE asks it: finding the highest normal form",
-          "link": "https://www.youtube.com/watch?v=h7moQMesRqU&t=1380s",
-          "difficulty": "",
-          "kind": "concept",
-          "video": {
-            "provider": "youtube",
-            "id": "h7moQMesRqU",
-            "t": 1380
-          }
-        },
-        {
-          "key": "dbms:finding-the-highest-normal-form__problem-1-r-abcde-with-abd-to-c-bc-to-d-cd-to-e",
-          "name": "Problem 1: R(ABCDE) with ABD to C, BC to D, CD to E",
-          "link": "https://www.youtube.com/watch?v=h7moQMesRqU&t=1680s",
-          "difficulty": "",
-          "kind": "problem",
-          "video": {
-            "provider": "youtube",
-            "id": "h7moQMesRqU",
-            "t": 1680
-          }
-        },
-        {
-          "key": "dbms:finding-the-highest-normal-form__problem-1-bcnf-and-3nf-testing",
-          "name": "Problem 1: BCNF and 3NF testing",
-          "link": "https://www.youtube.com/watch?v=h7moQMesRqU&t=2040s",
-          "difficulty": "",
-          "kind": "problem",
-          "video": {
-            "provider": "youtube",
-            "id": "h7moQMesRqU",
-            "t": 2040
-          }
-        },
-        {
-          "key": "dbms:finding-the-highest-normal-form__problem-1-2nf-testing-and-partial-dependency",
-          "name": "Problem 1: 2NF testing and partial dependency",
-          "link": "https://www.youtube.com/watch?v=h7moQMesRqU&t=2280s",
-          "difficulty": "",
-          "kind": "problem",
-          "video": {
-            "provider": "youtube",
-            "id": "h7moQMesRqU",
-            "t": 2280
-          }
-        },
-        {
-          "key": "dbms:finding-the-highest-normal-form__problem-1-the-highest-normal-form-is-1nf",
-          "name": "Problem 1: the highest normal form is 1NF",
-          "link": "https://www.youtube.com/watch?v=h7moQMesRqU&t=2940s",
-          "difficulty": "",
-          "kind": "problem",
-          "video": {
-            "provider": "youtube",
-            "id": "h7moQMesRqU",
-            "t": 2940
-          }
-        },
-        {
-          "key": "dbms:finding-the-highest-normal-form__problem-2-r-abcd-with-ab-to-c-bc-to-d",
-          "name": "Problem 2: R(ABCD) with AB to C, BC to D",
-          "link": "https://www.youtube.com/watch?v=h7moQMesRqU&t=3300s",
-          "difficulty": "",
-          "kind": "problem",
-          "video": {
-            "provider": "youtube",
-            "id": "h7moQMesRqU",
-            "t": 3300
-          }
-        },
-        {
-          "key": "dbms:finding-the-highest-normal-form__problem-3-r-abcd-with-ab-to-c-c-to-a-ac-to-d",
-          "name": "Problem 3: R(ABCD) with AB to C, C to A, AC to D",
-          "link": "https://www.youtube.com/watch?v=h7moQMesRqU&t=3840s",
-          "difficulty": "",
-          "kind": "problem",
-          "video": {
-            "provider": "youtube",
-            "id": "h7moQMesRqU",
-            "t": 3840
-          }
-        },
-        {
-          "key": "dbms:finding-the-highest-normal-form__problem-4-r-abcdef",
-          "name": "Problem 4: R(ABCDEF)",
-          "link": "https://www.youtube.com/watch?v=h7moQMesRqU&t=4620s",
-          "difficulty": "",
-          "kind": "problem",
-          "video": {
-            "provider": "youtube",
-            "id": "h7moQMesRqU",
-            "t": 4620
-          }
-        },
-        {
-          "key": "dbms:finding-the-highest-normal-form__problem-5-r-abcdef-with-ab-to-c-c-to-d",
-          "name": "Problem 5: R(ABCDEF) with AB to C, C to D",
-          "link": "https://www.youtube.com/watch?v=h7moQMesRqU&t=5220s",
-          "difficulty": "",
-          "kind": "problem",
-          "video": {
-            "provider": "youtube",
-            "id": "h7moQMesRqU",
-            "t": 5220
-          }
-        },
-        {
-          "key": "dbms:finding-the-highest-normal-form__problem-6-r-abcde-where-every-attribute-is-prime",
-          "name": "Problem 6: R(ABCDE) where every attribute is prime",
-          "link": "https://www.youtube.com/watch?v=h7moQMesRqU&t=5880s",
-          "difficulty": "",
-          "kind": "problem",
-          "video": {
-            "provider": "youtube",
-            "id": "h7moQMesRqU",
-            "t": 5880
-          }
-        },
-        {
-          "key": "dbms:finding-the-highest-normal-form__problem-7-r-abcd-with-a-to-b-b-to-ac-c-to-d",
-          "name": "Problem 7: R(ABCD) with A to B, B to AC, C to D",
-          "link": "https://www.youtube.com/watch?v=h7moQMesRqU&t=6600s",
-          "difficulty": "",
-          "kind": "problem",
-          "video": {
-            "provider": "youtube",
-            "id": "h7moQMesRqU",
-            "t": 6600
-          }
-        }
-      ]
-    },
-    {
-      "key": "dbms-11-normalization-practice",
-      "order": 11,
-      "title": "Normalization Practice",
-      "problems": [
-        {
-          "key": "dbms:normalization-practice__no-non-trivial-function-dependency",
-          "name": "No Non Trivial Function Dependency",
-          "link": "https://www.youtube.com/watch?v=KgwpI88tDMw",
-          "difficulty": "",
-          "kind": "concept",
-          "video": {
-            "provider": "youtube",
-            "id": "KgwpI88tDMw"
-          }
-        },
-        {
-          "key": "dbms:normalization-practice__schema-with-only-two-attributes",
-          "name": "Schema With Only Two Attributes",
-          "link": "https://www.youtube.com/watch?v=mNOPSZB5gns",
-          "difficulty": "",
-          "kind": "concept",
-          "video": {
-            "provider": "youtube",
-            "id": "mNOPSZB5gns"
-          }
-        },
-        {
-          "key": "dbms:normalization-practice__decomposition-into-2nd-normal-form-example-1",
-          "name": "Decomposition Into 2nd Normal Form Example 1",
-          "link": "https://www.youtube.com/watch?v=_5nFU_8zTNM",
-          "difficulty": "",
-          "kind": "problem",
-          "video": {
-            "provider": "youtube",
-            "id": "_5nFU_8zTNM"
-          }
-        },
-        {
-          "key": "dbms:normalization-practice__decomposition-into-2nd-normal-form-example-2",
-          "name": "Decomposition Into 2nd Normal Form Example 2",
-          "link": "https://www.youtube.com/watch?v=9hkPlzBHrD8",
-          "difficulty": "",
-          "kind": "problem",
-          "video": {
-            "provider": "youtube",
-            "id": "9hkPlzBHrD8"
-          }
-        },
-        {
-          "key": "dbms:normalization-practice__example-1-on-bcnf",
-          "name": "Example 1 on BCNF",
-          "link": "https://www.youtube.com/watch?v=x8RidcjVg0I",
-          "difficulty": "",
-          "kind": "problem",
-          "video": {
-            "provider": "youtube",
-            "id": "x8RidcjVg0I"
-          }
-        },
-        {
-          "key": "dbms:normalization-practice__example-2-on-bcnf",
-          "name": "Example 2 on BCNF",
-          "link": "https://www.youtube.com/watch?v=QvTScX5R15E",
-          "difficulty": "",
-          "kind": "problem",
-          "video": {
-            "provider": "youtube",
-            "id": "QvTScX5R15E"
-          }
-        },
-        {
-          "key": "dbms:normalization-practice__example-3-on-bcnf",
-          "name": "Example 3 on BCNF",
-          "link": "https://www.youtube.com/watch?v=MyUMez2WdEA",
-          "difficulty": "",
-          "kind": "problem",
-          "video": {
-            "provider": "youtube",
-            "id": "MyUMez2WdEA"
-          }
-        },
-        {
-          "key": "dbms:normalization-practice__example-4-on-bcnf",
-          "name": "Example 4 on BCNF",
-          "link": "https://www.youtube.com/watch?v=-9YVAalHDDg",
-          "difficulty": "",
-          "kind": "problem",
-          "video": {
-            "provider": "youtube",
-            "id": "-9YVAalHDDg"
-          }
-        },
-        {
-          "key": "dbms:normalization-practice__example-5-on-bcnf",
-          "name": "Example 5 on BCNF",
-          "link": "https://www.youtube.com/watch?v=k5EAfDAV2KE",
-          "difficulty": "",
-          "kind": "problem",
-          "video": {
-            "provider": "youtube",
-            "id": "k5EAfDAV2KE"
-          }
-        },
-        {
-          "key": "dbms:normalization-practice__conclusion-on-decomposition",
-          "name": "Conclusion On Decomposition",
-          "link": "https://www.youtube.com/watch?v=Ugj3jSLRV2s",
-          "difficulty": "",
-          "kind": "concept",
-          "video": {
-            "provider": "youtube",
-            "id": "Ugj3jSLRV2s"
-          }
-        }
-      ]
-    },
-    {
-      "key": "dbms-12-relational-algebra-operators",
-      "order": 12,
+      "key": "dbms-06-relational-algebra-operators",
+      "order": 6,
       "title": "Relational Algebra: Operators",
       "problems": [
         {
@@ -2387,8 +1366,8 @@
       ]
     },
     {
-      "key": "dbms-13-relational-algebra-query-practice",
-      "order": 13,
+      "key": "dbms-07-relational-algebra-query-practice",
+      "order": 7,
       "title": "Relational Algebra: Query Practice",
       "problems": [
         {
@@ -2691,53 +1670,2031 @@
       ]
     },
     {
-      "key": "dbms-14-er-model-and-design",
-      "order": 14,
-      "title": "ER Model and Design",
-      "problems": [],
-      "placeholder": "Not published in the playlist yet — RBR lists it in the syllabus (Lecture 1, 17:00)."
-    },
-    {
-      "key": "dbms-15-sql",
-      "order": 15,
-      "title": "SQL",
-      "problems": [],
-      "placeholder": "Not published yet — RBR says he will cover SQL alongside relational algebra and tuple relational calculus."
-    },
-    {
-      "key": "dbms-16-relational-calculus-trc-drc",
-      "order": 16,
+      "key": "dbms-08-relational-calculus-trc-drc",
+      "order": 8,
       "title": "Relational Calculus (TRC / DRC)",
-      "problems": [],
-      "placeholder": "Not published yet — named in the syllabus walkthrough as the third query language."
+      "problems": [
+        {
+          "key": "dbms:relational-calculus-trc-drc__tuple-relational-calculus-syntax-and-semantics",
+          "name": "Tuple relational calculus: syntax and semantics",
+          "link": "",
+          "difficulty": "",
+          "kind": "concept"
+        },
+        {
+          "key": "dbms:relational-calculus-trc-drc__safe-expressions-in-trc",
+          "name": "Safe expressions in TRC",
+          "link": "",
+          "difficulty": "",
+          "kind": "concept"
+        },
+        {
+          "key": "dbms:relational-calculus-trc-drc__domain-relational-calculus",
+          "name": "Domain relational calculus",
+          "link": "",
+          "difficulty": "",
+          "kind": "concept"
+        },
+        {
+          "key": "dbms:relational-calculus-trc-drc__equivalence-of-relational-algebra-and-calculus",
+          "name": "Equivalence of relational algebra and calculus",
+          "link": "",
+          "difficulty": "",
+          "kind": "concept"
+        }
+      ],
+      "note": "Neither course covers this — find your own material."
     },
     {
-      "key": "dbms-17-file-organization-and-indexing",
+      "key": "dbms-09-functional-dependencies-and-closure",
+      "order": 9,
+      "title": "Functional Dependencies and Closure",
+      "problems": [
+        {
+          "key": "dbms:functional-dependencies-and-closure__redundancy-why-one-big-relation-is-a-problem",
+          "name": "Redundancy: why one big relation is a problem",
+          "link": "https://www.youtube.com/watch?v=CmptL647fAA&t=900s",
+          "difficulty": "",
+          "kind": "concept",
+          "video": {
+            "provider": "youtube",
+            "id": "CmptL647fAA",
+            "t": 900
+          }
+        },
+        {
+          "key": "dbms:functional-dependencies-and-closure__database-anomalies-insertion-deletion-update",
+          "name": "Database anomalies: insertion, deletion, update",
+          "link": "https://www.youtube.com/watch?v=CmptL647fAA&t=1380s",
+          "difficulty": "",
+          "kind": "concept",
+          "video": {
+            "provider": "youtube",
+            "id": "CmptL647fAA",
+            "t": 1380
+          }
+        },
+        {
+          "key": "dbms:functional-dependencies-and-closure__normalization-decomposing-into-smaller-tables",
+          "name": "Normalization: decomposing into smaller tables",
+          "link": "https://www.youtube.com/watch?v=CmptL647fAA&t=1560s",
+          "difficulty": "",
+          "kind": "concept",
+          "video": {
+            "provider": "youtube",
+            "id": "CmptL647fAA",
+            "t": 1560
+          }
+        },
+        {
+          "key": "dbms:functional-dependencies-and-closure__functional-dependency-definition",
+          "name": "Functional dependency: definition",
+          "link": "https://www.youtube.com/watch?v=CmptL647fAA&t=1860s",
+          "difficulty": "",
+          "kind": "concept",
+          "video": {
+            "provider": "youtube",
+            "id": "CmptL647fAA",
+            "t": 1860
+          }
+        },
+        {
+          "key": "dbms:functional-dependencies-and-closure__verifying-an-fd-against-a-table-instance",
+          "name": "Verifying an FD against a table instance",
+          "link": "https://www.youtube.com/watch?v=CmptL647fAA&t=2280s",
+          "difficulty": "",
+          "kind": "concept",
+          "video": {
+            "provider": "youtube",
+            "id": "CmptL647fAA",
+            "t": 2280
+          }
+        },
+        {
+          "key": "dbms:functional-dependencies-and-closure__types-of-fds-trivial-non-trivial-semi-non-trivial",
+          "name": "Types of FDs: trivial, non-trivial, semi non-trivial",
+          "link": "https://www.youtube.com/watch?v=CmptL647fAA&t=2640s",
+          "difficulty": "",
+          "kind": "concept",
+          "video": {
+            "provider": "youtube",
+            "id": "CmptL647fAA",
+            "t": 2640
+          }
+        },
+        {
+          "key": "dbms:functional-dependencies-and-closure__armstrong-s-axioms",
+          "name": "Armstrong's axioms",
+          "link": "https://www.youtube.com/watch?v=CmptL647fAA&t=3000s",
+          "difficulty": "",
+          "kind": "concept",
+          "video": {
+            "provider": "youtube",
+            "id": "CmptL647fAA",
+            "t": 3000
+          }
+        },
+        {
+          "key": "dbms:functional-dependencies-and-closure__attribute-closure-definition-and-worked-example",
+          "name": "Attribute closure: definition and worked example",
+          "link": "https://www.youtube.com/watch?v=CmptL647fAA&t=3240s",
+          "difficulty": "",
+          "kind": "concept",
+          "video": {
+            "provider": "youtube",
+            "id": "CmptL647fAA",
+            "t": 3240
+          }
+        },
+        {
+          "key": "dbms:functional-dependencies-and-closure__super-key-and-candidate-key-via-closure",
+          "name": "Super key and candidate key via closure",
+          "link": "https://www.youtube.com/watch?v=CmptL647fAA&t=3840s",
+          "difficulty": "",
+          "kind": "concept",
+          "video": {
+            "provider": "youtube",
+            "id": "CmptL647fAA",
+            "t": 3840
+          }
+        },
+        {
+          "key": "dbms:functional-dependencies-and-closure__formal-definition-super-key-vs-candidate-key",
+          "name": "Formal definition: super key vs candidate key",
+          "link": "https://www.youtube.com/watch?v=CmptL647fAA&t=4620s",
+          "difficulty": "",
+          "kind": "concept",
+          "video": {
+            "provider": "youtube",
+            "id": "CmptL647fAA",
+            "t": 4620
+          }
+        },
+        {
+          "key": "dbms:functional-dependencies-and-closure__finding-all-candidate-keys-using-combinatorics",
+          "name": "Finding all candidate keys using combinatorics",
+          "link": "https://www.youtube.com/watch?v=CmptL647fAA&t=4740s",
+          "difficulty": "",
+          "kind": "problem",
+          "video": {
+            "provider": "youtube",
+            "id": "CmptL647fAA",
+            "t": 4740
+          }
+        },
+        {
+          "key": "dbms:functional-dependencies-and-closure__candidate-keys-of-r-abcd",
+          "name": "Candidate keys of R(ABCD)",
+          "link": "https://www.youtube.com/watch?v=CmptL647fAA&t=5280s",
+          "difficulty": "",
+          "kind": "problem",
+          "video": {
+            "provider": "youtube",
+            "id": "CmptL647fAA",
+            "t": 5280
+          }
+        },
+        {
+          "key": "dbms:functional-dependencies-and-closure__candidate-keys-of-r-abcde",
+          "name": "Candidate keys of R(ABCDE)",
+          "link": "https://www.youtube.com/watch?v=CmptL647fAA&t=5940s",
+          "difficulty": "",
+          "kind": "problem",
+          "video": {
+            "provider": "youtube",
+            "id": "CmptL647fAA",
+            "t": 5940
+          }
+        },
+        {
+          "key": "dbms:functional-dependencies-and-closure__no-non-trivial-fds-how-many-candidate-keys",
+          "name": "No non-trivial FDs: how many candidate keys?",
+          "link": "https://www.youtube.com/watch?v=CmptL647fAA&t=6120s",
+          "difficulty": "",
+          "kind": "problem",
+          "video": {
+            "provider": "youtube",
+            "id": "CmptL647fAA",
+            "t": 6120
+          }
+        },
+        {
+          "key": "dbms:functional-dependencies-and-closure__candidate-keys-of-r-abcdef-the-binary-string-trick",
+          "name": "Candidate keys of R(ABCDEF): the binary-string trick",
+          "link": "https://www.youtube.com/watch?v=CmptL647fAA&t=6180s",
+          "difficulty": "",
+          "kind": "problem",
+          "video": {
+            "provider": "youtube",
+            "id": "CmptL647fAA",
+            "t": 6180
+          }
+        },
+        {
+          "key": "dbms:functional-dependencies-and-closure__candidate-keys-of-a-second-r-abcdef",
+          "name": "Candidate keys of a second R(ABCDEF)",
+          "link": "https://www.youtube.com/watch?v=CmptL647fAA&t=7620s",
+          "difficulty": "",
+          "kind": "problem",
+          "video": {
+            "provider": "youtube",
+            "id": "CmptL647fAA",
+            "t": 7620
+          }
+        },
+        {
+          "key": "dbms:functional-dependencies-and-closure__finding-all-candidate-keys-is-np-complete",
+          "name": "Finding all candidate keys is NP-complete",
+          "link": "https://www.youtube.com/watch?v=WVxC2C3W1Vk&t=840s",
+          "difficulty": "",
+          "kind": "concept",
+          "video": {
+            "provider": "youtube",
+            "id": "WVxC2C3W1Vk",
+            "t": 840
+          }
+        },
+        {
+          "key": "dbms:functional-dependencies-and-closure__membership-test-definition",
+          "name": "Membership test: definition",
+          "link": "https://www.youtube.com/watch?v=WVxC2C3W1Vk&t=960s",
+          "difficulty": "",
+          "kind": "concept",
+          "video": {
+            "provider": "youtube",
+            "id": "WVxC2C3W1Vk",
+            "t": 960
+          }
+        },
+        {
+          "key": "dbms:functional-dependencies-and-closure__membership-test-question-set",
+          "name": "Membership test: question set",
+          "link": "https://www.youtube.com/watch?v=WVxC2C3W1Vk&t=1080s",
+          "difficulty": "",
+          "kind": "problem",
+          "video": {
+            "provider": "youtube",
+            "id": "WVxC2C3W1Vk",
+            "t": 1080
+          }
+        },
+        {
+          "key": "dbms:functional-dependencies-and-closure__solving-membership-tests-via-closure",
+          "name": "Solving membership tests via closure",
+          "link": "https://www.youtube.com/watch?v=WVxC2C3W1Vk&t=1440s",
+          "difficulty": "",
+          "kind": "problem",
+          "video": {
+            "provider": "youtube",
+            "id": "WVxC2C3W1Vk",
+            "t": 1440
+          }
+        },
+        {
+          "key": "dbms:functional-dependencies-and-closure__equality-of-fd-sets-f-covers-g",
+          "name": "Equality of FD sets: F covers G",
+          "link": "https://www.youtube.com/watch?v=WVxC2C3W1Vk&t=1800s",
+          "difficulty": "",
+          "kind": "concept",
+          "video": {
+            "provider": "youtube",
+            "id": "WVxC2C3W1Vk",
+            "t": 1800
+          }
+        },
+        {
+          "key": "dbms:functional-dependencies-and-closure__the-four-cases-of-comparing-two-fd-sets",
+          "name": "The four cases of comparing two FD sets",
+          "link": "https://www.youtube.com/watch?v=WVxC2C3W1Vk&t=2040s",
+          "difficulty": "",
+          "kind": "concept",
+          "video": {
+            "provider": "youtube",
+            "id": "WVxC2C3W1Vk",
+            "t": 2040
+          }
+        },
+        {
+          "key": "dbms:functional-dependencies-and-closure__worked-problem-are-f-and-g-equal",
+          "name": "Worked problem: are F and G equal?",
+          "link": "https://www.youtube.com/watch?v=WVxC2C3W1Vk&t=2220s",
+          "difficulty": "",
+          "kind": "problem",
+          "video": {
+            "provider": "youtube",
+            "id": "WVxC2C3W1Vk",
+            "t": 2220
+          }
+        },
+        {
+          "key": "dbms:functional-dependencies-and-closure__framing-and-solving-more-cover-problems",
+          "name": "Framing and solving more cover problems",
+          "link": "https://www.youtube.com/watch?v=WVxC2C3W1Vk&t=3000s",
+          "difficulty": "",
+          "kind": "problem",
+          "video": {
+            "provider": "youtube",
+            "id": "WVxC2C3W1Vk",
+            "t": 3000
+          }
+        },
+        {
+          "key": "dbms:functional-dependencies-and-closure__minimal-set-of-functional-dependencies-canonical-cover",
+          "name": "Minimal set of functional dependencies (canonical cover)",
+          "link": "https://www.youtube.com/watch?v=hPVcgn9IbyE",
+          "difficulty": "",
+          "kind": "concept",
+          "video": {
+            "provider": "youtube",
+            "id": "hPVcgn9IbyE"
+          }
+        }
+      ]
+    },
+    {
+      "key": "dbms-10-pyq-marathon-candidate-keys",
+      "order": 10,
+      "title": "PYQ Marathon: Candidate Keys",
+      "problems": [
+        {
+          "key": "dbms:pyq-marathon-candidate-keys__candidate-key-pyq-1",
+          "name": "Candidate key PYQ 1",
+          "link": "https://www.youtube.com/watch?v=-0l0k-kWuNM&t=300s",
+          "difficulty": "",
+          "kind": "problem",
+          "video": {
+            "provider": "youtube",
+            "id": "-0l0k-kWuNM",
+            "t": 300
+          }
+        },
+        {
+          "key": "dbms:pyq-marathon-candidate-keys__candidate-key-pyq-2-where-shortcuts-fail",
+          "name": "Candidate key PYQ 2: where shortcuts fail",
+          "link": "https://www.youtube.com/watch?v=-0l0k-kWuNM&t=1200s",
+          "difficulty": "",
+          "kind": "problem",
+          "video": {
+            "provider": "youtube",
+            "id": "-0l0k-kWuNM",
+            "t": 1200
+          }
+        },
+        {
+          "key": "dbms:pyq-marathon-candidate-keys__candidate-key-pyq-3-a-long-one",
+          "name": "Candidate key PYQ 3: a long one",
+          "link": "https://www.youtube.com/watch?v=-0l0k-kWuNM&t=2220s",
+          "difficulty": "",
+          "kind": "problem",
+          "video": {
+            "provider": "youtube",
+            "id": "-0l0k-kWuNM",
+            "t": 2220
+          }
+        },
+        {
+          "key": "dbms:pyq-marathon-candidate-keys__candidate-key-pyq-4",
+          "name": "Candidate key PYQ 4",
+          "link": "https://www.youtube.com/watch?v=-0l0k-kWuNM&t=3600s",
+          "difficulty": "",
+          "kind": "problem",
+          "video": {
+            "provider": "youtube",
+            "id": "-0l0k-kWuNM",
+            "t": 3600
+          }
+        },
+        {
+          "key": "dbms:pyq-marathon-candidate-keys__candidate-key-pyq-5",
+          "name": "Candidate key PYQ 5",
+          "link": "https://www.youtube.com/watch?v=-0l0k-kWuNM&t=4500s",
+          "difficulty": "",
+          "kind": "problem",
+          "video": {
+            "provider": "youtube",
+            "id": "-0l0k-kWuNM",
+            "t": 4500
+          }
+        },
+        {
+          "key": "dbms:pyq-marathon-candidate-keys__candidate-key-pyq-6-r-vwxyz",
+          "name": "Candidate key PYQ 6: R(VWXYZ)",
+          "link": "https://www.youtube.com/watch?v=-0l0k-kWuNM&t=4860s",
+          "difficulty": "",
+          "kind": "problem",
+          "video": {
+            "provider": "youtube",
+            "id": "-0l0k-kWuNM",
+            "t": 4860
+          }
+        },
+        {
+          "key": "dbms:pyq-marathon-candidate-keys__candidate-key-pyq-7-r-pqrstu",
+          "name": "Candidate key PYQ 7: R(PQRSTU)",
+          "link": "https://www.youtube.com/watch?v=-0l0k-kWuNM&t=5460s",
+          "difficulty": "",
+          "kind": "problem",
+          "video": {
+            "provider": "youtube",
+            "id": "-0l0k-kWuNM",
+            "t": 5460
+          }
+        },
+        {
+          "key": "dbms:pyq-marathon-candidate-keys__candidate-key-pyq-8",
+          "name": "Candidate key PYQ 8",
+          "link": "https://www.youtube.com/watch?v=-0l0k-kWuNM&t=6060s",
+          "difficulty": "",
+          "kind": "problem",
+          "video": {
+            "provider": "youtube",
+            "id": "-0l0k-kWuNM",
+            "t": 6060
+          }
+        },
+        {
+          "key": "dbms:pyq-marathon-candidate-keys__candidate-key-pyq-9",
+          "name": "Candidate key PYQ 9",
+          "link": "https://www.youtube.com/watch?v=-0l0k-kWuNM&t=6900s",
+          "difficulty": "",
+          "kind": "problem",
+          "video": {
+            "provider": "youtube",
+            "id": "-0l0k-kWuNM",
+            "t": 6900
+          }
+        },
+        {
+          "key": "dbms:pyq-marathon-candidate-keys__candidate-key-pyq-10",
+          "name": "Candidate key PYQ 10",
+          "link": "https://www.youtube.com/watch?v=-0l0k-kWuNM&t=9060s",
+          "difficulty": "",
+          "kind": "problem",
+          "video": {
+            "provider": "youtube",
+            "id": "-0l0k-kWuNM",
+            "t": 9060
+          }
+        },
+        {
+          "key": "dbms:pyq-marathon-candidate-keys__candidate-key-pyq-11",
+          "name": "Candidate key PYQ 11",
+          "link": "https://www.youtube.com/watch?v=xsvbmx4gtxs&t=720s",
+          "difficulty": "",
+          "kind": "problem",
+          "video": {
+            "provider": "youtube",
+            "id": "xsvbmx4gtxs",
+            "t": 720
+          }
+        },
+        {
+          "key": "dbms:pyq-marathon-candidate-keys__candidate-key-pyq-12-r-xyzpq",
+          "name": "Candidate key PYQ 12: R(XYZPQ)",
+          "link": "https://www.youtube.com/watch?v=xsvbmx4gtxs&t=1020s",
+          "difficulty": "",
+          "kind": "problem",
+          "video": {
+            "provider": "youtube",
+            "id": "xsvbmx4gtxs",
+            "t": 1020
+          }
+        },
+        {
+          "key": "dbms:pyq-marathon-candidate-keys__candidate-key-pyq-13-r-abcdefg",
+          "name": "Candidate key PYQ 13: R(ABCDEFG)",
+          "link": "https://www.youtube.com/watch?v=xsvbmx4gtxs&t=1320s",
+          "difficulty": "",
+          "kind": "problem",
+          "video": {
+            "provider": "youtube",
+            "id": "xsvbmx4gtxs",
+            "t": 1320
+          }
+        },
+        {
+          "key": "dbms:pyq-marathon-candidate-keys__candidate-key-pyq-14-r-abcd",
+          "name": "Candidate key PYQ 14: R(ABCD)",
+          "link": "https://www.youtube.com/watch?v=xsvbmx4gtxs&t=2100s",
+          "difficulty": "",
+          "kind": "problem",
+          "video": {
+            "provider": "youtube",
+            "id": "xsvbmx4gtxs",
+            "t": 2100
+          }
+        },
+        {
+          "key": "dbms:pyq-marathon-candidate-keys__candidate-key-pyq-15-r-abcde",
+          "name": "Candidate key PYQ 15: R(ABCDE)",
+          "link": "https://www.youtube.com/watch?v=xsvbmx4gtxs&t=3360s",
+          "difficulty": "",
+          "kind": "problem",
+          "video": {
+            "provider": "youtube",
+            "id": "xsvbmx4gtxs",
+            "t": 3360
+          }
+        },
+        {
+          "key": "dbms:pyq-marathon-candidate-keys__candidate-key-pyq-16-r-pqrst",
+          "name": "Candidate key PYQ 16: R(PQRST)",
+          "link": "https://www.youtube.com/watch?v=xsvbmx4gtxs&t=3840s",
+          "difficulty": "",
+          "kind": "problem",
+          "video": {
+            "provider": "youtube",
+            "id": "xsvbmx4gtxs",
+            "t": 3840
+          }
+        },
+        {
+          "key": "dbms:pyq-marathon-candidate-keys__candidate-key-pyq-17-r-abcd",
+          "name": "Candidate key PYQ 17: R(ABCD)",
+          "link": "https://www.youtube.com/watch?v=xsvbmx4gtxs&t=4320s",
+          "difficulty": "",
+          "kind": "problem",
+          "video": {
+            "provider": "youtube",
+            "id": "xsvbmx4gtxs",
+            "t": 4320
+          }
+        },
+        {
+          "key": "dbms:pyq-marathon-candidate-keys__candidate-key-pyq-18-r-abcdeg",
+          "name": "Candidate key PYQ 18: R(ABCDEG)",
+          "link": "https://www.youtube.com/watch?v=xsvbmx4gtxs&t=4920s",
+          "difficulty": "",
+          "kind": "problem",
+          "video": {
+            "provider": "youtube",
+            "id": "xsvbmx4gtxs",
+            "t": 4920
+          }
+        }
+      ]
+    },
+    {
+      "key": "dbms-11-pyq-marathon-counting-super-keys",
+      "order": 11,
+      "title": "PYQ Marathon: Counting Super Keys",
+      "problems": [
+        {
+          "key": "dbms:pyq-marathon-counting-super-keys__from-candidate-keys-to-counting-super-keys",
+          "name": "From candidate keys to counting super keys",
+          "link": "https://www.youtube.com/watch?v=a81u-B1aCXk&t=480s",
+          "difficulty": "",
+          "kind": "concept",
+          "video": {
+            "provider": "youtube",
+            "id": "a81u-B1aCXk",
+            "t": 480
+          }
+        },
+        {
+          "key": "dbms:pyq-marathon-counting-super-keys__super-key-counting-r-abcdef",
+          "name": "Super key counting: R(ABCDEF)",
+          "link": "https://www.youtube.com/watch?v=a81u-B1aCXk&t=780s",
+          "difficulty": "",
+          "kind": "problem",
+          "video": {
+            "provider": "youtube",
+            "id": "a81u-B1aCXk",
+            "t": 780
+          }
+        },
+        {
+          "key": "dbms:pyq-marathon-counting-super-keys__a-question-that-is-wrong-and-why",
+          "name": "A question that is wrong, and why",
+          "link": "https://www.youtube.com/watch?v=a81u-B1aCXk&t=1380s",
+          "difficulty": "",
+          "kind": "problem",
+          "video": {
+            "provider": "youtube",
+            "id": "a81u-B1aCXk",
+            "t": 1380
+          }
+        },
+        {
+          "key": "dbms:pyq-marathon-counting-super-keys__venn-diagram-vs-the-general-method",
+          "name": "Venn diagram vs the general method",
+          "link": "https://www.youtube.com/watch?v=a81u-B1aCXk&t=3120s",
+          "difficulty": "",
+          "kind": "concept",
+          "video": {
+            "provider": "youtube",
+            "id": "a81u-B1aCXk",
+            "t": 3120
+          }
+        },
+        {
+          "key": "dbms:pyq-marathon-counting-super-keys__super-key-counting-problem",
+          "name": "Super key counting problem",
+          "link": "https://www.youtube.com/watch?v=a81u-B1aCXk&t=3660s",
+          "difficulty": "",
+          "kind": "problem",
+          "video": {
+            "provider": "youtube",
+            "id": "a81u-B1aCXk",
+            "t": 3660
+          }
+        },
+        {
+          "key": "dbms:pyq-marathon-counting-super-keys__counting-three-element-keys",
+          "name": "Counting three-element keys",
+          "link": "https://www.youtube.com/watch?v=a81u-B1aCXk&t=4080s",
+          "difficulty": "",
+          "kind": "problem",
+          "video": {
+            "provider": "youtube",
+            "id": "a81u-B1aCXk",
+            "t": 4080
+          }
+        },
+        {
+          "key": "dbms:pyq-marathon-counting-super-keys__counting-four-element-keys",
+          "name": "Counting four-element keys",
+          "link": "https://www.youtube.com/watch?v=a81u-B1aCXk&t=4680s",
+          "difficulty": "",
+          "kind": "problem",
+          "video": {
+            "provider": "youtube",
+            "id": "a81u-B1aCXk",
+            "t": 4680
+          }
+        },
+        {
+          "key": "dbms:pyq-marathon-counting-super-keys__super-key-counting-r-abcdef-with-cd-and-ef",
+          "name": "Super key counting: R(ABCDEF) with CD and EF",
+          "link": "https://www.youtube.com/watch?v=a81u-B1aCXk&t=5340s",
+          "difficulty": "",
+          "kind": "problem",
+          "video": {
+            "provider": "youtube",
+            "id": "a81u-B1aCXk",
+            "t": 5340
+          }
+        },
+        {
+          "key": "dbms:pyq-marathon-counting-super-keys__super-keys-of-r-abcdef-with-candidate-keys-ag-ge-bg",
+          "name": "Super keys of R(ABCDEF) with candidate keys AG, GE, BG",
+          "link": "https://www.youtube.com/watch?v=yCkQHWVHoDY&t=60s",
+          "difficulty": "",
+          "kind": "problem",
+          "video": {
+            "provider": "youtube",
+            "id": "yCkQHWVHoDY",
+            "t": 60
+          }
+        },
+        {
+          "key": "dbms:pyq-marathon-counting-super-keys__counting-super-keys-2-4-1",
+          "name": "Counting super keys: 2^4 - 1",
+          "link": "https://www.youtube.com/watch?v=yCkQHWVHoDY&t=360s",
+          "difficulty": "",
+          "kind": "problem",
+          "video": {
+            "provider": "youtube",
+            "id": "yCkQHWVHoDY",
+            "t": 360
+          }
+        },
+        {
+          "key": "dbms:pyq-marathon-counting-super-keys__super-key-counting-next-question",
+          "name": "Super key counting: next question",
+          "link": "https://www.youtube.com/watch?v=yCkQHWVHoDY&t=840s",
+          "difficulty": "",
+          "kind": "problem",
+          "video": {
+            "provider": "youtube",
+            "id": "yCkQHWVHoDY",
+            "t": 840
+          }
+        },
+        {
+          "key": "dbms:pyq-marathon-counting-super-keys__which-of-the-5c3-subsets-are-super-keys",
+          "name": "Which of the 5C3 subsets are super keys?",
+          "link": "https://www.youtube.com/watch?v=yCkQHWVHoDY&t=1320s",
+          "difficulty": "",
+          "kind": "problem",
+          "video": {
+            "provider": "youtube",
+            "id": "yCkQHWVHoDY",
+            "t": 1320
+          }
+        },
+        {
+          "key": "dbms:pyq-marathon-counting-super-keys__super-key-counting-r-abcd",
+          "name": "Super key counting: R(ABCD)",
+          "link": "https://www.youtube.com/watch?v=yCkQHWVHoDY&t=1680s",
+          "difficulty": "",
+          "kind": "problem",
+          "video": {
+            "provider": "youtube",
+            "id": "yCkQHWVHoDY",
+            "t": 1680
+          }
+        },
+        {
+          "key": "dbms:pyq-marathon-counting-super-keys__three-element-keys-which-are-not-super-keys",
+          "name": "Three-element keys which are not super keys",
+          "link": "https://www.youtube.com/watch?v=yCkQHWVHoDY&t=2100s",
+          "difficulty": "",
+          "kind": "problem",
+          "video": {
+            "provider": "youtube",
+            "id": "yCkQHWVHoDY",
+            "t": 2100
+          }
+        },
+        {
+          "key": "dbms:pyq-marathon-counting-super-keys__super-key-counting-r-abcdefghij",
+          "name": "Super key counting: R(ABCDEFGHIJ)",
+          "link": "https://www.youtube.com/watch?v=yCkQHWVHoDY&t=2400s",
+          "difficulty": "",
+          "kind": "problem",
+          "video": {
+            "provider": "youtube",
+            "id": "yCkQHWVHoDY",
+            "t": 2400
+          }
+        },
+        {
+          "key": "dbms:pyq-marathon-counting-super-keys__super-key-counting-r-abcdefgh",
+          "name": "Super key counting: R(ABCDEFGH)",
+          "link": "https://www.youtube.com/watch?v=yCkQHWVHoDY&t=2940s",
+          "difficulty": "",
+          "kind": "problem",
+          "video": {
+            "provider": "youtube",
+            "id": "yCkQHWVHoDY",
+            "t": 2940
+          }
+        },
+        {
+          "key": "dbms:pyq-marathon-counting-super-keys__maximum-number-of-candidate-keys",
+          "name": "Maximum number of candidate keys",
+          "link": "https://www.youtube.com/watch?v=yCkQHWVHoDY&t=3780s",
+          "difficulty": "",
+          "kind": "problem",
+          "video": {
+            "provider": "youtube",
+            "id": "yCkQHWVHoDY",
+            "t": 3780
+          }
+        },
+        {
+          "key": "dbms:pyq-marathon-counting-super-keys__maximum-candidate-keys-the-r-abcde-case",
+          "name": "Maximum candidate keys: the R(ABCDE) case",
+          "link": "https://www.youtube.com/watch?v=yCkQHWVHoDY&t=5280s",
+          "difficulty": "",
+          "kind": "problem",
+          "video": {
+            "provider": "youtube",
+            "id": "yCkQHWVHoDY",
+            "t": 5280
+          }
+        }
+      ]
+    },
+    {
+      "key": "dbms-12-normalization-redundancy-and-anomalies",
+      "order": 12,
+      "title": "Normalization: Redundancy and Anomalies",
+      "problems": [
+        {
+          "key": "dbms:normalization-redundancy-and-anomalies__roadmap-of-the-normalization-topics",
+          "name": "Roadmap of the normalization topics",
+          "link": "https://www.youtube.com/watch?v=F_IVrRkHkO4&t=5880s",
+          "difficulty": "",
+          "kind": "concept",
+          "video": {
+            "provider": "youtube",
+            "id": "F_IVrRkHkO4",
+            "t": 5880
+          }
+        },
+        {
+          "key": "dbms:normalization-redundancy-and-anomalies__what-is-normalization-defining-redundancy",
+          "name": "What is normalization? Defining redundancy",
+          "link": "https://www.youtube.com/watch?v=F_IVrRkHkO4&t=6360s",
+          "difficulty": "",
+          "kind": "concept",
+          "video": {
+            "provider": "youtube",
+            "id": "F_IVrRkHkO4",
+            "t": 6360
+          }
+        },
+        {
+          "key": "dbms:normalization-redundancy-and-anomalies__redundancy-example-combining-student-and-course",
+          "name": "Redundancy example: combining student and course",
+          "link": "https://www.youtube.com/watch?v=F_IVrRkHkO4&t=6660s",
+          "difficulty": "",
+          "kind": "concept",
+          "video": {
+            "provider": "youtube",
+            "id": "F_IVrRkHkO4",
+            "t": 6660
+          }
+        },
+        {
+          "key": "dbms:normalization-redundancy-and-anomalies__insertion-anomaly",
+          "name": "Insertion anomaly",
+          "link": "https://www.youtube.com/watch?v=F_IVrRkHkO4&t=7500s",
+          "difficulty": "",
+          "kind": "concept",
+          "video": {
+            "provider": "youtube",
+            "id": "F_IVrRkHkO4",
+            "t": 7500
+          }
+        },
+        {
+          "key": "dbms:normalization-redundancy-and-anomalies__deletion-anomaly",
+          "name": "Deletion anomaly",
+          "link": "https://www.youtube.com/watch?v=F_IVrRkHkO4&t=7680s",
+          "difficulty": "",
+          "kind": "concept",
+          "video": {
+            "provider": "youtube",
+            "id": "F_IVrRkHkO4",
+            "t": 7680
+          }
+        },
+        {
+          "key": "dbms:normalization-redundancy-and-anomalies__update-anomaly",
+          "name": "Update anomaly",
+          "link": "https://www.youtube.com/watch?v=F_IVrRkHkO4&t=7800s",
+          "difficulty": "",
+          "kind": "concept",
+          "video": {
+            "provider": "youtube",
+            "id": "F_IVrRkHkO4",
+            "t": 7800
+          }
+        }
+      ]
+    },
+    {
+      "key": "dbms-13-decomposition-lossless-join-and-dependency-preserving",
+      "order": 13,
+      "title": "Decomposition: Lossless Join and Dependency Preserving",
+      "problems": [
+        {
+          "key": "dbms:decomposition-lossless-join-and-dependency-preserving__what-is-decomposition",
+          "name": "What is decomposition?",
+          "link": "https://www.youtube.com/watch?v=VfWQEq27CKg&t=240s",
+          "difficulty": "",
+          "kind": "concept",
+          "video": {
+            "provider": "youtube",
+            "id": "VfWQEq27CKg",
+            "t": 240
+          }
+        },
+        {
+          "key": "dbms:decomposition-lossless-join-and-dependency-preserving__the-two-properties-lossless-join-and-dependency-preserving",
+          "name": "The two properties: lossless join and dependency preserving",
+          "link": "https://www.youtube.com/watch?v=VfWQEq27CKg&t=360s",
+          "difficulty": "",
+          "kind": "concept",
+          "video": {
+            "provider": "youtube",
+            "id": "VfWQEq27CKg",
+            "t": 360
+          }
+        },
+        {
+          "key": "dbms:decomposition-lossless-join-and-dependency-preserving__lossless-join-decomposition-formal-definition",
+          "name": "Lossless join decomposition: formal definition",
+          "link": "https://www.youtube.com/watch?v=VfWQEq27CKg&t=720s",
+          "difficulty": "",
+          "kind": "concept",
+          "video": {
+            "provider": "youtube",
+            "id": "VfWQEq27CKg",
+            "t": 720
+          }
+        },
+        {
+          "key": "dbms:decomposition-lossless-join-and-dependency-preserving__worked-example-a-lossless-decomposition",
+          "name": "Worked example: a lossless decomposition",
+          "link": "https://www.youtube.com/watch?v=VfWQEq27CKg&t=1080s",
+          "difficulty": "",
+          "kind": "concept",
+          "video": {
+            "provider": "youtube",
+            "id": "VfWQEq27CKg",
+            "t": 1080
+          }
+        },
+        {
+          "key": "dbms:decomposition-lossless-join-and-dependency-preserving__worked-example-a-lossy-decomposition-and-spurious-tuples",
+          "name": "Worked example: a lossy decomposition and spurious tuples",
+          "link": "https://www.youtube.com/watch?v=VfWQEq27CKg&t=1740s",
+          "difficulty": "",
+          "kind": "concept",
+          "video": {
+            "provider": "youtube",
+            "id": "VfWQEq27CKg",
+            "t": 1740
+          }
+        },
+        {
+          "key": "dbms:decomposition-lossless-join-and-dependency-preserving__the-lossless-test-the-common-attributes-must-be-a-super-key",
+          "name": "The lossless test: the common attributes must be a super key",
+          "link": "https://www.youtube.com/watch?v=VfWQEq27CKg&t=2460s",
+          "difficulty": "",
+          "kind": "concept",
+          "video": {
+            "provider": "youtube",
+            "id": "VfWQEq27CKg",
+            "t": 2460
+          }
+        },
+        {
+          "key": "dbms:decomposition-lossless-join-and-dependency-preserving__problems-is-this-decomposition-lossy-or-lossless",
+          "name": "Problems: is this decomposition lossy or lossless?",
+          "link": "https://www.youtube.com/watch?v=VfWQEq27CKg&t=2700s",
+          "difficulty": "",
+          "kind": "problem",
+          "video": {
+            "provider": "youtube",
+            "id": "VfWQEq27CKg",
+            "t": 2700
+          }
+        },
+        {
+          "key": "dbms:decomposition-lossless-join-and-dependency-preserving__three-way-decomposition",
+          "name": "Three-way decomposition",
+          "link": "https://www.youtube.com/watch?v=VfWQEq27CKg&t=4140s",
+          "difficulty": "",
+          "kind": "problem",
+          "video": {
+            "provider": "youtube",
+            "id": "VfWQEq27CKg",
+            "t": 4140
+          }
+        },
+        {
+          "key": "dbms:decomposition-lossless-join-and-dependency-preserving__dependency-preserving-decomposition-definition",
+          "name": "Dependency preserving decomposition: definition",
+          "link": "https://www.youtube.com/watch?v=VfWQEq27CKg&t=4500s",
+          "difficulty": "",
+          "kind": "concept",
+          "video": {
+            "provider": "youtube",
+            "id": "VfWQEq27CKg",
+            "t": 4500
+          }
+        },
+        {
+          "key": "dbms:decomposition-lossless-join-and-dependency-preserving__dependency-preservation-formal-definition-and-the-three-cases",
+          "name": "Dependency preservation: formal definition and the three cases",
+          "link": "https://www.youtube.com/watch?v=oaqqYpWiHZM&t=600s",
+          "difficulty": "",
+          "kind": "concept",
+          "video": {
+            "provider": "youtube",
+            "id": "oaqqYpWiHZM",
+            "t": 600
+          }
+        },
+        {
+          "key": "dbms:decomposition-lossless-join-and-dependency-preserving__worked-problem-are-all-dependencies-preserved",
+          "name": "Worked problem: are all dependencies preserved?",
+          "link": "https://www.youtube.com/watch?v=oaqqYpWiHZM&t=1080s",
+          "difficulty": "",
+          "kind": "problem",
+          "video": {
+            "provider": "youtube",
+            "id": "oaqqYpWiHZM",
+            "t": 1080
+          }
+        },
+        {
+          "key": "dbms:decomposition-lossless-join-and-dependency-preserving__checking-the-decomposed-fd-set-covers-the-original",
+          "name": "Checking the decomposed FD set covers the original",
+          "link": "https://www.youtube.com/watch?v=oaqqYpWiHZM&t=2100s",
+          "difficulty": "",
+          "kind": "problem",
+          "video": {
+            "provider": "youtube",
+            "id": "oaqqYpWiHZM",
+            "t": 2100
+          }
+        },
+        {
+          "key": "dbms:decomposition-lossless-join-and-dependency-preserving__second-dependency-preservation-problem",
+          "name": "Second dependency-preservation problem",
+          "link": "https://www.youtube.com/watch?v=oaqqYpWiHZM&t=2580s",
+          "difficulty": "",
+          "kind": "problem",
+          "video": {
+            "provider": "youtube",
+            "id": "oaqqYpWiHZM",
+            "t": 2580
+          }
+        }
+      ]
+    },
+    {
+      "key": "dbms-14-normal-forms-1nf-to-bcnf",
+      "order": 14,
+      "title": "Normal Forms: 1NF to BCNF",
+      "problems": [
+        {
+          "key": "dbms:normal-forms-1nf-to-bcnf__why-redundancy-exists-non-trivial-and-multi-valued-dependencies",
+          "name": "Why redundancy exists: non-trivial and multi-valued dependencies",
+          "link": "https://www.youtube.com/watch?v=oaqqYpWiHZM&t=4140s",
+          "difficulty": "",
+          "kind": "concept",
+          "video": {
+            "provider": "youtube",
+            "id": "oaqqYpWiHZM",
+            "t": 4140
+          }
+        },
+        {
+          "key": "dbms:normal-forms-1nf-to-bcnf__the-normal-form-hierarchy-and-multi-valued-dependency",
+          "name": "The normal form hierarchy, and multi-valued dependency",
+          "link": "https://www.youtube.com/watch?v=oaqqYpWiHZM&t=4380s",
+          "difficulty": "",
+          "kind": "concept",
+          "video": {
+            "provider": "youtube",
+            "id": "oaqqYpWiHZM",
+            "t": 4380
+          }
+        },
+        {
+          "key": "dbms:normal-forms-1nf-to-bcnf__how-the-normal-forms-nest",
+          "name": "How the normal forms nest",
+          "link": "https://www.youtube.com/watch?v=oaqqYpWiHZM&t=4920s",
+          "difficulty": "",
+          "kind": "concept",
+          "video": {
+            "provider": "youtube",
+            "id": "oaqqYpWiHZM",
+            "t": 4920
+          }
+        },
+        {
+          "key": "dbms:normal-forms-1nf-to-bcnf__first-normal-form-atomic-attributes",
+          "name": "First normal form: atomic attributes",
+          "link": "https://www.youtube.com/watch?v=oaqqYpWiHZM&t=5100s",
+          "difficulty": "",
+          "kind": "concept",
+          "video": {
+            "provider": "youtube",
+            "id": "oaqqYpWiHZM",
+            "t": 5100
+          }
+        },
+        {
+          "key": "dbms:normal-forms-1nf-to-bcnf__converting-a-non-1nf-table-into-1nf",
+          "name": "Converting a non-1NF table into 1NF",
+          "link": "https://www.youtube.com/watch?v=oaqqYpWiHZM&t=5520s",
+          "difficulty": "",
+          "kind": "concept",
+          "video": {
+            "provider": "youtube",
+            "id": "oaqqYpWiHZM",
+            "t": 5520
+          }
+        },
+        {
+          "key": "dbms:normal-forms-1nf-to-bcnf__why-1nf-still-has-high-redundancy",
+          "name": "Why 1NF still has high redundancy",
+          "link": "https://www.youtube.com/watch?v=oaqqYpWiHZM&t=5820s",
+          "difficulty": "",
+          "kind": "concept",
+          "video": {
+            "provider": "youtube",
+            "id": "oaqqYpWiHZM",
+            "t": 5820
+          }
+        },
+        {
+          "key": "dbms:normal-forms-1nf-to-bcnf__why-2nf-3nf-and-bcnf-are-needed",
+          "name": "Why 2NF, 3NF and BCNF are needed",
+          "link": "https://www.youtube.com/watch?v=oaqqYpWiHZM&t=6180s",
+          "difficulty": "",
+          "kind": "concept",
+          "video": {
+            "provider": "youtube",
+            "id": "oaqqYpWiHZM",
+            "t": 6180
+          }
+        },
+        {
+          "key": "dbms:normal-forms-1nf-to-bcnf__when-does-a-functional-dependency-form-redundancy",
+          "name": "When does a functional dependency form redundancy?",
+          "link": "https://www.youtube.com/watch?v=XehwR2cWkSw&t=240s",
+          "difficulty": "",
+          "kind": "concept",
+          "video": {
+            "provider": "youtube",
+            "id": "XehwR2cWkSw",
+            "t": 240
+          }
+        },
+        {
+          "key": "dbms:normal-forms-1nf-to-bcnf__when-does-a-functional-dependency-not-form-redundancy",
+          "name": "When does a functional dependency NOT form redundancy?",
+          "link": "https://www.youtube.com/watch?v=XehwR2cWkSw&t=540s",
+          "difficulty": "",
+          "kind": "concept",
+          "video": {
+            "provider": "youtube",
+            "id": "XehwR2cWkSw",
+            "t": 540
+          }
+        },
+        {
+          "key": "dbms:normal-forms-1nf-to-bcnf__redundancy-example-partial-dependency-on-sid-cid",
+          "name": "Redundancy example: partial dependency on SID CID",
+          "link": "https://www.youtube.com/watch?v=XehwR2cWkSw&t=960s",
+          "difficulty": "",
+          "kind": "concept",
+          "video": {
+            "provider": "youtube",
+            "id": "XehwR2cWkSw",
+            "t": 960
+          }
+        },
+        {
+          "key": "dbms:normal-forms-1nf-to-bcnf__redundancy-example-rating-determines-salary",
+          "name": "Redundancy example: rating determines salary",
+          "link": "https://www.youtube.com/watch?v=XehwR2cWkSw&t=1620s",
+          "difficulty": "",
+          "kind": "concept",
+          "video": {
+            "provider": "youtube",
+            "id": "XehwR2cWkSw",
+            "t": 1620
+          }
+        },
+        {
+          "key": "dbms:normal-forms-1nf-to-bcnf__a-non-redundant-example-sid-determines-sname",
+          "name": "A non-redundant example: SID determines SName",
+          "link": "https://www.youtube.com/watch?v=XehwR2cWkSw&t=2400s",
+          "difficulty": "",
+          "kind": "concept",
+          "video": {
+            "provider": "youtube",
+            "id": "XehwR2cWkSw",
+            "t": 2400
+          }
+        },
+        {
+          "key": "dbms:normal-forms-1nf-to-bcnf__master-example-r-abcdef-every-redundancy-case",
+          "name": "Master example R(ABCDEF): every redundancy case",
+          "link": "https://www.youtube.com/watch?v=XehwR2cWkSw&t=2640s",
+          "difficulty": "",
+          "kind": "concept",
+          "video": {
+            "provider": "youtube",
+            "id": "XehwR2cWkSw",
+            "t": 2640
+          }
+        },
+        {
+          "key": "dbms:normal-forms-1nf-to-bcnf__the-four-redundancy-cases-generalized",
+          "name": "The four redundancy cases, generalized",
+          "link": "https://www.youtube.com/watch?v=XehwR2cWkSw&t=3120s",
+          "difficulty": "",
+          "kind": "concept",
+          "video": {
+            "provider": "youtube",
+            "id": "XehwR2cWkSw",
+            "t": 3120
+          }
+        },
+        {
+          "key": "dbms:normal-forms-1nf-to-bcnf__how-normal-forms-reduce-redundancy",
+          "name": "How normal forms reduce redundancy",
+          "link": "https://www.youtube.com/watch?v=XehwR2cWkSw&t=3780s",
+          "difficulty": "",
+          "kind": "concept",
+          "video": {
+            "provider": "youtube",
+            "id": "XehwR2cWkSw",
+            "t": 3780
+          }
+        },
+        {
+          "key": "dbms:normal-forms-1nf-to-bcnf__second-normal-form-no-partial-dependency",
+          "name": "Second normal form: no partial dependency",
+          "link": "https://www.youtube.com/watch?v=XehwR2cWkSw&t=3960s",
+          "difficulty": "",
+          "kind": "concept",
+          "video": {
+            "provider": "youtube",
+            "id": "XehwR2cWkSw",
+            "t": 3960
+          }
+        },
+        {
+          "key": "dbms:normal-forms-1nf-to-bcnf__third-normal-form",
+          "name": "Third normal form",
+          "link": "https://www.youtube.com/watch?v=XehwR2cWkSw&t=4320s",
+          "difficulty": "",
+          "kind": "concept",
+          "video": {
+            "provider": "youtube",
+            "id": "XehwR2cWkSw",
+            "t": 4320
+          }
+        },
+        {
+          "key": "dbms:normal-forms-1nf-to-bcnf__bcnf",
+          "name": "BCNF",
+          "link": "https://www.youtube.com/watch?v=XehwR2cWkSw&t=4800s",
+          "difficulty": "",
+          "kind": "concept",
+          "video": {
+            "provider": "youtube",
+            "id": "XehwR2cWkSw",
+            "t": 4800
+          }
+        },
+        {
+          "key": "dbms:normal-forms-1nf-to-bcnf__recap-across-2nf-3nf-and-bcnf",
+          "name": "Recap across 2NF, 3NF and BCNF",
+          "link": "https://www.youtube.com/watch?v=XehwR2cWkSw&t=5160s",
+          "difficulty": "",
+          "kind": "concept",
+          "video": {
+            "provider": "youtube",
+            "id": "XehwR2cWkSw",
+            "t": 5160
+          }
+        }
+      ]
+    },
+    {
+      "key": "dbms-15-higher-normal-forms-and-denormalisation",
+      "order": 15,
+      "title": "Higher Normal Forms and Denormalisation",
+      "problems": [
+        {
+          "key": "dbms:higher-normal-forms-and-denormalisation__multivalued-and-join-dependencies",
+          "name": "Multivalued and join dependencies",
+          "link": "",
+          "difficulty": "",
+          "kind": "concept"
+        },
+        {
+          "key": "dbms:higher-normal-forms-and-denormalisation__fourth-normal-form-4nf",
+          "name": "Fourth normal form (4NF)",
+          "link": "https://www.youtube.com/watch?v=uaqGSy-lhX4",
+          "difficulty": "",
+          "kind": "concept",
+          "video": {
+            "provider": "youtube",
+            "id": "uaqGSy-lhX4"
+          }
+        },
+        {
+          "key": "dbms:higher-normal-forms-and-denormalisation__fifth-normal-form-5nf",
+          "name": "Fifth normal form (5NF)",
+          "link": "https://www.youtube.com/watch?v=lHzdUY1xFyk",
+          "difficulty": "",
+          "kind": "concept",
+          "video": {
+            "provider": "youtube",
+            "id": "lHzdUY1xFyk"
+          }
+        },
+        {
+          "key": "dbms:higher-normal-forms-and-denormalisation__denormalisation-and-when-to-use-it",
+          "name": "Denormalisation and when to use it",
+          "link": "https://takeuforward.org/dbms/denormalisation",
+          "difficulty": "",
+          "kind": "concept",
+          "video": {
+            "provider": "youtube",
+            "id": "ialGGDGxQVc"
+          }
+        }
+      ],
+      "note": "Riti Kumari's course — Ravula stops at BCNF."
+    },
+    {
+      "key": "dbms-16-finding-the-highest-normal-form",
+      "order": 16,
+      "title": "Finding the Highest Normal Form",
+      "problems": [
+        {
+          "key": "dbms:finding-the-highest-normal-form__recap-the-2nf-3nf-and-bcnf-definitions",
+          "name": "Recap: the 2NF, 3NF and BCNF definitions",
+          "link": "https://www.youtube.com/watch?v=h7moQMesRqU&t=120s",
+          "difficulty": "",
+          "kind": "concept",
+          "video": {
+            "provider": "youtube",
+            "id": "h7moQMesRqU",
+            "t": 120
+          }
+        },
+        {
+          "key": "dbms:finding-the-highest-normal-form__applying-the-four-cases-is-the-example-in-2nf",
+          "name": "Applying the four cases: is the example in 2NF?",
+          "link": "https://www.youtube.com/watch?v=h7moQMesRqU&t=480s",
+          "difficulty": "",
+          "kind": "concept",
+          "video": {
+            "provider": "youtube",
+            "id": "h7moQMesRqU",
+            "t": 480
+          }
+        },
+        {
+          "key": "dbms:finding-the-highest-normal-form__the-same-example-in-third-normal-form",
+          "name": "The same example in third normal form",
+          "link": "https://www.youtube.com/watch?v=h7moQMesRqU&t=960s",
+          "difficulty": "",
+          "kind": "concept",
+          "video": {
+            "provider": "youtube",
+            "id": "h7moQMesRqU",
+            "t": 960
+          }
+        },
+        {
+          "key": "dbms:finding-the-highest-normal-form__the-same-example-in-bcnf",
+          "name": "The same example in BCNF",
+          "link": "https://www.youtube.com/watch?v=h7moQMesRqU&t=1200s",
+          "difficulty": "",
+          "kind": "concept",
+          "video": {
+            "provider": "youtube",
+            "id": "h7moQMesRqU",
+            "t": 1200
+          }
+        },
+        {
+          "key": "dbms:finding-the-highest-normal-form__how-gate-asks-it-finding-the-highest-normal-form",
+          "name": "How GATE asks it: finding the highest normal form",
+          "link": "https://www.youtube.com/watch?v=h7moQMesRqU&t=1380s",
+          "difficulty": "",
+          "kind": "concept",
+          "video": {
+            "provider": "youtube",
+            "id": "h7moQMesRqU",
+            "t": 1380
+          }
+        },
+        {
+          "key": "dbms:finding-the-highest-normal-form__problem-1-r-abcde-with-abd-to-c-bc-to-d-cd-to-e",
+          "name": "Problem 1: R(ABCDE) with ABD to C, BC to D, CD to E",
+          "link": "https://www.youtube.com/watch?v=h7moQMesRqU&t=1680s",
+          "difficulty": "",
+          "kind": "problem",
+          "video": {
+            "provider": "youtube",
+            "id": "h7moQMesRqU",
+            "t": 1680
+          }
+        },
+        {
+          "key": "dbms:finding-the-highest-normal-form__problem-1-bcnf-and-3nf-testing",
+          "name": "Problem 1: BCNF and 3NF testing",
+          "link": "https://www.youtube.com/watch?v=h7moQMesRqU&t=2040s",
+          "difficulty": "",
+          "kind": "problem",
+          "video": {
+            "provider": "youtube",
+            "id": "h7moQMesRqU",
+            "t": 2040
+          }
+        },
+        {
+          "key": "dbms:finding-the-highest-normal-form__problem-1-2nf-testing-and-partial-dependency",
+          "name": "Problem 1: 2NF testing and partial dependency",
+          "link": "https://www.youtube.com/watch?v=h7moQMesRqU&t=2280s",
+          "difficulty": "",
+          "kind": "problem",
+          "video": {
+            "provider": "youtube",
+            "id": "h7moQMesRqU",
+            "t": 2280
+          }
+        },
+        {
+          "key": "dbms:finding-the-highest-normal-form__problem-1-the-highest-normal-form-is-1nf",
+          "name": "Problem 1: the highest normal form is 1NF",
+          "link": "https://www.youtube.com/watch?v=h7moQMesRqU&t=2940s",
+          "difficulty": "",
+          "kind": "problem",
+          "video": {
+            "provider": "youtube",
+            "id": "h7moQMesRqU",
+            "t": 2940
+          }
+        },
+        {
+          "key": "dbms:finding-the-highest-normal-form__problem-2-r-abcd-with-ab-to-c-bc-to-d",
+          "name": "Problem 2: R(ABCD) with AB to C, BC to D",
+          "link": "https://www.youtube.com/watch?v=h7moQMesRqU&t=3300s",
+          "difficulty": "",
+          "kind": "problem",
+          "video": {
+            "provider": "youtube",
+            "id": "h7moQMesRqU",
+            "t": 3300
+          }
+        },
+        {
+          "key": "dbms:finding-the-highest-normal-form__problem-3-r-abcd-with-ab-to-c-c-to-a-ac-to-d",
+          "name": "Problem 3: R(ABCD) with AB to C, C to A, AC to D",
+          "link": "https://www.youtube.com/watch?v=h7moQMesRqU&t=3840s",
+          "difficulty": "",
+          "kind": "problem",
+          "video": {
+            "provider": "youtube",
+            "id": "h7moQMesRqU",
+            "t": 3840
+          }
+        },
+        {
+          "key": "dbms:finding-the-highest-normal-form__problem-4-r-abcdef",
+          "name": "Problem 4: R(ABCDEF)",
+          "link": "https://www.youtube.com/watch?v=h7moQMesRqU&t=4620s",
+          "difficulty": "",
+          "kind": "problem",
+          "video": {
+            "provider": "youtube",
+            "id": "h7moQMesRqU",
+            "t": 4620
+          }
+        },
+        {
+          "key": "dbms:finding-the-highest-normal-form__problem-5-r-abcdef-with-ab-to-c-c-to-d",
+          "name": "Problem 5: R(ABCDEF) with AB to C, C to D",
+          "link": "https://www.youtube.com/watch?v=h7moQMesRqU&t=5220s",
+          "difficulty": "",
+          "kind": "problem",
+          "video": {
+            "provider": "youtube",
+            "id": "h7moQMesRqU",
+            "t": 5220
+          }
+        },
+        {
+          "key": "dbms:finding-the-highest-normal-form__problem-6-r-abcde-where-every-attribute-is-prime",
+          "name": "Problem 6: R(ABCDE) where every attribute is prime",
+          "link": "https://www.youtube.com/watch?v=h7moQMesRqU&t=5880s",
+          "difficulty": "",
+          "kind": "problem",
+          "video": {
+            "provider": "youtube",
+            "id": "h7moQMesRqU",
+            "t": 5880
+          }
+        },
+        {
+          "key": "dbms:finding-the-highest-normal-form__problem-7-r-abcd-with-a-to-b-b-to-ac-c-to-d",
+          "name": "Problem 7: R(ABCD) with A to B, B to AC, C to D",
+          "link": "https://www.youtube.com/watch?v=h7moQMesRqU&t=6600s",
+          "difficulty": "",
+          "kind": "problem",
+          "video": {
+            "provider": "youtube",
+            "id": "h7moQMesRqU",
+            "t": 6600
+          }
+        }
+      ]
+    },
+    {
+      "key": "dbms-17-normalization-practice",
       "order": 17,
-      "title": "File Organization and Indexing",
-      "problems": [],
-      "placeholder": "Not published yet — RBR says he will cover indexing including B trees and B+ trees (Lecture 1, 16:00)."
+      "title": "Normalization Practice",
+      "problems": [
+        {
+          "key": "dbms:normalization-practice__no-non-trivial-function-dependency",
+          "name": "No Non Trivial Function Dependency",
+          "link": "https://www.youtube.com/watch?v=KgwpI88tDMw",
+          "difficulty": "",
+          "kind": "concept",
+          "video": {
+            "provider": "youtube",
+            "id": "KgwpI88tDMw"
+          }
+        },
+        {
+          "key": "dbms:normalization-practice__schema-with-only-two-attributes",
+          "name": "Schema With Only Two Attributes",
+          "link": "https://www.youtube.com/watch?v=mNOPSZB5gns",
+          "difficulty": "",
+          "kind": "concept",
+          "video": {
+            "provider": "youtube",
+            "id": "mNOPSZB5gns"
+          }
+        },
+        {
+          "key": "dbms:normalization-practice__decomposition-into-2nd-normal-form-example-1",
+          "name": "Decomposition Into 2nd Normal Form Example 1",
+          "link": "https://www.youtube.com/watch?v=_5nFU_8zTNM",
+          "difficulty": "",
+          "kind": "problem",
+          "video": {
+            "provider": "youtube",
+            "id": "_5nFU_8zTNM"
+          }
+        },
+        {
+          "key": "dbms:normalization-practice__decomposition-into-2nd-normal-form-example-2",
+          "name": "Decomposition Into 2nd Normal Form Example 2",
+          "link": "https://www.youtube.com/watch?v=9hkPlzBHrD8",
+          "difficulty": "",
+          "kind": "problem",
+          "video": {
+            "provider": "youtube",
+            "id": "9hkPlzBHrD8"
+          }
+        },
+        {
+          "key": "dbms:normalization-practice__example-1-on-bcnf",
+          "name": "Example 1 on BCNF",
+          "link": "https://www.youtube.com/watch?v=x8RidcjVg0I",
+          "difficulty": "",
+          "kind": "problem",
+          "video": {
+            "provider": "youtube",
+            "id": "x8RidcjVg0I"
+          }
+        },
+        {
+          "key": "dbms:normalization-practice__example-2-on-bcnf",
+          "name": "Example 2 on BCNF",
+          "link": "https://www.youtube.com/watch?v=QvTScX5R15E",
+          "difficulty": "",
+          "kind": "problem",
+          "video": {
+            "provider": "youtube",
+            "id": "QvTScX5R15E"
+          }
+        },
+        {
+          "key": "dbms:normalization-practice__example-3-on-bcnf",
+          "name": "Example 3 on BCNF",
+          "link": "https://www.youtube.com/watch?v=MyUMez2WdEA",
+          "difficulty": "",
+          "kind": "problem",
+          "video": {
+            "provider": "youtube",
+            "id": "MyUMez2WdEA"
+          }
+        },
+        {
+          "key": "dbms:normalization-practice__example-4-on-bcnf",
+          "name": "Example 4 on BCNF",
+          "link": "https://www.youtube.com/watch?v=-9YVAalHDDg",
+          "difficulty": "",
+          "kind": "problem",
+          "video": {
+            "provider": "youtube",
+            "id": "-9YVAalHDDg"
+          }
+        },
+        {
+          "key": "dbms:normalization-practice__example-5-on-bcnf",
+          "name": "Example 5 on BCNF",
+          "link": "https://www.youtube.com/watch?v=k5EAfDAV2KE",
+          "difficulty": "",
+          "kind": "problem",
+          "video": {
+            "provider": "youtube",
+            "id": "k5EAfDAV2KE"
+          }
+        },
+        {
+          "key": "dbms:normalization-practice__conclusion-on-decomposition",
+          "name": "Conclusion On Decomposition",
+          "link": "https://www.youtube.com/watch?v=Ugj3jSLRV2s",
+          "difficulty": "",
+          "kind": "concept",
+          "video": {
+            "provider": "youtube",
+            "id": "Ugj3jSLRV2s"
+          }
+        }
+      ]
     },
     {
       "key": "dbms-18-transactions-and-concurrency-control",
       "order": 18,
       "title": "Transactions and Concurrency Control",
-      "problems": [],
-      "placeholder": "Not published yet — listed in the syllabus, worth 2-4 marks in GATE."
+      "problems": [
+        {
+          "key": "dbms:transactions-and-concurrency-control__acid-properties",
+          "name": "ACID properties",
+          "link": "",
+          "difficulty": "",
+          "kind": "concept"
+        },
+        {
+          "key": "dbms:transactions-and-concurrency-control__transaction-states-and-the-transaction-lifecycle",
+          "name": "Transaction states and the transaction lifecycle",
+          "link": "",
+          "difficulty": "",
+          "kind": "concept"
+        },
+        {
+          "key": "dbms:transactions-and-concurrency-control__schedules-and-their-types",
+          "name": "Schedules and their types",
+          "link": "https://takeuforward.org/dbms/scheduling",
+          "difficulty": "",
+          "kind": "concept",
+          "video": {
+            "provider": "youtube",
+            "id": "upPtgE9UkB8"
+          }
+        },
+        {
+          "key": "dbms:transactions-and-concurrency-control__conflict-serializability-and-the-precedence-graph",
+          "name": "Conflict serializability and the precedence graph",
+          "link": "",
+          "difficulty": "",
+          "kind": "concept"
+        },
+        {
+          "key": "dbms:transactions-and-concurrency-control__view-serializability",
+          "name": "View serializability",
+          "link": "",
+          "difficulty": "",
+          "kind": "concept"
+        },
+        {
+          "key": "dbms:transactions-and-concurrency-control__serializability-and-its-types",
+          "name": "Serializability and its types",
+          "link": "https://takeuforward.org/dbms/serializability-concurrency-control",
+          "difficulty": "",
+          "kind": "concept",
+          "video": {
+            "provider": "youtube",
+            "id": "SeCgEy8UTKo"
+          }
+        },
+        {
+          "key": "dbms:transactions-and-concurrency-control__recoverable-cascadeless-and-strict-schedules",
+          "name": "Recoverable, cascadeless and strict schedules",
+          "link": "",
+          "difficulty": "",
+          "kind": "concept"
+        },
+        {
+          "key": "dbms:transactions-and-concurrency-control__isolation-levels",
+          "name": "Isolation levels",
+          "link": "https://takeuforward.org/dbms/isolation-levels-and-its-types",
+          "difficulty": "",
+          "kind": "concept",
+          "video": {
+            "provider": "youtube",
+            "id": "8aOAgyOw420"
+          }
+        },
+        {
+          "key": "dbms:transactions-and-concurrency-control__concurrency-control-mechanisms-and-locking-protocols",
+          "name": "Concurrency control mechanisms and locking protocols",
+          "link": "https://takeuforward.org/dbms/locking-protocols",
+          "difficulty": "",
+          "kind": "concept",
+          "video": {
+            "provider": "youtube",
+            "id": "msXIZz5UFXo"
+          }
+        },
+        {
+          "key": "dbms:transactions-and-concurrency-control__two-phase-locking-basic-strict-rigorous-and-conservative",
+          "name": "Two-phase locking: basic, strict, rigorous and conservative",
+          "link": "",
+          "difficulty": "",
+          "kind": "concept"
+        },
+        {
+          "key": "dbms:transactions-and-concurrency-control__deadlock-handling-wait-die-and-wound-wait",
+          "name": "Deadlock handling: wait-die and wound-wait",
+          "link": "",
+          "difficulty": "",
+          "kind": "concept"
+        },
+        {
+          "key": "dbms:transactions-and-concurrency-control__timestamp-ordering-and-thomas-s-write-rule",
+          "name": "Timestamp ordering and Thomas's write rule",
+          "link": "",
+          "difficulty": "",
+          "kind": "concept"
+        },
+        {
+          "key": "dbms:transactions-and-concurrency-control__multiversion-concurrency-control-mvcc",
+          "name": "Multiversion concurrency control (MVCC)",
+          "link": "",
+          "difficulty": "",
+          "kind": "concept"
+        }
+      ],
+      "note": "takeUforward covers four of these; the rest are yours to source."
     },
     {
       "key": "dbms-19-recovery",
       "order": 19,
       "title": "Recovery",
-      "problems": [],
-      "placeholder": "Not published yet — normally paired with transactions."
+      "problems": [
+        {
+          "key": "dbms:recovery__log-based-recovery-and-the-log-record-format",
+          "name": "Log-based recovery and the log record format",
+          "link": "",
+          "difficulty": "",
+          "kind": "concept"
+        },
+        {
+          "key": "dbms:recovery__deferred-vs-immediate-database-modification",
+          "name": "Deferred vs immediate database modification",
+          "link": "",
+          "difficulty": "",
+          "kind": "concept"
+        },
+        {
+          "key": "dbms:recovery__write-ahead-logging-wal",
+          "name": "Write-ahead logging (WAL)",
+          "link": "",
+          "difficulty": "",
+          "kind": "concept"
+        },
+        {
+          "key": "dbms:recovery__checkpoints-and-the-recovery-algorithm",
+          "name": "Checkpoints and the recovery algorithm",
+          "link": "",
+          "difficulty": "",
+          "kind": "concept"
+        },
+        {
+          "key": "dbms:recovery__undo-redo-and-undo-redo-recovery",
+          "name": "Undo, redo and undo/redo recovery",
+          "link": "",
+          "difficulty": "",
+          "kind": "concept"
+        },
+        {
+          "key": "dbms:recovery__shadow-paging",
+          "name": "Shadow paging",
+          "link": "",
+          "difficulty": "",
+          "kind": "concept"
+        },
+        {
+          "key": "dbms:recovery__aries",
+          "name": "ARIES",
+          "link": "",
+          "difficulty": "",
+          "kind": "concept"
+        }
+      ],
+      "note": "Neither course covers this — find your own material."
     },
     {
-      "key": "dbms-20-query-processing-and-cost-estimation",
+      "key": "dbms-20-file-organization-and-indexing",
       "order": 20,
+      "title": "File Organization and Indexing",
+      "problems": [
+        {
+          "key": "dbms:file-organization-and-indexing__file-organization-heap-sequential-and-clustered-files",
+          "name": "File organization: heap, sequential and clustered files",
+          "link": "",
+          "difficulty": "",
+          "kind": "concept"
+        },
+        {
+          "key": "dbms:file-organization-and-indexing__indexing-and-its-types",
+          "name": "Indexing and its types",
+          "link": "https://takeuforward.org/dbms/indexing-and-its-types",
+          "difficulty": "",
+          "kind": "concept",
+          "video": {
+            "provider": "youtube",
+            "id": "A2hEyCc2QUY"
+          }
+        },
+        {
+          "key": "dbms:file-organization-and-indexing__primary-secondary-and-clustering-indexes",
+          "name": "Primary, secondary and clustering indexes",
+          "link": "",
+          "difficulty": "",
+          "kind": "concept"
+        },
+        {
+          "key": "dbms:file-organization-and-indexing__dense-vs-sparse-indexes",
+          "name": "Dense vs sparse indexes",
+          "link": "",
+          "difficulty": "",
+          "kind": "concept"
+        },
+        {
+          "key": "dbms:file-organization-and-indexing__multilevel-indexes",
+          "name": "Multilevel indexes",
+          "link": "",
+          "difficulty": "",
+          "kind": "concept"
+        },
+        {
+          "key": "dbms:file-organization-and-indexing__b-trees-and-b-trees",
+          "name": "B trees and B+ trees",
+          "link": "https://takeuforward.org/dbms/b-bplus-trees",
+          "difficulty": "",
+          "kind": "concept",
+          "video": {
+            "provider": "youtube",
+            "id": "spTiUaTSh-4"
+          }
+        },
+        {
+          "key": "dbms:file-organization-and-indexing__b-tree-vs-b-tree-order-node-capacity-and-height",
+          "name": "B tree vs B+ tree: order, node capacity and height",
+          "link": "",
+          "difficulty": "",
+          "kind": "concept"
+        },
+        {
+          "key": "dbms:file-organization-and-indexing__b-tree-insertion-and-deletion",
+          "name": "B+ tree insertion and deletion",
+          "link": "",
+          "difficulty": "",
+          "kind": "concept"
+        },
+        {
+          "key": "dbms:file-organization-and-indexing__static-hashing",
+          "name": "Static hashing",
+          "link": "",
+          "difficulty": "",
+          "kind": "concept"
+        },
+        {
+          "key": "dbms:file-organization-and-indexing__dynamic-and-extendible-hashing",
+          "name": "Dynamic and extendible hashing",
+          "link": "",
+          "difficulty": "",
+          "kind": "concept"
+        }
+      ],
+      "note": "takeUforward covers indexing and B+ trees; the rest are yours to source."
+    },
+    {
+      "key": "dbms-21-query-processing-and-cost-estimation",
+      "order": 21,
       "title": "Query Processing and Cost Estimation",
-      "problems": [],
-      "placeholder": "Only partly covered: Lecture 56 does relational-algebra-level optimisation. Join algorithms and cost models are not published yet."
+      "problems": [
+        {
+          "key": "dbms:query-processing-and-cost-estimation__the-query-processing-pipeline-parsing-optimization-evaluation",
+          "name": "The query processing pipeline: parsing, optimization, evaluation",
+          "link": "",
+          "difficulty": "",
+          "kind": "concept"
+        },
+        {
+          "key": "dbms:query-processing-and-cost-estimation__external-sort-merge-and-its-cost",
+          "name": "External sort-merge and its cost",
+          "link": "",
+          "difficulty": "",
+          "kind": "concept"
+        },
+        {
+          "key": "dbms:query-processing-and-cost-estimation__selection-algorithms-and-their-cost",
+          "name": "Selection algorithms and their cost",
+          "link": "",
+          "difficulty": "",
+          "kind": "concept"
+        },
+        {
+          "key": "dbms:query-processing-and-cost-estimation__join-algorithms-nested-loop-block-nested-loop-sort-merge-and-hash-join",
+          "name": "Join algorithms: nested loop, block nested loop, sort-merge and hash join",
+          "link": "",
+          "difficulty": "",
+          "kind": "concept"
+        },
+        {
+          "key": "dbms:query-processing-and-cost-estimation__cost-estimation-and-selectivity",
+          "name": "Cost estimation and selectivity",
+          "link": "",
+          "difficulty": "",
+          "kind": "concept"
+        },
+        {
+          "key": "dbms:query-processing-and-cost-estimation__heuristic-optimization-and-equivalence-rules",
+          "name": "Heuristic optimization and equivalence rules",
+          "link": "",
+          "difficulty": "",
+          "kind": "concept"
+        },
+        {
+          "key": "dbms:query-processing-and-cost-estimation__materialization-vs-pipelining",
+          "name": "Materialization vs pipelining",
+          "link": "",
+          "difficulty": "",
+          "kind": "concept"
+        },
+        {
+          "key": "dbms:query-processing-and-cost-estimation__techniques-for-optimizing-sql-queries-and-file-organization",
+          "name": "Techniques for optimizing SQL queries and file organization",
+          "link": "https://takeuforward.org/dbms/techniques-for-optimising-sql-queries",
+          "difficulty": "",
+          "kind": "concept",
+          "video": {
+            "provider": "youtube",
+            "id": "p5jGmXbYcQA"
+          }
+        }
+      ],
+      "note": "takeUforward covers SQL tuning only; the theory is yours to source."
+    },
+    {
+      "key": "dbms-22-scalability-and-performance",
+      "order": 22,
+      "title": "Scalability and Performance",
+      "problems": [
+        {
+          "key": "dbms:scalability-and-performance__vertical-and-horizontal-scaling",
+          "name": "Vertical and horizontal scaling",
+          "link": "https://takeuforward.org/dbms/vertical-horizontal-scaling",
+          "difficulty": "",
+          "kind": "concept",
+          "video": {
+            "provider": "youtube",
+            "id": "NjfvoTiWwoo"
+          }
+        },
+        {
+          "key": "dbms:scalability-and-performance__sharding",
+          "name": "Sharding",
+          "link": "https://takeuforward.org/dbms/sharding",
+          "difficulty": "",
+          "kind": "concept",
+          "video": {
+            "provider": "youtube",
+            "id": "NjfvoTiWwoo"
+          }
+        },
+        {
+          "key": "dbms:scalability-and-performance__replication-master-slave-and-multi-master",
+          "name": "Replication: master-slave and multi-master",
+          "link": "",
+          "difficulty": "",
+          "kind": "concept"
+        },
+        {
+          "key": "dbms:scalability-and-performance__the-cap-theorem",
+          "name": "The CAP theorem",
+          "link": "",
+          "difficulty": "",
+          "kind": "concept"
+        }
+      ],
+      "note": "takeUforward interview sheet — interview topics, not classic syllabus."
+    },
+    {
+      "key": "dbms-23-data-integrity-and-security",
+      "order": 23,
+      "title": "Data Integrity and Security",
+      "problems": [
+        {
+          "key": "dbms:data-integrity-and-security__role-based-access-control-rbac",
+          "name": "Role-based access control (RBAC)",
+          "link": "https://takeuforward.org/dbms/role-based-access-control",
+          "difficulty": "",
+          "kind": "concept",
+          "video": {
+            "provider": "youtube",
+            "id": "1-QvahOQAgo"
+          }
+        },
+        {
+          "key": "dbms:data-integrity-and-security__grant-and-revoke-privileges-and-roles",
+          "name": "GRANT and REVOKE: privileges and roles",
+          "link": "",
+          "difficulty": "",
+          "kind": "concept"
+        },
+        {
+          "key": "dbms:data-integrity-and-security__encryption-at-rest-and-in-transit",
+          "name": "Encryption at rest and in transit",
+          "link": "",
+          "difficulty": "",
+          "kind": "concept"
+        },
+        {
+          "key": "dbms:data-integrity-and-security__sql-injection-and-how-to-prevent-it",
+          "name": "SQL injection and how to prevent it",
+          "link": "",
+          "difficulty": "",
+          "kind": "concept"
+        }
+      ],
+      "note": "takeUforward interview sheet — interview topics, not classic syllabus."
     }
   ]
 }

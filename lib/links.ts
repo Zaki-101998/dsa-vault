@@ -1,4 +1,4 @@
-import type { VideoRef } from "./types";
+import type { Problem, VideoRef } from "./types";
 
 // Maps a practice-problem URL to a display badge based on its host.
 // Returns null for empty/unknown links so callers can skip rendering.
@@ -40,6 +40,22 @@ export function linkPlatform(url: string | null | undefined): LinkBadge | null {
 
 /** Badge styling for a lecture video, in the same visual family as above. */
 export const VIDEO_BADGE_CLASS = "text-[#f0b429] border-[#f0b429]/40";
+
+/**
+ * A syllabus topic with nothing attached to study from yet — seeded for subjects
+ * whose courses leave gaps, so the whole syllabus is visible rather than only the
+ * parts someone happened to record.
+ *
+ * Derived rather than stored, which means it clears itself: the moment a link is
+ * pasted into the header, `link` is non-empty and the entry stops being a stub.
+ * Custom entries are excluded — an entry the user typed themselves is not a gap
+ * the sheet is asking them to fill.
+ */
+export function needsResource(
+  p: Pick<Problem, "video" | "link" | "practiceLink" | "isCustom">
+): boolean {
+  return !p.video && !p.link && !p.practiceLink && !p.isCustom;
+}
 
 function hms(total: number): string {
   const h = Math.floor(total / 3600);

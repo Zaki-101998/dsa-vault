@@ -21,15 +21,24 @@ type SortableHandles = Pick<ReturnType<typeof useSortable>, "attributes" | "list
 import { CSS } from "@dnd-kit/utilities";
 import { RevisionStar } from "./RevisionStar";
 import { daysSince, isDue, starColor } from "@/lib/decay";
+import { needsResource } from "@/lib/links";
 import type { Problem, Status, TopicGroup } from "@/lib/types";
 
-export type FilterKey = "all" | "due" | "starred" | "solved" | "unsolved" | "concepts";
+export type FilterKey =
+  | "all"
+  | "due"
+  | "starred"
+  | "solved"
+  | "unsolved"
+  | "concepts"
+  | "noresource";
 
 function ProblemRow({
   problem,
   selected,
   decayDays,
   statusLabels,
+  markStubs,
   onSelect,
   onToggleStar,
   drag,
@@ -38,6 +47,8 @@ function ProblemRow({
   selected: boolean;
   decayDays: number;
   statusLabels: Record<Status, string>;
+  /** Whether this subject seeds unresourced topics worth flagging. */
+  markStubs: boolean;
   onSelect: () => void;
   onToggleStar: () => void;
   drag?: {
@@ -48,6 +59,7 @@ function ProblemRow({
 }) {
   const days = problem.starred ? Math.floor(daysSince(problem.lastRevised)) : null;
   const color = starColor(problem.starred, problem.lastRevised, decayDays);
+  const stub = markStubs && needsResource(problem);
 
   return (
     <div
@@ -79,10 +91,17 @@ function ProblemRow({
               ◦{" "}
             </span>
           )}
+          {stub && (
+            <span title="No resource yet — paste a link in the header" className="text-[#5b8cff]">
+              ⊕{" "}
+            </span>
+          )}
           {problem.name || "Untitled"}
         </div>
         <div className="text-[11px] text-[#8b93a7] truncate">
-          {[problem.difficulty, statusLabels[problem.status]].filter(Boolean).join(" · ")}
+          {[problem.difficulty, statusLabels[problem.status], stub ? "no resource yet" : ""]
+            .filter(Boolean)
+            .join(" · ")}
         </div>
       </div>
       {days !== null && (
@@ -99,6 +118,7 @@ function SortableProblemRow({
   selected,
   decayDays,
   statusLabels,
+  markStubs,
   onSelect,
   onToggleStar,
 }: {
@@ -106,6 +126,7 @@ function SortableProblemRow({
   selected: boolean;
   decayDays: number;
   statusLabels: Record<Status, string>;
+  markStubs: boolean;
   onSelect: () => void;
   onToggleStar: () => void;
 }) {
@@ -118,6 +139,7 @@ function SortableProblemRow({
       selected={selected}
       decayDays={decayDays}
       statusLabels={statusLabels}
+      markStubs={markStubs}
       onSelect={onSelect}
       onToggleStar={onToggleStar}
       drag={{
@@ -131,12 +153,18 @@ function SortableProblemRow({
   );
 }
 
-function matchesFilter(p: Problem, filter: FilterKey, decayDays: number): boolean {
+function matchesFilter(
+  p: Problem,
+  filter: FilterKey,
+  decayDays: number,
+  markStubs: boolean
+): boolean {
   if (filter === "due") return isDue(p.starred, p.lastRevised, decayDays);
   if (filter === "starred") return p.starred;
   if (filter === "solved") return p.status === "Solved";
   if (filter === "unsolved") return p.status !== "Solved";
   if (filter === "concepts") return p.kind !== "problem";
+  if (filter === "noresource") return markStubs && needsResource(p);
   return true;
 }
 
@@ -147,6 +175,7 @@ export function ProblemList({
   selectedKey,
   decayDays,
   statusLabels,
+  markStubs,
   groupNoun,
   entryNounPlural,
   onSelect,
@@ -159,6 +188,8 @@ export function ProblemList({
   selectedKey: string | null;
   decayDays: number;
   statusLabels: Record<Status, string>;
+  /** True only where the sheet seeds topics with no resource — see SubjectConfig. */
+  markStubs: boolean;
   /** "Step" for DSA, "Section" for the lecture subjects. */
   groupNoun: string;
   entryNounPlural: string;
@@ -181,13 +212,11 @@ export function ProblemList({
         ...g,
         problems: g.problems.filter((p) => {
           if (q && !(p.name + " " + p.topic).toLowerCase().includes(q)) return false;
-          return matchesFilter(p, filter, decayDays);
+          return matchesFilter(p, filter, decayDays, markStubs);
         }),
       }))
-      // Keep an empty placeholder section only in the unfiltered view — under a
-      // filter or a search, showing sections that can never match is just noise.
-      .filter((g) => g.problems.length > 0 || (!!g.placeholder && filter === "all" && !q));
-  }, [groups, q, filter, decayDays]);
+      .filter((g) => g.problems.length > 0);
+  }, [groups, q, filter, decayDays, markStubs]);
 
   const allCollapsed =
     filteredGroups.length > 0 && filteredGroups.every((g) => collapsed[g.key]);
@@ -213,6 +242,7 @@ export function ProblemList({
               selected={p.key === selectedKey}
               decayDays={decayDays}
               statusLabels={statusLabels}
+              markStubs={markStubs}
               onSelect={() => onSelect(p.key)}
               onToggleStar={() => onToggleStar(p.key)}
             />
@@ -262,13 +292,13 @@ export function ProblemList({
                 {g.title}
               </span>
               <span className="ml-auto font-normal normal-case tracking-normal text-[#565e73]">
-                {g.problems.length === 0 && g.placeholder ? "not yet covered" : `${solved}/${g.problems.length}`}
+                {solved}/{g.problems.length}
               </span>
             </button>
-            {isOpen && g.problems.length === 0 && g.placeholder && (
-              <div className="px-3 pb-2 text-[11px] leading-relaxed text-[#565e73]">
-                {g.placeholder}
-              </div>
+            {/* Where this section's material comes from — sections are drawn from
+                more than one course, and some from none yet. */}
+            {isOpen && g.note && (
+              <div className="px-3 pb-1.5 text-[11px] leading-relaxed text-[#565e73]">{g.note}</div>
             )}
             {isOpen &&
               (draggable ? (
@@ -282,6 +312,7 @@ export function ProblemList({
                           selected={p.key === selectedKey}
                           decayDays={decayDays}
                           statusLabels={statusLabels}
+                          markStubs={markStubs}
                           onSelect={() => onSelect(p.key)}
                           onToggleStar={() => onToggleStar(p.key)}
                         />
@@ -298,6 +329,7 @@ export function ProblemList({
                       selected={p.key === selectedKey}
                       decayDays={decayDays}
                       statusLabels={statusLabels}
+                      markStubs={markStubs}
                       onSelect={() => onSelect(p.key)}
                       onToggleStar={() => onToggleStar(p.key)}
                     />

@@ -3,7 +3,7 @@
 import { useState } from "react";
 import { RevisionStar } from "./RevisionStar";
 import { daysSince, isOverdue } from "@/lib/decay";
-import { VIDEO_BADGE_CLASS, linkPlatform, videoLabel, videoUrl } from "@/lib/links";
+import { VIDEO_BADGE_CLASS, linkPlatform, needsResource, videoLabel, videoUrl } from "@/lib/links";
 import type { EntryTab, SubjectConfig } from "@/lib/subjects";
 import type { Problem, Status } from "@/lib/types";
 
@@ -73,6 +73,7 @@ export function ProblemHeader({
   const showVideo = !!problem.video && (problem.video.provider === "youtube" || canWatchVideo);
   const videoHref = showVideo ? videoUrl(problem.video!) : "";
   const skippable = problem.kind === "problem";
+  const stub = subject.hasResourceGaps && needsResource(problem);
 
   return (
     <div className="px-3 md:px-5 pt-3 md:pt-4 border-b border-[#2a3040]">
@@ -130,6 +131,14 @@ export function ProblemHeader({
             className="text-[11px] font-semibold text-[#8b93a7] border border-[#2a3040] rounded-md px-1.5 py-0.5 shrink-0"
           >
             skippable
+          </span>
+        )}
+        {stub && (
+          <span
+            title="A syllabus topic with nothing attached yet — paste a link below and this clears"
+            className="text-[11px] font-semibold text-[#5b8cff] border border-[#5b8cff]/40 rounded-md px-1.5 py-0.5 shrink-0"
+          >
+            needs a resource
           </span>
         )}
         <select

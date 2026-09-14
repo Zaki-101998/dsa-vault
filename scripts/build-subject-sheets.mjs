@@ -8,10 +8,18 @@
 // Two kinds of source:
 //   drive   — a folder of files; one file is one entry.
 //   youtube — sections of either `videos` (short, already one topic each) or
-//             `entries` (timestamped segments cut out of a long lecture, derived
-//             by reading that video's auto-caption transcript). A section may
-//             instead be a `placeholder`: a syllabus topic the course has not
-//             published yet, rendered as an empty section so the gap is visible.
+//             `entries` (hand-curated: a timestamped segment cut out of a long
+//             lecture, a standalone video, or a *stub*).
+//
+// An `entries` item is `{ n, v?, t?, k?, a? }` — name, video id, start offset,
+// kind, and `a` for a companion article. Two shapes matter:
+//   • no `v`  — a stub: a syllabus topic with no resource attached yet. The UI
+//               marks it so the user knows to go find material and paste a link.
+//   • with `a` — the entry carries a reading link *and* a video, so `link` can no
+//               longer be derived from the video alone.
+//
+// A section may also carry a `note`: one line saying where its material comes
+// from, shown under the section header.
 //
 // Each entry is classified `concept` or `problem`; the UI dims `problem` entries
 // and the Concepts filter hides them. Classification runs on the CLEANED title,
@@ -97,24 +105,30 @@ for (const subject of manifest.subjects) {
     const seen = new Set();
     const problems = [];
 
-    const push = (name, video, heuristicKind) => {
+    const push = (name, video, heuristicKind, article) => {
       let key = `${subject.id}:${sectionSlug}__${slug(name)}`;
       if (seen.has(key)) key = `${key}-${problems.length + 1}`;
       seen.add(key);
       const kind = overrides[key] ?? heuristicKind;
       if (overrides[key] && overrides[key] !== heuristicKind) overridden++;
+      const videoLink = !video
+        ? ""
+        : video.provider === "youtube"
+          ? `https://www.youtube.com/watch?v=${video.id}${video.t ? `&t=${video.t}s` : ""}`
+          : `https://drive.google.com/file/d/${video.id}/view`;
       report.push(
-        [subject.id, section.title, key, name, kind, video.t ? hms(video.t) : "", overrides[key] ? "override" : "auto"].join("\t")
+        [subject.id, section.title, key, name, kind, video?.t ? hms(video.t) : "", overrides[key] ? "override" : "auto"].join("\t")
       );
       problems.push({
         key,
         name,
-        link: video.provider === "youtube"
-          ? `https://www.youtube.com/watch?v=${video.id}${video.t ? `&t=${video.t}s` : ""}`
-          : `https://drive.google.com/file/d/${video.id}/view`,
+        // An article wins the `link` slot so the entry can offer both a read and a
+        // watch; a stub has neither, which is what the UI keys "needs a resource" off.
+        link: article || videoLink,
         difficulty: "",
         kind,
-        video,
+        // Omitted entirely on a stub, so `video` stays absent rather than null.
+        ...(video ? { video } : {}),
       });
     };
 
@@ -132,9 +146,11 @@ for (const subject of manifest.subjects) {
       push(name, { provider: "youtube", id }, classify(name, section.order));
     }
     for (const e of section.entries || []) {
-      // Segment kind is asserted in the manifest (it came from reading the
-      // transcript), so trust it and fall back to the heuristics only if absent.
-      push(e.n, { provider: "youtube", id: e.v, t: e.t }, e.k || classify(e.n, section.order));
+      // Kind is asserted in the manifest (it came from reading the transcript, or
+      // from curating the entry by hand), so trust it and fall back to the
+      // heuristics only if absent.
+      const video = e.v ? { provider: "youtube", id: e.v, t: e.t } : null;
+      push(e.n, video, e.k || classify(e.n, section.order), e.a);
     }
 
     const step = {
@@ -143,7 +159,7 @@ for (const subject of manifest.subjects) {
       title: section.title,
       problems,
     };
-    if (section.placeholder) step.placeholder = section.placeholder;
+    if (section.note) step.note = section.note;
     return step;
   });
 
@@ -156,7 +172,8 @@ for (const subject of manifest.subjects) {
       `concept=${all.filter((p) => p.kind === "concept").length} ` +
       `problem=${all.filter((p) => p.kind === "problem").length} ` +
       `timestamped=${all.filter((p) => p.video?.t).length} ` +
-      `placeholders=${steps.filter((s) => s.placeholder).length} ` +
+      `stubs=${all.filter((p) => !p.video && !p.link).length} ` +
+      `noted=${steps.filter((s) => s.note).length} ` +
       `uniqueKeys=${new Set(all.map((p) => p.key)).size}`
   );
 }

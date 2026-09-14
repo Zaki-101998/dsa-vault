@@ -91,7 +91,7 @@ export function mergeProblems(
       return p;
     });
     const group: TopicGroup = { key: step.key, title: step.title, order: step.order, problems };
-    if (step.placeholder) group.placeholder = step.placeholder;
+    if (step.note) group.note = step.note;
     groups.push(group);
     groupByTopic.set(normTopic(step.title), group);
   }

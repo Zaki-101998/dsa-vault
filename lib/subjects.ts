@@ -24,8 +24,17 @@ export interface SubjectConfig {
   entryNounPlural: string;
   /** DSA problems carry Easy/Medium/Hard; lectures have nothing to show. */
   showDifficulty: boolean;
+  /** Where this subject's lectures live, named in the welcome panel. */
+  videoHost?: string;
   /** Video subjects can filter out the worked-question entries. */
   hasConceptFilter: boolean;
+  /**
+   * True where the sheet deliberately seeds topics with no resource attached, for
+   * the user to fill in. Opt-in rather than derived: DSA has a handful of theory
+   * entries that simply carry no link, and those are not an invitation to go find
+   * one — marking them would be noise on a sheet that is already complete.
+   */
+  hasResourceGaps: boolean;
   linkPlaceholder: string;
   topicPlaceholder: string;
   /** Example text in the "Add a …" modal's name field. */
@@ -45,6 +54,7 @@ export const SUBJECTS: Record<SubjectId, SubjectConfig> = {
     entryNounPlural: "problems",
     showDifficulty: true,
     hasConceptFilter: false,
+    hasResourceGaps: false,
     linkPlaceholder: "Problem link (LeetCode / TUF)…",
     topicPlaceholder: "e.g. Arrays",
     addNamePlaceholder: "e.g. Kadane's Algorithm follow-up",
@@ -60,7 +70,9 @@ export const SUBJECTS: Record<SubjectId, SubjectConfig> = {
     entryNoun: "lecture",
     entryNounPlural: "lectures",
     showDifficulty: false,
+    videoHost: "Drive",
     hasConceptFilter: true,
+    hasResourceGaps: false,
     linkPlaceholder: "Lecture link (Drive)…",
     topicPlaceholder: "e.g. Routing",
     addNamePlaceholder: "e.g. Subnetting recap",
@@ -76,7 +88,9 @@ export const SUBJECTS: Record<SubjectId, SubjectConfig> = {
     entryNoun: "lecture",
     entryNounPlural: "lectures",
     showDifficulty: false,
+    videoHost: "Drive",
     hasConceptFilter: true,
+    hasResourceGaps: false,
     linkPlaceholder: "Lecture link (Drive)…",
     topicPlaceholder: "e.g. Deadlocks",
     addNamePlaceholder: "e.g. Bankers algorithm recap",
@@ -92,12 +106,16 @@ export const SUBJECTS: Record<SubjectId, SubjectConfig> = {
     entryNoun: "lecture",
     entryNounPlural: "lectures",
     showDifficulty: false,
+    videoHost: "YouTube",
     hasConceptFilter: true,
-    linkPlaceholder: "Lecture link (YouTube)…",
+    hasResourceGaps: true,
+    linkPlaceholder: "Resource link (YouTube / article)…",
     topicPlaceholder: "e.g. Normal Forms",
     addNamePlaceholder: "e.g. BCNF recap",
     blurb:
-      "Lecture notes + revision tracker for Prof. Ravindrababu Ravula's DBMS course. Long lectures are split into timestamped topics.",
+      "A full DBMS syllabus in study order, drawing on Prof. Ravindrababu Ravula's course, " +
+      "the takeUforward interview sheet, and topics neither covers — those are seeded with " +
+      "no link, for you to fill in.",
   },
 };
 

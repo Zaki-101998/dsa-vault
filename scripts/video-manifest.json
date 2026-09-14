@@ -2005,6 +2005,7 @@
         {
           "order": 1,
           "title": "Introduction to DBMS",
+          "note": "Ravula's course, plus the takeUforward interview sheet.",
           "entries": [
             {
               "v": "znCArPIKu-w",
@@ -2060,12 +2061,130 @@
               "v": "znCArPIKu-w",
               "t": 4500,
               "n": "Limitation 5: redundancy, and why normalization helps"
+            },
+            {
+              "n": "Data, database and the file system",
+              "k": "concept",
+              "v": "OdkJK6P4TCA",
+              "a": "https://takeuforward.org/dbms/data-database-and-file-system"
+            },
+            {
+              "n": "Types of database",
+              "k": "concept",
+              "v": "ln-JWRw_hFs"
+            },
+            {
+              "n": "What is a DBMS and where it is used",
+              "k": "concept",
+              "v": "wulV-eIu9dM",
+              "a": "https://takeuforward.org/dbms/dbms-and-its-applications"
+            },
+            {
+              "n": "Data abstraction: the three levels",
+              "k": "concept",
+              "v": "WYBdtOQwmSc",
+              "a": "https://takeuforward.org/dbms/dbms-abstraction"
+            },
+            {
+              "n": "Three-tier architecture",
+              "k": "concept",
+              "v": "UOyA8TSE7l4",
+              "a": "https://takeuforward.org/dbms/3-tier-architecture"
+            },
+            {
+              "n": "Data models and their types",
+              "k": "concept",
+              "v": "RNl9ZIDzDG0",
+              "a": "https://takeuforward.org/dbms/data-models"
             }
           ]
         },
         {
           "order": 2,
+          "title": "ER Model and Design",
+          "note": "Riti Kumari's course via takeUforward; the last four are on neither list.",
+          "entries": [
+            {
+              "n": "ER model in DBMS",
+              "k": "concept",
+              "v": "iejgUcZpaq8",
+              "a": "https://takeuforward.org/dbms/er-model-in-dbms"
+            },
+            {
+              "n": "Entity and its types",
+              "k": "concept",
+              "v": "Dfjsu6yVn80",
+              "a": "https://takeuforward.org/dbms/entity-and-its-types"
+            },
+            {
+              "n": "Attribute and its types",
+              "k": "concept",
+              "v": "Y-nPMQG9Nyc",
+              "a": "https://takeuforward.org/dbms/attributes-and-its-types"
+            },
+            {
+              "n": "Relationship and degree in the ER model",
+              "k": "concept",
+              "v": "DhOhst8FBKE",
+              "a": "https://takeuforward.org/dbms/relationship-and-degree-in-er-model"
+            },
+            {
+              "n": "One-to-one relationships",
+              "k": "concept",
+              "v": "yXhiZFBwyIk"
+            },
+            {
+              "n": "One-to-many relationships",
+              "k": "concept",
+              "v": "2shjI2XauHM"
+            },
+            {
+              "n": "Many-to-one relationships",
+              "k": "concept",
+              "v": "2bGXPbxC63Y"
+            },
+            {
+              "n": "Many-to-many relationships",
+              "k": "concept",
+              "v": "XsWub7hcV_c"
+            },
+            {
+              "n": "Participation constraints",
+              "k": "concept",
+              "v": "Y6mcrB_z0WQ"
+            },
+            {
+              "n": "Steps to draw an ER model",
+              "k": "concept",
+              "v": "EMd3cSW8Z68"
+            },
+            {
+              "n": "ER model of Instagram: a worked design",
+              "k": "concept",
+              "v": "uxVzFV0x7YI"
+            },
+            {
+              "n": "Weak entity sets and identifying relationships",
+              "k": "concept"
+            },
+            {
+              "n": "Specialization, generalization and inheritance",
+              "k": "concept"
+            },
+            {
+              "n": "Aggregation in the ER model",
+              "k": "concept"
+            },
+            {
+              "n": "Extended ER features and design choices",
+              "k": "concept"
+            }
+          ]
+        },
+        {
+          "order": 3,
           "title": "Relational Model and Keys",
+          "note": "Ravula's course, plus takeUforward on the RDBMS side.",
           "entries": [
             {
               "v": "sHJY-a2mH0k",
@@ -2173,11 +2292,484 @@
               "t": 6540,
               "n": "Maximum possible super keys",
               "k": "problem"
+            },
+            {
+              "n": "Essential components of a table",
+              "k": "concept",
+              "v": "tzcK1wWQKlU"
+            },
+            {
+              "n": "The relational model (recap)",
+              "k": "concept",
+              "v": "ZxRQRxe16ko"
+            },
+            {
+              "n": "Converting an ER model to a relational model",
+              "k": "concept",
+              "v": "iKKvAN-CIPA"
+            },
+            {
+              "n": "Intension and extension in a database",
+              "k": "concept",
+              "v": "VFdvu6dkGVE",
+              "a": "https://takeuforward.org/dbms/intension-extenstion"
+            },
+            {
+              "n": "What is an RDBMS",
+              "k": "concept",
+              "v": "MFae6MaGetI"
             }
           ]
         },
         {
-          "order": 3,
+          "order": 4,
+          "title": "Foreign Keys and Referential Integrity",
+          "entries": [
+            {
+              "v": "Uld1MbwowHc",
+              "t": 480,
+              "n": "What is a foreign key and why it is needed"
+            },
+            {
+              "v": "Uld1MbwowHc",
+              "t": 600,
+              "n": "Motivating example: redundancy and anomalies without a foreign key"
+            },
+            {
+              "v": "Uld1MbwowHc",
+              "t": 1440,
+              "n": "Fixing it: separate tables and a referencing constraint"
+            },
+            {
+              "v": "Uld1MbwowHc",
+              "t": 1740,
+              "n": "Student, Course and Enroll: maintaining integrity"
+            },
+            {
+              "v": "Uld1MbwowHc",
+              "t": 2340,
+              "n": "Referencing vs referenced relation"
+            },
+            {
+              "v": "Uld1MbwowHc",
+              "t": 2460,
+              "n": "Foreign key: the formal theory points"
+            },
+            {
+              "v": "Uld1MbwowHc",
+              "t": 2940,
+              "n": "Worked example: student and enroll"
+            },
+            {
+              "v": "Uld1MbwowHc",
+              "t": 3300,
+              "n": "Self-referencing foreign key: employee and supervisor"
+            },
+            {
+              "v": "Uld1MbwowHc",
+              "t": 3900,
+              "n": "Foreign key referring to an alternate key, and NULLs"
+            },
+            {
+              "v": "Uld1MbwowHc",
+              "t": 4560,
+              "n": "Roadmap: the normalization topics ahead"
+            },
+            {
+              "v": "F_IVrRkHkO4",
+              "t": 360,
+              "n": "Why foreign keys exist: the employee and payroll story"
+            },
+            {
+              "v": "F_IVrRkHkO4",
+              "t": 1260,
+              "n": "Foreign key: formal definition"
+            },
+            {
+              "v": "F_IVrRkHkO4",
+              "t": 1740,
+              "n": "Foreign key referring to the same table"
+            },
+            {
+              "v": "F_IVrRkHkO4",
+              "t": 2220,
+              "n": "NULLs in foreign keys; the mapping is many-to-one"
+            },
+            {
+              "v": "F_IVrRkHkO4",
+              "t": 2400,
+              "n": "Referential integrity constraints"
+            },
+            {
+              "v": "F_IVrRkHkO4",
+              "t": 2580,
+              "n": "Foreign key referring to an alternate key"
+            },
+            {
+              "v": "F_IVrRkHkO4",
+              "t": 3180,
+              "n": "Setting up Student, Course and Enroll"
+            },
+            {
+              "v": "F_IVrRkHkO4",
+              "t": 3840,
+              "n": "Insertion into the referenced relation: no violation"
+            },
+            {
+              "v": "F_IVrRkHkO4",
+              "t": 3960,
+              "n": "Deletion from the referenced relation: violation"
+            },
+            {
+              "v": "F_IVrRkHkO4",
+              "t": 4200,
+              "n": "ON DELETE NO ACTION and ON DELETE CASCADE"
+            },
+            {
+              "v": "F_IVrRkHkO4",
+              "t": 4380,
+              "n": "ON DELETE SET NULL"
+            },
+            {
+              "v": "F_IVrRkHkO4",
+              "t": 4740,
+              "n": "ON UPDATE options"
+            },
+            {
+              "v": "F_IVrRkHkO4",
+              "t": 4920,
+              "n": "Constraints on the referencing relation"
+            }
+          ]
+        },
+        {
+          "order": 5,
+          "title": "SQL",
+          "note": "Riti Kumari's SQL course via takeUforward; the stubs are the half it skips.",
+          "entries": [
+            {
+              "n": "What is SQL",
+              "k": "concept",
+              "v": "QbNK4TMbNi8",
+              "a": "https://takeuforward.org/dbms/sql-command-and-their%20types"
+            },
+            {
+              "n": "Types of SQL commands: DDL, DML, DCL, TCL",
+              "k": "concept",
+              "v": "6eiGB5f_4EQ"
+            },
+            {
+              "n": "Databases and their SQL commands",
+              "k": "concept",
+              "v": "_bm72LXd6lE"
+            },
+            {
+              "n": "INSERT and bulk loading",
+              "k": "concept"
+            },
+            {
+              "n": "UPDATE",
+              "k": "concept",
+              "v": "9bvGD5GSsMk"
+            },
+            {
+              "n": "DELETE",
+              "k": "concept",
+              "v": "td6-GbOo1Vc"
+            },
+            {
+              "n": "SELECT",
+              "k": "concept",
+              "v": "414a3GoCf5U"
+            },
+            {
+              "n": "ALTER",
+              "k": "concept",
+              "v": "8d4jz2UmW6s"
+            },
+            {
+              "n": "RENAME",
+              "k": "concept",
+              "v": "IttR2kOc024"
+            },
+            {
+              "n": "TRUNCATE",
+              "k": "concept",
+              "v": "SAimYcJMXGg"
+            },
+            {
+              "n": "TRUNCATE vs DELETE vs DROP",
+              "k": "concept",
+              "v": "C1hKGNIOFCk"
+            },
+            {
+              "n": "Constraints in DDL: PRIMARY KEY, FOREIGN KEY, CHECK, DEFAULT",
+              "k": "concept"
+            },
+            {
+              "n": "Operators in SQL",
+              "k": "concept",
+              "v": "01CxBcEhKvo",
+              "a": "https://takeuforward.org/dbms/operators-aggregations-in-sql"
+            },
+            {
+              "n": "Aggregate functions",
+              "k": "concept",
+              "v": "VlO_ev-FZYo"
+            },
+            {
+              "n": "GROUP BY and HAVING",
+              "k": "concept"
+            },
+            {
+              "n": "Joins: inner, left, right, full outer, self and cross",
+              "k": "concept"
+            },
+            {
+              "n": "Set operations: UNION, INTERSECT, EXCEPT",
+              "k": "concept"
+            },
+            {
+              "n": "Subqueries",
+              "k": "concept",
+              "v": "HG1uWJaLDqM",
+              "a": "https://takeuforward.org/dbms/sql-subqueries"
+            },
+            {
+              "n": "Nested and correlated subqueries: IN, EXISTS, ALL, ANY",
+              "k": "concept"
+            },
+            {
+              "n": "NULL semantics and three-valued logic",
+              "k": "concept"
+            },
+            {
+              "n": "Views, updatable views and materialized views",
+              "k": "concept"
+            },
+            {
+              "n": "Window functions: ROW_NUMBER, RANK, DENSE_RANK, OVER",
+              "k": "concept"
+            },
+            {
+              "n": "Triggers, stored procedures and cursors",
+              "k": "concept"
+            }
+          ]
+        },
+        {
+          "order": 6,
+          "title": "Relational Algebra: Operators",
+          "videos": [
+            [
+              "A9x4UgCYLrc",
+              "Query Languages | Lecture-25 | Gate CS & DA | Prof. Ravindrababu Ravula"
+            ],
+            [
+              "kwnvkYV797M",
+              "Relational Algebra Introduction | Lecture-26 | Gate CS & DA | Prof. Ravindrababu Ravula"
+            ],
+            [
+              "eAxBQJmLGnU",
+              "Projection And Selection | Lecture-27 | GATE CS & DA | Prof. Ravindrababu Ravula"
+            ],
+            [
+              "lrSSBeX7MfE",
+              "Example Projection And Selection | Lecture-28 | GATE CS & DA | Prof. Ravindrababu Ravula"
+            ],
+            [
+              "598d2HXKo5g",
+              "Cross Product | Lecture-29 | GATE CS & DA | Prof. Ravindrababu Ravula"
+            ],
+            [
+              "t7Ds37hY2No",
+              "Natural Join | Lcture-30 | GATE CS & DA | Prof. Ravindrababu Ravula"
+            ],
+            [
+              "nbfgELVAxNM",
+              "Conditional Join | Lecture-31 | GATE CS & DA | Prof. Ravindrababu Ravula"
+            ],
+            [
+              "Jc9okfLk1lY",
+              "Outer Joins | Lecture-32 | GATE CS & DA | Prof. Ravindrababu Ravula"
+            ],
+            [
+              "wjPFUU400n0",
+              "Query On Joins | Lecture-33 | GATE CS & DA | prof. Ravindrababu Ravula"
+            ],
+            [
+              "Mui7AjCvBL0",
+              "Rename Operator | Lecture-34 | GATE CS & DA | Prof. Ravindrababu Ravula"
+            ],
+            [
+              "aB2etfsI3pY",
+              "Division Operator | Lecture-45 | GATE CS & DA | Prof. Ravindrababu Ravula"
+            ],
+            [
+              "1qMvo6_aYII",
+              "Set Operators | Lecture-50 | GATE CS & DA | Prof. Ravindrababu Ravula"
+            ],
+            [
+              "YJOHGFRAifI",
+              "Example On Set Operations | Lecture-51 | GATE CS & DA | Prof. Ravindrababu Ravula"
+            ],
+            [
+              "dyOQhUmuxaA",
+              "Properties Of Set Operations | Lecture-52 | GATE CS & DA | Prof. Ravindrababu Ravula"
+            ],
+            [
+              "aCUOqyW9H90",
+              "Query Optimization | Lecture-56 | GATE CS & DA | Prof. Ravindrababu Ravula"
+            ],
+            [
+              "fopqqG-gMwM",
+              "Properties of Division | Lecture-63 | GATE CS & DA | Prof. Ravindrababu Ravula"
+            ],
+            [
+              "ejxeqBPNN20",
+              "Cardinality Of Properties | Lecture-64 | GATE CS & DA | Prof. Ravindrababu Ravula"
+            ]
+          ]
+        },
+        {
+          "order": 7,
+          "title": "Relational Algebra: Query Practice",
+          "videos": [
+            [
+              "-1midlF3K8s",
+              "Relational Algebra Query 1 | Lecture-35 | GATE CS & DA | Prof. Ravindrababu Ravula"
+            ],
+            [
+              "JjxnDjFLODI",
+              "Relational Algebra Query 2 | Lecture-36 | GATE CS & DA | Prof. Ravindrababu Ravula"
+            ],
+            [
+              "cPj8NpdIiqo",
+              "Relational Algebra Query 3 | Lecture-37 | GATE CS & DA | Prof. Ravindrababu Ravula"
+            ],
+            [
+              "1ewVhNZJxK4",
+              "Relational Algebra Query 4 | Lecture-38 | GATE CS & DA | Prof. Ravindrababu Ravula"
+            ],
+            [
+              "vcPTQmrYcZ0",
+              "Relational Algebra Query 5 | Lecture-39 | GATE CS & DA | Prof. Ravindrababu Ravula"
+            ],
+            [
+              "ADt4B2cwIx4",
+              "Relational Algebra Query 6 | Lecture-40 | GATE CS & DA | Prof. Ravindrababu Ravula"
+            ],
+            [
+              "kau57-_U4DQ",
+              "Relational Algebra Query 7 | Lecture-41 | GATE CS & DA | Prof. Ravindrababu Ravula"
+            ],
+            [
+              "o7eWaW8oB50",
+              "Relational Algebra Query 8 | Lecture-42 | GATE CS & DA | Prof. Ravindrababu Ravula"
+            ],
+            [
+              "TFnf6_XWHV0",
+              "Relational Algebra Query 9 | Lecture-43 | GATE CS & DA | Prof. Ravindrababu Ravula"
+            ],
+            [
+              "QZSHC13gIDI",
+              "Relational Algebra Query 10 | Lecture-44 | GATE CS & DA | Prof. Ravindrababu Ravula"
+            ],
+            [
+              "hJW4Ra0vxvg",
+              "Relational Algebra Query 11 | Lecture-46 | GATE CS & DA | Prof. Ravindrababu Ravula"
+            ],
+            [
+              "_KzB7JiBPmU",
+              "Relational Algebra Query 12 | Lecture-47 | GATE CS & DA | Prof. Ravindrababu Ravula"
+            ],
+            [
+              "Th3SM4V_qSM",
+              "Relational Algebra Query 13 | Lecture-48 | GATE CS & DA | Prof. Ravindrababu Ravula"
+            ],
+            [
+              "i9gIlQQchf0",
+              "Relational Algebra Query 14 | Lecture-49 | GATE CS & DA | Prof. Ravindrababu Ravula"
+            ],
+            [
+              "cJ6n_uHlocw",
+              "Relational Algebra Query 15 | Lecture-53 | GATE CS & DA | Prof. Ravindrababu Ravula"
+            ],
+            [
+              "-p5mBmlWBPY",
+              "Relational Algebra Query 16 | lecture-54 | GATE CS & DA | Prof. Ravindrababu Ravula"
+            ],
+            [
+              "c38O4sRDKWA",
+              "Relational Algebra Query 17 | Lecture-55 | GATE CS & DA | Prof. Ravindrababu Ravula"
+            ],
+            [
+              "P8bevwfld1Q",
+              "Relational Algebra Query 18 | Lecture-57 | GATE CS & DA | Prof. Ravindrababu Ravula"
+            ],
+            [
+              "pqA0RXxn1fo",
+              "Relational Algebra Query 19 | Lecture-58 | GATE CS & DA | Prof. Ravindrababu Ravula"
+            ],
+            [
+              "zGPCFbqz61o",
+              "Relational Algebra Query 20 | Lecture-59 | GATE CS & DA | Prof. Ravindrababu Ravula"
+            ],
+            [
+              "NNCdc-zDYrw",
+              "Relational Algebra Query 21 | Lecture-60 | GATE CS & DA | Prof. Ravindrababu Ravula"
+            ],
+            [
+              "NPmOL03Ec_k",
+              "Relational Algebra Query 22 | Lecture-61 | GATE CS & DA | Prof. Ravindrababu Ravula"
+            ],
+            [
+              "3WIqHUxesow",
+              "Relational Algebra Query 23 | Lecture-62 | GATE CS & DA | Prof. Ravindrababu Ravula"
+            ],
+            [
+              "y3bBNywTu2o",
+              "Relational Algebra Query 24  | Lecture-65 | GATE CS & DA | Prof. Ravindrababu Ravula"
+            ],
+            [
+              "BWRT8Hqtp50",
+              "Relational Algebra Query 25 | Lecture-66 | GATE CS & DA | Prof. Ravindrababu Ravula"
+            ],
+            [
+              "XCZHR4NYFX8",
+              "Relational Algebra Query 26  | Lecture-67 | GATE CS & DA | Prof. Ravindrababu Ravula"
+            ],
+            [
+              "WzbnW6cVSmQ",
+              "Relational Algebra Query 27  | Lecture-68 | GATE CS & DA | Prof. Ravindrababu Ravula"
+            ]
+          ]
+        },
+        {
+          "order": 8,
+          "title": "Relational Calculus (TRC / DRC)",
+          "note": "Neither course covers this — find your own material.",
+          "entries": [
+            {
+              "n": "Tuple relational calculus: syntax and semantics",
+              "k": "concept"
+            },
+            {
+              "n": "Safe expressions in TRC",
+              "k": "concept"
+            },
+            {
+              "n": "Domain relational calculus",
+              "k": "concept"
+            },
+            {
+              "n": "Equivalence of relational algebra and calculus",
+              "k": "concept"
+            }
+          ]
+        },
+        {
+          "order": 9,
           "title": "Functional Dependencies and Closure",
           "entries": [
             {
@@ -2309,11 +2901,16 @@
               "t": 3000,
               "n": "Framing and solving more cover problems",
               "k": "problem"
+            },
+            {
+              "n": "Minimal set of functional dependencies (canonical cover)",
+              "k": "concept",
+              "v": "hPVcgn9IbyE"
             }
           ]
         },
         {
-          "order": 4,
+          "order": 10,
           "title": "PYQ Marathon: Candidate Keys",
           "entries": [
             {
@@ -2427,7 +3024,7 @@
           ]
         },
         {
-          "order": 5,
+          "order": 11,
           "title": "PYQ Marathon: Counting Super Keys",
           "entries": [
             {
@@ -2539,128 +3136,7 @@
           ]
         },
         {
-          "order": 6,
-          "title": "Foreign Keys and Referential Integrity",
-          "entries": [
-            {
-              "v": "Uld1MbwowHc",
-              "t": 480,
-              "n": "What is a foreign key and why it is needed"
-            },
-            {
-              "v": "Uld1MbwowHc",
-              "t": 600,
-              "n": "Motivating example: redundancy and anomalies without a foreign key"
-            },
-            {
-              "v": "Uld1MbwowHc",
-              "t": 1440,
-              "n": "Fixing it: separate tables and a referencing constraint"
-            },
-            {
-              "v": "Uld1MbwowHc",
-              "t": 1740,
-              "n": "Student, Course and Enroll: maintaining integrity"
-            },
-            {
-              "v": "Uld1MbwowHc",
-              "t": 2340,
-              "n": "Referencing vs referenced relation"
-            },
-            {
-              "v": "Uld1MbwowHc",
-              "t": 2460,
-              "n": "Foreign key: the formal theory points"
-            },
-            {
-              "v": "Uld1MbwowHc",
-              "t": 2940,
-              "n": "Worked example: student and enroll"
-            },
-            {
-              "v": "Uld1MbwowHc",
-              "t": 3300,
-              "n": "Self-referencing foreign key: employee and supervisor"
-            },
-            {
-              "v": "Uld1MbwowHc",
-              "t": 3900,
-              "n": "Foreign key referring to an alternate key, and NULLs"
-            },
-            {
-              "v": "Uld1MbwowHc",
-              "t": 4560,
-              "n": "Roadmap: the normalization topics ahead"
-            },
-            {
-              "v": "F_IVrRkHkO4",
-              "t": 360,
-              "n": "Why foreign keys exist: the employee and payroll story"
-            },
-            {
-              "v": "F_IVrRkHkO4",
-              "t": 1260,
-              "n": "Foreign key: formal definition"
-            },
-            {
-              "v": "F_IVrRkHkO4",
-              "t": 1740,
-              "n": "Foreign key referring to the same table"
-            },
-            {
-              "v": "F_IVrRkHkO4",
-              "t": 2220,
-              "n": "NULLs in foreign keys; the mapping is many-to-one"
-            },
-            {
-              "v": "F_IVrRkHkO4",
-              "t": 2400,
-              "n": "Referential integrity constraints"
-            },
-            {
-              "v": "F_IVrRkHkO4",
-              "t": 2580,
-              "n": "Foreign key referring to an alternate key"
-            },
-            {
-              "v": "F_IVrRkHkO4",
-              "t": 3180,
-              "n": "Setting up Student, Course and Enroll"
-            },
-            {
-              "v": "F_IVrRkHkO4",
-              "t": 3840,
-              "n": "Insertion into the referenced relation: no violation"
-            },
-            {
-              "v": "F_IVrRkHkO4",
-              "t": 3960,
-              "n": "Deletion from the referenced relation: violation"
-            },
-            {
-              "v": "F_IVrRkHkO4",
-              "t": 4200,
-              "n": "ON DELETE NO ACTION and ON DELETE CASCADE"
-            },
-            {
-              "v": "F_IVrRkHkO4",
-              "t": 4380,
-              "n": "ON DELETE SET NULL"
-            },
-            {
-              "v": "F_IVrRkHkO4",
-              "t": 4740,
-              "n": "ON UPDATE options"
-            },
-            {
-              "v": "F_IVrRkHkO4",
-              "t": 4920,
-              "n": "Constraints on the referencing relation"
-            }
-          ]
-        },
-        {
-          "order": 7,
+          "order": 12,
           "title": "Normalization: Redundancy and Anomalies",
           "entries": [
             {
@@ -2696,7 +3172,7 @@
           ]
         },
         {
-          "order": 8,
+          "order": 13,
           "title": "Decomposition: Lossless Join and Dependency Preserving",
           "entries": [
             {
@@ -2772,7 +3248,7 @@
           ]
         },
         {
-          "order": 9,
+          "order": 14,
           "title": "Normal Forms: 1NF to BCNF",
           "entries": [
             {
@@ -2873,7 +3349,34 @@
           ]
         },
         {
-          "order": 10,
+          "order": 15,
+          "title": "Higher Normal Forms and Denormalisation",
+          "note": "Riti Kumari's course — Ravula stops at BCNF.",
+          "entries": [
+            {
+              "n": "Multivalued and join dependencies",
+              "k": "concept"
+            },
+            {
+              "n": "Fourth normal form (4NF)",
+              "k": "concept",
+              "v": "uaqGSy-lhX4"
+            },
+            {
+              "n": "Fifth normal form (5NF)",
+              "k": "concept",
+              "v": "lHzdUY1xFyk"
+            },
+            {
+              "n": "Denormalisation and when to use it",
+              "k": "concept",
+              "v": "ialGGDGxQVc",
+              "a": "https://takeuforward.org/dbms/denormalisation"
+            }
+          ]
+        },
+        {
+          "order": 16,
           "title": "Finding the Highest Normal Form",
           "entries": [
             {
@@ -2964,7 +3467,7 @@
           ]
         },
         {
-          "order": 11,
+          "order": 17,
           "title": "Normalization Practice",
           "videos": [
             [
@@ -3010,227 +3513,250 @@
           ]
         },
         {
-          "order": 12,
-          "title": "Relational Algebra: Operators",
-          "videos": [
-            [
-              "A9x4UgCYLrc",
-              "Query Languages | Lecture-25 | Gate CS & DA | Prof. Ravindrababu Ravula"
-            ],
-            [
-              "kwnvkYV797M",
-              "Relational Algebra Introduction | Lecture-26 | Gate CS & DA | Prof. Ravindrababu Ravula"
-            ],
-            [
-              "eAxBQJmLGnU",
-              "Projection And Selection | Lecture-27 | GATE CS & DA | Prof. Ravindrababu Ravula"
-            ],
-            [
-              "lrSSBeX7MfE",
-              "Example Projection And Selection | Lecture-28 | GATE CS & DA | Prof. Ravindrababu Ravula"
-            ],
-            [
-              "598d2HXKo5g",
-              "Cross Product | Lecture-29 | GATE CS & DA | Prof. Ravindrababu Ravula"
-            ],
-            [
-              "t7Ds37hY2No",
-              "Natural Join | Lcture-30 | GATE CS & DA | Prof. Ravindrababu Ravula"
-            ],
-            [
-              "nbfgELVAxNM",
-              "Conditional Join | Lecture-31 | GATE CS & DA | Prof. Ravindrababu Ravula"
-            ],
-            [
-              "Jc9okfLk1lY",
-              "Outer Joins | Lecture-32 | GATE CS & DA | Prof. Ravindrababu Ravula"
-            ],
-            [
-              "wjPFUU400n0",
-              "Query On Joins | Lecture-33 | GATE CS & DA | prof. Ravindrababu Ravula"
-            ],
-            [
-              "Mui7AjCvBL0",
-              "Rename Operator | Lecture-34 | GATE CS & DA | Prof. Ravindrababu Ravula"
-            ],
-            [
-              "aB2etfsI3pY",
-              "Division Operator | Lecture-45 | GATE CS & DA | Prof. Ravindrababu Ravula"
-            ],
-            [
-              "1qMvo6_aYII",
-              "Set Operators | Lecture-50 | GATE CS & DA | Prof. Ravindrababu Ravula"
-            ],
-            [
-              "YJOHGFRAifI",
-              "Example On Set Operations | Lecture-51 | GATE CS & DA | Prof. Ravindrababu Ravula"
-            ],
-            [
-              "dyOQhUmuxaA",
-              "Properties Of Set Operations | Lecture-52 | GATE CS & DA | Prof. Ravindrababu Ravula"
-            ],
-            [
-              "aCUOqyW9H90",
-              "Query Optimization | Lecture-56 | GATE CS & DA | Prof. Ravindrababu Ravula"
-            ],
-            [
-              "fopqqG-gMwM",
-              "Properties of Division | Lecture-63 | GATE CS & DA | Prof. Ravindrababu Ravula"
-            ],
-            [
-              "ejxeqBPNN20",
-              "Cardinality Of Properties | Lecture-64 | GATE CS & DA | Prof. Ravindrababu Ravula"
-            ]
-          ]
-        },
-        {
-          "order": 13,
-          "title": "Relational Algebra: Query Practice",
-          "videos": [
-            [
-              "-1midlF3K8s",
-              "Relational Algebra Query 1 | Lecture-35 | GATE CS & DA | Prof. Ravindrababu Ravula"
-            ],
-            [
-              "JjxnDjFLODI",
-              "Relational Algebra Query 2 | Lecture-36 | GATE CS & DA | Prof. Ravindrababu Ravula"
-            ],
-            [
-              "cPj8NpdIiqo",
-              "Relational Algebra Query 3 | Lecture-37 | GATE CS & DA | Prof. Ravindrababu Ravula"
-            ],
-            [
-              "1ewVhNZJxK4",
-              "Relational Algebra Query 4 | Lecture-38 | GATE CS & DA | Prof. Ravindrababu Ravula"
-            ],
-            [
-              "vcPTQmrYcZ0",
-              "Relational Algebra Query 5 | Lecture-39 | GATE CS & DA | Prof. Ravindrababu Ravula"
-            ],
-            [
-              "ADt4B2cwIx4",
-              "Relational Algebra Query 6 | Lecture-40 | GATE CS & DA | Prof. Ravindrababu Ravula"
-            ],
-            [
-              "kau57-_U4DQ",
-              "Relational Algebra Query 7 | Lecture-41 | GATE CS & DA | Prof. Ravindrababu Ravula"
-            ],
-            [
-              "o7eWaW8oB50",
-              "Relational Algebra Query 8 | Lecture-42 | GATE CS & DA | Prof. Ravindrababu Ravula"
-            ],
-            [
-              "TFnf6_XWHV0",
-              "Relational Algebra Query 9 | Lecture-43 | GATE CS & DA | Prof. Ravindrababu Ravula"
-            ],
-            [
-              "QZSHC13gIDI",
-              "Relational Algebra Query 10 | Lecture-44 | GATE CS & DA | Prof. Ravindrababu Ravula"
-            ],
-            [
-              "hJW4Ra0vxvg",
-              "Relational Algebra Query 11 | Lecture-46 | GATE CS & DA | Prof. Ravindrababu Ravula"
-            ],
-            [
-              "_KzB7JiBPmU",
-              "Relational Algebra Query 12 | Lecture-47 | GATE CS & DA | Prof. Ravindrababu Ravula"
-            ],
-            [
-              "Th3SM4V_qSM",
-              "Relational Algebra Query 13 | Lecture-48 | GATE CS & DA | Prof. Ravindrababu Ravula"
-            ],
-            [
-              "i9gIlQQchf0",
-              "Relational Algebra Query 14 | Lecture-49 | GATE CS & DA | Prof. Ravindrababu Ravula"
-            ],
-            [
-              "cJ6n_uHlocw",
-              "Relational Algebra Query 15 | Lecture-53 | GATE CS & DA | Prof. Ravindrababu Ravula"
-            ],
-            [
-              "-p5mBmlWBPY",
-              "Relational Algebra Query 16 | lecture-54 | GATE CS & DA | Prof. Ravindrababu Ravula"
-            ],
-            [
-              "c38O4sRDKWA",
-              "Relational Algebra Query 17 | Lecture-55 | GATE CS & DA | Prof. Ravindrababu Ravula"
-            ],
-            [
-              "P8bevwfld1Q",
-              "Relational Algebra Query 18 | Lecture-57 | GATE CS & DA | Prof. Ravindrababu Ravula"
-            ],
-            [
-              "pqA0RXxn1fo",
-              "Relational Algebra Query 19 | Lecture-58 | GATE CS & DA | Prof. Ravindrababu Ravula"
-            ],
-            [
-              "zGPCFbqz61o",
-              "Relational Algebra Query 20 | Lecture-59 | GATE CS & DA | Prof. Ravindrababu Ravula"
-            ],
-            [
-              "NNCdc-zDYrw",
-              "Relational Algebra Query 21 | Lecture-60 | GATE CS & DA | Prof. Ravindrababu Ravula"
-            ],
-            [
-              "NPmOL03Ec_k",
-              "Relational Algebra Query 22 | Lecture-61 | GATE CS & DA | Prof. Ravindrababu Ravula"
-            ],
-            [
-              "3WIqHUxesow",
-              "Relational Algebra Query 23 | Lecture-62 | GATE CS & DA | Prof. Ravindrababu Ravula"
-            ],
-            [
-              "y3bBNywTu2o",
-              "Relational Algebra Query 24  | Lecture-65 | GATE CS & DA | Prof. Ravindrababu Ravula"
-            ],
-            [
-              "BWRT8Hqtp50",
-              "Relational Algebra Query 25 | Lecture-66 | GATE CS & DA | Prof. Ravindrababu Ravula"
-            ],
-            [
-              "XCZHR4NYFX8",
-              "Relational Algebra Query 26  | Lecture-67 | GATE CS & DA | Prof. Ravindrababu Ravula"
-            ],
-            [
-              "WzbnW6cVSmQ",
-              "Relational Algebra Query 27  | Lecture-68 | GATE CS & DA | Prof. Ravindrababu Ravula"
-            ]
-          ]
-        },
-        {
-          "order": 14,
-          "title": "ER Model and Design",
-          "placeholder": "Not published in the playlist yet — RBR lists it in the syllabus (Lecture 1, 17:00)."
-        },
-        {
-          "order": 15,
-          "title": "SQL",
-          "placeholder": "Not published yet — RBR says he will cover SQL alongside relational algebra and tuple relational calculus."
-        },
-        {
-          "order": 16,
-          "title": "Relational Calculus (TRC / DRC)",
-          "placeholder": "Not published yet — named in the syllabus walkthrough as the third query language."
-        },
-        {
-          "order": 17,
-          "title": "File Organization and Indexing",
-          "placeholder": "Not published yet — RBR says he will cover indexing including B trees and B+ trees (Lecture 1, 16:00)."
-        },
-        {
           "order": 18,
           "title": "Transactions and Concurrency Control",
-          "placeholder": "Not published yet — listed in the syllabus, worth 2-4 marks in GATE."
+          "note": "takeUforward covers four of these; the rest are yours to source.",
+          "entries": [
+            {
+              "n": "ACID properties",
+              "k": "concept"
+            },
+            {
+              "n": "Transaction states and the transaction lifecycle",
+              "k": "concept"
+            },
+            {
+              "n": "Schedules and their types",
+              "k": "concept",
+              "v": "upPtgE9UkB8",
+              "a": "https://takeuforward.org/dbms/scheduling"
+            },
+            {
+              "n": "Conflict serializability and the precedence graph",
+              "k": "concept"
+            },
+            {
+              "n": "View serializability",
+              "k": "concept"
+            },
+            {
+              "n": "Serializability and its types",
+              "k": "concept",
+              "v": "SeCgEy8UTKo",
+              "a": "https://takeuforward.org/dbms/serializability-concurrency-control"
+            },
+            {
+              "n": "Recoverable, cascadeless and strict schedules",
+              "k": "concept"
+            },
+            {
+              "n": "Isolation levels",
+              "k": "concept",
+              "v": "8aOAgyOw420",
+              "a": "https://takeuforward.org/dbms/isolation-levels-and-its-types"
+            },
+            {
+              "n": "Concurrency control mechanisms and locking protocols",
+              "k": "concept",
+              "v": "msXIZz5UFXo",
+              "a": "https://takeuforward.org/dbms/locking-protocols"
+            },
+            {
+              "n": "Two-phase locking: basic, strict, rigorous and conservative",
+              "k": "concept"
+            },
+            {
+              "n": "Deadlock handling: wait-die and wound-wait",
+              "k": "concept"
+            },
+            {
+              "n": "Timestamp ordering and Thomas's write rule",
+              "k": "concept"
+            },
+            {
+              "n": "Multiversion concurrency control (MVCC)",
+              "k": "concept"
+            }
+          ]
         },
         {
           "order": 19,
           "title": "Recovery",
-          "placeholder": "Not published yet — normally paired with transactions."
+          "note": "Neither course covers this — find your own material.",
+          "entries": [
+            {
+              "n": "Log-based recovery and the log record format",
+              "k": "concept"
+            },
+            {
+              "n": "Deferred vs immediate database modification",
+              "k": "concept"
+            },
+            {
+              "n": "Write-ahead logging (WAL)",
+              "k": "concept"
+            },
+            {
+              "n": "Checkpoints and the recovery algorithm",
+              "k": "concept"
+            },
+            {
+              "n": "Undo, redo and undo/redo recovery",
+              "k": "concept"
+            },
+            {
+              "n": "Shadow paging",
+              "k": "concept"
+            },
+            {
+              "n": "ARIES",
+              "k": "concept"
+            }
+          ]
         },
         {
           "order": 20,
+          "title": "File Organization and Indexing",
+          "note": "takeUforward covers indexing and B+ trees; the rest are yours to source.",
+          "entries": [
+            {
+              "n": "File organization: heap, sequential and clustered files",
+              "k": "concept"
+            },
+            {
+              "n": "Indexing and its types",
+              "k": "concept",
+              "v": "A2hEyCc2QUY",
+              "a": "https://takeuforward.org/dbms/indexing-and-its-types"
+            },
+            {
+              "n": "Primary, secondary and clustering indexes",
+              "k": "concept"
+            },
+            {
+              "n": "Dense vs sparse indexes",
+              "k": "concept"
+            },
+            {
+              "n": "Multilevel indexes",
+              "k": "concept"
+            },
+            {
+              "n": "B trees and B+ trees",
+              "k": "concept",
+              "v": "spTiUaTSh-4",
+              "a": "https://takeuforward.org/dbms/b-bplus-trees"
+            },
+            {
+              "n": "B tree vs B+ tree: order, node capacity and height",
+              "k": "concept"
+            },
+            {
+              "n": "B+ tree insertion and deletion",
+              "k": "concept"
+            },
+            {
+              "n": "Static hashing",
+              "k": "concept"
+            },
+            {
+              "n": "Dynamic and extendible hashing",
+              "k": "concept"
+            }
+          ]
+        },
+        {
+          "order": 21,
           "title": "Query Processing and Cost Estimation",
-          "placeholder": "Only partly covered: Lecture 56 does relational-algebra-level optimisation. Join algorithms and cost models are not published yet."
+          "note": "takeUforward covers SQL tuning only; the theory is yours to source.",
+          "entries": [
+            {
+              "n": "The query processing pipeline: parsing, optimization, evaluation",
+              "k": "concept"
+            },
+            {
+              "n": "External sort-merge and its cost",
+              "k": "concept"
+            },
+            {
+              "n": "Selection algorithms and their cost",
+              "k": "concept"
+            },
+            {
+              "n": "Join algorithms: nested loop, block nested loop, sort-merge and hash join",
+              "k": "concept"
+            },
+            {
+              "n": "Cost estimation and selectivity",
+              "k": "concept"
+            },
+            {
+              "n": "Heuristic optimization and equivalence rules",
+              "k": "concept"
+            },
+            {
+              "n": "Materialization vs pipelining",
+              "k": "concept"
+            },
+            {
+              "n": "Techniques for optimizing SQL queries and file organization",
+              "k": "concept",
+              "v": "p5jGmXbYcQA",
+              "a": "https://takeuforward.org/dbms/techniques-for-optimising-sql-queries"
+            }
+          ]
+        },
+        {
+          "order": 22,
+          "title": "Scalability and Performance",
+          "note": "takeUforward interview sheet — interview topics, not classic syllabus.",
+          "entries": [
+            {
+              "n": "Vertical and horizontal scaling",
+              "k": "concept",
+              "v": "NjfvoTiWwoo",
+              "a": "https://takeuforward.org/dbms/vertical-horizontal-scaling"
+            },
+            {
+              "n": "Sharding",
+              "k": "concept",
+              "v": "NjfvoTiWwoo",
+              "a": "https://takeuforward.org/dbms/sharding"
+            },
+            {
+              "n": "Replication: master-slave and multi-master",
+              "k": "concept"
+            },
+            {
+              "n": "The CAP theorem",
+              "k": "concept"
+            }
+          ]
+        },
+        {
+          "order": 23,
+          "title": "Data Integrity and Security",
+          "note": "takeUforward interview sheet — interview topics, not classic syllabus.",
+          "entries": [
+            {
+              "n": "Role-based access control (RBAC)",
+              "k": "concept",
+              "v": "1-QvahOQAgo",
+              "a": "https://takeuforward.org/dbms/role-based-access-control"
+            },
+            {
+              "n": "GRANT and REVOKE: privileges and roles",
+              "k": "concept"
+            },
+            {
+              "n": "Encryption at rest and in transit",
+              "k": "concept"
+            },
+            {
+              "n": "SQL injection and how to prevent it",
+              "k": "concept"
+            }
+          ]
         }
       ]
     }

@@ -43,10 +43,10 @@ export interface SeedStep {
   title: string;
   problems: SeedProblem[];
   /**
-   * Set on a syllabus topic the course has not published yet. Such a step has no
-   * problems and renders as an empty section so the gap stays visible.
+   * One line on where this section's material comes from, shown under its header.
+   * Sections drawn from several courses — or from none yet — say so here.
    */
-  placeholder?: string;
+  note?: string;
 }
 
 export interface SeedSheet {
@@ -138,6 +138,6 @@ export interface TopicGroup {
   title: string;
   order: number;
   problems: Problem[];
-  /** Mirrors SeedStep.placeholder: an as-yet-uncovered syllabus topic. */
-  placeholder?: string;
+  /** Mirrors SeedStep.note: where this section's material comes from. */
+  note?: string;
 }

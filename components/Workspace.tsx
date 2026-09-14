@@ -169,8 +169,8 @@ export function Workspace({ userId, userEmail }: { userId: string; userEmail: st
                   </li>
                 ) : (
                   <li>
-                    <b className="text-[#e6e9f0]">▶ Video</b> — opens the lecture on Drive, next to
-                    your notes.
+                    <b className="text-[#e6e9f0]">▶ Video</b> — opens the lecture on{" "}
+                    {config.videoHost}, next to your notes.
                   </li>
                 )}
                 <li>

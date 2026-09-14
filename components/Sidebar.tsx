@@ -5,6 +5,7 @@ import { ProblemList, type FilterKey } from "./ProblemList";
 import { StatsBar } from "./StatsBar";
 import { AddProblemModal } from "./AddProblemModal";
 import { VideoAccessBox } from "./VideoAccessBox";
+import { needsResource } from "@/lib/links";
 import { knownTopics } from "@/lib/sheet";
 import type { SubjectConfig } from "@/lib/subjects";
 import type { VideoAccess } from "@/lib/useVideoAccess";
@@ -49,6 +50,10 @@ export function Sidebar({
   const fileRef = useRef<HTMLInputElement>(null);
 
   const allProblems = groups.flatMap((g) => g.problems);
+  // Only where the sheet deliberately seeds unresourced topics. DSA has a few
+  // theory entries carrying no link either, but those are not gaps to go fill,
+  // so the flag is opt-in per subject rather than derived from the entries.
+  const anyNeedsResource = subject.hasResourceGaps && allProblems.some(needsResource);
 
   // Picking a problem also closes the drawer on mobile (no-op on desktop).
   function handleSelect(key: string) {
@@ -125,6 +130,7 @@ export function Sidebar({
             <option value="due">Due for revision</option>
             <option value="starred">Starred</option>
             {subject.hasConceptFilter && <option value="concepts">Concepts only</option>}
+            {anyNeedsResource && <option value="noresource">Needs a resource</option>}
             <option value="solved">{subject.statusLabels.Solved}</option>
             <option value="unsolved">Not {subject.statusLabels.Solved.toLowerCase()}</option>
           </select>
@@ -140,6 +146,7 @@ export function Sidebar({
         selectedKey={selectedKey}
         decayDays={decayDays}
         statusLabels={subject.statusLabels}
+        markStubs={subject.hasResourceGaps}
         groupNoun={subject.id === "dsa" ? "Step" : "Section"}
         entryNounPlural={subject.entryNounPlural}
         onSelect={handleSelect}

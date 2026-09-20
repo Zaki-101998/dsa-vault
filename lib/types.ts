@@ -87,6 +87,7 @@ export interface UserProblemRow {
   custom_topic: string | null;
   custom_link: string | null;
   custom_practice_link: string | null;
+  custom_video_link: string | null;
   status: Status;
   starred: boolean;
   last_revised: string | null;
@@ -123,10 +124,11 @@ export interface Problem {
   practiceLink: string;
   // takeuforward's own practice problem, from the seed sheet; empty if none.
   tufPracticeLink: string;
-  // A problem link the user attached themselves. Unlike `link` — which a custom
-  // value replaces — this one is purely additive, so it sits alongside the
-  // sheet's own practice links rather than hiding one.
+  // A problem link and a video the user attached themselves. Unlike `link` —
+  // which a custom value replaces — these are purely additive, so they sit
+  // alongside the sheet's own links rather than hiding any.
   customPracticeLink: string;
+  customVideoLink: string;
   // The raw custom article URL, before it is folded into `link`. The editor needs
   // it to tell "the user set this" apart from "this came from the sheet".
   customLink: string;

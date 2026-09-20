@@ -54,6 +54,7 @@ function toProblem(
     practiceLink: base.practice ?? "",
     tufPracticeLink: base.tufPractice ?? "",
     customPracticeLink: row?.custom_practice_link ?? "",
+    customVideoLink: row?.custom_video_link ?? "",
     customLink: row?.custom_link ?? "",
     kind: base.kind ?? "concept",
     video: base.video ?? null,

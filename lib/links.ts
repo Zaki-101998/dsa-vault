@@ -41,6 +41,24 @@ export function linkPlatform(url: string | null | undefined): LinkBadge | null {
 /** Badge styling for a lecture video, in the same visual family as above. */
 export const VIDEO_BADGE_CLASS = "text-[#f0b429] border-[#f0b429]/40";
 
+/**
+ * Names a user-supplied video by where it lives, so the badge says something
+ * useful next to the sheet's own "▶ Video". Returns null for an empty/invalid URL.
+ */
+export function videoHostLabel(url: string | null | undefined): string | null {
+  if (!url) return null;
+  let host = "";
+  try {
+    host = new URL(url).hostname.replace(/^www\./, "");
+  } catch {
+    return null;
+  }
+  if (host.endsWith("youtube.com") || host.endsWith("youtu.be")) return "YouTube";
+  if (host.endsWith("drive.google.com")) return "Drive";
+  if (host.endsWith("vimeo.com")) return "Vimeo";
+  return "Video";
+}
+
 /** takeuforward's own practice problem — their brand orange-red. */
 export const TUF_BADGE_CLASS = "text-[#e76a40] border-[#e76a40]/45";
 
@@ -61,7 +79,13 @@ export const ARTICLE_BADGE_CLASS = "text-[#8b93a7] border-[#8b93a7]/45";
 export function needsResource(
   p: Pick<
     Problem,
-    "video" | "link" | "practiceLink" | "tufPracticeLink" | "customPracticeLink" | "isCustom"
+    | "video"
+    | "link"
+    | "practiceLink"
+    | "tufPracticeLink"
+    | "customPracticeLink"
+    | "customVideoLink"
+    | "isCustom"
   >
 ): boolean {
   return (
@@ -70,6 +94,7 @@ export function needsResource(
     !p.practiceLink &&
     !p.tufPracticeLink &&
     !p.customPracticeLink &&
+    !p.customVideoLink &&
     !p.isCustom
   );
 }
@@ -122,7 +147,12 @@ export interface LinkChip {
 export function problemLinks(
   p: Pick<
     Problem,
-    "video" | "link" | "practiceLink" | "tufPracticeLink" | "customPracticeLink"
+    | "video"
+    | "link"
+    | "practiceLink"
+    | "tufPracticeLink"
+    | "customPracticeLink"
+    | "customVideoLink"
   >,
   opts: { canWatchVideo: boolean }
 ): LinkChip[] {
@@ -180,6 +210,17 @@ export function problemLinks(
       href: p.customPracticeLink,
       className: mine.className,
       title: `Your own problem link (${mine.label})`,
+    });
+  }
+
+  const myVideo = videoHostLabel(p.customVideoLink);
+  if (myVideo) {
+    chips.push({
+      key: "custom-video",
+      label: `▶ ${myVideo}`,
+      href: p.customVideoLink,
+      className: VIDEO_BADGE_CLASS,
+      title: `Your own video (${myVideo})`,
     });
   }
 

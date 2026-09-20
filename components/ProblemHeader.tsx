@@ -205,6 +205,7 @@ export function ProblemHeader({
         <LinkEditor
           customLink={problem.customLink}
           customPracticeLink={problem.customPracticeLink}
+          customVideoLink={problem.customVideoLink}
           sheetArticle={problem.customLink ? "" : problem.link}
           onChange={onLinksChange}
         />

@@ -18,6 +18,7 @@ function blankRow(userId: string, key: string): UserProblemRow {
     custom_topic: null,
     custom_link: null,
     custom_practice_link: null,
+    custom_video_link: null,
     status: "Unsolved",
     starred: false,
     last_revised: null,
@@ -185,6 +186,7 @@ export function useVault(userId: string, subject: SubjectId) {
         custom_topic?: string;
         custom_link?: string;
         custom_practice_link?: string;
+        custom_video_link?: string;
       },
       debounceMs = 400
     ) =>
@@ -275,6 +277,7 @@ export function useVault(userId: string, subject: SubjectId) {
         custom_topic: r.custom_topic ?? null,
         custom_link: r.custom_link ?? null,
         custom_practice_link: r.custom_practice_link ?? null,
+        custom_video_link: r.custom_video_link ?? null,
         status: r.status || "Unsolved",
         starred: !!r.starred,
         last_revised: r.last_revised ?? null,

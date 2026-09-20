@@ -3,32 +3,39 @@
 import { useEffect, useRef, useState } from "react";
 
 /**
- * The + at the end of the header's link row: attaches one article and one problem
- * link of your own to a problem.
+ * The + at the end of the header's link row: attaches one article, one problem
+ * link and one video of your own to a problem.
  *
  * The article field replaces the sheet's article when set — there is only ever one
  * Article badge — so it shows the sheet's URL as a placeholder to make clear what
- * it would override. The problem field is additive and sits alongside the sheet's
- * own TUF/LeetCode links.
+ * it would override. The problem and video fields are additive and sit alongside
+ * the sheet's own TUF/LeetCode/video links rather than hiding any.
  *
- * Both commit on blur, matching how the name and topic fields in ProblemHeader
- * already behave. Clearing a field removes its badge.
+ * All three commit on blur, matching how the name and topic fields in
+ * ProblemHeader already behave. Clearing a field removes its badge.
  */
 export function LinkEditor({
   customLink,
   customPracticeLink,
+  customVideoLink,
   sheetArticle,
   onChange,
 }: {
   customLink: string;
   customPracticeLink: string;
+  customVideoLink: string;
   /** The sheet's own article, shown as placeholder — empty if it has none. */
   sheetArticle: string;
-  onChange: (patch: { custom_link?: string; custom_practice_link?: string }) => void;
+  onChange: (patch: {
+    custom_link?: string;
+    custom_practice_link?: string;
+    custom_video_link?: string;
+  }) => void;
 }) {
   const [open, setOpen] = useState(false);
   const [article, setArticle] = useState(customLink);
   const [practice, setPractice] = useState(customPracticeLink);
+  const [video, setVideo] = useState(customVideoLink);
   const wrapRef = useRef<HTMLDivElement>(null);
 
   // Close on Escape or a click outside. Bound only while open so the listeners
@@ -47,13 +54,13 @@ export function LinkEditor({
     };
   }, [open]);
 
-  const has = !!customLink || !!customPracticeLink;
+  const has = !!customLink || !!customPracticeLink || !!customVideoLink;
 
   return (
     <div ref={wrapRef} className="relative">
       <button
         onClick={() => setOpen((v) => !v)}
-        title={has ? "Edit your own links" : "Add your own article or problem link"}
+        title={has ? "Edit your own links" : "Add an article, problem or video link of your own"}
         aria-expanded={open}
         className={`border rounded-md px-2 py-0.5 text-[13px] font-semibold leading-6 ${
           has
@@ -101,6 +108,21 @@ export function LinkEditor({
             <span className="mt-1 block text-[11px] text-[#565e73]">
               Shown next to the sheet&apos;s own links, not instead of them.
             </span>
+          </label>
+
+          <label className="block">
+            <span className="text-[11px] font-semibold uppercase tracking-wide text-[#8b93a7]">
+              Video URL
+            </span>
+            <input
+              value={video}
+              onChange={(e) => setVideo(e.target.value)}
+              onBlur={() =>
+                video.trim() !== customVideoLink && onChange({ custom_video_link: video.trim() })
+              }
+              placeholder="https://…"
+              className="mt-1 w-full bg-[#1c212c] border border-[#2a3040] rounded-md px-2.5 py-1.5 text-[13px] outline-none focus:border-[#5b8cff]"
+            />
           </label>
         </div>
       )}

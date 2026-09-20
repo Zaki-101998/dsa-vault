@@ -32,6 +32,11 @@ export interface SeedProblem {
   /** Optional practice-problem link (LeetCode preferred, else GFG/HackerRank). */
   practice?: string;
   /**
+   * takeuforward's own practice problem, free since their 2026 rewrite. Built
+   * from TUF's raw slug, which can end in a hyphen or contain punctuation.
+   */
+  tufPractice?: string;
+  /**
    * Subsection this entry sits in, as its display title ("BS on Answers"). One
    * nesting level expressed as a field rather than nested arrays, so the seed
    * JSON stays flat and entries without one simply omit it.
@@ -81,6 +86,7 @@ export interface UserProblemRow {
   custom_name: string | null;
   custom_topic: string | null;
   custom_link: string | null;
+  custom_practice_link: string | null;
   status: Status;
   starred: boolean;
   last_revised: string | null;
@@ -115,6 +121,15 @@ export interface Problem {
   // Practice-problem link from the seed sheet (LeetCode/GFG/HackerRank); empty
   // for user-added custom problems.
   practiceLink: string;
+  // takeuforward's own practice problem, from the seed sheet; empty if none.
+  tufPracticeLink: string;
+  // A problem link the user attached themselves. Unlike `link` — which a custom
+  // value replaces — this one is purely additive, so it sits alongside the
+  // sheet's own practice links rather than hiding one.
+  customPracticeLink: string;
+  // The raw custom article URL, before it is folded into `link`. The editor needs
+  // it to tell "the user set this" apart from "this came from the sheet".
+  customLink: string;
   // "concept" for every DSA problem and every teaching video; "problem" marks a
   // worked-question video, which the UI dims and the Concepts filter hides.
   kind: EntryKind;

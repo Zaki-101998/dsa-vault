@@ -31,7 +31,10 @@ const slug = (s: string) =>
     .replace(/[^a-z0-9]+/g, "-")
     .replace(/^-+|-+$/g, "");
 
-type Base = Pick<SeedProblem, "name" | "link" | "difficulty" | "practice" | "kind" | "video"> & {
+type Base = Pick<
+  SeedProblem,
+  "name" | "link" | "difficulty" | "practice" | "tufPractice" | "kind" | "video"
+> & {
   topic: string;
 };
 
@@ -49,6 +52,9 @@ function toProblem(
     link: row?.custom_link ?? base.link,
     difficulty: base.difficulty,
     practiceLink: base.practice ?? "",
+    tufPracticeLink: base.tufPractice ?? "",
+    customPracticeLink: row?.custom_practice_link ?? "",
+    customLink: row?.custom_link ?? "",
     kind: base.kind ?? "concept",
     video: base.video ?? null,
     status: row?.status || "Unsolved",

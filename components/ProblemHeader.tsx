@@ -3,11 +3,29 @@
 import { useState } from "react";
 import { RevisionStar } from "./RevisionStar";
 import { daysSince, isOverdue } from "@/lib/decay";
-import { VIDEO_BADGE_CLASS, linkPlatform, needsResource, videoLabel, videoUrl } from "@/lib/links";
+import { LinkEditor } from "./LinkEditor";
+import { needsResource, problemLinks, type LinkChip } from "@/lib/links";
 import type { EntryTab, SubjectConfig } from "@/lib/subjects";
 import type { Problem, Status } from "@/lib/types";
 
 const STATUSES: Status[] = ["Unsolved", "Attempted", "Solved"];
+
+/** One link badge. `compact` is the phone sizing. */
+function LinkBadge({ chip, compact }: { chip: LinkChip; compact?: boolean }) {
+  return (
+    <a
+      href={chip.href}
+      target="_blank"
+      rel="noopener noreferrer"
+      title={chip.title}
+      className={`border rounded-md shrink-0 font-semibold hover:brightness-110 ${
+        compact ? "px-1.5 py-0.5 text-[11px]" : "px-2.5 py-1 text-[13px]"
+      } ${chip.className}`}
+    >
+      {chip.label}
+    </a>
+  );
+}
 
 function fmtAgo(ts: number): string {
   const m = (Date.now() - ts) / 60000;
@@ -28,7 +46,7 @@ export function ProblemHeader({
   onTabChange,
   onRename,
   onRetopic,
-  onRelink,
+  onLinksChange,
   onStatusChange,
   onStarClick,
   onMarkRevised,
@@ -48,7 +66,8 @@ export function ProblemHeader({
   onTabChange: (tab: EntryTab) => void;
   onRename: (name: string) => void;
   onRetopic: (topic: string) => void;
-  onRelink: (link: string) => void;
+  /** Writes the user's own article and/or problem link. */
+  onLinksChange: (patch: { custom_link?: string; custom_practice_link?: string }) => void;
   onStatusChange: (status: Status) => void;
   /** Clicking the star icon itself: marks revised, or un-stars if already fresh (<12h). */
   onStarClick: () => void;
@@ -65,19 +84,17 @@ export function ProblemHeader({
   // rather than needing an effect to resync state.
   const [name, setName] = useState(problem.name);
   const [topic, setTopic] = useState(problem.topic);
-  const [link, setLink] = useState(problem.link);
 
   const overdue = isOverdue(problem.starred, problem.lastRevised, decayDays);
-  const practice = linkPlatform(problem.practiceLink);
-  // YouTube lectures are public, so the access allowlist only gates Drive files.
-  const showVideo = !!problem.video && (problem.video.provider === "youtube" || canWatchVideo);
-  const videoHref = showVideo ? videoUrl(problem.video!) : "";
+  // One ordered list, rendered by both the mobile and desktop rows below.
+  const links = problemLinks(problem, { canWatchVideo });
   const skippable = problem.kind === "problem";
   const stub = subject.hasResourceGaps && needsResource(problem);
 
   return (
     <div className="px-3 md:px-5 pt-3 md:pt-4 border-b border-[#2a3040]">
-      {/* Mobile: compact read-mode strip — star + name + video + Mark Revised only. */}
+      {/* Mobile: compact read-mode strip — star + name + Mark Revised. Links follow
+          on their own line below. */}
       <div className="md:hidden flex items-center gap-2.5 mb-2">
         <RevisionStar
           starred={problem.starred}
@@ -97,15 +114,6 @@ export function ProblemHeader({
             {Math.floor(daysSince(problem.lastRevised))}d
           </span>
         )}
-        {videoHref && (
-          <button
-            onClick={() => window.open(videoHref, "_blank", "noopener,noreferrer")}
-            title={`Watch the lecture${problem.video!.t ? ` from ${videoLabel(problem.video!).slice(2)}` : ""}`}
-            className={`border rounded-lg px-2 py-1 text-xs font-semibold shrink-0 ${VIDEO_BADGE_CLASS}`}
-          >
-            ▶
-          </button>
-        )}
         <button
           onClick={onMarkRevised}
           className="bg-[#3ecf8e] text-[#08130d] font-bold rounded-lg px-2 py-1 text-xs shrink-0 hover:brightness-110"
@@ -113,6 +121,16 @@ export function ProblemHeader({
           ✓ Revised
         </button>
       </div>
+
+      {/* Mobile: links get their own line — four badges never fit beside the name.
+          Scrolls sideways rather than wrapping, like the subject strip. */}
+      {links.length > 0 && (
+        <div className="md:hidden flex gap-1.5 overflow-x-auto no-scrollbar mb-2">
+          {links.map((chip) => (
+            <LinkBadge key={chip.key} chip={chip} compact />
+          ))}
+        </div>
+      )}
 
       <div className="hidden md:flex flex-wrap gap-2.5 items-center mb-2.5">
         <input
@@ -181,42 +199,15 @@ export function ProblemHeader({
             <option key={t} value={t} />
           ))}
         </datalist>
-        <input
-          value={link}
-          onChange={(e) => setLink(e.target.value)}
-          onBlur={() => link !== problem.link && onRelink(link.trim())}
-          placeholder={subject.linkPlaceholder}
-          className="flex-1 min-w-[160px] bg-[#1c212c] border border-[#2a3040] rounded-md px-2.5 py-1.5 text-[13px] outline-none focus:border-[#5b8cff]"
+        {links.map((chip) => (
+          <LinkBadge key={chip.key} chip={chip} />
+        ))}
+        <LinkEditor
+          customLink={problem.customLink}
+          customPracticeLink={problem.customPracticeLink}
+          sheetArticle={problem.customLink ? "" : problem.link}
+          onChange={onLinksChange}
         />
-        <button
-          onClick={() => problem.link && window.open(problem.link, "_blank", "noopener,noreferrer")}
-          disabled={!problem.link}
-          className="border border-[#2a3040] rounded-md px-2.5 text-[13px] text-[#5b8cff] hover:border-[#5b8cff] disabled:opacity-40 disabled:hover:border-[#2a3040]"
-        >
-          ↗ Open
-        </button>
-        {videoHref && (
-          <button
-            onClick={() => window.open(videoHref, "_blank", "noopener,noreferrer")}
-            title={
-              problem.video!.t
-                ? `Opens the lecture at ${videoLabel(problem.video!).slice(2)}, where this topic starts`
-                : "Watch the lecture"
-            }
-            className={`border rounded-md px-2.5 text-[13px] font-semibold hover:brightness-110 ${VIDEO_BADGE_CLASS}`}
-          >
-            {videoLabel(problem.video!)} ↗
-          </button>
-        )}
-        {practice && (
-          <button
-            onClick={() => window.open(problem.practiceLink, "_blank", "noopener,noreferrer")}
-            title={`Solve on ${practice.label}`}
-            className={`border rounded-md px-2.5 text-[13px] font-semibold hover:brightness-110 ${practice.className}`}
-          >
-            {practice.label} ↗
-          </button>
-        )}
       </div>
 
       <div className="hidden md:flex flex-wrap items-center gap-3.5 mb-3.5 bg-[#161a22] border border-[#2a3040] rounded-xl px-3.5 py-2.5">

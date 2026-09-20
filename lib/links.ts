@@ -41,20 +41,37 @@ export function linkPlatform(url: string | null | undefined): LinkBadge | null {
 /** Badge styling for a lecture video, in the same visual family as above. */
 export const VIDEO_BADGE_CLASS = "text-[#f0b429] border-[#f0b429]/40";
 
+/** takeuforward's own practice problem — their brand orange-red. */
+export const TUF_BADGE_CLASS = "text-[#e76a40] border-[#e76a40]/45";
+
+/** A written article. Muted: reading is the secondary action next to solving. */
+export const ARTICLE_BADGE_CLASS = "text-[#8b93a7] border-[#8b93a7]/45";
+
 /**
  * A syllabus topic with nothing attached to study from yet — seeded for subjects
  * whose courses leave gaps, so the whole syllabus is visible rather than only the
  * parts someone happened to record.
  *
- * Derived rather than stored, which means it clears itself: the moment a link is
- * pasted into the header, `link` is non-empty and the entry stops being a stub.
+ * Derived rather than stored, which means it clears itself: the moment any link is
+ * attached — by the sheet or by the user via the header's + button — the entry
+ * stops being a stub.
  * Custom entries are excluded — an entry the user typed themselves is not a gap
  * the sheet is asking them to fill.
  */
 export function needsResource(
-  p: Pick<Problem, "video" | "link" | "practiceLink" | "isCustom">
+  p: Pick<
+    Problem,
+    "video" | "link" | "practiceLink" | "tufPracticeLink" | "customPracticeLink" | "isCustom"
+  >
 ): boolean {
-  return !p.video && !p.link && !p.practiceLink && !p.isCustom;
+  return (
+    !p.video &&
+    !p.link &&
+    !p.practiceLink &&
+    !p.tufPracticeLink &&
+    !p.customPracticeLink &&
+    !p.isCustom
+  );
 }
 
 function hms(total: number): string {
@@ -78,4 +95,93 @@ export function videoUrl(video: VideoRef): string {
  */
 export function videoLabel(video: VideoRef): string {
   return video.t ? `▶ ${hms(video.t)}` : "▶ Video";
+}
+
+
+/** One badge in the problem's link row. */
+export interface LinkChip {
+  key: string;
+  label: string;
+  href: string;
+  /** Tailwind text+border classes, matching the badge family above. */
+  className: string;
+  title: string;
+}
+
+/**
+ * Every link a problem offers, in a fixed order so the same resource is always in
+ * the same place: watch, then solve, then read, then whatever the user added.
+ *
+ * Both the desktop and the mobile header render from this one array — they used
+ * to build their own rows and had already drifted apart.
+ *
+ * `link` is the article slot: it holds the sheet's takeuforward article unless the
+ * user has supplied their own, which replaces it (see lib/sheet.ts). A custom
+ * *problem* link is additive instead, so it never hides one of the sheet's.
+ */
+export function problemLinks(
+  p: Pick<
+    Problem,
+    "video" | "link" | "practiceLink" | "tufPracticeLink" | "customPracticeLink"
+  >,
+  opts: { canWatchVideo: boolean }
+): LinkChip[] {
+  const chips: LinkChip[] = [];
+
+  // YouTube lectures are public, so the access allowlist only gates Drive files.
+  if (p.video && (p.video.provider === "youtube" || opts.canWatchVideo)) {
+    chips.push({
+      key: "video",
+      label: videoLabel(p.video),
+      href: videoUrl(p.video),
+      className: VIDEO_BADGE_CLASS,
+      title: p.video.t
+        ? `Opens the lecture at ${videoLabel(p.video).slice(2)}, where this topic starts`
+        : "Watch the lecture",
+    });
+  }
+
+  if (p.tufPracticeLink) {
+    chips.push({
+      key: "tuf",
+      label: "TUF",
+      href: p.tufPracticeLink,
+      className: TUF_BADGE_CLASS,
+      title: "Solve on takeuforward",
+    });
+  }
+
+  const practice = linkPlatform(p.practiceLink);
+  if (practice) {
+    chips.push({
+      key: "practice",
+      label: practice.label,
+      href: p.practiceLink,
+      className: practice.className,
+      title: `Solve on ${practice.label}`,
+    });
+  }
+
+  if (p.link) {
+    chips.push({
+      key: "article",
+      label: "Article",
+      href: p.link,
+      className: ARTICLE_BADGE_CLASS,
+      title: "Read the article",
+    });
+  }
+
+  const mine = linkPlatform(p.customPracticeLink);
+  if (mine) {
+    chips.push({
+      key: "custom-practice",
+      label: mine.label,
+      href: p.customPracticeLink,
+      className: mine.className,
+      title: `Your own problem link (${mine.label})`,
+    });
+  }
+
+  return chips;
 }

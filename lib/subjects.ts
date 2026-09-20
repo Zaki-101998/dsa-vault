@@ -36,7 +36,6 @@ export interface SubjectConfig {
    * practice link at all, which is worth flagging.
    */
   hasResourceGaps: boolean;
-  linkPlaceholder: string;
   topicPlaceholder: string;
   /** Example text in the "Add a …" modal's name field. */
   addNamePlaceholder: string;
@@ -56,7 +55,6 @@ export const SUBJECTS: Record<SubjectId, SubjectConfig> = {
     showDifficulty: true,
     hasConceptFilter: false,
     hasResourceGaps: true,
-    linkPlaceholder: "Problem link (YouTube / LeetCode / TUF)…",
     topicPlaceholder: "e.g. Arrays",
     addNamePlaceholder: "e.g. Kadane's Algorithm follow-up",
     blurb: "Your notes + code companion for Striver's A2Z sheet.",
@@ -74,7 +72,6 @@ export const SUBJECTS: Record<SubjectId, SubjectConfig> = {
     videoHost: "Drive",
     hasConceptFilter: true,
     hasResourceGaps: false,
-    linkPlaceholder: "Lecture link (Drive)…",
     topicPlaceholder: "e.g. Routing",
     addNamePlaceholder: "e.g. Subnetting recap",
     blurb: "Lecture notes + revision tracker for the Computer Networks series.",
@@ -92,7 +89,6 @@ export const SUBJECTS: Record<SubjectId, SubjectConfig> = {
     videoHost: "Drive",
     hasConceptFilter: true,
     hasResourceGaps: false,
-    linkPlaceholder: "Lecture link (Drive)…",
     topicPlaceholder: "e.g. Deadlocks",
     addNamePlaceholder: "e.g. Bankers algorithm recap",
     blurb: "Lecture notes + revision tracker for the Operating Systems series.",
@@ -110,7 +106,6 @@ export const SUBJECTS: Record<SubjectId, SubjectConfig> = {
     videoHost: "YouTube",
     hasConceptFilter: true,
     hasResourceGaps: true,
-    linkPlaceholder: "Resource link (YouTube / article)…",
     topicPlaceholder: "e.g. Normal Forms",
     addNamePlaceholder: "e.g. BCNF recap",
     blurb:

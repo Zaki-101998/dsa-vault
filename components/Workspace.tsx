@@ -200,7 +200,7 @@ export function Workspace({ userId, userEmail }: { userId: string; userEmail: st
               onTabChange={setActiveTab}
               onRename={(name) => vault.setCustomFields(problem.key, { custom_name: name })}
               onRetopic={(topic) => vault.setCustomFields(problem.key, { custom_topic: topic })}
-              onRelink={(link) => vault.setCustomFields(problem.key, { custom_link: link })}
+              onLinksChange={(patch) => vault.setCustomFields(problem.key, patch)}
               onStatusChange={(status) => vault.setStatus(problem.key, status)}
               onStarClick={() => vault.toggleStar(problem.key)}
               onMarkRevised={() => vault.markRevised(problem.key)}

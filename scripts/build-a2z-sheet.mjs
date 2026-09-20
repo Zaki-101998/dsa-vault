@@ -88,6 +88,14 @@ const CARRIED = {
 
 // ------------------------------------------------------------------ helpers
 
+const TUF = "https://takeuforward.org";
+
+// The only two takeuforward URL shapes that survived the 2026 rewrite. Everything
+// else it used to publish (/data-structure/…, /arrays/…, /plus/…) now 404s.
+const LIVE_TUF = /^https:\/\/takeuforward\.org\/(practice\/dsa\/|blogs\/)/;
+const liveLink = (url) =>
+  url && (!url.includes("takeuforward.org") || LIVE_TUF.test(url)) ? url : "";
+
 // TUF ships a few labels with stray whitespace ("Sorting ", "Flowchart Problem-Solving ").
 const label = (s) => String(s ?? "").replace(/\s+/g, " ").trim();
 
@@ -291,21 +299,26 @@ function makeProblem({ key, name, item, subsection, legacyLinks }) {
   const p = {
     key,
     name,
-    link: item.free_blog_link ? `https://takeuforward.org${item.free_blog_link}` : "",
+    link: item.free_blog_link ? `${TUF}${item.free_blog_link}` : "",
     difficulty: { basic: "Basic", core: "Core", pro: "Pro" }[item.difficulty] ?? "",
   };
   if (item.leetcode_link) p.practice = item.leetcode_link;
+  // TUF's own practice problems are free now. Their URL is built from the RAW
+  // slug, not the sanitised key: /practice/dsa/lower-bound- really does end in a
+  // hyphen, and one problem's slug is literally "pow(x,n)".
+  if (item.layoutType === "practice") p.tufPractice = `${TUF}/practice/dsa/${item.slug}`;
   const video = parseVideo(item.yt_video);
   if (video) p.video = video;
   if (subsection) p.section = subsection;
 
-  // The new sheet publishes far fewer links than the old one (TUF moved most
-  // behind their paid editorial), so fill the holes from what we already had.
-  // A link the new sheet does publish always wins — it is current.
-  if (legacyLinks) {
-    if (!p.practice && legacyLinks.practice) p.practice = legacyLinks.practice;
-    if (!p.link && legacyLinks.link) p.link = legacyLinks.link;
-  }
+  // Fill a missing PRACTICE link from the old sheet — those point at LeetCode and
+  // GfG, which are third-party and still live.
+  //
+  // The article is deliberately NOT backfilled. Every takeuforward URL the old
+  // sheet carried (/data-structure/…, /arrays/…, /plus/…) was deleted in the 2026
+  // rewrite and now 404s, so backfilling would quietly reintroduce dead links —
+  // which is exactly how 206 of them ended up in the sheet.
+  if (legacyLinks && !p.practice && legacyLinks.practice) p.practice = legacyLinks.practice;
   return p;
 }
 
@@ -364,7 +377,9 @@ for (const p of workedOrphans) {
   const carried = {
     key: uniqueKey(p.key),
     name: p.name,
-    link: p.link || "",
+    // Most of these carry a takeuforward article the rewrite deleted; drop it
+    // rather than ship a 404. They keep any third-party practice link below.
+    link: liveLink(p.link),
     // The old sheet's Easy/Medium/Hard has no exact tier equivalent; map to the
     // nearest so these rows don't render blank next to Striver's.
     difficulty: p.difficulty === "Easy" ? "Basic" : p.difficulty === "Hard" ? "Pro" : "Core",
@@ -395,15 +410,30 @@ if (missing.length) {
   );
 }
 
-// And no problem may come out of the merge with fewer resources than it had.
+// No problem may lose its practice link — those are third-party and still live.
+// (The article is allowed to disappear: see makeProblem.)
 const legacyByKey = new Map(oldProblems.map((p) => [p.key, p]));
 const regressed = allProblems.filter((p) => {
   const o = legacyByKey.get(p.key);
-  return o && ((o.practice && !p.practice) || (o.link && !p.link));
+  return o && o.practice && !p.practice;
 });
 if (regressed.length) {
   throw new Error(
-    `${regressed.length} problem(s) lost a link they had: ${regressed.map((p) => p.key).join(", ")}`
+    `${regressed.length} problem(s) lost a practice link: ${regressed.map((p) => p.key).join(", ")}`
+  );
+}
+
+// Anything pointing at a takeuforward path the rewrite deleted is a dead link,
+// so fail rather than ship one.
+const deadTuf = allProblems.flatMap((p) =>
+  [p.link, p.practice, p.tufPractice]
+    .filter((u) => u && u.includes("takeuforward.org") && !LIVE_TUF.test(u))
+    .map((u) => `${p.key}: ${u}`)
+);
+if (deadTuf.length) {
+  throw new Error(
+    `${deadTuf.length} dead takeuforward link(s) — the 2026 rewrite deleted these paths:\n` +
+      deadTuf.slice(0, 10).map((x) => "  " + x).join("\n")
   );
 }
 
@@ -444,9 +474,11 @@ console.log(
     `matched via: override=${via.override} exact=${via.exact} practice=${via.practice} fuzzy=${via.fuzzy}; ` +
     `${mergeCount} merges kept as separate rows\n` +
     `dropped with no saved work: ${orphans.length - placed.length}\n` +
-    `resources: video=${allProblems.filter((p) => p.video).length} ` +
-    `practice=${allProblems.filter((p) => p.practice).length} ` +
-    `article=${allProblems.filter((p) => p.link).length}\n` +
+    `links: video=${allProblems.filter((p) => p.video).length} ` +
+    `tuf=${allProblems.filter((p) => p.tufPractice).length} ` +
+    `leetcode/gfg=${allProblems.filter((p) => p.practice).length} ` +
+    `article=${allProblems.filter((p) => p.link).length} ` +
+    `none=${allProblems.filter((p) => !p.video && !p.tufPractice && !p.practice && !p.link).length}\n` +
     `✓ all ${workedKeys.size} keys with saved work are present\n` +
     `report: ${reportPath}${dry ? "  (dry run, nothing written)" : ""}`
 );

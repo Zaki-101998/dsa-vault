@@ -5,6 +5,7 @@ import { RevisionStar } from "./RevisionStar";
 import { daysSince, isOverdue } from "@/lib/decay";
 import { LinkEditor } from "./LinkEditor";
 import { needsResource, problemLinks, type LinkChip } from "@/lib/links";
+import { knownSections } from "@/lib/sheet";
 import type { EntryTab, SubjectConfig } from "@/lib/subjects";
 import type { Problem, Status } from "@/lib/types";
 
@@ -46,6 +47,7 @@ export function ProblemHeader({
   onTabChange,
   onRename,
   onRetopic,
+  onResection,
   onLinksChange,
   onStatusChange,
   onStarClick,
@@ -66,6 +68,8 @@ export function ProblemHeader({
   onTabChange: (tab: EntryTab) => void;
   onRename: (name: string) => void;
   onRetopic: (topic: string) => void;
+  /** Move the problem to another subsection of its step ("" puts it at the top). */
+  onResection: (section: string) => void;
   /** Writes the user's own article and/or problem link. */
   onLinksChange: (patch: { custom_link?: string; custom_practice_link?: string }) => void;
   onStatusChange: (status: Status) => void;
@@ -88,6 +92,8 @@ export function ProblemHeader({
   const overdue = isOverdue(problem.starred, problem.lastRevised, decayDays);
   // One ordered list, rendered by both the mobile and desktop rows below.
   const links = problemLinks(problem, { canWatchVideo });
+  // Offered only where the problem's step actually has subsections.
+  const sections = knownSections(subject.id, topic);
   const skippable = problem.kind === "problem";
   const stub = subject.hasResourceGaps && needsResource(problem);
 
@@ -199,6 +205,21 @@ export function ProblemHeader({
             <option key={t} value={t} />
           ))}
         </datalist>
+        {sections.length > 0 && (
+          <select
+            value={sections.includes(problem.section) ? problem.section : ""}
+            onChange={(e) => onResection(e.target.value)}
+            title="Which subsection this problem sits in"
+            className="w-full sm:w-[200px] bg-[#1c212c] border border-[#2a3040] rounded-md px-2.5 py-1.5 text-[13px] outline-none focus:border-[#5b8cff]"
+          >
+            <option value="">— top of section —</option>
+            {sections.map((sec) => (
+              <option key={sec} value={sec}>
+                {sec}
+              </option>
+            ))}
+          </select>
+        )}
         {links.map((chip) => (
           <LinkBadge key={chip.key} chip={chip} />
         ))}

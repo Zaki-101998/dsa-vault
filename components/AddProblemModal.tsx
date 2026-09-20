@@ -1,6 +1,7 @@
 "use client";
 
-import { useState, type FormEvent } from "react";
+import { useMemo, useState, type FormEvent } from "react";
+import { knownSections } from "@/lib/sheet";
 import type { SubjectConfig } from "@/lib/subjects";
 
 export function AddProblemModal({
@@ -10,18 +11,24 @@ export function AddProblemModal({
   knownTopics,
 }: {
   onClose: () => void;
-  onAdd: (name: string, topic: string) => void;
+  onAdd: (name: string, topic: string, section: string) => void;
   subject: SubjectConfig;
   /** Section titles for the current subject, suggested in the datalist. */
   knownTopics: string[];
 }) {
   const [name, setName] = useState("");
   const [topic, setTopic] = useState("");
+  const [section, setSection] = useState("");
+
+  const sections = useMemo(() => knownSections(subject.id, topic), [subject.id, topic]);
+  // A section only means something inside the step it belongs to, so a stale pick
+  // must not survive a change of topic.
+  const validSection = sections.includes(section) ? section : "";
 
   function submit(e: FormEvent) {
     e.preventDefault();
     if (!name.trim()) return;
-    onAdd(name.trim(), topic.trim() || "Custom");
+    onAdd(name.trim(), topic.trim() || "Custom", validSection);
     onClose();
   }
 
@@ -62,6 +69,25 @@ export function AddProblemModal({
               ))}
             </datalist>
           </div>
+          {/* Only offered where the chosen topic actually has subsections — not for
+              a brand-new topic, and not for the lecture subjects. */}
+          {sections.length > 0 && (
+            <div>
+              <label className="text-xs text-[#8b93a7] block mb-1">Subsection</label>
+              <select
+                value={validSection}
+                onChange={(e) => setSection(e.target.value)}
+                className="w-full bg-[#1c212c] border border-[#2a3040] rounded-lg px-3 py-2 text-sm outline-none focus:border-[#5b8cff]"
+              >
+                <option value="">— none (top of section) —</option>
+                {sections.map((sec) => (
+                  <option key={sec} value={sec}>
+                    {sec}
+                  </option>
+                ))}
+              </select>
+            </div>
+          )}
           <div className="flex gap-2 pt-2">
             <button
               type="button"

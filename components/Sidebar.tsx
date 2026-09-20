@@ -37,7 +37,7 @@ export function Sidebar({
   onSelect: (key: string) => void;
   onToggleStar: (key: string) => void;
   onReorder: (groupKey: string, activeKey: string, overKey: string) => void;
-  onAddProblem: (name: string, topic: string) => string;
+  onAddProblem: (name: string, topic: string, section: string) => string;
   onDecayDaysChange: (days: number) => void;
   onImport: (rows: UserProblemRow[]) => void;
   /** Mobile-only: whether the off-canvas drawer is open. Desktop ignores this. */
@@ -263,8 +263,8 @@ export function Sidebar({
           subject={subject}
           knownTopics={knownTopics(subject.id)}
           onClose={() => setShowAdd(false)}
-          onAdd={(name, topic) => {
-            const key = onAddProblem(name, topic);
+          onAdd={(name, topic, section) => {
+            const key = onAddProblem(name, topic, section);
             handleSelect(key);
           }}
         />

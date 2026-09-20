@@ -33,7 +33,7 @@ const slug = (s: string) =>
 
 type Base = Pick<
   SeedProblem,
-  "name" | "link" | "difficulty" | "practice" | "tufPractice" | "kind" | "video"
+  "name" | "link" | "difficulty" | "practice" | "tufPractice" | "section" | "kind" | "video"
 > & {
   topic: string;
 };
@@ -56,6 +56,7 @@ function toProblem(
     customPracticeLink: row?.custom_practice_link ?? "",
     customVideoLink: row?.custom_video_link ?? "",
     customLink: row?.custom_link ?? "",
+    section: row?.custom_section || base.section || "",
     kind: base.kind ?? "concept",
     video: base.video ?? null,
     status: row?.status || "Unsolved",
@@ -109,20 +110,27 @@ export function mergeProblems(
     // Subsections are collected alongside the flat list rather than instead of
     // it: both hold the same Problem objects, so reordering one reorders both.
     const subgroups: SubGroup[] = [];
-    const subByTitle = new Map<string, SubGroup>();
+    const subByTitle = new Map<string, SubGroup>();  // keyed by normTopic(title)
+
+    /** Find or create the subgroup for a title, keeping sheet order. */
+    const subFor = (title: string): SubGroup => {
+      let sub = subByTitle.get(normTopic(title));
+      if (!sub) {
+        sub = { key: `${step.key}::${slug(title)}`, title, problems: [] };
+        subByTitle.set(normTopic(title), sub);
+        subgroups.push(sub);
+      }
+      return sub;
+    };
 
     const problems: Problem[] = step.problems.map((sp, i) => {
-      const p = toProblem(sp.key, rowMap.get(sp.key), { ...sp, topic: step.title }, i);
+      const row = rowMap.get(sp.key);
+      const p = toProblem(sp.key, row, { ...sp, topic: step.title }, i);
       byKey.set(p.key, p);
-      if (sp.section) {
-        let sub = subByTitle.get(sp.section);
-        if (!sub) {
-          sub = { key: `${step.key}::${slug(sp.section)}`, title: sp.section, problems: [] };
-          subByTitle.set(sp.section, sub);
-          subgroups.push(sub);
-        }
-        sub.problems.push(p);
-      }
+      // A section the user picked wins over the sheet's, so any problem can be
+      // moved — same rule as custom_name/custom_topic/custom_link above.
+      const section = row?.custom_section || sp.section;
+      if (section) subFor(section).problems.push(p);
       return p;
     });
 
@@ -143,7 +151,13 @@ export function mergeProblems(
     const p = toProblem(
       row.problem_key,
       row,
-      { name: row.custom_name || "Untitled", topic, link: row.custom_link || "", difficulty: "" },
+      {
+        name: row.custom_name || "Untitled",
+        topic,
+        link: row.custom_link || "",
+        difficulty: "",
+        section: row.custom_section || "",
+      },
       Number.POSITIVE_INFINITY
     );
     byKey.set(p.key, p);
@@ -151,6 +165,13 @@ export function mergeProblems(
     const seedGroup = groupByTopic.get(normTopic(topic));
     if (seedGroup) {
       seedGroup.problems.push(p);
+      // Also place it in the subsection the user chose. An unknown or absent
+      // section leaves it loose at the top of the step, which is the default.
+      const section = p.section;
+      if (section) {
+        const sub = seedGroup.subgroups?.find((sg) => normTopic(sg.title) === normTopic(section));
+        if (sub) sub.problems.push(p);
+      }
       continue;
     }
     let cg = customGroups.get(normTopic(topic));
@@ -180,4 +201,24 @@ export function mergeProblems(
 /** Section titles for a subject, suggested in the topic datalists. */
 export function knownTopics(subject: SubjectId): string[] {
   return Array.from(new Set(SUBJECTS[subject].sheet.steps.map((s) => s.title)));
+}
+
+/**
+ * Subsection titles inside the step whose title matches `topic`, in sheet order.
+ * Empty for a topic the sheet doesn't have — a brand-new custom group, or any
+ * subject whose sections have no second level — which is how the pickers know to
+ * hide themselves.
+ */
+export function knownSections(subject: SubjectId, topic: string): string[] {
+  const step = SUBJECTS[subject].sheet.steps.find((s) => normTopic(s.title) === normTopic(topic || ""));
+  if (!step) return [];
+  const seen = new Set<string>();
+  const out: string[] = [];
+  for (const p of step.problems) {
+    if (p.section && !seen.has(p.section)) {
+      seen.add(p.section);
+      out.push(p.section);
+    }
+  }
+  return out;
 }

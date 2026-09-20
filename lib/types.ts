@@ -85,6 +85,7 @@ export interface UserProblemRow {
   problem_key: string;
   custom_name: string | null;
   custom_topic: string | null;
+  custom_section: string | null;
   custom_link: string | null;
   custom_practice_link: string | null;
   custom_video_link: string | null;
@@ -132,6 +133,9 @@ export interface Problem {
   // The raw custom article URL, before it is folded into `link`. The editor needs
   // it to tell "the user set this" apart from "this came from the sheet".
   customLink: string;
+  // Which subsection of its step this sits in, "" for none. The row's
+  // custom_section overrides the sheet's, so any problem can be moved.
+  section: string;
   // "concept" for every DSA problem and every teaching video; "problem" marks a
   // worked-question video, which the UI dims and the Concepts filter hides.
   kind: EntryKind;

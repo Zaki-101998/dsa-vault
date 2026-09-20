@@ -16,6 +16,7 @@ function blankRow(userId: string, key: string): UserProblemRow {
     problem_key: key,
     custom_name: null,
     custom_topic: null,
+    custom_section: null,
     custom_link: null,
     custom_practice_link: null,
     custom_video_link: null,
@@ -184,6 +185,7 @@ export function useVault(userId: string, subject: SubjectId) {
       patch: {
         custom_name?: string;
         custom_topic?: string;
+        custom_section?: string;
         custom_link?: string;
         custom_practice_link?: string;
         custom_video_link?: string;
@@ -195,20 +197,34 @@ export function useVault(userId: string, subject: SubjectId) {
   );
 
   const addCustomProblem = useCallback(
-    (name: string, topic: string) => {
+    (name: string, topic: string, section = "") => {
       const key = customKey(subject, newApproachId());
       const finalTopic = topic || "Custom";
-      // Land the new problem at the end of its target section by giving it a
+      const norm = (s: string) => s.trim().toLowerCase();
+
+      // Land the new problem at the end of wherever it is going by giving it a
       // position just past the current max — so the ordering survives a reload.
-      const norm = finalTopic.trim().toLowerCase();
+      // Measured against the target SUBSECTION when there is one: membership is
+      // decided by the section, never by the position, so a value that happens to
+      // fall inside a later subsection's range only orders this problem within its
+      // own and can't move it elsewhere.
       const { groups } = mergeProblems(rowsRef.current, subject);
-      const target = groups.find((g) => g.title.trim().toLowerCase() === norm);
+      const step = groups.find((g) => norm(g.title) === norm(finalTopic));
+      const sub = section
+        ? step?.subgroups?.find((sg) => norm(sg.title) === norm(section))
+        : undefined;
+      const target = sub ?? step;
       const maxFinite = target
         ? target.problems.reduce((m, p) => (Number.isFinite(p.sortIndex) ? Math.max(m, p.sortIndex) : m), -1)
         : -1;
+
       updateRow(key, {
         custom_name: name || "Untitled",
         custom_topic: finalTopic,
+        // Omit rather than send undefined: the patch is spread over the row, and an
+        // explicit undefined would shadow blankRow's null and then vanish in the
+        // upsert's JSON — leaving insert and update disagreeing about the column.
+        ...(section ? { custom_section: section } : {}),
         position: maxFinite + 1,
       });
       return key;
@@ -275,6 +291,7 @@ export function useVault(userId: string, subject: SubjectId) {
         problem_key: r.problem_key,
         custom_name: r.custom_name ?? null,
         custom_topic: r.custom_topic ?? null,
+        custom_section: r.custom_section ?? null,
         custom_link: r.custom_link ?? null,
         custom_practice_link: r.custom_practice_link ?? null,
         custom_video_link: r.custom_video_link ?? null,

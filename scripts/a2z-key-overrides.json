@@ -1,0 +1,41 @@
+{
+  "_comment": [
+    "Hand-curated old-key -> new-item-slug pairings, applied after the automatic",
+    "matcher in build-a2z-sheet.mjs and beating it. Every entry here is the SAME",
+    "problem under a new name in Striver's Sept 2026 rewrite — without them these",
+    "would look like problems he deleted, and the saved notes/code would be carried",
+    "in as a near-duplicate row alongside his renamed one.",
+    "Keys on the left are from scripts/a2z-sheet-legacy.json; on the right, the",
+    "`slug` of the item in scripts/tuf-a2z-v2.cache.json.",
+    "Some are here not because the name changed but because the automatic match",
+    "went to the wrong entry: Morris traversals and \"how many times is the array",
+    "rotated\" share a LeetCode link with a different problem, so the practice-link",
+    "tier claimed them and left Striver's real entry looking brand new — two rows",
+    "for one problem."
+  ],
+
+  "step-02-learn-important-sorting-techniques__insertion-sort": "insertion-sorting",
+  "step-02-learn-important-sorting-techniques__merge-sort": "merge-sorting",
+
+  "step-03-solve-problems-on-arrays__find-the-union": "union-of-two-sorted-arrays",
+  "step-03-solve-problems-on-arrays__kadane-s-algorithm-maximum-subarray-sum": "kadane's-algorithm",
+  "step-03-solve-problems-on-arrays__left-rotate-an-array-by-d-places": "left-rotate-array",
+
+  "step-04-binary-search__find-peak-element-2d-matrix": "find-peak-element-ii",
+  "step-04-binary-search__find-out-how-many-times-has-an-array-been-rotated": "find-out-how-many-times-the-array-is-rotated",
+
+  "step-13-binary-trees__introduction-to-trees": "introduction-",
+  "step-13-binary-trees__preorder-inorder-and-postorder-traversal-in-one-traversal": "pre,-post,-inorder-in-one-traversal",
+  "step-13-binary-trees__boundary-traversal-of-binary-tree": "boundary-traversal",
+  "step-13-binary-trees__top-view-of-binary-tree": "top-view-of-bt",
+  "step-13-binary-trees__bottom-view-of-binary-tree": "bottom-view-of-bt",
+  "step-13-binary-trees__check-for-children-sum-property": "children-sum-property-in-binary-tree",
+  "step-13-binary-trees__requirements-needed-to-construct-a-unique-binary-tree-theory": "requirements-needed-to-construct-a-unique-bt",
+  "step-13-binary-trees__morris-inorder-traversal-of-a-binary-tree": "morris-inorder-traversal-",
+  "step-13-binary-trees__morris-preorder-traversal-of-a-binary-tree": "morris-preorder-traversal-",
+
+  "step-15-graphs__graph-and-types": "introduction-to-graph",
+  "step-15-graphs__topo-sort": "topological-sort-or-kahns-algorithm",
+  "step-15-graphs__shortest-path-in-ug-with-unit-weights": "shortest-path-in-undirected-graph-with-unit-weights",
+  "step-15-graphs__djisktra-s-algorithm": "dijkstra's-algorithm"
+}

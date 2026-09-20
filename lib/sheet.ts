@@ -1,5 +1,13 @@
 import { SUBJECTS, isCustomKey, subjectOf } from "./subjects";
-import type { Approach, Problem, SeedProblem, SubjectId, TopicGroup, UserProblemRow } from "./types";
+import type {
+  Approach,
+  Problem,
+  SeedProblem,
+  SubGroup,
+  SubjectId,
+  TopicGroup,
+  UserProblemRow,
+} from "./types";
 
 export function newApproachId(): string {
   return typeof crypto !== "undefined" && "randomUUID" in crypto
@@ -16,6 +24,12 @@ export function defaultApproaches(): Approach[] {
 function toEpoch(iso: string | null | undefined): number | null {
   return iso ? new Date(iso).getTime() : null;
 }
+
+const slug = (s: string) =>
+  s
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, "-")
+    .replace(/^-+|-+$/g, "");
 
 type Base = Pick<SeedProblem, "name" | "link" | "difficulty" | "practice" | "kind" | "video"> & {
   topic: string;
@@ -85,12 +99,28 @@ export function mergeProblems(
   const groupByTopic = new Map<string, TopicGroup>();
 
   for (const step of sheet.steps) {
+    // Subsections are collected alongside the flat list rather than instead of
+    // it: both hold the same Problem objects, so reordering one reorders both.
+    const subgroups: SubGroup[] = [];
+    const subByTitle = new Map<string, SubGroup>();
+
     const problems: Problem[] = step.problems.map((sp, i) => {
       const p = toProblem(sp.key, rowMap.get(sp.key), { ...sp, topic: step.title }, i);
       byKey.set(p.key, p);
+      if (sp.section) {
+        let sub = subByTitle.get(sp.section);
+        if (!sub) {
+          sub = { key: `${step.key}::${slug(sp.section)}`, title: sp.section, problems: [] };
+          subByTitle.set(sp.section, sub);
+          subgroups.push(sub);
+        }
+        sub.problems.push(p);
+      }
       return p;
     });
+
     const group: TopicGroup = { key: step.key, title: step.title, order: step.order, problems };
+    if (subgroups.length) group.subgroups = subgroups;
     if (step.note) group.note = step.note;
     groups.push(group);
     groupByTopic.set(normTopic(step.title), group);
@@ -125,8 +155,17 @@ export function mergeProblems(
     cg.problems.push(p);
   }
 
-  // Order each group's problems by their effective sort index.
-  for (const g of groups) g.problems = bySortIndex(g.problems);
+  // Order each group's problems by their effective sort index, and re-derive each
+  // subsection's order from the sorted flat list so a drag inside a subsection and
+  // the step's own ordering never disagree.
+  for (const g of groups) {
+    g.problems = bySortIndex(g.problems);
+    if (!g.subgroups) continue;
+    const rank = new Map(g.problems.map((p, i) => [p.key, i] as const));
+    for (const sub of g.subgroups) {
+      sub.problems.sort((a, b) => (rank.get(a.key) ?? 0) - (rank.get(b.key) ?? 0));
+    }
+  }
 
   return { groups, byKey };
 }

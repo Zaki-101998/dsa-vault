@@ -210,7 +210,11 @@ export function useVault(userId: string, subject: SubjectId) {
     (groupKey: string, activeKey: string, overKey: string) => {
       if (activeKey === overKey) return;
       const { groups } = mergeProblems(rowsRef.current, subject);
-      const group = groups.find((g) => g.key === groupKey);
+      // `groupKey` is a step key, or a subsection key when the list is dragging
+      // inside one — reorder within whichever list the row was dragged in.
+      const group =
+        groups.find((g) => g.key === groupKey) ??
+        groups.flatMap((g) => g.subgroups ?? []).find((sg) => sg.key === groupKey);
       if (!group) return;
       const arr = group.problems;
       const oldIndex = arr.findIndex((p) => p.key === activeKey);

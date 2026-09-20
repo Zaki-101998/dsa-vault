@@ -1,0 +1,2090 @@
+{
+  "step-01-learn-the-basics__java-collections": {
+    "newItem": "java-collections",
+    "via": "exact",
+    "score": 1,
+    "merged": false
+  },
+  "step-01-learn-the-basics__count-digits": {
+    "newItem": "count-all-digits-of-a-number",
+    "via": "fuzzy",
+    "score": 0.67,
+    "merged": false
+  },
+  "step-01-learn-the-basics__reverse-a-number": {
+    "newItem": "reverse-a-number",
+    "via": "exact",
+    "score": 1,
+    "merged": false
+  },
+  "step-01-learn-the-basics__check-for-prime": {
+    "newItem": "check-for-prime-number",
+    "via": "fuzzy",
+    "score": 1,
+    "merged": false
+  },
+  "step-03-solve-problems-on-arrays__check-if-the-array-is-sorted": {
+    "newItem": "check-if-the-array-is-sorted-i",
+    "via": "fuzzy",
+    "score": 0.8,
+    "merged": false
+  },
+  "step-01-learn-the-basics__reverse-an-array": {
+    "newItem": "reverse-an-array",
+    "via": "exact",
+    "score": 1,
+    "merged": false
+  },
+  "step-01-learn-the-basics__check-palindrome": {
+    "newItem": "palindrome-check",
+    "via": "fuzzy",
+    "score": 1,
+    "merged": false
+  },
+  "step-05-strings__largest-odd-number-in-a-string": {
+    "newItem": "largest-odd-number-in-a-string",
+    "via": "exact",
+    "score": 1,
+    "merged": false
+  },
+  "step-05-strings__longest-common-prefix": {
+    "newItem": "longest-common-prefix",
+    "via": "exact",
+    "score": 1,
+    "merged": false
+  },
+  "step-05-strings__isomorphic-string": {
+    "newItem": "isomorphic-string",
+    "via": "practice",
+    "score": 1,
+    "merged": false
+  },
+  "step-05-strings__check-whether-one-string-is-a-rotation-of-another": {
+    "newItem": "rotate-string",
+    "via": "practice",
+    "score": 1,
+    "merged": false
+  },
+  "step-05-strings__check-if-two-strings-are-anagram-of-each-other": {
+    "newItem": "valid-anagram",
+    "via": "practice",
+    "score": 1,
+    "merged": false
+  },
+  "step-05-strings__sort-characters-by-frequency": {
+    "newItem": "sort-characters-by-frequency",
+    "via": "exact",
+    "score": 1,
+    "merged": false
+  },
+  "step-01-learn-the-basics__sum-of-first-n-numbers": {
+    "newItem": "sum-of-first-n-numbers",
+    "via": "exact",
+    "score": 1,
+    "merged": false
+  },
+  "step-01-learn-the-basics__check-if-a-string-is-palindrome-or-not": {
+    "newItem": "check-if-string-is-palindrome-or-not-",
+    "via": "practice",
+    "score": 1,
+    "merged": false
+  },
+  "step-08-bit-manipulation__check-if-a-number-is-odd-or-not": {
+    "newItem": "check-if-a-number-is-prime-or-not",
+    "via": "fuzzy",
+    "score": 0.67,
+    "merged": false
+  },
+  "step-01-learn-the-basics__fibonacci-number": {
+    "newItem": "fibonacci-number",
+    "via": "exact",
+    "score": 1,
+    "merged": false
+  },
+  "step-02-learn-important-sorting-techniques__selection-sort": {
+    "newItem": "selection-sort",
+    "via": "exact",
+    "score": 1,
+    "merged": false
+  },
+  "step-02-learn-important-sorting-techniques__bubble-sort": {
+    "newItem": "bubble-sort",
+    "via": "exact",
+    "score": 1,
+    "merged": true
+  },
+  "step-02-learn-important-sorting-techniques__recursive-bubble-sort": {
+    "newItem": "bubble-sort",
+    "via": "fuzzy",
+    "score": 0.67,
+    "merged": true
+  },
+  "step-02-learn-important-sorting-techniques__insertion-sort": {
+    "newItem": "insertion-sorting",
+    "via": "override",
+    "score": 1,
+    "merged": false
+  },
+  "step-02-learn-important-sorting-techniques__merge-sort": {
+    "newItem": "merge-sorting",
+    "via": "override",
+    "score": 1,
+    "merged": false
+  },
+  "step-03-solve-problems-on-arrays__linear-search": {
+    "newItem": "linear-search",
+    "via": "exact",
+    "score": 1,
+    "merged": false
+  },
+  "step-03-solve-problems-on-arrays__largest-element-in-an-array": {
+    "newItem": "largest-element",
+    "via": "fuzzy",
+    "score": 1,
+    "merged": false
+  },
+  "step-03-solve-problems-on-arrays__second-largest-element-in-an-array-without-sorting": {
+    "newItem": "second-largest-element",
+    "via": "fuzzy",
+    "score": 0.6,
+    "merged": false
+  },
+  "step-03-solve-problems-on-arrays__maximum-consecutive-ones": {
+    "newItem": "maximum-consecutive-ones",
+    "via": "exact",
+    "score": 1,
+    "merged": false
+  },
+  "step-03-solve-problems-on-arrays__left-rotate-an-array-by-one-place": {
+    "newItem": "left-rotate-array-by-one",
+    "via": "fuzzy",
+    "score": 0.8,
+    "merged": false
+  },
+  "step-03-solve-problems-on-arrays__left-rotate-an-array-by-d-places": {
+    "newItem": "left-rotate-array",
+    "via": "override",
+    "score": 1,
+    "merged": false
+  },
+  "step-03-solve-problems-on-arrays__move-zeros-to-end": {
+    "newItem": "move-zeros-to-end",
+    "via": "exact",
+    "score": 1,
+    "merged": false
+  },
+  "step-03-solve-problems-on-arrays__remove-duplicates-from-sorted-array": {
+    "newItem": "remove-duplicates-from-sorted-array",
+    "via": "exact",
+    "score": 1,
+    "merged": false
+  },
+  "step-03-solve-problems-on-arrays__find-missing-number-in-an-array": {
+    "newItem": "find-missing-number",
+    "via": "fuzzy",
+    "score": 1,
+    "merged": false
+  },
+  "step-03-solve-problems-on-arrays__find-the-union": {
+    "newItem": "union-of-two-sorted-arrays",
+    "via": "override",
+    "score": 1,
+    "merged": false
+  },
+  "step-03-solve-problems-on-arrays__majority-element-n-2-times": {
+    "newItem": "majority-element-i",
+    "via": "practice",
+    "score": 1,
+    "merged": false
+  },
+  "step-03-solve-problems-on-arrays__leaders-in-an-array-problem": {
+    "newItem": "leaders-in-an-array",
+    "via": "fuzzy",
+    "score": 1,
+    "merged": false
+  },
+  "step-03-solve-problems-on-arrays__rearrange-the-array-in-alternating-positive-and-negative-items": {
+    "newItem": "rearrange-array-elements-by-sign",
+    "via": "practice",
+    "score": 1,
+    "merged": false
+  },
+  "step-03-solve-problems-on-arrays__print-the-matrix-in-spiral-manner": {
+    "newItem": "print-the-matrix-in-spiral-manner",
+    "via": "exact",
+    "score": 1,
+    "merged": false
+  },
+  "step-03-solve-problems-on-arrays__pascal-s-triangle": {
+    "newItem": "pascals-triangle-i",
+    "via": "practice",
+    "score": 1,
+    "merged": false
+  },
+  "step-03-solve-problems-on-arrays__rotate-matrix-by-90-degrees": {
+    "newItem": "rotate-matrix-by-90-degrees",
+    "via": "exact",
+    "score": 1,
+    "merged": false
+  },
+  "step-03-solve-problems-on-arrays__set-matrix-zeros": {
+    "newItem": "set-matrix-zeroes",
+    "via": "practice",
+    "score": 1,
+    "merged": false
+  },
+  "step-03-solve-problems-on-arrays__2sum-problem": {
+    "newItem": "two-sum",
+    "via": "practice",
+    "score": 1,
+    "merged": false
+  },
+  "step-03-solve-problems-on-arrays__3-sum-problem": {
+    "newItem": "3-sum",
+    "via": "practice",
+    "score": 1,
+    "merged": false
+  },
+  "step-03-solve-problems-on-arrays__4-sum-problem": {
+    "newItem": "4-sum",
+    "via": "practice",
+    "score": 1,
+    "merged": false
+  },
+  "step-03-solve-problems-on-arrays__sort-an-array-of-0-s-1-s-and-2-s": {
+    "newItem": "sort-an-array-of-0's-1's-and-2's",
+    "via": "exact",
+    "score": 1,
+    "merged": false
+  },
+  "step-03-solve-problems-on-arrays__kadane-s-algorithm-maximum-subarray-sum": {
+    "newItem": "kadane's-algorithm",
+    "via": "override",
+    "score": 1,
+    "merged": false
+  },
+  "step-03-solve-problems-on-arrays__next-permutation": {
+    "newItem": "next-permutation",
+    "via": "exact",
+    "score": 1,
+    "merged": false
+  },
+  "step-03-solve-problems-on-arrays__majority-element-n-3-times": {
+    "newItem": "majority-element-ii",
+    "via": "practice",
+    "score": 1,
+    "merged": false
+  },
+  "step-03-solve-problems-on-arrays__find-the-repeating-and-missing-number": {
+    "newItem": "find-the-repeating-and-missing-number",
+    "via": "exact",
+    "score": 1,
+    "merged": false
+  },
+  "step-03-solve-problems-on-arrays__count-inversions": {
+    "newItem": "count-inversions",
+    "via": "exact",
+    "score": 1,
+    "merged": false
+  },
+  "step-03-solve-problems-on-arrays__reverse-pairs": {
+    "newItem": "reverse-pairs",
+    "via": "exact",
+    "score": 1,
+    "merged": false
+  },
+  "step-03-solve-problems-on-arrays__maximum-product-subarray": {
+    "newItem": "maximum-product-subarray-in-an-array",
+    "via": "practice",
+    "score": 1,
+    "merged": false
+  },
+  "step-03-solve-problems-on-arrays__merge-two-sorted-arrays-without-extra-space": {
+    "newItem": "merge-two-sorted-arrays-without-extra-space",
+    "via": "exact",
+    "score": 1,
+    "merged": false
+  },
+  "step-03-solve-problems-on-arrays__longest-consecutive-sequence-in-an-array": {
+    "newItem": "longest-consecutive-sequence-in-an-array",
+    "via": "exact",
+    "score": 1,
+    "merged": false
+  },
+  "step-03-solve-problems-on-arrays__longest-subarray-with-given-sum-k-positives": {
+    "newItem": "longest-subarray-with-sum-k",
+    "via": "fuzzy",
+    "score": 1,
+    "merged": true
+  },
+  "step-03-solve-problems-on-arrays__longest-subarray-with-sum-k-positives-negatives": {
+    "newItem": "longest-subarray-with-sum-k",
+    "via": "exact",
+    "score": 1,
+    "merged": true
+  },
+  "step-03-solve-problems-on-arrays__largest-subarray-with-0-sum": {
+    "newItem": "largest-subarray-with-sum-0",
+    "via": "fuzzy",
+    "score": 1,
+    "merged": false
+  },
+  "step-03-solve-problems-on-arrays__count-subarrays-with-given-sum": {
+    "newItem": "count-subarrays-with-given-sum",
+    "via": "exact",
+    "score": 1,
+    "merged": false
+  },
+  "step-03-solve-problems-on-arrays__count-number-of-subarrays-with-given-xor-k": {
+    "newItem": "count-subarrays-with-given-xor-k",
+    "via": "fuzzy",
+    "score": 1,
+    "merged": false
+  },
+  "step-04-binary-search__binary-search-to-find-x-in-sorted-array": {
+    "newItem": "search-x-in-sorted-array",
+    "via": "practice",
+    "score": 1,
+    "merged": false
+  },
+  "step-04-binary-search__implement-lower-bound": {
+    "newItem": "lower-bound-",
+    "via": "fuzzy",
+    "score": 0.67,
+    "merged": false
+  },
+  "step-04-binary-search__implement-upper-bound": {
+    "newItem": "upper-bound",
+    "via": "fuzzy",
+    "score": 0.67,
+    "merged": false
+  },
+  "step-04-binary-search__search-insert-position": {
+    "newItem": "search-insert-position",
+    "via": "exact",
+    "score": 1,
+    "merged": false
+  },
+  "step-04-binary-search__floor-ceil-in-sorted-array": {
+    "newItem": "floor-and-ceil-in-sorted-array",
+    "via": "fuzzy",
+    "score": 1,
+    "merged": false
+  },
+  "step-04-binary-search__find-the-first-or-last-occurrence-of-a-given-number-in-a-sorted-array": {
+    "newItem": "first-and-last-occurrence",
+    "via": "practice",
+    "score": 1,
+    "merged": true
+  },
+  "step-04-binary-search__count-occurrences-of-a-number-in-a-sorted-array-with-duplicates": {
+    "newItem": "first-and-last-occurrence",
+    "via": "practice",
+    "score": 1,
+    "merged": true
+  },
+  "step-04-binary-search__search-in-rotated-sorted-array-i": {
+    "newItem": "search-in-rotated-sorted-array-i",
+    "via": "exact",
+    "score": 1,
+    "merged": false
+  },
+  "step-04-binary-search__search-in-rotated-sorted-array-ii": {
+    "newItem": "search-in-rotated-sorted-array-2",
+    "via": "exact",
+    "score": 1,
+    "merged": false
+  },
+  "step-04-binary-search__find-minimum-in-rotated-sorted-array": {
+    "newItem": "find-minimum-in-rotated-sorted-array",
+    "via": "exact",
+    "score": 1,
+    "merged": false
+  },
+  "step-04-binary-search__find-out-how-many-times-has-an-array-been-rotated": {
+    "newItem": "find-out-how-many-times-the-array-is-rotated",
+    "via": "override",
+    "score": 1,
+    "merged": false
+  },
+  "step-04-binary-search__single-element-in-a-sorted-array": {
+    "newItem": "single-element-in-sorted-array",
+    "via": "practice",
+    "score": 1,
+    "merged": false
+  },
+  "step-04-binary-search__find-square-root-of-a-number-in-log-n": {
+    "newItem": "find-square-root-of-a-number",
+    "via": "fuzzy",
+    "score": 0.6,
+    "merged": false
+  },
+  "step-04-binary-search__find-the-nth-root-of-a-number-using-binary-search": {
+    "newItem": "find-nth-root-of-a-number",
+    "via": "fuzzy",
+    "score": 0.6,
+    "merged": false
+  },
+  "step-04-binary-search__find-the-smallest-divisor": {
+    "newItem": "find-the-smallest-divisor",
+    "via": "exact",
+    "score": 1,
+    "merged": false
+  },
+  "step-04-binary-search__koko-eating-bananas": {
+    "newItem": "koko-eating-bananas",
+    "via": "exact",
+    "score": 1,
+    "merged": false
+  },
+  "step-04-binary-search__minimum-days-to-make-m-bouquets": {
+    "newItem": "minimum-days-to-make-m-bouquets",
+    "via": "exact",
+    "score": 1,
+    "merged": false
+  },
+  "step-04-binary-search__capacity-to-ship-packages-within-d-days": {
+    "newItem": "capacity-to-ship-packages-within-d-days",
+    "via": "exact",
+    "score": 1,
+    "merged": false
+  },
+  "step-04-binary-search__kth-missing-positive-number": {
+    "newItem": "kth-missing-positive-number",
+    "via": "exact",
+    "score": 1,
+    "merged": false
+  },
+  "step-04-binary-search__painter-s-partition": {
+    "newItem": "painters-partition",
+    "via": "exact",
+    "score": 1,
+    "merged": false
+  },
+  "step-04-binary-search__aggressive-cows": {
+    "newItem": "aggressive-cows",
+    "via": "exact",
+    "score": 1,
+    "merged": false
+  },
+  "step-04-binary-search__book-allocation-problem": {
+    "newItem": "book-allocation-problem",
+    "via": "exact",
+    "score": 1,
+    "merged": false
+  },
+  "step-04-binary-search__find-peak-element": {
+    "newItem": "find-peak-element",
+    "via": "exact",
+    "score": 1,
+    "merged": false
+  },
+  "step-04-binary-search__median-of-2-sorted-arrays": {
+    "newItem": "median-of-2-sorted-arrays",
+    "via": "exact",
+    "score": 1,
+    "merged": false
+  },
+  "step-04-binary-search__kth-element-of-2-sorted-arrays": {
+    "newItem": "kth-element-of-2-sorted-arrays",
+    "via": "exact",
+    "score": 1,
+    "merged": false
+  },
+  "step-04-binary-search__minimize-max-distance-to-gas-station": {
+    "newItem": "minimise-max-distance-to-gas-stations",
+    "via": "exact",
+    "score": 1,
+    "merged": false
+  },
+  "step-04-binary-search__split-array-largest-sum": {
+    "newItem": "split-array---largest-sum",
+    "via": "exact",
+    "score": 1,
+    "merged": false
+  },
+  "step-04-binary-search__find-the-row-with-maximum-number-of-1-s": {
+    "newItem": "find-row-with-maximum-1's",
+    "via": "fuzzy",
+    "score": 1,
+    "merged": false
+  },
+  "step-04-binary-search__search-in-a-2-d-matrix": {
+    "newItem": "search-in-a-2d-matrix",
+    "via": "exact",
+    "score": 1,
+    "merged": false
+  },
+  "step-04-binary-search__search-in-a-row-and-column-wise-sorted-matrix": {
+    "newItem": "search-in-2d-matrix-ii",
+    "via": "practice",
+    "score": 1,
+    "merged": false
+  },
+  "step-04-binary-search__find-peak-element-2d-matrix": {
+    "newItem": "find-peak-element-ii",
+    "via": "override",
+    "score": 1,
+    "merged": false
+  },
+  "step-04-binary-search__matrix-median": {
+    "newItem": "matrix-median",
+    "via": "exact",
+    "score": 1,
+    "merged": false
+  },
+  "step-07-recursion__pow-x-n": {
+    "newItem": "pow(x,n)",
+    "via": "exact",
+    "score": 1,
+    "merged": true
+  },
+  "step-08-bit-manipulation__power-n-x": {
+    "newItem": "pow(x,n)",
+    "via": "practice",
+    "score": 1,
+    "merged": true
+  },
+  "step-07-recursion__generate-paranthesis": {
+    "newItem": "generate-parentheses",
+    "via": "practice",
+    "score": 1,
+    "merged": false
+  },
+  "step-08-bit-manipulation__power-set": {
+    "newItem": "power-set",
+    "via": "exact",
+    "score": 1,
+    "merged": false
+  },
+  "step-07-recursion__check-if-there-exists-a-subsequence-with-sum-k": {
+    "newItem": "check-if-there-exists-a-subsequence-with-sum-k",
+    "via": "exact",
+    "score": 1,
+    "merged": false
+  },
+  "step-07-recursion__count-all-subsequences-with-sum-k": {
+    "newItem": "count-all-subsequences-with-sum-k",
+    "via": "exact",
+    "score": 1,
+    "merged": false
+  },
+  "step-07-recursion__combination-sum": {
+    "newItem": "combination-sum",
+    "via": "exact",
+    "score": 1,
+    "merged": true
+  },
+  "step-11-heaps__maximum-sum-combination": {
+    "newItem": "combination-sum",
+    "via": "fuzzy",
+    "score": 0.67,
+    "merged": true
+  },
+  "step-07-recursion__combination-sum-ii": {
+    "newItem": "combination-sum-ii",
+    "via": "exact",
+    "score": 1,
+    "merged": false
+  },
+  "step-07-recursion__subset-sum-ii": {
+    "newItem": "subsets-ii",
+    "via": "practice",
+    "score": 1,
+    "merged": false
+  },
+  "step-07-recursion__combination-sum-iii": {
+    "newItem": "combination-sum-iii",
+    "via": "exact",
+    "score": 1,
+    "merged": false
+  },
+  "step-07-recursion__letter-combinations-of-a-phone-number": {
+    "newItem": "letter-combinations-of-a-phone-number",
+    "via": "exact",
+    "score": 1,
+    "merged": false
+  },
+  "step-07-recursion__palindrome-partitioning": {
+    "newItem": "palindrome-partitioning",
+    "via": "exact",
+    "score": 1,
+    "merged": false
+  },
+  "step-07-recursion__word-search": {
+    "newItem": "word-search",
+    "via": "exact",
+    "score": 1,
+    "merged": false
+  },
+  "step-07-recursion__n-queen": {
+    "newItem": "n-queen",
+    "via": "exact",
+    "score": 1,
+    "merged": false
+  },
+  "step-07-recursion__rat-in-a-maze": {
+    "newItem": "rat-in-a-maze",
+    "via": "exact",
+    "score": 1,
+    "merged": false
+  },
+  "step-07-recursion__m-coloring-problem": {
+    "newItem": "m-coloring-problem",
+    "via": "exact",
+    "score": 1,
+    "merged": false
+  },
+  "step-07-recursion__sudoko-solver": {
+    "newItem": "sudoko-solver",
+    "via": "practice",
+    "score": 1,
+    "merged": false
+  },
+  "step-06-learn-linkedlist__deleting-a-node-in-linkedlist": {
+    "newItem": "deletion-of-the-head-of-ll",
+    "via": "practice",
+    "score": 1,
+    "merged": false
+  },
+  "step-06-learn-linkedlist__delete-a-node-in-dll": {
+    "newItem": "delete-tail-of-dll",
+    "via": "fuzzy",
+    "score": 0.67,
+    "merged": false
+  },
+  "step-06-learn-linkedlist__insert-a-node-in-dll": {
+    "newItem": "insert-node-before-kth-node-in-dll",
+    "via": "fuzzy",
+    "score": 0.83,
+    "merged": false
+  },
+  "step-06-learn-linkedlist__add-2-numbers-in-ll": {
+    "newItem": "add-two-numbers-in-ll",
+    "via": "practice",
+    "score": 1,
+    "merged": false
+  },
+  "step-06-learn-linkedlist__segrregate-odd-and-even-nodes-in-ll": {
+    "newItem": "segregate-odd-and-even-nodes-in-ll",
+    "via": "practice",
+    "score": 1,
+    "merged": false
+  },
+  "step-06-learn-linkedlist__sort-a-ll-of-0-s-1-s-and-2-s-by-changing-links": {
+    "newItem": "sort-a-ll-of-0's-1's-and-2's",
+    "via": "fuzzy",
+    "score": 0.7,
+    "merged": false
+  },
+  "step-06-learn-linkedlist__remove-nth-node-from-the-back-of-the-ll": {
+    "newItem": "remove-nth-node-from-the-back-of-the-ll",
+    "via": "exact",
+    "score": 1,
+    "merged": false
+  },
+  "step-06-learn-linkedlist__reverse-a-dll": {
+    "newItem": "reverse-a-ll",
+    "via": "fuzzy",
+    "score": 0.75,
+    "merged": true
+  },
+  "step-06-learn-linkedlist__reverse-a-linkedlist-iterative": {
+    "newItem": "reverse-a-ll",
+    "via": "exact",
+    "score": 1,
+    "merged": true
+  },
+  "step-06-learn-linkedlist__reverse-a-ll-recursive": {
+    "newItem": "reverse-a-ll",
+    "via": "exact",
+    "score": 1,
+    "merged": true
+  },
+  "step-06-learn-linkedlist__add-1-to-a-number-represented-by-ll": {
+    "newItem": "add-one-to-a-number-represented-by-ll",
+    "via": "fuzzy",
+    "score": 0.71,
+    "merged": false
+  },
+  "step-06-learn-linkedlist__middle-of-a-linkedlist-tortoisehare-method": {
+    "newItem": "find-middle-of-linked-list",
+    "via": "practice",
+    "score": 1,
+    "merged": false
+  },
+  "step-06-learn-linkedlist__delete-the-middle-node-of-ll": {
+    "newItem": "delete-the-middle-node-in-ll",
+    "via": "practice",
+    "score": 1,
+    "merged": false
+  },
+  "step-06-learn-linkedlist__check-if-ll-is-palindrome-or-not": {
+    "newItem": "check-if-ll-is-palindrome-or-not",
+    "via": "exact",
+    "score": 1,
+    "merged": false
+  },
+  "step-06-learn-linkedlist__find-the-intersection-point-of-y-ll": {
+    "newItem": "find-the-intersection-point-of-y-ll",
+    "via": "exact",
+    "score": 1,
+    "merged": false
+  },
+  "step-06-learn-linkedlist__detect-a-loop-in-ll": {
+    "newItem": "detect-a-loop-in-ll",
+    "via": "exact",
+    "score": 1,
+    "merged": false
+  },
+  "step-06-learn-linkedlist__find-the-starting-point-in-ll": {
+    "newItem": "find-the-starting-point-in-ll",
+    "via": "exact",
+    "score": 1,
+    "merged": false
+  },
+  "step-06-learn-linkedlist__length-of-loop-in-ll": {
+    "newItem": "length-of-loop-in-ll",
+    "via": "exact",
+    "score": 1,
+    "merged": false
+  },
+  "step-06-learn-linkedlist__reverse-ll-in-group-of-given-size-k": {
+    "newItem": "reverse-ll-in-group-of-given-size-k",
+    "via": "exact",
+    "score": 1,
+    "merged": false
+  },
+  "step-06-learn-linkedlist__rotate-a-ll": {
+    "newItem": "rotate-a-ll",
+    "via": "exact",
+    "score": 1,
+    "merged": false
+  },
+  "step-11-heaps__merge-m-sorted-lists": {
+    "newItem": "merge-sorted-lists-",
+    "via": "fuzzy",
+    "score": 0.6,
+    "merged": false
+  },
+  "step-06-learn-linkedlist__flattening-of-ll": {
+    "newItem": "flattening-of-ll",
+    "via": "exact",
+    "score": 1,
+    "merged": false
+  },
+  "step-06-learn-linkedlist__sort-ll": {
+    "newItem": "sort-ll",
+    "via": "exact",
+    "score": 1,
+    "merged": false
+  },
+  "step-06-learn-linkedlist__clone-a-linked-list-with-random-and-next-pointer": {
+    "newItem": "clone-a-ll-with-random-and-next-pointer",
+    "via": "exact",
+    "score": 1,
+    "merged": false
+  },
+  "step-06-learn-linkedlist__delete-all-occurrences-of-a-key-in-dll": {
+    "newItem": "delete-all-occurrences-of-a-key-in-dll",
+    "via": "exact",
+    "score": 1,
+    "merged": false
+  },
+  "step-06-learn-linkedlist__remove-duplicates-from-sorted-dll": {
+    "newItem": "remove-duplicated-from-sorted-dll",
+    "via": "exact",
+    "score": 1,
+    "merged": false
+  },
+  "step-06-learn-linkedlist__find-pairs-with-given-sum-in-dll": {
+    "newItem": "find-pairs-with-given-sum-in-doubly-linked-list",
+    "via": "exact",
+    "score": 1,
+    "merged": false
+  },
+  "step-08-bit-manipulation__count-number-of-bits-to-be-flipped-to-convert-a-to-b": {
+    "newItem": "minimum-bit-flips-to-convert-number",
+    "via": "practice",
+    "score": 1,
+    "merged": false
+  },
+  "step-03-solve-problems-on-arrays__find-the-number-that-appears-once-and-other-numbers-twice": {
+    "newItem": "single-number---i",
+    "via": "practice",
+    "score": 1,
+    "merged": true
+  },
+  "step-08-bit-manipulation__find-the-number-that-appears-odd-number-of-times": {
+    "newItem": "single-number---i",
+    "via": "practice",
+    "score": 1,
+    "merged": true
+  },
+  "step-08-bit-manipulation__divide-two-integers-without-using-multiplication-division-and-mod-operator": {
+    "newItem": "divide-two-numbers-without-multiplication-and-division",
+    "via": "practice",
+    "score": 1,
+    "merged": false
+  },
+  "step-07-recursion__print-all-subsequences-power-set": {
+    "newItem": "power-set-bit-manipulation",
+    "via": "practice",
+    "score": 1,
+    "merged": false
+  },
+  "step-12-greedy-algorithms__assign-cookies": {
+    "newItem": "assign-cookies",
+    "via": "exact",
+    "score": 1,
+    "merged": true
+  },
+  "step-16-dynamic-programming__assign-cookies": {
+    "newItem": "assign-cookies",
+    "via": "exact",
+    "score": 1,
+    "merged": true
+  },
+  "step-12-greedy-algorithms__lemonade-change": {
+    "newItem": "lemonade-change",
+    "via": "exact",
+    "score": 1,
+    "merged": false
+  },
+  "step-12-greedy-algorithms__fractional-knapsack-problem": {
+    "newItem": "fractional-knapsack",
+    "via": "fuzzy",
+    "score": 1,
+    "merged": false
+  },
+  "step-12-greedy-algorithms__jump-game": {
+    "newItem": "jump-game---i",
+    "via": "practice",
+    "score": 1,
+    "merged": false
+  },
+  "step-12-greedy-algorithms__job-sequencing-problem": {
+    "newItem": "job-sequencing-problem",
+    "via": "exact",
+    "score": 1,
+    "merged": false
+  },
+  "step-12-greedy-algorithms__n-meetings-in-one-room": {
+    "newItem": "n-meetings-in-one-room",
+    "via": "exact",
+    "score": 1,
+    "merged": false
+  },
+  "step-12-greedy-algorithms__non-overlapping-intervals": {
+    "newItem": "non-overlapping-intervals",
+    "via": "exact",
+    "score": 1,
+    "merged": false
+  },
+  "step-12-greedy-algorithms__insert-interval": {
+    "newItem": "insert-interval",
+    "via": "exact",
+    "score": 1,
+    "merged": false
+  },
+  "step-03-solve-problems-on-arrays__merge-overlapping-subintervals": {
+    "newItem": "merge-intervals",
+    "via": "practice",
+    "score": 1,
+    "merged": true
+  },
+  "step-12-greedy-algorithms__merge-intervals": {
+    "newItem": "merge-intervals",
+    "via": "exact",
+    "score": 1,
+    "merged": true
+  },
+  "step-12-greedy-algorithms__minimum-number-of-platforms-required-for-a-railway": {
+    "newItem": "minimum-number-of-platforms-required-for-a-railway",
+    "via": "exact",
+    "score": 1,
+    "merged": false
+  },
+  "step-12-greedy-algorithms__valid-paranthesis-checker": {
+    "newItem": "valid-paranthesis-checker",
+    "via": "exact",
+    "score": 1,
+    "merged": false
+  },
+  "step-12-greedy-algorithms__candy": {
+    "newItem": "candy",
+    "via": "exact",
+    "score": 1,
+    "merged": false
+  },
+  "step-12-greedy-algorithms__jump-game-2": {
+    "newItem": "jump-game-ii",
+    "via": "practice",
+    "score": 1,
+    "merged": false
+  },
+  "step-10-sliding-window-two-pointer-combined-problems__maximum-point-you-can-obtain-from-cards": {
+    "newItem": "maximum-points-you-can-obtain-from-cards-",
+    "via": "practice",
+    "score": 1,
+    "merged": false
+  },
+  "step-10-sliding-window-two-pointer-combined-problems__longest-substring-without-repeating-characters": {
+    "newItem": "longest-substring-without-repeating-characters",
+    "via": "exact",
+    "score": 1,
+    "merged": false
+  },
+  "step-10-sliding-window-two-pointer-combined-problems__max-consecutive-ones-iii": {
+    "newItem": "max-consecutive-ones-iii",
+    "via": "exact",
+    "score": 1,
+    "merged": false
+  },
+  "step-10-sliding-window-two-pointer-combined-problems__fruit-into-baskets": {
+    "newItem": "fruit-into-baskets",
+    "via": "exact",
+    "score": 1,
+    "merged": false
+  },
+  "step-10-sliding-window-two-pointer-combined-problems__longest-substring-with-at-most-k-distinct-characters": {
+    "newItem": "longest-substring-with-at-most-k-distinct-characters",
+    "via": "exact",
+    "score": 1,
+    "merged": false
+  },
+  "step-10-sliding-window-two-pointer-combined-problems__longest-repeating-character-replacement": {
+    "newItem": "longest-repeating-character-replacement",
+    "via": "exact",
+    "score": 1,
+    "merged": false
+  },
+  "step-10-sliding-window-two-pointer-combined-problems__minimum-window-substring": {
+    "newItem": "minimum-window-substring-",
+    "via": "exact",
+    "score": 1,
+    "merged": false
+  },
+  "step-10-sliding-window-two-pointer-combined-problems__number-of-substring-containing-all-three-characters": {
+    "newItem": "number-of-substrings-containing-all-three-characters",
+    "via": "practice",
+    "score": 1,
+    "merged": false
+  },
+  "step-10-sliding-window-two-pointer-combined-problems__binary-subarray-with-sum": {
+    "newItem": "binary-subarrays-with-sum",
+    "via": "practice",
+    "score": 1,
+    "merged": false
+  },
+  "step-10-sliding-window-two-pointer-combined-problems__count-number-of-nice-subarrays": {
+    "newItem": "count-number-of-nice-subarrays",
+    "via": "exact",
+    "score": 1,
+    "merged": false
+  },
+  "step-10-sliding-window-two-pointer-combined-problems__subarray-with-k-different-integers": {
+    "newItem": "subarrays-with-k-different-integers",
+    "via": "practice",
+    "score": 1,
+    "merged": false
+  },
+  "step-09-stack-and-queues__implement-stack-using-arrays": {
+    "newItem": "implement-stack-using-arrays",
+    "via": "exact",
+    "score": 1,
+    "merged": false
+  },
+  "step-09-stack-and-queues__implement-queue-using-arrays": {
+    "newItem": "implement-queue-using-arrays",
+    "via": "exact",
+    "score": 1,
+    "merged": false
+  },
+  "step-09-stack-and-queues__implement-stack-using-queue": {
+    "newItem": "implement-stack-using-queue",
+    "via": "exact",
+    "score": 1,
+    "merged": false
+  },
+  "step-09-stack-and-queues__implement-queue-using-stack": {
+    "newItem": "implement-queue-using-stack",
+    "via": "exact",
+    "score": 1,
+    "merged": false
+  },
+  "step-09-stack-and-queues__implement-stack-using-linkedlist": {
+    "newItem": "implement-stack-using-linkedlist",
+    "via": "exact",
+    "score": 1,
+    "merged": false
+  },
+  "step-09-stack-and-queues__implement-queue-using-linkedlist": {
+    "newItem": "implement-queue-using-linkedlist",
+    "via": "exact",
+    "score": 1,
+    "merged": false
+  },
+  "step-09-stack-and-queues__check-for-balanced-paranthesis": {
+    "newItem": "balanced-paranthesis",
+    "via": "practice",
+    "score": 1,
+    "merged": false
+  },
+  "step-09-stack-and-queues__next-greater-element": {
+    "newItem": "next-greater-element",
+    "via": "exact",
+    "score": 1,
+    "merged": false
+  },
+  "step-09-stack-and-queues__next-greater-element-2": {
+    "newItem": "next-greater-element---2",
+    "via": "exact",
+    "score": 1,
+    "merged": false
+  },
+  "step-09-stack-and-queues__asteroid-collision": {
+    "newItem": "asteroid-collision",
+    "via": "exact",
+    "score": 1,
+    "merged": false
+  },
+  "step-09-stack-and-queues__sum-of-subarray-minimum": {
+    "newItem": "sum-of-subarray-minimums",
+    "via": "practice",
+    "score": 1,
+    "merged": false
+  },
+  "step-09-stack-and-queues__sum-of-subarray-ranges": {
+    "newItem": "sum-of-subarray-ranges",
+    "via": "exact",
+    "score": 1,
+    "merged": false
+  },
+  "step-09-stack-and-queues__remove-k-digits": {
+    "newItem": "remove-k-digits",
+    "via": "exact",
+    "score": 1,
+    "merged": false
+  },
+  "step-09-stack-and-queues__implement-min-stack": {
+    "newItem": "implement-min-stack",
+    "via": "exact",
+    "score": 1,
+    "merged": false
+  },
+  "step-09-stack-and-queues__sliding-window-maximum": {
+    "newItem": "sliding-window-maximum",
+    "via": "exact",
+    "score": 1,
+    "merged": false
+  },
+  "step-09-stack-and-queues__trapping-rainwater": {
+    "newItem": "trapping-rainwater",
+    "via": "exact",
+    "score": 1,
+    "merged": false
+  },
+  "step-09-stack-and-queues__largest-rectangle-in-a-histogram": {
+    "newItem": "largest-rectangle-in-a-histogram",
+    "via": "exact",
+    "score": 1,
+    "merged": false
+  },
+  "step-09-stack-and-queues__maximal-rectangles": {
+    "newItem": "maximum-rectangles",
+    "via": "practice",
+    "score": 1,
+    "merged": true
+  },
+  "step-16-dynamic-programming__maximum-rectangle-area-with-all-1-s-dp-55": {
+    "newItem": "maximum-rectangles",
+    "via": "practice",
+    "score": 1,
+    "merged": true
+  },
+  "step-09-stack-and-queues__stock-span-problem": {
+    "newItem": "stock-span-problem",
+    "via": "exact",
+    "score": 1,
+    "merged": false
+  },
+  "step-09-stack-and-queues__the-celebrity-problem": {
+    "newItem": "celebrity-problem",
+    "via": "fuzzy",
+    "score": 1,
+    "merged": false
+  },
+  "step-09-stack-and-queues__lru-cache-important": {
+    "newItem": "lru-cache",
+    "via": "exact",
+    "score": 1,
+    "merged": false
+  },
+  "step-09-stack-and-queues__lfu-cache": {
+    "newItem": "lfu-cache",
+    "via": "exact",
+    "score": 1,
+    "merged": false
+  },
+  "step-13-binary-trees__introduction-to-trees": {
+    "newItem": "introduction-",
+    "via": "override",
+    "score": 1,
+    "merged": false
+  },
+  "step-13-binary-trees__inorder-traversal-of-binary-tree": {
+    "newItem": "inorder-traversal",
+    "via": "practice",
+    "score": 1,
+    "merged": true
+  },
+  "step-13-binary-trees__iterative-inorder-traversal-of-binary-tree": {
+    "newItem": "inorder-traversal",
+    "via": "practice",
+    "score": 1,
+    "merged": true
+  },
+  "step-13-binary-trees__preorder-traversal-of-binary-tree": {
+    "newItem": "preorder-traversal",
+    "via": "practice",
+    "score": 1,
+    "merged": true
+  },
+  "step-13-binary-trees__iterative-preorder-traversal-of-binary-tree": {
+    "newItem": "preorder-traversal",
+    "via": "practice",
+    "score": 1,
+    "merged": true
+  },
+  "step-13-binary-trees__post-order-traversal-of-binary-tree": {
+    "newItem": "postorder-traversal",
+    "via": "practice",
+    "score": 1,
+    "merged": true
+  },
+  "step-13-binary-trees__post-order-traversal-of-binary-tree-using-2-stack": {
+    "newItem": "postorder-traversal",
+    "via": "practice",
+    "score": 1,
+    "merged": true
+  },
+  "step-13-binary-trees__post-order-traversal-of-binary-tree-using-1-stack": {
+    "newItem": "postorder-traversal",
+    "via": "practice",
+    "score": 1,
+    "merged": true
+  },
+  "step-13-binary-trees__level-order-traversal-level-order-traversal-in-spiral-form": {
+    "newItem": "level-order-traversal",
+    "via": "practice",
+    "score": 1,
+    "merged": false
+  },
+  "step-13-binary-trees__preorder-inorder-and-postorder-traversal-in-one-traversal": {
+    "newItem": "pre,-post,-inorder-in-one-traversal",
+    "via": "override",
+    "score": 1,
+    "merged": false
+  },
+  "step-13-binary-trees__height-of-a-binary-tree": {
+    "newItem": "maximum-depth-in-bt",
+    "via": "practice",
+    "score": 1,
+    "merged": false
+  },
+  "step-13-binary-trees__check-if-two-trees-are-identical-or-not": {
+    "newItem": "check-if-two-trees-are-identical-or-not",
+    "via": "exact",
+    "score": 1,
+    "merged": false
+  },
+  "step-13-binary-trees__check-if-the-binary-tree-is-height-balanced-or-not": {
+    "newItem": "check-for-balanced-binary-tree",
+    "via": "practice",
+    "score": 1,
+    "merged": false
+  },
+  "step-13-binary-trees__diameter-of-binary-tree": {
+    "newItem": "diameter-of-binary-tree",
+    "via": "exact",
+    "score": 1,
+    "merged": false
+  },
+  "step-13-binary-trees__maximum-path-sum": {
+    "newItem": "maximum-path-sum-",
+    "via": "exact",
+    "score": 1,
+    "merged": false
+  },
+  "step-13-binary-trees__symmetric-binary-tree": {
+    "newItem": "check-for-symmetrical-bts",
+    "via": "practice",
+    "score": 1,
+    "merged": false
+  },
+  "step-13-binary-trees__check-for-children-sum-property": {
+    "newItem": "children-sum-property-in-binary-tree",
+    "via": "override",
+    "score": 1,
+    "merged": false
+  },
+  "step-13-binary-trees__zig-zag-traversal-of-binary-tree": {
+    "newItem": "zig-zag-or-spiral-traversal",
+    "via": "practice",
+    "score": 1,
+    "merged": false
+  },
+  "step-13-binary-trees__boundary-traversal-of-binary-tree": {
+    "newItem": "boundary-traversal",
+    "via": "override",
+    "score": 1,
+    "merged": false
+  },
+  "step-13-binary-trees__vertical-order-traversal-of-binary-tree": {
+    "newItem": "vertical-order-traversal",
+    "via": "practice",
+    "score": 1,
+    "merged": false
+  },
+  "step-13-binary-trees__top-view-of-binary-tree": {
+    "newItem": "top-view-of-bt",
+    "via": "override",
+    "score": 1,
+    "merged": false
+  },
+  "step-13-binary-trees__bottom-view-of-binary-tree": {
+    "newItem": "bottom-view-of-bt",
+    "via": "override",
+    "score": 1,
+    "merged": false
+  },
+  "step-13-binary-trees__right-left-view-of-binary-tree": {
+    "newItem": "right-left-view-of-bt",
+    "via": "exact",
+    "score": 1,
+    "merged": false
+  },
+  "step-13-binary-trees__lca-in-binary-tree": {
+    "newItem": "lca-in-bt",
+    "via": "exact",
+    "score": 1,
+    "merged": false
+  },
+  "step-13-binary-trees__maximum-width-of-a-binary-tree": {
+    "newItem": "maximum-width-of-bt",
+    "via": "practice",
+    "score": 1,
+    "merged": false
+  },
+  "step-13-binary-trees__print-all-the-nodes-at-a-distance-of-k-in-a-binary-tree": {
+    "newItem": "print-all-nodes-at-a-distance-of-k-in-bt",
+    "via": "practice",
+    "score": 1,
+    "merged": false
+  },
+  "step-13-binary-trees__minimum-time-taken-to-burn-the-binary-tree-from-a-node": {
+    "newItem": "minimum-time-taken-to-burn-the-bt-from-a-given-node",
+    "via": "fuzzy",
+    "score": 1,
+    "merged": false
+  },
+  "step-13-binary-trees__count-total-nodes-in-a-complete-binary-tree": {
+    "newItem": "count-total-nodes-in-a-complete-bt",
+    "via": "exact",
+    "score": 1,
+    "merged": false
+  },
+  "step-13-binary-trees__flatten-binary-tree-to-linkedlist": {
+    "newItem": "flatten-binary-tree-to-linked-list",
+    "via": "exact",
+    "score": 1,
+    "merged": false
+  },
+  "step-13-binary-trees__requirements-needed-to-construct-a-unique-binary-tree-theory": {
+    "newItem": "requirements-needed-to-construct-a-unique-bt",
+    "via": "override",
+    "score": 1,
+    "merged": false
+  },
+  "step-13-binary-trees__construct-binary-tree-from-inorder-and-preorder": {
+    "newItem": "construct-a-bt-from-preorder-and-inorder",
+    "via": "practice",
+    "score": 1,
+    "merged": false
+  },
+  "step-13-binary-trees__construct-the-binary-tree-from-postorder-and-inorder-traversal": {
+    "newItem": "construct-a-bt-from-postorder-and-inorder",
+    "via": "practice",
+    "score": 1,
+    "merged": false
+  },
+  "step-13-binary-trees__serialize-and-deserialize-binary-tree": {
+    "newItem": "serialize-and-de-serialize-bt",
+    "via": "exact",
+    "score": 1,
+    "merged": false
+  },
+  "step-13-binary-trees__morris-inorder-traversal-of-a-binary-tree": {
+    "newItem": "morris-inorder-traversal-",
+    "via": "override",
+    "score": 1,
+    "merged": false
+  },
+  "step-13-binary-trees__morris-preorder-traversal-of-a-binary-tree": {
+    "newItem": "morris-preorder-traversal-",
+    "via": "override",
+    "score": 1,
+    "merged": false
+  },
+  "step-14-binary-search-trees__introduction-to-binary-search-tree": {
+    "newItem": "introduction-to-bst",
+    "via": "exact",
+    "score": 1,
+    "merged": false
+  },
+  "step-14-binary-search-trees__search-in-a-binary-search-tree": {
+    "newItem": "search-in-bst",
+    "via": "practice",
+    "score": 1,
+    "merged": false
+  },
+  "step-14-binary-search-trees__ceil-in-a-binary-search-tree": {
+    "newItem": "floor-and-ceil-in-a-bst",
+    "via": "fuzzy",
+    "score": 0.8,
+    "merged": true
+  },
+  "step-14-binary-search-trees__floor-in-a-binary-search-tree": {
+    "newItem": "floor-and-ceil-in-a-bst",
+    "via": "fuzzy",
+    "score": 0.8,
+    "merged": true
+  },
+  "step-14-binary-search-trees__insert-a-given-node-in-binary-search-tree": {
+    "newItem": "insert-a-given-node-in-bst",
+    "via": "exact",
+    "score": 1,
+    "merged": false
+  },
+  "step-14-binary-search-trees__delete-a-node-in-binary-search-tree": {
+    "newItem": "delete-a-node-in-bst",
+    "via": "exact",
+    "score": 1,
+    "merged": false
+  },
+  "step-14-binary-search-trees__find-k-th-smallest-largest-element-in-bst": {
+    "newItem": "kth-smallest-and-largest-element-in-bst",
+    "via": "practice",
+    "score": 1,
+    "merged": false
+  },
+  "step-14-binary-search-trees__check-if-a-tree-is-a-bst-or-bt": {
+    "newItem": "check-if-a-tree-is-a-bst-or-not",
+    "via": "practice",
+    "score": 1,
+    "merged": false
+  },
+  "step-14-binary-search-trees__lca-in-binary-search-tree": {
+    "newItem": "lca-in-bst",
+    "via": "exact",
+    "score": 1,
+    "merged": false
+  },
+  "step-14-binary-search-trees__construct-a-bst-from-a-preorder-traversal": {
+    "newItem": "construct-a-bst-from-a-preorder-traversal",
+    "via": "exact",
+    "score": 1,
+    "merged": false
+  },
+  "step-14-binary-search-trees__inorder-successor-predecessor-in-bst": {
+    "newItem": "inorder-successor-and-predecessor-in-bst",
+    "via": "practice",
+    "score": 1,
+    "merged": false
+  },
+  "step-14-binary-search-trees__two-sum-in-bst-check-if-there-exists-a-pair-with-sum-k": {
+    "newItem": "two-sum-in-bst",
+    "via": "exact",
+    "score": 1,
+    "merged": false
+  },
+  "step-14-binary-search-trees__recover-bst-correct-bst-with-two-nodes-swapped": {
+    "newItem": "correct-bst-with-two-nodes-swapped",
+    "via": "practice",
+    "score": 1,
+    "merged": false
+  },
+  "step-14-binary-search-trees__largest-bst-in-binary-tree": {
+    "newItem": "largest-bst-in-binary-tree",
+    "via": "exact",
+    "score": 1,
+    "merged": false
+  },
+  "step-11-heaps__check-if-an-array-represents-a-min-heap-or-not": {
+    "newItem": "check-if-an-array-represents-a-min-heap-",
+    "via": "fuzzy",
+    "score": 0.83,
+    "merged": false
+  },
+  "step-11-heaps__min-heap-and-max-heap-implementation": {
+    "newItem": "convert-min-heap-to-max-heap",
+    "via": "fuzzy",
+    "score": 0.6,
+    "merged": true
+  },
+  "step-11-heaps__convert-min-heap-to-max-heap": {
+    "newItem": "convert-min-heap-to-max-heap",
+    "via": "exact",
+    "score": 1,
+    "merged": true
+  },
+  "step-11-heaps__kth-largest-element-in-an-array-use-priority-queue": {
+    "newItem": "k-th-largest-element-in-an-array",
+    "via": "exact",
+    "score": 1,
+    "merged": false
+  },
+  "step-11-heaps__kth-largest-element-in-a-stream-of-running-integers": {
+    "newItem": "kth-largest-element-in-a-stream-of-running-integers",
+    "via": "exact",
+    "score": 1,
+    "merged": false
+  },
+  "step-15-graphs__graph-and-types": {
+    "newItem": "introduction-to-graph",
+    "via": "override",
+    "score": 1,
+    "merged": false
+  },
+  "step-15-graphs__connected-components-logic-explanation": {
+    "newItem": "connected-components",
+    "via": "exact",
+    "score": 1,
+    "merged": false
+  },
+  "step-15-graphs__number-of-provinces-leetcode": {
+    "newItem": "number-of-provinces",
+    "via": "exact",
+    "score": 1,
+    "merged": true
+  },
+  "step-15-graphs__connected-components-problem-in-matrix": {
+    "newItem": "number-of-provinces",
+    "via": "practice",
+    "score": 1,
+    "merged": true
+  },
+  "step-15-graphs__flood-fill": {
+    "newItem": "flood-fill-algorithm",
+    "via": "practice",
+    "score": 1,
+    "merged": false
+  },
+  "step-15-graphs__number-of-enclaves-flood-fill-implementation-multisource": {
+    "newItem": "number-of-enclaves",
+    "via": "exact",
+    "score": 1,
+    "merged": false
+  },
+  "step-15-graphs__rotten-oranges": {
+    "newItem": "rotten-oranges",
+    "via": "exact",
+    "score": 1,
+    "merged": false
+  },
+  "step-15-graphs__0-1-matrix-bfs-problem": {
+    "newItem": "distance-of-nearest-cell-having-one",
+    "via": "practice",
+    "score": 1,
+    "merged": false
+  },
+  "step-15-graphs__surrounded-regions-dfs": {
+    "newItem": "surrounded-regions",
+    "via": "exact",
+    "score": 1,
+    "merged": false
+  },
+  "step-15-graphs__number-of-distinct-islands-dfs-multisource": {
+    "newItem": "number-of-distinct-islands",
+    "via": "exact",
+    "score": 1,
+    "merged": false
+  },
+  "step-15-graphs__cycle-detection-in-undirected-graph-dfs": {
+    "newItem": "detect-a-cycle-in-an-undirected-graph",
+    "via": "fuzzy",
+    "score": 0.6,
+    "merged": false
+  },
+  "step-15-graphs__bipartite-graph-dfs": {
+    "newItem": "bipartite-graph",
+    "via": "exact",
+    "score": 1,
+    "merged": false
+  },
+  "step-15-graphs__topo-sort": {
+    "newItem": "topological-sort-or-kahns-algorithm",
+    "via": "override",
+    "score": 1,
+    "merged": true
+  },
+  "step-15-graphs__kahn-s-algorithm": {
+    "newItem": "topological-sort-or-kahns-algorithm",
+    "via": "fuzzy",
+    "score": 0.6,
+    "merged": true
+  },
+  "step-15-graphs__cycle-detection-in-directed-graph-dfs": {
+    "newItem": "detect-a-cycle-in-a-directed-graph",
+    "via": "fuzzy",
+    "score": 0.6,
+    "merged": true
+  },
+  "step-15-graphs__cycle-detection-in-directed-graph-bfs": {
+    "newItem": "detect-a-cycle-in-a-directed-graph",
+    "via": "fuzzy",
+    "score": 0.6,
+    "merged": true
+  },
+  "step-15-graphs__find-eventual-safe-states": {
+    "newItem": "find-eventual-safe-states",
+    "via": "exact",
+    "score": 1,
+    "merged": false
+  },
+  "step-15-graphs__course-schedule-i": {
+    "newItem": "course-schedule-i",
+    "via": "exact",
+    "score": 1,
+    "merged": false
+  },
+  "step-15-graphs__course-schedule-ii": {
+    "newItem": "course-schedule-ii",
+    "via": "exact",
+    "score": 1,
+    "merged": false
+  },
+  "step-15-graphs__alien-dictionary": {
+    "newItem": "alient-dictionary",
+    "via": "exact",
+    "score": 1,
+    "merged": false
+  },
+  "step-15-graphs__shortest-path-in-dag": {
+    "newItem": "shortest-path-in-dag",
+    "via": "exact",
+    "score": 1,
+    "merged": false
+  },
+  "step-15-graphs__shortest-path-in-ug-with-unit-weights": {
+    "newItem": "shortest-path-in-undirected-graph-with-unit-weights",
+    "via": "override",
+    "score": 1,
+    "merged": false
+  },
+  "step-15-graphs__word-ladder-1": {
+    "newItem": "word-ladder-i",
+    "via": "practice",
+    "score": 1,
+    "merged": false
+  },
+  "step-15-graphs__word-ladder-2": {
+    "newItem": "word-ladder-ii",
+    "via": "practice",
+    "score": 1,
+    "merged": false
+  },
+  "step-15-graphs__djisktra-s-algorithm": {
+    "newItem": "dijkstra's-algorithm",
+    "via": "override",
+    "score": 1,
+    "merged": false
+  },
+  "step-15-graphs__shortest-path-in-a-binary-maze": {
+    "newItem": "shortest-path-with-minimum-effort",
+    "via": "practice",
+    "score": 1,
+    "merged": false
+  },
+  "step-15-graphs__path-with-minimum-effort": {
+    "newItem": "path-with-minimum-effort",
+    "via": "exact",
+    "score": 1,
+    "merged": false
+  },
+  "step-15-graphs__cheapest-flights-within-k-stops": {
+    "newItem": "cheapest-flight-within-k-stops",
+    "via": "practice",
+    "score": 1,
+    "merged": false
+  },
+  "step-15-graphs__number-of-ways-to-arrive-at-destination": {
+    "newItem": "number-of-ways-to-arrive-at-destination",
+    "via": "exact",
+    "score": 1,
+    "merged": false
+  },
+  "step-15-graphs__bellman-ford-algorithm": {
+    "newItem": "bellman-ford-algorithm",
+    "via": "exact",
+    "score": 1,
+    "merged": false
+  },
+  "step-15-graphs__find-the-city-with-the-smallest-number-of-neighbors-in-a-threshold-distance": {
+    "newItem": "find-the-city-with-the-smallest-number-of-neighbors",
+    "via": "practice",
+    "score": 1,
+    "merged": false
+  },
+  "step-15-graphs__minimum-spanning-tree": {
+    "newItem": "mst-theory",
+    "via": "fuzzy",
+    "score": 0.75,
+    "merged": false
+  },
+  "step-15-graphs__disjoint-set-union-by-rank": {
+    "newItem": "disjoint-set-",
+    "via": "exact",
+    "score": 1,
+    "merged": true
+  },
+  "step-15-graphs__disjoint-set-union-by-size": {
+    "newItem": "disjoint-set-",
+    "via": "exact",
+    "score": 1,
+    "merged": true
+  },
+  "step-15-graphs__number-of-operations-to-make-network-connected": {
+    "newItem": "number-of-operations-to-make-network-connected",
+    "via": "exact",
+    "score": 1,
+    "merged": false
+  },
+  "step-15-graphs__accounts-merge": {
+    "newItem": "accounts-merge",
+    "via": "exact",
+    "score": 1,
+    "merged": false
+  },
+  "step-15-graphs__number-of-island-ii": {
+    "newItem": "number-of-islands-ii",
+    "via": "practice",
+    "score": 1,
+    "merged": false
+  },
+  "step-15-graphs__making-a-large-island": {
+    "newItem": "making-a-large-island",
+    "via": "exact",
+    "score": 1,
+    "merged": false
+  },
+  "step-15-graphs__most-stones-removed-with-same-rows-or-columns": {
+    "newItem": "most-stones-removed-with-same-row-or-column",
+    "via": "practice",
+    "score": 1,
+    "merged": false
+  },
+  "step-15-graphs__kosaraju-s-algorithm": {
+    "newItem": "kosaraju's-algorithm",
+    "via": "exact",
+    "score": 1,
+    "merged": false
+  },
+  "step-15-graphs__bridges-in-graph": {
+    "newItem": "bridges-in-graph",
+    "via": "exact",
+    "score": 1,
+    "merged": false
+  },
+  "step-15-graphs__articulation-point": {
+    "newItem": "articulation-point-in-graph",
+    "via": "fuzzy",
+    "score": 0.67,
+    "merged": false
+  },
+  "step-16-dynamic-programming__dynamic-programming-introduction": {
+    "newItem": "introduction-to-dp",
+    "via": "fuzzy",
+    "score": 1,
+    "merged": false
+  },
+  "step-16-dynamic-programming__climbing-stars": {
+    "newItem": "climbing-stairs",
+    "via": "practice",
+    "score": 1,
+    "merged": false
+  },
+  "step-16-dynamic-programming__frog-jump-dp-3": {
+    "newItem": "frog-jump",
+    "via": "exact",
+    "score": 1,
+    "merged": false
+  },
+  "step-16-dynamic-programming__frog-jump-with-k-distances-dp-4": {
+    "newItem": "frog-jump-with-k-distances",
+    "via": "exact",
+    "score": 1,
+    "merged": false
+  },
+  "step-16-dynamic-programming__maximum-sum-of-non-adjacent-elements-dp-5": {
+    "newItem": "maximum-sum-of-non-adjacent-elements",
+    "via": "exact",
+    "score": 1,
+    "merged": false
+  },
+  "step-16-dynamic-programming__house-robber-dp-6": {
+    "newItem": "house-robber",
+    "via": "exact",
+    "score": 1,
+    "merged": false
+  },
+  "step-16-dynamic-programming__ninja-s-training-dp-7": {
+    "newItem": "ninja's-training",
+    "via": "exact",
+    "score": 1,
+    "merged": false
+  },
+  "step-16-dynamic-programming__grid-unique-paths-dp-on-grids-dp8": {
+    "newItem": "grid-unique-paths",
+    "via": "practice",
+    "score": 1,
+    "merged": false
+  },
+  "step-16-dynamic-programming__grid-unique-paths-2-dp-9": {
+    "newItem": "unique-paths-ii",
+    "via": "practice",
+    "score": 1,
+    "merged": false
+  },
+  "step-16-dynamic-programming__minimum-path-sum-in-grid-dp-10": {
+    "newItem": "minimum-falling-path-sum",
+    "via": "practice",
+    "score": 1,
+    "merged": true
+  },
+  "step-16-dynamic-programming__minimum-maximum-falling-path-sum-dp-12": {
+    "newItem": "minimum-falling-path-sum",
+    "via": "fuzzy",
+    "score": 0.8,
+    "merged": true
+  },
+  "step-16-dynamic-programming__minimum-path-sum-in-triangular-grid-dp-11": {
+    "newItem": "triangle",
+    "via": "practice",
+    "score": 1,
+    "merged": false
+  },
+  "step-03-solve-problems-on-arrays__stock-buy-and-sell": {
+    "newItem": "best-time-to-buy-and-sell-stock",
+    "via": "practice",
+    "score": 1,
+    "merged": true
+  },
+  "step-16-dynamic-programming__best-time-to-buy-and-sell-stock-dp-35": {
+    "newItem": "best-time-to-buy-and-sell-stock",
+    "via": "exact",
+    "score": 1,
+    "merged": true
+  },
+  "step-16-dynamic-programming__buy-and-sell-stock-ii-dp-36": {
+    "newItem": "best-time-to-buy-and-sell-stock-ii",
+    "via": "practice",
+    "score": 1,
+    "merged": false
+  },
+  "step-16-dynamic-programming__buy-and-sell-stocks-iii-dp-37": {
+    "newItem": "best-time-to-buy-and-sell-stock-iii",
+    "via": "practice",
+    "score": 1,
+    "merged": false
+  },
+  "step-16-dynamic-programming__buy-and-stock-sell-iv-dp-38": {
+    "newItem": "best-time-to-buy-and-sell-stock-iv",
+    "via": "practice",
+    "score": 1,
+    "merged": false
+  },
+  "step-16-dynamic-programming__buy-and-sell-stocks-with-transaction-fee-dp-40": {
+    "newItem": "best-time-to-buy-and-sell-stock-with-cooldown-and-transaction-fees",
+    "via": "practice",
+    "score": 1,
+    "merged": false
+  },
+  "step-16-dynamic-programming__subset-sum-equal-to-target-dp-14": {
+    "newItem": "subset-sum-equals-to-target",
+    "via": "fuzzy",
+    "score": 0.6,
+    "merged": false
+  },
+  "step-16-dynamic-programming__partition-equal-subset-sum-dp-15": {
+    "newItem": "partition-equal-subset-sum",
+    "via": "exact",
+    "score": 1,
+    "merged": false
+  },
+  "step-16-dynamic-programming__count-subsets-with-sum-k-dp-17": {
+    "newItem": "count-subsets-with-sum-k",
+    "via": "exact",
+    "score": 1,
+    "merged": false
+  },
+  "step-16-dynamic-programming__count-partitions-with-given-difference-dp-18": {
+    "newItem": "count-partitions-with-given-difference",
+    "via": "exact",
+    "score": 1,
+    "merged": false
+  },
+  "step-16-dynamic-programming__minimum-coins-dp-20": {
+    "newItem": "minimum-coins",
+    "via": "exact",
+    "score": 1,
+    "merged": false
+  },
+  "step-16-dynamic-programming__target-sum-dp-21": {
+    "newItem": "target-sum",
+    "via": "exact",
+    "score": 1,
+    "merged": false
+  },
+  "step-16-dynamic-programming__coin-change-2-dp-22": {
+    "newItem": "coin-change-ii",
+    "via": "practice",
+    "score": 1,
+    "merged": false
+  },
+  "step-16-dynamic-programming__unbounded-knapsack-dp-23": {
+    "newItem": "unbounded-knapsack",
+    "via": "exact",
+    "score": 1,
+    "merged": false
+  },
+  "step-16-dynamic-programming__rod-cutting-problem-dp-24": {
+    "newItem": "rod-cutting-problem",
+    "via": "exact",
+    "score": 1,
+    "merged": false
+  },
+  "step-16-dynamic-programming__longest-increasing-subsequence-dp-41": {
+    "newItem": "longest-increasing-subsequence",
+    "via": "exact",
+    "score": 1,
+    "merged": true
+  },
+  "step-16-dynamic-programming__printing-longest-increasing-subsequence-dp-42": {
+    "newItem": "longest-increasing-subsequence",
+    "via": "fuzzy",
+    "score": 0.75,
+    "merged": true
+  },
+  "step-16-dynamic-programming__longest-increasing-subsequence-dp-43": {
+    "newItem": "longest-increasing-subsequence",
+    "via": "exact",
+    "score": 1,
+    "merged": true
+  },
+  "step-16-dynamic-programming__largest-divisible-subset-dp-44": {
+    "newItem": "largest-divisible-subset",
+    "via": "exact",
+    "score": 1,
+    "merged": false
+  },
+  "step-16-dynamic-programming__longest-string-chain-dp-45": {
+    "newItem": "longest-string-chain",
+    "via": "exact",
+    "score": 1,
+    "merged": false
+  },
+  "step-16-dynamic-programming__longest-bitonic-subsequence-dp-46": {
+    "newItem": "longest-bitonic-subsequence",
+    "via": "exact",
+    "score": 1,
+    "merged": false
+  },
+  "step-16-dynamic-programming__number-of-longest-increasing-subsequences-dp-47": {
+    "newItem": "number-of-longest-increasing-subsequences",
+    "via": "exact",
+    "score": 1,
+    "merged": false
+  },
+  "step-16-dynamic-programming__longest-common-subsequence-dp-25": {
+    "newItem": "longest-common-subsequence",
+    "via": "exact",
+    "score": 1,
+    "merged": true
+  },
+  "step-16-dynamic-programming__print-longest-common-subsequence-dp-26": {
+    "newItem": "longest-common-subsequence",
+    "via": "fuzzy",
+    "score": 0.75,
+    "merged": true
+  },
+  "step-16-dynamic-programming__longest-common-substring-dp-27": {
+    "newItem": "longest-common-substring",
+    "via": "exact",
+    "score": 1,
+    "merged": false
+  },
+  "step-16-dynamic-programming__longest-palindromic-subsequence-dp-28": {
+    "newItem": "longest-palindromic-subsequence",
+    "via": "exact",
+    "score": 1,
+    "merged": false
+  },
+  "step-16-dynamic-programming__minimum-insertions-to-make-string-palindrome-dp-29": {
+    "newItem": "minimum-insertions-to-make-string-palindrome",
+    "via": "exact",
+    "score": 1,
+    "merged": false
+  },
+  "step-16-dynamic-programming__minimum-insertions-deletions-to-convert-string-dp-30": {
+    "newItem": "minimum-insertions-or-deletions-to-convert-string-a-to-b",
+    "via": "practice",
+    "score": 1,
+    "merged": false
+  },
+  "step-16-dynamic-programming__shortest-common-supersequence-dp-31": {
+    "newItem": "shortest-common-supersequence",
+    "via": "exact",
+    "score": 1,
+    "merged": false
+  },
+  "step-16-dynamic-programming__distinct-subsequences-dp-32": {
+    "newItem": "distinct-subsequences",
+    "via": "exact",
+    "score": 1,
+    "merged": false
+  },
+  "step-16-dynamic-programming__edit-distance-dp-33": {
+    "newItem": "edit-distance",
+    "via": "exact",
+    "score": 1,
+    "merged": false
+  },
+  "step-16-dynamic-programming__wildcard-matching-dp-34": {
+    "newItem": "wildcard-matching",
+    "via": "exact",
+    "score": 1,
+    "merged": false
+  },
+  "step-16-dynamic-programming__matrix-chain-multiplication-dp-48": {
+    "newItem": "matrix-chain-multiplication",
+    "via": "exact",
+    "score": 1,
+    "merged": true
+  },
+  "step-16-dynamic-programming__matrix-chain-multiplication-bottom-up-dp-49": {
+    "newItem": "matrix-chain-multiplication",
+    "via": "exact",
+    "score": 1,
+    "merged": true
+  },
+  "step-16-dynamic-programming__burst-balloons-dp-51": {
+    "newItem": "burst-balloons",
+    "via": "exact",
+    "score": 1,
+    "merged": false
+  },
+  "step-16-dynamic-programming__palindrome-partitioning-ii-dp-53": {
+    "newItem": "palindrome-partitioning-ii-",
+    "via": "exact",
+    "score": 1,
+    "merged": false
+  },
+  "step-16-dynamic-programming__partition-array-for-maximum-sum-dp-54": {
+    "newItem": "partition-array-for-maximum-sum",
+    "via": "exact",
+    "score": 1,
+    "merged": false
+  },
+  "step-16-dynamic-programming__minimum-cost-to-cut-the-stick-dp-50": {
+    "newItem": "minimum-cost-to-cut-the-stick",
+    "via": "exact",
+    "score": 1,
+    "merged": false
+  },
+  "step-17-tries__implement-trie-insert-search-startswith": {
+    "newItem": "trie-implementation-and-operations",
+    "via": "practice",
+    "score": 1,
+    "merged": false
+  },
+  "step-17-tries__longest-string-with-all-prefixes": {
+    "newItem": "longest-word-with-all-prefixes",
+    "via": "fuzzy",
+    "score": 0.6,
+    "merged": false
+  },
+  "step-17-tries__number-of-distinct-substrings-in-a-string": {
+    "newItem": "number-of-distinct-substrings-in-a-string",
+    "via": "exact",
+    "score": 1,
+    "merged": false
+  },
+  "step-17-tries__maximum-xor-of-two-numbers-in-an-array": {
+    "newItem": "maximum-xor-of-two-numbers-in-an-array",
+    "via": "exact",
+    "score": 1,
+    "merged": false
+  },
+  "step-17-tries__maximum-xor-with-an-element-from-array": {
+    "newItem": "maximum-xor-with-an-element-from-an-array",
+    "via": "practice",
+    "score": 1,
+    "merged": false
+  },
+  "step-05-strings__reverse-words-in-a-given-string-palindrome-check": {
+    "newItem": "reverse-every-word-in-a-string",
+    "via": "practice",
+    "score": 1,
+    "merged": true
+  },
+  "step-05-strings__reverse-every-word-in-a-string": {
+    "newItem": "reverse-every-word-in-a-string",
+    "via": "exact",
+    "score": 1,
+    "merged": true
+  },
+  "step-18-strings__minimum-number-of-bracket-reversals-needed-to-make-an-expression-balanced": {
+    "newItem": "minimum-number-of-bracket-reversals-to-make-an-expression-balanced",
+    "via": "fuzzy",
+    "score": 0.86,
+    "merged": false
+  },
+  "step-18-strings__count-and-say": {
+    "newItem": "count-and-say",
+    "via": "exact",
+    "score": 1,
+    "merged": false
+  },
+  "step-18-strings__rabin-karp": {
+    "newItem": "rabin-karp-algorithm",
+    "via": "fuzzy",
+    "score": 0.67,
+    "merged": false
+  },
+  "step-18-strings__z-function": {
+    "newItem": "z-function",
+    "via": "exact",
+    "score": 1,
+    "merged": false
+  },
+  "step-18-strings__shortest-palindrome": {
+    "newItem": "shortest-palindrome",
+    "via": "exact",
+    "score": 1,
+    "merged": false
+  },
+  "step-18-strings__longest-happy-prefix": {
+    "newItem": "longest-happy-prefix",
+    "via": "exact",
+    "score": 1,
+    "merged": false
+  },
+  "step-08-bit-manipulation__sieve-of-eratosthenes": {
+    "newItem": "count-primes-in-range-l-to-r",
+    "via": "practice",
+    "score": 1,
+    "merged": false
+  }
+}

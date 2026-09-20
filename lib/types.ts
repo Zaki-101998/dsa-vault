@@ -31,6 +31,12 @@ export interface SeedProblem {
   difficulty: string;
   /** Optional practice-problem link (LeetCode preferred, else GFG/HackerRank). */
   practice?: string;
+  /**
+   * Subsection this entry sits in, as its display title ("BS on Answers"). One
+   * nesting level expressed as a field rather than nested arrays, so the seed
+   * JSON stays flat and entries without one simply omit it.
+   */
+  section?: string;
   /** Video subjects only; absent on DSA problems, which are all `concept`. */
   kind?: EntryKind;
   /** Lecture video backing this entry, for video subjects. */
@@ -133,11 +139,29 @@ export interface UserTodoRow {
   updated_at: string;
 }
 
+/** One subsection inside a step — Striver's second level of grouping. */
+export interface SubGroup {
+  /** `${step.key}::${slug(title)}`, unique across the sheet. */
+  key: string;
+  title: string;
+  problems: Problem[];
+}
+
 export interface TopicGroup {
   key: string;
   title: string;
   order: number;
+  /**
+   * Every problem in the step, flat. Stays authoritative even when `subgroups`
+   * is set — the two hold the same Problem objects — so stats, counts and the
+   * Due list read one list and never have to walk the tree.
+   */
   problems: Problem[];
+  /**
+   * Subsections, in sheet order, for steps whose entries carry `section`.
+   * Absent where the sheet has no second level.
+   */
+  subgroups?: SubGroup[];
   /** Mirrors SeedStep.note: where this section's material comes from. */
   note?: string;
 }

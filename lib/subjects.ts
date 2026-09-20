@@ -22,17 +22,18 @@ export interface SubjectConfig {
   statusLabels: Record<Status, string>;
   entryNoun: string;
   entryNounPlural: string;
-  /** DSA problems carry Easy/Medium/Hard; lectures have nothing to show. */
+  /** DSA problems carry Striver's Basic/Core/Pro tier; lectures have nothing to show. */
   showDifficulty: boolean;
   /** Where this subject's lectures live, named in the welcome panel. */
   videoHost?: string;
   /** Video subjects can filter out the worked-question entries. */
   hasConceptFilter: boolean;
-  /**
-   * True where the sheet deliberately seeds topics with no resource attached, for
-   * the user to fill in. Opt-in rather than derived: DSA has a handful of theory
-   * entries that simply carry no link, and those are not an invitation to go find
-   * one — marking them would be noise on a sheet that is already complete.
+   /**
+   * True where the sheet seeds topics with no resource attached, for the user to
+   * fill in. Opt-in rather than derived, so a subject whose gaps are deliberate
+   * can stay quiet. DSA opted out while its entries all carried a takeuforward
+   * article; the 2026 A2Z sheet leaves 80 of 442 with no video, article or
+   * practice link at all, which is worth flagging.
    */
   hasResourceGaps: boolean;
   linkPlaceholder: string;
@@ -54,8 +55,8 @@ export const SUBJECTS: Record<SubjectId, SubjectConfig> = {
     entryNounPlural: "problems",
     showDifficulty: true,
     hasConceptFilter: false,
-    hasResourceGaps: false,
-    linkPlaceholder: "Problem link (LeetCode / TUF)…",
+    hasResourceGaps: true,
+    linkPlaceholder: "Problem link (YouTube / LeetCode / TUF)…",
     topicPlaceholder: "e.g. Arrays",
     addNamePlaceholder: "e.g. Kadane's Algorithm follow-up",
     blurb: "Your notes + code companion for Striver's A2Z sheet.",

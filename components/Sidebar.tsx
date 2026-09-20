@@ -1,12 +1,13 @@
 "use client";
 
-import { useRef, useState } from "react";
+import { useCallback, useRef, useState, useSyncExternalStore } from "react";
 import { ProblemList, type FilterKey } from "./ProblemList";
 import { StatsBar } from "./StatsBar";
 import { AddProblemModal } from "./AddProblemModal";
 import { VideoAccessBox } from "./VideoAccessBox";
 import { needsResource } from "@/lib/links";
 import { knownTopics } from "@/lib/sheet";
+import { DEFAULT_WIDTH, clampWidth, sidebarWidthStore } from "@/lib/sidebarWidth";
 import type { SubjectConfig } from "@/lib/subjects";
 import type { VideoAccess } from "@/lib/useVideoAccess";
 import type { TopicGroup, UserProblemRow } from "@/lib/types";
@@ -47,12 +48,40 @@ export function Sidebar({
   const [search, setSearch] = useState("");
   const [filter, setFilter] = useState<FilterKey>("all");
   const [showAdd, setShowAdd] = useState(false);
+  const [resizing, setResizing] = useState(false);
   const fileRef = useRef<HTMLInputElement>(null);
+  const asideRef = useRef<HTMLElement>(null);
+
+  const width = useSyncExternalStore(
+    sidebarWidthStore.subscribe,
+    sidebarWidthStore.getSnapshot,
+    sidebarWidthStore.getServerSnapshot
+  );
+
+  // Drag the right edge to resize. Pointer capture keeps the drag alive when the
+  // cursor outruns the 4px handle, which it always does.
+  const startResize = useCallback((e: React.PointerEvent<HTMLDivElement>) => {
+    e.preventDefault();
+    const left = asideRef.current?.getBoundingClientRect().left ?? 0;
+    e.currentTarget.setPointerCapture(e.pointerId);
+    setResizing(true);
+
+    const onMove = (ev: PointerEvent) => sidebarWidthStore.set(clampWidth(ev.clientX - left));
+    const onUp = (ev: PointerEvent) => {
+      sidebarWidthStore.set(clampWidth(ev.clientX - left));
+      setResizing(false);
+      window.removeEventListener("pointermove", onMove);
+      window.removeEventListener("pointerup", onUp);
+      window.removeEventListener("pointercancel", onUp);
+    };
+    window.addEventListener("pointermove", onMove);
+    window.addEventListener("pointerup", onUp);
+    window.addEventListener("pointercancel", onUp);
+  }, []);
 
   const allProblems = groups.flatMap((g) => g.problems);
-  // Only where the sheet deliberately seeds unresourced topics. DSA has a few
-  // theory entries carrying no link either, but those are not gaps to go fill,
-  // so the flag is opt-in per subject rather than derived from the entries.
+  // Only where the sheet seeds unresourced topics — opt-in per subject rather
+  // than derived from the entries, so deliberate gaps can stay quiet.
   const anyNeedsResource = subject.hasResourceGaps && allProblems.some(needsResource);
 
   // Picking a problem also closes the drawer on mobile (no-op on desktop).
@@ -141,6 +170,7 @@ export function Sidebar({
 
       <ProblemList
         groups={groups}
+        subjectId={subject.id}
         filter={filter}
         search={search}
         selectedKey={selectedKey}
@@ -191,9 +221,25 @@ export function Sidebar({
 
   return (
     <>
-      {/* Desktop: static in-flow sidebar. */}
-      <aside className="hidden md:flex w-[300px] min-w-[300px] bg-[#161a22] border-r border-[#2a3040] flex-col h-full">
+      {/* Desktop: static in-flow sidebar, width dragged from its right edge. */}
+      <aside
+        ref={asideRef}
+        style={{ width }}
+        className={`hidden md:flex relative shrink-0 bg-[#161a22] border-r border-[#2a3040] flex-col h-full ${
+          resizing ? "select-none" : ""
+        }`}
+      >
         {content}
+        <div
+          onPointerDown={startResize}
+          onDoubleClick={() => sidebarWidthStore.set(DEFAULT_WIDTH)}
+          title="Drag to resize · double-click to reset"
+          role="separator"
+          aria-orientation="vertical"
+          className={`absolute top-0 right-0 h-full w-1 cursor-col-resize touch-none z-10 hover:bg-[#5b8cff]/60 ${
+            resizing ? "bg-[#5b8cff]/60" : ""
+          }`}
+        />
       </aside>
 
       {/* Mobile: off-canvas drawer over a dimmed backdrop. */}

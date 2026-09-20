@@ -75,8 +75,9 @@ export function Workspace({ userId, userEmail }: { userId: string; userEmail: st
   return (
     <div className="flex flex-1 min-h-0 overflow-hidden">
       <Sidebar
-        // Remount per subject so search, filter and collapsed sections reset —
-        // a "Concepts only" filter has no meaning once you switch to DSA.
+        // Remount per subject so search and filter reset — a "Concepts only"
+        // filter has no meaning once you switch to DSA. Which sections are
+        // folded deliberately survives, kept per subject in lib/collapseStore.
         key={subject}
         groups={vault.groups}
         rows={vault.rows}

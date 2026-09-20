@@ -14,6 +14,8 @@ A personal notes + code + revision tracker for [Striver's A2Z DSA sheet](https:/
 
 1. Create a free project at [supabase.com](https://supabase.com).
 2. In the Supabase dashboard, go to **SQL Editor → New query**, paste the entire contents of [`supabase/migration.sql`](supabase/migration.sql), and run it. This creates the two tables (`user_problems`, `user_settings`) with row-level security so your data is private to your account. Then run [`supabase/migration-todos.sql`](supabase/migration-todos.sql) the same way for the daily TODO list (`user_todos` table). *(Already ran the first migration before the TODO feature existed? Just run `migration-todos.sql` on its own.)*
+
+   **Upgrading an existing vault?** Striver restructured the A2Z sheet in September 2026 (18 steps → 19 modules with subsections). No migration is needed: the sheet is rebuilt as a *merge* of his new roadmap onto the old one, and every problem that existed before keeps its original `problem_key`, so saved notes, code, stars and revision history stay attached. See `scripts/build-a2z-sheet.mjs` for how that merge works.
 3. Go to **Authentication → Sign In / Providers**:
    - **Email**: usually on by default — this powers the magic-link option.
    - **Google**: enable it and follow Supabase's prompt to add a Google OAuth Client ID/secret (create one in the [Google Cloud Console](https://console.cloud.google.com/apis/credentials) — "OAuth client ID" → Web application → add Supabase's provided redirect URL).
@@ -58,7 +60,10 @@ Vercel's build image runs Node 22+ by default, so the `@supabase/supabase-js` de
 app/                 routes: /, /login, /auth/callback
 components/          Sidebar, ProblemHeader, NotesEditor, CodeTabs, etc.
 lib/                 useVault (Supabase-backed state), sheet merging, decay-color logic, Supabase clients
-data/a2z-sheet.json  the 18 steps / 455 problems seed data
+data/a2z-sheet.json  seed data: Striver's 19 modules / 79 subsections, merged with the older sheet
+scripts/fetch-a2z.mjs   re-scrapes the A2Z roadmap from takeuforward.org into a local cache
+scripts/build-a2z-sheet.mjs  merges that cache onto scripts/a2z-sheet-legacy.json -> the seed sheet
+scripts/extract-worked-keys.mjs  re-reads a vault backup to refresh which problems must be kept
 supabase/migration.sql  DB schema + RLS policies — run once in the Supabase SQL editor
 ```
 

@@ -4,11 +4,9 @@ import { useEffect, useRef, useState } from "react";
 import type { ReactCodeMirrorRef } from "@uiw/react-codemirror";
 import { CodeEditor } from "./CodeEditor";
 import { newApproachId } from "@/lib/sheet";
-import { formatCode } from "@/lib/format";
+import { LANG_LABELS, formatCode } from "@/lib/format";
 import { useIsMobile } from "@/lib/useIsMobile";
 import type { Approach, CodeLang } from "@/lib/types";
-
-const LANG_LABELS: Record<CodeLang, string> = { java: "Java", cpp: "C++", python: "Python" };
 
 // The fixed set of canonical approach slots, always shown in this order.
 const CANONICAL = ["Brute", "Better", "Optimal"] as const;

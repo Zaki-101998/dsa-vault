@@ -28,6 +28,12 @@ export interface SubjectConfig {
   videoHost?: string;
   /** Video subjects can filter out the worked-question entries. */
   hasConceptFilter: boolean;
+  /**
+   * Whether this subject has a pattern catalog, and so the Sheet / Patterns
+   * toggle. DSA only: data/dsa-patterns/ groups its problems by technique, and
+   * the lecture subjects are already in teaching order with nothing to regroup.
+   */
+  hasPatterns: boolean;
    /**
    * True where the sheet seeds topics with no resource attached, for the user to
    * fill in. Opt-in rather than derived, so a subject whose gaps are deliberate
@@ -54,6 +60,7 @@ export const SUBJECTS: Record<SubjectId, SubjectConfig> = {
     entryNounPlural: "problems",
     showDifficulty: true,
     hasConceptFilter: false,
+    hasPatterns: true,
     hasResourceGaps: true,
     topicPlaceholder: "e.g. Arrays",
     addNamePlaceholder: "e.g. Kadane's Algorithm follow-up",
@@ -71,6 +78,7 @@ export const SUBJECTS: Record<SubjectId, SubjectConfig> = {
     showDifficulty: false,
     videoHost: "Drive",
     hasConceptFilter: true,
+    hasPatterns: false,
     hasResourceGaps: false,
     topicPlaceholder: "e.g. Routing",
     addNamePlaceholder: "e.g. Subnetting recap",
@@ -88,6 +96,7 @@ export const SUBJECTS: Record<SubjectId, SubjectConfig> = {
     showDifficulty: false,
     videoHost: "Drive",
     hasConceptFilter: true,
+    hasPatterns: false,
     hasResourceGaps: false,
     topicPlaceholder: "e.g. Deadlocks",
     addNamePlaceholder: "e.g. Bankers algorithm recap",
@@ -105,6 +114,7 @@ export const SUBJECTS: Record<SubjectId, SubjectConfig> = {
     showDifficulty: false,
     videoHost: "YouTube",
     hasConceptFilter: true,
+    hasPatterns: false,
     hasResourceGaps: true,
     topicPlaceholder: "e.g. Normal Forms",
     addNamePlaceholder: "e.g. BCNF recap",

@@ -28,6 +28,34 @@ function LinkBadge({ chip, compact }: { chip: LinkChip; compact?: boolean }) {
   );
 }
 
+/** One technique chip. Clicking it opens that pattern's intro page. */
+function PatternChip({
+  chip,
+  onOpen,
+  compact,
+}: {
+  chip: { id: string; title: string; primary: boolean };
+  onOpen: (id: string) => void;
+  compact?: boolean;
+}) {
+  return (
+    <button
+      onClick={() => onOpen(chip.id)}
+      title={`Open the ${chip.title} pattern — what to revise for it, and the other problems that use it`}
+      className={`border rounded-md shrink-0 font-semibold hover:brightness-125 ${
+        compact ? "px-1.5 py-0.5 text-[11px]" : "px-1.5 py-0.5 text-[11px]"
+      } ${
+        chip.primary
+          ? "text-[#5b8cff] border-[#5b8cff]/40"
+          : "text-[#8b93a7] border-[#2a3040]"
+      }`}
+    >
+      {chip.primary ? "🧩 " : "also "}
+      {chip.title}
+    </button>
+  );
+}
+
 function fmtAgo(ts: number): string {
   const m = (Date.now() - ts) / 60000;
   if (m < 1) return "just now";
@@ -56,6 +84,8 @@ export function ProblemHeader({
   onDelete,
   planned,
   onPlan,
+  patternChips,
+  onOpenPattern,
 }: {
   problem: Problem;
   subject: SubjectConfig;
@@ -82,6 +112,13 @@ export function ProblemHeader({
   /** True when this problem already has an unfinished todo in the daily plan. */
   planned: boolean;
   onPlan: (day: "today" | "tomorrow") => void;
+  /**
+   * The techniques this problem is about: its primary pattern first, then the
+   * patterns that list it under `borrows`. Empty for every subject but DSA —
+   * Workspace resolves them, so this component stays subject-agnostic.
+   */
+  patternChips?: { id: string; title: string; primary: boolean }[];
+  onOpenPattern?: (id: string) => void;
 }) {
   // Local, blur-committed copies of the editable fields. The parent renders this
   // component with `key={problem.key}` so switching problems remounts it fresh
@@ -96,6 +133,7 @@ export function ProblemHeader({
   const sections = knownSections(subject.id, topic);
   const skippable = problem.kind === "problem";
   const stub = subject.hasResourceGaps && needsResource(problem);
+  const chips = onOpenPattern && patternChips?.length ? patternChips : [];
 
   return (
     <div className="px-3 md:px-5 pt-3 md:pt-4 border-b border-[#2a3040]">
@@ -128,6 +166,17 @@ export function ProblemHeader({
         </button>
       </div>
 
+      {/* Mobile: the technique gets its own strip, directly under the title —
+          the first thing you want on the revision surface. The compact row
+          above is already full, so it cannot ride along there. */}
+      {chips.length > 0 && (
+        <div className="md:hidden flex gap-1.5 overflow-x-auto no-scrollbar mb-2">
+          {chips.map((chip) => (
+            <PatternChip key={chip.id} chip={chip} onOpen={onOpenPattern!} compact />
+          ))}
+        </div>
+      )}
+
       {/* Mobile: links get their own line — four badges never fit beside the name.
           Scrolls sideways rather than wrapping, like the subject strip. */}
       {links.length > 0 && (
@@ -149,6 +198,13 @@ export function ProblemHeader({
         {subject.showDifficulty && problem.difficulty && (
           <span className="text-[13px] text-[#8b93a7] shrink-0">{problem.difficulty}</span>
         )}
+        {/* The pattern sits with the difficulty rather than down in the links
+            row: it is an identity fact about the problem, the same class of
+            thing as its tier, and it is internal navigation rather than an
+            external link. */}
+        {chips.map((chip) => (
+          <PatternChip key={chip.id} chip={chip} onOpen={onOpenPattern!} />
+        ))}
         {skippable && (
           <span
             title="A worked-question video — safe to skip on a first pass"

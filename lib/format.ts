@@ -1,5 +1,17 @@
 import type { CodeLang } from "./types";
 
+/**
+ * Display names for the three languages, shared by the Code tab and the pattern
+ * page's template switcher. Here rather than in a component because both need
+ * it; importing this module pulls in no wasm, since the formatters below are
+ * behind import() calls inside functions.
+ */
+export const LANG_LABELS: Record<CodeLang, string> = {
+  java: "Java",
+  cpp: "C++",
+  python: "Python",
+};
+
 // clang-format style shared by Java and C++
 const CLANG_STYLE = "{BasedOnStyle: Google, IndentWidth: 4, ColumnLimit: 100}";
 

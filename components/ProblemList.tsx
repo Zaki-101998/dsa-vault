@@ -14,14 +14,10 @@ import {
   useSortable,
   verticalListSortingStrategy,
 } from "@dnd-kit/sortable";
-
-// dnd-kit exposes `attributes`/`listeners` as opaque types; derive them from the
-// hook's return so ProblemRow can accept them without deep internal imports.
-type SortableHandles = Pick<ReturnType<typeof useSortable>, "attributes" | "listeners">;
 import { CSS } from "@dnd-kit/utilities";
-import { RevisionStar } from "./RevisionStar";
+import { ProblemRow, type RowContext } from "./ProblemRow";
 import { collapseStore } from "@/lib/collapseStore";
-import { daysSince, isDue, starColor } from "@/lib/decay";
+import { daysSince, isDue } from "@/lib/decay";
 import { needsResource } from "@/lib/links";
 import type { Problem, Status, SubGroup, SubjectId, TopicGroup } from "@/lib/types";
 
@@ -33,86 +29,6 @@ export type FilterKey =
   | "unsolved"
   | "concepts"
   | "noresource";
-
-function ProblemRow({
-  problem,
-  selected,
-  decayDays,
-  statusLabels,
-  markStubs,
-  onSelect,
-  onToggleStar,
-  drag,
-}: {
-  problem: Problem;
-  selected: boolean;
-  decayDays: number;
-  statusLabels: Record<Status, string>;
-  /** Whether this subject seeds unresourced topics worth flagging. */
-  markStubs: boolean;
-  onSelect: () => void;
-  onToggleStar: () => void;
-  drag?: {
-    setNodeRef: (el: HTMLElement | null) => void;
-    style: React.CSSProperties;
-    isDragging: boolean;
-  } & SortableHandles;
-}) {
-  const days = problem.starred ? Math.floor(daysSince(problem.lastRevised)) : null;
-  const color = starColor(problem.starred, problem.lastRevised, decayDays);
-  const stub = markStubs && needsResource(problem);
-
-  return (
-    <div
-      ref={drag?.setNodeRef}
-      style={drag?.style}
-      {...(drag?.attributes ?? {})}
-      {...(drag?.listeners ?? {})}
-      onClick={onSelect}
-      className={`flex items-center gap-2 px-2 py-[7px] rounded-lg cursor-pointer border ${
-        drag ? "select-none" : ""
-      } ${drag?.isDragging ? "opacity-50" : ""} ${
-        selected ? "bg-[#232937] border-[#2a3040]" : "border-transparent hover:bg-[#1c212c]"
-      }`}
-    >
-      <RevisionStar
-        starred={problem.starred}
-        lastRevised={problem.lastRevised}
-        decayDays={decayDays}
-        size={16}
-        onClick={(e) => {
-          e.stopPropagation();
-          onToggleStar();
-        }}
-      />
-      <div className={`flex-1 min-w-0 ${problem.kind === "problem" ? "opacity-60" : ""}`}>
-        <div className="text-[13px] truncate">
-          {problem.kind === "problem" && (
-            <span title="Worked-question video — skippable" className="text-[#8b93a7]">
-              ◦{" "}
-            </span>
-          )}
-          {stub && (
-            <span title="No resource yet — paste a link in the header" className="text-[#5b8cff]">
-              ⊕{" "}
-            </span>
-          )}
-          {problem.name || "Untitled"}
-        </div>
-        <div className="text-[11px] text-[#8b93a7] truncate">
-          {[problem.difficulty, statusLabels[problem.status], stub ? "no resource yet" : ""]
-            .filter(Boolean)
-            .join(" · ")}
-        </div>
-      </div>
-      {days !== null && (
-        <span className="text-[10px] font-bold shrink-0" style={{ color: color ?? undefined }}>
-          {days}d
-        </span>
-      )}
-    </div>
-  );
-}
 
 function SortableProblemRow({
   problem,
@@ -153,16 +69,6 @@ function SortableProblemRow({
     />
   );
 }
-
-/** Common props every row in a list needs, threaded down from ProblemList. */
-type RowContext = {
-  selectedKey: string | null;
-  decayDays: number;
-  statusLabels: Record<Status, string>;
-  markStubs: boolean;
-  onSelect: (key: string) => void;
-  onToggleStar: (key: string) => void;
-};
 
 /**
  * One run of rows, wrapped in its own drag context. Steps and subsections each
@@ -266,6 +172,11 @@ export function ProblemList({
   onSelect,
   onToggleStar,
   onReorder,
+  reorderable = true,
+  flattenDue = true,
+  subNounPlural = "Subsections",
+  extraHaystack,
+  onOpenSubgroup,
 }: {
   groups: TopicGroup[];
   /** Which subject's fold state to read — collapse is persisted per subject. */
@@ -283,6 +194,38 @@ export function ProblemList({
   onSelect: (key: string) => void;
   onToggleStar: (key: string) => void;
   onReorder: (groupKey: string, activeKey: string, overKey: string) => void;
+  /**
+   * False switches drag reorder off entirely — the rows render through the
+   * non-draggable branch, so no DndContext is built and `onReorder` becomes
+   * unreachable. Patterns view passes false: a synthetic grouping has no order
+   * to persist, and useVault's reorderProblem only resolves real step and
+   * subsection keys.
+   */
+  reorderable?: boolean;
+  /**
+   * The "Due for revision" filter normally collapses into one flat
+   * staleness-sorted list, which throws the grouping away. That is right for
+   * the sheet, but in Patterns view it would make the whole toggle a silent
+   * no-op under exactly the filter the pattern tree is most useful for
+   * ("which DSU problems have gone stale?"), so Patterns view passes false and
+   * keeps the tree.
+   */
+  flattenDue?: boolean;
+  /** What the second level is called in the fold-all button ("Patterns"). */
+  subNounPlural?: string;
+  /**
+   * Extra words to match per problem key, on top of name and topic. Patterns
+   * view passes the pattern and family titles, so searching a technique name
+   * finds its problems — `topic` is the step title and cannot carry it.
+   * Must be referentially stable; it joins the filter memo's deps.
+   */
+  extraHaystack?: Readonly<Record<string, string>>;
+  /**
+   * When given, each second-level header grows a button that opens that
+   * group's own page (the pattern intro). Absent in Sheet view, where a
+   * subsection has nothing to open.
+   */
+  onOpenSubgroup?: (key: string) => void;
 }) {
   const collapsed = useSyncExternalStore(
     collapseStore.subscribe,
@@ -292,12 +235,16 @@ export function ProblemList({
 
   const q = search.trim().toLowerCase();
   const searching = q.length > 0;
-  // Dragging only makes sense when every problem is shown in its true order.
-  const draggable = filter === "all" && !searching;
+  // Dragging only makes sense when every problem is shown in its true order —
+  // and only in a view whose order is real (see `reorderable`).
+  const draggable = reorderable && filter === "all" && !searching;
 
   const filteredGroups = useMemo(() => {
     const keep = (p: Problem) => {
-      if (q && !(p.name + " " + p.topic).toLowerCase().includes(q)) return false;
+      if (q) {
+        const hay = p.name + " " + p.topic + " " + (extraHaystack?.[p.key] ?? "");
+        if (!hay.toLowerCase().includes(q)) return false;
+      }
       return matchesFilter(p, filter, decayDays, markStubs);
     };
     return groups
@@ -313,7 +260,7 @@ export function ProblemList({
         return { ...g, problems, subgroups, loose };
       })
       .filter((g) => g.problems.length > 0);
-  }, [groups, q, filter, decayDays, markStubs]);
+  }, [groups, q, filter, decayDays, markStubs, extraHaystack]);
 
   const stepKeys = filteredGroups.map((g) => g.key);
   const subKeys = filteredGroups.flatMap((g) => (g.subgroups ?? []).map((sg) => sg.key));
@@ -345,7 +292,7 @@ export function ProblemList({
     onToggleStar,
   };
 
-  if (filter === "due") {
+  if (filter === "due" && flattenDue) {
     const flat = filteredGroups
       .flatMap((g) => g.problems)
       .sort((a, b) => daysSince(b.lastRevised) - daysSince(a.lastRevised));
@@ -378,10 +325,10 @@ export function ProblemList({
           {subKeys.length > 0 && (
             <button
               onClick={() => setMany(subKeys, !allSubsCollapsed)}
-              title={`${allSubsCollapsed ? "Expand" : "Collapse"} every subsection, leaving ${groupNoun.toLowerCase()}s as they are`}
+              title={`${allSubsCollapsed ? "Expand" : "Collapse"} every ${subNounPlural.toLowerCase().replace(/s$/, "")}, leaving ${groupNoun.toLowerCase()}s as they are`}
               className="text-[11px] text-[#565e73] hover:text-[#e6e9f0] px-1.5 py-0.5"
             >
-              {allSubsCollapsed ? "⊞ Subsections" : "⊟ Subsections"}
+              {allSubsCollapsed ? `⊞ ${subNounPlural}` : `⊟ ${subNounPlural}`}
             </button>
           )}
           <button
@@ -437,20 +384,39 @@ export function ProblemList({
                     const subSolved = sg.problems.filter((p) => p.status === "Solved").length;
                     return (
                       <div key={sg.key}>
-                        <button
-                          onClick={() => toggleOne(sg.key)}
-                          className="w-full flex items-center gap-1.5 pl-5 pr-2 py-1 text-[11px] font-semibold text-[#6f7789] hover:text-[#c7ccd8]"
-                        >
-                          <span
-                            className={`text-[9px] transition-transform ${subOpen ? "rotate-90" : ""}`}
+                        {/* The fold button cannot contain the "open page"
+                            button — nesting one button inside another is
+                            invalid HTML — so the header is a flex row of two
+                            siblings. `flex-1 min-w-0` in a flex row is
+                            pixel-identical to the `w-full` this used to be, and
+                            the row renders the same with or without
+                            onOpenSubgroup, so there is one markup path. */}
+                        <div className="flex items-center">
+                          <button
+                            onClick={() => toggleOne(sg.key)}
+                            className="flex-1 min-w-0 flex items-center gap-1.5 pl-5 pr-2 py-1 text-[11px] font-semibold text-[#6f7789] hover:text-[#c7ccd8]"
                           >
-                            ▸
-                          </span>
-                          <span className="truncate">{sg.title}</span>
-                          <span className="ml-auto font-normal text-[#4c5468]">
-                            {subSolved}/{sg.problems.length}
-                          </span>
-                        </button>
+                            <span
+                              className={`text-[9px] transition-transform ${subOpen ? "rotate-90" : ""}`}
+                            >
+                              ▸
+                            </span>
+                            <span className="truncate">{sg.title}</span>
+                            <span className="ml-auto font-normal text-[#4c5468]">
+                              {subSolved}/{sg.problems.length}
+                            </span>
+                          </button>
+                          {onOpenSubgroup && (
+                            <button
+                              onClick={() => onOpenSubgroup(sg.key)}
+                              title={`Open the ${sg.title} page`}
+                              aria-label={`Open the ${sg.title} page`}
+                              className="shrink-0 text-[11px] text-[#565e73] hover:text-[#5b8cff] px-1.5 py-1"
+                            >
+                              ⓘ
+                            </button>
+                          )}
+                        </div>
                         {subOpen && (
                           <ProblemRows
                             problems={sg.problems}

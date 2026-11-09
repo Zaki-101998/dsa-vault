@@ -28,9 +28,19 @@ const GOLD = "#f0b429";
 const ORANGE = "#f0762a";
 const RED = "#e12d39";
 
+/**
+ * Gold -> orange -> red across the decay window, from a number of days.
+ * Separate from starColor so a caller that already has an age in days — the
+ * pattern page's "stalest 12d" — can colour it without inventing a timestamp
+ * to hand back, which would mean calling Date.now() during render.
+ */
+export function decayColor(days: number, decayDays: number): string {
+  const t = Math.min(Math.max(days, 0) / decayDays, 1);
+  return t < 0.5 ? lerpColor(GOLD, ORANGE, t * 2) : lerpColor(ORANGE, RED, (t - 0.5) * 2);
+}
+
 /** Gold -> orange -> red as the problem approaches (and passes) its decay window. */
 export function starColor(starred: boolean, lastRevised: number | null, decayDays: number): string | null {
   if (!starred || lastRevised == null) return null;
-  const t = Math.min(daysSince(lastRevised) / decayDays, 1);
-  return t < 0.5 ? lerpColor(GOLD, ORANGE, t * 2) : lerpColor(ORANGE, RED, (t - 0.5) * 2);
+  return decayColor(daysSince(lastRevised), decayDays);
 }

@@ -7,15 +7,18 @@ import { useVideoAccess } from "@/lib/useVideoAccess";
 import { knownTopics } from "@/lib/sheet";
 import { SUBJECTS, SUBJECT_ORDER, subjectOf, type EntryTab } from "@/lib/subjects";
 import { subjectStore } from "@/lib/subjectStore";
+import { ALSO_BY_KEY, FAMILIES_BY_ID, PATTERNS_BY_ID, PRIMARY_BY_KEY } from "@/lib/patterns";
+import { revealPattern } from "@/lib/viewStore";
 import { createClient } from "@/lib/supabase/client";
-import type { SubjectId } from "@/lib/types";
+import type { CodeLang, Selection, SubjectId } from "@/lib/types";
 import { Sidebar } from "./Sidebar";
 import { ProblemHeader } from "./ProblemHeader";
+import { PatternPage } from "./PatternPage";
 import { NotesEditor } from "./NotesEditor";
 import { CodeTabs } from "./CodeTabs";
 import { TodoDrawer } from "./TodoDrawer";
 
-type SelectionBySubject = Record<SubjectId, string | null>;
+type SelectionBySubject = Record<SubjectId, Selection | null>;
 
 const NO_SELECTION: SelectionBySubject = { dsa: null, cn: null, os: null, dbms: null };
 
@@ -37,17 +40,38 @@ export function Workspace({ userId, userEmail }: { userId: string; userEmail: st
   const [activeTab, setActiveTab] = useState<EntryTab>("notes");
   const [showTodos, setShowTodos] = useState(false);
   const [sidebarOpen, setSidebarOpen] = useState(false);
+  // Which language the pattern pages show their template in. Here rather than
+  // in PatternPage because that component is keyed by pattern id, so local
+  // state would reset the choice on every pattern you opened.
+  const [tplLang, setTplLang] = useState<CodeLang>("java");
 
-  const selectedKey = selection[subject];
+  const sel = selection[subject];
+  const selectedKey = sel?.kind === "problem" ? sel.key : null;
   const problem = selectedKey ? vault.byKey.get(selectedKey) ?? null : null;
+  // Patterns are a DSA-only lens. Only DSA can ever store a pattern selection,
+  // and an id the catalog no longer has falls through to the welcome panel
+  // rather than rendering a blank page.
+  const pattern =
+    subject === "dsa" && sel?.kind === "pattern" ? PATTERNS_BY_ID.get(sel.id) ?? null : null;
 
   const selectEntry = useCallback((key: string) => {
     // A todo can point at any subject, so follow the key rather than assuming
     // the entry lives in whatever tab is currently open.
     const target = subjectOf(key);
     subjectStore.set(target);
-    setSelection((prev) => ({ ...prev, [target]: key }));
+    setSelection((prev) => ({ ...prev, [target]: { kind: "problem", key } }));
     setActiveTab(SUBJECTS[target].tabs[0]);
+  }, []);
+
+  /**
+   * Open a pattern's intro page. Also flips the sidebar to Patterns view and
+   * unfolds the pattern's family, so the tree agrees with the pane — this is
+   * reachable from a problem's chip while the sidebar is still on the sheet.
+   */
+  const selectPattern = useCallback((id: string) => {
+    subjectStore.set("dsa");
+    revealPattern(id);
+    setSelection((prev) => ({ ...prev, dsa: { kind: "pattern", id } }));
   }, []);
 
   function switchSubject(next: SubjectId) {
@@ -80,6 +104,7 @@ export function Workspace({ userId, userEmail }: { userId: string; userEmail: st
         // folded deliberately survives, kept per subject in lib/collapseStore.
         key={subject}
         groups={vault.groups}
+        byKey={vault.byKey}
         rows={vault.rows}
         subject={config}
         videoAccess={videoAccess}
@@ -91,6 +116,7 @@ export function Workspace({ userId, userEmail }: { userId: string; userEmail: st
         onAddProblem={vault.addCustomProblem}
         onDecayDaysChange={vault.setDecayDays}
         onImport={vault.importRows}
+        onSelectPattern={selectPattern}
         mobileOpen={sidebarOpen}
         onClose={() => setSidebarOpen(false)}
       />
@@ -149,7 +175,37 @@ export function Workspace({ userId, userEmail }: { userId: string; userEmail: st
           </span>
         </div>
 
-        {!problem ? (
+        {pattern ? (
+          <PatternPage
+            key={pattern.id}
+            pattern={pattern}
+            family={FAMILIES_BY_ID.get(pattern.family) ?? null}
+            // Resolved here, skipping keys the sheet no longer has, so a
+            // regenerated sheet yields a shorter list rather than a crash.
+            problems={pattern.problems
+              .map((key) => vault.byKey.get(key))
+              .filter((p): p is NonNullable<typeof p> => !!p)}
+            borrowed={(pattern.borrows ?? [])
+              .map((key) => {
+                const p = vault.byKey.get(key);
+                return p ? { problem: p, primary: PRIMARY_BY_KEY.get(key) ?? null } : null;
+              })
+              .filter((b): b is NonNullable<typeof b> => !!b)}
+            decayDays={vault.decayDays}
+            statusLabels={config.statusLabels}
+            markStubs={config.hasResourceGaps}
+            lang={tplLang}
+            onLangChange={setTplLang}
+            onSelectProblem={selectEntry}
+            onToggleStar={vault.toggleStar}
+            onOpenPattern={selectPattern}
+            // A plain text todo: problem_key stays null, because it is the
+            // link TodoDrawer uses to open a problem and there is no problem
+            // here. That also means plannedKeys cannot track a pattern, so the
+            // page always offers the buttons rather than a "Planned" state.
+            onPlan={(day) => todos.addTodo(`Revise: ${pattern.title} pattern`, day)}
+          />
+        ) : !problem ? (
           <div className="flex-1 flex items-center justify-center p-4">
             <div className="max-w-[480px] bg-[#161a22] border border-[#2a3040] rounded-xl p-7">
               <h2 className="text-lg font-bold mb-3">{config.label} Vault 🗂️</h2>
@@ -194,6 +250,15 @@ export function Workspace({ userId, userEmail }: { userId: string; userEmail: st
               problem={problem}
               subject={config}
               knownTopics={knownTopics(subject)}
+              // Computed here rather than in ProblemHeader: that component is
+              // shared by all four subjects, and patterns are DSA-only.
+              patternChips={[
+                ...(PRIMARY_BY_KEY.has(problem.key)
+                  ? [{ ...PRIMARY_BY_KEY.get(problem.key)!, primary: true }]
+                  : []),
+                ...(ALSO_BY_KEY.get(problem.key) ?? []).map((p) => ({ ...p, primary: false })),
+              ].map(({ id, title, primary }) => ({ id, title, primary }))}
+              onOpenPattern={selectPattern}
               canWatchVideo={videoAccess.canWatch}
               decayDays={vault.decayDays}
               activeTab={activeTab}

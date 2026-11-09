@@ -186,3 +186,105 @@ export interface TopicGroup {
   /** Mirrors SeedStep.note: where this section's material comes from. */
   note?: string;
 }
+
+// ---------------------------------------------------------------------------
+// Patterns — the second way to browse the DSA sheet.
+//
+// Striver's tree groups by position in the course ("Hard Problems II"), not by
+// technique, so the method a problem is really about is nowhere in the UI. A
+// pattern names that method, owns the problems that are really about it, and
+// carries a one-screen intro to revise from.
+//
+// The catalog is static and lives in data/dsa-patterns/ — see that directory's
+// index.mjs. It is keyed by the sheet's existing problem keys and is never
+// persisted per user, so none of this touches Supabase.
+// ---------------------------------------------------------------------------
+
+/**
+ * A pattern's code skeleton. Java is required — it is the language the vault's
+ * templates are written in — and C++/Python are optional, offered in the
+ * pattern page's language switcher only where they have been authored.
+ */
+export type PatternTemplate = Partial<Record<CodeLang, string>> & { java: string };
+
+/**
+ * A group of related patterns, and the top level of Patterns view — rendered as
+ * a TopicGroup, with its patterns as SubGroups.
+ *
+ * There is deliberately no `order` field: display order is the order of the
+ * FAMILIES array in data/dsa-patterns/index.mjs, which removes a whole class of
+ * hand-renumbering mistakes.
+ */
+export interface PatternFamily {
+  /**
+   * Stable slug matching /^[a-z0-9-]+$/, unique across the catalog. Half of the
+   * collapse key — see the key scheme in lib/patterns.ts, which depends on this
+   * shape to stay collision-free.
+   */
+  id: string;
+  title: string;
+  /** One line under the family header, the same slot as TopicGroup.note. */
+  note?: string;
+}
+
+/**
+ * One technique, and the problems that are really about it. The six prose
+ * blocks below are the fixed layout of components/PatternPage.tsx, in render
+ * order — every pattern reads the same way, which is what makes the pages
+ * skimmable before a revision session.
+ */
+export interface PatternDef {
+  /**
+   * Stable slug matching /^[a-z0-9-]+$/, unique across the catalog. Half of the
+   * collapse key, and the id carried in Workspace's selection.
+   */
+  id: string;
+  title: string;
+  /** PatternFamily.id. Checked by scripts/check-patterns.mjs. */
+  family: string;
+
+  /** Block 1 — the whole idea in one line. */
+  hook: string;
+  /** Block 2 — "reach for it when you see…": 3-6 recognition cues. */
+  cues: string[];
+  /** Block 3 — the template. */
+  template: PatternTemplate;
+  /** Block 4 — the moving parts to recall before writing it: 3-6 items. */
+  recall: string[];
+  /** Block 5 — complexity of the template itself, not of any one problem. */
+  complexity: { time: string; space: string; note?: string };
+  /** Block 6 — what actually goes wrong: 2-5 items. */
+  traps: string[];
+
+  /**
+   * PRIMARY members, in teaching order — the template's own problem first, hard
+   * variants after. This is the order the pattern page lists them in; the
+   * sidebar keeps the sheet's order instead.
+   *
+   * Every key must exist in data/a2z-sheet.json and must appear in exactly ONE
+   * pattern's `problems` across the whole catalog. That single-home rule is what
+   * keeps each problem in one place in the tree, keeps the family counts adding
+   * up to the sheet's total, and keeps ProblemList's flat "due" list free of
+   * duplicate React keys. scripts/check-patterns.mjs enforces it.
+   */
+  problems: string[];
+  /**
+   * Problems whose primary pattern is elsewhere but which also lean on this one.
+   * Rendered as the page's "Borrows from this pattern" block and as an "also"
+   * chip on the problem's own header. NEVER added to the sidebar tree — see the
+   * single-home rule above.
+   */
+  borrows?: string[];
+  /** Search synonyms — "DSU", "union-find". Folded into PATTERN_HAYSTACK. */
+  aka?: string[];
+}
+
+/**
+ * What the main pane is showing for one subject. The pane is a single slot, so
+ * this is a tagged union rather than two pieces of state: opening a pattern
+ * page and opening a problem are mutually exclusive by construction, instead of
+ * by remembering to clear the other one at every call site.
+ */
+export type Selection =
+  | { kind: "problem"; key: string }
+  | { kind: "pattern"; id: string };

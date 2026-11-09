@@ -250,6 +250,9 @@ int[][] nearest(int[][] grid) {
       "step-15-graphs__surrounded-regions-dfs",
       "step-15-graphs__number-of-enclaves-flood-fill-implementation-multisource",
     ],
+    borrows: [
+      "step-13-binary-trees__minimum-time-taken-to-burn-the-binary-tree-from-a-node",
+    ],
   },
 
   {

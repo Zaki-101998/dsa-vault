@@ -91,6 +91,9 @@ def count(a: list[int], target: int) -> int:
       "step-04-binary-search__find-the-first-or-last-occurrence-of-a-given-number-in-a-sorted-array",
       "step-04-binary-search__count-occurrences-of-a-number-in-a-sorted-array-with-duplicates",
     ],
+    borrows: [
+      "step-14-binary-search-trees__search-in-a-binary-search-tree",
+    ],
   },
 
   {

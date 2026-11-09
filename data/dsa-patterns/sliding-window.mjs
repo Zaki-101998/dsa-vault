@@ -122,6 +122,9 @@ int bestSum(int[] a, int k) {
     problems: [
       "step-10-sliding-window-two-pointer-combined-problems__maximum-point-you-can-obtain-from-cards",
     ],
+    borrows: [
+      "step-03-solve-problems-on-arrays__longest-subarray-with-given-sum-k-positives",
+    ],
   },
 
   {

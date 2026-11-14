@@ -91,10 +91,16 @@ export function NotesEditor({
   problemKey,
   html,
   onChange,
+  readOnly = false,
 }: {
   problemKey: string;
   html: string;
   onChange: (html: string) => void;
+  /**
+   * Render the notes without the toolbar and without accepting edits — the
+   * drill's reveal step, where the notes are the answer being checked against.
+   */
+  readOnly?: boolean;
 }) {
   // Mobile is a strictly read-only revision surface: lock the editor so
   // tapping the notes never pops the on-screen keyboard.
@@ -102,7 +108,7 @@ export function NotesEditor({
 
   const editor = useEditor({
     immediatelyRender: false,
-    editable: !isMobile,
+    editable: !isMobile && !readOnly,
     extensions: [
       StarterKit.configure({ codeBlock: false }),
       CodeBlockLowlight.configure({ lowlight }),
@@ -133,8 +139,8 @@ export function NotesEditor({
   });
 
   useEffect(() => {
-    editor?.setEditable(!isMobile);
-  }, [editor, isMobile]);
+    editor?.setEditable(!isMobile && !readOnly);
+  }, [editor, isMobile, readOnly]);
 
   const lastKey = useRef(problemKey);
   useEffect(() => {
@@ -147,7 +153,7 @@ export function NotesEditor({
 
   return (
     <div className="flex-1 flex flex-col min-h-0">
-      <Toolbar editor={editor} />
+      {!readOnly && <Toolbar editor={editor} />}
       <div className="flex-1 overflow-y-auto bg-[#161a22] border border-[#2a3040] rounded-xl">
         <EditorContent editor={editor} className="h-full" />
       </div>

@@ -5,6 +5,7 @@ import { CodeEditor } from "./CodeEditor";
 import { LANG_LABELS } from "@/lib/format";
 import { patternProgress } from "@/lib/patterns";
 import { decayColor } from "@/lib/decay";
+import { GRADES, GRADE_ORDER } from "@/lib/schedule";
 import { useIsMobile } from "@/lib/useIsMobile";
 import type { CodeLang, PatternDef, PatternFamily, Problem, Status } from "@/lib/types";
 
@@ -27,7 +28,7 @@ const LANG_ORDER: CodeLang[] = ["java", "cpp", "python"];
  * dangerouslySetInnerHTML anywhere in it, and a fixed set of six blocks needs
  * no parser. This is the whole of the formatting.
  */
-function Inline({ text }: { text: string }) {
+export function Inline({ text }: { text: string }) {
   const parts = text.split("`");
   return (
     <>
@@ -47,8 +48,8 @@ function Inline({ text }: { text: string }) {
   );
 }
 
-/** One of the six blocks. */
-function Block({
+/** One of the six blocks. Also the drill's reveal panels. */
+export function Block({
   icon,
   title,
   children,
@@ -68,7 +69,7 @@ function Block({
 }
 
 /** A bulleted list of prose lines, with `marker` as the bullet colour. */
-function Bullets({ items, marker }: { items: string[]; marker: string }) {
+export function Bullets({ items, marker }: { items: string[]; marker: string }) {
   return (
     <ul className="space-y-1.5 text-[13px] leading-relaxed text-[#c7ccd8]">
       {items.map((item, i) => (
@@ -99,6 +100,7 @@ export function PatternPage({
   onToggleStar,
   onOpenPattern,
   onPlan,
+  onDrill,
 }: {
   pattern: PatternDef;
   family: PatternFamily | null;
@@ -130,14 +132,20 @@ export function PatternPage({
    * buttons are always offered.
    */
   onPlan: (day: "today" | "tomorrow") => void;
+  /** Opens the drill setup scoped to this pattern's problems. */
+  onDrill: () => void;
 }) {
   const isMobile = useIsMobile();
-  const { total, solved, starred, due, stalestDays } = patternProgress(problems, decayDays);
+  const { total, solved, starred, due, stalestDays, stalestWindow, grades } = patternProgress(
+    problems,
+    decayDays
+  );
+  const graded = grades.red + grades.yellow + grades.green;
 
   // Only the languages actually authored. One language means no switcher.
   const langs = LANG_ORDER.filter((l) => pattern.template[l]);
   const shown = pattern.template[lang] ? lang : "java";
-  const stalestColor = stalestDays === null ? null : decayColor(stalestDays, decayDays);
+  const stalestColor = stalestDays === null ? null : decayColor(stalestDays, stalestWindow);
 
   return (
     <div className="flex-1 min-h-0 overflow-y-auto">
@@ -166,14 +174,35 @@ export function PatternPage({
             <span className="text-[#3ecf8e]">✓ revision clear</span>
           )}
           {stalestDays !== null && (
-            <span title="Longest any problem here has gone unrevised">
+            <span title="The problem here that is furthest through its own revision window">
               stalest{" "}
               <b className="font-bold" style={{ color: stalestColor ?? undefined }}>
                 {Math.floor(stalestDays)}d
               </b>
             </span>
           )}
-          <span className="ml-auto flex shrink-0">
+          {/* How the recall went last time, across the pattern — the at-a-glance
+              answer to "do I actually know this technique?". */}
+          {graded > 0 && (
+            <span className="flex gap-2" title="Last recall grade of each graded problem here">
+              {[...GRADE_ORDER].reverse().map((g) =>
+                grades[g] > 0 ? (
+                  <span key={g} className="font-semibold" style={{ color: GRADES[g].color }}>
+                    {grades[g]} {GRADES[g].label.toLowerCase()}
+                  </span>
+                ) : null
+              )}
+            </span>
+          )}
+          <span className="ml-auto flex shrink-0 gap-2">
+            <button
+              onClick={onDrill}
+              title="Recall each of this pattern's problems, then check against your notes"
+              className="border border-[#5b8cff]/50 text-[#5b8cff] rounded-lg px-2.5 py-1 text-xs font-semibold hover:bg-[#5b8cff]/10"
+            >
+              ▶ Drill
+            </button>
+            <span className="flex">
             <button
               onClick={() => onPlan("today")}
               title={`Add “Revise: ${pattern.title} pattern” to today's plan`}
@@ -188,6 +217,7 @@ export function PatternPage({
             >
               tmrw
             </button>
+            </span>
           </span>
         </div>
 

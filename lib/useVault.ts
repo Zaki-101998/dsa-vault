@@ -4,8 +4,9 @@ import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { createClient } from "./supabase/client";
 import { clearAuthRecovery, isAuthError, recoverFromAuthError } from "./supabase/auth-error";
 import { defaultApproaches, mergeProblems, newApproachId } from "./sheet";
+import { RECALL_TEXT_MAX, appendRevEntry, nextInterval } from "./schedule";
 import { customKey } from "./subjects";
-import type { Approach, Status, SubjectId, UserProblemRow } from "./types";
+import type { Approach, Grade, RevEntry, Status, SubjectId, UserProblemRow } from "./types";
 
 const DEFAULT_DECAY_DAYS = 5;
 
@@ -147,6 +148,44 @@ export function useVault(userId: string, subject: SubjectId) {
     [updateRow]
   );
 
+  /**
+   * A graded revision — the drill's three buttons, and the header's. Does
+   * everything markRevised does, and additionally records how the recall went
+   * and sets the problem's own revision window from it (lib/schedule.ts).
+   *
+   * `recallText` is what was typed before the reveal; it is stored on the log
+   * entry so the next attempt can be read against this one.
+   *
+   * Writes `recall` and `interval_days`, the two columns added by
+   * supabase/migration-recall.sql. Nothing else writes them, so a vault whose
+   * database has not had that migration yet only fails here.
+   */
+  const gradeRevision = useCallback(
+    (key: string, grade: Grade, recallText = "") => {
+      const row = rowsRef.current.find((r) => r.problem_key === key);
+      const now = new Date();
+      const last = row?.last_revised ? new Date(row.last_revised).getTime() : null;
+      const elapsedDays = last == null ? Infinity : (now.getTime() - last) / 86_400_000;
+      const prev = row?.interval_days != null ? Number(row.interval_days) : null;
+      const text = recallText.trim().slice(0, RECALL_TEXT_MAX);
+      const entry: RevEntry = { at: now.toISOString(), grade, ...(text ? { recall: text } : {}) };
+      updateRow(key, {
+        starred: true,
+        last_revised: entry.at,
+        rev_count: (row?.rev_count || 0) + 1,
+        rev_log: appendRevEntry(row?.rev_log || [], entry),
+        recall: grade,
+        interval_days: nextInterval(
+          prev != null && Number.isFinite(prev) && prev > 0 ? prev : null,
+          grade,
+          decayDays,
+          elapsedDays
+        ),
+      });
+    },
+    [updateRow, decayDays]
+  );
+
   const toggleStar = useCallback(
     (key: string) => {
       const row = rowsRef.current.find((r) => r.problem_key === key);
@@ -286,7 +325,14 @@ export function useVault(userId: string, subject: SubjectId) {
 
   const importRows = useCallback(
     async (incoming: UserProblemRow[]) => {
+      // Only sent when the backup actually carries grades. A batch upsert names
+      // the union of its rows' keys as columns, so including these blindly
+      // would make every import fail on a database without the recall migration.
+      const hasGrades = incoming.some((r) => r.recall != null || r.interval_days != null);
       const payload = incoming.map((r) => ({
+        ...(hasGrades
+          ? { recall: r.recall ?? null, interval_days: r.interval_days ?? null }
+          : {}),
         user_id: userId,
         problem_key: r.problem_key,
         custom_name: r.custom_name ?? null,
@@ -340,6 +386,7 @@ export function useVault(userId: string, subject: SubjectId) {
     byKey,
     decayDays,
     markRevised,
+    gradeRevision,
     toggleStar,
     removeStar,
     setStatus,

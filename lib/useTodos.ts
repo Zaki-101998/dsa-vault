@@ -108,6 +108,60 @@ export function useTodos(userId: string) {
     [supabase, userId, todos]
   );
 
+  /**
+   * Several todos at once, for one day — the drill summary's "add the reds to
+   * today's plan". Not a loop over addTodo: that reads `position` from the
+   * `todos` it closed over, so N calls in one tick would hand all N the same
+   * position. One insert, with positions counted up from the day's current max.
+   */
+  const addTodos = useCallback(
+    async (items: { text: string; problemKey?: string }[], day: "today" | "tomorrow") => {
+      const clean = items
+        .map((i) => ({ text: i.text.trim(), problemKey: i.problemKey ?? null }))
+        .filter((i) => i.text);
+      if (clean.length === 0) return;
+      const due = localDateStr(day === "today" ? 0 : 1);
+      const base = todos.filter((t) => t.due_date === due).reduce((m, t) => Math.max(m, t.position), 0);
+      const stamp = `temp-${Date.now()}-${Math.random()}`;
+      const nowIso = new Date().toISOString();
+      const optimistic: UserTodoRow[] = clean.map((i, n) => ({
+        id: `${stamp}-${n}`,
+        user_id: userId,
+        text: i.text,
+        due_date: due,
+        original_date: due,
+        done: false,
+        done_at: null,
+        problem_key: i.problemKey,
+        position: base + n + 1,
+        created_at: nowIso,
+        updated_at: nowIso,
+      }));
+      setTodos((prev) => [...prev, ...optimistic]);
+      const { data, error } = await supabase
+        .from("user_todos")
+        .insert(
+          optimistic.map((t) => ({
+            user_id: userId,
+            text: t.text,
+            due_date: due,
+            original_date: due,
+            problem_key: t.problem_key,
+            position: t.position,
+          }))
+        )
+        .select();
+      const isTemp = (t: UserTodoRow) => t.id.startsWith(stamp);
+      if (error) {
+        console.error("Failed to add todos:", error.message);
+        setTodos((prev) => prev.filter((t) => !isTemp(t)));
+        return;
+      }
+      setTodos((prev) => [...prev.filter((t) => !isTemp(t)), ...((data as UserTodoRow[]) || [])]);
+    },
+    [supabase, userId, todos]
+  );
+
   const toggleDone = useCallback(
     async (id: string) => {
       const target = todos.find((t) => t.id === id);
@@ -163,6 +217,7 @@ export function useTodos(userId: string) {
     carriedCount,
     plannedKeys,
     addTodo,
+    addTodos,
     toggleDone,
     editTodo,
     deleteTodo,

@@ -2,17 +2,19 @@
 
 import { useState } from "react";
 import { RevisionStar } from "./RevisionStar";
+import { GradeButtons, fmtWindow } from "./GradeButtons";
 import { daysSince, isOverdue } from "@/lib/decay";
+import { GRADES, windowDays } from "@/lib/schedule";
 import { LinkEditor } from "./LinkEditor";
 import { needsResource, problemLinks, type LinkChip } from "@/lib/links";
 import { knownSections } from "@/lib/sheet";
 import type { EntryTab, SubjectConfig } from "@/lib/subjects";
-import type { Problem, Status } from "@/lib/types";
+import type { Grade, Problem, Status } from "@/lib/types";
 
 const STATUSES: Status[] = ["Unsolved", "Attempted", "Solved"];
 
-/** One link badge. `compact` is the phone sizing. */
-function LinkBadge({ chip, compact }: { chip: LinkChip; compact?: boolean }) {
+/** One link badge. `compact` is the phone sizing. Also rendered by the drill card. */
+export function LinkBadge({ chip, compact }: { chip: LinkChip; compact?: boolean }) {
   return (
     <a
       href={chip.href}
@@ -80,6 +82,7 @@ export function ProblemHeader({
   onStatusChange,
   onStarClick,
   onMarkRevised,
+  onGrade,
   onRemoveStar,
   onDelete,
   planned,
@@ -105,8 +108,13 @@ export function ProblemHeader({
   onStatusChange: (status: Status) => void;
   /** Clicking the star icon itself: marks revised, or un-stars if already fresh (<12h). */
   onStarClick: () => void;
-  /** The explicit "Mark Revised" button: always marks revised. */
+  /** The explicit "Mark Revised" button: always marks revised. Mobile only now. */
   onMarkRevised: () => void;
+  /**
+   * A graded revision — marks revised *and* records how the recall went, which
+   * sets this problem's own window. Replaces "Mark Revised" on desktop.
+   */
+  onGrade: (grade: Grade) => void;
   onRemoveStar: () => void;
   onDelete: () => void;
   /** True when this problem already has an unfinished todo in the daily plan. */
@@ -126,7 +134,10 @@ export function ProblemHeader({
   const [name, setName] = useState(problem.name);
   const [topic, setTopic] = useState(problem.topic);
 
-  const overdue = isOverdue(problem.starred, problem.lastRevised, decayDays);
+  // This problem's own window once it has a grade, else the global setting.
+  const win = windowDays(problem, decayDays);
+  const overdue = isOverdue(problem.starred, problem.lastRevised, win);
+  const grade = problem.recall ? GRADES[problem.recall] : null;
   // One ordered list, rendered by both the mobile and desktop rows below.
   const links = problemLinks(problem, { canWatchVideo });
   // Offered only where the problem's step actually has subsections.
@@ -143,7 +154,7 @@ export function ProblemHeader({
         <RevisionStar
           starred={problem.starred}
           lastRevised={problem.lastRevised}
-          decayDays={decayDays}
+          decayDays={win}
           size={20}
           onClick={onStarClick}
         />
@@ -292,28 +303,36 @@ export function ProblemHeader({
         <RevisionStar
           starred={problem.starred}
           lastRevised={problem.lastRevised}
-          decayDays={decayDays}
+          decayDays={win}
           size={28}
           onClick={onStarClick}
         />
         <div className="text-[12.5px] text-[#8b93a7] flex-1 min-w-[180px]">
           {!problem.starred ? (
             <>
-              Not in revision rotation. Click <b className="text-[#e6e9f0]">Mark Revised</b> to start tracking —
-              the star fades gold → red over {decayDays} days.
+              Not in revision rotation. Grade your recall to start tracking — the star then fades
+              gold → red over a window set by the grade.
             </>
           ) : (
             <>
               Revised <b className="text-[#e6e9f0]">{problem.revCount}×</b> · last{" "}
               <b className="text-[#e6e9f0]">{fmtAgo(problem.lastRevised!)}</b> ·{" "}
+              {grade && (
+                <>
+                  <b style={{ color: grade.color }}>{grade.label}</b> ·{" "}
+                </>
+              )}
               {overdue ? (
                 <b className="text-[#e12d39]">OVERDUE — revise now!</b>
               ) : (
                 <>
                   turns red in{" "}
                   <b className="text-[#e6e9f0]">
-                    {Math.max(decayDays - daysSince(problem.lastRevised), 0).toFixed(1)} days
-                  </b>
+                    {Math.max(win - daysSince(problem.lastRevised), 0).toFixed(1)} days
+                  </b>{" "}
+                  <span title="This problem's revision window — set by its last recall grade, or the sidebar's base window until it has one">
+                    ({fmtWindow(win)} window)
+                  </span>
                 </>
               )}
             </>
@@ -344,12 +363,7 @@ export function ProblemHeader({
             </button>
           </span>
         )}
-        <button
-          onClick={onMarkRevised}
-          className="bg-[#3ecf8e] text-[#08130d] font-bold rounded-lg px-3.5 py-1.5 text-[13px] hover:brightness-110"
-        >
-          ✓ Mark Revised
-        </button>
+        <GradeButtons problem={problem} decayDays={decayDays} onGrade={onGrade} />
         {problem.starred && (
           <button
             onClick={onRemoveStar}

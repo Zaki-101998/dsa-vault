@@ -37,6 +37,7 @@ export function Sidebar({
   onDecayDaysChange,
   onImport,
   onSelectPattern,
+  onDrillDue,
   mobileOpen = false,
   onClose,
 }: {
@@ -59,6 +60,8 @@ export function Sidebar({
   onImport: (rows: UserProblemRow[]) => void;
   /** Open a pattern's intro page in the main pane. */
   onSelectPattern: (id: string) => void;
+  /** Open the drill setup on "Due now" — the stats bar's due count is the button. */
+  onDrillDue: () => void;
   /** Mobile-only: whether the off-canvas drawer is open. Desktop ignores this. */
   mobileOpen?: boolean;
   /** Mobile-only: dismiss the drawer (also fired after selecting a problem). */
@@ -202,6 +205,7 @@ export function Sidebar({
           >
             <option value="all">All</option>
             <option value="due">Due for revision</option>
+            <option value="shaky">Shaky (blank or fuzzy)</option>
             <option value="starred">Starred</option>
             {subject.hasConceptFilter && <option value="concepts">Concepts only</option>}
             {anyNeedsResource && <option value="noresource">Needs a resource</option>}
@@ -244,7 +248,15 @@ export function Sidebar({
         )}
       </div>
 
-      <StatsBar problems={allProblems} decayDays={decayDays} subject={subject} />
+      <StatsBar
+        problems={allProblems}
+        decayDays={decayDays}
+        subject={subject}
+        onDrillDue={() => {
+          onDrillDue();
+          onClose?.();
+        }}
+      />
 
       <ProblemList
         groups={viewGroups}
@@ -286,7 +298,9 @@ export function Sidebar({
         </button>
         <input ref={fileRef} type="file" accept=".json" className="hidden" onChange={handleImportFile} />
         <span className="ml-auto flex items-center gap-1.5">
-          <span>Red in</span>
+          <span title="The base revision window. A problem's own window starts here and is then set by its recall grade: blank → 1 day, fuzzy → about 60% of this, got it → doubles each time.">
+            Base
+          </span>
           <input
             type="number"
             min={1}

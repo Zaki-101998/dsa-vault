@@ -7,7 +7,13 @@ import { useVideoAccess } from "@/lib/useVideoAccess";
 import { knownTopics } from "@/lib/sheet";
 import { SUBJECTS, SUBJECT_ORDER, subjectOf, type EntryTab } from "@/lib/subjects";
 import { subjectStore } from "@/lib/subjectStore";
-import { ALSO_BY_KEY, FAMILIES_BY_ID, PATTERNS_BY_ID, PRIMARY_BY_KEY } from "@/lib/patterns";
+import {
+  ALSO_BY_KEY,
+  FAMILIES_BY_ID,
+  PATTERNS_BY_ID,
+  PRIMARY_BY_KEY,
+  patternGroupKey,
+} from "@/lib/patterns";
 import { revealPattern } from "@/lib/viewStore";
 import { createClient } from "@/lib/supabase/client";
 import type { CodeLang, Selection, SubjectId } from "@/lib/types";
@@ -17,6 +23,8 @@ import { PatternPage } from "./PatternPage";
 import { NotesEditor } from "./NotesEditor";
 import { CodeTabs } from "./CodeTabs";
 import { TodoDrawer } from "./TodoDrawer";
+import { DrillSetup, type DrillPlan, type DrillSeed } from "./DrillSetup";
+import { DrillSession } from "./DrillSession";
 
 type SelectionBySubject = Record<SubjectId, Selection | null>;
 
@@ -44,6 +52,11 @@ export function Workspace({ userId, userEmail }: { userId: string; userEmail: st
   // in PatternPage because that component is keyed by pattern id, so local
   // state would reset the choice on every pattern you opened.
   const [tplLang, setTplLang] = useState<CodeLang>("java");
+  // The drill is two steps: `drillSeed` non-null shows the setup modal (its
+  // value is whatever the opener pre-selected), and `drill` non-null means a
+  // session is running and has taken over the whole workspace.
+  const [drillSeed, setDrillSeed] = useState<DrillSeed | null>(null);
+  const [drill, setDrill] = useState<DrillPlan | null>(null);
 
   const sel = selection[subject];
   const selectedKey = sel?.kind === "problem" ? sel.key : null;
@@ -96,6 +109,34 @@ export function Workspace({ userId, userEmail }: { userId: string; userEmail: st
     );
   }
 
+  // A running drill replaces the sidebar too, not just the main pane: the tree
+  // files every problem under its step or pattern, which is the answer.
+  if (drill) {
+    return (
+      <DrillSession
+        key={drill.id}
+        plan={drill}
+        byKey={vault.byKey}
+        subject={config}
+        decayDays={vault.decayDays}
+        canWatchVideo={videoAccess.canWatch}
+        plannedKeys={todos.plannedKeys}
+        onGrade={vault.gradeRevision}
+        onPlanReds={(items) => todos.addTodos(items, "today")}
+        onOpenProblem={(key) => {
+          setDrill(null);
+          selectEntry(key);
+        }}
+        onRestart={(keys) =>
+          // Not blind: these are the ones just seen, and the point of the
+          // second pass is the approach, not recognising them again.
+          setDrill({ id: Date.now(), keys, blind: false, title: "Second pass" })
+        }
+        onExit={() => setDrill(null)}
+      />
+    );
+  }
+
   return (
     <div className="flex flex-1 min-h-0 overflow-hidden">
       <Sidebar
@@ -117,6 +158,7 @@ export function Workspace({ userId, userEmail }: { userId: string; userEmail: st
         onDecayDaysChange={vault.setDecayDays}
         onImport={vault.importRows}
         onSelectPattern={selectPattern}
+        onDrillDue={() => setDrillSeed({ round: "due" })}
         mobileOpen={sidebarOpen}
         onClose={() => setSidebarOpen(false)}
       />
@@ -166,6 +208,14 @@ export function Workspace({ userId, userEmail }: { userId: string; userEmail: st
             {todos.carriedCount > 0 && ` · ${todos.carriedCount} carried`}
           </button>
 
+          <button
+            onClick={() => setDrillSeed({})}
+            title="Drill — recall each approach in a couple of minutes, then check it against your notes"
+            className="border border-[#5b8cff]/50 text-[#5b8cff] rounded-md px-2.5 py-1 font-semibold whitespace-nowrap hover:bg-[#5b8cff]/10"
+          >
+            ▶<span className="hidden sm:inline"> Drill</span>
+          </button>
+
           <span className="ml-auto flex items-center gap-3 min-w-0">
             {vault.saving && <span className="text-[#3ecf8e]">Saving…</span>}
             {userEmail && <span className="hidden sm:inline max-w-[28vw] truncate">{userEmail}</span>}
@@ -204,6 +254,9 @@ export function Workspace({ userId, userEmail }: { userId: string; userEmail: st
             // here. That also means plannedKeys cannot track a pattern, so the
             // page always offers the buttons rather than a "Planned" state.
             onPlan={(day) => todos.addTodo(`Revise: ${pattern.title} pattern`, day)}
+            onDrill={() =>
+              setDrillSeed({ round: "all", scope: { kind: "pattern", key: patternGroupKey(pattern) } })
+            }
           />
         ) : !problem ? (
           <div className="flex-1 flex items-center justify-center p-4">
@@ -233,6 +286,11 @@ export function Workspace({ userId, userEmail }: { userId: string; userEmail: st
                 <li>
                   <b className="text-[#e6e9f0]">Star</b> — mark it revised; the star fades gold → red
                   the longer you leave it.
+                </li>
+                <li>
+                  <b className="text-[#e6e9f0]">▶ Drill</b> — recall each approach without your
+                  notes, then grade yourself. What you know comes back less often; what you
+                  blanked on comes back tomorrow.
                 </li>
                 {config.hasConceptFilter && (
                   <li>
@@ -270,6 +328,7 @@ export function Workspace({ userId, userEmail }: { userId: string; userEmail: st
               onStatusChange={(status) => vault.setStatus(problem.key, status)}
               onStarClick={() => vault.toggleStar(problem.key)}
               onMarkRevised={() => vault.markRevised(problem.key)}
+              onGrade={(grade) => vault.gradeRevision(problem.key, grade)}
               onRemoveStar={() => vault.removeStar(problem.key)}
               planned={todos.plannedKeys.has(problem.key)}
               onPlan={(day) => todos.addTodo(`Revise: ${problem.name}`, day, problem.key)}
@@ -296,6 +355,22 @@ export function Workspace({ userId, userEmail }: { userId: string; userEmail: st
           </div>
         )}
       </main>
+
+      {drillSeed && (
+        <DrillSetup
+          groups={vault.groups}
+          byKey={vault.byKey}
+          subject={config}
+          decayDays={vault.decayDays}
+          seed={drillSeed}
+          onStart={(plan) => {
+            setDrillSeed(null);
+            setSidebarOpen(false);
+            setDrill(plan);
+          }}
+          onClose={() => setDrillSeed(null)}
+        />
+      )}
 
       {showTodos && (
         <TodoDrawer

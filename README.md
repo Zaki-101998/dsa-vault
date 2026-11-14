@@ -13,7 +13,7 @@ A personal notes + code + revision tracker for [Striver's A2Z DSA sheet](https:/
 ## 1. Set up Supabase (one-time, ~5 minutes)
 
 1. Create a free project at [supabase.com](https://supabase.com).
-2. In the Supabase dashboard, go to **SQL Editor → New query**, paste the entire contents of [`supabase/migration.sql`](supabase/migration.sql), and run it. This creates the two tables (`user_problems`, `user_settings`) with row-level security so your data is private to your account. Then run [`supabase/migration-todos.sql`](supabase/migration-todos.sql) the same way for the daily TODO list (`user_todos` table). *(Already ran the first migration before the TODO feature existed? Just run `migration-todos.sql` on its own.)* Then [`supabase/migration-custom-links.sql`](supabase/migration-custom-links.sql), which adds two nullable columns so a problem can carry your own problem link and video alongside the sheet's. *(Already ran an earlier version of that file? Re-run it — each statement is `if not exists`.)* Finally [`supabase/migration-custom-section.sql`](supabase/migration-custom-section.sql), which lets a problem sit in a subsection you choose.
+2. In the Supabase dashboard, go to **SQL Editor → New query**, paste the entire contents of [`supabase/migration.sql`](supabase/migration.sql), and run it. This creates the two tables (`user_problems`, `user_settings`) with row-level security so your data is private to your account. Then run [`supabase/migration-todos.sql`](supabase/migration-todos.sql) the same way for the daily TODO list (`user_todos` table). *(Already ran the first migration before the TODO feature existed? Just run `migration-todos.sql` on its own.)* Then [`supabase/migration-custom-links.sql`](supabase/migration-custom-links.sql), which adds two nullable columns so a problem can carry your own problem link and video alongside the sheet's. *(Already ran an earlier version of that file? Re-run it — each statement is `if not exists`.)* Then [`supabase/migration-custom-section.sql`](supabase/migration-custom-section.sql), which lets a problem sit in a subsection you choose. Finally [`supabase/migration-recall.sql`](supabase/migration-recall.sql), which adds the recall grade and per-problem revision window that Drill mode writes — run it **before** deploying the code that uses it; until it has run, grading a problem fails (everything else keeps saving).
 
    **Upgrading an existing vault?** Striver restructured the A2Z sheet in September 2026 (18 steps → 19 modules with subsections). No migration is needed: the sheet is rebuilt as a *merge* of his new roadmap onto the old one, and every problem that existed before keeps its original `problem_key`, so saved notes, code, stars and revision history stay attached. See `scripts/build-a2z-sheet.mjs` for how that merge works.
 3. Go to **Authentication → Sign In / Providers**:
@@ -49,9 +49,11 @@ Vercel's build image runs Node 22+ by default, so the `@supabase/supabase-js` de
 
 - **Notes tab** — a TipTap rich-text editor. Pasting from Gemini (or Docs, Notion, etc.) carries over its HTML formatting directly. Pasting plain-text markdown (`## heading`, `**bold**`, `` ``` `` code fences, `- ` lists, `> ` quotes, tables) is auto-converted to formatted content.
 - **Code tab** — Brute / Better / Optimal sub-tabs per problem (add more with **+ Approach**), each with a syntax-highlighted CodeMirror editor and Time/Space complexity fields. Each approach has its own language (**Java / C++ / Python**, selectable in the toolbar). Pasted code is **auto-formatted** (clang-format for Java/C++, Ruff for Python — both running locally as WebAssembly), and the **✨ Format** button re-formats on demand. If a snippet can't be parsed, it's kept exactly as pasted.
-- **Revision star** — click it (or "Mark Revised") to add a problem to your rotation. The star color interpolates gold → orange → red over the configurable "Red in N days" window (default 5), and pulses once it's fully overdue. Clicking an already-fresh star (<12h) removes it from rotation.
+- **Revision star** — click it (or grade your recall) to add a problem to your rotation. The star color interpolates gold → orange → red over the problem's revision window — the configurable base (default 5 days) until it has a recall grade, its own window after — and pulses once it's fully overdue. Clicking an already-fresh star (<12h) removes it from rotation.
+- **Recall grades** — instead of a plain "Mark Revised", grade how the approach came back: **Blank / Fuzzy / Got it**. The grade sets that problem's *own* revision window: blank → back tomorrow, fuzzy → about 60% of the base window, got it → the window doubles each time it comes back clean (5 → 10 → 20 → 40 → 60 days). "Base" in the sidebar footer is the starting window. A green only grows the window if the problem was actually due, so re-drilling the same evening can't push everything two months out.
+- **▶ Drill** — the fast way to revise: recall the approach, don't re-code the problem. Each card shows only the problem name and a link to its statement; type (or think through) the pattern, key insight, complexity and edge cases against a soft 3-minute timer, then reveal your notes, your code and the pattern's own summary, and grade yourself. Draw from the whole sheet, one step, one pattern family or one pattern; pick what's due, everything, only the fuzzy and blank ones, or the blanks plus a tenth of the greens. **Blind** shuffles and hides the step and pattern until you reveal. What you typed is kept with the attempt, so next time you can read it against a fresh one. The summary turns the blanks into "Code from scratch" tasks in the daily plan.
 - **Daily plan** — the **☑ Today** button in the top bar opens a drawer with Today / Tomorrow TODO lists. Queue up tomorrow's problems the night before; anything unfinished **rolls over to the next day automatically**, with a "carried Nd" badge that turns red the longer it slips. "📋 Plan today" on any problem adds a linked "Revise: …" task — click it in the drawer to jump straight to that problem.
-- **Sidebar** — grouped by the sheet's 18 steps, with search, and filters for Due / Starred / Solved / Unsolved. "+ Problem" adds anything outside the sheet.
+- **Sidebar** — grouped by the sheet's 18 steps, with search, and filters for Due / Shaky (blank or fuzzy) / Starred / Solved / Unsolved. "+ Problem" adds anything outside the sheet.
 - **Export / Import** — the sidebar footer has JSON backup/restore, independent of Supabase, as a safety net.
 
 ## Project structure
@@ -59,7 +61,7 @@ Vercel's build image runs Node 22+ by default, so the `@supabase/supabase-js` de
 ```
 app/                 routes: /, /login, /auth/callback
 components/          Sidebar, ProblemHeader, NotesEditor, CodeTabs, etc.
-lib/                 useVault (Supabase-backed state), sheet merging, decay-color logic, Supabase clients
+lib/                 useVault (Supabase-backed state), sheet merging, decay-color logic, recall scheduling + drill queue (schedule.ts), Supabase clients
 data/a2z-sheet.json  seed data: Striver's 19 modules / 79 subsections, merged with the older sheet
 scripts/fetch-a2z.mjs   re-scrapes the A2Z roadmap from takeuforward.org into a local cache
 scripts/build-a2z-sheet.mjs  merges that cache onto scripts/a2z-sheet-legacy.json -> the seed sheet
@@ -71,6 +73,7 @@ supabase/migration.sql  DB schema + RLS policies — run once in the Supabase SQ
 
 Not built now, but worth considering if the revision habit sticks:
 
-- **Spaced repetition**: double the decay window after each successful revision (5 → 10 → 20 days), so well-known problems nag you less often.
+- **Blind template typing**: type a pattern's template from memory and diff it against the catalog's.
+- **Mistakes log**: one line per bug or missed insight, logged at the drill's reveal step and re-read before an interview.
 - **Streaks / activity heatmap** for daily revision consistency.
 - **Tag-based filtering** (e.g. "two pointers", "DP on trees") independent of the sheet's topic grouping, since some patterns cut across steps.

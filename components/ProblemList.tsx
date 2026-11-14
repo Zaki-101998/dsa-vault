@@ -18,12 +18,14 @@ import { CSS } from "@dnd-kit/utilities";
 import { ProblemRow, type RowContext } from "./ProblemRow";
 import { collapseStore } from "@/lib/collapseStore";
 import { daysSince, isDue } from "@/lib/decay";
+import { windowDays } from "@/lib/schedule";
 import { needsResource } from "@/lib/links";
 import type { Problem, Status, SubGroup, SubjectId, TopicGroup } from "@/lib/types";
 
 export type FilterKey =
   | "all"
   | "due"
+  | "shaky"
   | "starred"
   | "solved"
   | "unsolved"
@@ -149,7 +151,8 @@ function matchesFilter(
   decayDays: number,
   markStubs: boolean
 ): boolean {
-  if (filter === "due") return isDue(p.starred, p.lastRevised, decayDays);
+  if (filter === "due") return isDue(p.starred, p.lastRevised, windowDays(p, decayDays));
+  if (filter === "shaky") return p.recall === "red" || p.recall === "yellow";
   if (filter === "starred") return p.starred;
   if (filter === "solved") return p.status === "Solved";
   if (filter === "unsolved") return p.status !== "Solved";
@@ -295,7 +298,13 @@ export function ProblemList({
   if (filter === "due" && flattenDue) {
     const flat = filteredGroups
       .flatMap((g) => g.problems)
-      .sort((a, b) => daysSince(b.lastRevised) - daysSince(a.lastRevised));
+      // Furthest past its *own* window first: three days into a one-day window
+      // is more urgent than ten days into a forty-day one.
+      .sort(
+        (a, b) =>
+          daysSince(b.lastRevised) / windowDays(b, decayDays) -
+          daysSince(a.lastRevised) / windowDays(a, decayDays)
+      );
     return (
       <div className="flex-1 overflow-y-auto p-1.5">
         {flat.length === 0 ? (

@@ -2,6 +2,8 @@ import { SUBJECTS, isCustomKey, subjectOf } from "./subjects";
 import type {
   Approach,
   Problem,
+  RevEntry,
+  RevRecord,
   SeedProblem,
   SubGroup,
   SubjectId,
@@ -23,6 +25,23 @@ export function defaultApproaches(): Approach[] {
 
 function toEpoch(iso: string | null | undefined): number | null {
   return iso ? new Date(iso).getTime() : null;
+}
+
+/** Both shapes a rev_log entry can take — see RevEntry in lib/types.ts. */
+function toRevRecord(entry: string | RevEntry): RevRecord {
+  if (typeof entry === "string") return { at: new Date(entry).getTime(), grade: null, recall: "" };
+  return {
+    at: new Date(entry.at).getTime(),
+    grade: entry.grade ?? null,
+    recall: entry.recall ?? "",
+  };
+}
+
+/** `numeric` arrives as a number from PostgREST, but a hand-edited backup may hold a string. */
+function toInterval(v: number | string | null | undefined): number | null {
+  if (v == null) return null;
+  const n = Number(v);
+  return Number.isFinite(n) && n > 0 ? n : null;
 }
 
 const slug = (s: string) =>
@@ -63,7 +82,9 @@ function toProblem(
     starred: row?.starred || false,
     lastRevised: toEpoch(row?.last_revised),
     revCount: row?.rev_count || 0,
-    revLog: (row?.rev_log || []).map((x) => new Date(x).getTime()),
+    revLog: (row?.rev_log || []).map(toRevRecord),
+    recall: row?.recall ?? null,
+    intervalDays: toInterval(row?.interval_days),
     notesHtml: row?.notes_html || "",
     approaches: row?.approaches?.length ? row.approaches : defaultApproaches(),
     hasRow: !!row,

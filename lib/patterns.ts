@@ -1,5 +1,6 @@
 import { FAMILIES as rawFamilies, PATTERNS as rawPatterns } from "@/data/dsa-patterns/index.mjs";
 import { daysSince, isDue } from "./decay";
+import { windowDays } from "./schedule";
 import { isCustomKey } from "./subjects";
 import type { PatternDef, PatternFamily, Problem, SubGroup, TopicGroup } from "./types";
 
@@ -216,23 +217,47 @@ export function patternGroups(byKey: Map<string, Problem>): TopicGroup[] {
   return groups;
 }
 
-/** The pattern page's progress strip. Wording mirrors StatsBar's. */
+/**
+ * The pattern page's progress strip. Wording mirrors StatsBar's.
+ *
+ * "Stalest" is the problem furthest through its *own* revision window, not the
+ * one with the most days on it: a green on a 40-day window is not stale at day
+ * 12, and a red on a 1-day window very much is at day 3. `stalestWindow` is
+ * returned alongside so the caller can colour the badge on the same scale.
+ */
 export function patternProgress(
   problems: Problem[],
   decayDays: number
-): { total: number; solved: number; starred: number; due: number; stalestDays: number | null } {
+): {
+  total: number;
+  solved: number;
+  starred: number;
+  due: number;
+  stalestDays: number | null;
+  stalestWindow: number;
+  grades: { red: number; yellow: number; green: number };
+} {
   let solved = 0;
   let starred = 0;
   let due = 0;
   let stalest: number | null = null;
+  let stalestWindow = decayDays;
+  let worstRatio = -1;
+  const grades = { red: 0, yellow: 0, green: 0 };
   for (const p of problems) {
+    const win = windowDays(p, decayDays);
     if (p.status === "Solved") solved++;
+    if (p.recall) grades[p.recall]++;
     if (p.starred) {
       starred++;
       const days = daysSince(p.lastRevised);
-      if (Number.isFinite(days) && (stalest === null || days > stalest)) stalest = days;
+      if (Number.isFinite(days) && days / win > worstRatio) {
+        worstRatio = days / win;
+        stalest = days;
+        stalestWindow = win;
+      }
     }
-    if (isDue(p.starred, p.lastRevised, decayDays)) due++;
+    if (isDue(p.starred, p.lastRevised, win)) due++;
   }
-  return { total: problems.length, solved, starred, due, stalestDays: stalest };
+  return { total: problems.length, solved, starred, due, stalestDays: stalest, stalestWindow, grades };
 }

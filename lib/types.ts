@@ -68,6 +68,37 @@ export interface SeedSheet {
 
 export type CodeLang = "java" | "cpp" | "python";
 
+/**
+ * How well the approach came back, unprompted, the last time this was revised.
+ * Deliberately a separate axis from Status: Status is "have I solved it",
+ * this is "could I produce the approach cold right now". It is what sets the
+ * problem's own revision window — see lib/schedule.ts.
+ */
+export type Grade = "red" | "yellow" | "green";
+
+/**
+ * One revision, as stored in `rev_log`. Entries written before recall grades
+ * existed — and every ungraded star click since — are a bare ISO string, so a
+ * reader must accept both; lib/sheet.ts normalises them.
+ */
+export interface RevEntry {
+  at: string;
+  grade?: Grade;
+  /**
+   * What the user typed in the drill before revealing their notes. Kept on the
+   * newest few entries only (lib/schedule.ts appendRevEntry), since this array
+   * rides along on every save of the row.
+   */
+  recall?: string;
+}
+
+/** A RevEntry as the UI reads it: epoch time, and every field present. */
+export interface RevRecord {
+  at: number;
+  grade: Grade | null;
+  recall: string;
+}
+
 export interface Approach {
   id: string;
   label: string;
@@ -93,7 +124,16 @@ export interface UserProblemRow {
   starred: boolean;
   last_revised: string | null;
   rev_count: number;
-  rev_log: string[];
+  rev_log: (string | RevEntry)[];
+  /**
+   * Optional, and absent from blankRow, on purpose: useVault upserts the whole
+   * row, so a column the database does not have yet would fail *every* save —
+   * notes included. Leaving these off until a grade is actually given means
+   * that before supabase/migration-recall.sql has been run, only grading fails.
+   */
+  recall?: Grade | null;
+  /** This problem's own "red in N days" window. Null/absent → the global decay_days. */
+  interval_days?: number | null;
   notes_html: string;
   approaches: Approach[];
   position: number | null;
@@ -112,7 +152,15 @@ export interface Problem {
   starred: boolean;
   lastRevised: number | null;
   revCount: number;
-  revLog: number[];
+  revLog: RevRecord[];
+  /** Last recall grade, null until the problem has been graded once. */
+  recall: Grade | null;
+  /**
+   * This problem's own revision window in days, null until graded — read it
+   * through windowDays() in lib/schedule.ts, which falls back to the global
+   * setting, rather than directly.
+   */
+  intervalDays: number | null;
   notesHtml: string;
   approaches: Approach[];
   hasRow: boolean;

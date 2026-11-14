@@ -13,6 +13,7 @@
 import type { useSortable } from "@dnd-kit/sortable";
 import { RevisionStar } from "./RevisionStar";
 import { daysSince, starColor } from "@/lib/decay";
+import { GRADES, windowDays } from "@/lib/schedule";
 import { needsResource } from "@/lib/links";
 import type { Problem, Status } from "@/lib/types";
 
@@ -55,7 +56,11 @@ export function ProblemRow({
   } & SortableHandles;
 }) {
   const days = problem.starred ? Math.floor(daysSince(problem.lastRevised)) : null;
-  const color = starColor(problem.starred, problem.lastRevised, decayDays);
+  // Each problem fades over its own window once it has a recall grade; until
+  // then this is the global setting, exactly as before.
+  const win = windowDays(problem, decayDays);
+  const color = starColor(problem.starred, problem.lastRevised, win);
+  const grade = problem.recall ? GRADES[problem.recall] : null;
   const stub = markStubs && needsResource(problem);
 
   return (
@@ -74,7 +79,7 @@ export function ProblemRow({
       <RevisionStar
         starred={problem.starred}
         lastRevised={problem.lastRevised}
-        decayDays={decayDays}
+        decayDays={win}
         size={16}
         onClick={(e) => {
           e.stopPropagation();
@@ -101,6 +106,14 @@ export function ProblemRow({
             .join(" · ")}
         </div>
       </div>
+      {grade && (
+        <span
+          title={`Last recall: ${grade.label}`}
+          aria-label={`Last recall: ${grade.label}`}
+          className="w-[7px] h-[7px] rounded-full shrink-0"
+          style={{ background: grade.color }}
+        />
+      )}
       {days !== null && (
         <span className="text-[10px] font-bold shrink-0" style={{ color: color ?? undefined }}>
           {days}d

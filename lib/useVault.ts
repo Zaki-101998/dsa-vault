@@ -4,9 +4,10 @@ import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { createClient } from "./supabase/client";
 import { clearAuthRecovery, isAuthError, recoverFromAuthError } from "./supabase/auth-error";
 import { defaultApproaches, mergeProblems, newApproachId } from "./sheet";
+import { parseFocus } from "./plan";
 import { RECALL_TEXT_MAX, appendRevEntry, nextInterval } from "./schedule";
 import { customKey } from "./subjects";
-import type { Approach, Grade, RevEntry, Status, SubjectId, UserProblemRow } from "./types";
+import type { Approach, Focus, Grade, RevEntry, Status, SubjectId, UserProblemRow } from "./types";
 
 const DEFAULT_DECAY_DAYS = 5;
 
@@ -37,6 +38,7 @@ export function useVault(userId: string, subject: SubjectId) {
   const supabase = useMemo(() => createClient(), []);
   const [rows, setRows] = useState<UserProblemRow[]>([]);
   const [decayDays, setDecayDaysState] = useState(DEFAULT_DECAY_DAYS);
+  const [focus, setFocusState] = useState<Focus | null>(null);
   const [loading, setLoading] = useState(true);
   const [saving, setSaving] = useState(false);
 
@@ -70,6 +72,9 @@ export function useVault(userId: string, subject: SubjectId) {
       if (sErr) console.error("Failed to load settings:", sErr.message);
       commitRows(() => (problemRows as UserProblemRow[]) || []);
       if (settings?.decay_days) setDecayDaysState(settings.decay_days);
+      // Absent until supabase/migration-focus.sql has been run — parseFocus
+      // turns undefined, null and anything malformed into "no topic".
+      setFocusState(parseFocus(settings?.focus));
       setLoading(false);
     })();
     return () => {
@@ -379,12 +384,41 @@ export function useVault(userId: string, subject: SubjectId) {
     [supabase, userId]
   );
 
+  /**
+   * Set, change or clear (null) the topic the revision planner is working
+   * through. Resolves to whether it was saved, so the planner can say so
+   * instead of showing a topic that will be gone on the next load.
+   *
+   * Writes `user_settings.focus`, the one column added by
+   * supabase/migration-focus.sql. Nothing else writes it — setDecayDays names
+   * only its own column — so on a database without that migration this is the
+   * only thing that fails.
+   */
+  const setFocus = useCallback(
+    async (next: Focus | null): Promise<boolean> => {
+      const previous = focus;
+      setFocusState(next);
+      const { error } = await supabase
+        .from("user_settings")
+        .upsert({ user_id: userId, focus: next }, { onConflict: "user_id" });
+      if (error) {
+        console.error("Failed to save revision topic:", error.message);
+        setFocusState(previous);
+        return false;
+      }
+      return true;
+    },
+    [supabase, userId, focus]
+  );
+
   return {
     loading,
     saving,
     groups,
     byKey,
     decayDays,
+    focus,
+    setFocus,
     markRevised,
     gradeRevision,
     toggleStar,

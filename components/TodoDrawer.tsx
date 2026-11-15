@@ -2,7 +2,10 @@
 
 import { useState, type FormEvent } from "react";
 import { carriedDays, localDateStr, type Todos } from "@/lib/useTodos";
-import type { UserTodoRow } from "@/lib/types";
+import { GRADES, GRADE_ORDER } from "@/lib/schedule";
+import { subjectOf } from "@/lib/subjects";
+import type { Focus, Grade, TopicGroup, UserTodoRow } from "@/lib/types";
+import { RevisionPlanner } from "./RevisionPlanner";
 
 const WEEKDAYS = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
 const MONTHS = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
@@ -21,12 +24,15 @@ function TodoItem({
   onEdit,
   onDelete,
   onOpenProblem,
+  onGrade,
 }: {
   todo: UserTodoRow;
   onToggle: () => void;
   onEdit: (text: string) => void;
   onDelete: () => void;
   onOpenProblem?: () => void;
+  /** Present on a DSA problem's todo: grade the recall and tick it in one go. */
+  onGrade?: (grade: Grade) => void;
 }) {
   const [editing, setEditing] = useState(false);
   const [draft, setDraft] = useState(todo.text);
@@ -85,6 +91,23 @@ function TodoItem({
         </span>
       )}
 
+      {onGrade && !todo.done && !editing && (
+        <span className="shrink-0 flex gap-0.5" role="group" aria-label="Grade your recall">
+          {GRADE_ORDER.map((g) => (
+            <button
+              key={g}
+              type="button"
+              onClick={() => onGrade(g)}
+              title={`${GRADES[g].label} — ${GRADES[g].meaning}. Grades it and ticks it off.`}
+              aria-label={GRADES[g].label}
+              className="w-[22px] h-[22px] rounded-md text-[11px] leading-none flex items-center justify-center opacity-55 hover:opacity-100 hover:bg-[#2a3040]"
+            >
+              {GRADES[g].dot}
+            </button>
+          ))}
+        </span>
+      )}
+
       {carried > 0 && !todo.done && (
         <span
           title={`Unfinished since ${todo.original_date} — carried forward automatically`}
@@ -111,10 +134,26 @@ export function TodoDrawer({
   todos,
   onClose,
   onOpenProblem,
+  dsaGroups,
+  focus,
+  onSetFocus,
+  onGrade,
+  onTickProblem,
 }: {
   todos: Todos;
   onClose: () => void;
   onOpenProblem: (key: string) => void;
+  /** The DSA sheet's steps — the revision planner works on DSA whatever tab is open. */
+  dsaGroups: TopicGroup[];
+  focus: Focus | null;
+  onSetFocus: (next: Focus | null) => Promise<boolean>;
+  onGrade: (key: string, grade: Grade) => void;
+  /**
+   * A problem's todo was just ticked done. Workspace uses it to count the
+   * problem as revised when it belongs to the running topic, so a tick is never
+   * something the next plan silently ignores.
+   */
+  onTickProblem: (key: string) => void;
 }) {
   const [tab, setTab] = useState<"today" | "tomorrow">("today");
   const [text, setText] = useState("");
@@ -169,6 +208,15 @@ export function TodoDrawer({
           ))}
         </div>
 
+        <RevisionPlanner
+          groups={dsaGroups}
+          focus={focus}
+          onSetFocus={onSetFocus}
+          day={tab}
+          plannedKeys={todos.plannedKeys}
+          onAdd={todos.addTodos}
+        />
+
         <form onSubmit={submit} className="px-4 py-3">
           <input
             autoFocus
@@ -193,7 +241,18 @@ export function TodoDrawer({
               <TodoItem
                 key={t.id}
                 todo={t}
-                onToggle={() => todos.toggleDone(t.id)}
+                onToggle={() => {
+                  if (!t.done && t.problem_key) onTickProblem(t.problem_key);
+                  todos.toggleDone(t.id);
+                }}
+                onGrade={
+                  t.problem_key && subjectOf(t.problem_key) === "dsa"
+                    ? (grade) => {
+                        onGrade(t.problem_key as string, grade);
+                        todos.toggleDone(t.id);
+                      }
+                    : undefined
+                }
                 onEdit={(txt) => todos.editTodo(t.id, txt)}
                 onDelete={() => todos.deleteTodo(t.id)}
                 onOpenProblem={

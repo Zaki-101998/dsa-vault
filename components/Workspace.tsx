@@ -1,10 +1,12 @@
 "use client";
 
-import { useCallback, useState, useSyncExternalStore } from "react";
+import { useCallback, useMemo, useState, useSyncExternalStore } from "react";
 import { useVault } from "@/lib/useVault";
 import { useTodos } from "@/lib/useTodos";
 import { useVideoAccess } from "@/lib/useVideoAccess";
-import { knownTopics } from "@/lib/sheet";
+import { knownTopics, mergeProblems } from "@/lib/sheet";
+import { isCovered } from "@/lib/plan";
+import { inDrillPool } from "@/lib/schedule";
 import { SUBJECTS, SUBJECT_ORDER, subjectOf, type EntryTab } from "@/lib/subjects";
 import { subjectStore } from "@/lib/subjectStore";
 import {
@@ -57,6 +59,15 @@ export function Workspace({ userId, userEmail }: { userId: string; userEmail: st
   // session is running and has taken over the whole workspace.
   const [drillSeed, setDrillSeed] = useState<DrillSeed | null>(null);
   const [drill, setDrill] = useState<DrillPlan | null>(null);
+
+  // The revision planner in the Daily plan drawer always works on the DSA
+  // sheet, but the vault's tree follows the open subject tab. Merged here only
+  // while the drawer is open, so the other subjects pay nothing for it.
+  const dsa = useMemo(() => {
+    if (!showTodos) return null;
+    if (subject === "dsa") return { groups: vault.groups, byKey: vault.byKey };
+    return mergeProblems(vault.rows, "dsa");
+  }, [showTodos, subject, vault.groups, vault.byKey, vault.rows]);
 
   const sel = selection[subject];
   const selectedKey = sel?.kind === "problem" ? sel.key : null;
@@ -377,6 +388,20 @@ export function Workspace({ userId, userEmail }: { userId: string; userEmail: st
           todos={todos}
           onClose={() => setShowTodos(false)}
           onOpenProblem={selectEntry}
+          dsaGroups={dsa?.groups ?? []}
+          focus={vault.focus}
+          onSetFocus={vault.setFocus}
+          onGrade={vault.gradeRevision}
+          onTickProblem={(key) => {
+            // Ticking a problem of the running topic counts as revising it —
+            // that is the planner's "covered" rule (lib/plan.ts isCovered).
+            // Anything else keeps the drawer's old meaning: a tick is a tick.
+            const focus = vault.focus;
+            const p = dsa?.byKey.get(key);
+            if (!focus || !p || !inDrillPool(p) || isCovered(p, focus)) return;
+            const step = dsa?.groups.find((g) => g.key === focus.stepKey);
+            if (step?.problems.some((q) => q.key === key)) vault.markRevised(key);
+          }}
         />
       )}
     </div>

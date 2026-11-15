@@ -193,6 +193,23 @@ export interface Problem {
   video: VideoRef | null;
 }
 
+/**
+ * The topic being revised right now, for the daily revision planner — see
+ * lib/plan.ts. Stored whole in `user_settings.focus` (jsonb), so every device
+ * agrees on which topic is running and when it was started.
+ */
+export interface Focus {
+  /** TopicGroup key of the step being revised. */
+  stepKey: string;
+  /**
+   * ISO time the topic was started. A problem counts as covered once it has
+   * been revised after this, which is the only "progress" the planner keeps.
+   */
+  startedAt: string;
+  /** The last daily budget entered, in minutes — just the next default. */
+  budgetMin: number;
+}
+
 // Row shape as stored in Supabase (public.user_todos)
 export interface UserTodoRow {
   id: string;

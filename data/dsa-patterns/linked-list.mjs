@@ -80,6 +80,8 @@ Node deleteTail(Node head) {
     problems: [
       "introduction-to-singly-linkedlist",
       "traversal-in-linked-list",
+      "find-the-length-of-the-linked-list",
+      "search-in-linked-list",
       "insertion-in-linked-list",
       "deletion-in-linked-list",
       "insertion-at-the-head-of-ll",
@@ -170,6 +172,7 @@ DNode reverse(DNode head) {
       "step-06-learn-linkedlist__insert-a-node-in-dll",
       "insert-before-given-node-in-dll",
       "deletion-in-doubly-ll",
+      "delete-head-of-dll",
       "step-06-learn-linkedlist__delete-a-node-in-dll",
       "delete-kth-element-of-dll",
       "removing-given-node-in-dll",

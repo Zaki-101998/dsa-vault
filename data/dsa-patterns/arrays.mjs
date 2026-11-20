@@ -94,6 +94,7 @@ int partition(int[] a, int lo, int hi) {     // Lomuto, pivot = a[hi]
       "step-02-learn-important-sorting-techniques__bubble-sort",
       "step-02-learn-important-sorting-techniques__recursive-bubble-sort",
       "step-02-learn-important-sorting-techniques__insertion-sort",
+      "recursive-insertion-sort",
       "step-02-learn-important-sorting-techniques__merge-sort",
       "quick-sorting",
     ],
@@ -170,6 +171,7 @@ long countInversions(int[] a, int lo, int hi) {
     problems: [
       "step-03-solve-problems-on-arrays__count-inversions",
       "step-03-solve-problems-on-arrays__reverse-pairs",
+      "number-of-greater-elements-to-the-right",
     ],
     borrows: [
       "step-02-learn-important-sorting-techniques__merge-sort",

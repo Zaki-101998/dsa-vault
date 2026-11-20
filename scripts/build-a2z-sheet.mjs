@@ -1,41 +1,44 @@
-// Re-runnable generator: merges Striver's new A2Z roadmap
-// (scripts/tuf-a2z-v2.cache.json, see fetch-a2z.mjs) onto the sheet the app was
-// already using (scripts/a2z-sheet-legacy.json), and writes data/a2z-sheet.json.
+// Re-runnable generator: lays Striver's live A2Z roadmap
+// (scripts/tuf-a2z-v2.cache.json, see fetch-a2z.mjs) over the problem keys the app
+// already uses (scripts/a2z-anchors.json), and writes data/a2z-sheet.json.
 //
-//   node scripts/build-a2z-sheet.mjs          # write sheet + audit map + report
+//   node scripts/build-a2z-sheet.mjs          # write sheet + anchors + report
 //   node scripts/build-a2z-sheet.mjs --dry    # report only, no file writes
 //
 // Pure transform — no network.
 //
-// THE POINT OF THE MERGE. Striver's Sept 2026 rewrite reordered, renamed and
-// merged problems. Taking his sheet verbatim would change the key of nearly every
-// problem, and the app keys saved notes/code/stars/revision history by exactly
-// that string — so a straight swap orphans all of it. Instead:
+// KEYS ARE IDENTITY. The app keys saved notes/code/stars/revision history by each
+// problem's `key`, and user_settings.focus + the sidebar collapse state by each
+// step's `key`. So a re-scrape may ADD rows and update names, links, videos and
+// placement, but it must never drop a key or quietly point one at a different
+// problem — either orphans saved work or, worse, shows it under the wrong name.
 //
-//   * A problem that existed before KEEPS ITS OLD KEY. It takes the new sheet's
-//     name, module, subsection, tier, video and links, but its identity — and so
-//     everything saved against it — is untouched. This is why there is no database
-//     migration: every key already in Postgres still exists in the sheet.
-//   * Where the new sheet MERGES several old problems into one, the old ones are
-//     emitted in its place rather than collapsed, since each holds its own notes.
-//     "Bubble Sort" + "Recursive Bubble Sort" stay two rows, both pointing at the
-//     merged entry's video and links.
-//   * A problem Striver genuinely DROPPED is carried over only if it has saved
-//     work (scripts/a2z-worked-keys.json), placed in the subsection named in
-//     CARRIED below. Dropped problems with no work are let go.
-//   * Anything with no old counterpart is new, and gets a fresh key.
+// HOW. scripts/a2z-anchors.json is a lockfile: for every key the app has ever
+// shipped it records the TUF item the key belongs to ({slug, occ} — occ because
+// TUF reuses slugs, e.g. "Basic Hashing" sits in two modules under one slug), and
+// for every module title its step key. The build:
 //
-// Old keys embed a step number and title that no longer match the module they now
-// sit under (`step-13-binary-trees__…` inside module 12). That is cosmetic: keys
-// are opaque and never displayed. Do NOT "tidy" them — renaming a key is exactly
-// the data loss this script exists to avoid.
+//   1. attaches each anchored key to exactly its anchored item;
+//   2. gives every live item no key claims a fresh key, from its slug;
+//   3. writes the lockfile back with those new keys added.
 //
-// MATCHING runs in descending order of confidence — exact normalized name, then a
-// shared LeetCode/GfG problem slug, then token overlap >= MIN_FUZZY — with
-// scripts/a2z-key-overrides.json applied first and beating all of it. The
-// normalizer is the one attach-links.mjs already uses (strips "(DP-35)",
-// "[use priority queue]", "| Theory") plus an abbreviation expansion, because the
-// two sheets disagree about "BT" vs "Binary Tree" and "UG" vs "undirected graph".
+// There is deliberately no name/link matching any more. Until Nov 2026 this
+// script matched the pre-rewrite sheet onto the new one by name, LeetCode slug and
+// token overlap; when TUF added 53 problems, that matcher re-pointed 8 existing
+// keys and dropped 3 (first-match-wins on a shared practice link), and its fuzzy
+// tier had already filed "Maximum Sum Combination" under "Combination Sum". The
+// anchors were frozen from what the app showed on 20 Nov 2026, which is the only
+// definition of a key's identity that matters: what the user wrote notes against.
+//
+// Where TUF MERGES problems (several keys on one item), each key still gets its
+// own row, keeping its own old name so the distinction survives — "Bubble Sort"
+// and "Recursive Bubble Sort" used to be two rows on one video this way. Where TUF
+// later splits one back out, REHOME moves the key onto its own item. Where TUF
+// DROPS an item, its keys must be listed in CARRIED or the build fails.
+//
+// Old keys embed a step number and title that no longer match where they sit
+// (`step-13-binary-trees__…` inside module 13 of 20). That is cosmetic: keys are
+// opaque and never displayed. Do NOT "tidy" them.
 
 import { existsSync, readFileSync, writeFileSync } from "node:fs";
 import { fileURLToPath } from "node:url";
@@ -47,31 +50,24 @@ const root = join(here, "..");
 const CACHE = join(here, "tuf-a2z-v2.cache.json");
 const SHEET = join(root, "data/a2z-sheet.json");
 const LEGACY = join(here, "a2z-sheet-legacy.json");
-const OVERRIDES = join(here, "a2z-key-overrides.json");
+const ANCHORS = join(here, "a2z-anchors.json");
 const WORKED = join(here, "a2z-worked-keys.json");
-const AUDIT = join(here, "a2z-key-migration.json");
 
 const dry = process.argv.includes("--dry");
 
-// Below this, token overlap starts pairing unrelated problems (every tree
-// traversal collapsing onto "Inorder Traversal" — the trap attach-links.mjs
-// documents). Anything weaker belongs in a2z-key-overrides.json instead.
-const MIN_FUZZY = 0.6;
-
-const EXPECT = { modules: 19, subsections: 79, items: 442 };
+const EXPECT = { modules: 20, subsections: 84, items: 495 };
 
 /**
- * Problems Striver dropped that carry saved work, and the subsection of the new
- * sheet each belongs in ("Module / Subsection").
- *
- * The build FAILS if a worked orphan is missing from here rather than quietly
- * dropping it — that assertion is the whole safety net.
+ * Keys with no live TUF item (Striver dropped the problem) and the subsection each
+ * is shown in ("Module / Subsection"). The build FAILS if an anchored key loses its
+ * item and is missing from here — that assertion is the whole safety net.
  */
 const CARRIED = {
   // The new sheet has Kadane's but not its print-the-subarray follow-up.
   "step-03-solve-problems-on-arrays__print-subarray-with-maximum-subarray-sum-extended-version-of-above-problem":
     "Arrays / FAQs(Medium)",
-  "step-05-strings__remove-outermost-paranthesis": "Beginner Problems / Basic Strings",
+  // Recursion's own atoi drill; TUF's "String to Integer (atoi)" is the iterative
+  // string problem and has its own row in Strings (Basic and Medium).
   "step-07-recursion__recursive-implementation-of-atoi": "Recursion / Implementation Problems",
   "step-13-binary-trees__binary-tree-representation-in-java": "Binary Trees / Theory/Traversals",
   "step-13-binary-trees__binary-tree-traversals-in-binary-tree": "Binary Trees / Theory/Traversals",
@@ -86,6 +82,37 @@ const CARRIED = {
     "Graphs / Shortest Path Algorithms",
 };
 
+/**
+ * Keys that move to a different TUF item: `key -> slug` (occurrence 0).
+ *
+ * Only for keys whose row ALREADY showed the target problem's name — a merged row
+ * keeping its own old name, or a carried one — so moving it changes where the row
+ * sits, never what it is. Once a build has written the move into the anchors an
+ * entry here is a no-op, but keep it as the record of why the key moved.
+ */
+const REHOME = {
+  // Nov 2026: TUF split these back out of the merged entries they shared.
+  "step-02-learn-important-sorting-techniques__recursive-bubble-sort": "recursive-bubble-sort", // was on Bubble Sort
+  "step-04-binary-search__count-occurrences-of-a-number-in-a-sorted-array-with-duplicates":
+    "count-occurrences-in-a-sorted-array", // was on First and Last Occurrence
+  "step-06-learn-linkedlist__reverse-a-dll": "reverse-a-doubly-linked-list", // was on Reverse a LL
+  // A fuzzy-match mistake: it was filed under Recursion's "Combination Sum".
+  "step-11-heaps__maximum-sum-combination": "maximum-sum-combination",
+  // Was carried (Striver had dropped it); now back, in the new Strings module.
+  "step-05-strings__remove-outermost-paranthesis": "remove-outermost-parentheses",
+};
+
+/**
+ * Keys taken out of the sheet entirely. Only for duplicates the app made itself,
+ * and the build refuses any key that carries saved work (scripts/a2z-worked-keys.json
+ * — refresh it from a fresh backup before adding to this list).
+ */
+const REMOVE = {
+  // The pre-rewrite sheet listed Assign Cookies under both Greedy and DP; both rows
+  // ended up side by side in Greedy → Easy. TUF lists it once.
+  "step-16-dynamic-programming__assign-cookies": "duplicate of step-12-greedy-algorithms__assign-cookies",
+};
+
 // ------------------------------------------------------------------ helpers
 
 const TUF = "https://takeuforward.org";
@@ -98,62 +125,6 @@ const liveLink = (url) =>
 
 // TUF ships a few labels with stray whitespace ("Sorting ", "Flowchart Problem-Solving ").
 const label = (s) => String(s ?? "").replace(/\s+/g, " ").trim();
-
-// The two sheets abbreviate differently; expand so "Top View of BT" and
-// "Top View of Binary Tree" compare equal.
-const ABBR = {
-  bt: "binary tree",
-  bst: "binary search tree",
-  ll: "linked list",
-  dll: "doubly linked list",
-  sll: "singly linked list",
-  ug: "undirected graph",
-  dg: "directed graph",
-  pq: "priority queue",
-  dp: "dynamic programming",
-  lis: "longest increasing subsequence",
-  mst: "minimum spanning tree",
-  bfs: "breadth first search",
-  dfs: "depth first search",
-};
-
-// Same shape as the normalizer in attach-links.mjs: the old sheet tags names with
-// "(DP-35)", "[use priority queue]" and "| Theory" that the new one does not.
-const base = (s) =>
-  String(s ?? "")
-    .toLowerCase()
-    .replace(/\[[^\]]*\]/g, " ")
-    .replace(/\|.*$/g, " ")
-    .replace(/\([^)]*\)/g, " ")
-    .replace(/[^a-z0-9]+/g, " ")
-    .trim();
-
-const norm = (s) =>
-  base(s)
-    .split(" ")
-    .map((w) => ABBR[w] ?? w)
-    .join(" ")
-    .replace(/\s+/g, " ")
-    .trim();
-
-const nameKey = (s) => norm(s).replace(/\s+/g, "");
-
-const STOP = new Set(
-  "a an the of in on to and or for using with given problem problems number numbers array arrays".split(" ")
-);
-const tokens = (s) => new Set(norm(s).split(" ").filter((w) => w && !STOP.has(w)));
-
-function jaccard(a, b) {
-  let shared = 0;
-  for (const x of a) if (b.has(x)) shared++;
-  return shared / (a.size + b.size - shared || 1);
-}
-
-/** Canonical problem id shared by both sheets: the LeetCode/GfG URL slug. */
-const practiceSlug = (url) => {
-  const m = /(?:leetcode\.com\/problems|geeksforgeeks\.org\/problems)\/([a-z0-9-]+)/i.exec(url || "");
-  return m ? m[1].replace(/-/g, "") : null;
-};
 
 /**
  * TUF's `yt_video` in the three shapes it ships: `youtu.be/ID`, `youtu.be/ID?t=N`,
@@ -178,115 +149,89 @@ const slugify = (s) =>
     .replace(/[^a-z0-9]+/g, "-")
     .replace(/^-+|-+$/g, "");
 
+const ref = (slug, occ) => `${slug}#${occ}`;
+
 // ------------------------------------------------------------- load the data
 
 const syllabus = JSON.parse(readFileSync(CACHE, "utf8"));
 const flat = [];
+const occSeen = new Map();
 const tally = walkSheet(syllabus, (item, { module, subsection }) => {
-  flat.push({ item, module: label(module.label), subsection: label(subsection?.label) });
+  const occ = occSeen.get(item.slug) ?? 0;
+  occSeen.set(item.slug, occ + 1);
+  flat.push({ item, occ, module: label(module.label), subsection: label(subsection?.label) });
 });
 for (const [k, want] of Object.entries(EXPECT)) {
   if (tally[k] !== want) console.warn(`⚠ ${k}: expected ${want}, got ${tally[k]}`);
 }
+const byRef = new Map(flat.map((f) => [ref(f.item.slug, f.occ), f]));
 
-if (!existsSync(LEGACY)) throw new Error(`missing ${LEGACY} — it is the matching source of truth`);
+if (!existsSync(ANCHORS)) throw new Error(`missing ${ANCHORS} — it is the source of truth for every key`);
+const anchorsDoc = JSON.parse(readFileSync(ANCHORS, "utf8"));
+const anchors = anchorsDoc.problems;
+const stepAnchors = anchorsDoc.steps;
+
+// The pre-rewrite sheet: names for merged rows, practice links to backfill, and
+// the full record of carried problems.
 const legacy = JSON.parse(readFileSync(LEGACY, "utf8"));
-const oldProblems = legacy.steps.flatMap((s, si) =>
-  s.problems.map((p, pi) => ({ ...p, step: s.title, order: si * 1000 + pi }))
-);
-
-const overrides = Object.fromEntries(
-  Object.entries(JSON.parse(readFileSync(OVERRIDES, "utf8"))).filter(([k]) => !k.startsWith("_"))
-);
+const legacyByKey = new Map(legacy.steps.flatMap((s) => s.problems.map((p) => [p.key, p])));
 const workedKeys = new Set(JSON.parse(readFileSync(WORKED, "utf8")));
 
-// ---------------------------------------------------------------- matching
+// ---------------------------------------------------------- resolve anchors
 
-const bySlug = new Map(flat.map((f) => [f.item.slug, f]));
-for (const [oldKey, slug] of Object.entries(overrides)) {
-  if (!bySlug.has(slug)) throw new Error(`override ${oldKey} -> ${slug}: no such item in the cache`);
+for (const [k, slug] of Object.entries(REHOME)) {
+  if (!anchors[k]) throw new Error(`REHOME ${k}: not an anchored key`);
+  if (!byRef.has(ref(slug, 0))) throw new Error(`REHOME ${k} -> ${slug}: no such item in the cache`);
+}
+for (const k of Object.keys(REMOVE)) {
+  if (workedKeys.has(k)) throw new Error(`REMOVE ${k}: it has saved work — keep the row`);
 }
 
-const byName = new Map();
-const byPractice = new Map();
-for (const f of flat) {
-  const n = nameKey(f.item.label);
-  if (!byName.has(n)) byName.set(n, f);
-  const l = practiceSlug(f.item.leetcode_link);
-  if (l && !byPractice.has(l)) byPractice.set(l, f);
-}
-
-/** new item -> the old problems that resolved to it */
+/** flat entry -> keys attached to it, in lockfile order */
 const claims = new Map();
-const orphans = [];
-const via = { override: 0, exact: 0, practice: 0, fuzzy: 0, none: 0 };
+const carriedKeys = [];
+const lostItem = [];
+let rehomed = 0;
 
-for (const p of oldProblems) {
-  let hit = null;
-  let how = "none";
-  let score = 1;
-
-  if (overrides[p.key]) {
-    hit = bySlug.get(overrides[p.key]);
-    how = "override";
+for (const [key, a] of Object.entries(anchors)) {
+  if (REMOVE[key]) continue;
+  let target = null;
+  if (REHOME[key]) {
+    target = ref(REHOME[key], 0);
+    if (a.carried || a.slug !== REHOME[key]) rehomed++;
+  } else if (a.carried || CARRIED[key]) {
+    carriedKeys.push(key);
+    continue;
+  } else {
+    target = ref(a.slug, a.occ);
   }
-  if (!hit) {
-    hit = byName.get(nameKey(p.name));
-    if (hit) how = "exact";
-  }
-  if (!hit) {
-    const l = practiceSlug(p.practice);
-    if (l && byPractice.has(l)) {
-      hit = byPractice.get(l);
-      how = "practice";
-    }
-  }
-  if (!hit) {
-    const t = tokens(p.name);
-    let best = null;
-    let bestScore = 0;
-    for (const f of flat) {
-      const s = jaccard(t, tokens(f.item.label));
-      if (s > bestScore) {
-        bestScore = s;
-        best = f;
-      }
-    }
-    if (best && bestScore >= MIN_FUZZY) {
-      hit = best;
-      how = "fuzzy";
-      score = Number(bestScore.toFixed(2));
-    }
-  }
-
-  via[how]++;
-  if (!hit) {
-    orphans.push(p);
+  const f = byRef.get(target);
+  if (!f) {
+    lostItem.push(`  ${key}   (was on "${target}")`);
     continue;
   }
-  if (!claims.has(hit)) claims.set(hit, []);
-  claims.get(hit).push({ ...p, via: how, score });
+  if (!claims.has(f)) claims.set(f, []);
+  claims.get(f).push(key);
 }
-
-// A worked problem Striver dropped must have a home, or we would silently lose it.
-const workedOrphans = orphans.filter((p) => workedKeys.has(p.key));
-const unplaced = workedOrphans.filter((p) => !CARRIED[p.key]);
-if (unplaced.length) {
+if (lostItem.length) {
   throw new Error(
-    `${unplaced.length} problem(s) with saved work have no counterpart and no CARRIED placement:\n` +
-      unplaced.map((p) => `  ${p.key}   (${p.step} — "${p.name}")`).join("\n") +
-      `\nAdd each to CARRIED in scripts/build-a2z-sheet.mjs with the subsection it belongs in.`
+    `${lostItem.length} key(s) are attached to an item TUF no longer lists:\n${lostItem.join("\n")}\n` +
+      `Add each to CARRIED with the subsection it belongs in (or REHOME it, if TUF renamed the slug).`
   );
 }
+const unplaced = carriedKeys.filter((k) => !CARRIED[k]);
+if (unplaced.length) throw new Error(`carried keys with no CARRIED placement: ${unplaced.join(", ")}`);
 
 // ------------------------------------------------------------- emit the sheet
 
 const steps = [];
 let currentStep = null;
-const seenKeys = new Set();
-const audit = {};
+const seenKeys = new Set(Object.keys(anchors)); // never mint a key the lockfile knows, removed ones included
+const emittedKeys = new Set();
+const nextAnchors = {};
+const added = [];
 
-const uniqueKey = (want) => {
+const freshKey = (want) => {
   let key = want;
   let n = 2;
   while (seenKeys.has(key)) key = `${want}-${n++}`;
@@ -294,8 +239,8 @@ const uniqueKey = (want) => {
   return key;
 };
 
-/** One emitted problem: new-sheet content, on whichever key it should carry. */
-function makeProblem({ key, name, item, subsection, legacyLinks }) {
+/** One emitted problem: live-sheet content, on whichever key it carries. */
+function makeProblem({ key, name, item, subsection }) {
   const p = {
     key,
     name,
@@ -311,71 +256,53 @@ function makeProblem({ key, name, item, subsection, legacyLinks }) {
   if (video) p.video = video;
   if (subsection) p.section = subsection;
 
-  // Fill a missing PRACTICE link from the old sheet — those point at LeetCode and
-  // GfG, which are third-party and still live.
-  //
-  // The article is deliberately NOT backfilled. Every takeuforward URL the old
-  // sheet carried (/data-structure/…, /arrays/…, /plus/…) was deleted in the 2026
-  // rewrite and now 404s, so backfilling would quietly reintroduce dead links —
-  // which is exactly how 206 of them ended up in the sheet.
-  if (legacyLinks && !p.practice && legacyLinks.practice) p.practice = legacyLinks.practice;
+  // Fill a missing PRACTICE link from the pre-rewrite sheet — those point at
+  // LeetCode and GfG, which are third-party and still live. The article is
+  // deliberately NOT backfilled: every takeuforward URL that sheet carried was
+  // deleted in the 2026 rewrite and now 404s.
+  const old = legacyByKey.get(key);
+  if (old && !p.practice && old.practice) p.practice = old.practice;
   return p;
 }
 
 for (const f of flat) {
-  const { item, module, subsection } = f;
-  if (!currentStep || currentStep.moduleLabel !== module) {
-    currentStep = {
-      moduleLabel: module,
-      key: `step-${String(steps.length + 1).padStart(2, "0")}-${slugify(module)}`,
-      order: steps.length + 1,
-      title: module,
-      problems: [],
-    };
+  const { item, occ, module, subsection } = f;
+  if (!currentStep || currentStep.title !== module) {
+    const key = stepAnchors[module] ?? `step-${slugify(module)}`;
+    currentStep = { key, order: steps.length + 1, title: module, problems: [] };
     steps.push(currentStep);
   }
 
-  const olds = (claims.get(f) ?? []).sort((a, b) => a.order - b.order);
-
-  if (olds.length === 0) {
-    // Genuinely new: Striver added it in the rewrite.
-    currentStep.problems.push(
-      makeProblem({ key: uniqueKey(slugify(item.slug)), name: label(item.label), item, subsection })
-    );
-    continue;
+  let keys = claims.get(f);
+  if (!keys) {
+    // Nothing the app knows: Striver added it.
+    keys = [freshKey(slugify(item.slug))];
+    added.push({ key: keys[0], name: label(item.label), where: `${module} / ${subsection}` });
   }
 
-  // One old problem -> it simply keeps its key and takes the new name.
-  // Several -> the new sheet merged them; emit each, keeping its own name so the
-  // distinction that made them separate problems survives.
-  const merged = olds.length > 1;
-  for (const o of olds) {
-    currentStep.problems.push(
-      makeProblem({
-        key: uniqueKey(o.key),
-        name: merged ? o.name : label(item.label),
-        item,
-        subsection,
-        legacyLinks: o,
-      })
-    );
-    audit[o.key] = { newItem: item.slug, via: o.via, score: o.score, merged };
+  // One key -> it takes the live name. Several -> TUF merged them; each keeps its
+  // own name so the distinction that made them separate problems survives.
+  const merged = keys.length > 1;
+  for (const key of keys) {
+    const name = merged ? legacyByKey.get(key)?.name ?? label(item.label) : label(item.label);
+    currentStep.problems.push(makeProblem({ key, name, item, subsection }));
+    emittedKeys.add(key);
+    nextAnchors[key] = { slug: item.slug, occ };
   }
 }
 
-// Carried-over problems Striver dropped, appended to the subsection named for each.
-const placed = [];
-for (const p of workedOrphans) {
-  const [moduleTitle, subTitle] = CARRIED[p.key].split(" / ");
+// Carried problems, appended to the subsection named for each.
+for (const key of carriedKeys) {
+  const p = legacyByKey.get(key);
+  if (!p) throw new Error(`carried key ${key} is not in ${LEGACY}`);
+  const [moduleTitle, subTitle] = CARRIED[key].split(" / ");
   const step = steps.find((s) => s.title === moduleTitle);
-  if (!step) throw new Error(`CARRIED ${p.key}: no module titled "${moduleTitle}"`);
+  if (!step) throw new Error(`CARRIED ${key}: no module titled "${moduleTitle}"`);
   const lastIndex = step.problems.reduce((at, x, i) => (x.section === subTitle ? i : at), -1);
-  if (lastIndex === -1) {
-    throw new Error(`CARRIED ${p.key}: module "${moduleTitle}" has no subsection "${subTitle}"`);
-  }
+  if (lastIndex === -1) throw new Error(`CARRIED ${key}: module "${moduleTitle}" has no subsection "${subTitle}"`);
 
   const carried = {
-    key: uniqueKey(p.key),
+    key,
     name: p.name,
     // Most of these carry a takeuforward article the rewrite deleted; drop it
     // rather than ship a 404. They keep any third-party practice link below.
@@ -387,10 +314,10 @@ for (const p of workedOrphans) {
   };
   if (p.practice) carried.practice = p.practice;
   step.problems.splice(lastIndex + 1, 0, carried);
-  placed.push(p);
+  emittedKeys.add(key);
+  nextAnchors[key] = { carried: true };
 }
 
-for (const s of steps) delete s.moduleLabel;
 const sheet = { steps };
 const allProblems = steps.flatMap((s) => s.problems);
 
@@ -400,31 +327,44 @@ const keys = allProblems.map((p) => p.key);
 const dupes = keys.filter((k, i) => keys.indexOf(k) !== i);
 if (dupes.length) throw new Error(`duplicate problem keys: ${[...new Set(dupes)].join(", ")}`);
 
-// THE guarantee: nothing with saved work may fall out of the sheet.
-const emitted = new Set(keys);
-const missing = [...workedKeys].filter((k) => !emitted.has(k));
-if (missing.length) {
+// THE guarantee: every key the app has shipped is still here, bar deliberate removals.
+const missing = Object.keys(anchors).filter((k) => !REMOVE[k] && !emittedKeys.has(k));
+if (missing.length) throw new Error(`${missing.length} anchored key(s) fell out of the sheet:\n  ${missing.join("\n  ")}`);
+const missingWorked = [...workedKeys].filter((k) => !emittedKeys.has(k));
+if (missingWorked.length) throw new Error(`keys with saved work missing: ${missingWorked.join(", ")}`);
+
+// …and still on the item it was on, bar REHOME.
+const moved = Object.entries(anchors).filter(([k, a]) => {
+  if (REMOVE[k] || REHOME[k] || a.carried) return false;
+  const n = nextAnchors[k];
+  return n.carried ? !CARRIED[k] : n.slug !== a.slug || n.occ !== a.occ;
+});
+if (moved.length) throw new Error(`keys re-pointed outside REHOME: ${moved.map(([k]) => k).join(", ")}`);
+
+// Step keys are stored by the planner and the sidebar; a module TUF renames
+// would silently get a new one. Map the new title onto the old key in the
+// lockfile's `steps` instead.
+const stepKeys = new Set(steps.map((s) => s.key));
+if (stepKeys.size !== steps.length) throw new Error("duplicate step keys");
+const lostSteps = Object.entries(stepAnchors).filter(([, k]) => !stepKeys.has(k));
+if (lostSteps.length) {
   throw new Error(
-    `${missing.length} key(s) with saved work are missing from the rebuilt sheet:\n` +
-      missing.map((k) => "  " + k).join("\n")
+    `module(s) gone or renamed — their step key would change:\n` +
+      lostSteps.map(([t, k]) => `  "${t}" (${k})`).join("\n") +
+      `\nIn ${ANCHORS} → steps, re-key the old step under the module's new title.`
   );
 }
 
 // No problem may lose its practice link — those are third-party and still live.
-// (The article is allowed to disappear: see makeProblem.)
-const legacyByKey = new Map(oldProblems.map((p) => [p.key, p]));
 const regressed = allProblems.filter((p) => {
   const o = legacyByKey.get(p.key);
   return o && o.practice && !p.practice;
 });
 if (regressed.length) {
-  throw new Error(
-    `${regressed.length} problem(s) lost a practice link: ${regressed.map((p) => p.key).join(", ")}`
-  );
+  throw new Error(`${regressed.length} problem(s) lost a practice link: ${regressed.map((p) => p.key).join(", ")}`);
 }
 
-// Anything pointing at a takeuforward path the rewrite deleted is a dead link,
-// so fail rather than ship one.
+// Anything pointing at a takeuforward path the rewrite deleted is a dead link.
 const deadTuf = allProblems.flatMap((p) =>
   [p.link, p.practice, p.tufPractice]
     .filter((u) => u && u.includes("takeuforward.org") && !LIVE_TUF.test(u))
@@ -448,37 +388,39 @@ if (badTier.length) throw new Error(`unexpected difficulty on ${badTier.length} 
 
 // ------------------------------------------------------------------ output
 
-const report = [["old_key", "old_step", "old_name", "via", "score", "outcome"].join("\t")];
-for (const p of oldProblems) {
-  const a = audit[p.key];
-  if (a) report.push([p.key, p.step, p.name, a.via, a.score, a.merged ? "kept (merge)" : "kept"].join("\t"));
-  else if (CARRIED[p.key]) report.push([p.key, p.step, p.name, "carried", "", CARRIED[p.key]].join("\t"));
-  else report.push([p.key, p.step, p.name, "none", "", "dropped (no saved work)"].join("\t"));
-}
+const report = [["change", "key", "name", "where"].join("\t")];
+for (const a of added) report.push(["added", a.key, a.name, a.where].join("\t"));
+for (const [k, slug] of Object.entries(REHOME)) report.push(["rehome", k, legacyByKey.get(k)?.name ?? "", slug].join("\t"));
+for (const [k, why] of Object.entries(REMOVE)) if (anchors[k]) report.push(["removed", k, "", why].join("\t"));
 const reportPath = process.env.SCRATCHPAD
-  ? join(process.env.SCRATCHPAD, "a2z-merge.tsv")
-  : join(root, "..", "a2z-merge.tsv");
+  ? join(process.env.SCRATCHPAD, "a2z-sync.tsv")
+  : join(root, "..", "a2z-sync.tsv");
 writeFileSync(reportPath, report.join("\n") + "\n");
 
 if (!dry) {
   writeFileSync(SHEET, JSON.stringify(sheet, null, 2) + "\n");
-  writeFileSync(AUDIT, JSON.stringify(audit, null, 2) + "\n");
+  // Removed keys stay in the lockfile (marked) so a later build never re-mints them.
+  for (const k of Object.keys(REMOVE)) if (anchors[k]) nextAnchors[k] = { ...anchors[k], removed: true };
+  const stepsOut = { ...stepAnchors };
+  for (const s of steps) stepsOut[s.title] ??= s.key;
+  writeFileSync(
+    ANCHORS,
+    JSON.stringify({ _comment: anchorsDoc._comment, steps: stepsOut, problems: nextAnchors }, null, 2) + "\n"
+  );
 }
 
-const mergeCount = [...claims.values()].filter((v) => v.length > 1).length;
 console.log(
-  `modules=${steps.length} subsections=${sections.size} problems=${allProblems.length}\n` +
-    `  kept from the old sheet (own key) : ${Object.keys(audit).length}\n` +
-    `  brand new                         : ${allProblems.length - Object.keys(audit).length - placed.length}\n` +
-    `  carried (dropped but worked on)   : ${placed.length}\n` +
-    `matched via: override=${via.override} exact=${via.exact} practice=${via.practice} fuzzy=${via.fuzzy}; ` +
-    `${mergeCount} merges kept as separate rows\n` +
-    `dropped with no saved work: ${orphans.length - placed.length}\n` +
+  `modules=${steps.length} subsections=${sections.size} problems=${allProblems.length} (TUF items=${flat.length})\n` +
+    `  anchored keys kept : ${emittedKeys.size - added.length - carriedKeys.length}\n` +
+    `  brand new          : ${added.length}\n` +
+    `  carried            : ${carriedKeys.length}\n` +
+    `  rehomed            : ${rehomed}\n` +
+    `  removed            : ${Object.keys(REMOVE).filter((k) => anchors[k] && !anchors[k].removed).length}\n` +
     `links: video=${allProblems.filter((p) => p.video).length} ` +
     `tuf=${allProblems.filter((p) => p.tufPractice).length} ` +
     `leetcode/gfg=${allProblems.filter((p) => p.practice).length} ` +
     `article=${allProblems.filter((p) => p.link).length} ` +
     `none=${allProblems.filter((p) => !p.video && !p.tufPractice && !p.practice && !p.link).length}\n` +
-    `✓ all ${workedKeys.size} keys with saved work are present\n` +
+    `✓ every anchored key present and on its item; all ${workedKeys.size} keys with saved work present\n` +
     `report: ${reportPath}${dry ? "  (dry run, nothing written)" : ""}`
 );

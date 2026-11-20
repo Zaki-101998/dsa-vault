@@ -125,7 +125,93 @@ class QueueFromStacks {
       "popping an empty stack on a leading closer",
       "using a counter for multiple bracket types, which accepts \"([)]\"",
     ],
-    problems: ["step-09-stack-and-queues__check-for-balanced-paranthesis"],
+    problems: [
+      "step-09-stack-and-queues__check-for-balanced-paranthesis",
+      "maximum-nesting-depth-of-the-parentheses",
+    ],
+  },
+
+  {
+    id: "expression-conversion",
+    title: "Converting between infix, prefix & postfix",
+    family: "stacks",
+    aka: ["infix to postfix", "shunting yard", "reverse polish", "prefix to infix", "postfix to prefix"],
+    hook: "From infix, an operator stack decides by precedence; between prefix and postfix, an operand stack glues two pieces round each operator.",
+    cues: [
+      "an expression string with operators, operands and maybe brackets, to be rewritten in another notation",
+      "evaluating an expression — postfix is what makes evaluation a single left-to-right pass",
+      "\"prefix\" in the question: scan from the RIGHT; \"postfix\": scan from the LEFT",
+    ],
+    template: {
+      java: `// INFIX -> POSTFIX (shunting yard). Operands go straight out; an operator
+// first pops everything on the stack that binds at least as tightly.
+int prec(char c) { return c == '^' ? 3 : (c == '*' || c == '/') ? 2 : (c == '+' || c == '-') ? 1 : -1; }
+
+String infixToPostfix(String s) {
+    StringBuilder out = new StringBuilder();
+    Deque<Character> ops = new ArrayDeque<>();
+    for (char c : s.toCharArray()) {
+        if (Character.isLetterOrDigit(c)) out.append(c);
+        else if (c == '(') ops.push(c);
+        else if (c == ')') {
+            while (ops.peek() != '(') out.append(ops.pop());
+            ops.pop();                                   // discard the '('
+        } else {
+            // '^' is right-associative: pop only STRICTLY higher before it.
+            while (!ops.isEmpty() && (prec(ops.peek()) > prec(c)
+                    || (prec(ops.peek()) == prec(c) && c != '^'))) out.append(ops.pop());
+            ops.push(c);
+        }
+    }
+    while (!ops.isEmpty()) out.append(ops.pop());
+    return out.toString();
+}
+
+// INFIX -> PREFIX: reverse the string, swap '(' and ')', run infix->postfix
+// (with '^' now popping on equal precedence), and reverse the result.
+
+// POSTFIX -> INFIX: scan left to right with a stack of STRINGS. An operator
+// pops two — the first pop is the RIGHT operand — and pushes "(a op b)".
+String postfixToInfix(String s) {
+    Deque<String> st = new ArrayDeque<>();
+    for (char c : s.toCharArray()) {
+        if (Character.isLetterOrDigit(c)) st.push(String.valueOf(c));
+        else { String b = st.pop(), a = st.pop(); st.push("(" + a + c + b + ")"); }
+    }
+    return st.pop();
+}
+
+// The other three are the same loop with two edits:
+//   prefix  -> infix   : scan RIGHT to left; first pop is the LEFT operand; "(a op b)"
+//   prefix  -> postfix : scan right to left; a = pop, b = pop; push a + b + op
+//   postfix -> prefix  : scan left to right; b = pop, a = pop; push op + a + b`,
+    },
+    recall: [
+      "from infix you stack OPERATORS; between prefix and postfix you stack OPERANDS (as strings)",
+      "precedence: ^ above * / above + −; equal precedence pops too, except for right-associative ^",
+      "a ')' pops down to its '(' and throws both brackets away; whatever is left on the stack at the end is flushed",
+      "prefix is read right to left, postfix left to right — and that flips which pop is the left operand",
+      "infix to prefix is reverse, swap brackets, convert to postfix, reverse",
+    ],
+    complexity: {
+      time: "O(n)",
+      space: "O(n)",
+      note: "Each token is pushed and popped once. The string-gluing conversions are O(n²) with naive concatenation; nobody minds at interview sizes.",
+    },
+    traps: [
+      "popping operands in the wrong order, so a − b comes out as b − a",
+      "treating ^ as left-associative: a^b^c must be a^(b^c)",
+      "forgetting to flush the operator stack after the loop",
+      "reversing for infix → prefix but not swapping the brackets",
+    ],
+    problems: [
+      "infix-to-postfix-conversion",
+      "infix-to-prefix-conversion",
+      "postfix-to-infix-conversion",
+      "prefix-to-infix-conversion",
+      "prefix-to-postfix-conversion",
+      "postfix-to-prefix-conversion",
+    ],
   },
 
   {
@@ -205,6 +291,7 @@ int[] daysUntilWarmer(int[] a) {
     problems: [
       "step-09-stack-and-queues__next-greater-element",
       "step-09-stack-and-queues__next-greater-element-2",
+      "next-smaller-element",
       "step-09-stack-and-queues__stock-span-problem",
       "step-09-stack-and-queues__asteroid-collision",
       "step-09-stack-and-queues__remove-k-digits",
@@ -436,6 +523,7 @@ class LRUCache {
       "step-09-stack-and-queues__implement-min-stack",
       "step-09-stack-and-queues__lru-cache-important",
       "step-09-stack-and-queues__lfu-cache",
+      "design-twitter",
     ],
   },
 

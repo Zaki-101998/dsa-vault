@@ -12,7 +12,7 @@
 // answers — but it serves the OLD 18-step sheet, not the new roadmap. (That host
 // also rejects any request without an `Origin: https://takeuforward.org` header,
 // which is a red herring worth documenting so nobody re-discovers it.) The new
-// 19-module sheet ships only inside the page itself.
+// sheet ships only inside the page itself.
 //
 // The page is a Next.js RSC payload embedded in an inline <script>. Once the
 // JS-string escaping is undone, it contains a self-describing table:
@@ -25,7 +25,7 @@
 // repeated across rows are replaced by "$…:rows:I:J[:K]" back-references, which
 // point back into this same `rows` array.
 //
-// Rows form a tree: `roots` lists the 19 module rows; a row of type "category"
+// Rows form a tree: `roots` lists the module rows; a row of type "category"
 // carries `children`, a list of row indices that are either more categories
 // (the subsections) or the leaf "item" rows.
 //
@@ -39,15 +39,18 @@ import { extractSyllabus, walkSheet } from "./a2z-decode.mjs";
 
 const here = dirname(fileURLToPath(import.meta.url));
 const CACHE = join(here, "tuf-a2z-v2.cache.json");
-const SHEET_URL = "https://takeuforward.org/prep-hub/strivers-a2z-dsa-sheet?page=sheet";
+// Nov 2026: `?page=sheet` now 308-redirects here, and the bare page carries the
+// payload. Ask for it directly rather than lean on the redirect.
+const SHEET_URL = "https://takeuforward.org/prep-hub/strivers-a2z-dsa-sheet";
 const UA =
   "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0 Safari/537.36";
 
 const refresh = process.argv.includes("--refresh");
 
-// What the live sheet held when this script was written. A mismatch means TUF
+// What the live sheet held at the last scrape (20 Nov 2026 — up from 19/79/442 in
+// Sept, when "Strings (Basic and Medium)" did not exist yet). A mismatch means TUF
 // changed the roadmap (fine — update these) or changed the encoding (not fine).
-const EXPECT = { modules: 19, subsections: 79, items: 442 };
+const EXPECT = { modules: 20, subsections: 84, items: 495 };
 
 async function scrape() {
   const res = await fetch(SHEET_URL, {

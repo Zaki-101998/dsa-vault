@@ -1,0 +1,2144 @@
+{
+  "_comment": [
+    "Frozen identity of every problem key the app showed as of 20 Nov 2026, written once",
+    "from the then-current data/a2z-sheet.json. build-a2z-sheet.mjs attaches each key to",
+    "exactly this TUF item ({slug, occ}: occ is the slug's occurrence index, because TUF",
+    "reuses slugs such as basic-hashing) BEFORE any automatic matching runs, so a re-scrape",
+    "can add problems but never silently re-point a key at a different one. `carried` keys",
+    "have no TUF item (Striver dropped them; see CARRIED). `steps` pins each module title's",
+    "step key, which user_settings.focus.stepKey and the sidebar collapse state store.",
+    "Add newly built keys here only by re-running the anchoring with care; never edit by hand",
+    "to 'fix' a mapping — use REHOME in build-a2z-sheet.mjs, which documents why."
+  ],
+  "steps": {
+    "Beginner Problems": "step-01-beginner-problems",
+    "Sorting": "step-02-sorting",
+    "Arrays": "step-03-arrays",
+    "Hashing": "step-04-hashing",
+    "Binary Search": "step-05-binary-search",
+    "Recursion": "step-06-recursion",
+    "Linked-List": "step-07-linked-list",
+    "Bit Manipulation": "step-08-bit-manipulation",
+    "Greedy Algorithms": "step-09-greedy-algorithms",
+    "Sliding Window / 2 Pointer": "step-10-sliding-window-2-pointer",
+    "Stack / Queues": "step-11-stack-queues",
+    "Binary Trees": "step-12-binary-trees",
+    "Binary Search Trees": "step-13-binary-search-trees",
+    "Heaps": "step-14-heaps",
+    "Graphs": "step-15-graphs",
+    "Dynamic Programming": "step-16-dynamic-programming",
+    "Tries": "step-17-tries",
+    "Strings (Advanced Algo)": "step-18-strings-advanced-algo",
+    "Maths": "step-19-maths",
+    "Strings (Basic and Medium)": "step-strings-basic-and-medium"
+  },
+  "problems": {
+    "breaking-the-myth": {
+      "slug": "breaking-the-myth",
+      "occ": 0
+    },
+    "programming-and-what-are-computers": {
+      "slug": "programming-and-what-are-computers",
+      "occ": 0
+    },
+    "how-to-think-like-a-programmer": {
+      "slug": "how-to-think-like-a-programmer",
+      "occ": 0
+    },
+    "flowcharts-and-pseudocode": {
+      "slug": "flowcharts-and-pseudocode",
+      "occ": 0
+    },
+    "flowchart-problem-solving": {
+      "slug": "flowchart-problem-solving",
+      "occ": 0
+    },
+    "dry-runs-edge-cases-and-debugging": {
+      "slug": "dry-runs-edge-cases-and-debugging",
+      "occ": 0
+    },
+    "programming-languages-and-choosing-a-path": {
+      "slug": "programming-languages-and-choosing-a-path",
+      "occ": 0
+    },
+    "learn-cpp": {
+      "slug": "learn-cpp",
+      "occ": 0
+    },
+    "learn-java": {
+      "slug": "learn-java",
+      "occ": 0
+    },
+    "learn-python": {
+      "slug": "learn-python",
+      "occ": 0
+    },
+    "easy-and-medium": {
+      "slug": "easy-and-medium",
+      "occ": 0
+    },
+    "hard": {
+      "slug": "hard",
+      "occ": 0
+    },
+    "pattern-1": {
+      "slug": "pattern-1",
+      "occ": 0
+    },
+    "pattern-2": {
+      "slug": "pattern-2",
+      "occ": 0
+    },
+    "pattern-3": {
+      "slug": "pattern-3",
+      "occ": 0
+    },
+    "pattern-4": {
+      "slug": "pattern-4",
+      "occ": 0
+    },
+    "pattern-5": {
+      "slug": "pattern-5",
+      "occ": 0
+    },
+    "pattern-6": {
+      "slug": "pattern-6",
+      "occ": 0
+    },
+    "pattern-7": {
+      "slug": "pattern-7",
+      "occ": 0
+    },
+    "pattern-8": {
+      "slug": "pattern-8",
+      "occ": 0
+    },
+    "pattern-9": {
+      "slug": "pattern-9",
+      "occ": 0
+    },
+    "pattern-10": {
+      "slug": "pattern-10",
+      "occ": 0
+    },
+    "pattern-11": {
+      "slug": "pattern-11",
+      "occ": 0
+    },
+    "pattern-12": {
+      "slug": "pattern-12",
+      "occ": 0
+    },
+    "pattern-13": {
+      "slug": "pattern-13",
+      "occ": 0
+    },
+    "pattern-14": {
+      "slug": "pattern-14",
+      "occ": 0
+    },
+    "pattern-15": {
+      "slug": "pattern-15",
+      "occ": 0
+    },
+    "pattern-16": {
+      "slug": "pattern-16",
+      "occ": 0
+    },
+    "pattern-17": {
+      "slug": "pattern-17",
+      "occ": 0
+    },
+    "pattern-18": {
+      "slug": "pattern-18",
+      "occ": 0
+    },
+    "pattern-19": {
+      "slug": "pattern-19",
+      "occ": 0
+    },
+    "pattern-20": {
+      "slug": "pattern-20",
+      "occ": 0
+    },
+    "pattern-21": {
+      "slug": "pattern-21",
+      "occ": 0
+    },
+    "pattern-22": {
+      "slug": "pattern-22",
+      "occ": 0
+    },
+    "theory-with-examples": {
+      "slug": "theory-with-examples",
+      "occ": 0
+    },
+    "stl": {
+      "slug": "stl",
+      "occ": 0
+    },
+    "step-01-learn-the-basics__java-collections": {
+      "slug": "java-collections",
+      "occ": 0
+    },
+    "python-libraries-part-1": {
+      "slug": "python-libraries-part-1",
+      "occ": 0
+    },
+    "python-libraries-part-2": {
+      "slug": "python-libraries-part-2",
+      "occ": 0
+    },
+    "basic-maths": {
+      "slug": "basic-maths",
+      "occ": 0
+    },
+    "basic-arrays-hashing-and-strings": {
+      "slug": "basic-arrays-hashing-and-strings",
+      "occ": 0
+    },
+    "basic-hashing": {
+      "slug": "basic-hashing",
+      "occ": 0
+    },
+    "basic-string": {
+      "slug": "basic-string",
+      "occ": 0
+    },
+    "step-01-learn-the-basics__count-digits": {
+      "slug": "count-all-digits-of-a-number",
+      "occ": 0
+    },
+    "count-number-of-odd-digits-in-a-number": {
+      "slug": "count-number-of-odd-digits-in-a-number",
+      "occ": 0
+    },
+    "step-01-learn-the-basics__reverse-a-number": {
+      "slug": "reverse-a-number",
+      "occ": 0
+    },
+    "palindrome-number": {
+      "slug": "palindrome-number",
+      "occ": 0
+    },
+    "return-the-largest-digit-in-a-number": {
+      "slug": "return-the-largest-digit-in-a-number",
+      "occ": 0
+    },
+    "factorial-of-a-given-number-i": {
+      "slug": "factorial-of-a-given-number-i",
+      "occ": 0
+    },
+    "check-if-the-number-if-armstrong": {
+      "slug": "check-if-the-number-if-armstrong",
+      "occ": 0
+    },
+    "check-for-perfect-number": {
+      "slug": "check-for-perfect-number",
+      "occ": 0
+    },
+    "step-01-learn-the-basics__check-for-prime": {
+      "slug": "check-for-prime-number",
+      "occ": 0
+    },
+    "count-of-prime-numbers-till-n": {
+      "slug": "count-of-prime-numbers-till-n",
+      "occ": 0
+    },
+    "gcd-of-two-numbers": {
+      "slug": "gcd-of-two-numbers",
+      "occ": 0
+    },
+    "lcm-of-two-numbers": {
+      "slug": "lcm-of-two-numbers",
+      "occ": 0
+    },
+    "divisors-of-a-number": {
+      "slug": "divisors-of-a-number",
+      "occ": 0
+    },
+    "sum-of-array-elements": {
+      "slug": "sum-of-array-elements",
+      "occ": 0
+    },
+    "count-of-odd-numbers-in-array": {
+      "slug": "count-of-odd-numbers-in-array",
+      "occ": 0
+    },
+    "step-03-solve-problems-on-arrays__check-if-the-array-is-sorted": {
+      "slug": "check-if-the-array-is-sorted-i",
+      "occ": 0
+    },
+    "step-01-learn-the-basics__reverse-an-array": {
+      "slug": "reverse-an-array",
+      "occ": 0
+    },
+    "highest-occurring-element-in-an-array": {
+      "slug": "highest-occurring-element-in-an-array",
+      "occ": 0
+    },
+    "second-highest-occurring-element": {
+      "slug": "second-highest-occurring-element",
+      "occ": 0
+    },
+    "sum-of-highest-and-lowest-frequency": {
+      "slug": "sum-of-highest-and-lowest-frequency",
+      "occ": 0
+    },
+    "reverse-a-string-ii": {
+      "slug": "reverse-a-string-ii",
+      "occ": 0
+    },
+    "step-01-learn-the-basics__check-palindrome": {
+      "slug": "palindrome-check",
+      "occ": 0
+    },
+    "step-05-strings__largest-odd-number-in-a-string": {
+      "slug": "largest-odd-number-in-a-string",
+      "occ": 0
+    },
+    "step-05-strings__longest-common-prefix": {
+      "slug": "longest-common-prefix",
+      "occ": 0
+    },
+    "step-05-strings__isomorphic-string": {
+      "slug": "isomorphic-string",
+      "occ": 0
+    },
+    "step-05-strings__check-whether-one-string-is-a-rotation-of-another": {
+      "slug": "rotate-string",
+      "occ": 0
+    },
+    "step-05-strings__check-if-two-strings-are-anagram-of-each-other": {
+      "slug": "valid-anagram",
+      "occ": 0
+    },
+    "step-05-strings__sort-characters-by-frequency": {
+      "slug": "sort-characters-by-frequency",
+      "occ": 0
+    },
+    "recursion-theory": {
+      "slug": "recursion-theory",
+      "occ": 0
+    },
+    "recursion-concepts-with-parameters": {
+      "slug": "recursion-concepts-with-parameters",
+      "occ": 0
+    },
+    "step-01-learn-the-basics__sum-of-first-n-numbers": {
+      "slug": "sum-of-first-n-numbers",
+      "occ": 0
+    },
+    "factorial-of-a-given-number-ii": {
+      "slug": "factorial-of-a-given-number-ii",
+      "occ": 0
+    },
+    "sum-of-array-elements-ii": {
+      "slug": "sum-of-array-elements-ii",
+      "occ": 0
+    },
+    "reverse-a-string-i": {
+      "slug": "reverse-a-string-i",
+      "occ": 0
+    },
+    "step-01-learn-the-basics__check-if-a-string-is-palindrome-or-not": {
+      "slug": "check-if-string-is-palindrome-or-not-",
+      "occ": 0
+    },
+    "step-08-bit-manipulation__check-if-a-number-is-odd-or-not": {
+      "slug": "check-if-a-number-is-prime-or-not",
+      "occ": 0
+    },
+    "reverse-an-array-ii": {
+      "slug": "reverse-an-array-ii",
+      "occ": 0
+    },
+    "check-if-the-array-is-sorted-ii": {
+      "slug": "check-if-the-array-is-sorted-ii",
+      "occ": 0
+    },
+    "sum-of-digits-in-a-given-number": {
+      "slug": "sum-of-digits-in-a-given-number",
+      "occ": 0
+    },
+    "step-01-learn-the-basics__fibonacci-number": {
+      "slug": "fibonacci-number",
+      "occ": 0
+    },
+    "step-02-learn-important-sorting-techniques__selection-sort": {
+      "slug": "selection-sort",
+      "occ": 0
+    },
+    "step-02-learn-important-sorting-techniques__bubble-sort": {
+      "slug": "bubble-sort",
+      "occ": 0
+    },
+    "step-02-learn-important-sorting-techniques__insertion-sort": {
+      "slug": "insertion-sorting",
+      "occ": 0
+    },
+    "step-02-learn-important-sorting-techniques__merge-sort": {
+      "slug": "merge-sorting",
+      "occ": 0
+    },
+    "quick-sorting": {
+      "slug": "quick-sorting",
+      "occ": 0
+    },
+    "step-02-learn-important-sorting-techniques__recursive-bubble-sort": {
+      "slug": "recursive-bubble-sort",
+      "occ": 0
+    },
+    "recursive-insertion-sort": {
+      "slug": "recursive-insertion-sort",
+      "occ": 0
+    },
+    "step-03-solve-problems-on-arrays__linear-search": {
+      "slug": "linear-search",
+      "occ": 0
+    },
+    "step-03-solve-problems-on-arrays__largest-element-in-an-array": {
+      "slug": "largest-element",
+      "occ": 0
+    },
+    "step-03-solve-problems-on-arrays__second-largest-element-in-an-array-without-sorting": {
+      "slug": "second-largest-element",
+      "occ": 0
+    },
+    "step-03-solve-problems-on-arrays__maximum-consecutive-ones": {
+      "slug": "maximum-consecutive-ones",
+      "occ": 0
+    },
+    "step-03-solve-problems-on-arrays__left-rotate-an-array-by-one-place": {
+      "slug": "left-rotate-array-by-one",
+      "occ": 0
+    },
+    "step-03-solve-problems-on-arrays__left-rotate-an-array-by-d-places": {
+      "slug": "left-rotate-array",
+      "occ": 0
+    },
+    "step-03-solve-problems-on-arrays__move-zeros-to-end": {
+      "slug": "move-zeros-to-end",
+      "occ": 0
+    },
+    "step-03-solve-problems-on-arrays__remove-duplicates-from-sorted-array": {
+      "slug": "remove-duplicates-from-sorted-array",
+      "occ": 0
+    },
+    "step-03-solve-problems-on-arrays__find-missing-number-in-an-array": {
+      "slug": "find-missing-number",
+      "occ": 0
+    },
+    "step-03-solve-problems-on-arrays__find-the-union": {
+      "slug": "union-of-two-sorted-arrays",
+      "occ": 0
+    },
+    "intersection-of-two-sorted-arrays": {
+      "slug": "intersection-of-two-sorted-arrays",
+      "occ": 0
+    },
+    "step-03-solve-problems-on-arrays__majority-element-n-2-times": {
+      "slug": "majority-element-i",
+      "occ": 0
+    },
+    "step-03-solve-problems-on-arrays__leaders-in-an-array-problem": {
+      "slug": "leaders-in-an-array",
+      "occ": 0
+    },
+    "step-03-solve-problems-on-arrays__rearrange-the-array-in-alternating-positive-and-negative-items": {
+      "slug": "rearrange-array-elements-by-sign",
+      "occ": 0
+    },
+    "step-03-solve-problems-on-arrays__print-the-matrix-in-spiral-manner": {
+      "slug": "print-the-matrix-in-spiral-manner",
+      "occ": 0
+    },
+    "step-03-solve-problems-on-arrays__pascal-s-triangle": {
+      "slug": "pascals-triangle-i",
+      "occ": 0
+    },
+    "pascals-triangle-ii": {
+      "slug": "pascals-triangle-ii",
+      "occ": 0
+    },
+    "pascals-triangle-iii": {
+      "slug": "pascals-triangle-iii",
+      "occ": 0
+    },
+    "step-03-solve-problems-on-arrays__rotate-matrix-by-90-degrees": {
+      "slug": "rotate-matrix-by-90-degrees",
+      "occ": 0
+    },
+    "step-03-solve-problems-on-arrays__set-matrix-zeros": {
+      "slug": "set-matrix-zeroes",
+      "occ": 0
+    },
+    "step-03-solve-problems-on-arrays__2sum-problem": {
+      "slug": "two-sum",
+      "occ": 0
+    },
+    "step-03-solve-problems-on-arrays__3-sum-problem": {
+      "slug": "3-sum",
+      "occ": 0
+    },
+    "step-03-solve-problems-on-arrays__4-sum-problem": {
+      "slug": "4-sum",
+      "occ": 0
+    },
+    "step-03-solve-problems-on-arrays__sort-an-array-of-0-s-1-s-and-2-s": {
+      "slug": "sort-an-array-of-0's-1's-and-2's",
+      "occ": 0
+    },
+    "step-03-solve-problems-on-arrays__kadane-s-algorithm-maximum-subarray-sum": {
+      "slug": "kadane's-algorithm",
+      "occ": 0
+    },
+    "step-03-solve-problems-on-arrays__next-permutation": {
+      "slug": "next-permutation",
+      "occ": 0
+    },
+    "step-03-solve-problems-on-arrays__majority-element-n-3-times": {
+      "slug": "majority-element-ii",
+      "occ": 0
+    },
+    "step-03-solve-problems-on-arrays__find-the-repeating-and-missing-number": {
+      "slug": "find-the-repeating-and-missing-number",
+      "occ": 0
+    },
+    "step-03-solve-problems-on-arrays__count-inversions": {
+      "slug": "count-inversions",
+      "occ": 0
+    },
+    "step-03-solve-problems-on-arrays__reverse-pairs": {
+      "slug": "reverse-pairs",
+      "occ": 0
+    },
+    "step-03-solve-problems-on-arrays__maximum-product-subarray": {
+      "slug": "maximum-product-subarray-in-an-array",
+      "occ": 0
+    },
+    "step-03-solve-problems-on-arrays__merge-two-sorted-arrays-without-extra-space": {
+      "slug": "merge-two-sorted-arrays-without-extra-space",
+      "occ": 0
+    },
+    "basic-hashing-2": {
+      "slug": "basic-hashing",
+      "occ": 1
+    },
+    "step-03-solve-problems-on-arrays__longest-consecutive-sequence-in-an-array": {
+      "slug": "longest-consecutive-sequence-in-an-array",
+      "occ": 0
+    },
+    "step-03-solve-problems-on-arrays__longest-subarray-with-given-sum-k-positives": {
+      "slug": "longest-subarray-with-sum-k",
+      "occ": 0
+    },
+    "step-03-solve-problems-on-arrays__longest-subarray-with-sum-k-positives-negatives": {
+      "slug": "longest-subarray-with-sum-k",
+      "occ": 0
+    },
+    "step-03-solve-problems-on-arrays__largest-subarray-with-0-sum": {
+      "slug": "largest-subarray-with-sum-0",
+      "occ": 0
+    },
+    "step-03-solve-problems-on-arrays__count-subarrays-with-given-sum": {
+      "slug": "count-subarrays-with-given-sum",
+      "occ": 0
+    },
+    "step-03-solve-problems-on-arrays__count-number-of-subarrays-with-given-xor-k": {
+      "slug": "count-subarrays-with-given-xor-k",
+      "occ": 0
+    },
+    "step-04-binary-search__binary-search-to-find-x-in-sorted-array": {
+      "slug": "search-x-in-sorted-array",
+      "occ": 0
+    },
+    "step-04-binary-search__implement-lower-bound": {
+      "slug": "lower-bound-",
+      "occ": 0
+    },
+    "step-04-binary-search__implement-upper-bound": {
+      "slug": "upper-bound",
+      "occ": 0
+    },
+    "step-04-binary-search__search-insert-position": {
+      "slug": "search-insert-position",
+      "occ": 0
+    },
+    "step-04-binary-search__floor-ceil-in-sorted-array": {
+      "slug": "floor-and-ceil-in-sorted-array",
+      "occ": 0
+    },
+    "step-04-binary-search__find-the-first-or-last-occurrence-of-a-given-number-in-a-sorted-array": {
+      "slug": "first-and-last-occurrence",
+      "occ": 0
+    },
+    "step-04-binary-search__search-in-rotated-sorted-array-i": {
+      "slug": "search-in-rotated-sorted-array-i",
+      "occ": 0
+    },
+    "step-04-binary-search__search-in-rotated-sorted-array-ii": {
+      "slug": "search-in-rotated-sorted-array-2",
+      "occ": 0
+    },
+    "step-04-binary-search__find-minimum-in-rotated-sorted-array": {
+      "slug": "find-minimum-in-rotated-sorted-array",
+      "occ": 0
+    },
+    "step-04-binary-search__find-out-how-many-times-has-an-array-been-rotated": {
+      "slug": "find-out-how-many-times-the-array-is-rotated",
+      "occ": 0
+    },
+    "step-04-binary-search__single-element-in-a-sorted-array": {
+      "slug": "single-element-in-sorted-array",
+      "occ": 0
+    },
+    "step-04-binary-search__count-occurrences-of-a-number-in-a-sorted-array-with-duplicates": {
+      "slug": "count-occurrences-in-a-sorted-array",
+      "occ": 0
+    },
+    "step-04-binary-search__find-square-root-of-a-number-in-log-n": {
+      "slug": "find-square-root-of-a-number",
+      "occ": 0
+    },
+    "step-04-binary-search__find-the-nth-root-of-a-number-using-binary-search": {
+      "slug": "find-nth-root-of-a-number",
+      "occ": 0
+    },
+    "step-04-binary-search__find-the-smallest-divisor": {
+      "slug": "find-the-smallest-divisor",
+      "occ": 0
+    },
+    "step-04-binary-search__koko-eating-bananas": {
+      "slug": "koko-eating-bananas",
+      "occ": 0
+    },
+    "step-04-binary-search__minimum-days-to-make-m-bouquets": {
+      "slug": "minimum-days-to-make-m-bouquets",
+      "occ": 0
+    },
+    "step-04-binary-search__capacity-to-ship-packages-within-d-days": {
+      "slug": "capacity-to-ship-packages-within-d-days",
+      "occ": 0
+    },
+    "step-04-binary-search__kth-missing-positive-number": {
+      "slug": "kth-missing-positive-number",
+      "occ": 0
+    },
+    "step-04-binary-search__painter-s-partition": {
+      "slug": "painters-partition",
+      "occ": 0
+    },
+    "step-04-binary-search__aggressive-cows": {
+      "slug": "aggressive-cows",
+      "occ": 0
+    },
+    "step-04-binary-search__book-allocation-problem": {
+      "slug": "book-allocation-problem",
+      "occ": 0
+    },
+    "step-04-binary-search__find-peak-element": {
+      "slug": "find-peak-element",
+      "occ": 0
+    },
+    "step-04-binary-search__median-of-2-sorted-arrays": {
+      "slug": "median-of-2-sorted-arrays",
+      "occ": 0
+    },
+    "step-04-binary-search__kth-element-of-2-sorted-arrays": {
+      "slug": "kth-element-of-2-sorted-arrays",
+      "occ": 0
+    },
+    "step-04-binary-search__minimize-max-distance-to-gas-station": {
+      "slug": "minimise-max-distance-to-gas-stations",
+      "occ": 0
+    },
+    "step-04-binary-search__split-array-largest-sum": {
+      "slug": "split-array---largest-sum",
+      "occ": 0
+    },
+    "step-04-binary-search__find-the-row-with-maximum-number-of-1-s": {
+      "slug": "find-row-with-maximum-1's",
+      "occ": 0
+    },
+    "step-04-binary-search__search-in-a-2-d-matrix": {
+      "slug": "search-in-a-2d-matrix",
+      "occ": 0
+    },
+    "step-04-binary-search__search-in-a-row-and-column-wise-sorted-matrix": {
+      "slug": "search-in-2d-matrix-ii",
+      "occ": 0
+    },
+    "step-04-binary-search__find-peak-element-2d-matrix": {
+      "slug": "find-peak-element-ii",
+      "occ": 0
+    },
+    "step-04-binary-search__matrix-median": {
+      "slug": "matrix-median",
+      "occ": 0
+    },
+    "step-05-strings__remove-outermost-paranthesis": {
+      "slug": "remove-outermost-parentheses",
+      "occ": 0
+    },
+    "maximum-nesting-depth-of-the-parentheses": {
+      "slug": "maximum-nesting-depth-of-the-parentheses",
+      "occ": 0
+    },
+    "roman-to-integer": {
+      "slug": "roman-to-integer",
+      "occ": 0
+    },
+    "string-to-integer-atoi": {
+      "slug": "string-to-integer-atoi",
+      "occ": 0
+    },
+    "count-number-of-substring": {
+      "slug": "count-number-of-substring",
+      "occ": 0
+    },
+    "longest-palindromic-substring": {
+      "slug": "longest-palindromic-substring",
+      "occ": 0
+    },
+    "sum-of-beauty-of-all-substrings": {
+      "slug": "sum-of-beauty-of-all-substrings",
+      "occ": 0
+    },
+    "step-07-recursion__pow-x-n": {
+      "slug": "pow(x,n)",
+      "occ": 0
+    },
+    "step-08-bit-manipulation__power-n-x": {
+      "slug": "pow(x,n)",
+      "occ": 0
+    },
+    "step-07-recursion__generate-paranthesis": {
+      "slug": "generate-parentheses",
+      "occ": 0
+    },
+    "step-08-bit-manipulation__power-set": {
+      "slug": "power-set",
+      "occ": 0
+    },
+    "count-good-numbers": {
+      "slug": "count-good-numbers",
+      "occ": 0
+    },
+    "reverse-a-stack": {
+      "slug": "reverse-a-stack",
+      "occ": 0
+    },
+    "learn-all-patterns-of-subsequences": {
+      "slug": "learn-all-patterns-of-subsequences",
+      "occ": 0
+    },
+    "step-07-recursion__check-if-there-exists-a-subsequence-with-sum-k": {
+      "slug": "check-if-there-exists-a-subsequence-with-sum-k",
+      "occ": 0
+    },
+    "step-07-recursion__count-all-subsequences-with-sum-k": {
+      "slug": "count-all-subsequences-with-sum-k",
+      "occ": 0
+    },
+    "generate-binary-strings-without-consecutive-1s": {
+      "slug": "generate-binary-strings-without-consecutive-1s",
+      "occ": 0
+    },
+    "step-07-recursion__combination-sum": {
+      "slug": "combination-sum",
+      "occ": 0
+    },
+    "step-07-recursion__combination-sum-ii": {
+      "slug": "combination-sum-ii",
+      "occ": 0
+    },
+    "subsets-i": {
+      "slug": "subsets-i",
+      "occ": 0
+    },
+    "step-07-recursion__subset-sum-ii": {
+      "slug": "subsets-ii",
+      "occ": 0
+    },
+    "step-07-recursion__combination-sum-iii": {
+      "slug": "combination-sum-iii",
+      "occ": 0
+    },
+    "step-07-recursion__letter-combinations-of-a-phone-number": {
+      "slug": "letter-combinations-of-a-phone-number",
+      "occ": 0
+    },
+    "step-07-recursion__palindrome-partitioning": {
+      "slug": "palindrome-partitioning",
+      "occ": 0
+    },
+    "step-07-recursion__word-search": {
+      "slug": "word-search",
+      "occ": 0
+    },
+    "step-07-recursion__n-queen": {
+      "slug": "n-queen",
+      "occ": 0
+    },
+    "step-07-recursion__rat-in-a-maze": {
+      "slug": "rat-in-a-maze",
+      "occ": 0
+    },
+    "step-07-recursion__m-coloring-problem": {
+      "slug": "m-coloring-problem",
+      "occ": 0
+    },
+    "step-07-recursion__sudoko-solver": {
+      "slug": "sudoko-solver",
+      "occ": 0
+    },
+    "expression-add-operators": {
+      "slug": "expression-add-operators",
+      "occ": 0
+    },
+    "introduction-to-singly-linkedlist": {
+      "slug": "introduction-to-singly-linkedlist",
+      "occ": 0
+    },
+    "traversal-in-linked-list": {
+      "slug": "traversal-in-linked-list",
+      "occ": 0
+    },
+    "deletion-in-linked-list": {
+      "slug": "deletion-in-linked-list",
+      "occ": 0
+    },
+    "insertion-in-linked-list": {
+      "slug": "insertion-in-linked-list",
+      "occ": 0
+    },
+    "step-06-learn-linkedlist__deleting-a-node-in-linkedlist": {
+      "slug": "deletion-of-the-head-of-ll",
+      "occ": 0
+    },
+    "deletion-of-the-tail-of-ll": {
+      "slug": "deletion-of-the-tail-of-ll",
+      "occ": 0
+    },
+    "deletion-of-the-kth-element-of-ll": {
+      "slug": "deletion-of-the-kth-element-of-ll",
+      "occ": 0
+    },
+    "delete-the-element-with-value-x": {
+      "slug": "delete-the-element-with-value-x",
+      "occ": 0
+    },
+    "insertion-at-the-head-of-ll": {
+      "slug": "insertion-at-the-head-of-ll",
+      "occ": 0
+    },
+    "insertion-at-the-tail-of-ll": {
+      "slug": "insertion-at-the-tail-of-ll",
+      "occ": 0
+    },
+    "insertion-at-the-kth-position-of-ll": {
+      "slug": "insertion-at-the-kth-position-of-ll",
+      "occ": 0
+    },
+    "insertion-before-the-value-x-in-ll": {
+      "slug": "insertion-before-the-value-x-in-ll",
+      "occ": 0
+    },
+    "find-the-length-of-the-linked-list": {
+      "slug": "find-the-length-of-the-linked-list",
+      "occ": 0
+    },
+    "search-in-linked-list": {
+      "slug": "search-in-linked-list",
+      "occ": 0
+    },
+    "introduction-to-doubly-ll": {
+      "slug": "introduction-to-doubly-ll",
+      "occ": 0
+    },
+    "deletion-in-doubly-ll": {
+      "slug": "deletion-in-doubly-ll",
+      "occ": 0
+    },
+    "insertion-in-dll": {
+      "slug": "insertion-in-dll",
+      "occ": 0
+    },
+    "convert-array-to-dll": {
+      "slug": "convert-array-to-dll",
+      "occ": 0
+    },
+    "step-06-learn-linkedlist__delete-a-node-in-dll": {
+      "slug": "delete-tail-of-dll",
+      "occ": 0
+    },
+    "delete-kth-element-of-dll": {
+      "slug": "delete-kth-element-of-dll",
+      "occ": 0
+    },
+    "removing-given-node-in-dll": {
+      "slug": "removing-given-node-in-dll",
+      "occ": 0
+    },
+    "insert-node-before-head-in-dll": {
+      "slug": "insert-node-before-head-in-dll",
+      "occ": 0
+    },
+    "insert-node-before-tail-in-dll": {
+      "slug": "insert-node-before-tail-in-dll",
+      "occ": 0
+    },
+    "step-06-learn-linkedlist__insert-a-node-in-dll": {
+      "slug": "insert-node-before-kth-node-in-dll",
+      "occ": 0
+    },
+    "insert-before-given-node-in-dll": {
+      "slug": "insert-before-given-node-in-dll",
+      "occ": 0
+    },
+    "delete-head-of-dll": {
+      "slug": "delete-head-of-dll",
+      "occ": 0
+    },
+    "step-06-learn-linkedlist__reverse-a-dll": {
+      "slug": "reverse-a-doubly-linked-list",
+      "occ": 0
+    },
+    "step-06-learn-linkedlist__add-2-numbers-in-ll": {
+      "slug": "add-two-numbers-in-ll",
+      "occ": 0
+    },
+    "step-06-learn-linkedlist__segrregate-odd-and-even-nodes-in-ll": {
+      "slug": "segregate-odd-and-even-nodes-in-ll",
+      "occ": 0
+    },
+    "step-06-learn-linkedlist__sort-a-ll-of-0-s-1-s-and-2-s-by-changing-links": {
+      "slug": "sort-a-ll-of-0's-1's-and-2's",
+      "occ": 0
+    },
+    "step-06-learn-linkedlist__remove-nth-node-from-the-back-of-the-ll": {
+      "slug": "remove-nth-node-from-the-back-of-the-ll",
+      "occ": 0
+    },
+    "step-06-learn-linkedlist__reverse-a-linkedlist-iterative": {
+      "slug": "reverse-a-ll",
+      "occ": 0
+    },
+    "step-06-learn-linkedlist__reverse-a-ll-recursive": {
+      "slug": "reverse-a-ll",
+      "occ": 0
+    },
+    "step-06-learn-linkedlist__add-1-to-a-number-represented-by-ll": {
+      "slug": "add-one-to-a-number-represented-by-ll",
+      "occ": 0
+    },
+    "step-06-learn-linkedlist__middle-of-a-linkedlist-tortoisehare-method": {
+      "slug": "find-middle-of-linked-list",
+      "occ": 0
+    },
+    "step-06-learn-linkedlist__delete-the-middle-node-of-ll": {
+      "slug": "delete-the-middle-node-in-ll",
+      "occ": 0
+    },
+    "step-06-learn-linkedlist__check-if-ll-is-palindrome-or-not": {
+      "slug": "check-if-ll-is-palindrome-or-not",
+      "occ": 0
+    },
+    "step-06-learn-linkedlist__find-the-intersection-point-of-y-ll": {
+      "slug": "find-the-intersection-point-of-y-ll",
+      "occ": 0
+    },
+    "step-06-learn-linkedlist__detect-a-loop-in-ll": {
+      "slug": "detect-a-loop-in-ll",
+      "occ": 0
+    },
+    "step-06-learn-linkedlist__find-the-starting-point-in-ll": {
+      "slug": "find-the-starting-point-in-ll",
+      "occ": 0
+    },
+    "step-06-learn-linkedlist__length-of-loop-in-ll": {
+      "slug": "length-of-loop-in-ll",
+      "occ": 0
+    },
+    "step-06-learn-linkedlist__reverse-ll-in-group-of-given-size-k": {
+      "slug": "reverse-ll-in-group-of-given-size-k",
+      "occ": 0
+    },
+    "step-06-learn-linkedlist__rotate-a-ll": {
+      "slug": "rotate-a-ll",
+      "occ": 0
+    },
+    "step-11-heaps__merge-m-sorted-lists": {
+      "slug": "merge-sorted-lists-",
+      "occ": 0
+    },
+    "step-06-learn-linkedlist__flattening-of-ll": {
+      "slug": "flattening-of-ll",
+      "occ": 0
+    },
+    "step-06-learn-linkedlist__sort-ll": {
+      "slug": "sort-ll",
+      "occ": 0
+    },
+    "step-06-learn-linkedlist__clone-a-linked-list-with-random-and-next-pointer": {
+      "slug": "clone-a-ll-with-random-and-next-pointer",
+      "occ": 0
+    },
+    "step-06-learn-linkedlist__delete-all-occurrences-of-a-key-in-dll": {
+      "slug": "delete-all-occurrences-of-a-key-in-dll",
+      "occ": 0
+    },
+    "step-06-learn-linkedlist__remove-duplicates-from-sorted-dll": {
+      "slug": "remove-duplicated-from-sorted-dll",
+      "occ": 0
+    },
+    "step-06-learn-linkedlist__find-pairs-with-given-sum-in-dll": {
+      "slug": "find-pairs-with-given-sum-in-doubly-linked-list",
+      "occ": 0
+    },
+    "introduction-to-bits-and-tricks": {
+      "slug": "introduction-to-bits-and-tricks",
+      "occ": 0
+    },
+    "check-if-the-i-th-bit-is-set-or-not": {
+      "slug": "check-if-the-i-th-bit-is-set-or-not",
+      "occ": 0
+    },
+    "check-if-a-number-is-odd-or-not": {
+      "slug": "check-if-a-number-is-odd-or-not",
+      "occ": 0
+    },
+    "check-if-a-number-is-power-of-2-or-not": {
+      "slug": "check-if-a-number-is-power-of-2-or-not",
+      "occ": 0
+    },
+    "count-the-number-of-set-bits": {
+      "slug": "count-the-number-of-set-bits",
+      "occ": 0
+    },
+    "set-the-rightmost-unset-bit": {
+      "slug": "set-the-rightmost-unset-bit",
+      "occ": 0
+    },
+    "swap-two-numbers": {
+      "slug": "swap-two-numbers",
+      "occ": 0
+    },
+    "step-08-bit-manipulation__count-number-of-bits-to-be-flipped-to-convert-a-to-b": {
+      "slug": "minimum-bit-flips-to-convert-number",
+      "occ": 0
+    },
+    "step-03-solve-problems-on-arrays__find-the-number-that-appears-once-and-other-numbers-twice": {
+      "slug": "single-number---i",
+      "occ": 0
+    },
+    "step-08-bit-manipulation__find-the-number-that-appears-odd-number-of-times": {
+      "slug": "single-number---i",
+      "occ": 0
+    },
+    "single-number-ii": {
+      "slug": "single-number---ii",
+      "occ": 0
+    },
+    "single-number-iii": {
+      "slug": "single-number---iii",
+      "occ": 0
+    },
+    "step-08-bit-manipulation__divide-two-integers-without-using-multiplication-division-and-mod-operator": {
+      "slug": "divide-two-numbers-without-multiplication-and-division",
+      "occ": 0
+    },
+    "step-07-recursion__print-all-subsequences-power-set": {
+      "slug": "power-set-bit-manipulation",
+      "occ": 0
+    },
+    "xor-of-numbers-in-a-given-range": {
+      "slug": "xor-of-numbers-in-a-given-range",
+      "occ": 0
+    },
+    "step-12-greedy-algorithms__assign-cookies": {
+      "slug": "assign-cookies",
+      "occ": 0
+    },
+    "step-12-greedy-algorithms__lemonade-change": {
+      "slug": "lemonade-change",
+      "occ": 0
+    },
+    "step-12-greedy-algorithms__fractional-knapsack-problem": {
+      "slug": "fractional-knapsack",
+      "occ": 0
+    },
+    "step-12-greedy-algorithms__jump-game": {
+      "slug": "jump-game---i",
+      "occ": 0
+    },
+    "shortest-job-first": {
+      "slug": "shortest-job-first",
+      "occ": 0
+    },
+    "step-12-greedy-algorithms__job-sequencing-problem": {
+      "slug": "job-sequencing-problem",
+      "occ": 0
+    },
+    "step-12-greedy-algorithms__n-meetings-in-one-room": {
+      "slug": "n-meetings-in-one-room",
+      "occ": 0
+    },
+    "step-12-greedy-algorithms__non-overlapping-intervals": {
+      "slug": "non-overlapping-intervals",
+      "occ": 0
+    },
+    "step-12-greedy-algorithms__insert-interval": {
+      "slug": "insert-interval",
+      "occ": 0
+    },
+    "step-03-solve-problems-on-arrays__merge-overlapping-subintervals": {
+      "slug": "merge-intervals",
+      "occ": 0
+    },
+    "step-12-greedy-algorithms__merge-intervals": {
+      "slug": "merge-intervals",
+      "occ": 0
+    },
+    "step-12-greedy-algorithms__minimum-number-of-platforms-required-for-a-railway": {
+      "slug": "minimum-number-of-platforms-required-for-a-railway",
+      "occ": 0
+    },
+    "step-12-greedy-algorithms__valid-paranthesis-checker": {
+      "slug": "valid-paranthesis-checker",
+      "occ": 0
+    },
+    "step-12-greedy-algorithms__candy": {
+      "slug": "candy",
+      "occ": 0
+    },
+    "step-12-greedy-algorithms__jump-game-2": {
+      "slug": "jump-game-ii",
+      "occ": 0
+    },
+    "theory": {
+      "slug": "theory",
+      "occ": 0
+    },
+    "step-10-sliding-window-two-pointer-combined-problems__maximum-point-you-can-obtain-from-cards": {
+      "slug": "maximum-points-you-can-obtain-from-cards-",
+      "occ": 0
+    },
+    "step-10-sliding-window-two-pointer-combined-problems__longest-substring-without-repeating-characters": {
+      "slug": "longest-substring-without-repeating-characters",
+      "occ": 0
+    },
+    "step-10-sliding-window-two-pointer-combined-problems__max-consecutive-ones-iii": {
+      "slug": "max-consecutive-ones-iii",
+      "occ": 0
+    },
+    "step-10-sliding-window-two-pointer-combined-problems__fruit-into-baskets": {
+      "slug": "fruit-into-baskets",
+      "occ": 0
+    },
+    "step-10-sliding-window-two-pointer-combined-problems__longest-substring-with-at-most-k-distinct-characters": {
+      "slug": "longest-substring-with-at-most-k-distinct-characters",
+      "occ": 0
+    },
+    "step-10-sliding-window-two-pointer-combined-problems__longest-repeating-character-replacement": {
+      "slug": "longest-repeating-character-replacement",
+      "occ": 0
+    },
+    "step-10-sliding-window-two-pointer-combined-problems__minimum-window-substring": {
+      "slug": "minimum-window-substring-",
+      "occ": 0
+    },
+    "minimum-window-subsequence": {
+      "slug": "minimum-window-subsequence",
+      "occ": 0
+    },
+    "step-10-sliding-window-two-pointer-combined-problems__number-of-substring-containing-all-three-characters": {
+      "slug": "number-of-substrings-containing-all-three-characters",
+      "occ": 0
+    },
+    "step-10-sliding-window-two-pointer-combined-problems__binary-subarray-with-sum": {
+      "slug": "binary-subarrays-with-sum",
+      "occ": 0
+    },
+    "step-10-sliding-window-two-pointer-combined-problems__count-number-of-nice-subarrays": {
+      "slug": "count-number-of-nice-subarrays",
+      "occ": 0
+    },
+    "step-10-sliding-window-two-pointer-combined-problems__subarray-with-k-different-integers": {
+      "slug": "subarrays-with-k-different-integers",
+      "occ": 0
+    },
+    "implementation-using-different-ds": {
+      "slug": "implementation-using-different-ds",
+      "occ": 0
+    },
+    "step-09-stack-and-queues__implement-stack-using-arrays": {
+      "slug": "implement-stack-using-arrays",
+      "occ": 0
+    },
+    "step-09-stack-and-queues__implement-queue-using-arrays": {
+      "slug": "implement-queue-using-arrays",
+      "occ": 0
+    },
+    "step-09-stack-and-queues__implement-stack-using-queue": {
+      "slug": "implement-stack-using-queue",
+      "occ": 0
+    },
+    "step-09-stack-and-queues__implement-queue-using-stack": {
+      "slug": "implement-queue-using-stack",
+      "occ": 0
+    },
+    "step-09-stack-and-queues__implement-stack-using-linkedlist": {
+      "slug": "implement-stack-using-linkedlist",
+      "occ": 0
+    },
+    "step-09-stack-and-queues__implement-queue-using-linkedlist": {
+      "slug": "implement-queue-using-linkedlist",
+      "occ": 0
+    },
+    "step-09-stack-and-queues__check-for-balanced-paranthesis": {
+      "slug": "balanced-paranthesis",
+      "occ": 0
+    },
+    "infix-to-postfix-conversion": {
+      "slug": "infix-to-postfix-conversion",
+      "occ": 0
+    },
+    "infix-to-prefix-conversion": {
+      "slug": "infix-to-prefix-conversion",
+      "occ": 0
+    },
+    "prefix-to-infix-conversion": {
+      "slug": "prefix-to-infix-conversion",
+      "occ": 0
+    },
+    "prefix-to-postfix-conversion": {
+      "slug": "prefix-to-postfix-conversion",
+      "occ": 0
+    },
+    "postfix-to-infix-conversion": {
+      "slug": "postfix-to-infix-conversion",
+      "occ": 0
+    },
+    "postfix-to-prefix-conversion": {
+      "slug": "postfix-to-prefix-conversion",
+      "occ": 0
+    },
+    "step-09-stack-and-queues__next-greater-element": {
+      "slug": "next-greater-element",
+      "occ": 0
+    },
+    "step-09-stack-and-queues__next-greater-element-2": {
+      "slug": "next-greater-element---2",
+      "occ": 0
+    },
+    "step-09-stack-and-queues__asteroid-collision": {
+      "slug": "asteroid-collision",
+      "occ": 0
+    },
+    "step-09-stack-and-queues__sum-of-subarray-minimum": {
+      "slug": "sum-of-subarray-minimums",
+      "occ": 0
+    },
+    "step-09-stack-and-queues__sum-of-subarray-ranges": {
+      "slug": "sum-of-subarray-ranges",
+      "occ": 0
+    },
+    "step-09-stack-and-queues__remove-k-digits": {
+      "slug": "remove-k-digits",
+      "occ": 0
+    },
+    "next-smaller-element": {
+      "slug": "next-smaller-element",
+      "occ": 0
+    },
+    "step-09-stack-and-queues__implement-min-stack": {
+      "slug": "implement-min-stack",
+      "occ": 0
+    },
+    "step-09-stack-and-queues__sliding-window-maximum": {
+      "slug": "sliding-window-maximum",
+      "occ": 0
+    },
+    "step-09-stack-and-queues__trapping-rainwater": {
+      "slug": "trapping-rainwater",
+      "occ": 0
+    },
+    "step-09-stack-and-queues__largest-rectangle-in-a-histogram": {
+      "slug": "largest-rectangle-in-a-histogram",
+      "occ": 0
+    },
+    "step-09-stack-and-queues__maximal-rectangles": {
+      "slug": "maximum-rectangles",
+      "occ": 0
+    },
+    "step-16-dynamic-programming__maximum-rectangle-area-with-all-1-s-dp-55": {
+      "slug": "maximum-rectangles",
+      "occ": 0
+    },
+    "step-09-stack-and-queues__stock-span-problem": {
+      "slug": "stock-span-problem",
+      "occ": 0
+    },
+    "step-09-stack-and-queues__the-celebrity-problem": {
+      "slug": "celebrity-problem",
+      "occ": 0
+    },
+    "step-09-stack-and-queues__lru-cache-important": {
+      "slug": "lru-cache",
+      "occ": 0
+    },
+    "step-09-stack-and-queues__lfu-cache": {
+      "slug": "lfu-cache",
+      "occ": 0
+    },
+    "number-of-greater-elements-to-the-right": {
+      "slug": "number-of-greater-elements-to-the-right",
+      "occ": 0
+    },
+    "step-13-binary-trees__introduction-to-trees": {
+      "slug": "introduction-",
+      "occ": 0
+    },
+    "step-13-binary-trees__inorder-traversal-of-binary-tree": {
+      "slug": "inorder-traversal",
+      "occ": 0
+    },
+    "step-13-binary-trees__iterative-inorder-traversal-of-binary-tree": {
+      "slug": "inorder-traversal",
+      "occ": 0
+    },
+    "step-13-binary-trees__preorder-traversal-of-binary-tree": {
+      "slug": "preorder-traversal",
+      "occ": 0
+    },
+    "step-13-binary-trees__iterative-preorder-traversal-of-binary-tree": {
+      "slug": "preorder-traversal",
+      "occ": 0
+    },
+    "step-13-binary-trees__post-order-traversal-of-binary-tree": {
+      "slug": "postorder-traversal",
+      "occ": 0
+    },
+    "step-13-binary-trees__post-order-traversal-of-binary-tree-using-2-stack": {
+      "slug": "postorder-traversal",
+      "occ": 0
+    },
+    "step-13-binary-trees__post-order-traversal-of-binary-tree-using-1-stack": {
+      "slug": "postorder-traversal",
+      "occ": 0
+    },
+    "step-13-binary-trees__level-order-traversal-level-order-traversal-in-spiral-form": {
+      "slug": "level-order-traversal",
+      "occ": 0
+    },
+    "step-13-binary-trees__preorder-inorder-and-postorder-traversal-in-one-traversal": {
+      "slug": "pre,-post,-inorder-in-one-traversal",
+      "occ": 0
+    },
+    "step-13-binary-trees__height-of-a-binary-tree": {
+      "slug": "maximum-depth-in-bt",
+      "occ": 0
+    },
+    "step-13-binary-trees__check-if-two-trees-are-identical-or-not": {
+      "slug": "check-if-two-trees-are-identical-or-not",
+      "occ": 0
+    },
+    "step-13-binary-trees__check-if-the-binary-tree-is-height-balanced-or-not": {
+      "slug": "check-for-balanced-binary-tree",
+      "occ": 0
+    },
+    "step-13-binary-trees__diameter-of-binary-tree": {
+      "slug": "diameter-of-binary-tree",
+      "occ": 0
+    },
+    "step-13-binary-trees__maximum-path-sum": {
+      "slug": "maximum-path-sum-",
+      "occ": 0
+    },
+    "step-13-binary-trees__symmetric-binary-tree": {
+      "slug": "check-for-symmetrical-bts",
+      "occ": 0
+    },
+    "step-13-binary-trees__check-for-children-sum-property": {
+      "slug": "children-sum-property-in-binary-tree",
+      "occ": 0
+    },
+    "step-13-binary-trees__zig-zag-traversal-of-binary-tree": {
+      "slug": "zig-zag-or-spiral-traversal",
+      "occ": 0
+    },
+    "step-13-binary-trees__boundary-traversal-of-binary-tree": {
+      "slug": "boundary-traversal",
+      "occ": 0
+    },
+    "step-13-binary-trees__vertical-order-traversal-of-binary-tree": {
+      "slug": "vertical-order-traversal",
+      "occ": 0
+    },
+    "step-13-binary-trees__top-view-of-binary-tree": {
+      "slug": "top-view-of-bt",
+      "occ": 0
+    },
+    "step-13-binary-trees__bottom-view-of-binary-tree": {
+      "slug": "bottom-view-of-bt",
+      "occ": 0
+    },
+    "step-13-binary-trees__right-left-view-of-binary-tree": {
+      "slug": "right-left-view-of-bt",
+      "occ": 0
+    },
+    "print-root-to-leaf-path-in-bt": {
+      "slug": "print-root-to-leaf-path-in-bt",
+      "occ": 0
+    },
+    "step-13-binary-trees__lca-in-binary-tree": {
+      "slug": "lca-in-bt",
+      "occ": 0
+    },
+    "step-13-binary-trees__maximum-width-of-a-binary-tree": {
+      "slug": "maximum-width-of-bt",
+      "occ": 0
+    },
+    "step-13-binary-trees__print-all-the-nodes-at-a-distance-of-k-in-a-binary-tree": {
+      "slug": "print-all-nodes-at-a-distance-of-k-in-bt",
+      "occ": 0
+    },
+    "step-13-binary-trees__minimum-time-taken-to-burn-the-binary-tree-from-a-node": {
+      "slug": "minimum-time-taken-to-burn-the-bt-from-a-given-node",
+      "occ": 0
+    },
+    "step-13-binary-trees__count-total-nodes-in-a-complete-binary-tree": {
+      "slug": "count-total-nodes-in-a-complete-bt",
+      "occ": 0
+    },
+    "step-13-binary-trees__flatten-binary-tree-to-linkedlist": {
+      "slug": "flatten-binary-tree-to-linked-list",
+      "occ": 0
+    },
+    "step-13-binary-trees__requirements-needed-to-construct-a-unique-binary-tree-theory": {
+      "slug": "requirements-needed-to-construct-a-unique-bt",
+      "occ": 0
+    },
+    "step-13-binary-trees__construct-binary-tree-from-inorder-and-preorder": {
+      "slug": "construct-a-bt-from-preorder-and-inorder",
+      "occ": 0
+    },
+    "step-13-binary-trees__construct-the-binary-tree-from-postorder-and-inorder-traversal": {
+      "slug": "construct-a-bt-from-postorder-and-inorder",
+      "occ": 0
+    },
+    "step-13-binary-trees__serialize-and-deserialize-binary-tree": {
+      "slug": "serialize-and-de-serialize-bt",
+      "occ": 0
+    },
+    "step-13-binary-trees__morris-inorder-traversal-of-a-binary-tree": {
+      "slug": "morris-inorder-traversal-",
+      "occ": 0
+    },
+    "step-13-binary-trees__morris-preorder-traversal-of-a-binary-tree": {
+      "slug": "morris-preorder-traversal-",
+      "occ": 0
+    },
+    "step-14-binary-search-trees__introduction-to-binary-search-tree": {
+      "slug": "introduction-to-bst",
+      "occ": 0
+    },
+    "step-14-binary-search-trees__search-in-a-binary-search-tree": {
+      "slug": "search-in-bst",
+      "occ": 0
+    },
+    "step-14-binary-search-trees__ceil-in-a-binary-search-tree": {
+      "slug": "floor-and-ceil-in-a-bst",
+      "occ": 0
+    },
+    "step-14-binary-search-trees__floor-in-a-binary-search-tree": {
+      "slug": "floor-and-ceil-in-a-bst",
+      "occ": 0
+    },
+    "minimum-and-maximum-in-bst": {
+      "slug": "minimum-and-maximum-in-bst",
+      "occ": 0
+    },
+    "step-14-binary-search-trees__insert-a-given-node-in-binary-search-tree": {
+      "slug": "insert-a-given-node-in-bst",
+      "occ": 0
+    },
+    "step-14-binary-search-trees__delete-a-node-in-binary-search-tree": {
+      "slug": "delete-a-node-in-bst",
+      "occ": 0
+    },
+    "step-14-binary-search-trees__find-k-th-smallest-largest-element-in-bst": {
+      "slug": "kth-smallest-and-largest-element-in-bst",
+      "occ": 0
+    },
+    "step-14-binary-search-trees__check-if-a-tree-is-a-bst-or-bt": {
+      "slug": "check-if-a-tree-is-a-bst-or-not",
+      "occ": 0
+    },
+    "step-14-binary-search-trees__lca-in-binary-search-tree": {
+      "slug": "lca-in-bst",
+      "occ": 0
+    },
+    "step-14-binary-search-trees__construct-a-bst-from-a-preorder-traversal": {
+      "slug": "construct-a-bst-from-a-preorder-traversal",
+      "occ": 0
+    },
+    "step-14-binary-search-trees__inorder-successor-predecessor-in-bst": {
+      "slug": "inorder-successor-and-predecessor-in-bst",
+      "occ": 0
+    },
+    "bst-iterator": {
+      "slug": "bst-iterator",
+      "occ": 0
+    },
+    "step-14-binary-search-trees__two-sum-in-bst-check-if-there-exists-a-pair-with-sum-k": {
+      "slug": "two-sum-in-bst",
+      "occ": 0
+    },
+    "step-14-binary-search-trees__recover-bst-correct-bst-with-two-nodes-swapped": {
+      "slug": "correct-bst-with-two-nodes-swapped",
+      "occ": 0
+    },
+    "step-14-binary-search-trees__largest-bst-in-binary-tree": {
+      "slug": "largest-bst-in-binary-tree",
+      "occ": 0
+    },
+    "heaps-theory": {
+      "slug": "heaps-theory",
+      "occ": 0
+    },
+    "heapify-algorithm": {
+      "slug": "heapify-algorithm",
+      "occ": 0
+    },
+    "build-heap-from-a-given-array": {
+      "slug": "build-heap-from-a-given-array",
+      "occ": 0
+    },
+    "implement-min-heap": {
+      "slug": "implement-min-heap",
+      "occ": 0
+    },
+    "implement-max-heap": {
+      "slug": "implement-max-heap",
+      "occ": 0
+    },
+    "step-11-heaps__check-if-an-array-represents-a-min-heap-or-not": {
+      "slug": "check-if-an-array-represents-a-min-heap-",
+      "occ": 0
+    },
+    "step-11-heaps__min-heap-and-max-heap-implementation": {
+      "slug": "convert-min-heap-to-max-heap",
+      "occ": 0
+    },
+    "step-11-heaps__convert-min-heap-to-max-heap": {
+      "slug": "convert-min-heap-to-max-heap",
+      "occ": 0
+    },
+    "heap-sort": {
+      "slug": "heap-sort",
+      "occ": 0
+    },
+    "step-11-heaps__kth-largest-element-in-an-array-use-priority-queue": {
+      "slug": "k-th-largest-element-in-an-array",
+      "occ": 0
+    },
+    "step-11-heaps__kth-largest-element-in-a-stream-of-running-integers": {
+      "slug": "kth-largest-element-in-a-stream-of-running-integers",
+      "occ": 0
+    },
+    "sort-a-k-sorted-array": {
+      "slug": "sort-a-k-sorted-array",
+      "occ": 0
+    },
+    "merge-k-sorted-lists": {
+      "slug": "merge-k-sorted-lists",
+      "occ": 0
+    },
+    "replace-elements-by-their-rank": {
+      "slug": "replace-elements-by-their-rank",
+      "occ": 0
+    },
+    "task-scheduler": {
+      "slug": "task-scheduler",
+      "occ": 0
+    },
+    "hand-of-straights": {
+      "slug": "hand-of-straights",
+      "occ": 0
+    },
+    "design-twitter": {
+      "slug": "design-twitter",
+      "occ": 0
+    },
+    "minimum-cost-to-connect-sticks": {
+      "slug": "minimum-cost-to-connect-sticks",
+      "occ": 0
+    },
+    "step-11-heaps__maximum-sum-combination": {
+      "slug": "maximum-sum-combination",
+      "occ": 0
+    },
+    "find-median-from-data-stream": {
+      "slug": "find-median-from-data-stream",
+      "occ": 0
+    },
+    "top-k-frequent-elements": {
+      "slug": "top-k-frequent-elements",
+      "occ": 0
+    },
+    "step-15-graphs__graph-and-types": {
+      "slug": "introduction-to-graph",
+      "occ": 0
+    },
+    "traversal-techniques": {
+      "slug": "traversal-techniques",
+      "occ": 0
+    },
+    "step-15-graphs__connected-components-logic-explanation": {
+      "slug": "connected-components",
+      "occ": 0
+    },
+    "step-15-graphs__number-of-provinces-leetcode": {
+      "slug": "number-of-provinces",
+      "occ": 0
+    },
+    "step-15-graphs__connected-components-problem-in-matrix": {
+      "slug": "number-of-provinces",
+      "occ": 0
+    },
+    "number-of-islands": {
+      "slug": "number-of-islands",
+      "occ": 0
+    },
+    "step-15-graphs__flood-fill": {
+      "slug": "flood-fill-algorithm",
+      "occ": 0
+    },
+    "step-15-graphs__number-of-enclaves-flood-fill-implementation-multisource": {
+      "slug": "number-of-enclaves",
+      "occ": 0
+    },
+    "step-15-graphs__rotten-oranges": {
+      "slug": "rotten-oranges",
+      "occ": 0
+    },
+    "step-15-graphs__0-1-matrix-bfs-problem": {
+      "slug": "distance-of-nearest-cell-having-one",
+      "occ": 0
+    },
+    "step-15-graphs__surrounded-regions-dfs": {
+      "slug": "surrounded-regions",
+      "occ": 0
+    },
+    "step-15-graphs__number-of-distinct-islands-dfs-multisource": {
+      "slug": "number-of-distinct-islands",
+      "occ": 0
+    },
+    "step-15-graphs__cycle-detection-in-undirected-graph-dfs": {
+      "slug": "detect-a-cycle-in-an-undirected-graph",
+      "occ": 0
+    },
+    "step-15-graphs__bipartite-graph-dfs": {
+      "slug": "bipartite-graph",
+      "occ": 0
+    },
+    "step-15-graphs__topo-sort": {
+      "slug": "topological-sort-or-kahns-algorithm",
+      "occ": 0
+    },
+    "step-15-graphs__kahn-s-algorithm": {
+      "slug": "topological-sort-or-kahns-algorithm",
+      "occ": 0
+    },
+    "step-15-graphs__cycle-detection-in-directed-graph-dfs": {
+      "slug": "detect-a-cycle-in-a-directed-graph",
+      "occ": 0
+    },
+    "step-15-graphs__cycle-detection-in-directed-graph-bfs": {
+      "slug": "detect-a-cycle-in-a-directed-graph",
+      "occ": 0
+    },
+    "step-15-graphs__find-eventual-safe-states": {
+      "slug": "find-eventual-safe-states",
+      "occ": 0
+    },
+    "step-15-graphs__course-schedule-i": {
+      "slug": "course-schedule-i",
+      "occ": 0
+    },
+    "step-15-graphs__course-schedule-ii": {
+      "slug": "course-schedule-ii",
+      "occ": 0
+    },
+    "step-15-graphs__alien-dictionary": {
+      "slug": "alient-dictionary",
+      "occ": 0
+    },
+    "step-15-graphs__shortest-path-in-dag": {
+      "slug": "shortest-path-in-dag",
+      "occ": 0
+    },
+    "step-15-graphs__shortest-path-in-ug-with-unit-weights": {
+      "slug": "shortest-path-in-undirected-graph-with-unit-weights",
+      "occ": 0
+    },
+    "step-15-graphs__word-ladder-1": {
+      "slug": "word-ladder-i",
+      "occ": 0
+    },
+    "step-15-graphs__word-ladder-2": {
+      "slug": "word-ladder-ii",
+      "occ": 0
+    },
+    "step-15-graphs__djisktra-s-algorithm": {
+      "slug": "dijkstra's-algorithm",
+      "occ": 0
+    },
+    "print-shortest-path": {
+      "slug": "print-shortest-path-",
+      "occ": 0
+    },
+    "step-15-graphs__shortest-path-in-a-binary-maze": {
+      "slug": "shortest-path-with-minimum-effort",
+      "occ": 0
+    },
+    "step-15-graphs__path-with-minimum-effort": {
+      "slug": "path-with-minimum-effort",
+      "occ": 0
+    },
+    "step-15-graphs__cheapest-flights-within-k-stops": {
+      "slug": "cheapest-flight-within-k-stops",
+      "occ": 0
+    },
+    "minimum-multiplications-to-reach-end": {
+      "slug": "minimum-multiplications-to-reach-end",
+      "occ": 0
+    },
+    "step-15-graphs__number-of-ways-to-arrive-at-destination": {
+      "slug": "number-of-ways-to-arrive-at-destination",
+      "occ": 0
+    },
+    "step-15-graphs__bellman-ford-algorithm": {
+      "slug": "bellman-ford-algorithm",
+      "occ": 0
+    },
+    "floyd-warshall-algorithm": {
+      "slug": "floyd-warshall-algorithm",
+      "occ": 0
+    },
+    "step-15-graphs__find-the-city-with-the-smallest-number-of-neighbors-in-a-threshold-distance": {
+      "slug": "find-the-city-with-the-smallest-number-of-neighbors",
+      "occ": 0
+    },
+    "network-delay-time": {
+      "slug": "network-delay-time",
+      "occ": 0
+    },
+    "swim-in-rising-water": {
+      "slug": "swim-in-rising-water",
+      "occ": 0
+    },
+    "step-15-graphs__minimum-spanning-tree": {
+      "slug": "mst-theory",
+      "occ": 0
+    },
+    "step-15-graphs__disjoint-set-union-by-rank": {
+      "slug": "disjoint-set-",
+      "occ": 0
+    },
+    "step-15-graphs__disjoint-set-union-by-size": {
+      "slug": "disjoint-set-",
+      "occ": 0
+    },
+    "find-the-mst-weight": {
+      "slug": "find-the-mst-weight",
+      "occ": 0
+    },
+    "step-15-graphs__number-of-operations-to-make-network-connected": {
+      "slug": "number-of-operations-to-make-network-connected",
+      "occ": 0
+    },
+    "step-15-graphs__accounts-merge": {
+      "slug": "accounts-merge",
+      "occ": 0
+    },
+    "step-15-graphs__number-of-island-ii": {
+      "slug": "number-of-islands-ii",
+      "occ": 0
+    },
+    "step-15-graphs__making-a-large-island": {
+      "slug": "making-a-large-island",
+      "occ": 0
+    },
+    "step-15-graphs__most-stones-removed-with-same-rows-or-columns": {
+      "slug": "most-stones-removed-with-same-row-or-column",
+      "occ": 0
+    },
+    "step-15-graphs__kosaraju-s-algorithm": {
+      "slug": "kosaraju's-algorithm",
+      "occ": 0
+    },
+    "step-15-graphs__bridges-in-graph": {
+      "slug": "bridges-in-graph",
+      "occ": 0
+    },
+    "step-15-graphs__articulation-point": {
+      "slug": "articulation-point-in-graph",
+      "occ": 0
+    },
+    "step-16-dynamic-programming__dynamic-programming-introduction": {
+      "slug": "introduction-to-dp",
+      "occ": 0
+    },
+    "step-16-dynamic-programming__climbing-stars": {
+      "slug": "climbing-stairs",
+      "occ": 0
+    },
+    "step-16-dynamic-programming__frog-jump-dp-3": {
+      "slug": "frog-jump",
+      "occ": 0
+    },
+    "step-16-dynamic-programming__frog-jump-with-k-distances-dp-4": {
+      "slug": "frog-jump-with-k-distances",
+      "occ": 0
+    },
+    "step-16-dynamic-programming__maximum-sum-of-non-adjacent-elements-dp-5": {
+      "slug": "maximum-sum-of-non-adjacent-elements",
+      "occ": 0
+    },
+    "step-16-dynamic-programming__house-robber-dp-6": {
+      "slug": "house-robber",
+      "occ": 0
+    },
+    "step-16-dynamic-programming__ninja-s-training-dp-7": {
+      "slug": "ninja's-training",
+      "occ": 0
+    },
+    "step-16-dynamic-programming__grid-unique-paths-dp-on-grids-dp8": {
+      "slug": "grid-unique-paths",
+      "occ": 0
+    },
+    "step-16-dynamic-programming__grid-unique-paths-2-dp-9": {
+      "slug": "unique-paths-ii",
+      "occ": 0
+    },
+    "step-16-dynamic-programming__minimum-path-sum-in-grid-dp-10": {
+      "slug": "minimum-falling-path-sum",
+      "occ": 0
+    },
+    "step-16-dynamic-programming__minimum-maximum-falling-path-sum-dp-12": {
+      "slug": "minimum-falling-path-sum",
+      "occ": 0
+    },
+    "step-16-dynamic-programming__minimum-path-sum-in-triangular-grid-dp-11": {
+      "slug": "triangle",
+      "occ": 0
+    },
+    "cherry-pickup-ii": {
+      "slug": "cherry-pickup-ii",
+      "occ": 0
+    },
+    "count-square-submatrices-with-all-one": {
+      "slug": "count-square-submatrices-with-all-one",
+      "occ": 0
+    },
+    "step-03-solve-problems-on-arrays__stock-buy-and-sell": {
+      "slug": "best-time-to-buy-and-sell-stock",
+      "occ": 0
+    },
+    "step-16-dynamic-programming__best-time-to-buy-and-sell-stock-dp-35": {
+      "slug": "best-time-to-buy-and-sell-stock",
+      "occ": 0
+    },
+    "step-16-dynamic-programming__buy-and-sell-stock-ii-dp-36": {
+      "slug": "best-time-to-buy-and-sell-stock-ii",
+      "occ": 0
+    },
+    "step-16-dynamic-programming__buy-and-sell-stocks-iii-dp-37": {
+      "slug": "best-time-to-buy-and-sell-stock-iii",
+      "occ": 0
+    },
+    "step-16-dynamic-programming__buy-and-stock-sell-iv-dp-38": {
+      "slug": "best-time-to-buy-and-sell-stock-iv",
+      "occ": 0
+    },
+    "step-16-dynamic-programming__buy-and-sell-stocks-with-transaction-fee-dp-40": {
+      "slug": "best-time-to-buy-and-sell-stock-with-cooldown-and-transaction-fees",
+      "occ": 0
+    },
+    "best-time-to-buy-and-sell-stock-with-cooldown": {
+      "slug": "best-time-to-buy-and-sell-stock-with-cooldown",
+      "occ": 0
+    },
+    "step-16-dynamic-programming__subset-sum-equal-to-target-dp-14": {
+      "slug": "subset-sum-equals-to-target",
+      "occ": 0
+    },
+    "step-16-dynamic-programming__partition-equal-subset-sum-dp-15": {
+      "slug": "partition-equal-subset-sum",
+      "occ": 0
+    },
+    "partition-a-set-into-two-subsets-with-minimum-absolute-sum-difference": {
+      "slug": "partition-a-set-into-two-subsets-with-minimum-absolute-sum-difference",
+      "occ": 0
+    },
+    "step-16-dynamic-programming__count-subsets-with-sum-k-dp-17": {
+      "slug": "count-subsets-with-sum-k",
+      "occ": 0
+    },
+    "step-16-dynamic-programming__count-partitions-with-given-difference-dp-18": {
+      "slug": "count-partitions-with-given-difference",
+      "occ": 0
+    },
+    "0-and-1-knapsack": {
+      "slug": "0-and-1-knapsack",
+      "occ": 0
+    },
+    "step-16-dynamic-programming__minimum-coins-dp-20": {
+      "slug": "minimum-coins",
+      "occ": 0
+    },
+    "step-16-dynamic-programming__target-sum-dp-21": {
+      "slug": "target-sum",
+      "occ": 0
+    },
+    "step-16-dynamic-programming__coin-change-2-dp-22": {
+      "slug": "coin-change-ii",
+      "occ": 0
+    },
+    "step-16-dynamic-programming__unbounded-knapsack-dp-23": {
+      "slug": "unbounded-knapsack",
+      "occ": 0
+    },
+    "step-16-dynamic-programming__rod-cutting-problem-dp-24": {
+      "slug": "rod-cutting-problem",
+      "occ": 0
+    },
+    "step-16-dynamic-programming__longest-increasing-subsequence-dp-41": {
+      "slug": "longest-increasing-subsequence",
+      "occ": 0
+    },
+    "step-16-dynamic-programming__printing-longest-increasing-subsequence-dp-42": {
+      "slug": "longest-increasing-subsequence",
+      "occ": 0
+    },
+    "step-16-dynamic-programming__longest-increasing-subsequence-dp-43": {
+      "slug": "longest-increasing-subsequence",
+      "occ": 0
+    },
+    "print-longest-increasing-subsequence": {
+      "slug": "print-longest-increasing-subsequence",
+      "occ": 0
+    },
+    "step-16-dynamic-programming__largest-divisible-subset-dp-44": {
+      "slug": "largest-divisible-subset",
+      "occ": 0
+    },
+    "step-16-dynamic-programming__longest-string-chain-dp-45": {
+      "slug": "longest-string-chain",
+      "occ": 0
+    },
+    "step-16-dynamic-programming__longest-bitonic-subsequence-dp-46": {
+      "slug": "longest-bitonic-subsequence",
+      "occ": 0
+    },
+    "step-16-dynamic-programming__number-of-longest-increasing-subsequences-dp-47": {
+      "slug": "number-of-longest-increasing-subsequences",
+      "occ": 0
+    },
+    "step-16-dynamic-programming__longest-common-subsequence-dp-25": {
+      "slug": "longest-common-subsequence",
+      "occ": 0
+    },
+    "step-16-dynamic-programming__print-longest-common-subsequence-dp-26": {
+      "slug": "longest-common-subsequence",
+      "occ": 0
+    },
+    "step-16-dynamic-programming__longest-common-substring-dp-27": {
+      "slug": "longest-common-substring",
+      "occ": 0
+    },
+    "step-16-dynamic-programming__longest-palindromic-subsequence-dp-28": {
+      "slug": "longest-palindromic-subsequence",
+      "occ": 0
+    },
+    "step-16-dynamic-programming__minimum-insertions-to-make-string-palindrome-dp-29": {
+      "slug": "minimum-insertions-to-make-string-palindrome",
+      "occ": 0
+    },
+    "step-16-dynamic-programming__minimum-insertions-deletions-to-convert-string-dp-30": {
+      "slug": "minimum-insertions-or-deletions-to-convert-string-a-to-b",
+      "occ": 0
+    },
+    "step-16-dynamic-programming__shortest-common-supersequence-dp-31": {
+      "slug": "shortest-common-supersequence",
+      "occ": 0
+    },
+    "step-16-dynamic-programming__distinct-subsequences-dp-32": {
+      "slug": "distinct-subsequences",
+      "occ": 0
+    },
+    "step-16-dynamic-programming__edit-distance-dp-33": {
+      "slug": "edit-distance",
+      "occ": 0
+    },
+    "step-16-dynamic-programming__wildcard-matching-dp-34": {
+      "slug": "wildcard-matching",
+      "occ": 0
+    },
+    "word-break": {
+      "slug": "word-break",
+      "occ": 0
+    },
+    "count-palindromic-subsequences": {
+      "slug": "count-palindromic-subsequences",
+      "occ": 0
+    },
+    "step-16-dynamic-programming__matrix-chain-multiplication-dp-48": {
+      "slug": "matrix-chain-multiplication",
+      "occ": 0
+    },
+    "step-16-dynamic-programming__matrix-chain-multiplication-bottom-up-dp-49": {
+      "slug": "matrix-chain-multiplication",
+      "occ": 0
+    },
+    "step-16-dynamic-programming__burst-balloons-dp-51": {
+      "slug": "burst-balloons",
+      "occ": 0
+    },
+    "step-16-dynamic-programming__palindrome-partitioning-ii-dp-53": {
+      "slug": "palindrome-partitioning-ii-",
+      "occ": 0
+    },
+    "step-16-dynamic-programming__partition-array-for-maximum-sum-dp-54": {
+      "slug": "partition-array-for-maximum-sum",
+      "occ": 0
+    },
+    "step-16-dynamic-programming__minimum-cost-to-cut-the-stick-dp-50": {
+      "slug": "minimum-cost-to-cut-the-stick",
+      "occ": 0
+    },
+    "different-ways-to-evaluate-a-boolean-expression": {
+      "slug": "different-ways-to-evaluate-a-boolean-expression",
+      "occ": 0
+    },
+    "bit-prerequisites-for-trie-problems": {
+      "slug": "bit-prerequisites-for-trie-problems",
+      "occ": 0
+    },
+    "step-17-tries__implement-trie-insert-search-startswith": {
+      "slug": "trie-implementation-and-operations",
+      "occ": 0
+    },
+    "trie-implementation-and-advanced-operations": {
+      "slug": "trie-implementation-and-advanced-operations",
+      "occ": 0
+    },
+    "step-17-tries__longest-string-with-all-prefixes": {
+      "slug": "longest-word-with-all-prefixes",
+      "occ": 0
+    },
+    "step-17-tries__number-of-distinct-substrings-in-a-string": {
+      "slug": "number-of-distinct-substrings-in-a-string",
+      "occ": 0
+    },
+    "step-17-tries__maximum-xor-of-two-numbers-in-an-array": {
+      "slug": "maximum-xor-of-two-numbers-in-an-array",
+      "occ": 0
+    },
+    "step-17-tries__maximum-xor-with-an-element-from-array": {
+      "slug": "maximum-xor-with-an-element-from-an-array",
+      "occ": 0
+    },
+    "step-05-strings__reverse-words-in-a-given-string-palindrome-check": {
+      "slug": "reverse-every-word-in-a-string",
+      "occ": 0
+    },
+    "step-05-strings__reverse-every-word-in-a-string": {
+      "slug": "reverse-every-word-in-a-string",
+      "occ": 0
+    },
+    "step-18-strings__minimum-number-of-bracket-reversals-needed-to-make-an-expression-balanced": {
+      "slug": "minimum-number-of-bracket-reversals-to-make-an-expression-balanced",
+      "occ": 0
+    },
+    "step-18-strings__count-and-say": {
+      "slug": "count-and-say",
+      "occ": 0
+    },
+    "hashing-in-strings-theory": {
+      "slug": "hashing-in-strings-theory",
+      "occ": 0
+    },
+    "step-18-strings__rabin-karp": {
+      "slug": "rabin-karp-algorithm",
+      "occ": 0
+    },
+    "step-18-strings__z-function": {
+      "slug": "z-function",
+      "occ": 0
+    },
+    "kmp-algorithm-or-lps-array": {
+      "slug": "kmp-algorithm-or-lps-array",
+      "occ": 0
+    },
+    "step-18-strings__shortest-palindrome": {
+      "slug": "shortest-palindrome",
+      "occ": 0
+    },
+    "step-18-strings__longest-happy-prefix": {
+      "slug": "longest-happy-prefix",
+      "occ": 0
+    },
+    "print-all-primes-till-n": {
+      "slug": "print-all-primes-till-n",
+      "occ": 0
+    },
+    "prime-factorisation-of-a-number": {
+      "slug": "prime-factorisation-of-a-number",
+      "occ": 0
+    },
+    "step-08-bit-manipulation__sieve-of-eratosthenes": {
+      "slug": "count-primes-in-range-l-to-r",
+      "occ": 0
+    },
+    "step-03-solve-problems-on-arrays__print-subarray-with-maximum-subarray-sum-extended-version-of-above-problem": {
+      "carried": true
+    },
+    "step-07-recursion__recursive-implementation-of-atoi": {
+      "carried": true
+    },
+    "step-13-binary-trees__binary-tree-representation-in-java": {
+      "carried": true
+    },
+    "step-13-binary-trees__binary-tree-traversals-in-binary-tree": {
+      "carried": true
+    },
+    "step-13-binary-trees__root-to-node-path-in-binary-tree": {
+      "carried": true
+    },
+    "step-15-graphs__graph-representation-java": {
+      "carried": true
+    },
+    "step-15-graphs__bfs": {
+      "carried": true
+    },
+    "step-15-graphs__dfs": {
+      "carried": true
+    },
+    "step-15-graphs__cycle-detection-in-unirected-graph-bfs": {
+      "carried": true
+    },
+    "step-15-graphs__why-priority-queue-is-used-in-djisktra-s-algorithm": {
+      "carried": true
+    },
+    "step-16-dynamic-programming__assign-cookies": {
+      "slug": "assign-cookies",
+      "occ": 0,
+      "removed": true
+    }
+  }
+}

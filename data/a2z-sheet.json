@@ -8,50 +8,78 @@
         {
           "key": "breaking-the-myth",
           "name": "Breaking The Myth",
-          "link": "",
+          "link": "https://takeuforward.org/blogs/data-structure-and-algorithm/breaking-the-myth-dsa-is-language-independent",
           "difficulty": "",
+          "video": {
+            "provider": "youtube",
+            "id": "qbwJ1U6I-IU"
+          },
           "section": "Fundamentals of Programming"
         },
         {
           "key": "programming-and-what-are-computers",
           "name": "Programming and What Are Computers?",
-          "link": "",
+          "link": "https://takeuforward.org/blogs/data-structure-and-algorithm/programming-and-computers",
           "difficulty": "",
+          "video": {
+            "provider": "youtube",
+            "id": "y_tiNJXgA2U"
+          },
           "section": "Fundamentals of Programming"
         },
         {
           "key": "how-to-think-like-a-programmer",
           "name": "How to Think Like a Programmer",
-          "link": "",
+          "link": "https://takeuforward.org/blogs/data-structure-and-algorithm/how-to-think-like-a-programmer",
           "difficulty": "",
+          "video": {
+            "provider": "youtube",
+            "id": "iv7jtDODKrg"
+          },
           "section": "Fundamentals of Programming"
         },
         {
           "key": "flowcharts-and-pseudocode",
           "name": "Flowcharts and Pseudocode",
-          "link": "",
+          "link": "https://takeuforward.org/blogs/data-structure-and-algorithm/flowcharts-and-pseudocode",
           "difficulty": "",
+          "video": {
+            "provider": "youtube",
+            "id": "ynlGEO4bhiI"
+          },
           "section": "Fundamentals of Programming"
         },
         {
           "key": "flowchart-problem-solving",
           "name": "Flowchart Problem-Solving",
-          "link": "",
+          "link": "https://takeuforward.org/blogs/data-structure-and-algorithm/flowchart-problem-solving",
           "difficulty": "",
+          "video": {
+            "provider": "youtube",
+            "id": "usbMw83zi4c"
+          },
           "section": "Fundamentals of Programming"
         },
         {
           "key": "dry-runs-edge-cases-and-debugging",
           "name": "Dry Runs, Edge Cases and Debugging",
-          "link": "",
+          "link": "https://takeuforward.org/blogs/data-structure-and-algorithm/dry-runs-edge-cases-and-debugging",
           "difficulty": "",
+          "video": {
+            "provider": "youtube",
+            "id": "Chf3JhFO4nU"
+          },
           "section": "Fundamentals of Programming"
         },
         {
           "key": "programming-languages-and-choosing-a-path",
           "name": "Programming Languages and Choosing a Path",
-          "link": "",
+          "link": "https://takeuforward.org/blogs/data-structure-and-algorithm/programming-languages-and-choosing-a-path",
           "difficulty": "",
+          "video": {
+            "provider": "youtube",
+            "id": "qY_PY3o-pd4"
+          },
           "section": "Fundamentals of Programming"
         },
         {
@@ -414,7 +442,7 @@
         {
           "key": "basic-arrays-hashing-and-strings",
           "name": "Basic Arrays",
-          "link": "",
+          "link": "https://takeuforward.org/blogs/data-structure-and-algorithm/array-basics",
           "difficulty": "Basic",
           "section": "Concept Basics"
         },
@@ -432,7 +460,7 @@
         {
           "key": "basic-string",
           "name": "Basic String",
-          "link": "",
+          "link": "https://takeuforward.org/blogs/data-structure-and-algorithm/string-introduction-vowels-consonants-search-frequency-reverse-and-case-conversion",
           "difficulty": "Basic",
           "section": "Concept Basics"
         },
@@ -452,7 +480,7 @@
         {
           "key": "count-number-of-odd-digits-in-a-number",
           "name": "Count number of odd digits in a number",
-          "link": "",
+          "link": "https://takeuforward.org/blogs/data-structure-and-algorithm/count-odd-digits-in-a-number",
           "difficulty": "Basic",
           "tufPractice": "https://takeuforward.org/practice/dsa/count-number-of-odd-digits-in-a-number",
           "section": "Basic Maths"
@@ -461,7 +489,7 @@
           "key": "step-01-learn-the-basics__reverse-a-number",
           "name": "Reverse a number",
           "link": "https://takeuforward.org/blogs/data-structure-and-algorithm/reverse-digits-of-a-number",
-          "difficulty": "Basic",
+          "difficulty": "Core",
           "practice": "https://leetcode.com/problems/reverse-integer/",
           "tufPractice": "https://takeuforward.org/practice/dsa/reverse-a-number",
           "video": {
@@ -488,7 +516,7 @@
         {
           "key": "return-the-largest-digit-in-a-number",
           "name": "Return the Largest Digit in a Number",
-          "link": "",
+          "link": "https://takeuforward.org/blogs/data-structure-and-algorithm/find-the-largest-digit-in-a-number",
           "difficulty": "Basic",
           "tufPractice": "https://takeuforward.org/practice/dsa/return-the-largest-digit-in-a-number",
           "section": "Basic Maths"
@@ -496,7 +524,7 @@
         {
           "key": "factorial-of-a-given-number-i",
           "name": "Factorial of a given number",
-          "link": "",
+          "link": "https://takeuforward.org/blogs/data-structure-and-algorithm/factorial-of-a-number",
           "difficulty": "Basic",
           "tufPractice": "https://takeuforward.org/practice/dsa/factorial-of-a-given-number-i",
           "video": {
@@ -522,8 +550,9 @@
         {
           "key": "check-for-perfect-number",
           "name": "Check for Perfect Number",
-          "link": "",
+          "link": "https://takeuforward.org/blogs/data-structure-and-algorithm/perfect-number",
           "difficulty": "Basic",
+          "practice": "https://leetcode.com/problems/perfect-number/",
           "tufPractice": "https://takeuforward.org/practice/dsa/check-for-perfect-number",
           "section": "Basic Maths"
         },
@@ -531,7 +560,7 @@
           "key": "step-01-learn-the-basics__check-for-prime",
           "name": "Check for Prime Number",
           "link": "https://takeuforward.org/blogs/data-structure-and-algorithm/check-whether-a-number-is-prime",
-          "difficulty": "Basic",
+          "difficulty": "Core",
           "tufPractice": "https://takeuforward.org/practice/dsa/check-for-prime-number",
           "video": {
             "provider": "youtube",
@@ -546,6 +575,7 @@
           "name": "Count of Prime Numbers till N",
           "link": "",
           "difficulty": "Basic",
+          "practice": "https://leetcode.com/problems/count-primes/",
           "tufPractice": "https://takeuforward.org/practice/dsa/count-of-prime-numbers-till-n",
           "section": "Basic Maths"
         },
@@ -553,7 +583,7 @@
           "key": "gcd-of-two-numbers",
           "name": "GCD of Two Numbers",
           "link": "https://takeuforward.org/blogs/data-structure-and-algorithm/gcd-euclidean-algorithm",
-          "difficulty": "Basic",
+          "difficulty": "Core",
           "tufPractice": "https://takeuforward.org/practice/dsa/gcd-of-two-numbers",
           "video": {
             "provider": "youtube",
@@ -566,15 +596,15 @@
           "key": "lcm-of-two-numbers",
           "name": "LCM of two numbers",
           "link": "",
-          "difficulty": "Basic",
+          "difficulty": "Core",
           "tufPractice": "https://takeuforward.org/practice/dsa/lcm-of-two-numbers",
           "section": "Basic Maths"
         },
         {
           "key": "divisors-of-a-number",
           "name": "Divisors of a Number",
-          "link": "",
-          "difficulty": "Basic",
+          "link": "https://takeuforward.org/blogs/data-structure-and-algorithm/count-divisors",
+          "difficulty": "Core",
           "tufPractice": "https://takeuforward.org/practice/dsa/divisors-of-a-number",
           "video": {
             "provider": "youtube",
@@ -586,7 +616,7 @@
         {
           "key": "sum-of-array-elements",
           "name": "Sum of Array Elements",
-          "link": "",
+          "link": "https://takeuforward.org/blogs/data-structure-and-algorithm/sum-of-array",
           "difficulty": "Basic",
           "tufPractice": "https://takeuforward.org/practice/dsa/sum-of-array-elements",
           "section": "Basic Arrays"
@@ -594,7 +624,7 @@
         {
           "key": "count-of-odd-numbers-in-array",
           "name": "Count of odd numbers in Array",
-          "link": "",
+          "link": "https://takeuforward.org/blogs/data-structure-and-algorithm/odd-elements-in-an-array",
           "difficulty": "Basic",
           "tufPractice": "https://takeuforward.org/practice/dsa/count-of-odd-numbers-in-array",
           "section": "Basic Arrays"
@@ -602,7 +632,7 @@
         {
           "key": "step-03-solve-problems-on-arrays__check-if-the-array-is-sorted",
           "name": "Check if the Array is Sorted I",
-          "link": "",
+          "link": "https://takeuforward.org/blogs/data-structure-and-algorithm/check-if-an-array-is-sorted-in-ascending-order",
           "difficulty": "Basic",
           "tufPractice": "https://takeuforward.org/practice/dsa/check-if-the-array-is-sorted-i",
           "section": "Basic Arrays",
@@ -624,7 +654,7 @@
         {
           "key": "highest-occurring-element-in-an-array",
           "name": "Highest Occurring Element in an Array",
-          "link": "",
+          "link": "https://takeuforward.org/blogs/data-structure-and-algorithm/highest-freq-element",
           "difficulty": "Core",
           "practice": "https://leetcode.com/problems/frequency-of-the-most-frequent-element/",
           "tufPractice": "https://takeuforward.org/practice/dsa/highest-occurring-element-in-an-array",
@@ -633,8 +663,8 @@
         {
           "key": "second-highest-occurring-element",
           "name": "Second Highest Occurring Element",
-          "link": "",
-          "difficulty": "Basic",
+          "link": "https://takeuforward.org/blogs/data-structure-and-algorithm/second-highest-occurring-element",
+          "difficulty": "Core",
           "tufPractice": "https://takeuforward.org/practice/dsa/second-highest-occurring-element",
           "section": "Basic Hashing"
         },
@@ -642,7 +672,7 @@
           "key": "sum-of-highest-and-lowest-frequency",
           "name": "Sum of Highest and Lowest Frequency",
           "link": "",
-          "difficulty": "Basic",
+          "difficulty": "Core",
           "tufPractice": "https://takeuforward.org/practice/dsa/sum-of-highest-and-lowest-frequency",
           "section": "Basic Hashing"
         },
@@ -651,17 +681,18 @@
           "name": "Reverse a String II",
           "link": "",
           "difficulty": "Basic",
+          "practice": "https://leetcode.com/problems/reverse-string/",
           "tufPractice": "https://takeuforward.org/practice/dsa/reverse-a-string-ii",
           "section": "Basic Strings"
         },
         {
           "key": "step-01-learn-the-basics__check-palindrome",
           "name": "Palindrome Check",
-          "link": "",
+          "link": "https://takeuforward.org/blogs/data-structure-and-algorithm/valid-palindrome",
           "difficulty": "Core",
+          "practice": "https://leetcode.com/problems/valid-palindrome/",
           "tufPractice": "https://takeuforward.org/practice/dsa/palindrome-check",
-          "section": "Basic Strings",
-          "practice": "https://www.geeksforgeeks.org/problems/palindrome0746/1"
+          "section": "Basic Strings"
         },
         {
           "key": "step-05-strings__largest-odd-number-in-a-string",
@@ -702,28 +733,20 @@
         {
           "key": "step-05-strings__check-if-two-strings-are-anagram-of-each-other",
           "name": "Valid Anagram",
-          "link": "",
+          "link": "https://takeuforward.org/blogs/data-structure-and-algorithm/check-if-two-strings-are-anagrams",
           "difficulty": "Basic",
-          "practice": "https://leetcode.com/problems/valid-anagram/#:~:text=Given%20two%20strings%20s%20and,the%20original%20letters%20exactly%20once.&text=Constraints%3A,.length%20%3C%3D%205%20*%2010",
+          "practice": "https://leetcode.com/problems/valid-anagram/",
           "tufPractice": "https://takeuforward.org/practice/dsa/valid-anagram",
           "section": "Basic Strings"
         },
         {
           "key": "step-05-strings__sort-characters-by-frequency",
           "name": "Sort Characters by Frequency",
-          "link": "",
+          "link": "https://takeuforward.org/blogs/data-structure-and-algorithm/sort-characters-by-frequency",
           "difficulty": "Core",
           "practice": "https://leetcode.com/problems/sort-characters-by-frequency/",
           "tufPractice": "https://takeuforward.org/practice/dsa/sort-characters-by-frequency",
           "section": "Basic Strings"
-        },
-        {
-          "key": "step-05-strings__remove-outermost-paranthesis",
-          "name": "Remove outermost Paranthesis",
-          "link": "",
-          "difficulty": "Basic",
-          "section": "Basic Strings",
-          "practice": "https://leetcode.com/problems/remove-outermost-parentheses/"
         },
         {
           "key": "recursion-theory",
@@ -755,7 +778,7 @@
         {
           "key": "factorial-of-a-given-number-ii",
           "name": "Factorial of a Given Number",
-          "link": "",
+          "link": "https://takeuforward.org/blogs/data-structure-and-algorithm/factorial-of-a-number-using-recursion",
           "difficulty": "Basic",
           "tufPractice": "https://takeuforward.org/practice/dsa/factorial-of-a-given-number-ii",
           "section": "Basic Recursion"
@@ -773,6 +796,7 @@
           "name": "Reverse a String I",
           "link": "",
           "difficulty": "Basic",
+          "practice": "https://leetcode.com/problems/reverse-string/",
           "tufPractice": "https://takeuforward.org/practice/dsa/reverse-a-string-i",
           "section": "Basic Recursion"
         },
@@ -793,7 +817,7 @@
           "key": "step-08-bit-manipulation__check-if-a-number-is-odd-or-not",
           "name": "Check if a Number is Prime or Not",
           "link": "",
-          "difficulty": "Basic",
+          "difficulty": "Core",
           "tufPractice": "https://takeuforward.org/practice/dsa/check-if-a-number-is-prime-or-not",
           "section": "Basic Recursion",
           "practice": "https://www.geeksforgeeks.org/problems/odd-or-even3618/1"
@@ -801,7 +825,7 @@
         {
           "key": "reverse-an-array-ii",
           "name": "Reverse an array 2",
-          "link": "",
+          "link": "https://takeuforward.org/blogs/data-structure-and-algorithm/reversing-an-array-using-recursion",
           "difficulty": "Core",
           "tufPractice": "https://takeuforward.org/practice/dsa/reverse-an-array-ii",
           "section": "Basic Recursion"
@@ -823,7 +847,7 @@
         {
           "key": "sum-of-digits-in-a-given-number",
           "name": "Sum of Digits in a Given Number",
-          "link": "",
+          "link": "https://takeuforward.org/blogs/data-structure-and-algorithm/sum-of-digits-of-a-number-using-recursion",
           "difficulty": "Basic",
           "tufPractice": "https://takeuforward.org/practice/dsa/sum-of-digits-in-a-given-number",
           "section": "Basic Recursion"
@@ -852,7 +876,7 @@
           "key": "step-02-learn-important-sorting-techniques__selection-sort",
           "name": "Selection Sort",
           "link": "https://takeuforward.org/blogs/data-structure-and-algorithm/selection-sort-algorithm",
-          "difficulty": "Basic",
+          "difficulty": "Core",
           "tufPractice": "https://takeuforward.org/practice/dsa/selection-sort",
           "video": {
             "provider": "youtube",
@@ -866,21 +890,7 @@
           "key": "step-02-learn-important-sorting-techniques__bubble-sort",
           "name": "Bubble Sort",
           "link": "https://takeuforward.org/blogs/data-structure-and-algorithm/bubble-sort-algorithm",
-          "difficulty": "Basic",
-          "tufPractice": "https://takeuforward.org/practice/dsa/bubble-sort",
-          "video": {
-            "provider": "youtube",
-            "id": "HGk_ypEuS24",
-            "t": 1061
-          },
-          "section": "Algorithms",
-          "practice": "https://www.geeksforgeeks.org/problems/bubble-sort/1"
-        },
-        {
-          "key": "step-02-learn-important-sorting-techniques__recursive-bubble-sort",
-          "name": "Recursive Bubble Sort",
-          "link": "https://takeuforward.org/blogs/data-structure-and-algorithm/bubble-sort-algorithm",
-          "difficulty": "Basic",
+          "difficulty": "Core",
           "tufPractice": "https://takeuforward.org/practice/dsa/bubble-sort",
           "video": {
             "provider": "youtube",
@@ -894,7 +904,7 @@
           "key": "step-02-learn-important-sorting-techniques__insertion-sort",
           "name": "Insertion Sorting",
           "link": "https://takeuforward.org/blogs/data-structure-and-algorithm/insertion-sort-algorithm",
-          "difficulty": "Basic",
+          "difficulty": "Core",
           "tufPractice": "https://takeuforward.org/practice/dsa/insertion-sorting",
           "video": {
             "provider": "youtube",
@@ -928,6 +938,23 @@
             "id": "WIrA4YexLRQ"
           },
           "section": "Algorithms"
+        },
+        {
+          "key": "step-02-learn-important-sorting-techniques__recursive-bubble-sort",
+          "name": "Recursive Bubble Sort",
+          "link": "",
+          "difficulty": "Core",
+          "tufPractice": "https://takeuforward.org/practice/dsa/recursive-bubble-sort",
+          "section": "Algorithms",
+          "practice": "https://www.geeksforgeeks.org/problems/bubble-sort/1"
+        },
+        {
+          "key": "recursive-insertion-sort",
+          "name": "Recursive Insertion Sort",
+          "link": "",
+          "difficulty": "Core",
+          "tufPractice": "https://takeuforward.org/practice/dsa/recursive-insertion-sort",
+          "section": "Algorithms"
         }
       ]
     },
@@ -939,7 +966,7 @@
         {
           "key": "step-03-solve-problems-on-arrays__linear-search",
           "name": "Linear Search",
-          "link": "",
+          "link": "https://takeuforward.org/blogs/data-structure-and-algorithm/linear-search-algorithm",
           "difficulty": "Basic",
           "tufPractice": "https://takeuforward.org/practice/dsa/linear-search",
           "video": {
@@ -967,7 +994,7 @@
         {
           "key": "step-03-solve-problems-on-arrays__second-largest-element-in-an-array-without-sorting",
           "name": "Second Largest Element",
-          "link": "",
+          "link": "https://takeuforward.org/blogs/data-structure-and-algorithm/second-largest-element",
           "difficulty": "Basic",
           "tufPractice": "https://takeuforward.org/practice/dsa/second-largest-element",
           "video": {
@@ -1009,8 +1036,8 @@
         {
           "key": "step-03-solve-problems-on-arrays__left-rotate-an-array-by-d-places",
           "name": "Left Rotate Array by K Places",
-          "link": "",
-          "difficulty": "Basic",
+          "link": "https://takeuforward.org/blogs/data-structure-and-algorithm/left-rotate-array-by-k-places",
+          "difficulty": "Core",
           "practice": "https://leetcode.com/problems/rotate-array/",
           "tufPractice": "https://takeuforward.org/practice/dsa/left-rotate-array",
           "video": {
@@ -1037,9 +1064,9 @@
         {
           "key": "step-03-solve-problems-on-arrays__remove-duplicates-from-sorted-array",
           "name": "Remove duplicates from sorted array",
-          "link": "",
+          "link": "https://takeuforward.org/blogs/data-structure-and-algorithm/remove-duplicates-from-a-sorted-array-in-place",
           "difficulty": "Basic",
-          "practice": "https://leetcode.com/problems/remove-duplicates-from-sorted-array/#:~:text=Input%3A%20nums%20%3D%20%5B0%2C,%2C%203%2C%20and%204%20respectively.",
+          "practice": "https://leetcode.com/problems/remove-duplicates-from-sorted-array/",
           "tufPractice": "https://takeuforward.org/practice/dsa/remove-duplicates-from-sorted-array",
           "video": {
             "provider": "youtube",
@@ -1051,11 +1078,11 @@
         {
           "key": "step-03-solve-problems-on-arrays__find-missing-number-in-an-array",
           "name": "Find missing number",
-          "link": "",
+          "link": "https://takeuforward.org/blogs/data-structure-and-algorithm/missing-number-solutions",
           "difficulty": "Basic",
+          "practice": "https://leetcode.com/problems/missing-number/",
           "tufPractice": "https://takeuforward.org/practice/dsa/find-missing-number",
-          "section": "Logic Building",
-          "practice": "https://leetcode.com/problems/missing-number/"
+          "section": "Logic Building"
         },
         {
           "key": "step-03-solve-problems-on-arrays__find-the-union",
@@ -1074,7 +1101,7 @@
         {
           "key": "intersection-of-two-sorted-arrays",
           "name": "Intersection of two sorted arrays",
-          "link": "",
+          "link": "https://takeuforward.org/blogs/data-structure-and-algorithm/intersection-of-two-arrays",
           "difficulty": "Core",
           "tufPractice": "https://takeuforward.org/practice/dsa/intersection-of-two-sorted-arrays",
           "section": "Logic Building"
@@ -1096,19 +1123,19 @@
           "key": "step-03-solve-problems-on-arrays__leaders-in-an-array-problem",
           "name": "Leaders in an Array",
           "link": "https://takeuforward.org/blogs/data-structure-and-algorithm/leaders-in-an-array",
-          "difficulty": "Basic",
+          "difficulty": "Core",
+          "practice": "https://leetcode.com/problems/buildings-with-an-ocean-view/",
           "tufPractice": "https://takeuforward.org/practice/dsa/leaders-in-an-array",
           "video": {
             "provider": "youtube",
             "id": "cHrH9CQ8pmY"
           },
-          "section": "FAQs(Medium)",
-          "practice": "https://www.geeksforgeeks.org/problems/leaders-in-an-array-1587115620/1"
+          "section": "FAQs(Medium)"
         },
         {
           "key": "step-03-solve-problems-on-arrays__rearrange-the-array-in-alternating-positive-and-negative-items",
           "name": "Rearrange array elements by sign",
-          "link": "",
+          "link": "https://takeuforward.org/blogs/data-structure-and-algorithm/rearrange-array-elements-by-sign",
           "difficulty": "Core",
           "practice": "https://leetcode.com/problems/rearrange-array-elements-by-sign/",
           "tufPractice": "https://takeuforward.org/practice/dsa/rearrange-array-elements-by-sign",
@@ -1147,15 +1174,16 @@
         {
           "key": "pascals-triangle-ii",
           "name": "Pascal's Triangle II",
-          "link": "",
+          "link": "https://takeuforward.org/blogs/data-structure-and-algorithm/pascal-triangle-ii",
           "difficulty": "Core",
+          "practice": "https://leetcode.com/problems/pascals-triangle-ii/",
           "tufPractice": "https://takeuforward.org/practice/dsa/pascals-triangle-ii",
           "section": "FAQs(Medium)"
         },
         {
           "key": "pascals-triangle-iii",
           "name": "Pascal's Triangle III",
-          "link": "",
+          "link": "https://takeuforward.org/blogs/data-structure-and-algorithm/pascals-triangle-first-n-rows",
           "difficulty": "Core",
           "tufPractice": "https://takeuforward.org/practice/dsa/pascals-triangle-iii",
           "section": "FAQs(Medium)"
@@ -1216,7 +1244,7 @@
           "key": "step-03-solve-problems-on-arrays__4-sum-problem",
           "name": "4 Sum",
           "link": "https://takeuforward.org/blogs/data-structure-and-algorithm/4sum",
-          "difficulty": "Core",
+          "difficulty": "Pro",
           "practice": "https://leetcode.com/problems/4sum/",
           "tufPractice": "https://takeuforward.org/practice/dsa/4-sum",
           "video": {
@@ -1228,7 +1256,7 @@
         {
           "key": "step-03-solve-problems-on-arrays__sort-an-array-of-0-s-1-s-and-2-s",
           "name": "Sort an array of 0's 1's and 2's",
-          "link": "",
+          "link": "https://takeuforward.org/blogs/data-structure-and-algorithm/sort-array-0s-1s-2s",
           "difficulty": "Core",
           "practice": "https://leetcode.com/problems/sort-colors/",
           "tufPractice": "https://takeuforward.org/practice/dsa/sort-an-array-of-0's-1's-and-2's",
@@ -1241,15 +1269,15 @@
         {
           "key": "step-03-solve-problems-on-arrays__kadane-s-algorithm-maximum-subarray-sum",
           "name": "Kadane's Algorithm",
-          "link": "",
+          "link": "https://takeuforward.org/blogs/data-structure-and-algorithm/kadanes-algorithm",
           "difficulty": "Core",
+          "practice": "https://leetcode.com/problems/maximum-subarray/",
           "tufPractice": "https://takeuforward.org/practice/dsa/kadane's-algorithm",
           "video": {
             "provider": "youtube",
             "id": "AHZpyENo7k4"
           },
-          "section": "FAQs(Medium)",
-          "practice": "https://leetcode.com/problems/maximum-subarray/"
+          "section": "FAQs(Medium)"
         },
         {
           "key": "step-03-solve-problems-on-arrays__next-permutation",
@@ -1300,8 +1328,8 @@
         {
           "key": "step-03-solve-problems-on-arrays__count-inversions",
           "name": "Count Inversions",
-          "link": "",
-          "difficulty": "Core",
+          "link": "https://takeuforward.org/blogs/data-structure-and-algorithm/count-inversions-in-an-array-using-merge-sort",
+          "difficulty": "Pro",
           "tufPractice": "https://takeuforward.org/practice/dsa/count-inversions",
           "video": {
             "provider": "youtube",
@@ -1326,7 +1354,7 @@
         {
           "key": "step-03-solve-problems-on-arrays__maximum-product-subarray",
           "name": "Maximum Product Subarray in an Array",
-          "link": "",
+          "link": "https://takeuforward.org/blogs/data-structure-and-algorithm/maximum-product-subarray",
           "difficulty": "Core",
           "practice": "https://leetcode.com/problems/maximum-product-subarray/",
           "tufPractice": "https://takeuforward.org/practice/dsa/maximum-product-subarray-in-an-array",
@@ -1366,9 +1394,9 @@
         {
           "key": "step-03-solve-problems-on-arrays__longest-consecutive-sequence-in-an-array",
           "name": "Longest Consecutive Sequence in an Array",
-          "link": "",
+          "link": "https://takeuforward.org/blogs/data-structure-and-algorithm/longest-consecutive-sequence-in-an-array",
           "difficulty": "Core",
-          "practice": "https://leetcode.com/problems/longest-consecutive-sequence/solution/",
+          "practice": "https://leetcode.com/problems/longest-consecutive-sequence/",
           "tufPractice": "https://takeuforward.org/practice/dsa/longest-consecutive-sequence-in-an-array",
           "video": {
             "provider": "youtube",
@@ -1381,44 +1409,44 @@
           "name": "Longest subarray with given sum K(positives)",
           "link": "",
           "difficulty": "Core",
+          "practice": "https://leetcode.com/problems/maximum-size-subarray-sum-equals-k/",
           "tufPractice": "https://takeuforward.org/practice/dsa/longest-subarray-with-sum-k",
           "video": {
             "provider": "youtube",
             "id": "frf7qxiN2qU"
           },
-          "section": "FAQs",
-          "practice": "https://www.geeksforgeeks.org/problems/longest-sub-array-with-sum-k0809/1"
+          "section": "FAQs"
         },
         {
           "key": "step-03-solve-problems-on-arrays__longest-subarray-with-sum-k-positives-negatives",
           "name": "Longest subarray with sum K (Positives + Negatives)",
           "link": "",
           "difficulty": "Core",
+          "practice": "https://leetcode.com/problems/maximum-size-subarray-sum-equals-k/",
           "tufPractice": "https://takeuforward.org/practice/dsa/longest-subarray-with-sum-k",
           "video": {
             "provider": "youtube",
             "id": "frf7qxiN2qU"
           },
-          "section": "FAQs",
-          "practice": "https://www.geeksforgeeks.org/problems/longest-sub-array-with-sum-k0809/1"
+          "section": "FAQs"
         },
         {
           "key": "step-03-solve-problems-on-arrays__largest-subarray-with-0-sum",
           "name": "Largest Subarray with Sum 0",
           "link": "",
           "difficulty": "Core",
+          "practice": "https://leetcode.com/problems/maximum-size-subarray-sum-equals-k/",
           "tufPractice": "https://takeuforward.org/practice/dsa/largest-subarray-with-sum-0",
           "video": {
             "provider": "youtube",
             "id": "xmguZ6GbatA"
           },
-          "section": "FAQs",
-          "practice": "https://www.geeksforgeeks.org/problems/largest-subarray-with-0-sum/1"
+          "section": "FAQs"
         },
         {
           "key": "step-03-solve-problems-on-arrays__count-subarrays-with-given-sum",
           "name": "Count subarrays with given sum",
-          "link": "",
+          "link": "https://takeuforward.org/blogs/data-structure-and-algorithm/count-subarrays-with-given-sum",
           "difficulty": "Core",
           "practice": "https://leetcode.com/problems/subarray-sum-equals-k/",
           "tufPractice": "https://takeuforward.org/practice/dsa/count-subarrays-with-given-sum",
@@ -1432,7 +1460,7 @@
           "key": "step-03-solve-problems-on-arrays__count-number-of-subarrays-with-given-xor-k",
           "name": "Count subarrays with given xor K",
           "link": "https://takeuforward.org/blogs/data-structure-and-algorithm/count-subarrays-with-a-given-xor-k",
-          "difficulty": "Core",
+          "difficulty": "Pro",
           "tufPractice": "https://takeuforward.org/practice/dsa/count-subarrays-with-given-xor-k",
           "video": {
             "provider": "youtube",
@@ -1465,7 +1493,7 @@
           "key": "step-04-binary-search__implement-lower-bound",
           "name": "Lower Bound",
           "link": "https://takeuforward.org/blogs/data-structure-and-algorithm/lower-bound-in-sorted-array",
-          "difficulty": "Basic",
+          "difficulty": "Core",
           "tufPractice": "https://takeuforward.org/practice/dsa/lower-bound-",
           "video": {
             "provider": "youtube",
@@ -1478,7 +1506,7 @@
           "key": "step-04-binary-search__implement-upper-bound",
           "name": "Upper Bound",
           "link": "https://takeuforward.org/blogs/data-structure-and-algorithm/upper-bound-in-sorted-array",
-          "difficulty": "Basic",
+          "difficulty": "Core",
           "tufPractice": "https://takeuforward.org/practice/dsa/upper-bound",
           "video": {
             "provider": "youtube",
@@ -1492,7 +1520,7 @@
           "name": "Search insert position",
           "link": "https://takeuforward.org/blogs/data-structure-and-algorithm/search-insert-position",
           "difficulty": "Basic",
-          "practice": "https://leetcode.com/problems/search-insert-position/#:~:text=Search%20Insert%20Position%20%2D%20LeetCode&text=Given%20a%20sorted%20array%20of,(log%20n)%20runtime%20complexity.",
+          "practice": "https://leetcode.com/problems/search-insert-position/",
           "tufPractice": "https://takeuforward.org/practice/dsa/search-insert-position",
           "video": {
             "provider": "youtube",
@@ -1504,7 +1532,7 @@
           "key": "step-04-binary-search__floor-ceil-in-sorted-array",
           "name": "Floor and Ceil in Sorted Array",
           "link": "",
-          "difficulty": "Basic",
+          "difficulty": "Core",
           "tufPractice": "https://takeuforward.org/practice/dsa/floor-and-ceil-in-sorted-array",
           "video": {
             "provider": "youtube",
@@ -1515,20 +1543,7 @@
         },
         {
           "key": "step-04-binary-search__find-the-first-or-last-occurrence-of-a-given-number-in-a-sorted-array",
-          "name": "Find the first or last occurrence of a given number in a sorted array",
-          "link": "https://takeuforward.org/blogs/data-structure-and-algorithm/last-occurrence-in-a-sorted-array",
-          "difficulty": "Core",
-          "practice": "https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/",
-          "tufPractice": "https://takeuforward.org/practice/dsa/first-and-last-occurrence",
-          "video": {
-            "provider": "youtube",
-            "id": "hjR1IYVx9lY"
-          },
-          "section": "Logic Building"
-        },
-        {
-          "key": "step-04-binary-search__count-occurrences-of-a-number-in-a-sorted-array-with-duplicates",
-          "name": "Count occurrences of a number in a sorted array with duplicates",
+          "name": "First and last occurrence",
           "link": "https://takeuforward.org/blogs/data-structure-and-algorithm/last-occurrence-in-a-sorted-array",
           "difficulty": "Core",
           "practice": "https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/",
@@ -1542,7 +1557,7 @@
         {
           "key": "step-04-binary-search__search-in-rotated-sorted-array-i",
           "name": "Search in rotated sorted array-I",
-          "link": "",
+          "link": "https://takeuforward.org/blogs/data-structure-and-algorithm/search-in-rotated-sorted-array",
           "difficulty": "Core",
           "practice": "https://leetcode.com/problems/search-in-rotated-sorted-array/",
           "tufPractice": "https://takeuforward.org/practice/dsa/search-in-rotated-sorted-array-i",
@@ -1582,7 +1597,7 @@
           "key": "step-04-binary-search__find-out-how-many-times-has-an-array-been-rotated",
           "name": "Find out how many times the array is rotated",
           "link": "https://takeuforward.org/blogs/data-structure-and-algorithm/rotation-count-sorted-array",
-          "difficulty": "Basic",
+          "difficulty": "Core",
           "tufPractice": "https://takeuforward.org/practice/dsa/find-out-how-many-times-the-array-is-rotated",
           "video": {
             "provider": "youtube",
@@ -1594,7 +1609,7 @@
         {
           "key": "step-04-binary-search__single-element-in-a-sorted-array",
           "name": "Single element in sorted array",
-          "link": "",
+          "link": "https://takeuforward.org/blogs/data-structure-and-algorithm/single-element-in-a-sorted-array",
           "difficulty": "Core",
           "practice": "https://leetcode.com/problems/single-element-in-a-sorted-array/",
           "tufPractice": "https://takeuforward.org/practice/dsa/single-element-in-sorted-array",
@@ -1605,17 +1620,30 @@
           "section": "Logic Building"
         },
         {
+          "key": "step-04-binary-search__count-occurrences-of-a-number-in-a-sorted-array-with-duplicates",
+          "name": "Count Occurrences in a Sorted Array",
+          "link": "https://takeuforward.org/blogs/data-structure-and-algorithm/count-occurrences-in-a-sorted-array",
+          "difficulty": "Core",
+          "tufPractice": "https://takeuforward.org/practice/dsa/count-occurrences-in-a-sorted-array",
+          "video": {
+            "provider": "youtube",
+            "id": "hjR1IYVx9lY"
+          },
+          "section": "Logic Building",
+          "practice": "https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/"
+        },
+        {
           "key": "step-04-binary-search__find-square-root-of-a-number-in-log-n",
           "name": "Find square root of a number",
-          "link": "",
+          "link": "https://takeuforward.org/blogs/data-structure-and-algorithm/square-root-of-a-number",
           "difficulty": "Core",
+          "practice": "https://leetcode.com/problems/sqrtx/",
           "tufPractice": "https://takeuforward.org/practice/dsa/find-square-root-of-a-number",
           "video": {
             "provider": "youtube",
             "id": "Bsv3FPUX_BA"
           },
-          "section": "On answers",
-          "practice": "https://leetcode.com/problems/sqrtx/"
+          "section": "On answers"
         },
         {
           "key": "step-04-binary-search__find-the-nth-root-of-a-number-using-binary-search",
@@ -1647,7 +1675,7 @@
           "key": "step-04-binary-search__koko-eating-bananas",
           "name": "Koko eating bananas",
           "link": "https://takeuforward.org/blogs/data-structure-and-algorithm/koko-eating-bananas",
-          "difficulty": "Core",
+          "difficulty": "Pro",
           "practice": "https://leetcode.com/problems/koko-eating-bananas/",
           "tufPractice": "https://takeuforward.org/practice/dsa/koko-eating-bananas",
           "video": {
@@ -1660,7 +1688,7 @@
           "key": "step-04-binary-search__minimum-days-to-make-m-bouquets",
           "name": "Minimum days to make M bouquets",
           "link": "https://takeuforward.org/blogs/data-structure-and-algorithm/minimum-days-to-make-m-bouquets",
-          "difficulty": "Core",
+          "difficulty": "Pro",
           "practice": "https://leetcode.com/problems/minimum-number-of-days-to-make-m-bouquets/",
           "tufPractice": "https://takeuforward.org/practice/dsa/minimum-days-to-make-m-bouquets",
           "video": {
@@ -1673,7 +1701,7 @@
           "key": "step-04-binary-search__capacity-to-ship-packages-within-d-days",
           "name": "Capacity to Ship Packages Within D Days",
           "link": "https://takeuforward.org/blogs/data-structure-and-algorithm/capacity-to-ship-packages-within-d-days",
-          "difficulty": "Core",
+          "difficulty": "Pro",
           "practice": "https://leetcode.com/problems/capacity-to-ship-packages-within-d-days/",
           "tufPractice": "https://takeuforward.org/practice/dsa/capacity-to-ship-packages-within-d-days",
           "video": {
@@ -1686,8 +1714,8 @@
           "key": "step-04-binary-search__kth-missing-positive-number",
           "name": "Kth Missing Positive Number",
           "link": "",
-          "difficulty": "Core",
-          "practice": "https://leetcode.com/problems/kth-missing-positive-number/#:~:text=Given%20an%20array%20arr%20of,13%2C...%5D.",
+          "difficulty": "Pro",
+          "practice": "https://leetcode.com/problems/kth-missing-positive-number/",
           "tufPractice": "https://takeuforward.org/practice/dsa/kth-missing-positive-number",
           "video": {
             "provider": "youtube",
@@ -1699,20 +1727,20 @@
           "key": "step-04-binary-search__painter-s-partition",
           "name": "Painter's Partition",
           "link": "",
-          "difficulty": "Core",
+          "difficulty": "Pro",
+          "practice": "https://leetcode.com/problems/split-array-largest-sum/",
           "tufPractice": "https://takeuforward.org/practice/dsa/painters-partition",
           "video": {
             "provider": "youtube",
             "id": "thUd_WJn6wk"
           },
-          "section": "On answers",
-          "practice": "https://www.geeksforgeeks.org/problems/the-painters-partition-problem1535/1"
+          "section": "On answers"
         },
         {
           "key": "step-04-binary-search__aggressive-cows",
           "name": "Aggressive Cows",
           "link": "https://takeuforward.org/blogs/data-structure-and-algorithm/aggressive-cows",
-          "difficulty": "Core",
+          "difficulty": "Pro",
           "tufPractice": "https://takeuforward.org/practice/dsa/aggressive-cows",
           "video": {
             "provider": "youtube",
@@ -1724,22 +1752,22 @@
         {
           "key": "step-04-binary-search__book-allocation-problem",
           "name": "Book Allocation Problem",
-          "link": "",
-          "difficulty": "Core",
+          "link": "https://takeuforward.org/blogs/data-structure-and-algorithm/book-allocation-problem",
+          "difficulty": "Pro",
+          "practice": "https://leetcode.com/problems/split-array-largest-sum/",
           "tufPractice": "https://takeuforward.org/practice/dsa/book-allocation-problem",
           "video": {
             "provider": "youtube",
             "id": "gYmWHvRHu-s"
           },
-          "section": "FAQs",
-          "practice": "https://www.geeksforgeeks.org/problems/allocate-minimum-number-of-pages0937/1"
+          "section": "FAQs"
         },
         {
           "key": "step-04-binary-search__find-peak-element",
           "name": "Find peak element",
           "link": "https://takeuforward.org/blogs/data-structure-and-algorithm/find-a-peak-element-in-an-array",
           "difficulty": "Core",
-          "practice": "https://leetcode.com/problems/find-peak-element/#:~:text=Find%20Peak%20Element%20%2D%20LeetCode&text=A%20peak%20element%20is%20an,to%20any%20of%20the%20peaks.",
+          "practice": "https://leetcode.com/problems/find-peak-element/",
           "tufPractice": "https://takeuforward.org/practice/dsa/find-peak-element",
           "video": {
             "provider": "youtube",
@@ -1750,7 +1778,7 @@
         {
           "key": "step-04-binary-search__median-of-2-sorted-arrays",
           "name": "Median of 2 sorted arrays",
-          "link": "",
+          "link": "https://takeuforward.org/blogs/data-structure-and-algorithm/median-of-2-sorted-arrays",
           "difficulty": "Pro",
           "practice": "https://leetcode.com/problems/median-of-two-sorted-arrays/",
           "tufPractice": "https://takeuforward.org/practice/dsa/median-of-2-sorted-arrays",
@@ -1763,8 +1791,8 @@
         {
           "key": "step-04-binary-search__kth-element-of-2-sorted-arrays",
           "name": "Kth element of 2 sorted arrays",
-          "link": "",
-          "difficulty": "Core",
+          "link": "https://takeuforward.org/blogs/data-structure-and-algorithm/kth-element-of-two-sorted-arrays",
+          "difficulty": "Pro",
           "tufPractice": "https://takeuforward.org/practice/dsa/kth-element-of-2-sorted-arrays",
           "video": {
             "provider": "youtube",
@@ -1777,7 +1805,7 @@
           "key": "step-04-binary-search__minimize-max-distance-to-gas-station",
           "name": "Minimize Max Distance to Gas Station",
           "link": "https://takeuforward.org/blogs/data-structure-and-algorithm/minimize-maximum-distance-between-gas-stations",
-          "difficulty": "Core",
+          "difficulty": "Pro",
           "practice": "https://leetcode.com/problems/minimize-max-distance-to-gas-station/",
           "tufPractice": "https://takeuforward.org/practice/dsa/minimise-max-distance-to-gas-stations",
           "video": {
@@ -1790,7 +1818,7 @@
           "key": "step-04-binary-search__split-array-largest-sum",
           "name": "Split array - largest sum",
           "link": "https://takeuforward.org/blogs/data-structure-and-algorithm/split-array-largest-sum",
-          "difficulty": "Core",
+          "difficulty": "Pro",
           "practice": "https://leetcode.com/problems/split-array-largest-sum/",
           "tufPractice": "https://takeuforward.org/practice/dsa/split-array---largest-sum",
           "video": {
@@ -1803,7 +1831,7 @@
           "key": "step-04-binary-search__find-the-row-with-maximum-number-of-1-s",
           "name": "Find row with maximum 1's",
           "link": "https://takeuforward.org/blogs/data-structure-and-algorithm/find-the-row-with-maximum-1s-in-a-sorted-binary-matrix",
-          "difficulty": "Basic",
+          "difficulty": "Core",
           "tufPractice": "https://takeuforward.org/practice/dsa/find-row-with-maximum-1's",
           "video": {
             "provider": "youtube",
@@ -1815,7 +1843,7 @@
         {
           "key": "step-04-binary-search__search-in-a-2-d-matrix",
           "name": "Search in a 2D Matrix",
-          "link": "",
+          "link": "https://takeuforward.org/blogs/data-structure-and-algorithm/search-in-sorted-2d-matrix",
           "difficulty": "Core",
           "practice": "https://leetcode.com/problems/search-a-2d-matrix/",
           "tufPractice": "https://takeuforward.org/practice/dsa/search-in-a-2d-matrix",
@@ -1855,20 +1883,89 @@
           "key": "step-04-binary-search__matrix-median",
           "name": "Matrix Median",
           "link": "https://takeuforward.org/blogs/data-structure-and-algorithm/median-of-a-row-wise-sorted-matrix",
-          "difficulty": "Core",
+          "difficulty": "Pro",
+          "practice": "https://leetcode.com/problems/median-of-a-row-wise-sorted-matrix/",
           "tufPractice": "https://takeuforward.org/practice/dsa/matrix-median",
           "video": {
             "provider": "youtube",
             "id": "Q9wXgdxJq48"
           },
-          "section": "2D Arrays",
-          "practice": "https://www.geeksforgeeks.org/problems/median-in-a-row-wise-sorted-matrix1527/1"
+          "section": "2D Arrays"
+        }
+      ]
+    },
+    {
+      "key": "step-strings-basic-and-medium",
+      "order": 6,
+      "title": "Strings (Basic and Medium)",
+      "problems": [
+        {
+          "key": "step-05-strings__remove-outermost-paranthesis",
+          "name": "Remove Outermost Parentheses",
+          "link": "",
+          "difficulty": "Core",
+          "practice": "https://leetcode.com/problems/remove-outermost-parentheses/",
+          "tufPractice": "https://takeuforward.org/practice/dsa/remove-outermost-parentheses",
+          "section": "Parentheses"
+        },
+        {
+          "key": "maximum-nesting-depth-of-the-parentheses",
+          "name": "Maximum Nesting Depth of the Parentheses",
+          "link": "",
+          "difficulty": "Core",
+          "practice": "https://leetcode.com/problems/maximum-nesting-depth-of-the-parentheses/",
+          "tufPractice": "https://takeuforward.org/practice/dsa/maximum-nesting-depth-of-the-parentheses",
+          "section": "Parentheses"
+        },
+        {
+          "key": "roman-to-integer",
+          "name": "Roman to Integer",
+          "link": "",
+          "difficulty": "Basic",
+          "practice": "https://leetcode.com/problems/roman-to-integer/",
+          "tufPractice": "https://takeuforward.org/practice/dsa/roman-to-integer",
+          "section": "String Conversions"
+        },
+        {
+          "key": "string-to-integer-atoi",
+          "name": "String to Integer (atoi)",
+          "link": "",
+          "difficulty": "Core",
+          "practice": "https://leetcode.com/problems/string-to-integer-atoi/",
+          "tufPractice": "https://takeuforward.org/practice/dsa/string-to-integer-atoi",
+          "section": "String Conversions"
+        },
+        {
+          "key": "count-number-of-substring",
+          "name": "Count Number of Substrings",
+          "link": "",
+          "difficulty": "",
+          "tufPractice": "https://takeuforward.org/practice/dsa/count-number-of-substring",
+          "section": "Substring Problems"
+        },
+        {
+          "key": "longest-palindromic-substring",
+          "name": "Longest Palindromic Substring",
+          "link": "",
+          "difficulty": "Core",
+          "practice": "https://leetcode.com/problems/longest-palindromic-substring/",
+          "tufPractice": "https://takeuforward.org/practice/dsa/longest-palindromic-substring",
+          "section": "Substring Problems"
+        },
+        {
+          "key": "sum-of-beauty-of-all-substrings",
+          "name": "Sum of Beauty of All Substrings",
+          "link": "",
+          "difficulty": "Core",
+          "practice": "https://leetcode.com/problems/sum-of-beauty-of-all-substrings/",
+          "tufPractice": "https://takeuforward.org/practice/dsa/sum-of-beauty-of-all-substrings",
+          "section": "Substring Problems"
         }
       ]
     },
     {
       "key": "step-06-recursion",
-      "order": 6,
+      "order": 7,
       "title": "Recursion",
       "problems": [
         {
@@ -1911,13 +2008,30 @@
           "name": "Power Set",
           "link": "",
           "difficulty": "Core",
+          "practice": "https://leetcode.com/problems/subsets/",
           "tufPractice": "https://takeuforward.org/practice/dsa/power-set",
           "video": {
             "provider": "youtube",
             "id": "b7AYbpM5YrE"
           },
-          "section": "Implementation Problems",
-          "practice": "https://leetcode.com/problems/subsets/"
+          "section": "Implementation Problems"
+        },
+        {
+          "key": "count-good-numbers",
+          "name": "Count Good Numbers",
+          "link": "https://takeuforward.org/blogs/data-structure-and-algorithm/count-good-numbers",
+          "difficulty": "Core",
+          "practice": "https://leetcode.com/problems/count-good-numbers/",
+          "tufPractice": "https://takeuforward.org/practice/dsa/count-good-numbers",
+          "section": "Implementation Problems"
+        },
+        {
+          "key": "reverse-a-stack",
+          "name": "Reverse a Stack",
+          "link": "",
+          "difficulty": "Core",
+          "tufPractice": "https://takeuforward.org/practice/dsa/reverse-a-stack",
+          "section": "Implementation Problems"
         },
         {
           "key": "step-07-recursion__recursive-implementation-of-atoi",
@@ -1926,6 +2040,17 @@
           "difficulty": "Pro",
           "section": "Implementation Problems",
           "practice": "https://leetcode.com/problems/string-to-integer-atoi/"
+        },
+        {
+          "key": "learn-all-patterns-of-subsequences",
+          "name": "Learn All Patterns of Subsequences (Theory)",
+          "link": "",
+          "difficulty": "",
+          "video": {
+            "provider": "youtube",
+            "id": "eQCS_v3bw0Q"
+          },
+          "section": "Subsequence Pattern Problems"
         },
         {
           "key": "step-07-recursion__check-if-there-exists-a-subsequence-with-sum-k",
@@ -1946,21 +2071,16 @@
           "practice": "https://www.geeksforgeeks.org/problems/perfect-sum-problem5633/1"
         },
         {
-          "key": "step-07-recursion__combination-sum",
-          "name": "Combination Sum",
+          "key": "generate-binary-strings-without-consecutive-1s",
+          "name": "Generate Binary Strings Without Consecutive 1s",
           "link": "",
           "difficulty": "Core",
-          "practice": "https://leetcode.com/problems/combination-sum/",
-          "tufPractice": "https://takeuforward.org/practice/dsa/combination-sum",
-          "video": {
-            "provider": "youtube",
-            "id": "OyZFFqQtu98"
-          },
-          "section": "FAQs (Medium)"
+          "tufPractice": "https://takeuforward.org/practice/dsa/generate-binary-strings-without-consecutive-1s",
+          "section": "Subsequence Pattern Problems"
         },
         {
-          "key": "step-11-heaps__maximum-sum-combination",
-          "name": "Maximum Sum Combination",
+          "key": "step-07-recursion__combination-sum",
+          "name": "Combination Sum",
           "link": "",
           "difficulty": "Core",
           "practice": "https://leetcode.com/problems/combination-sum/",
@@ -1989,6 +2109,7 @@
           "name": "Subsets I",
           "link": "",
           "difficulty": "Core",
+          "practice": "https://leetcode.com/problems/subsets/",
           "tufPractice": "https://takeuforward.org/practice/dsa/subsets-i",
           "video": {
             "provider": "youtube",
@@ -2013,7 +2134,7 @@
           "key": "step-07-recursion__combination-sum-iii",
           "name": "Combination Sum III",
           "link": "",
-          "difficulty": "Core",
+          "difficulty": "Pro",
           "practice": "https://leetcode.com/problems/combination-sum-iii/",
           "tufPractice": "https://takeuforward.org/practice/dsa/combination-sum-iii",
           "section": "FAQs (Medium)"
@@ -2022,7 +2143,7 @@
           "key": "step-07-recursion__letter-combinations-of-a-phone-number",
           "name": "Letter Combinations of a Phone Number",
           "link": "",
-          "difficulty": "Core",
+          "difficulty": "Pro",
           "practice": "https://leetcode.com/problems/letter-combinations-of-a-phone-number/",
           "tufPractice": "https://takeuforward.org/practice/dsa/letter-combinations-of-a-phone-number",
           "section": "Hard"
@@ -2031,20 +2152,20 @@
           "key": "step-07-recursion__palindrome-partitioning",
           "name": "Palindrome partitioning",
           "link": "",
-          "difficulty": "Core",
+          "difficulty": "Pro",
+          "practice": "https://leetcode.com/problems/palindrome-partitioning/",
           "tufPractice": "https://takeuforward.org/practice/dsa/palindrome-partitioning",
           "video": {
             "provider": "youtube",
             "id": "_H8V5hJUGd0"
           },
-          "section": "FAQs (Hard)",
-          "practice": "https://leetcode.com/problems/palindrome-partitioning/"
+          "section": "FAQs (Hard)"
         },
         {
           "key": "step-07-recursion__word-search",
           "name": "Word Search",
           "link": "",
-          "difficulty": "Core",
+          "difficulty": "Pro",
           "practice": "https://leetcode.com/problems/word-search/",
           "tufPractice": "https://takeuforward.org/practice/dsa/word-search",
           "section": "FAQs (Hard)"
@@ -2100,12 +2221,21 @@
             "id": "FWAIf_EVUKE"
           },
           "section": "FAQs (Hard)"
+        },
+        {
+          "key": "expression-add-operators",
+          "name": "Expression Add Operators",
+          "link": "",
+          "difficulty": "Pro",
+          "practice": "https://leetcode.com/problems/expression-add-operators/",
+          "tufPractice": "https://takeuforward.org/practice/dsa/expression-add-operators",
+          "section": "FAQs (Hard)"
         }
       ]
     },
     {
       "key": "step-07-linked-list",
-      "order": 7,
+      "order": 8,
       "title": "Linked-List",
       "problems": [
         {
@@ -2174,7 +2304,7 @@
           "key": "delete-the-element-with-value-x",
           "name": "Delete the element with value X",
           "link": "",
-          "difficulty": "Basic",
+          "difficulty": "Core",
           "tufPractice": "https://takeuforward.org/practice/dsa/delete-the-element-with-value-x",
           "section": "Fundamentals (Single LL)"
         },
@@ -2182,7 +2312,7 @@
           "key": "insertion-at-the-head-of-ll",
           "name": "Insertion at the head of Linked List",
           "link": "https://takeuforward.org/blogs/data-structure-and-algorithm/insert-a-node-at-the-beginning-of-a-singly-linked-list",
-          "difficulty": "Basic",
+          "difficulty": "Core",
           "tufPractice": "https://takeuforward.org/practice/dsa/insertion-at-the-head-of-ll",
           "video": {
             "provider": "youtube",
@@ -2202,7 +2332,7 @@
         {
           "key": "insertion-at-the-kth-position-of-ll",
           "name": "Insertion at the Kth position of Linked List",
-          "link": "",
+          "link": "https://takeuforward.org/blogs/data-structure-and-algorithm/insert-node-at-kth-position-in-linked-list",
           "difficulty": "Core",
           "tufPractice": "https://takeuforward.org/practice/dsa/insertion-at-the-kth-position-of-ll",
           "section": "Fundamentals (Single LL)"
@@ -2210,9 +2340,35 @@
         {
           "key": "insertion-before-the-value-x-in-ll",
           "name": "Insertion before the value X in Linked List",
-          "link": "",
+          "link": "https://takeuforward.org/blogs/data-structure-and-algorithm/insert-node-before-value-x-in-linked-list",
           "difficulty": "Core",
           "tufPractice": "https://takeuforward.org/practice/dsa/insertion-before-the-value-x-in-ll",
+          "section": "Fundamentals (Single LL)"
+        },
+        {
+          "key": "find-the-length-of-the-linked-list",
+          "name": "Find the length of the Linked List",
+          "link": "",
+          "difficulty": "Basic",
+          "tufPractice": "https://takeuforward.org/practice/dsa/find-the-length-of-the-linked-list",
+          "video": {
+            "provider": "youtube",
+            "id": "Nq7ok-OyEpg",
+            "t": 2240
+          },
+          "section": "Fundamentals (Single LL)"
+        },
+        {
+          "key": "search-in-linked-list",
+          "name": "Search in Linked List",
+          "link": "",
+          "difficulty": "Core",
+          "tufPractice": "https://takeuforward.org/practice/dsa/search-in-linked-list",
+          "video": {
+            "provider": "youtube",
+            "id": "Nq7ok-OyEpg",
+            "t": 2524
+          },
           "section": "Fundamentals (Single LL)"
         },
         {
@@ -2277,7 +2433,7 @@
           "key": "insert-node-before-head-in-dll",
           "name": "Insert node before head in Doubly Linked List",
           "link": "",
-          "difficulty": "Basic",
+          "difficulty": "Core",
           "tufPractice": "https://takeuforward.org/practice/dsa/insert-node-before-head-in-dll",
           "video": {
             "provider": "youtube",
@@ -2312,9 +2468,35 @@
           "section": "Fundamentals (Doubly LL)"
         },
         {
+          "key": "delete-head-of-dll",
+          "name": "Delete head of Doubly Linked List",
+          "link": "",
+          "difficulty": "Core",
+          "tufPractice": "https://takeuforward.org/practice/dsa/delete-head-of-dll",
+          "video": {
+            "provider": "youtube",
+            "id": "0eKMU10uEDI",
+            "t": 853
+          },
+          "section": "Fundamentals (Doubly LL)"
+        },
+        {
+          "key": "step-06-learn-linkedlist__reverse-a-dll",
+          "name": "Reverse a Doubly Linked List",
+          "link": "",
+          "difficulty": "Core",
+          "practice": "https://leetcode.com/problems/reverse-linked-list/",
+          "tufPractice": "https://takeuforward.org/practice/dsa/reverse-a-doubly-linked-list",
+          "video": {
+            "provider": "youtube",
+            "id": "u3WUW2qe6ww"
+          },
+          "section": "Fundamentals (Doubly LL)"
+        },
+        {
           "key": "step-06-learn-linkedlist__add-2-numbers-in-ll",
           "name": "Add two numbers in Linked List",
-          "link": "",
+          "link": "https://takeuforward.org/blogs/data-structure-and-algorithm/add-two-numbers-linked-lists-reverse-order",
           "difficulty": "Core",
           "practice": "https://leetcode.com/problems/add-two-numbers/",
           "tufPractice": "https://takeuforward.org/practice/dsa/add-two-numbers-in-ll",
@@ -2327,7 +2509,7 @@
         {
           "key": "step-06-learn-linkedlist__segrregate-odd-and-even-nodes-in-ll",
           "name": "Segregate odd and even nodes in Linked List",
-          "link": "",
+          "link": "https://takeuforward.org/blogs/data-structure-and-algorithm/segregate-odd-and-even-nodes-in-linked-list",
           "difficulty": "Core",
           "practice": "https://leetcode.com/problems/odd-even-linked-list/",
           "tufPractice": "https://takeuforward.org/practice/dsa/segregate-odd-and-even-nodes-in-ll",
@@ -2353,7 +2535,7 @@
         {
           "key": "step-06-learn-linkedlist__remove-nth-node-from-the-back-of-the-ll",
           "name": "Remove Nth node from the back of the LL",
-          "link": "",
+          "link": "https://takeuforward.org/blogs/data-structure-and-algorithm/remove-the-nth-node-from-the-end-of-a-linked-list",
           "difficulty": "Core",
           "practice": "https://leetcode.com/problems/remove-nth-node-from-end-of-list/",
           "tufPractice": "https://takeuforward.org/practice/dsa/remove-nth-node-from-the-back-of-the-ll",
@@ -2364,22 +2546,9 @@
           "section": "Logic Building"
         },
         {
-          "key": "step-06-learn-linkedlist__reverse-a-dll",
-          "name": "Reverse a DLL",
-          "link": "",
-          "difficulty": "Core",
-          "practice": "https://leetcode.com/problems/reverse-linked-list/",
-          "tufPractice": "https://takeuforward.org/practice/dsa/reverse-a-ll",
-          "video": {
-            "provider": "youtube",
-            "id": "D2vI2DNJGd8"
-          },
-          "section": "Logic Building"
-        },
-        {
           "key": "step-06-learn-linkedlist__reverse-a-linkedlist-iterative",
           "name": "Reverse a LinkedList [Iterative]",
-          "link": "",
+          "link": "https://takeuforward.org/blogs/data-structure-and-algorithm/reverse-a-singly-linked-list",
           "difficulty": "Core",
           "practice": "https://leetcode.com/problems/reverse-linked-list/",
           "tufPractice": "https://takeuforward.org/practice/dsa/reverse-a-ll",
@@ -2392,7 +2561,7 @@
         {
           "key": "step-06-learn-linkedlist__reverse-a-ll-recursive",
           "name": "Reverse a LL [Recursive]",
-          "link": "",
+          "link": "https://takeuforward.org/blogs/data-structure-and-algorithm/reverse-a-singly-linked-list",
           "difficulty": "Core",
           "practice": "https://leetcode.com/problems/reverse-linked-list/",
           "tufPractice": "https://takeuforward.org/practice/dsa/reverse-a-ll",
@@ -2407,18 +2576,18 @@
           "name": "Add one to a number represented by LL",
           "link": "https://takeuforward.org/blogs/data-structure-and-algorithm/add-one-to-number-linked-list",
           "difficulty": "Core",
+          "practice": "https://leetcode.com/problems/plus-one-linked-list/",
           "tufPractice": "https://takeuforward.org/practice/dsa/add-one-to-a-number-represented-by-ll",
           "video": {
             "provider": "youtube",
             "id": "aXQWhbvT3w0"
           },
-          "section": "FAQs (Medium)",
-          "practice": "https://www.geeksforgeeks.org/problems/add-1-to-a-number-represented-as-linked-list/1"
+          "section": "FAQs (Medium)"
         },
         {
           "key": "step-06-learn-linkedlist__middle-of-a-linkedlist-tortoisehare-method",
           "name": "Find Middle of Linked List",
-          "link": "",
+          "link": "https://takeuforward.org/blogs/data-structure-and-algorithm/find-middle-of-linked-list",
           "difficulty": "Basic",
           "practice": "https://leetcode.com/problems/middle-of-the-linked-list/",
           "tufPractice": "https://takeuforward.org/practice/dsa/find-middle-of-linked-list",
@@ -2433,7 +2602,7 @@
           "name": "Delete the middle node in LL",
           "link": "https://takeuforward.org/blogs/data-structure-and-algorithm/delete-the-middle-node-of-a-linked-list",
           "difficulty": "Core",
-          "practice": "https://leetcode.com/problems/delete-the-middle-node-of-a-linked-list/#:~:text=You%20are%20given%20the%20head,than%20or%20equal%20to%20x%20.",
+          "practice": "https://leetcode.com/problems/delete-the-middle-node-of-a-linked-list/",
           "tufPractice": "https://takeuforward.org/practice/dsa/delete-the-middle-node-in-ll",
           "video": {
             "provider": "youtube",
@@ -2444,7 +2613,7 @@
         {
           "key": "step-06-learn-linkedlist__check-if-ll-is-palindrome-or-not",
           "name": "Check if LL is palindrome or not",
-          "link": "",
+          "link": "https://takeuforward.org/blogs/data-structure-and-algorithm/check-if-a-linked-list-is-a-palindrome",
           "difficulty": "Core",
           "practice": "https://leetcode.com/problems/palindrome-linked-list/",
           "tufPractice": "https://takeuforward.org/practice/dsa/check-if-ll-is-palindrome-or-not",
@@ -2457,7 +2626,7 @@
         {
           "key": "step-06-learn-linkedlist__find-the-intersection-point-of-y-ll",
           "name": "Find the intersection point of Y LL",
-          "link": "",
+          "link": "https://takeuforward.org/blogs/data-structure-and-algorithm/intersection-of-two-linked-lists",
           "difficulty": "Core",
           "practice": "https://leetcode.com/problems/intersection-of-two-linked-lists/",
           "tufPractice": "https://takeuforward.org/practice/dsa/find-the-intersection-point-of-y-ll",
@@ -2470,7 +2639,7 @@
         {
           "key": "step-06-learn-linkedlist__detect-a-loop-in-ll",
           "name": "Detect a loop in LL",
-          "link": "",
+          "link": "https://takeuforward.org/blogs/data-structure-and-algorithm/detect-cycle-linked-list",
           "difficulty": "Core",
           "practice": "https://leetcode.com/problems/linked-list-cycle/",
           "tufPractice": "https://takeuforward.org/practice/dsa/detect-a-loop-in-ll",
@@ -2483,7 +2652,7 @@
         {
           "key": "step-06-learn-linkedlist__find-the-starting-point-in-ll",
           "name": "Find the starting point in LL",
-          "link": "",
+          "link": "https://takeuforward.org/blogs/data-structure-and-algorithm/find-start-of-cycle-linked-list",
           "difficulty": "Core",
           "practice": "https://leetcode.com/problems/linked-list-cycle-ii/",
           "tufPractice": "https://takeuforward.org/practice/dsa/find-the-starting-point-in-ll",
@@ -2509,7 +2678,7 @@
         {
           "key": "step-06-learn-linkedlist__reverse-ll-in-group-of-given-size-k",
           "name": "Reverse LL in group of given size K",
-          "link": "",
+          "link": "https://takeuforward.org/blogs/data-structure-and-algorithm/reverse-linked-list-k-groups",
           "difficulty": "Pro",
           "practice": "https://leetcode.com/problems/reverse-nodes-in-k-group/",
           "tufPractice": "https://takeuforward.org/practice/dsa/reverse-ll-in-group-of-given-size-k",
@@ -2522,9 +2691,9 @@
         {
           "key": "step-06-learn-linkedlist__rotate-a-ll",
           "name": "Rotate a LL",
-          "link": "",
+          "link": "https://takeuforward.org/blogs/data-structure-and-algorithm/rotate-linked-list-right-k-places",
           "difficulty": "Core",
-          "practice": "https://leetcode.com/problems/rotate-list/description/",
+          "practice": "https://leetcode.com/problems/rotate-list/",
           "tufPractice": "https://takeuforward.org/practice/dsa/rotate-a-ll",
           "video": {
             "provider": "youtube",
@@ -2536,7 +2705,7 @@
           "key": "step-11-heaps__merge-m-sorted-lists",
           "name": "Merge two Sorted Lists",
           "link": "https://takeuforward.org/blogs/data-structure-and-algorithm/merge-two-sorted-linked-lists",
-          "difficulty": "Core",
+          "difficulty": "Basic",
           "practice": "https://leetcode.com/problems/merge-two-sorted-lists/",
           "tufPractice": "https://takeuforward.org/practice/dsa/merge-sorted-lists-",
           "video": {
@@ -2548,15 +2717,15 @@
         {
           "key": "step-06-learn-linkedlist__flattening-of-ll",
           "name": "Flattening of LL",
-          "link": "",
-          "difficulty": "Core",
+          "link": "https://takeuforward.org/blogs/data-structure-and-algorithm/flatten-linked-list",
+          "difficulty": "Pro",
+          "practice": "https://leetcode.com/problems/merge-k-sorted-lists/",
           "tufPractice": "https://takeuforward.org/practice/dsa/flattening-of-ll",
           "video": {
             "provider": "youtube",
             "id": "ykelywHJWLg"
           },
-          "section": "FAQs (Hard)",
-          "practice": "https://www.geeksforgeeks.org/problems/flattening-a-linked-list/1"
+          "section": "FAQs (Hard)"
         },
         {
           "key": "step-06-learn-linkedlist__sort-ll",
@@ -2575,7 +2744,7 @@
           "key": "step-06-learn-linkedlist__clone-a-linked-list-with-random-and-next-pointer",
           "name": "Clone a LL with random and next pointer",
           "link": "https://takeuforward.org/blogs/data-structure-and-algorithm/clone-linked-list-random-pointer",
-          "difficulty": "Core",
+          "difficulty": "Pro",
           "practice": "https://leetcode.com/problems/copy-list-with-random-pointer/",
           "tufPractice": "https://takeuforward.org/practice/dsa/clone-a-ll-with-random-and-next-pointer",
           "video": {
@@ -2613,7 +2782,7 @@
         {
           "key": "step-06-learn-linkedlist__find-pairs-with-given-sum-in-dll",
           "name": "Find Pairs with Given Sum in Doubly Linked List",
-          "link": "",
+          "link": "https://takeuforward.org/blogs/data-structure-and-algorithm/find-pairs-with-given-sum-in-doubly-linked-list",
           "difficulty": "Core",
           "tufPractice": "https://takeuforward.org/practice/dsa/find-pairs-with-given-sum-in-doubly-linked-list",
           "video": {
@@ -2627,13 +2796,13 @@
     },
     {
       "key": "step-08-bit-manipulation",
-      "order": 8,
+      "order": 9,
       "title": "Bit Manipulation",
       "problems": [
         {
           "key": "introduction-to-bits-and-tricks",
           "name": "Introduction to Bits and Tricks",
-          "link": "",
+          "link": "https://takeuforward.org/blogs/data-structure-and-algorithm/bit-basics-and-operators",
           "difficulty": "Basic",
           "video": {
             "provider": "youtube",
@@ -2642,9 +2811,79 @@
           "section": "Theory"
         },
         {
+          "key": "check-if-the-i-th-bit-is-set-or-not",
+          "name": "Check if the i-th bit is Set or Not",
+          "link": "",
+          "difficulty": "Basic",
+          "tufPractice": "https://takeuforward.org/practice/dsa/check-if-the-i-th-bit-is-set-or-not",
+          "video": {
+            "provider": "youtube",
+            "id": "nttpF8kwgd4"
+          },
+          "section": "Bit Fundamentals"
+        },
+        {
+          "key": "check-if-a-number-is-odd-or-not",
+          "name": "Check if a Number is Odd or Not",
+          "link": "https://takeuforward.org/blogs/data-structure-and-algorithm/check-even-or-odd",
+          "difficulty": "Basic",
+          "tufPractice": "https://takeuforward.org/practice/dsa/check-if-a-number-is-odd-or-not",
+          "video": {
+            "provider": "youtube",
+            "id": "nttpF8kwgd4"
+          },
+          "section": "Bit Fundamentals"
+        },
+        {
+          "key": "check-if-a-number-is-power-of-2-or-not",
+          "name": "Check if a Number is Power of 2 or Not",
+          "link": "",
+          "difficulty": "Basic",
+          "practice": "https://leetcode.com/problems/power-of-two/",
+          "tufPractice": "https://takeuforward.org/practice/dsa/check-if-a-number-is-power-of-2-or-not",
+          "video": {
+            "provider": "youtube",
+            "id": "nttpF8kwgd4"
+          },
+          "section": "Bit Fundamentals"
+        },
+        {
+          "key": "count-the-number-of-set-bits",
+          "name": "Count the Number of Set Bits",
+          "link": "",
+          "difficulty": "Basic",
+          "practice": "https://leetcode.com/problems/number-of-1-bits/",
+          "tufPractice": "https://takeuforward.org/practice/dsa/count-the-number-of-set-bits",
+          "video": {
+            "provider": "youtube",
+            "id": "nttpF8kwgd4"
+          },
+          "section": "Bit Fundamentals"
+        },
+        {
+          "key": "set-the-rightmost-unset-bit",
+          "name": "Set the Rightmost Unset Bit",
+          "link": "",
+          "difficulty": "",
+          "tufPractice": "https://takeuforward.org/practice/dsa/set-the-rightmost-unset-bit",
+          "section": "Bit Fundamentals"
+        },
+        {
+          "key": "swap-two-numbers",
+          "name": "Swap Two Numbers",
+          "link": "",
+          "difficulty": "Basic",
+          "tufPractice": "https://takeuforward.org/practice/dsa/swap-two-numbers",
+          "video": {
+            "provider": "youtube",
+            "id": "nttpF8kwgd4"
+          },
+          "section": "Bit Fundamentals"
+        },
+        {
           "key": "step-08-bit-manipulation__count-number-of-bits-to-be-flipped-to-convert-a-to-b",
           "name": "Minimum Bit Flips to Convert Number",
-          "link": "",
+          "link": "https://takeuforward.org/blogs/data-structure-and-algorithm/minimum-bit-flips-to-convert-number",
           "difficulty": "Basic",
           "practice": "https://leetcode.com/problems/minimum-bit-flips-to-convert-number/",
           "tufPractice": "https://takeuforward.org/practice/dsa/minimum-bit-flips-to-convert-number",
@@ -2657,7 +2896,7 @@
         {
           "key": "step-03-solve-problems-on-arrays__find-the-number-that-appears-once-and-other-numbers-twice",
           "name": "Find the number that appears once, and other numbers twice.",
-          "link": "",
+          "link": "https://takeuforward.org/blogs/data-structure-and-algorithm/single-number-i",
           "difficulty": "Basic",
           "practice": "https://leetcode.com/problems/single-number/",
           "tufPractice": "https://takeuforward.org/practice/dsa/single-number---i",
@@ -2671,7 +2910,7 @@
         {
           "key": "step-08-bit-manipulation__find-the-number-that-appears-odd-number-of-times",
           "name": "Find the number that appears odd number of times",
-          "link": "",
+          "link": "https://takeuforward.org/blogs/data-structure-and-algorithm/single-number-i",
           "difficulty": "Basic",
           "practice": "https://leetcode.com/problems/single-number/",
           "tufPractice": "https://takeuforward.org/practice/dsa/single-number---i",
@@ -2685,16 +2924,18 @@
         {
           "key": "single-number-ii",
           "name": "Single Number - II",
-          "link": "",
+          "link": "https://takeuforward.org/blogs/data-structure-and-algorithm/single-number-ii",
           "difficulty": "Core",
+          "practice": "https://leetcode.com/problems/single-number-ii/",
           "tufPractice": "https://takeuforward.org/practice/dsa/single-number---ii",
           "section": "Problems"
         },
         {
           "key": "single-number-iii",
           "name": "Single Number - III",
-          "link": "",
-          "difficulty": "Core",
+          "link": "https://takeuforward.org/blogs/data-structure-and-algorithm/single-number-iii",
+          "difficulty": "Pro",
+          "practice": "https://leetcode.com/problems/single-number-iii/",
           "tufPractice": "https://takeuforward.org/practice/dsa/single-number---iii",
           "video": {
             "provider": "youtube",
@@ -2744,26 +2985,13 @@
     },
     {
       "key": "step-09-greedy-algorithms",
-      "order": 9,
+      "order": 10,
       "title": "Greedy Algorithms",
       "problems": [
         {
           "key": "step-12-greedy-algorithms__assign-cookies",
           "name": "Assign Cookies",
-          "link": "",
-          "difficulty": "Core",
-          "practice": "https://leetcode.com/problems/assign-cookies/",
-          "tufPractice": "https://takeuforward.org/practice/dsa/assign-cookies",
-          "video": {
-            "provider": "youtube",
-            "id": "DIX2p7vb9co"
-          },
-          "section": "Easy"
-        },
-        {
-          "key": "step-16-dynamic-programming__assign-cookies",
-          "name": "Assign Cookies",
-          "link": "",
+          "link": "https://takeuforward.org/blogs/data-structure-and-algorithm/assign-cookies",
           "difficulty": "Core",
           "practice": "https://leetcode.com/problems/assign-cookies/",
           "tufPractice": "https://takeuforward.org/practice/dsa/assign-cookies",
@@ -2879,7 +3107,7 @@
         {
           "key": "step-03-solve-problems-on-arrays__merge-overlapping-subintervals",
           "name": "Merge Overlapping Subintervals",
-          "link": "",
+          "link": "https://takeuforward.org/blogs/data-structure-and-algorithm/merge-overlapping-intervals",
           "difficulty": "Core",
           "practice": "https://leetcode.com/problems/merge-intervals/",
           "tufPractice": "https://takeuforward.org/practice/dsa/merge-intervals",
@@ -2892,7 +3120,7 @@
         {
           "key": "step-12-greedy-algorithms__merge-intervals",
           "name": "Merge Intervals",
-          "link": "",
+          "link": "https://takeuforward.org/blogs/data-structure-and-algorithm/merge-overlapping-intervals",
           "difficulty": "Core",
           "practice": "https://leetcode.com/problems/merge-intervals/",
           "tufPractice": "https://takeuforward.org/practice/dsa/merge-intervals",
@@ -2907,19 +3135,19 @@
           "name": "Minimum number of platforms required for a railway",
           "link": "https://takeuforward.org/blogs/data-structure-and-algorithm/minimum-platforms-required-for-a-railway-station",
           "difficulty": "Core",
+          "practice": "https://leetcode.com/problems/divide-intervals-into-minimum-number-of-groups/",
           "tufPractice": "https://takeuforward.org/practice/dsa/minimum-number-of-platforms-required-for-a-railway",
           "video": {
             "provider": "youtube",
             "id": "AsGzwR_FWok"
           },
-          "section": "Scheduling and Interval Problems",
-          "practice": "https://www.geeksforgeeks.org/problems/minimum-platforms-1587115620/1"
+          "section": "Scheduling and Interval Problems"
         },
         {
           "key": "step-12-greedy-algorithms__valid-paranthesis-checker",
-          "name": "Valid Paranthesis Checker",
+          "name": "Valid Parenthesis Checker",
           "link": "",
-          "difficulty": "Core",
+          "difficulty": "Pro",
           "practice": "https://leetcode.com/problems/valid-parenthesis-string/",
           "tufPractice": "https://takeuforward.org/practice/dsa/valid-paranthesis-checker",
           "video": {
@@ -2932,7 +3160,7 @@
           "key": "step-12-greedy-algorithms__candy",
           "name": "Candy",
           "link": "https://takeuforward.org/blogs/data-structure-and-algorithm/candy-distribution-problem",
-          "difficulty": "Core",
+          "difficulty": "Pro",
           "practice": "https://leetcode.com/problems/candy/",
           "tufPractice": "https://takeuforward.org/practice/dsa/candy",
           "video": {
@@ -2945,7 +3173,7 @@
           "key": "step-12-greedy-algorithms__jump-game-2",
           "name": "Jump Game II",
           "link": "https://takeuforward.org/blogs/data-structure-and-algorithm/jump-game-ii-minimum-jumps",
-          "difficulty": "Core",
+          "difficulty": "Pro",
           "practice": "https://leetcode.com/problems/jump-game-ii/",
           "tufPractice": "https://takeuforward.org/practice/dsa/jump-game-ii",
           "video": {
@@ -2958,13 +3186,13 @@
     },
     {
       "key": "step-10-sliding-window-2-pointer",
-      "order": 10,
+      "order": 11,
       "title": "Sliding Window / 2 Pointer",
       "problems": [
         {
           "key": "theory",
           "name": "Theory",
-          "link": "",
+          "link": "https://takeuforward.org/blogs/data-structure-and-algorithm/template-mental-model",
           "difficulty": "Core",
           "section": "Pattern and Template"
         },
@@ -2984,7 +3212,7 @@
         {
           "key": "step-10-sliding-window-two-pointer-combined-problems__longest-substring-without-repeating-characters",
           "name": "Longest Substring Without Repeating Characters",
-          "link": "",
+          "link": "https://takeuforward.org/blogs/data-structure-and-algorithm/longest-substring-without-repeating-characters",
           "difficulty": "Core",
           "practice": "https://leetcode.com/problems/longest-substring-without-repeating-characters/",
           "tufPractice": "https://takeuforward.org/practice/dsa/longest-substring-without-repeating-characters",
@@ -3012,7 +3240,7 @@
           "name": "Fruit Into Baskets",
           "link": "https://takeuforward.org/blogs/data-structure-and-algorithm/fruit-into-baskets",
           "difficulty": "Core",
-          "practice": "https://leetcode.com/problems/fruit-into-baskets/description/",
+          "practice": "https://leetcode.com/problems/fruit-into-baskets/",
           "tufPractice": "https://takeuforward.org/practice/dsa/fruit-into-baskets",
           "video": {
             "provider": "youtube",
@@ -3024,7 +3252,7 @@
           "key": "step-10-sliding-window-two-pointer-combined-problems__longest-substring-with-at-most-k-distinct-characters",
           "name": "Longest Substring With At Most K Distinct Characters",
           "link": "https://takeuforward.org/blogs/data-structure-and-algorithm/longest-substring-with-at-most-k-distinct-characters",
-          "difficulty": "Core",
+          "difficulty": "Pro",
           "practice": "https://leetcode.com/problems/longest-substring-with-at-most-k-distinct-characters/",
           "tufPractice": "https://takeuforward.org/practice/dsa/longest-substring-with-at-most-k-distinct-characters",
           "video": {
@@ -3037,7 +3265,7 @@
           "key": "step-10-sliding-window-two-pointer-combined-problems__longest-repeating-character-replacement",
           "name": "Longest Repeating Character Replacement",
           "link": "https://takeuforward.org/blogs/data-structure-and-algorithm/longest-repeating-character-replacement",
-          "difficulty": "Core",
+          "difficulty": "Pro",
           "practice": "https://leetcode.com/problems/longest-repeating-character-replacement/",
           "tufPractice": "https://takeuforward.org/practice/dsa/longest-repeating-character-replacement",
           "video": {
@@ -3049,14 +3277,23 @@
         {
           "key": "step-10-sliding-window-two-pointer-combined-problems__minimum-window-substring",
           "name": "Minimum Window Substring",
-          "link": "",
-          "difficulty": "Core",
+          "link": "https://takeuforward.org/blogs/data-structure-and-algorithm/minimum-window-substring",
+          "difficulty": "Pro",
           "practice": "https://leetcode.com/problems/minimum-window-substring/",
           "tufPractice": "https://takeuforward.org/practice/dsa/minimum-window-substring-",
           "video": {
             "provider": "youtube",
             "id": "WJaij9ffOIY"
           },
+          "section": "Longest and Smallest Window Problems"
+        },
+        {
+          "key": "minimum-window-subsequence",
+          "name": "Minimum Window Subsequence",
+          "link": "",
+          "difficulty": "Pro",
+          "practice": "https://leetcode.com/problems/minimum-window-subsequence/",
+          "tufPractice": "https://takeuforward.org/practice/dsa/minimum-window-subsequence",
           "section": "Longest and Smallest Window Problems"
         },
         {
@@ -3089,7 +3326,7 @@
           "key": "step-10-sliding-window-two-pointer-combined-problems__count-number-of-nice-subarrays",
           "name": "Count number of Nice subarrays",
           "link": "https://takeuforward.org/blogs/data-structure-and-algorithm/count-nice-subarrays",
-          "difficulty": "Core",
+          "difficulty": "Pro",
           "practice": "https://leetcode.com/problems/count-number-of-nice-subarrays/",
           "tufPractice": "https://takeuforward.org/practice/dsa/count-number-of-nice-subarrays",
           "video": {
@@ -3102,7 +3339,7 @@
           "key": "step-10-sliding-window-two-pointer-combined-problems__subarray-with-k-different-integers",
           "name": "Subarrays with K Different Integers",
           "link": "https://takeuforward.org/blogs/data-structure-and-algorithm/subarrays-with-k-different-integers",
-          "difficulty": "Core",
+          "difficulty": "Pro",
           "practice": "https://leetcode.com/problems/subarrays-with-k-different-integers/",
           "tufPractice": "https://takeuforward.org/practice/dsa/subarrays-with-k-different-integers",
           "video": {
@@ -3115,7 +3352,7 @@
     },
     {
       "key": "step-11-stack-queues",
-      "order": 11,
+      "order": 12,
       "title": "Stack / Queues",
       "problems": [
         {
@@ -3217,6 +3454,78 @@
           "section": "Implementation"
         },
         {
+          "key": "infix-to-postfix-conversion",
+          "name": "Infix to Postfix Conversion",
+          "link": "",
+          "difficulty": "Core",
+          "tufPractice": "https://takeuforward.org/practice/dsa/infix-to-postfix-conversion",
+          "video": {
+            "provider": "youtube",
+            "id": "4pIc9UBHJtk"
+          },
+          "section": "Prefix, Infix and Postfix Conversions"
+        },
+        {
+          "key": "infix-to-prefix-conversion",
+          "name": "Infix to Prefix Conversion",
+          "link": "",
+          "difficulty": "Core",
+          "tufPractice": "https://takeuforward.org/practice/dsa/infix-to-prefix-conversion",
+          "video": {
+            "provider": "youtube",
+            "id": "4pIc9UBHJtk"
+          },
+          "section": "Prefix, Infix and Postfix Conversions"
+        },
+        {
+          "key": "prefix-to-infix-conversion",
+          "name": "Prefix to Infix Conversion",
+          "link": "",
+          "difficulty": "Core",
+          "tufPractice": "https://takeuforward.org/practice/dsa/prefix-to-infix-conversion",
+          "video": {
+            "provider": "youtube",
+            "id": "4pIc9UBHJtk"
+          },
+          "section": "Prefix, Infix and Postfix Conversions"
+        },
+        {
+          "key": "prefix-to-postfix-conversion",
+          "name": "Prefix to Postfix Conversion",
+          "link": "",
+          "difficulty": "Core",
+          "tufPractice": "https://takeuforward.org/practice/dsa/prefix-to-postfix-conversion",
+          "video": {
+            "provider": "youtube",
+            "id": "4pIc9UBHJtk"
+          },
+          "section": "Prefix, Infix and Postfix Conversions"
+        },
+        {
+          "key": "postfix-to-infix-conversion",
+          "name": "Postfix to Infix Conversion",
+          "link": "",
+          "difficulty": "Core",
+          "tufPractice": "https://takeuforward.org/practice/dsa/postfix-to-infix-conversion",
+          "video": {
+            "provider": "youtube",
+            "id": "4pIc9UBHJtk"
+          },
+          "section": "Prefix, Infix and Postfix Conversions"
+        },
+        {
+          "key": "postfix-to-prefix-conversion",
+          "name": "Postfix to Prefix Conversion",
+          "link": "",
+          "difficulty": "Core",
+          "tufPractice": "https://takeuforward.org/practice/dsa/postfix-to-prefix-conversion",
+          "video": {
+            "provider": "youtube",
+            "id": "4pIc9UBHJtk"
+          },
+          "section": "Prefix, Infix and Postfix Conversions"
+        },
+        {
           "key": "step-09-stack-and-queues__next-greater-element",
           "name": "Next Greater Element",
           "link": "https://takeuforward.org/blogs/data-structure-and-algorithm/next-greater-element",
@@ -3295,6 +3604,14 @@
           "section": "Monotonic Stack"
         },
         {
+          "key": "next-smaller-element",
+          "name": "Next Smaller Element",
+          "link": "",
+          "difficulty": "Core",
+          "tufPractice": "https://takeuforward.org/practice/dsa/next-smaller-element",
+          "section": "Monotonic Stack"
+        },
+        {
           "key": "step-09-stack-and-queues__implement-min-stack",
           "name": "Implement Min Stack",
           "link": "",
@@ -3311,7 +3628,7 @@
           "key": "step-09-stack-and-queues__sliding-window-maximum",
           "name": "Sliding Window Maximum",
           "link": "",
-          "difficulty": "Core",
+          "difficulty": "Pro",
           "practice": "https://leetcode.com/problems/sliding-window-maximum/",
           "tufPractice": "https://takeuforward.org/practice/dsa/sliding-window-maximum",
           "video": {
@@ -3324,7 +3641,7 @@
           "key": "step-09-stack-and-queues__trapping-rainwater",
           "name": "Trapping Rainwater",
           "link": "https://takeuforward.org/blogs/data-structure-and-algorithm/trapping-rain-water",
-          "difficulty": "Core",
+          "difficulty": "Pro",
           "practice": "https://leetcode.com/problems/trapping-rain-water/",
           "tufPractice": "https://takeuforward.org/practice/dsa/trapping-rainwater",
           "video": {
@@ -3390,7 +3707,7 @@
           "name": "Celebrity Problem",
           "link": "",
           "difficulty": "Core",
-          "practice": "https://leetcode.com/accounts/login/?next=/problems/find-the-celebrity/",
+          "practice": "https://leetcode.com/problems/find-the-celebrity/",
           "tufPractice": "https://takeuforward.org/practice/dsa/celebrity-problem",
           "video": {
             "provider": "youtube",
@@ -3402,10 +3719,14 @@
           "key": "step-09-stack-and-queues__lru-cache-important",
           "name": "LRU Cache",
           "link": "",
-          "difficulty": "Core",
+          "difficulty": "Pro",
+          "practice": "https://leetcode.com/problems/lru-cache/",
           "tufPractice": "https://takeuforward.org/practice/dsa/lru-cache",
-          "section": "FAQs",
-          "practice": "https://leetcode.com/problems/lru-cache/"
+          "video": {
+            "provider": "youtube",
+            "id": "z9bJUPxzFOw"
+          },
+          "section": "FAQs"
         },
         {
           "key": "step-09-stack-and-queues__lfu-cache",
@@ -3419,18 +3740,26 @@
             "id": "0PSB9y8ehbk"
           },
           "section": "FAQs"
+        },
+        {
+          "key": "number-of-greater-elements-to-the-right",
+          "name": "Number of Greater Elements to the Right",
+          "link": "",
+          "difficulty": "Core",
+          "tufPractice": "https://takeuforward.org/practice/dsa/number-of-greater-elements-to-the-right",
+          "section": "FAQs"
         }
       ]
     },
     {
       "key": "step-12-binary-trees",
-      "order": 12,
+      "order": 13,
       "title": "Binary Trees",
       "problems": [
         {
           "key": "step-13-binary-trees__introduction-to-trees",
           "name": "Introduction",
-          "link": "",
+          "link": "https://takeuforward.org/blogs/data-structure-and-algorithm/binary-tree-data-structure",
           "difficulty": "Basic",
           "video": {
             "provider": "youtube",
@@ -3572,7 +3901,7 @@
           "key": "step-13-binary-trees__height-of-a-binary-tree",
           "name": "Maximum Depth in BT",
           "link": "",
-          "difficulty": "Basic",
+          "difficulty": "Core",
           "practice": "https://leetcode.com/problems/maximum-depth-of-binary-tree/",
           "tufPractice": "https://takeuforward.org/practice/dsa/maximum-depth-in-bt",
           "video": {
@@ -3636,7 +3965,7 @@
         {
           "key": "step-13-binary-trees__symmetric-binary-tree",
           "name": "Check for symmetrical BTs",
-          "link": "",
+          "link": "https://takeuforward.org/blogs/data-structure-and-algorithm/symmetric-binary-tree",
           "difficulty": "Core",
           "practice": "https://leetcode.com/problems/symmetric-tree/",
           "tufPractice": "https://takeuforward.org/practice/dsa/check-for-symmetrical-bts",
@@ -3689,7 +4018,7 @@
           "key": "step-13-binary-trees__vertical-order-traversal-of-binary-tree",
           "name": "Vertical Order Traversal",
           "link": "https://takeuforward.org/blogs/data-structure-and-algorithm/vertical-order-traversal-of-a-binary-tree",
-          "difficulty": "Core",
+          "difficulty": "Pro",
           "practice": "https://leetcode.com/problems/vertical-order-traversal-of-a-binary-tree/",
           "tufPractice": "https://takeuforward.org/practice/dsa/vertical-order-traversal",
           "video": {
@@ -3727,7 +4056,7 @@
         {
           "key": "step-13-binary-trees__right-left-view-of-binary-tree",
           "name": "Right/Left View of BT",
-          "link": "",
+          "link": "https://takeuforward.org/blogs/data-structure-and-algorithm/left-and-right-views-of-a-binary-tree",
           "difficulty": "Core",
           "practice": "https://leetcode.com/problems/binary-tree-right-side-view/",
           "tufPractice": "https://takeuforward.org/practice/dsa/right-left-view-of-bt",
@@ -3740,7 +4069,7 @@
         {
           "key": "print-root-to-leaf-path-in-bt",
           "name": "Print root to leaf path in BT",
-          "link": "",
+          "link": "https://takeuforward.org/blogs/data-structure-and-algorithm/print-root-to-leaf-path-in-binary-tree",
           "difficulty": "Core",
           "tufPractice": "https://takeuforward.org/practice/dsa/print-root-to-leaf-path-in-bt",
           "video": {
@@ -3751,9 +4080,9 @@
         },
         {
           "key": "step-13-binary-trees__lca-in-binary-tree",
-          "name": "LCA in BT",
+          "name": "Lowest Common Ancestor in BT",
           "link": "https://takeuforward.org/blogs/data-structure-and-algorithm/lowest-common-ancestor-in-a-binary-tree",
-          "difficulty": "Core",
+          "difficulty": "Pro",
           "practice": "https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree/",
           "tufPractice": "https://takeuforward.org/practice/dsa/lca-in-bt",
           "video": {
@@ -3766,7 +4095,7 @@
           "key": "step-13-binary-trees__maximum-width-of-a-binary-tree",
           "name": "Maximum Width of BT",
           "link": "",
-          "difficulty": "Core",
+          "difficulty": "Pro",
           "practice": "https://leetcode.com/problems/maximum-width-of-binary-tree/",
           "tufPractice": "https://takeuforward.org/practice/dsa/maximum-width-of-bt",
           "video": {
@@ -3779,7 +4108,7 @@
           "key": "step-13-binary-trees__print-all-the-nodes-at-a-distance-of-k-in-a-binary-tree",
           "name": "Print all nodes at a distance of K in BT",
           "link": "https://takeuforward.org/blogs/data-structure-and-algorithm/nodes-distance-k-binary-tree",
-          "difficulty": "Core",
+          "difficulty": "Pro",
           "practice": "https://leetcode.com/problems/all-nodes-distance-k-in-binary-tree/",
           "tufPractice": "https://takeuforward.org/practice/dsa/print-all-nodes-at-a-distance-of-k-in-bt",
           "video": {
@@ -3792,7 +4121,7 @@
           "key": "step-13-binary-trees__minimum-time-taken-to-burn-the-binary-tree-from-a-node",
           "name": "Minimum time taken to burn the BT from a given Node",
           "link": "https://takeuforward.org/blogs/data-structure-and-algorithm/minimum-time-burn-binary-tree",
-          "difficulty": "Core",
+          "difficulty": "Pro",
           "tufPractice": "https://takeuforward.org/practice/dsa/minimum-time-taken-to-burn-the-bt-from-a-given-node",
           "video": {
             "provider": "youtube",
@@ -3818,7 +4147,7 @@
           "key": "step-13-binary-trees__flatten-binary-tree-to-linkedlist",
           "name": "Flatten Binary Tree to Linked List",
           "link": "https://takeuforward.org/blogs/data-structure-and-algorithm/flatten-binary-tree-to-linked-list",
-          "difficulty": "Core",
+          "difficulty": "Pro",
           "practice": "https://leetcode.com/problems/flatten-binary-tree-to-linked-list/",
           "tufPractice": "https://takeuforward.org/practice/dsa/flatten-binary-tree-to-linked-list",
           "video": {
@@ -3838,7 +4167,7 @@
         {
           "key": "step-13-binary-trees__requirements-needed-to-construct-a-unique-binary-tree-theory",
           "name": "Requirements needed to construct a unique BT",
-          "link": "",
+          "link": "https://takeuforward.org/blogs/data-structure-and-algorithm/requirements-needed-to-construct-a-unique-binary-tree",
           "difficulty": "Core",
           "tufPractice": "https://takeuforward.org/practice/dsa/requirements-needed-to-construct-a-unique-bt",
           "video": {
@@ -3889,7 +4218,7 @@
         {
           "key": "step-13-binary-trees__morris-inorder-traversal-of-a-binary-tree",
           "name": "Morris Inorder Traversal",
-          "link": "",
+          "link": "https://takeuforward.org/blogs/data-structure-and-algorithm/morris-inorder-traversal",
           "difficulty": "Pro",
           "practice": "https://leetcode.com/problems/binary-tree-inorder-traversal/",
           "tufPractice": "https://takeuforward.org/practice/dsa/morris-inorder-traversal-",
@@ -3902,9 +4231,9 @@
         {
           "key": "step-13-binary-trees__morris-preorder-traversal-of-a-binary-tree",
           "name": "Morris Preorder Traversal",
-          "link": "",
+          "link": "https://takeuforward.org/blogs/data-structure-and-algorithm/morris-preorder-traversal",
           "difficulty": "Pro",
-          "practice": "https://leetcode.com/problems/binary-tree-inorder-traversal/",
+          "practice": "https://leetcode.com/problems/binary-tree-preorder-traversal/",
           "tufPractice": "https://takeuforward.org/practice/dsa/morris-preorder-traversal-",
           "video": {
             "provider": "youtube",
@@ -3916,7 +4245,7 @@
     },
     {
       "key": "step-13-binary-search-trees",
-      "order": 13,
+      "order": 14,
       "title": "Binary Search Trees",
       "problems": [
         {
@@ -3933,7 +4262,7 @@
         {
           "key": "step-14-binary-search-trees__search-in-a-binary-search-tree",
           "name": "Search in BST",
-          "link": "",
+          "link": "https://takeuforward.org/blogs/data-structure-and-algorithm/search-in-a-binary-search-tree",
           "difficulty": "Basic",
           "practice": "https://leetcode.com/problems/search-in-a-binary-search-tree/",
           "tufPractice": "https://takeuforward.org/practice/dsa/search-in-bst",
@@ -3946,8 +4275,8 @@
         {
           "key": "step-14-binary-search-trees__ceil-in-a-binary-search-tree",
           "name": "Ceil in a Binary Search Tree",
-          "link": "",
-          "difficulty": "Basic",
+          "link": "https://takeuforward.org/blogs/data-structure-and-algorithm/floor-and-ceil-in-a-bst",
+          "difficulty": "Core",
           "tufPractice": "https://takeuforward.org/practice/dsa/floor-and-ceil-in-a-bst",
           "video": {
             "provider": "youtube",
@@ -3959,8 +4288,8 @@
         {
           "key": "step-14-binary-search-trees__floor-in-a-binary-search-tree",
           "name": "Floor in a Binary Search Tree",
-          "link": "",
-          "difficulty": "Basic",
+          "link": "https://takeuforward.org/blogs/data-structure-and-algorithm/floor-and-ceil-in-a-bst",
+          "difficulty": "Core",
           "tufPractice": "https://takeuforward.org/practice/dsa/floor-and-ceil-in-a-bst",
           "video": {
             "provider": "youtube",
@@ -3970,9 +4299,17 @@
           "practice": "https://www.geeksforgeeks.org/problems/floor-in-bst/1"
         },
         {
+          "key": "minimum-and-maximum-in-bst",
+          "name": "Minimum and Maximum in BST",
+          "link": "",
+          "difficulty": "",
+          "tufPractice": "https://takeuforward.org/practice/dsa/minimum-and-maximum-in-bst",
+          "section": "Theory and Basics"
+        },
+        {
           "key": "step-14-binary-search-trees__insert-a-given-node-in-binary-search-tree",
           "name": "Insert a given node in BST",
-          "link": "",
+          "link": "https://takeuforward.org/blogs/data-structure-and-algorithm/insert-into-a-binary-search-tree",
           "difficulty": "Core",
           "practice": "https://leetcode.com/problems/insert-into-a-binary-search-tree/",
           "tufPractice": "https://takeuforward.org/practice/dsa/insert-a-given-node-in-bst",
@@ -3985,7 +4322,7 @@
         {
           "key": "step-14-binary-search-trees__delete-a-node-in-binary-search-tree",
           "name": "Delete a node in BST",
-          "link": "",
+          "link": "https://takeuforward.org/blogs/data-structure-and-algorithm/delete-node-in-a-bst",
           "difficulty": "Core",
           "practice": "https://leetcode.com/problems/delete-node-in-a-bst/",
           "tufPractice": "https://takeuforward.org/practice/dsa/delete-a-node-in-bst",
@@ -3998,7 +4335,7 @@
         {
           "key": "step-14-binary-search-trees__find-k-th-smallest-largest-element-in-bst",
           "name": "Kth Smallest and Largest element in BST",
-          "link": "",
+          "link": "https://takeuforward.org/blogs/data-structure-and-algorithm/kth-smallest-and-largest-elements-in-a-bst",
           "difficulty": "Core",
           "practice": "https://leetcode.com/problems/kth-smallest-element-in-a-bst/",
           "tufPractice": "https://takeuforward.org/practice/dsa/kth-smallest-and-largest-element-in-bst",
@@ -4011,7 +4348,7 @@
         {
           "key": "step-14-binary-search-trees__check-if-a-tree-is-a-bst-or-bt",
           "name": "Check if a tree is a BST or not",
-          "link": "",
+          "link": "https://takeuforward.org/blogs/data-structure-and-algorithm/validate-binary-search-tree",
           "difficulty": "Core",
           "practice": "https://leetcode.com/problems/validate-binary-search-tree/",
           "tufPractice": "https://takeuforward.org/practice/dsa/check-if-a-tree-is-a-bst-or-not",
@@ -4024,7 +4361,7 @@
         {
           "key": "step-14-binary-search-trees__lca-in-binary-search-tree",
           "name": "LCA in BST",
-          "link": "",
+          "link": "https://takeuforward.org/blogs/data-structure-and-algorithm/lowest-common-ancestor-of-a-binary-search-tree",
           "difficulty": "Core",
           "practice": "https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree/",
           "tufPractice": "https://takeuforward.org/practice/dsa/lca-in-bst",
@@ -4037,7 +4374,7 @@
         {
           "key": "step-14-binary-search-trees__construct-a-bst-from-a-preorder-traversal",
           "name": "Construct a BST from a preorder traversal",
-          "link": "",
+          "link": "https://takeuforward.org/blogs/data-structure-and-algorithm/construct-a-bst-from-preorder-traversal",
           "difficulty": "Core",
           "practice": "https://leetcode.com/problems/construct-binary-search-tree-from-preorder-traversal/",
           "tufPractice": "https://takeuforward.org/practice/dsa/construct-a-bst-from-a-preorder-traversal",
@@ -4050,7 +4387,7 @@
         {
           "key": "step-14-binary-search-trees__inorder-successor-predecessor-in-bst",
           "name": "Inorder successor and predecessor in BST",
-          "link": "",
+          "link": "https://takeuforward.org/blogs/data-structure-and-algorithm/inorder-successor-and-predecessor-in-a-bst",
           "difficulty": "Core",
           "practice": "https://leetcode.com/problems/inorder-successor-in-bst/",
           "tufPractice": "https://takeuforward.org/practice/dsa/inorder-successor-and-predecessor-in-bst",
@@ -4063,7 +4400,7 @@
         {
           "key": "bst-iterator",
           "name": "BST iterator",
-          "link": "",
+          "link": "https://takeuforward.org/blogs/data-structure-and-algorithm/binary-search-tree-iterator",
           "difficulty": "Core",
           "practice": "https://leetcode.com/problems/binary-search-tree-iterator/",
           "tufPractice": "https://takeuforward.org/practice/dsa/bst-iterator",
@@ -4076,7 +4413,7 @@
         {
           "key": "step-14-binary-search-trees__two-sum-in-bst-check-if-there-exists-a-pair-with-sum-k",
           "name": "Two sum in BST",
-          "link": "",
+          "link": "https://takeuforward.org/blogs/data-structure-and-algorithm/two-sum-in-bst",
           "difficulty": "Core",
           "practice": "https://leetcode.com/problems/two-sum-iv-input-is-a-bst/",
           "tufPractice": "https://takeuforward.org/practice/dsa/two-sum-in-bst",
@@ -4089,8 +4426,8 @@
         {
           "key": "step-14-binary-search-trees__recover-bst-correct-bst-with-two-nodes-swapped",
           "name": "Correct BST with two nodes swapped",
-          "link": "",
-          "difficulty": "Core",
+          "link": "https://takeuforward.org/blogs/data-structure-and-algorithm/recover-binary-search-tree",
+          "difficulty": "Pro",
           "practice": "https://leetcode.com/problems/recover-binary-search-tree/",
           "tufPractice": "https://takeuforward.org/practice/dsa/correct-bst-with-two-nodes-swapped",
           "video": {
@@ -4102,9 +4439,9 @@
         {
           "key": "step-14-binary-search-trees__largest-bst-in-binary-tree",
           "name": "Largest BST in Binary Tree",
-          "link": "",
+          "link": "https://takeuforward.org/blogs/data-structure-and-algorithm/largest-bst-in-binary-tree",
           "difficulty": "Pro",
-          "practice": "https://leetcode.com/problems/maximum-sum-bst-in-binary-tree/",
+          "practice": "https://leetcode.com/problems/largest-bst-subtree/",
           "tufPractice": "https://takeuforward.org/practice/dsa/largest-bst-in-binary-tree",
           "video": {
             "provider": "youtube",
@@ -4116,13 +4453,13 @@
     },
     {
       "key": "step-14-heaps",
-      "order": 14,
+      "order": 15,
       "title": "Heaps",
       "problems": [
         {
           "key": "heaps-theory",
           "name": "Heaps (Theory Video)",
-          "link": "",
+          "link": "https://takeuforward.org/blogs/data-structure-and-algorithm/introduction-to-heap",
           "difficulty": "Core",
           "section": "Theory and Implementation"
         },
@@ -4188,40 +4525,129 @@
         {
           "key": "heap-sort",
           "name": "Heap Sort",
-          "link": "",
-          "difficulty": "Core",
+          "link": "https://takeuforward.org/blogs/data-structure-and-algorithm/heap-sort",
+          "difficulty": "Pro",
           "tufPractice": "https://takeuforward.org/practice/dsa/heap-sort",
           "section": "Theory and Implementation"
         },
         {
           "key": "step-11-heaps__kth-largest-element-in-an-array-use-priority-queue",
           "name": "K-th Largest element in an array",
-          "link": "",
-          "difficulty": "Core",
+          "link": "https://takeuforward.org/blogs/data-structure-and-algorithm/k-th-largest-element-in-an-array",
+          "difficulty": "Pro",
+          "practice": "https://leetcode.com/problems/kth-largest-element-in-an-array/",
           "tufPractice": "https://takeuforward.org/practice/dsa/k-th-largest-element-in-an-array",
-          "section": "Theory and Implementation",
-          "practice": "https://leetcode.com/problems/kth-largest-element-in-an-array/"
+          "section": "Theory and Implementation"
         },
         {
           "key": "step-11-heaps__kth-largest-element-in-a-stream-of-running-integers",
           "name": "Kth largest element in a stream of running integers",
+          "link": "https://takeuforward.org/blogs/data-structure-and-algorithm/kth-largest-element-stream",
+          "difficulty": "Pro",
+          "practice": "https://leetcode.com/problems/kth-largest-element-in-a-stream/",
+          "tufPractice": "https://takeuforward.org/practice/dsa/kth-largest-element-in-a-stream-of-running-integers",
+          "section": "FAQs"
+        },
+        {
+          "key": "sort-a-k-sorted-array",
+          "name": "Sort a K-Sorted Array",
+          "link": "",
+          "difficulty": "",
+          "tufPractice": "https://takeuforward.org/practice/dsa/sort-a-k-sorted-array",
+          "section": "FAQs"
+        },
+        {
+          "key": "merge-k-sorted-lists",
+          "name": "Merge K sorted Lists",
+          "link": "https://takeuforward.org/blogs/data-structure-and-algorithm/merge-k-sorted-linked-lists",
+          "difficulty": "Pro",
+          "practice": "https://leetcode.com/problems/merge-k-sorted-lists/",
+          "tufPractice": "https://takeuforward.org/practice/dsa/merge-k-sorted-lists",
+          "section": "FAQs"
+        },
+        {
+          "key": "replace-elements-by-their-rank",
+          "name": "Replace Elements by Their Rank",
           "link": "",
           "difficulty": "Core",
-          "practice": "https://leetcode.com/problems/kth-largest-element-in-a-stream/#:~:text=Implement%20KthLargest%20class%3A,largest%20element%20in%20the%20stream.",
-          "tufPractice": "https://takeuforward.org/practice/dsa/kth-largest-element-in-a-stream-of-running-integers",
+          "practice": "https://leetcode.com/problems/rank-transform-of-an-array/",
+          "tufPractice": "https://takeuforward.org/practice/dsa/replace-elements-by-their-rank",
+          "section": "FAQs"
+        },
+        {
+          "key": "task-scheduler",
+          "name": "Task Scheduler",
+          "link": "https://takeuforward.org/blogs/data-structure-and-algorithm/task-scheduler",
+          "difficulty": "Core",
+          "practice": "https://leetcode.com/problems/task-scheduler/",
+          "tufPractice": "https://takeuforward.org/practice/dsa/task-scheduler",
+          "section": "FAQs"
+        },
+        {
+          "key": "hand-of-straights",
+          "name": "Hand of Straights",
+          "link": "",
+          "difficulty": "Core",
+          "practice": "https://leetcode.com/problems/hand-of-straights/",
+          "tufPractice": "https://takeuforward.org/practice/dsa/hand-of-straights",
+          "section": "FAQs"
+        },
+        {
+          "key": "design-twitter",
+          "name": "Design Twitter",
+          "link": "",
+          "difficulty": "Core",
+          "practice": "https://leetcode.com/problems/design-twitter/",
+          "tufPractice": "https://takeuforward.org/practice/dsa/design-twitter",
+          "section": "FAQs"
+        },
+        {
+          "key": "minimum-cost-to-connect-sticks",
+          "name": "Minimum Cost to Connect Sticks",
+          "link": "",
+          "difficulty": "Core",
+          "practice": "https://leetcode.com/problems/minimum-cost-to-connect-sticks/",
+          "tufPractice": "https://takeuforward.org/practice/dsa/minimum-cost-to-connect-sticks",
+          "section": "FAQs"
+        },
+        {
+          "key": "step-11-heaps__maximum-sum-combination",
+          "name": "Maximum Sum Combination",
+          "link": "",
+          "difficulty": "Core",
+          "tufPractice": "https://takeuforward.org/practice/dsa/maximum-sum-combination",
+          "section": "FAQs",
+          "practice": "https://www.geeksforgeeks.org/problems/maximum-sum-combination/1"
+        },
+        {
+          "key": "find-median-from-data-stream",
+          "name": "Find Median from Data Stream",
+          "link": "https://takeuforward.org/blogs/data-structure-and-algorithm/find-median-data-stream",
+          "difficulty": "Pro",
+          "practice": "https://leetcode.com/problems/find-median-from-data-stream/",
+          "tufPractice": "https://takeuforward.org/practice/dsa/find-median-from-data-stream",
+          "section": "FAQs"
+        },
+        {
+          "key": "top-k-frequent-elements",
+          "name": "Top K Frequent Elements",
+          "link": "https://takeuforward.org/blogs/data-structure-and-algorithm/top-k-frequent-elements",
+          "difficulty": "Core",
+          "practice": "https://leetcode.com/problems/top-k-frequent-elements/",
+          "tufPractice": "https://takeuforward.org/practice/dsa/top-k-frequent-elements",
           "section": "FAQs"
         }
       ]
     },
     {
       "key": "step-15-graphs",
-      "order": 15,
+      "order": 16,
       "title": "Graphs",
       "problems": [
         {
           "key": "step-15-graphs__graph-and-types",
           "name": "Introduction to Graph",
-          "link": "",
+          "link": "https://takeuforward.org/blogs/data-structure-and-algorithm/introduction-to-graph",
           "difficulty": "Basic",
           "video": {
             "provider": "youtube",
@@ -4246,6 +4672,7 @@
           "name": "Connected Components",
           "link": "",
           "difficulty": "Core",
+          "practice": "https://leetcode.com/problems/number-of-connected-components-in-an-undirected-graph/",
           "tufPractice": "https://takeuforward.org/practice/dsa/connected-components",
           "section": "Theory and traversals"
         },
@@ -4278,7 +4705,7 @@
           "name": "Number of provinces (leetcode)",
           "link": "https://takeuforward.org/blogs/data-structure-and-algorithm/number-of-provinces",
           "difficulty": "Core",
-          "practice": "https://leetcode.com/problems/number-of-provinces/#:~:text=A%20province%20is%20a%20group,the%20total%20number%20of%20provinces.",
+          "practice": "https://leetcode.com/problems/number-of-provinces/",
           "tufPractice": "https://takeuforward.org/practice/dsa/number-of-provinces",
           "video": {
             "provider": "youtube",
@@ -4291,7 +4718,7 @@
           "name": "Connected Components Problem in Matrix",
           "link": "https://takeuforward.org/blogs/data-structure-and-algorithm/number-of-provinces",
           "difficulty": "Core",
-          "practice": "https://leetcode.com/problems/number-of-provinces/#:~:text=A%20province%20is%20a%20group,the%20total%20number%20of%20provinces.",
+          "practice": "https://leetcode.com/problems/number-of-provinces/",
           "tufPractice": "https://takeuforward.org/practice/dsa/number-of-provinces",
           "video": {
             "provider": "youtube",
@@ -4315,7 +4742,7 @@
         {
           "key": "step-15-graphs__flood-fill",
           "name": "Flood fill algorithm",
-          "link": "",
+          "link": "https://takeuforward.org/blogs/data-structure-and-algorithm/flood-fill-algorithm",
           "difficulty": "Core",
           "practice": "https://leetcode.com/problems/flood-fill/",
           "tufPractice": "https://takeuforward.org/practice/dsa/flood-fill-algorithm",
@@ -4376,16 +4803,16 @@
         {
           "key": "step-15-graphs__number-of-distinct-islands-dfs-multisource",
           "name": "Number of distinct islands",
-          "link": "",
+          "link": "https://takeuforward.org/blogs/data-structure-and-algorithm/number-of-distinct-islands",
           "difficulty": "Core",
+          "practice": "https://leetcode.com/problems/number-of-distinct-islands/",
           "tufPractice": "https://takeuforward.org/practice/dsa/number-of-distinct-islands",
-          "section": "Traversal Problems",
-          "practice": "https://www.geeksforgeeks.org/problems/number-of-distinct-islands/1"
+          "section": "Traversal Problems"
         },
         {
           "key": "step-15-graphs__cycle-detection-in-undirected-graph-dfs",
           "name": "Detect a cycle in an undirected graph",
-          "link": "",
+          "link": "https://takeuforward.org/blogs/data-structure-and-algorithm/detect-a-cycle-in-an-undirected-graph",
           "difficulty": "Core",
           "practice": "https://leetcode.com/problems/course-schedule/",
           "tufPractice": "https://takeuforward.org/practice/dsa/detect-a-cycle-in-an-undirected-graph",
@@ -4437,7 +4864,7 @@
         {
           "key": "step-15-graphs__cycle-detection-in-directed-graph-dfs",
           "name": "Cycle Detection in Directed Graph (DFS)",
-          "link": "",
+          "link": "https://takeuforward.org/blogs/data-structure-and-algorithm/detect-a-cycle-in-a-directed-graph",
           "difficulty": "Core",
           "practice": "https://leetcode.com/problems/course-schedule/",
           "tufPractice": "https://takeuforward.org/practice/dsa/detect-a-cycle-in-a-directed-graph",
@@ -4450,7 +4877,7 @@
         {
           "key": "step-15-graphs__cycle-detection-in-directed-graph-bfs",
           "name": "Cycle Detection in Directed Graph (BFS)",
-          "link": "",
+          "link": "https://takeuforward.org/blogs/data-structure-and-algorithm/detect-a-cycle-in-a-directed-graph",
           "difficulty": "Core",
           "practice": "https://leetcode.com/problems/course-schedule/",
           "tufPractice": "https://takeuforward.org/practice/dsa/detect-a-cycle-in-a-directed-graph",
@@ -4471,8 +4898,8 @@
         {
           "key": "step-15-graphs__find-eventual-safe-states",
           "name": "Find eventual safe states",
-          "link": "",
-          "difficulty": "Core",
+          "link": "https://takeuforward.org/blogs/data-structure-and-algorithm/find-eventual-safe-states",
+          "difficulty": "Pro",
           "practice": "https://leetcode.com/problems/find-eventual-safe-states/",
           "tufPractice": "https://takeuforward.org/practice/dsa/find-eventual-safe-states",
           "video": {
@@ -4484,8 +4911,8 @@
         {
           "key": "step-15-graphs__course-schedule-i",
           "name": "Course Schedule I",
-          "link": "",
-          "difficulty": "Core",
+          "link": "https://takeuforward.org/blogs/data-structure-and-algorithm/course-schedule-i",
+          "difficulty": "Pro",
           "practice": "https://leetcode.com/problems/course-schedule/",
           "tufPractice": "https://takeuforward.org/practice/dsa/course-schedule-i",
           "video": {
@@ -4497,8 +4924,8 @@
         {
           "key": "step-15-graphs__course-schedule-ii",
           "name": "Course Schedule II",
-          "link": "",
-          "difficulty": "Core",
+          "link": "https://takeuforward.org/blogs/data-structure-and-algorithm/course-schedule-ii",
+          "difficulty": "Pro",
           "practice": "https://leetcode.com/problems/course-schedule-ii/",
           "tufPractice": "https://takeuforward.org/practice/dsa/course-schedule-ii",
           "video": {
@@ -4511,8 +4938,8 @@
           "key": "step-15-graphs__alien-dictionary",
           "name": "Alien Dictionary",
           "link": "https://takeuforward.org/blogs/data-structure-and-algorithm/alien-dictionary",
-          "difficulty": "Core",
-          "practice": "https://leetcode.com/problems/alien-dictionary/solution/",
+          "difficulty": "Pro",
+          "practice": "https://leetcode.com/problems/alien-dictionary/",
           "tufPractice": "https://takeuforward.org/practice/dsa/alient-dictionary",
           "video": {
             "provider": "youtube",
@@ -4550,7 +4977,7 @@
           "key": "step-15-graphs__word-ladder-1",
           "name": "Word ladder I",
           "link": "https://takeuforward.org/blogs/data-structure-and-algorithm/word-ladder",
-          "difficulty": "Core",
+          "difficulty": "Pro",
           "practice": "https://leetcode.com/problems/word-ladder/",
           "tufPractice": "https://takeuforward.org/practice/dsa/word-ladder-i",
           "video": {
@@ -4575,7 +5002,7 @@
         {
           "key": "step-15-graphs__djisktra-s-algorithm",
           "name": "Dijkstra's algorithm",
-          "link": "",
+          "link": "https://takeuforward.org/blogs/data-structure-and-algorithm/dijkstras-algorithm",
           "difficulty": "Core",
           "tufPractice": "https://takeuforward.org/practice/dsa/dijkstra's-algorithm",
           "video": {
@@ -4588,7 +5015,7 @@
         {
           "key": "print-shortest-path",
           "name": "Print Shortest Path",
-          "link": "",
+          "link": "https://takeuforward.org/blogs/data-structure-and-algorithm/print-shortest-path",
           "difficulty": "Core",
           "tufPractice": "https://takeuforward.org/practice/dsa/print-shortest-path-",
           "section": "Shortest Path Algorithms"
@@ -4623,7 +5050,7 @@
           "key": "step-15-graphs__cheapest-flights-within-k-stops",
           "name": "Cheapest flight within K stops",
           "link": "https://takeuforward.org/blogs/data-structure-and-algorithm/cheapest-flights-within-k-stops",
-          "difficulty": "Core",
+          "difficulty": "Pro",
           "practice": "https://leetcode.com/problems/cheapest-flights-within-k-stops/",
           "tufPractice": "https://takeuforward.org/practice/dsa/cheapest-flight-within-k-stops",
           "video": {
@@ -4636,7 +5063,7 @@
           "key": "minimum-multiplications-to-reach-end",
           "name": "Minimum multiplications to reach end",
           "link": "https://takeuforward.org/blogs/data-structure-and-algorithm/minimum-multiplications-to-reach-end",
-          "difficulty": "Core",
+          "difficulty": "Pro",
           "tufPractice": "https://takeuforward.org/practice/dsa/minimum-multiplications-to-reach-end",
           "video": {
             "provider": "youtube",
@@ -4648,7 +5075,7 @@
           "key": "step-15-graphs__number-of-ways-to-arrive-at-destination",
           "name": "Number of ways to arrive at destination",
           "link": "https://takeuforward.org/blogs/data-structure-and-algorithm/number-of-ways-to-arrive-at-destination",
-          "difficulty": "Core",
+          "difficulty": "Pro",
           "practice": "https://leetcode.com/problems/number-of-ways-to-arrive-at-destination/",
           "tufPractice": "https://takeuforward.org/practice/dsa/number-of-ways-to-arrive-at-destination",
           "video": {
@@ -4660,8 +5087,8 @@
         {
           "key": "step-15-graphs__bellman-ford-algorithm",
           "name": "Bellman ford algorithm",
-          "link": "",
-          "difficulty": "Core",
+          "link": "https://takeuforward.org/blogs/data-structure-and-algorithm/bellman-ford-algorithm",
+          "difficulty": "Pro",
           "tufPractice": "https://takeuforward.org/practice/dsa/bellman-ford-algorithm",
           "video": {
             "provider": "youtube",
@@ -4686,13 +5113,31 @@
           "key": "step-15-graphs__find-the-city-with-the-smallest-number-of-neighbors-in-a-threshold-distance",
           "name": "Find the city with the smallest number of neighbors",
           "link": "https://takeuforward.org/blogs/data-structure-and-algorithm/find-city-smallest-number-neighbors-threshold-distance",
-          "difficulty": "Core",
+          "difficulty": "Pro",
           "practice": "https://leetcode.com/problems/find-the-city-with-the-smallest-number-of-neighbors-at-a-threshold-distance/",
           "tufPractice": "https://takeuforward.org/practice/dsa/find-the-city-with-the-smallest-number-of-neighbors",
           "video": {
             "provider": "youtube",
             "id": "9XybHVqTHcQ"
           },
+          "section": "Shortest Path Algorithms"
+        },
+        {
+          "key": "network-delay-time",
+          "name": "Network Delay Time",
+          "link": "https://takeuforward.org/blogs/data-structure-and-algorithm/network-delay-time",
+          "difficulty": "Core",
+          "practice": "https://leetcode.com/problems/network-delay-time/",
+          "tufPractice": "https://takeuforward.org/practice/dsa/network-delay-time",
+          "section": "Shortest Path Algorithms"
+        },
+        {
+          "key": "swim-in-rising-water",
+          "name": "Swim in Rising Water",
+          "link": "",
+          "difficulty": "Pro",
+          "practice": "https://leetcode.com/problems/swim-in-rising-water/",
+          "tufPractice": "https://takeuforward.org/practice/dsa/swim-in-rising-water",
           "section": "Shortest Path Algorithms"
         },
         {
@@ -4743,8 +5188,9 @@
         {
           "key": "find-the-mst-weight",
           "name": "Find the MST weight",
-          "link": "",
+          "link": "https://takeuforward.org/blogs/data-structure-and-algorithm/find-the-mst-weight",
           "difficulty": "Core",
+          "practice": "https://leetcode.com/problems/connecting-cities-with-minimum-cost/",
           "tufPractice": "https://takeuforward.org/practice/dsa/find-the-mst-weight",
           "video": {
             "provider": "youtube",
@@ -4794,7 +5240,7 @@
         {
           "key": "step-15-graphs__making-a-large-island",
           "name": "Making a large island",
-          "link": "",
+          "link": "https://takeuforward.org/blogs/data-structure-and-algorithm/making-a-large-island",
           "difficulty": "Pro",
           "practice": "https://leetcode.com/problems/making-a-large-island/",
           "tufPractice": "https://takeuforward.org/practice/dsa/making-a-large-island",
@@ -4808,7 +5254,7 @@
           "key": "step-15-graphs__most-stones-removed-with-same-rows-or-columns",
           "name": "Most stones removed with same row or column",
           "link": "https://takeuforward.org/blogs/data-structure-and-algorithm/most-stones-removed-same-row-column",
-          "difficulty": "Core",
+          "difficulty": "Pro",
           "practice": "https://leetcode.com/problems/most-stones-removed-with-same-row-or-column/",
           "tufPractice": "https://takeuforward.org/practice/dsa/most-stones-removed-with-same-row-or-column",
           "video": {
@@ -4820,7 +5266,7 @@
         {
           "key": "step-15-graphs__kosaraju-s-algorithm",
           "name": "Kosaraju's algorithm",
-          "link": "",
+          "link": "https://takeuforward.org/blogs/data-structure-and-algorithm/kosarajus-algorithm",
           "difficulty": "Pro",
           "practice": "https://leetcode.com/problems/maximum-number-of-non-overlapping-substrings/discuss/766485/kosaraju-algorithm-on",
           "tufPractice": "https://takeuforward.org/practice/dsa/kosaraju's-algorithm",
@@ -4835,7 +5281,7 @@
           "name": "Bridges in graph",
           "link": "https://takeuforward.org/blogs/data-structure-and-algorithm/bridges-in-graph-tarjan-algorithm",
           "difficulty": "Pro",
-          "practice": "https://leetcode.com/problems/critical-connections-in-a-network/discuss/382385/find-bridges-in-a-graph",
+          "practice": "https://leetcode.com/problems/critical-connections-in-a-network/",
           "tufPractice": "https://takeuforward.org/practice/dsa/bridges-in-graph",
           "video": {
             "provider": "youtube",
@@ -4860,7 +5306,7 @@
     },
     {
       "key": "step-16-dynamic-programming",
-      "order": 16,
+      "order": 17,
       "title": "Dynamic Programming",
       "problems": [
         {
@@ -4916,7 +5362,7 @@
         {
           "key": "step-16-dynamic-programming__maximum-sum-of-non-adjacent-elements-dp-5",
           "name": "Maximum sum of non adjacent elements",
-          "link": "",
+          "link": "https://takeuforward.org/blogs/data-structure-and-algorithm/maximum-sum-of-non-adjacent-elements",
           "difficulty": "Core",
           "practice": "https://leetcode.com/problems/house-robber/",
           "tufPractice": "https://takeuforward.org/practice/dsa/maximum-sum-of-non-adjacent-elements",
@@ -4931,7 +5377,7 @@
           "name": "House robber",
           "link": "https://takeuforward.org/blogs/data-structure-and-algorithm/house-robber-ii",
           "difficulty": "Core",
-          "practice": "https://leetcode.com/problems/house-robber-ii/",
+          "practice": "https://leetcode.com/problems/house-robber/",
           "tufPractice": "https://takeuforward.org/practice/dsa/house-robber",
           "video": {
             "provider": "youtube",
@@ -4955,7 +5401,7 @@
         {
           "key": "step-16-dynamic-programming__grid-unique-paths-dp-on-grids-dp8",
           "name": "Grid unique paths",
-          "link": "",
+          "link": "https://takeuforward.org/blogs/data-structure-and-algorithm/grid-unique-paths",
           "difficulty": "Core",
           "practice": "https://leetcode.com/problems/unique-paths/",
           "tufPractice": "https://takeuforward.org/practice/dsa/grid-unique-paths",
@@ -4969,7 +5415,7 @@
           "key": "step-16-dynamic-programming__grid-unique-paths-2-dp-9",
           "name": "Unique paths II",
           "link": "https://takeuforward.org/blogs/data-structure-and-algorithm/unique-paths-ii-obstacles",
-          "difficulty": "Core",
+          "difficulty": "Pro",
           "practice": "https://leetcode.com/problems/unique-paths-ii/",
           "tufPractice": "https://takeuforward.org/practice/dsa/unique-paths-ii",
           "video": {
@@ -4981,9 +5427,9 @@
         {
           "key": "step-16-dynamic-programming__minimum-path-sum-in-grid-dp-10",
           "name": "Minimum path sum in Grid (DP 10)",
-          "link": "",
+          "link": "https://takeuforward.org/blogs/data-structure-and-algorithm/minimum-falling-path-sum",
           "difficulty": "Core",
-          "practice": "https://leetcode.com/problems/minimum-path-sum/",
+          "practice": "https://leetcode.com/problems/minimum-falling-path-sum/",
           "tufPractice": "https://takeuforward.org/practice/dsa/minimum-falling-path-sum",
           "video": {
             "provider": "youtube",
@@ -4994,9 +5440,9 @@
         {
           "key": "step-16-dynamic-programming__minimum-maximum-falling-path-sum-dp-12",
           "name": "Minimum/Maximum Falling Path Sum (DP-12)",
-          "link": "",
+          "link": "https://takeuforward.org/blogs/data-structure-and-algorithm/minimum-falling-path-sum",
           "difficulty": "Core",
-          "practice": "https://leetcode.com/problems/minimum-path-sum/",
+          "practice": "https://leetcode.com/problems/minimum-falling-path-sum/",
           "tufPractice": "https://takeuforward.org/practice/dsa/minimum-falling-path-sum",
           "video": {
             "provider": "youtube",
@@ -5022,13 +5468,27 @@
           "name": "Cherry pickup II",
           "link": "",
           "difficulty": "Pro",
+          "practice": "https://leetcode.com/problems/cherry-pickup-ii/",
           "tufPractice": "https://takeuforward.org/practice/dsa/cherry-pickup-ii",
+          "section": "DP on grids"
+        },
+        {
+          "key": "count-square-submatrices-with-all-one",
+          "name": "Count Square Submatrices with All Ones",
+          "link": "",
+          "difficulty": "",
+          "practice": "https://leetcode.com/problems/count-square-submatrices-with-all-ones/",
+          "tufPractice": "https://takeuforward.org/practice/dsa/count-square-submatrices-with-all-one",
+          "video": {
+            "provider": "youtube",
+            "id": "auS1fynpnjo"
+          },
           "section": "DP on grids"
         },
         {
           "key": "step-03-solve-problems-on-arrays__stock-buy-and-sell",
           "name": "Stock Buy and Sell",
-          "link": "",
+          "link": "https://takeuforward.org/blogs/data-structure-and-algorithm/best-time-to-buy-and-sell-stock",
           "difficulty": "Core",
           "practice": "https://leetcode.com/problems/best-time-to-buy-and-sell-stock/",
           "tufPractice": "https://takeuforward.org/practice/dsa/best-time-to-buy-and-sell-stock",
@@ -5041,7 +5501,7 @@
         {
           "key": "step-16-dynamic-programming__best-time-to-buy-and-sell-stock-dp-35",
           "name": "Best Time to Buy and Sell Stock |(DP-35)",
-          "link": "",
+          "link": "https://takeuforward.org/blogs/data-structure-and-algorithm/best-time-to-buy-and-sell-stock",
           "difficulty": "Core",
           "practice": "https://leetcode.com/problems/best-time-to-buy-and-sell-stock/",
           "tufPractice": "https://takeuforward.org/practice/dsa/best-time-to-buy-and-sell-stock",
@@ -5068,8 +5528,8 @@
           "key": "step-16-dynamic-programming__buy-and-sell-stocks-iii-dp-37",
           "name": "Best time to buy and sell stock III",
           "link": "https://takeuforward.org/blogs/data-structure-and-algorithm/best-time-to-buy-and-sell-stock-iii",
-          "difficulty": "Core",
-          "practice": "https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iii/description/",
+          "difficulty": "Pro",
+          "practice": "https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iii/",
           "tufPractice": "https://takeuforward.org/practice/dsa/best-time-to-buy-and-sell-stock-iii",
           "video": {
             "provider": "youtube",
@@ -5104,9 +5564,22 @@
           "section": "DP on stocks"
         },
         {
+          "key": "best-time-to-buy-and-sell-stock-with-cooldown",
+          "name": "Best Time to Buy and Sell Stock with Cooldown",
+          "link": "https://takeuforward.org/blogs/data-structure-and-algorithm/best-time-to-buy-and-sell-stock-with-cooldown",
+          "difficulty": "Core",
+          "practice": "https://leetcode.com/problems/best-time-to-buy-and-sell-stock-with-cooldown/",
+          "tufPractice": "https://takeuforward.org/practice/dsa/best-time-to-buy-and-sell-stock-with-cooldown",
+          "video": {
+            "provider": "youtube",
+            "id": "IGIe46xw3YY"
+          },
+          "section": "DP on stocks"
+        },
+        {
           "key": "step-16-dynamic-programming__subset-sum-equal-to-target-dp-14",
           "name": "Subset sum equals to target",
-          "link": "",
+          "link": "https://takeuforward.org/blogs/data-structure-and-algorithm/subset-sum-equal-to-target",
           "difficulty": "Core",
           "tufPractice": "https://takeuforward.org/practice/dsa/subset-sum-equals-to-target",
           "video": {
@@ -5134,7 +5607,7 @@
           "name": "Partition a set into two subsets with minimum absolute sum difference",
           "link": "",
           "difficulty": "Pro",
-          "practice": "https://leetcode.com/problems/partition-array-into-two-arrays-to-minimize-sum-difference/",
+          "practice": "https://leetcode.com/problems/last-stone-weight-ii/",
           "tufPractice": "https://takeuforward.org/practice/dsa/partition-a-set-into-two-subsets-with-minimum-absolute-sum-difference",
           "video": {
             "provider": "youtube",
@@ -5209,9 +5682,9 @@
         {
           "key": "step-16-dynamic-programming__coin-change-2-dp-22",
           "name": "Coin change II",
-          "link": "",
-          "difficulty": "Core",
-          "practice": "https://leetcode.com/problems/coin-change-2/",
+          "link": "https://takeuforward.org/blogs/data-structure-and-algorithm/coin-change-ii-combinations",
+          "difficulty": "Pro",
+          "practice": "https://leetcode.com/problems/coin-change-ii/",
           "tufPractice": "https://takeuforward.org/practice/dsa/coin-change-ii",
           "video": {
             "provider": "youtube",
@@ -5235,8 +5708,8 @@
         {
           "key": "step-16-dynamic-programming__rod-cutting-problem-dp-24",
           "name": "Rod cutting problem",
-          "link": "",
-          "difficulty": "Core",
+          "link": "https://takeuforward.org/blogs/data-structure-and-algorithm/rod-cutting-problem",
+          "difficulty": "Pro",
           "tufPractice": "https://takeuforward.org/practice/dsa/rod-cutting-problem",
           "video": {
             "provider": "youtube",
@@ -5250,45 +5723,45 @@
           "name": "Longest Increasing Subsequence |(DP-41)",
           "link": "",
           "difficulty": "Core",
+          "practice": "https://leetcode.com/problems/longest-increasing-subsequence/",
           "tufPractice": "https://takeuforward.org/practice/dsa/longest-increasing-subsequence",
           "video": {
             "provider": "youtube",
             "id": "on2hvxBXJH4"
           },
-          "section": "LIS",
-          "practice": "https://leetcode.com/problems/longest-increasing-subsequence/"
+          "section": "LIS"
         },
         {
           "key": "step-16-dynamic-programming__printing-longest-increasing-subsequence-dp-42",
           "name": "Printing Longest Increasing Subsequence|(DP-42)",
           "link": "",
           "difficulty": "Core",
+          "practice": "https://leetcode.com/problems/longest-increasing-subsequence/",
           "tufPractice": "https://takeuforward.org/practice/dsa/longest-increasing-subsequence",
           "video": {
             "provider": "youtube",
             "id": "on2hvxBXJH4"
           },
-          "section": "LIS",
-          "practice": "https://www.geeksforgeeks.org/problems/printing-longest-increasing-subsequence/1"
+          "section": "LIS"
         },
         {
           "key": "step-16-dynamic-programming__longest-increasing-subsequence-dp-43",
           "name": "Longest Increasing Subsequence |(DP-43)",
           "link": "",
           "difficulty": "Core",
+          "practice": "https://leetcode.com/problems/longest-increasing-subsequence/",
           "tufPractice": "https://takeuforward.org/practice/dsa/longest-increasing-subsequence",
           "video": {
             "provider": "youtube",
             "id": "on2hvxBXJH4"
           },
-          "section": "LIS",
-          "practice": "https://leetcode.com/problems/longest-increasing-subsequence/"
+          "section": "LIS"
         },
         {
           "key": "print-longest-increasing-subsequence",
           "name": "Print Longest Increasing Subsequence",
-          "link": "",
-          "difficulty": "Core",
+          "link": "https://takeuforward.org/blogs/data-structure-and-algorithm/print-longest-increasing-subsequence",
+          "difficulty": "Pro",
           "tufPractice": "https://takeuforward.org/practice/dsa/print-longest-increasing-subsequence",
           "video": {
             "provider": "youtube",
@@ -5353,26 +5826,26 @@
           "name": "Longest Common Subsequence | (DP - 25)",
           "link": "",
           "difficulty": "Core",
+          "practice": "https://leetcode.com/problems/longest-common-subsequence/",
           "tufPractice": "https://takeuforward.org/practice/dsa/longest-common-subsequence",
           "video": {
             "provider": "youtube",
             "id": "-zI4mrF2Pb4"
           },
-          "section": "DP on strings",
-          "practice": "https://leetcode.com/problems/longest-common-subsequence/"
+          "section": "DP on strings"
         },
         {
           "key": "step-16-dynamic-programming__print-longest-common-subsequence-dp-26",
           "name": "Print Longest Common Subsequence | (DP - 26)",
           "link": "",
           "difficulty": "Core",
+          "practice": "https://leetcode.com/problems/longest-common-subsequence/",
           "tufPractice": "https://takeuforward.org/practice/dsa/longest-common-subsequence",
           "video": {
             "provider": "youtube",
             "id": "-zI4mrF2Pb4"
           },
-          "section": "DP on strings",
-          "practice": "https://www.geeksforgeeks.org/problems/print-all-lcs-sequences3413/1"
+          "section": "DP on strings"
         },
         {
           "key": "step-16-dynamic-programming__longest-common-substring-dp-27",
@@ -5404,7 +5877,7 @@
           "key": "step-16-dynamic-programming__minimum-insertions-to-make-string-palindrome-dp-29",
           "name": "Minimum insertions to make string palindrome",
           "link": "",
-          "difficulty": "Core",
+          "difficulty": "Pro",
           "practice": "https://leetcode.com/problems/minimum-insertion-steps-to-make-a-string-palindrome/",
           "tufPractice": "https://takeuforward.org/practice/dsa/minimum-insertions-to-make-string-palindrome",
           "video": {
@@ -5430,7 +5903,7 @@
           "key": "step-16-dynamic-programming__shortest-common-supersequence-dp-31",
           "name": "Shortest common supersequence",
           "link": "",
-          "difficulty": "Core",
+          "difficulty": "Pro",
           "practice": "https://leetcode.com/problems/shortest-common-supersequence/",
           "tufPractice": "https://takeuforward.org/practice/dsa/shortest-common-supersequence",
           "video": {
@@ -5443,7 +5916,7 @@
           "key": "step-16-dynamic-programming__distinct-subsequences-dp-32",
           "name": "Distinct subsequences",
           "link": "",
-          "difficulty": "Core",
+          "difficulty": "Pro",
           "practice": "https://leetcode.com/problems/distinct-subsequences/",
           "tufPractice": "https://takeuforward.org/practice/dsa/distinct-subsequences",
           "video": {
@@ -5456,7 +5929,7 @@
           "key": "step-16-dynamic-programming__edit-distance-dp-33",
           "name": "Edit distance",
           "link": "",
-          "difficulty": "Core",
+          "difficulty": "Pro",
           "practice": "https://leetcode.com/problems/edit-distance/",
           "tufPractice": "https://takeuforward.org/practice/dsa/edit-distance",
           "video": {
@@ -5469,13 +5942,31 @@
           "key": "step-16-dynamic-programming__wildcard-matching-dp-34",
           "name": "Wildcard matching",
           "link": "",
-          "difficulty": "Core",
+          "difficulty": "Pro",
           "practice": "https://leetcode.com/problems/wildcard-matching/",
           "tufPractice": "https://takeuforward.org/practice/dsa/wildcard-matching",
           "video": {
             "provider": "youtube",
             "id": "ZmlQ3vgAOMo"
           },
+          "section": "DP on strings"
+        },
+        {
+          "key": "word-break",
+          "name": "Word Break",
+          "link": "",
+          "difficulty": "Core",
+          "practice": "https://leetcode.com/problems/word-break/",
+          "tufPractice": "https://takeuforward.org/practice/dsa/word-break",
+          "section": "DP on strings"
+        },
+        {
+          "key": "count-palindromic-subsequences",
+          "name": "Count Palindromic Subsequences",
+          "link": "",
+          "difficulty": "Pro",
+          "practice": "https://leetcode.com/problems/count-palindromic-subsequences/",
+          "tufPractice": "https://takeuforward.org/practice/dsa/count-palindromic-subsequences",
           "section": "DP on strings"
         },
         {
@@ -5534,7 +6025,7 @@
           "key": "step-16-dynamic-programming__partition-array-for-maximum-sum-dp-54",
           "name": "Partition Array for Maximum Sum",
           "link": "",
-          "difficulty": "Core",
+          "difficulty": "Pro",
           "practice": "https://leetcode.com/problems/partition-array-for-maximum-sum/",
           "tufPractice": "https://takeuforward.org/practice/dsa/partition-array-for-maximum-sum",
           "video": {
@@ -5573,9 +6064,20 @@
     },
     {
       "key": "step-17-tries",
-      "order": 17,
+      "order": 18,
       "title": "Tries",
       "problems": [
+        {
+          "key": "bit-prerequisites-for-trie-problems",
+          "name": "Bit PreRequisites for TRIE Problems",
+          "link": "",
+          "difficulty": "",
+          "video": {
+            "provider": "youtube",
+            "id": "5iyuU4hQFrw"
+          },
+          "section": "Theory"
+        },
         {
           "key": "step-17-tries__implement-trie-insert-search-startswith",
           "name": "Trie Implementation and Operations",
@@ -5594,34 +6096,35 @@
           "name": "Trie Implementation and Advanced Operations",
           "link": "https://takeuforward.org/blogs/data-structure-and-algorithm/trie-ii-count-words-erase",
           "difficulty": "Core",
+          "practice": "https://leetcode.com/problems/implement-trie-ii-prefix-tree/",
           "tufPractice": "https://takeuforward.org/practice/dsa/trie-implementation-and-advanced-operations",
           "section": "Theory"
         },
         {
           "key": "step-17-tries__longest-string-with-all-prefixes",
           "name": "Longest Word with All Prefixes",
-          "link": "",
+          "link": "https://takeuforward.org/blogs/data-structure-and-algorithm/longest-word-with-all-prefixes",
           "difficulty": "Core",
+          "practice": "https://leetcode.com/problems/longest-word-with-all-prefixes/",
           "tufPractice": "https://takeuforward.org/practice/dsa/longest-word-with-all-prefixes",
           "video": {
             "provider": "youtube",
             "id": "AWnBa91lThI"
           },
-          "section": "Problems",
-          "practice": "https://www.geeksforgeeks.org/problems/longest-valid-word-with-all-prefixes/1"
+          "section": "Problems"
         },
         {
           "key": "step-17-tries__number-of-distinct-substrings-in-a-string",
           "name": "Number of distinct substrings in a string",
-          "link": "",
-          "difficulty": "Core",
+          "link": "https://takeuforward.org/blogs/data-structure-and-algorithm/number-of-distinct-substrings-in-a-string",
+          "difficulty": "Pro",
+          "practice": "https://leetcode.com/problems/number-of-distinct-substrings-in-a-string/",
           "tufPractice": "https://takeuforward.org/practice/dsa/number-of-distinct-substrings-in-a-string",
           "video": {
             "provider": "youtube",
             "id": "RV0QeTyHZxo"
           },
-          "section": "Problems",
-          "practice": "https://www.geeksforgeeks.org/problems/count-of-distinct-substrings/1"
+          "section": "Problems"
         },
         {
           "key": "step-17-tries__maximum-xor-of-two-numbers-in-an-array",
@@ -5653,13 +6156,13 @@
     },
     {
       "key": "step-18-strings-advanced-algo",
-      "order": 18,
+      "order": 19,
       "title": "Strings (Advanced Algo)",
       "problems": [
         {
           "key": "step-05-strings__reverse-words-in-a-given-string-palindrome-check",
           "name": "Reverse words in a given string / Palindrome Check",
-          "link": "",
+          "link": "https://takeuforward.org/blogs/data-structure-and-algorithm/reverse-every-word-in-a-string",
           "difficulty": "Core",
           "practice": "https://leetcode.com/problems/reverse-words-in-a-string/",
           "tufPractice": "https://takeuforward.org/practice/dsa/reverse-every-word-in-a-string",
@@ -5668,7 +6171,7 @@
         {
           "key": "step-05-strings__reverse-every-word-in-a-string",
           "name": "Reverse Every Word in A String",
-          "link": "",
+          "link": "https://takeuforward.org/blogs/data-structure-and-algorithm/reverse-every-word-in-a-string",
           "difficulty": "Core",
           "practice": "https://leetcode.com/problems/reverse-words-in-a-string/",
           "tufPractice": "https://takeuforward.org/practice/dsa/reverse-every-word-in-a-string",
@@ -5693,10 +6196,17 @@
           "section": "Medium Problems"
         },
         {
+          "key": "hashing-in-strings-theory",
+          "name": "Hashing In Strings | Theory",
+          "link": "https://takeuforward.org/blogs/data-structure-and-algorithm/string-hashing-rolling-hash",
+          "difficulty": "",
+          "section": "Advanced Problems (Less asked)"
+        },
+        {
           "key": "step-18-strings__rabin-karp",
           "name": "Rabin Karp Algorithm",
           "link": "",
-          "difficulty": "Core",
+          "difficulty": "Pro",
           "practice": "https://leetcode.com/problems/repeated-string-match/discuss/416144/Rabin-Karp-algorithm-C%2B%2B-implementation",
           "tufPractice": "https://takeuforward.org/practice/dsa/rabin-karp-algorithm",
           "section": "Advanced Problems (Less asked)"
@@ -5704,8 +6214,8 @@
         {
           "key": "step-18-strings__z-function",
           "name": "Z function",
-          "link": "",
-          "difficulty": "Core",
+          "link": "https://takeuforward.org/blogs/data-structure-and-algorithm/z-function",
+          "difficulty": "Pro",
           "tufPractice": "https://takeuforward.org/practice/dsa/z-function",
           "section": "Advanced Problems (Less asked)",
           "practice": "https://www.geeksforgeeks.org/problems/search-pattern-z-algorithm--141631/1"
@@ -5714,7 +6224,7 @@
           "key": "kmp-algorithm-or-lps-array",
           "name": "KMP Algorithm or LPS array",
           "link": "",
-          "difficulty": "Core",
+          "difficulty": "Pro",
           "practice": "https://leetcode.com/problems/implement-strstr/",
           "tufPractice": "https://takeuforward.org/practice/dsa/kmp-algorithm-or-lps-array",
           "section": "Advanced Problems (Less asked)"
@@ -5722,11 +6232,11 @@
         {
           "key": "step-18-strings__shortest-palindrome",
           "name": "Shortest Palindrome",
-          "link": "",
+          "link": "https://takeuforward.org/blogs/data-structure-and-algorithm/shortest-palindrome",
           "difficulty": "Pro",
+          "practice": "https://leetcode.com/problems/shortest-palindrome/",
           "tufPractice": "https://takeuforward.org/practice/dsa/shortest-palindrome",
-          "section": "Advanced Problems (Less asked)",
-          "practice": "https://leetcode.com/problems/shortest-palindrome/"
+          "section": "Advanced Problems (Less asked)"
         },
         {
           "key": "step-18-strings__longest-happy-prefix",
@@ -5741,7 +6251,7 @@
     },
     {
       "key": "step-19-maths",
-      "order": 19,
+      "order": 20,
       "title": "Maths",
       "problems": [
         {
@@ -5768,7 +6278,7 @@
           "key": "step-08-bit-manipulation__sieve-of-eratosthenes",
           "name": "Count primes in range L to R",
           "link": "",
-          "difficulty": "Core",
+          "difficulty": "Pro",
           "practice": "https://leetcode.com/problems/count-primes/",
           "tufPractice": "https://takeuforward.org/practice/dsa/count-primes-in-range-l-to-r",
           "video": {

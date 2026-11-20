@@ -262,6 +262,7 @@ String minWindow(String s, String t) {
     ],
     problems: [
       "step-10-sliding-window-two-pointer-combined-problems__minimum-window-substring",
+      "minimum-window-subsequence",
     ],
   },
 
@@ -329,6 +330,7 @@ int exactly(int[] a, int k) {
       "step-10-sliding-window-two-pointer-combined-problems__binary-subarray-with-sum",
       "step-10-sliding-window-two-pointer-combined-problems__count-number-of-nice-subarrays",
       "step-10-sliding-window-two-pointer-combined-problems__subarray-with-k-different-integers",
+      "count-number-of-substring",
     ],
   },
 ];

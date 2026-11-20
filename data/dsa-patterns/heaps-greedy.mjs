@@ -97,6 +97,7 @@ void heapSort(int[] a) {
       "step-11-heaps__check-if-an-array-represents-a-min-heap-or-not",
       "step-11-heaps__convert-min-heap-to-max-heap",
       "heap-sort",
+      "replace-elements-by-their-rank",
     ],
   },
 
@@ -163,10 +164,128 @@ def kth_largest(a: list[int], k: int) -> int:
       "step-11-heaps__kth-largest-element-in-an-array-use-priority-queue",
       "step-11-heaps__kth-largest-element-in-a-stream-of-running-integers",
       "step-11-heaps__maximum-sum-combination",
+      "top-k-frequent-elements",
+      "find-median-from-data-stream",
     ],
     borrows: [
       "step-14-binary-search-trees__find-k-th-smallest-largest-element-in-bst",
     ],
+  },
+
+  {
+    id: "heap-k-way-merge",
+    title: "K-way merge — one heap entry per source",
+    family: "heaps",
+    aka: ["merge k sorted lists", "k sorted array", "nearly sorted", "smallest range"],
+    hook: "When the next answer is the smallest of a few known candidates, keep just those candidates in a min-heap and refill from wherever you popped.",
+    cues: [
+      "k sorted lists or arrays to merge into one",
+      "an array where every element is at most k places from its sorted position",
+      "the next item out is always the minimum of a small frontier, never of the whole input",
+    ],
+    template: {
+      java: `// Merge k sorted lists: the heap holds one node per list — its current head.
+ListNode mergeKLists(ListNode[] lists) {
+    PriorityQueue<ListNode> heap = new PriorityQueue<>((a, b) -> Integer.compare(a.val, b.val));
+    for (ListNode head : lists) if (head != null) heap.add(head);
+    ListNode dummy = new ListNode(0), tail = dummy;
+    while (!heap.isEmpty()) {
+        ListNode n = heap.poll();
+        tail = tail.next = n;
+        if (n.next != null) heap.add(n.next);    // refill from the same source
+    }
+    return dummy.next;
+}
+
+// k-sorted array: the true minimum of what is left is always among the next
+// k + 1 elements, so a heap of size k + 1 sorts it in place.
+void sortKSorted(int[] a, int k) {
+    PriorityQueue<Integer> heap = new PriorityQueue<>();
+    int w = 0;
+    for (int x : a) {
+        heap.add(x);
+        if (heap.size() > k) a[w++] = heap.poll();
+    }
+    while (!heap.isEmpty()) a[w++] = heap.poll();
+}`,
+    },
+    recall: [
+      "the heap size is the number of SOURCES (k), not the number of elements (n)",
+      "pop the minimum, emit it, push that source's next item",
+      "a dummy head keeps the list-merge free of first-node special cases",
+      "for k-sorted arrays the window is k + 1: the element at position i is somewhere in a[i .. i+k]",
+    ],
+    complexity: {
+      time: "O(n log k)",
+      space: "O(k)",
+      note: "Pairwise divide-and-conquer merging matches the bound without a heap; one list at a time is O(nk).",
+    },
+    traps: [
+      "pushing every node up front, which is just heap sort at O(n log n)",
+      "adding null list heads to the heap",
+      "a comparator written as a.val − b.val, which can overflow on extreme values",
+    ],
+    problems: ["merge-k-sorted-lists", "sort-a-k-sorted-array"],
+    borrows: ["step-11-heaps__merge-m-sorted-lists"],
+  },
+
+  {
+    id: "heap-greedy",
+    title: "Greedy by heap — always act on the extreme",
+    family: "heaps",
+    aka: ["huffman", "connect ropes", "connect sticks", "task scheduler", "hand of straights"],
+    hook: "The greedy choice is \"the smallest (or most frequent) thing right now\", and the heap keeps that answer current as the choices change it.",
+    cues: [
+      "repeatedly combine the two smallest, and the result goes back into the pool",
+      "schedule the most frequent item first so it does not run out of room",
+      "form groups or sequences starting from the smallest remaining value",
+      "sorting once is not enough, because each step changes what is smallest",
+    ],
+    template: {
+      java: `// Connect sticks / ropes (Huffman): joining the two cheapest first is optimal,
+// and the joined stick goes back in, so the heap re-sorts as you go.
+int connectSticks(int[] sticks) {
+    PriorityQueue<Integer> heap = new PriorityQueue<>();
+    for (int s : sticks) heap.add(s);
+    int cost = 0;
+    while (heap.size() > 1) {
+        int joined = heap.poll() + heap.poll();
+        cost += joined;
+        heap.add(joined);
+    }
+    return cost;
+}
+
+// Task scheduler: the most frequent task decides the frame. (maxFreq − 1) full
+// rounds of length n + 1, then a last round holding every task tied for max.
+int leastInterval(char[] tasks, int n) {
+    int[] f = new int[26];
+    for (char t : tasks) f[t - 'A']++;
+    int max = Arrays.stream(f).max().getAsInt();
+    int tied = (int) Arrays.stream(f).filter(x -> x == max).count();
+    return Math.max(tasks.length, (max - 1) * (n + 1) + tied);
+}
+
+// Hand of straights: take the smallest card left and consume a run of
+// groupSize starting there. A TreeMap of counts is the "heap" that can also
+// decrement in the middle.`,
+    },
+    recall: [
+      "say what the greedy invariant is first — smallest-first, most-frequent-first — then pick the structure",
+      "anything pushed back into the pool after combining needs a heap, not a one-off sort",
+      "task scheduler has an O(n) formula; the heap-plus-cooldown-queue simulation is the version to explain",
+      "a TreeMap of counts works where you must consume values in sorted order AND decrement arbitrary ones",
+    ],
+    complexity: {
+      time: "O(n log n)",
+      space: "O(n)",
+    },
+    traps: [
+      "sorting once and walking the array, which ignores the joined values coming back into play",
+      "in task scheduler, forgetting the max with tasks.length when there are enough distinct tasks to fill every gap",
+      "in hand of straights, not checking first that the card count divides evenly",
+    ],
+    problems: ["minimum-cost-to-connect-sticks", "task-scheduler", "hand-of-straights"],
   },
 
   {
@@ -228,7 +347,6 @@ double fractionalKnapsack(int[][] items, int cap) {     // {value, weight}
     ],
     problems: [
       "step-12-greedy-algorithms__assign-cookies",
-      "step-16-dynamic-programming__assign-cookies",
       "step-12-greedy-algorithms__lemonade-change",
       "step-12-greedy-algorithms__fractional-knapsack-problem",
     ],

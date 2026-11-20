@@ -15,7 +15,7 @@ A personal notes + code + revision tracker for [Striver's A2Z DSA sheet](https:/
 1. Create a free project at [supabase.com](https://supabase.com).
 2. In the Supabase dashboard, go to **SQL Editor → New query**, paste the entire contents of [`supabase/migration.sql`](supabase/migration.sql), and run it. This creates the two tables (`user_problems`, `user_settings`) with row-level security so your data is private to your account. Then run [`supabase/migration-todos.sql`](supabase/migration-todos.sql) the same way for the daily TODO list (`user_todos` table). *(Already ran the first migration before the TODO feature existed? Just run `migration-todos.sql` on its own.)* Then [`supabase/migration-custom-links.sql`](supabase/migration-custom-links.sql), which adds two nullable columns so a problem can carry your own problem link and video alongside the sheet's. *(Already ran an earlier version of that file? Re-run it — each statement is `if not exists`.)* Then [`supabase/migration-custom-section.sql`](supabase/migration-custom-section.sql), which lets a problem sit in a subsection you choose. Finally [`supabase/migration-recall.sql`](supabase/migration-recall.sql), which adds the recall grade and per-problem revision window that Drill mode writes — run it **before** deploying the code that uses it; until it has run, grading a problem fails (everything else keeps saving).
 
-   **Upgrading an existing vault?** Striver restructured the A2Z sheet in September 2026 (18 steps → 19 modules with subsections). No migration is needed: the sheet is rebuilt as a *merge* of his new roadmap onto the old one, and every problem that existed before keeps its original `problem_key`, so saved notes, code, stars and revision history stay attached. See `scripts/build-a2z-sheet.mjs` for how that merge works.
+   **Upgrading an existing vault?** Striver restructured the A2Z sheet in September 2026 (18 steps → 19 modules with subsections) and added a 20th module plus 53 problems in November 2026. No migration is needed: every problem that existed before keeps its original `problem_key` (frozen in `scripts/a2z-anchors.json`), so saved notes, code, stars and revision history stay attached. See `scripts/build-a2z-sheet.mjs` for how the rebuild works.
 3. Go to **Authentication → Sign In / Providers**:
    - **Email**: usually on by default — this powers the magic-link option.
    - **Google**: enable it and follow Supabase's prompt to add a Google OAuth Client ID/secret (create one in the [Google Cloud Console](https://console.cloud.google.com/apis/credentials) — "OAuth client ID" → Web application → add Supabase's provided redirect URL).
@@ -62,9 +62,9 @@ Vercel's build image runs Node 22+ by default, so the `@supabase/supabase-js` de
 app/                 routes: /, /login, /auth/callback
 components/          Sidebar, ProblemHeader, NotesEditor, CodeTabs, etc.
 lib/                 useVault (Supabase-backed state), sheet merging, decay-color logic, recall scheduling + drill queue (schedule.ts), Supabase clients
-data/a2z-sheet.json  seed data: Striver's 19 modules / 79 subsections, merged with the older sheet
+data/a2z-sheet.json  seed data: Striver's 20 modules / 84 subsections, on the app's frozen problem keys
 scripts/fetch-a2z.mjs   re-scrapes the A2Z roadmap from takeuforward.org into a local cache
-scripts/build-a2z-sheet.mjs  merges that cache onto scripts/a2z-sheet-legacy.json -> the seed sheet
+scripts/build-a2z-sheet.mjs  lays that cache over scripts/a2z-anchors.json (key lockfile) -> the seed sheet
 scripts/extract-worked-keys.mjs  re-reads a vault backup to refresh which problems must be kept
 supabase/migration.sql  DB schema + RLS policies — run once in the Supabase SQL editor
 ```

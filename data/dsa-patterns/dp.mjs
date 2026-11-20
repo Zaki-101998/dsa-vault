@@ -242,6 +242,7 @@ int minPathSum(int[][] grid) {
       "step-16-dynamic-programming__minimum-path-sum-in-triangular-grid-dp-11",
       "step-16-dynamic-programming__minimum-maximum-falling-path-sum-dp-12",
       "cherry-pickup-ii",
+      "count-square-submatrices-with-all-one",
     ],
   },
 
@@ -411,6 +412,7 @@ int maxProfitUnlimited(int[] price) {
       "step-16-dynamic-programming__buy-and-sell-stock-ii-dp-36",
       "step-16-dynamic-programming__buy-and-sell-stocks-iii-dp-37",
       "step-16-dynamic-programming__buy-and-stock-sell-iv-dp-38",
+      "best-time-to-buy-and-sell-stock-with-cooldown",
       "step-16-dynamic-programming__buy-and-sell-stocks-with-transaction-fee-dp-40",
     ],
   },
@@ -583,6 +585,7 @@ int lcs(String a, String b) {
       "step-16-dynamic-programming__print-longest-common-subsequence-dp-26",
       "step-16-dynamic-programming__longest-common-substring-dp-27",
       "step-16-dynamic-programming__longest-palindromic-subsequence-dp-28",
+      "count-palindromic-subsequences",
       "step-16-dynamic-programming__minimum-insertions-to-make-string-palindrome-dp-29",
       "step-16-dynamic-programming__minimum-insertions-deletions-to-convert-string-dp-30",
       "step-16-dynamic-programming__shortest-common-supersequence-dp-31",
@@ -675,6 +678,7 @@ int mcm(int[] dim) {               // matrix p is dim[p-1] x dim[p]
       "step-16-dynamic-programming__burst-balloons-dp-51",
       "step-16-dynamic-programming__palindrome-partitioning-ii-dp-53",
       "step-16-dynamic-programming__partition-array-for-maximum-sum-dp-54",
+      "word-break",
       "different-ways-to-evaluate-a-boolean-expression",
     ],
     borrows: [

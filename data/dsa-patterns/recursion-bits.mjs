@@ -83,6 +83,8 @@ int atoi(String s, int i, long value, int sign) {
       "step-07-recursion__pow-x-n",
       "step-08-bit-manipulation__power-n-x",
       "step-07-recursion__recursive-implementation-of-atoi",
+      "count-good-numbers",
+      "reverse-a-stack",
     ],
     borrows: [
       "step-08-bit-manipulation__divide-two-integers-without-using-multiplication-division-and-mod-operator",
@@ -150,6 +152,7 @@ int count(int i, int[] a, int target) {
       "an early return on target < 0 when the input can contain negatives",
     ],
     problems: [
+      "learn-all-patterns-of-subsequences",
       "step-08-bit-manipulation__power-set",
       "subsets-i",
       "step-07-recursion__check-if-there-exists-a-subsequence-with-sum-k",
@@ -297,6 +300,8 @@ void letters(int i, String digits, StringBuilder sb, List<String> out) {
     problems: [
       "step-07-recursion__generate-paranthesis",
       "step-07-recursion__letter-combinations-of-a-phone-number",
+      "generate-binary-strings-without-consecutive-1s",
+      "expression-add-operators",
     ],
   },
 
@@ -457,6 +462,12 @@ int divide(int dividend, int divisor) {
     ],
     problems: [
       "introduction-to-bits-and-tricks",
+      "check-if-a-number-is-odd-or-not",
+      "check-if-the-i-th-bit-is-set-or-not",
+      "check-if-a-number-is-power-of-2-or-not",
+      "count-the-number-of-set-bits",
+      "set-the-rightmost-unset-bit",
+      "swap-two-numbers",
       "step-08-bit-manipulation__count-number-of-bits-to-be-flipped-to-convert-a-to-b",
       "step-08-bit-manipulation__divide-two-integers-without-using-multiplication-division-and-mod-operator",
     ],
@@ -687,11 +698,74 @@ String countAndSay(int n) {
       "step-05-strings__reverse-every-word-in-a-string",
       "step-18-strings__count-and-say",
       "step-18-strings__minimum-number-of-bracket-reversals-needed-to-make-an-expression-balanced",
+      "roman-to-integer",
+      "string-to-integer-atoi",
     ],
     borrows: [
       "subsets-i",
       "step-08-bit-manipulation__power-set",
     ],
+  },
+
+  {
+    id: "substring-enumeration",
+    title: "Enumerating substrings — fix a start, or a centre",
+    family: "strings",
+    aka: ["all substrings", "expand around centre", "palindromic substring", "beauty of substrings"],
+    hook: "There are only O(n²) substrings: fix where each starts (or where it is centred) and grow it, updating the answer in O(1) per step.",
+    cues: [
+      "a question over EVERY substring, with n up to a few thousand, so O(n²) is the intended bound",
+      "a per-substring statistic that updates incrementally as you add one character — counts, max − min",
+      "palindromes: a palindrome is fixed by its centre, and there are only 2n − 1 centres",
+    ],
+    template: {
+      java: `// FIX A START, GROW THE END. The inner loop extends the substring by one
+// character and updates its summary in O(1) — never rescan the substring.
+int beautySum(String s) {
+    int total = 0;
+    for (int i = 0; i < s.length(); i++) {
+        int[] freq = new int[26];
+        for (int j = i; j < s.length(); j++) {
+            freq[s.charAt(j) - 'a']++;
+            int hi = 0, lo = Integer.MAX_VALUE;
+            for (int f : freq) if (f > 0) { hi = Math.max(hi, f); lo = Math.min(lo, f); }
+            total += hi - lo;                  // the 26-scan is a constant
+        }
+    }
+    return total;
+}
+
+// FIX A CENTRE, EXPAND OUTWARDS. 2n − 1 centres: each character (odd length)
+// and each gap between two characters (even length).
+String longestPalindrome(String s) {
+    int best = 0, from = 0;
+    for (int c = 0; c < s.length(); c++) {
+        for (int[] lr : new int[][] { {c, c}, {c, c + 1} }) {
+            int l = lr[0], r = lr[1];
+            while (l >= 0 && r < s.length() && s.charAt(l) == s.charAt(r)) { l--; r++; }
+            if (r - l - 1 > best) { best = r - l - 1; from = l + 1; }
+        }
+    }
+    return s.substring(from, from + best);
+}`,
+    },
+    recall: [
+      "the outer loop fixes one end (or the centre); the inner loop only ever ADDS a character",
+      "keep the summary incremental — a frequency array, a running count — so each step is O(1) or O(26)",
+      "palindromes have two kinds of centre, odd and even; missing the even one is the classic bug",
+      "after expansion stops, the palindrome is s[l+1 .. r−1], length r − l − 1",
+    ],
+    complexity: {
+      time: "O(n²)",
+      space: "O(1) or O(alphabet)",
+      note: "Manacher's algorithm gets palindromes to O(n), but expand-around-centre is what interviews expect.",
+    },
+    traps: [
+      "rebuilding each substring with substring() inside the loop, turning O(n²) into O(n³)",
+      "expanding only odd-length centres",
+      "off-by-one when recovering the palindrome's bounds after the while loop overshoots",
+    ],
+    problems: ["longest-palindromic-substring", "sum-of-beauty-of-all-substrings"],
   },
 
   {
@@ -791,6 +865,7 @@ int[] zFunction(String s) {
       "step-18-strings__longest-happy-prefix",
       "step-18-strings__z-function",
       "step-18-strings__shortest-palindrome",
+      "hashing-in-strings-theory",
       "step-18-strings__rabin-karp",
     ],
   },

@@ -85,6 +85,7 @@ Node insert(Node root, int val) {
     problems: [
       "step-14-binary-search-trees__introduction-to-binary-search-tree",
       "step-14-binary-search-trees__search-in-a-binary-search-tree",
+      "minimum-and-maximum-in-bst",
       "step-14-binary-search-trees__floor-in-a-binary-search-tree",
       "step-14-binary-search-trees__ceil-in-a-binary-search-tree",
       "step-14-binary-search-trees__insert-a-given-node-in-binary-search-tree",
@@ -454,6 +455,7 @@ class BitTrie {
       "trying to answer the constrained version online instead of sorting the queries",
     ],
     problems: [
+      "bit-prerequisites-for-trie-problems",
       "step-17-tries__maximum-xor-of-two-numbers-in-an-array",
       "step-17-tries__maximum-xor-with-an-element-from-array",
     ],

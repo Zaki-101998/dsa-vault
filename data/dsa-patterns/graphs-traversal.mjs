@@ -553,10 +553,12 @@ int[] dijkstra(int n, int src, List<List<int[]>> adj) {   // adj.get(u) = {v, w}
     ],
     problems: [
       "step-15-graphs__djisktra-s-algorithm",
+      "network-delay-time",
       "step-15-graphs__why-priority-queue-is-used-in-djisktra-s-algorithm",
       "print-shortest-path",
       "step-15-graphs__shortest-path-in-a-binary-maze",
       "step-15-graphs__path-with-minimum-effort",
+      "swim-in-rising-water",
       "minimum-multiplications-to-reach-end",
       "step-15-graphs__number-of-ways-to-arrive-at-destination",
       "step-15-graphs__cheapest-flights-within-k-stops",
